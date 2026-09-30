@@ -258,3 +258,442 @@ def parse_history_file(path: Path) -> ParsedHistoryFile:
     close_record()
 
     return parsed
+
+
+# ============================================================
+# I8 — NORMALIZED HTCONDOR TRANSFER EVIDENCE
+# ============================================================
+
+import re as _re
+
+from .model import (
+    ProvenanceRef as _ProvenanceRef,
+    SourceKind as _SourceKind,
+    TransferDirection as _TransferDirection,
+    TransferEvidence as _TransferEvidence,
+)
+from .normalize import normalize_remote_host as _normalize_remote_host
+
+
+_STAT_PATTERN = _re.compile(
+    r"([A-Za-z][A-Za-z0-9_]*)"
+    r"(SizeBytesTotal|FilesCountTotal|"
+    r"SizeBytesLastRun|FilesCountLastRun)"
+    r"\s*=\s*([0-9]+)"
+)
+
+
+def _history_int(
+    record,
+    key: str,
+) -> int | None:
+    raw = record.value(key)
+
+    if raw is None:
+        return None
+
+    raw = raw.strip().strip('"')
+
+    if not _re.fullmatch(r"[0-9]+", raw):
+        return None
+
+    return int(raw)
+
+
+def _history_float_as_int(
+    record,
+    key: str,
+) -> int | None:
+    raw = record.value(key)
+
+    if raw is None:
+        return None
+
+    raw = raw.strip().strip('"')
+
+    try:
+        value = float(raw)
+    except ValueError:
+        return None
+
+    if value < 0 or not value.is_integer():
+        return None
+
+    return int(value)
+
+
+def _history_text(
+    record,
+    key: str,
+) -> str | None:
+    raw = record.value(key)
+
+    if raw is None:
+        return None
+
+    raw = raw.strip()
+
+    if (
+        len(raw) >= 2
+        and raw[0] == '"'
+        and raw[-1] == '"'
+    ):
+        raw = raw[1:-1]
+
+    return raw or None
+
+
+def _job_id(record) -> str | None:
+    cluster = _history_int(
+        record,
+        "ClusterId",
+    )
+    proc = _history_int(
+        record,
+        "ProcId",
+    )
+
+    if cluster is None or proc is None:
+        return None
+
+    return f"{cluster}.{proc}"
+
+
+def _parse_transfer_stats(
+    raw: str | None,
+) -> tuple[
+    dict[str, dict[str, int]],
+    list[str],
+    int | None,
+    int | None,
+    int | None,
+    int | None,
+]:
+    """
+    Parse protocol-specific HTCondor sandbox stats without
+    discarding the original ClassAd representation.
+
+    Supported current shape, for example:
+
+      CedarSizeBytesTotal = ...
+      CedarFilesCountTotal = ...
+      CedarSizeBytesLastRun = ...
+      CedarFilesCountLastRun = ...
+    """
+
+    if raw is None:
+        return {}, [], None, None, None, None
+
+    by_method: dict[
+        str,
+        dict[str, int],
+    ] = {}
+
+    for match in _STAT_PATTERN.finditer(raw):
+        method = match.group(1)
+        metric = match.group(2)
+        value = int(match.group(3))
+
+        by_method.setdefault(
+            method,
+            {},
+        )[metric] = value
+
+    if not by_method:
+        return {}, [], None, None, None, None
+
+    methods = sorted(by_method)
+
+    def total(metric: str) -> int | None:
+        values = [
+            stats[metric]
+            for stats in by_method.values()
+            if metric in stats
+        ]
+
+        if len(values) != len(by_method):
+            return None
+
+        return sum(values)
+
+    return (
+        by_method,
+        methods,
+        total("FilesCountLastRun"),
+        total("FilesCountTotal"),
+        total("SizeBytesLastRun"),
+        total("SizeBytesTotal"),
+    )
+
+
+def _stats_provenance(
+    record,
+    key: str,
+) -> list[_ProvenanceRef]:
+    attr = record.get_last(key)
+
+    if attr is None:
+        return []
+
+    return [attr.provenance]
+
+
+def _attempt_context(record) -> str | None:
+    job_run_count = _history_int(
+        record,
+        "JobRunCount",
+    )
+    num_starts = _history_int(
+        record,
+        "NumJobStarts",
+    )
+
+    if (
+        job_run_count == 1
+        and num_starts == 1
+    ):
+        return "attempt:1"
+
+    return None
+
+
+def _direction_evidence(
+    record,
+    *,
+    job_id: str,
+    direction: _TransferDirection,
+    worker_location_id: str | None,
+) -> _TransferEvidence:
+    if direction == _TransferDirection.INPUT:
+        stats_key = "TransferInputStats"
+        started_keys = (
+            "TransferInStarted",
+            "TransferInputStarted",
+        )
+        finished_keys = (
+            "TransferInFinished",
+            "TransferInputFinished",
+        )
+    else:
+        stats_key = "TransferOutputStats"
+        started_keys = (
+            "TransferOutStarted",
+            "TransferOutputStarted",
+        )
+        finished_keys = (
+            "TransferOutFinished",
+            "TransferOutputFinished",
+        )
+
+    raw_stats_value = record.value(
+        stats_key
+    )
+
+    (
+        parsed_stats,
+        methods,
+        count_last,
+        count_total,
+        bytes_last,
+        bytes_total,
+    ) = _parse_transfer_stats(
+        raw_stats_value
+    )
+
+    started = None
+
+    for key in started_keys:
+        started = _history_text(
+            record,
+            key,
+        )
+
+        if started is not None:
+            break
+
+    finished = None
+
+    for key in finished_keys:
+        finished = _history_text(
+            record,
+            key,
+        )
+
+        if finished is not None:
+            break
+
+    raw_stats = {
+        "transfer_stats_raw": (
+            raw_stats_value
+        ),
+        "transfer_stats_parsed": (
+            parsed_stats
+        ),
+        "job_status": _history_int(
+            record,
+            "JobStatus",
+        ),
+        "exit_code": _history_int(
+            record,
+            "ExitCode",
+        ),
+        "exit_by_signal": _history_text(
+            record,
+            "ExitBySignal",
+        ),
+        "job_run_count": _history_int(
+            record,
+            "JobRunCount",
+        ),
+        "num_job_starts": _history_int(
+            record,
+            "NumJobStarts",
+        ),
+        "num_shadow_starts": _history_int(
+            record,
+            "NumShadowStarts",
+        ),
+        "hold_reason": _history_text(
+            record,
+            "HoldReason",
+        ),
+    }
+
+    provenance = []
+
+    provenance.extend(
+        _stats_provenance(
+            record,
+            stats_key,
+        )
+    )
+
+    for key in (
+        "ClusterId",
+        "ProcId",
+        "LastRemoteHost",
+        "RemoteHost",
+        "JobRunCount",
+        "NumJobStarts",
+        "JobStatus",
+        "ExitCode",
+        "BytesRecvd",
+        "BytesSent",
+    ):
+        attr = record.get_last(key)
+
+        if attr is not None:
+            provenance.append(
+                attr.provenance
+            )
+
+    return _TransferEvidence(
+        job_id=job_id,
+        direction=direction,
+        attempt_context=(
+            _attempt_context(record)
+        ),
+        worker_location_id=(
+            worker_location_id
+        ),
+        raw_stats=raw_stats,
+        methods=methods,
+        observed_file_count_last=(
+            count_last
+        ),
+        observed_file_count_total=(
+            count_total
+        ),
+        observed_bytes_last=(
+            bytes_last
+        ),
+        observed_bytes_total=(
+            bytes_total
+        ),
+        bytes_recvd=(
+            _history_float_as_int(
+                record,
+                "BytesRecvd",
+            )
+        ),
+        bytes_sent=(
+            _history_float_as_int(
+                record,
+                "BytesSent",
+            )
+        ),
+        transfer_started=started,
+        transfer_finished=finished,
+        provenance=provenance,
+    )
+
+
+def build_transfer_evidence(
+    parsed_history: ParsedHistoryFile,
+    *,
+    scientific_job_ids: set[str],
+) -> list[_TransferEvidence]:
+    """
+    Normalize HTCondor transfer evidence only for scientific
+    jobs already identified by the integrated execution model.
+
+    The complete history may contain unrelated Pegasus runs, so
+    filtering by known job_id is mandatory.
+    """
+
+    evidence: list[
+        _TransferEvidence
+    ] = []
+
+    for record in parsed_history.records:
+        job_id = _job_id(record)
+
+        if (
+            job_id is None
+            or job_id
+            not in scientific_job_ids
+        ):
+            continue
+
+        remote_host = (
+            _history_text(
+                record,
+                "LastRemoteHost",
+            )
+            or _history_text(
+                record,
+                "RemoteHost",
+            )
+        )
+
+        worker = (
+            _normalize_remote_host(
+                remote_host
+            )
+            if remote_host is not None
+            else None
+        )
+
+        evidence.append(
+            _direction_evidence(
+                record,
+                job_id=job_id,
+                direction=(
+                    _TransferDirection.INPUT
+                ),
+                worker_location_id=worker,
+            )
+        )
+
+        evidence.append(
+            _direction_evidence(
+                record,
+                job_id=job_id,
+                direction=(
+                    _TransferDirection.OUTPUT
+                ),
+                worker_location_id=worker,
+            )
+        )
+
+    return evidence
