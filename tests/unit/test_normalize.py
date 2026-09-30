@@ -236,6 +236,7 @@ class FileIdentityNormalizationTests(unittest.TestCase):
     def test_physical_path_fallback_keeps_full_path(self):
         identity = resolve_file_identity(
             physical_paths=["foo/input.dat"],
+            physical_relation_unambiguous=True,
         )
 
         self.assertEqual(
@@ -251,13 +252,30 @@ class FileIdentityNormalizationTests(unittest.TestCase):
             FileIdentityMethod.PHYSICAL_PATH,
         )
 
+
+    def test_physical_path_alone_is_not_sufficient_identity(self):
+        result = resolve_file_identity(
+            physical_paths=[
+                "/scratch/run0001/input.dat"
+            ],
+        )
+
+        self.assertIsNone(result.file_id)
+        self.assertIsNone(result.resolution_method)
+        self.assertIn(
+            "physical_path_not_semantically_resolved",
+            result.issues,
+        )
+
     def test_duplicate_basename_does_not_merge_files(self):
         left = resolve_file_identity(
             physical_paths=["foo/input.dat"],
-        )
+        
+            physical_relation_unambiguous=True,)
         right = resolve_file_identity(
             physical_paths=["bar/input.dat"],
-        )
+        
+            physical_relation_unambiguous=True,)
 
         self.assertEqual(
             file_basename_for_display(left),

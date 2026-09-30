@@ -326,6 +326,7 @@ def resolve_file_identity(
     remap_from: str | None = None,
     remap_to: str | None = None,
     provenance: list[ProvenanceRef] | None = None,
+    physical_relation_unambiguous: bool = False,
 ) -> NormalizedFileIdentity:
     """
     Resolve file identity according to Design Spec precedence:
@@ -392,8 +393,13 @@ def resolve_file_identity(
         return result
 
     if len(paths) == 1:
-        result.file_id = f"path:{paths[0]}"
-        result.resolution_method = FileIdentityMethod.PHYSICAL_PATH
+        if physical_relation_unambiguous:
+            result.file_id = f"path:{paths[0]}"
+            result.resolution_method = FileIdentityMethod.PHYSICAL_PATH
+            return result
+        result.issues.append(
+            "physical_path_not_semantically_resolved"
+        )
         return result
 
     result.issues.append("missing_file_identity")
