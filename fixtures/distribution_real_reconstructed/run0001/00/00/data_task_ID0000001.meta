@@ -1,0 +1,26 @@
+[
+  {
+    "_id": "dist.chunk3.dat",
+    "_attributes": {
+      "size": "2621440"
+    }
+  },
+  {
+    "_id": "dist.chunk0.dat",
+    "_attributes": {
+      "size": "2621440"
+    }
+  },
+  {
+    "_id": "dist.chunk2.dat",
+    "_attributes": {
+      "size": "2621440"
+    }
+  },
+  {
+    "_id": "dist.chunk1.dat",
+    "_attributes": {
+      "size": "2621440"
+    }
+  }
+]

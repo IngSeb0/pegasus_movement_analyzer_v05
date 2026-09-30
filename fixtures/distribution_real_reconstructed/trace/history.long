@@ -1,0 +1,34 @@
+ClusterId = 473
+ProcId = 0
+DAGNodeName = "data_task_ID0000001"
+Cmd = "/home/luis/.../run0001/00/00/data_task_ID0000001.sh"
+Iwd = "/home/luis/.../scratch/.../run0001"
+LastRemoteHost = "slot1_1@pegasus-worker2"
+
+ClusterId = 477
+ProcId = 0
+DAGNodeName = "data_task_ID0000002"
+Cmd = "/home/luis/.../run0001/00/00/data_task_ID0000002.sh"
+Iwd = "/home/luis/.../scratch/.../run0001"
+LastRemoteHost = "slot1_1@pegasus-worker2"
+
+ClusterId = 476
+ProcId = 0
+DAGNodeName = "data_task_ID0000003"
+Cmd = "/home/luis/.../run0001/00/00/data_task_ID0000003.sh"
+Iwd = "/home/luis/.../scratch/.../run0001"
+LastRemoteHost = "slot1_1@pegasus-worker2"
+
+ClusterId = 479
+ProcId = 0
+DAGNodeName = "data_task_ID0000004"
+Cmd = "/home/luis/.../run0001/00/00/data_task_ID0000004.sh"
+Iwd = "/home/luis/.../scratch/.../run0001"
+LastRemoteHost = "slot1_1@pegasus-worker2"
+
+ClusterId = 478
+ProcId = 0
+DAGNodeName = "data_task_ID0000005"
+Cmd = "/home/luis/.../run0001/00/00/data_task_ID0000005.sh"
+Iwd = "/home/luis/.../scratch/.../run0001"
+LastRemoteHost = "slot1_1@pegasus-worker1"

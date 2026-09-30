@@ -1,0 +1,4 @@
+should_transfer_files = YES
+transfer_input_files = data_task,input.dat,$(wf_submit_dir)/pegasus-worker-5.1.2-x86_64_ubuntu_26.tar.gz,$(wf_submit_dir)/00/00/stage_in_remote_local_0_0.meta,$(wf_submit_dir)/00/00/stage_in_local_local_0_0.meta,$(wf_submit_dir)/pegasus-lite-common.sh
+transfer_output_files = dist.chunk3.dat,dist.chunk0.dat,dist.chunk2.dat,dist.chunk1.dat
+when_to_transfer_output = ON_EXIT
