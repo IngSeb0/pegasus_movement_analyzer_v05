@@ -272,7 +272,6 @@ from .model import (
     TransferDirection as _TransferDirection,
     TransferEvidence as _TransferEvidence,
 )
-from .normalize import normalize_remote_host as _normalize_remote_host
 
 
 _STAT_PATTERN = _re.compile(
@@ -640,6 +639,11 @@ def build_transfer_evidence(
     The complete history may contain unrelated Pegasus runs, so
     filtering by known job_id is mandatory.
     """
+
+    # Lazy import avoids normalize <-> htcondor_source cycle.
+    from .normalize import (
+        normalize_remote_host as _normalize_remote_host,
+    )
 
     evidence: list[
         _TransferEvidence
