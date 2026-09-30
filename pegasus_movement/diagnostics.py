@@ -1,0 +1,78 @@
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from enum import StrEnum
+from typing import Any
+
+
+class AnalysisStatus(StrEnum):
+    VALID = "VALID"
+    NOT_APPLICABLE = "NOT_APPLICABLE"
+    INCOMPLETE_EVIDENCE = "INCOMPLETE_EVIDENCE"
+    UNSUPPORTED = "UNSUPPORTED"
+    INCONSISTENT = "INCONSISTENT"
+    FAILED_WORKFLOW = "FAILED_WORKFLOW"
+    ERROR = "ERROR"
+
+
+class MetricStatus(StrEnum):
+    CALCULATED = "CALCULATED"
+    NOT_APPLICABLE = "NOT_APPLICABLE"
+    INDETERMINATE = "INDETERMINATE"
+    INVALID = "INVALID"
+
+
+class ReasonCode(StrEnum):
+    UNSUPPORTED_SHARED_FS = "UNSUPPORTED_SHARED_FS"
+    UNSUPPORTED_BYPASS = "UNSUPPORTED_BYPASS"
+    UNSUPPORTED_TRANSFER_PLUGIN = "UNSUPPORTED_TRANSFER_PLUGIN"
+    UNSUPPORTED_CLUSTERED_JOB = "UNSUPPORTED_CLUSTERED_JOB"
+    UNSUPPORTED_DIRECTORY_TRANSFER = "UNSUPPORTED_DIRECTORY_TRANSFER"
+
+    AMBIGUOUS_FILE_IDENTITY = "AMBIGUOUS_FILE_IDENTITY"
+    MULTIPLE_PRODUCERS = "MULTIPLE_PRODUCERS"
+    MISSING_FILE_SIZE = "MISSING_FILE_SIZE"
+    CONFLICTING_FILE_SIZE = "CONFLICTING_FILE_SIZE"
+    MISSING_PLACEMENT = "MISSING_PLACEMENT"
+    AMBIGUOUS_JOB_IDENTITY = "AMBIGUOUS_JOB_IDENTITY"
+    HISTORY_MISSING = "HISTORY_MISSING"
+
+    RETRY_NOT_SEPARABLE = "RETRY_NOT_SEPARABLE"
+    PARTIAL_TRANSFER = "PARTIAL_TRANSFER"
+    MANIFEST_INCOMPLETE = "MANIFEST_INCOMPLETE"
+    TRANSFER_COUNT_MISMATCH = "TRANSFER_COUNT_MISMATCH"
+    TRANSFER_BYTES_MISMATCH = "TRANSFER_BYTES_MISMATCH"
+    UNACCOUNTED_PROTOCOL = "UNACCOUNTED_PROTOCOL"
+
+    FAILED_SCIENTIFIC_JOB = "FAILED_SCIENTIFIC_JOB"
+    OBSERVED_LT_REQUIRED = "OBSERVED_LT_REQUIRED"
+    SCOPE_MISMATCH = "SCOPE_MISMATCH"
+    ZERO_MOVEMENT = "ZERO_MOVEMENT"
+
+
+STATUS_PRECEDENCE = {
+    AnalysisStatus.VALID: 0,
+    AnalysisStatus.NOT_APPLICABLE: 1,
+    AnalysisStatus.INCOMPLETE_EVIDENCE: 2,
+    AnalysisStatus.FAILED_WORKFLOW: 3,
+    AnalysisStatus.UNSUPPORTED: 4,
+    AnalysisStatus.INCONSISTENT: 5,
+    AnalysisStatus.ERROR: 6,
+}
+
+
+def aggregate_analysis_status(
+    statuses: list[AnalysisStatus],
+) -> AnalysisStatus:
+    if not statuses:
+        return AnalysisStatus.VALID
+    return max(statuses, key=STATUS_PRECEDENCE.__getitem__)
+
+
+@dataclass(slots=True)
+class Diagnostic:
+    status: AnalysisStatus
+    reason_code: ReasonCode
+    message: str
+    context: dict[str, Any] = field(default_factory=dict)
+    provenance: list[Any] = field(default_factory=list)
