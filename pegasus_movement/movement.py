@@ -796,9 +796,11 @@ def build_condorio_manifests(
                     )
                     else None
                 ),
-                complete=_manifest_complete(
-                    input_files
-                ),
+                # `complete` means the effective file-set is known.
+                # Missing auxiliary sizes are represented by
+                # expected_total_bytes=None and do not make the
+                # manifest structurally incomplete.
+                complete=True,
             )
         )
 
@@ -879,12 +881,7 @@ def build_condorio_manifests(
             for raw_path in output_paths
         ]
 
-        output_complete = (
-            output_semantics_complete
-            and _manifest_complete(
-                output_files
-            )
-        )
+        output_complete = output_semantics_complete
 
         if not output_semantics_complete:
             diagnostics.append(
@@ -917,10 +914,12 @@ def build_condorio_manifests(
                     sum(
                         item.size_bytes
                         for item in output_files
-                        if item.size_bytes
-                        is not None
+                        if item.size_bytes is not None
                     )
-                    if output_complete
+                    if (
+                        output_complete
+                        and _manifest_complete(output_files)
+                    )
                     else None
                 ),
                 scientific_file_count=sum(
