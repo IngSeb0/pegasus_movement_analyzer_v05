@@ -13,7 +13,7 @@ Fuente editable Windows: `C:\Users\Acer\Documents\ChatGPT\THESIS\entregables\PRE
 | 15 | Evidencia/reconciliation | Manifest, TransferEvidence, MovementVerification | Distingue job-level y file-level |
 | 16 | Fórmulas | Coverage, Mobs y DME | Notación editable; verificar símbolos al ensayar defensa |
 | 17 | Limitaciones | Alcance condorio y evidencia | Vigente |
-| 18 | Roadmap | Cierre I, I14 pendiente, V preparado | Actualizada al checkpoint |
+| 18 | Roadmap | Cierre I, I14 pendiente, V preparado; 129 workflows propuestos | Actualizada al checkpoint y al bloque estructural |
 | 19–20 | Mensaje final y fuentes | Síntesis y referencias | Resultados empíricos definitivos deben añadirse tras Gate V |
 
 Para la defensa final aún faltan cifras de Gate V, sensibilidad, casos negativos, overhead y amenazas observadas. No se insertaron valores experimentales futuros. El conteo de slides de la defensa final puede revisarse cuando exista Capítulo 7; el deck actual se conserva como versión de trabajo.

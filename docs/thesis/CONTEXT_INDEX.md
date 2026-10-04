@@ -17,12 +17,15 @@ Las copias de gobernanza bajo `context/` preservan el texto histórico y añaden
 | Ruta principal | Contenido |
 |---|---|
 | `ROADMAP_16_SEMANAS_ACTUALIZADO.md` | Mapeo sin alterar cronología académica |
+| `PLAN_INTEGRAL_CONTINUIDAD_20261004.md` | Ruta crítica, decisiones y recuperación |
+| `CH5_TRACEABILITY_AUDIT.md` | Mapa 5.1–5.12 ↔ código/requisitos/figuras/slides |
+| `ACADEMIC_REVIEW_QUEUE.md` | Estado y lagunas de capítulos 1–6 |
 | `ARCHITECTURE_VARIANTS.md` | Escenarios condorio frente a cambios del execution model |
 | `environment/ENVIRONMENT_SNAPSHOT.md` | Datos observados, pendientes y comandos read-only |
 | `figures/FIGURE_INDEX.md` | Fuentes TikZ/PDF del handoff y asignación a capítulos/slides |
 | `presentation/PRESENTATION_AUDIT.md` | Estado y cambios de las 20 slides Windows |
 | `validation/I14_READINESS.md` | Dependencias antes de runner/campaña |
-| `validation/EXPERIMENT_MATRIX.md` | 117 casos propuestos, no ejecutados |
+| `validation/EXPERIMENT_MATRIX.md` y `experiment_cases_proposed.csv` | 129 filas (117 base + 12 estructurales), todas `NOT_RUN` |
 | `validation/ORACLE_PROTOCOL.md` | Comparación manual e invariantes de evidencia |
 | `validation/RUNBOOK.md` | Secuencia de captura y análisis futuro |
 

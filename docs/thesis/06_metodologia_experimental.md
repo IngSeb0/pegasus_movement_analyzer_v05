@@ -24,7 +24,7 @@ La unidad experimental es un run nuevo de Pegasus/HTCondor con DAG, tamaño, pla
 | Dependiente | `Mreq`, `Mrec`, Coverage, `Mobs`, DME | Analyzer y oráculos manuales aplicables, con provenance |
 | Dependiente futura | Tiempo, costo de análisis y overhead | Medir con protocolo adicional antes de afirmar cifras |
 
-La matriz base propone 13 condiciones × 3 tamaños × 3 repeticiones = **117 runs**, sujetos a revisión y disponibilidad del pool. El detalle fila por fila y sus campos está en `validation/EXPERIMENT_MATRIX.md`. Variaciones estructurales de etapas, fan-out/fan-in y archivos compartidos se priorizarán como extensiones explícitas, con presupuesto separado. Ninguna ejecución nueva se infiere de este diseño.
+La matriz base propone 13 condiciones × 3 tamaños × 3 repeticiones = **117 runs**. Un bloque obligatorio de sensibilidad estructural agrega cuatro perturbaciones (pipeline de 4 etapas; distribution, aggregation y redistribution de 6 ramas) × 3 repeticiones = **12 runs** a 10 MiB y `same-w1`, comparados con sus baselines. El total propuesto es **129 workflows nuevos**, sujetos a revisión y disponibilidad del pool. Los casos negativos se analizan offline y el overhead de Analyzer se medirá sobre artefactos preservados. El detalle está en `validation/EXPERIMENT_MATRIX.md`. No se ha ejecutado ninguna fila de este diseño.
 
 ## 6.4 Procedimiento y oráculos
 

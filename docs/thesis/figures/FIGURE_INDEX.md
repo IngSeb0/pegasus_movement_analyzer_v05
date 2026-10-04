@@ -12,3 +12,5 @@ Este directorio contiene **18 fuentes TikZ `.tex` y sus PDF** provenientes del p
 | 6 | `10_metodologia_investigacion`, `12_patrones_diseno_experimental`, `13_comportamiento_esperado_patrones`, `14`–`18` oráculos por patrón | Método y predicciones, no resultados |
 
 Los tres diagramas del archivo Windows `entregables/CAPITULO_5_ANALYZER_V1.tex` son también TikZ editables. La presentación usa objetos PowerPoint nativos para sus diagramas y conserva 20 slides. No se generaron figuras con un generador de imágenes.
+
+La auditoría del 4/10 comparó `07_tres_niveles_movimiento.tex`, `08_coverage_observed.tex`, `09_dme_interpretacion.tex` y `11_analyzer_pipeline.tex` con la semántica v1: distinguen Mreq/Mrec/Mobs y condicionan DME a Coverage. Su asignación detallada a 5.1–5.12 figura en `../CH5_TRACEABILITY_AUDIT.md`. Esto comprueba el contenido textual de las fuentes TikZ; la inspección visual final del PDF del capítulo sigue pendiente del compilador.

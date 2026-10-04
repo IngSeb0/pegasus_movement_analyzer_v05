@@ -12,6 +12,6 @@
 | Master y dos workers anunciados | Bloqueado por disponibilidad | `condor_status -startd` sin anuncios; worker1/2 inaccesibles el 3/10 |
 | Snapshot por host y versiones | Parcial | Master capturado; workers pendientes |
 | Presupuesto de tiempo/disco | Pendiente | Medir con piloto autorizado; no extrapolar del tamaño de payload |
-| Aprobación de campaña larga | Pendiente | Presentar matriz, costo y estado de pool antes de iniciar 117 casos |
+| Aprobación de campaña larga | Pendiente | Presentar matriz, costo y estado de pool antes de iniciar 129 workflows propuestos |
 
 La ausencia de SSH directo a un worker no impide por sí sola la ejecución vía HTCondor. La condición decisiva es disponer de `startd`/slots válidos en el collector y comprobar el placement realmente observado. No se ejecutaron nuevos workflows ni se cambió la configuración del pool en esta fase.

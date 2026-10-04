@@ -8,7 +8,7 @@
 - `feat/analyzer-v1`: commit de cierre `3f44f30a9540861fbe1eb0e0a515a6f9d7d79e6`, publicado en GitHub el 4/10/2026; padre `5600ee17f5da7e48d46689cb8bf0b4e74cbfe158`. El cierre solo cambió README, CHANGELOG y TEST_REPORT. El checkout quedó limpio.
 - `docs/thesis-v1`: rama de documentación creada desde `3f44f30`, con commit `79bd80cd5070fe2e8bff94a67635fe45601799ea` publicado en GitHub el 4/10/2026. Confirmar HEAD/estado antes de continuar; no usar la copia Windows del repo como verdad Git porque SCP altera bits ejecutables.
 - Gate R, Gate D e I0–I13: cerrados según handoff. **Gate I: CLOSED en `3f44f30`**, con suite normal 142 correctas y 1 omitida, integración portable y con cinco runs originales, CLI smoke `VALID`, hashes de 179 archivos portables correctos. Logs finales: `/tmp/gate_i_final_*_3f44f30.log` en master. I14 aún no iniciado; Gate V pendiente.
-- El remoto GitHub se actualizó desde Windows por HTTPS sin force push, usando un bundle Git creado en la VM. La VM no tiene autenticación GitHub funcional; `git fetch origin` por SSH falló por `Permission denied (publickey)`. Las ramas publicadas son `feat/analyzer-v1` y `docs/thesis-v1`. No se hizo merge. La integración GitHub disponible devolvió HTTP 403 al intentar crear un PR; queda pendiente abrirlo desde una sesión con permiso de PR.
+- El remoto GitHub se actualizó desde Windows por HTTPS sin force push, usando un bundle Git creado en la VM. La VM no tiene autenticación GitHub funcional; `git fetch origin` por SSH falló por `Permission denied (publickey)`. Las ramas publicadas son `feat/analyzer-v1` y `docs/thesis-v1`. Dos PRs en borrador se abrieron el 4/10/2026: [#1 Analyzer v1 → main](https://github.com/IngSeb0/pegasus_movement_analyzer_v05/pull/1) y [#2 tesis → feat/analyzer-v1](https://github.com/IngSeb0/pegasus_movement_analyzer_v05/pull/2). No se hizo merge.
 
 ## Topología y entorno
 
@@ -25,8 +25,8 @@ Los cinco runs originales preservados son process 50 MiB, pipeline 50 MiB balanc
 ## Trabajo siguiente
 
 1. Confirmar y recuperar disponibilidad de workers por el administrador/usuario; luego capturar hechos por worker y comprobar startd/slots, sin alterar red ni servicios desde este trabajo.
-2. Revisar matriz de 117 casos y presupuesto con un piloto autorizado; decidir activación de I14 y campaña Gate V. I14 no se inicia automáticamente por haberse cerrado Gate I.
-3. Abrir para revisión un PR de `feat/analyzer-v1` hacia `main` y otro de `docs/thesis-v1` hacia `feat/analyzer-v1` si procede, sin merge automático.
+2. Revisar matriz de 129 workflows propuestos (117 base + 12 estructurales) y presupuesto con un piloto autorizado; decidir activación de I14 y campaña Gate V. I14 no se inicia automáticamente por haberse cerrado Gate I.
+3. Revisar los PRs #1 y #2; decidir el momento de integración después de revisar diffs y estado del proyecto, sin merge automático.
 4. Integrar capítulos 1–6 al manuscrito, resolver compilador LaTeX del editor y completar capítulos 7–9 tras Gate V.
 
 **Precedencia:** Requirements cerrados → Design Spec cerrado → decisiones posteriores explícitas → implementación real verificada → evidencia experimental → documentos académicos derivados → históricos. Si dos registros discrepan, localizar fecha y commit antes de adoptar uno.
