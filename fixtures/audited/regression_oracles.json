@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "process_50mib_same_w1": {
+    "source_run": "process-same-w1-20260917-232331",
+    "root_wf_uuid": "8454928b-a095-4148-9cf3-b2a788f4738b",
+    "file_size_bytes": 52428800,
+    "required_movement_bytes": 104857600,
+    "declared_movement_bytes": 104857600,
+    "observed_movement_bytes": 104857600,
+    "coverage": 1.0,
+    "dme": 1.0,
+    "evidence_level": "JOB_LEVEL_RECONCILED",
+    "reconciliation_mode": "SUCCESSFUL_MANIFEST",
+    "input_sandbox": {
+      "file_count": 7,
+      "bytes": 70756826
+    },
+    "output_sandbox": {
+      "file_count": 3,
+      "bytes": 52434969
+    }
+  },
+  "pipeline_10mib": {
+    "file_size_bytes": 10485760,
+    "declared_movement_bytes": 62914560,
+    "observed_movement_bytes": 62914560,
+    "coverage": 1.0,
+    "placements": {
+      "SAME": {
+        "source_run": "pipeline-same-w1-20260917-171234",
+        "root_wf_uuid": "1742f123-d0b9-4043-bc2a-ccc1a0ffc407",
+        "workers": [
+          "pegasus-worker1",
+          "pegasus-worker1",
+          "pegasus-worker1"
+        ],
+        "required_movement_bytes": 20971520,
+        "dme": 0.3333333333333333
+      },
+      "BALANCED": {
+        "source_run": "pipeline-balanced-local-20260917-171539",
+        "root_wf_uuid": "e412f00b-0655-4158-b91d-03372c17e536",
+        "workers": [
+          "pegasus-worker1",
+          "pegasus-worker1",
+          "pegasus-worker2"
+        ],
+        "required_movement_bytes": 31457280,
+        "dme": 0.5
+      },
+      "CROSS": {
+        "source_run": "pipeline-cross-20260917-171907",
+        "root_wf_uuid": "75042793-dabd-4210-a724-c3e05b5e7287",
+        "workers": [
+          "pegasus-worker1",
+          "pegasus-worker2",
+          "pegasus-worker1"
+        ],
+        "required_movement_bytes": 41943040,
+        "dme": 0.6666666666666666
+      }
+    }
+  },
+  "negative_retry": {
+    "expected_reason": "RETRY_NOT_SEPARABLE",
+    "expected_coverage": 0.0,
+    "observed_movement_bytes": null,
+    "dme": null
+  }
+}

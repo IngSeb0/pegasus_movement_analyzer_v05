@@ -1,32 +1,57 @@
-Pegasus Data Movement Analyzer v0.5 — Test report
-=================================================
+Pegasus Data Movement Analyzer v1 — Gate I execution report
+==========================================================
 
-1. Unit/integration tests
+Date: 2026-10-03 (pegasus-master, America/Bogota)
+Repository: /home/luis/pegasus_movement_analyzer_v05
+Branch: feat/analyzer-v1
+Analyzer source baseline: 5600ee17f5da7e48d46689cb8bf0b4e74cbfe158
+Scope: preserved artifacts only; no Pegasus workflows were launched.
+
+1. Normal suite
    Command: python3 -m unittest discover -s tests -v
-   Result: 3/3 OK
+   Result: 142 tests run; OK (skipped=1); exit code 0.
+   The skipped test is the opt-in preserved-run integration.
+   Log: /tmp/gate_i_suite_20261003.log
 
-2. Reconstructed Distribution 10 MiB
-   Placement from archived tracing:
-     T1 worker2
-     T2 worker2
-     T3 worker2
-     T4 worker2
-     T5 worker1
-   Result:
-     M_req = 22.5 MiB
-     M_obs = 40.0 MiB
-     M_obs - M_req = 17.5 MiB
-     M_req / M_obs = 0.5625
-     valid = yes
+2. Portable preserved-run integration
+   Environment: PEGASUS_EXPERIMENTS_ROOT=$PWD/fixtures/audited/runs
+                PEGASUS_RUN_INTEGRATION=1
+   Command: python3 -m unittest tests.integration.test_preserved_runs -v
+   Result: 1 test method, 5 audited run subtests; OK; exit code 0.
+   Log: /tmp/gate_i_portable_20261003.log
 
-3. Compatibility with real archived HTCondor history.long
-   Source: condor-slot-trace-20260913-163101/master/history.long
-   Result: parser recovered T1..T5 placement correctly.
-   Status: OK
+3. Original preserved-run integration on pegasus-master
+   Environment: PEGASUS_EXPERIMENTS_ROOT=$HOME/pegasus-lab/pegasus_avance_semana_1_6/experiments
+                PEGASUS_RUN_INTEGRATION=1
+   Command: python3 -m unittest tests.integration.test_preserved_runs -v
+   Result: 1 test method, 5 audited run subtests; OK; exit code 0.
+   Log: /tmp/gate_i_real_20261003.log
 
-4. Python compilation check
-   Command: python3 -m compileall -q pegasus_movement tools tests
-   Result: OK
+4. Portable artifact integrity
+   Command: cd fixtures/audited/runs && sha256sum -c MANIFEST.sha256
+   Result: 179 entries OK; exit code 0.
+   Log: /tmp/gate_i_manifest_20261003.log
 
-Note: the Distribution run fixture is a minimal reconstruction from real project evidence;
-it is not a byte-for-byte copy of the original Pegasus run0001 directory.
+5. CLI smoke on an original preserved run
+   Run: process-same-w1-20260917-232331/luis/pegasus/dm-process/run0001
+   History: fixtures/audited/history/process_50mib.long
+   Command: python3 tools/analyze_run_v1.py --run <run> --history-file <history> --out /tmp/gate_i_cli_20261003_final
+   Result: exit code 0; status VALID; metric status CALCULATED.
+   RequiredMovement: 104857600 B
+   DeclaredMovement: 104857600 B
+   Coverage: 1.0
+   ObservedMovement: 104857600 B
+   DME: 1.0
+   ObservedMinusRequired: 0 B
+   Outputs: analysis.json, summary.tsv, scientific_files.tsv,
+            task_placement.tsv, required_movement.tsv,
+            declared_movement.tsv, transfer_evidence.tsv, REPORT.txt.
+   Log: /tmp/gate_i_cli_20261003.log
+
+These checks establish implementation/regression evidence for Gate I.
+They are not final Gate V experimental results. The independent
+portable and original-run integration commands exercise the opt-in
+integration once each, avoiding a duplicate full 142-test run.
+
+Historical v0.5 test results (including the old 3/3 report) belong to
+the v0.5 baseline. They are not the test count for Analyzer v1.

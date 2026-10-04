@@ -1,0 +1,14 @@
+[
+  {
+    "_id": "data_task",
+    "_type": "file",
+    "_attributes": {
+      "user": "luis",
+      "size": "2879",
+      "ctime": "2026-09-02T00:59:12.469450",
+      "checksum.type": "sha256",
+      "checksum.value": "4cc5a30cf85253c035bed2ae92269a939089a0f0d925b6088aba5d82f3694bad",
+      "checksum.timing": "0.093"
+    }
+  }
+]

@@ -1,0 +1,83 @@
+x-pegasus:
+  apiLang: python
+  createdBy: luis
+  createdOn: 09-17-26T23:23:31Z
+pegasus: 5.0.4
+name: dm-process
+metadata:
+  pattern: process
+  size_mib: '50'
+  branches: '4'
+  stages: '3'
+  placement: same-w1
+siteCatalog:
+  sites:
+  - name: local
+    arch: x86_64
+    os.type: linux
+    directories:
+    - type: sharedScratch
+      path: /home/luis/pegasus-lab/pegasus_avance_semana_1_6/experiments/process-same-w1-20260917-232331/scratch
+      sharedFileSystem: false
+      fileServers:
+      - url: file:///home/luis/pegasus-lab/pegasus_avance_semana_1_6/experiments/process-same-w1-20260917-232331/scratch
+        operation: all
+    - type: localStorage
+      path: /home/luis/pegasus-lab/pegasus_avance_semana_1_6/experiments/process-same-w1-20260917-232331/outputs
+      sharedFileSystem: false
+      fileServers:
+      - url: file:///home/luis/pegasus-lab/pegasus_avance_semana_1_6/experiments/process-same-w1-20260917-232331/outputs
+        operation: all
+  - name: condorpool
+    arch: x86_64
+    os.type: linux
+    directories: []
+    profiles:
+      condor:
+        universe: vanilla
+        request_cpus: '1'
+        request_memory: 256
+      pegasus:
+        style: condor
+        auxillary.local: 'true'
+replicaCatalog:
+  replicas:
+  - lfn: input.dat
+    pfns:
+    - site: local
+      pfn: /home/luis/pegasus-lab/pegasus_avance_semana_1_6/experiments/process-same-w1-20260917-232331/inputs/input.dat
+transformationCatalog:
+  transformations:
+  - name: data_task
+    sites:
+    - name: local
+      pfn: /home/luis/pegasus-lab/pegasus_avance_semana_1_6/bin/data_task.py
+      type: stageable
+      arch: x86_64
+      os.type: linux
+jobs:
+- type: job
+  name: data_task
+  id: ID0000001
+  arguments:
+  - process
+  - --input
+  - input.dat
+  - --output
+  - process.out
+  uses:
+  - lfn: input.dat
+    type: input
+  - lfn: process.out
+    type: output
+    stageOut: true
+    registerReplica: true
+  profiles:
+    condor:
+      requirements: regexp("pegasus-worker1", TARGET.Name)
+  metadata:
+    pattern: process
+    role: process
+    controlled_worker: worker1
+    placement: same-w1
+jobDependencies: []

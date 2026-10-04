@@ -1,0 +1,62 @@
+{
+  "process_50mib": {
+    "run_rel": "process-same-w1-20260917-232331/luis/pegasus/dm-process/run0001",
+    "history": "process_50mib.long",
+    "scientific_tasks": 1,
+    "verifications": 2,
+    "required_movement_bytes": 104857600,
+    "declared_movement_bytes": 104857600,
+    "observed_movement_bytes": 104857600,
+    "coverage": 1.0,
+    "dme": 1.0,
+    "reconciliation_mode": "SUCCESSFUL_MANIFEST"
+  },
+  "pipeline_50mib_balanced": {
+    "run_rel": "pipeline-balanced-local-20260917-232616/luis/pegasus/dm-pipeline/run0001",
+    "history": "pipeline_50mib_balanced.long",
+    "scientific_tasks": 3,
+    "verifications": 6,
+    "required_movement_bytes": 157286400,
+    "declared_movement_bytes": 314572800,
+    "observed_movement_bytes": 314572800,
+    "coverage": 1.0,
+    "dme": 0.5,
+    "reconciliation_mode": "SUCCESSFUL_MANIFEST"
+  },
+  "pipeline_10mib_same": {
+    "run_rel": "pipeline-same-w1-20260917-171234/luis/pegasus/dm-pipeline/run0001",
+    "history": "pipeline_10mib_same.long",
+    "scientific_tasks": 3,
+    "verifications": 6,
+    "required_movement_bytes": 20971520,
+    "declared_movement_bytes": 62914560,
+    "observed_movement_bytes": 62914560,
+    "coverage": 1.0,
+    "dme": 0.3333333333333333,
+    "reconciliation_mode": "SUCCESSFUL_MANIFEST"
+  },
+  "pipeline_10mib_balanced": {
+    "run_rel": "pipeline-balanced-local-20260917-171539/luis/pegasus/dm-pipeline/run0001",
+    "history": "pipeline_10mib_balanced.long",
+    "scientific_tasks": 3,
+    "verifications": 6,
+    "required_movement_bytes": 31457280,
+    "declared_movement_bytes": 62914560,
+    "observed_movement_bytes": 62914560,
+    "coverage": 1.0,
+    "dme": 0.5,
+    "reconciliation_mode": "SUCCESSFUL_MANIFEST"
+  },
+  "pipeline_10mib_cross": {
+    "run_rel": "pipeline-cross-20260917-171907/luis/pegasus/dm-pipeline/run0001",
+    "history": "pipeline_10mib_cross.long",
+    "scientific_tasks": 3,
+    "verifications": 6,
+    "required_movement_bytes": 41943040,
+    "declared_movement_bytes": 62914560,
+    "observed_movement_bytes": 62914560,
+    "coverage": 1.0,
+    "dme": 0.6666666666666666,
+    "reconciliation_mode": "SUCCESSFUL_MANIFEST"
+  }
+}

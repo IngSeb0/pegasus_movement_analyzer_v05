@@ -1,0 +1,14 @@
+[
+  {
+    "_id": "pipeline.stage3.dat",
+    "_type": "file",
+    "_attributes": {
+      "user": "nobody",
+      "size": "52428800",
+      "ctime": "2026-09-17T23:28:51-05:00",
+      "checksum.type": "sha256",
+      "checksum.value": "d1213b3755309cbb0670282b04322418f3fdba15fb982d05424b81b3cfda7ffa",
+      "checksum.timing": "0.48"
+    }
+  }
+]
