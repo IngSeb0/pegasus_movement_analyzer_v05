@@ -1,0 +1,83 @@
+######################################################################
+# PEGASUS WMS GENERATED DAG FILE
+# DAG dm-process
+# Index = 0, Count = null
+######################################################################
+MAXJOBS cleanup 4
+MAXJOBS registration 1
+MAXJOBS stageout 10
+MAXJOBS stagein 10
+
+JOB create_dir_dm-process_0_local 00/00/create_dir_dm-process_0_local.sub
+SCRIPT POST create_dir_dm-process_0_local /usr/bin/pegasus-exitcode  -r $RETURN -l dm-process-0.exitcode.log -M dm-process-0.cache.meta   .//00/00/create_dir_dm-process_0_local.out
+PRIORITY create_dir_dm-process_0_local 800
+RETRY create_dir_dm-process_0_local 1
+VARS create_dir_dm-process_0_local My.DAGNodeRetry="$(RETRY)"
+
+JOB stage_in_remote_local_0_0 00/00/stage_in_remote_local_0_0.sub
+SCRIPT POST stage_in_remote_local_0_0 /usr/bin/pegasus-exitcode  -r $RETURN -l dm-process-0.exitcode.log -M dm-process-0.cache.meta   .//00/00/stage_in_remote_local_0_0.out
+PRIORITY stage_in_remote_local_0_0 700
+RETRY stage_in_remote_local_0_0 1
+CATEGORY stage_in_remote_local_0_0 stagein
+VARS stage_in_remote_local_0_0 My.DAGNodeRetry="$(RETRY)"
+
+JOB stage_in_local_local_0_0 00/00/stage_in_local_local_0_0.sub
+SCRIPT POST stage_in_local_local_0_0 /usr/bin/pegasus-exitcode  -r $RETURN -l dm-process-0.exitcode.log -M dm-process-0.cache.meta   .//00/00/stage_in_local_local_0_0.out
+PRIORITY stage_in_local_local_0_0 700
+RETRY stage_in_local_local_0_0 1
+CATEGORY stage_in_local_local_0_0 stagein
+VARS stage_in_local_local_0_0 My.DAGNodeRetry="$(RETRY)"
+
+JOB data_task_ID0000001 00/00/data_task_ID0000001.sub
+SCRIPT POST data_task_ID0000001 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dm-process-0.exitcode.log -M dm-process-0.cache.meta   .//00/00/data_task_ID0000001.out
+PRIORITY data_task_ID0000001 20
+RETRY data_task_ID0000001 1
+VARS data_task_ID0000001 My.DAGNodeRetry="$(RETRY)"
+
+JOB clean_up_local_level_3_0 00/00/clean_up_local_level_3_0.sub
+SCRIPT POST clean_up_local_level_3_0 /usr/bin/pegasus-exitcode  -r $RETURN -l dm-process-0.exitcode.log -M dm-process-0.cache.meta   .//00/00/clean_up_local_level_3_0.out
+PRIORITY clean_up_local_level_3_0 1000
+RETRY clean_up_local_level_3_0 1
+CATEGORY clean_up_local_level_3_0 cleanup
+VARS clean_up_local_level_3_0 My.DAGNodeRetry="$(RETRY)"
+
+JOB stage_out_local_local_0_0 00/00/stage_out_local_local_0_0.sub
+SCRIPT POST stage_out_local_local_0_0 /usr/bin/pegasus-exitcode  -r $RETURN -l dm-process-0.exitcode.log -M dm-process-0.cache.meta   .//00/00/stage_out_local_local_0_0.out
+PRIORITY stage_out_local_local_0_0 900
+RETRY stage_out_local_local_0_0 1
+CATEGORY stage_out_local_local_0_0 stageout
+VARS stage_out_local_local_0_0 My.DAGNodeRetry="$(RETRY)"
+
+JOB register_local_0_0 00/00/register_local_0_0.sub
+SCRIPT POST register_local_0_0 /usr/bin/pegasus-exitcode  -r $RETURN -l dm-process-0.exitcode.log -M dm-process-0.cache.meta   .//00/00/register_local_0_0.out
+PRIORITY register_local_0_0 40
+RETRY register_local_0_0 1
+CATEGORY register_local_0_0 registration
+VARS register_local_0_0 My.DAGNodeRetry="$(RETRY)"
+
+JOB clean_up_local_level_4_0 00/00/clean_up_local_level_4_0.sub
+SCRIPT POST clean_up_local_level_4_0 /usr/bin/pegasus-exitcode  -r $RETURN -l dm-process-0.exitcode.log -M dm-process-0.cache.meta   .//00/00/clean_up_local_level_4_0.out
+PRIORITY clean_up_local_level_4_0 1000
+RETRY clean_up_local_level_4_0 1
+CATEGORY clean_up_local_level_4_0 cleanup
+VARS clean_up_local_level_4_0 My.DAGNodeRetry="$(RETRY)"
+
+JOB cleanup_dm-process_0_local 00/00/cleanup_dm-process_0_local.sub
+SCRIPT POST cleanup_dm-process_0_local /usr/bin/pegasus-exitcode  -r $RETURN -l dm-process-0.exitcode.log -M dm-process-0.cache.meta   .//00/00/cleanup_dm-process_0_local.out
+PRIORITY cleanup_dm-process_0_local 1000
+RETRY cleanup_dm-process_0_local 1
+VARS cleanup_dm-process_0_local My.DAGNodeRetry="$(RETRY)"
+
+PARENT  stage_in_remote_local_0_0 CHILD data_task_ID0000001
+PARENT  create_dir_dm-process_0_local CHILD stage_in_remote_local_0_0
+PARENT  create_dir_dm-process_0_local CHILD stage_in_local_local_0_0
+PARENT  clean_up_local_level_3_0 CHILD cleanup_dm-process_0_local
+PARENT  stage_out_local_local_0_0 CHILD register_local_0_0
+PARENT  stage_out_local_local_0_0 CHILD clean_up_local_level_4_0
+PARENT  clean_up_local_level_4_0 CHILD cleanup_dm-process_0_local
+PARENT  data_task_ID0000001 CHILD clean_up_local_level_3_0
+PARENT  data_task_ID0000001 CHILD stage_out_local_local_0_0
+PARENT  stage_in_local_local_0_0 CHILD data_task_ID0000001
+######################################################################
+# End of DAG
+######################################################################
