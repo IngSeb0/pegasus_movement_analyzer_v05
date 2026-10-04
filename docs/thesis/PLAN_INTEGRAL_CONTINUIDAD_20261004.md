@@ -8,7 +8,7 @@
 |---|---|
 | Gate R, Gate D, I0–I13 | Cerrados según Requirements/Design y handoff |
 | Gate I | **CLOSED** en `3f44f30a9540861fbe1eeb0e0a515a6f9d7d79e6`; suite 142 correctas/1 omitida, dos integraciones de cinco runs, CLI smoke `VALID`, fixtures 179 hashes correctos |
-| GitHub | `main=8269f0b`; `feat/analyzer-v1=3f44f30`; `docs/thesis-v1=6749433`, confirmados por `ls-remote` el 4/10; sin merge |
+| GitHub | `main=8269f0b`; `feat/analyzer-v1=3f44f30`; la revisión publicada de `docs/thesis-v1` se consulta en el PR #2. Sin merge |
 | VM | master accesible; Pegasus 5.1.2 y HTCondor 25.12.2 capturados el 3/10 |
 | Workers | worker1 `.137` y worker2 `.139` previstos; el 4/10 no respondieron a un ping desde master y `condor_status -startd` no anunció slots. Causa y hardware desconocidos |
 | Documentos | Capítulos 1–6 redactados como borradores; Capítulo 5 `.tex` editado en sitio, 5.1–5.12; editor LaTeX no logra compilar por entorno |
