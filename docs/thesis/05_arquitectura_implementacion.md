@@ -4,9 +4,9 @@
 
 ## Base de verificación y alcance
 
-La inspección funcional se realizó en `pegasus-master` el 2026-10-03 sobre `feat/analyzer-v1` en `5600ee17f5da7e48d46689cb8bf0b4e74cbfe158`. El cierre documental y las pruebas finales de Gate I se verificaron en el commit local `3f44f30a9540861fbe1eeb0e0a515a6f9d7d79e6`, que solo cambió README, CHANGELOG y TEST_REPORT; no cambió módulos funcionales. La publicación en GitHub sigue pendiente.
+La inspección funcional se realizó en `pegasus-master` el 2026-10-03 sobre `feat/analyzer-v1` en `5600ee17f5da7e48d46689cb8bf0b4e74cbfe158`. El cierre documental y las pruebas finales de Gate I se verificaron en el commit `3f44f30a9540861fbe1eeb0e0a515a6f9d7d79e6`, que solo cambió README, CHANGELOG y TEST_REPORT; no cambió módulos funcionales. El commit se publicó en `origin/feat/analyzer-v1` el 4/10/2026.
 
-Gate R, Gate D, I0–I13 y Gate I están **CLOSED** para la revisión local validada `3f44f30`. La suite normal, la integración portable y con runs originales, y el CLI smoke pasaron sobre ese HEAD. I14 no se inició y Gate V permanece pendiente.
+Gate R, Gate D, I0–I13 y Gate I están **CLOSED** para la revisión validada `3f44f30`. La suite normal, la integración portable y con runs originales, y el CLI smoke pasaron sobre ese HEAD. I14 no se inició y Gate V permanece pendiente.
 
 La especificación se basa en los requisitos, diseño, matriz de trazabilidad, log y plan de implementación, estado maestro, estructura de tesis/presentación, y en el código v1 de `pegasus_movement/` y `tools/analyze_run_v1.py`. Las afirmaciones históricas de v35/v36 no se usan como descripción actual cuando difieren del Analyzer v1.
 

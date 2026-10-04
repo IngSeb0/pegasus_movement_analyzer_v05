@@ -1,6 +1,6 @@
 # I14 y Gate V — estado de preparación (2026-10-03)
 
-**Dependencia de implementación:** Gate I se cerró localmente en `3f44f30a9540861fbe1eeb0e0a515a6f9d7d79e6`: 142 pruebas de la suite normal correctas (una omitida), integración portable y sobre runs originales correcta, CLI smoke `VALID`, árbol limpio. Este cierre habilita *planificar* I14; I14 no está implementado ni ejecutado. El commit remoto aún requiere publicación.
+**Dependencia de implementación:** Gate I se cerró en `3f44f30a9540861fbe1eeb0e0a515a6f9d7d79e6`: 142 pruebas de la suite normal correctas (una omitida), integración portable y sobre runs originales correcta, CLI smoke `VALID`, árbol limpio. Este cierre habilita *planificar* I14; I14 no está implementado ni ejecutado. El commit ya está publicado en `origin/feat/analyzer-v1`.
 
 | Precondición | Estado | Evidencia o acción |
 |---|---|---|
