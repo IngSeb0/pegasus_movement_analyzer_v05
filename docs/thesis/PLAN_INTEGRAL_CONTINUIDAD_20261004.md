@@ -40,6 +40,8 @@
 
 La matriz base contiene `process` con `same-w1` y los otros cuatro patrones con `same-w1`, `balanced-local`, `cross`: 13 condiciones por tamaño. Tres tamaños (1, 10, 50 MiB) y tres repeticiones producen **117 runs**. Cuatro perturbaciones estructurales obligatorias con `same-w1`, 10 MiB y tres repeticiones agregan **12 runs**: pipeline de 4 etapas, distribution/aggregation/redistribution de 6 ramas. El total es **129 workflows nuevos propuestos**. Los casos negativos son análisis offline adicionales. La ejecución debe incluir `pattern`, `placement`, `size`, `replicate`, parámetros del workflow, commit Analyzer, versiones Pegasus/HTCondor, snapshot de entorno, oráculos, rutas y hashes. La predicción cualitativa es que `Mreq` puede crecer con ubicaciones distintas; `Mrec` puede mantenerse para contratos por job fijos; `Mobs` y DME solo se informan con cobertura completa.
 
+El piloto presupuestal concreto se detalla en `validation/PILOT_BUDGET_PLAN.md`: process same-w1, pipeline balanced-local y redistribution cross a 10 MiB, una repetición por caso, tomados de la matriz. Permanecen `NOT_RUN` y requieren autorización específica; podrán contar dentro de 129 solo si I14/protocolo/entorno se mantienen fijos.
+
 **Decisiones pendientes del usuario antes de trabajo dependiente:** (i) restablecer/autorizar intervención sobre VMs worker si no están disponibles; (ii) revisar la matriz propuesta de 129 workflows, incluidos los 12 estructurales exigidos por Requirements; (iii) autorizar un piloto nuevo y después la campaña larga con duración/espacio medidos; (iv) decidir el momento de merge de cada PR tras revisión. La falta de respuesta no constituye aprobación.
 
 ## 5. Registro de límites y recuperación

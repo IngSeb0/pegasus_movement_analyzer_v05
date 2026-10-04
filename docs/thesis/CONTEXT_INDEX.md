@@ -25,6 +25,7 @@ Las copias de gobernanza bajo `context/` preservan el texto histórico y añaden
 | `figures/FIGURE_INDEX.md` | Fuentes TikZ/PDF del handoff y asignación a capítulos/slides |
 | `presentation/PRESENTATION_AUDIT.md` | Estado y cambios de las 20 slides Windows |
 | `validation/I14_READINESS.md` | Dependencias antes de runner/campaña |
+| `validation/PILOT_BUDGET_PLAN.md` | Tres filas piloto propuestas y mediciones para presupuesto, no ejecutadas |
 | `validation/EXPERIMENT_MATRIX.md` y `experiment_cases_proposed.csv` | 129 filas (117 base + 12 estructurales), todas `NOT_RUN` |
 | `validation/ORACLE_PROTOCOL.md` | Comparación manual e invariantes de evidencia |
 | `validation/RUNBOOK.md` | Secuencia de captura y análisis futuro |

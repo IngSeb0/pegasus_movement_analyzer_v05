@@ -12,6 +12,8 @@
 
 El usuario confirma que el entorno previsto incluye ambos workers. La ausencia de anuncios en esta captura no demuestra que la arquitectura sea de un solo host ni identifica por sí sola la causa de la desconexión. `ip neigh` informó `FAILED` para ambas direcciones.
 
+**Seguimiento 2026-10-04:** desde el master, `condor_status -startd -af Name Machine State Activity Cpus Memory` continuó sin mostrar slots. Un `ping` a cada dirección de worker (`.137` y `.139`) tuvo 100 % de pérdida. En este seguimiento no se repitió SSH a los workers; los intentos SSH fallidos corresponden a la captura del 2026-10-03. No se modificó la infraestructura.
+
 ## Hechos confirmados en master
 
 | Dato | Observación y fuente |
