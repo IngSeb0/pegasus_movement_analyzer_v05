@@ -1,76 +1,88 @@
-# Guion de sustentación — versión clara
+# Guion de sustentación — versión sencilla
 
 **Duración sugerida:** 7–9 minutos.  
-**Idea que debe recordar el jurado:** las dependencias de un workflow y el lugar real donde corren sus tareas determinan qué archivos deben estar disponibles; el Analyzer compara ese requerimiento lógico con el payload científico que la ejecución declara y HTCondor permite confirmar a nivel de job.
+**Idea central:** comparar el movimiento de archivos que requieren las tareas con el payload científico que los registros disponibles permiten confirmar.
 
-## 1. Título — Movimiento de datos en workflows científicos
+## 1. Movimiento de datos en workflows científicos
 
-“Mi trabajo estudia una pregunta concreta: dado un workflow y el lugar donde corrieron realmente sus tareas, ¿cuántos datos requieren sus dependencias y cuánto payload confirma la evidencia del mecanismo de ejecución? La respuesta ayuda a comparar placements. No estoy midiendo paquetes de red.”
+“Mi trabajo responde una pregunta: dado un workflow y el worker donde corrió cada tarea, ¿cuánto movimiento exigen sus dependencias y cuánto payload científico declara y confirma la ejecución? No estoy midiendo paquetes de red.”
 
 ## 2. El problema
 
-“En big data, las tareas trabajan sobre archivos. Si una tarea consume un archivo producido en otra ubicación, ese archivo tiene que estar disponible donde corre el consumidor. Cuando hay muchos datos y muchas dependencias entre ubicaciones, la comunicación puede convertirse en un cuello de botella. La literatura estudia este problema; mi experimento no mide tiempo perdido ni tráfico físico de red.”
+“En Big Data, los workflows manejan archivos grandes. La salida de una tarea puede ser la entrada de otra, y ese archivo debe llegar a la máquina donde corre la tarea que lo necesita. Cuando hay muchos datos y dependencias entre máquinas, mover archivos puede convertirse en un cuello de botella.”
 
-## 3. Qué aporta la investigación previa
+“Saber que se transfirieron 500 GB no dice, por sí solo, si era mucho o poco. Para interpretarlo hace falta saber qué movimiento exigían el workflow y el lugar donde corrió cada tarea.”
 
-“Los trabajos consultados explican partes distintas del problema. Bharathi y colegas describen patrones de workflows; Deelman y colegas explican cómo Pegasus ejecuta workflows científicos. Pietri y Sakellariou consideran el costo de comunicación al programar tareas. Lee y colegas siguen el ciclo de vida de los datos. Tang y colegas relacionan semántica de datos con operaciones de I/O. Devarajan y colegas presentan DFTracer para recolectar trazas de varias capas. Aurelio Vivas Meza estudia estrategias de scheduling que incluyen movimiento y localidad NUMA.
+“Por ejemplo, 500 GB observados no dicen si las dependencias requerían 300 GB o los 500 GB. Es una pregunta ilustrativa, no un resultado de mi experimento.”
 
-“No afirmo que esas métricas sean inútiles. Responden preguntas diferentes. Mi pregunta reúne DAG, placement observado, archivos científicos y evidencia de Pegasus/HTCondor para comparar movimiento lógico requerido con payload confirmado. La tesis tampoco confunde movimiento entre workers con localidad dentro de un nodo, como NUMA.”
+## 3. Métricas y trabajos relacionados
+
+“Bytes transferidos, duración y ancho de banda describen la transferencia. El tiempo total describe cuánto duró el workflow. Son medidas útiles, pero no comparan ese volumen con los destinos de archivo que exigían las dependencias.”
+
+“La investigación relacionada aporta piezas importantes. Bharathi y Deelman describen patrones de workflows y Pegasus. Pietri y Sakellariou incorporan comunicación al programar tareas. Lee estudia ciclos de vida de datos y Tang conecta datos con operaciones de entrada y salida. Devarajan presenta DFTracer para observar flujos desde varias capas. Aurelio Vivas Meza estudia scheduling y movimiento de datos, incluida la localidad NUMA. Cada trabajo responde preguntas relacionadas desde otra perspectiva; mi propuesta las complementa.”
 
 ## 4. Pregunta de investigación
 
-“Esta es la pregunta que organiza el trabajo: dado un workflow y el placement real de sus tareas, ¿cuánto movimiento de datos exigen sus dependencias entre ubicaciones y cuánto movimiento produce realmente el mecanismo de ejecución? En esta investigación, ‘produce’ se estima con manifiestos de transferencia y evidencia de HTCondor por job; no con captura de paquetes.”
+“Cuando digo ubicación de una tarea, me refiero al worker donde realmente se ejecutó. Con esa definición, la pregunta es: para este workflow y estas ubicaciones, ¿cuánto movimiento exigen sus dependencias y cuánto payload científico declara y confirma la ejecución?”
 
 ## 5. Tres cantidades
 
-“Separé tres cosas. `M_req` es el movimiento lógico necesario según los archivos, el workflow y el placement. `M_rec` es lo que los manifiestos de los jobs declaran transferir. `M_obs` es el tamaño de las ocurrencias científicas declaradas que sí se pueden reconciliar con el historial de HTCondor. `Coverage` indica qué fracción de las ocurrencias declaradas quedó confirmada. Si la cobertura es incompleta, no presento `M_obs` ni DME como valores cerrados.”
+“`M_req` es el movimiento lógico que exige el workflow según los archivos y los destinos donde se necesitan. `M_rec` es lo que los manifiestos de los jobs declaran transferir. `M_obs` suma los tamaños de esas ocurrencias científicas cuando la evidencia de HTCondor permite conciliarlas por job.”
+
+“No son la misma frontera de conteo: `M_req` cuenta destinos lógicos; `M_obs` cuenta ocurrencias declaradas y confirmadas por job. `M_obs` tampoco es una captura de todo el tráfico de red.”
 
 ## 6. Cómo leer las fórmulas
 
-“Para `M_req`, tomo el tamaño de cada archivo y cuento los destinos nuevos distintos donde se necesita. Si varias tareas del mismo worker usan el archivo, ese worker no se cuenta varias veces. `D_sci` son las ocurrencias científicas declaradas en manifiestos; `C_sci` es el subconjunto confirmado por la reconciliación del historial. La cobertura es el tamaño de `C_sci` dividido por el tamaño de `D_sci`. Con cobertura completa, sumo tamaños confirmados para `M_obs`. Finalmente, DME es `M_req / M_obs`. La DME compara volúmenes; no mide rapidez ni prueba por sí sola que la diferencia sea desperdicio.”
+“Para calcular `M_req`, tomo el tamaño de cada archivo y lo multiplico por la cantidad de nuevos destinos que ese archivo necesita según las dependencias y el worker de cada tarea. Después sumo los archivos.”
 
-## 7. Dónde corre el sistema
+“`D_sci` es el conjunto de ocurrencias científicas declaradas por los manifiestos. `C_sci` es el conjunto que se pudo relacionar con la evidencia de HTCondor por job. `Coverage` es la fracción confirmada. Si es igual a uno, sumamos el tamaño de las ocurrencias confirmadas para obtener `M_obs`. Finalmente, DME divide `M_req` entre `M_obs`. Esa razón compara volúmenes definidos de manera distinta; no identifica bytes desperdiciados.”
 
-“Durante la ejecución, Pegasus y los servicios centrales de HTCondor están en `pegasus-master`; los jobs científicos corren en `pegasus-worker1` y `pegasus-worker2`. Después del workflow, Analyzer lee el run preservado y el historial exportado. Es post-mortem: no cambia el scheduler ni decide el placement. El diagrama separa control, ejecución y análisis; no afirma una ruta física de archivos.”
+## 7. Ejemplo del cálculo
 
-## 8. Patrones del workflow
+“Aquí tenemos tres tareas y dos formas de ubicarlas. En ambos casos, la evidencia confirma seis ocurrencias científicas de 10 MiB: `M_obs = 60 MiB` y `Coverage = 6/6 = 1`.”
 
-“Validé cinco formas: process, pipeline, distribución, agregación y redistribución. Cada dibujo muestra quién produce y quién consume archivos. La forma del workflow y el placement son dos cosas diferentes: el mismo patrón puede ejecutarse en un solo worker o repartido entre workers.”
+“Si las tres tareas corren en W1, el cálculo de referencia da `M_req = 20 MiB`; entonces DME es `20/60 = 0.33`. Si T1 corre en W1, T2 en W2 y T3 vuelve a W1, el requerimiento es `40 MiB`; DME es `40/60 = 0.67`.”
 
-## 9. Método y validación
+“El ejemplo muestra cómo cambió la referencia lógica al repartir tareas entre workers. No demuestra que los 20 MiB de diferencia sean bytes físicos evitables ni que una alternativa sea más rápida.”
 
-“Fijé workflow, archivos y placement esperado; ejecuté Pegasus y HTCondor; comparé manifiestos con el historial por job; y contrasté los cálculos del Analyzer con oráculos manuales. Gate V cubrió cinco patrones, diez condiciones y 31 workflows independientes, con tres o más réplicas por condición. Las 31 ejecuciones fueron válidas, la ubicación observada coincidió con la planeada y la cobertura fue completa. La conclusión se limita a este pool de dos workers y a las condiciones ensayadas.”
+## 8. Formas de los workflows
 
-## 10. Ejemplo manual de pipeline
+“Validamos cinco formas: process, pipeline, distribución, agregación y redistribución. Esas palabras describen quién produce un archivo y quién lo consume. La ubicación indica en qué worker corre cada tarea. Son dos aspectos distintos del mismo workflow.”
 
-“Cada una de las seis ocurrencias científicas del ejemplo pesa 10 MiB. El historial confirma las seis; por tanto, `M_obs = 6 × 10 = 60 MiB` en ambos placements. Si las tareas están en W1, el requerimiento del modelo es 20 MiB: `20/60 = 0.33`. Si repartimos T1, T2 y T3 entre W1 y W2 como muestra el diagrama, `M_req = 40 MiB`: `40/60 = 0.67`. La flecha muestra la dependencia lógica de archivos, no una ruta física de red.”
+## 9. Despliegue del sistema
 
-## 11. Resultados al comparar placements
+“Durante la ejecución, Pegasus y los servicios centrales de HTCondor corren en el master. Los jobs científicos corren en worker1 y worker2. Después, Analyzer procesa el run preservado y el historial exportado. Es un análisis post-mortem; no decide dónde corre cada tarea ni se inserta dentro del workflow.”
 
-“En las cuatro comparaciones del gráfico, DME aumenta cuando el placement ensayado requiere más ubicaciones nuevas. Pipeline pasa de 0.33 a 0.67; distribución y agregación, de 0.50 a 0.75; redistribución, de 0.25 a 0.625. En cada patrón comparado, el payload confirmado se mantuvo igual y cambió el requerimiento lógico. Esto demuestra que la métrica distingue esos placements en la matriz probada; no demuestra que uno sea más rápido.”
+## 10. Validación
+
+“Fijamos el workflow y sus archivos, ejecutamos Pegasus y HTCondor, relacionamos los manifiestos con el historial de cada job y comparamos los resultados del Analyzer con cálculos independientes. Se cubrieron cinco patrones, diez condiciones y 31 ejecuciones, con al menos tres réplicas por condición. Las 31 fueron válidas y `Coverage` fue uno. Esta evidencia corresponde al pool de dos workers y a las condiciones ensayadas.”
+
+## 11. Resultados
+
+“El gráfico muestra que, en los cuatro patrones comparados, repartir las tareas cambió `M_req` y DME mientras el volumen manifestado y confirmado se mantuvo. Esto demuestra que la métrica distingue esas configuraciones en las condiciones probadas. No demuestra que una haya mejorado el tiempo de ejecución.”
 
 ## 12. Costo de obtener la evidencia
 
-“Separé preparación de archivos, análisis offline y almacenamiento preservado. La preparación tomó 2.53 segundos promedio; Analyzer, 0.73 segundos, con aproximadamente 0.36 segundos de CPU. El RSS pico promedio fue 22.49 MiB. Los informes ocuparon 0.185 MiB por run y la evidencia adicional preservada, 0.701 MiB. Los logs nativos se generan durante el workflow, pero no aislé su costo con una comparación ON/OFF; no digo que Analyzer aumente el runtime en cierto porcentaje.”
+“Separamos preparación de archivos, análisis offline y almacenamiento preservado. En esta campaña la preparación tomó 2.53 segundos en promedio; Analyzer, 0.73 segundos de wall-clock y 0.36 segundos de CPU. La memoria pico fue 22.49 MiB. No añadimos un tracer adicional dentro de los jobs ni medimos un control de logging encendido frente a apagado; por eso no atribuimos a Analyzer un porcentaje del runtime.”
 
-## 13. Para qué sirve y qué no mide
+## 13. Utilidad
 
-“La utilidad demostrada es comparar placements y patrones bajo una misma definición, identificar cuáles exigen más ubicaciones de datos y escoger qué casos conviene estudiar después. Eso puede orientar decisiones de placement o staging, pero su impacto en tiempo, costo o rendimiento debe medirse por separado. No mide tráfico de red, ancho de banda, I/O físico, RAM, NUMA, uso de CPU/GPU ni optimalidad del scheduler.”
+“Para un equipo que ejecuta workflows, esta referencia ayuda a comparar dónde corren las tareas, detectar qué patrones requieren más destinos de archivos y decidir qué configuraciones vale la pena investigar. Si luego se cambia el staging o la distribución de tareas, el efecto en tiempo y costo se mide aparte.”
 
 ## 14. Cierre
 
-“En síntesis, esta tesis conecta tres piezas que deben leerse juntas: dependencias del workflow, placement observado y evidencia de transferencia de Pegasus/HTCondor. El resultado es una comparación explicable y reproducible para los casos evaluados. Su alcance termina ahí: es una métrica de movimiento de archivos definida por el modelo y por las trazas disponibles, no una medición universal del costo físico de mover datos.”
+“La conclusión para el cliente es sencilla: el volumen transferido necesita contexto. Esta métrica añade una referencia basada en las dependencias y en el worker donde corrió cada tarea. Sirve para comparar y elegir qué revisar; no promete ahorro ni reemplaza las mediciones de tiempo, red o costo.”
 
-## Respuestas breves si preguntan
+## Respuestas cortas
 
-**¿`M_obs` son bytes de red?**  
-“No. Son tamaños de ocurrencias científicas declaradas y confirmadas con estadísticas de transferencia HTCondor por job. No hay captura packet-level.”
+**¿`M_obs` son bytes de red?**
+“No. Son tamaños de archivos científicos declarados y conciliados con evidencia de HTCondor por job.”
 
-**¿`M_obs - M_req` son bytes desperdiciados?**  
-“No puedo concluir eso. Las dos cantidades comparten run y payload científico, pero cuentan cosas distintas: ubicaciones requeridas y ocurrencias de manifiesto confirmadas.”
+**¿La diferencia `M_obs - M_req` son bytes desperdiciados?**
+“No puedo concluir eso: cada valor sigue una regla de conteo distinta.”
 
-**¿La DME demuestra que un placement es mejor?**  
-“Demuestra cómo cambia la razón entre estas cantidades. Para decir que mejora el runtime, el ancho de banda o el costo, tendría que medir esas variables aparte.”
+**¿La métrica demuestra que un worker es más rápido?**
+“No. Compara volúmenes; el tiempo debe medirse aparte.”
 
-**¿Qué indican los papers?**  
-“Que la estructura de workflows, el costo de comunicación, los ciclos de vida de datos, el I/O y la localidad NUMA son líneas de investigación relacionadas. Mi aporte es una pregunta de medición post-mortem acotada a Pegasus/HTCondor y a los archivos y placements que sus evidencias permiten reconstruir.”
+**¿Qué aportan los artículos?**
+“Dan contexto sobre workflows, scheduling, flujos de datos, I/O, trazas y NUMA. Mi trabajo conecta esas ideas con una comparación post-mortem acotada a archivos científicos y evidencia de Pegasus/HTCondor.”

@@ -62,7 +62,7 @@ Las copias en `fixtures/audited/runs/` preservan los artefactos necesarios para 
 
 ## Material de tesis
 
-- Nueva presentación: [`docs/thesis/presentation/PRESENTACION_DATA_MOVEMENT_CLARA_20261005.pptx`](docs/thesis/presentation/PRESENTACION_DATA_MOVEMENT_CLARA_20261005.pptx)
+- Presentación vigente: [`docs/thesis/presentation/PRESENTACION_DATA_MOVEMENT_PROBLEMA_CLARO_20261005.pptx`](docs/thesis/presentation/PRESENTACION_DATA_MOVEMENT_PROBLEMA_CLARO_20261005.pptx)
 - Guion oral: [`docs/thesis/presentation/GUION_SUSTENTACION_CLARO_20261005.md`](docs/thesis/presentation/GUION_SUSTENTACION_CLARO_20261005.md)
 - Auditoría de frontera de medición: [`docs/thesis/presentation/AUDITORIA_FRONTERA_METRICA_20261005.md`](docs/thesis/presentation/AUDITORIA_FRONTERA_METRICA_20261005.md)
 - Código fuente reproducible de la presentación: [`docs/thesis/presentation/build_presentacion_clara_20261005.mjs`](docs/thesis/presentation/build_presentacion_clara_20261005.mjs)

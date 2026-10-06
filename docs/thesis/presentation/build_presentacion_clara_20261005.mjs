@@ -3,10 +3,10 @@ import path from "node:path";
 import { pathToFileURL } from "node:url";
 
 const root = "C:/Users/Acer/Documents/ChatGPT/THESIS";
-const workDir = path.join(root, ".build", "presentation_clara_20261005");
+const workDir = path.join(root, "vm_repo", ".build", "presentation_clara_20261005");
 const skillDir = "C:/Users/Acer/.codex/plugins/cache/openai-primary-runtime/presentations/26.909.12148/skills/presentations";
 const outputDir = path.join(root, "vm_repo", "docs", "thesis", "presentation");
-const finalPath = path.join(outputDir, "PRESENTACION_DATA_MOVEMENT_CLARA_20261005.pptx");
+const finalPath = path.join(outputDir, "PRESENTACION_DATA_MOVEMENT_PROBLEMA_CLARO_20261005.pptx");
 const draftPath = path.join(workDir, "candidate.pptx");
 const runtimeHelpers = await import(pathToFileURL(path.join(skillDir, "container_tools", "runtime_helpers.mjs")).href);
 const { Presentation, PresentationFile } = await runtimeHelpers.importRuntimeModule("@oai/artifact-tool");
@@ -128,7 +128,7 @@ function notes(slide, text) {
   rule(s, "cover-accent", 72, 114, 92, C.teal, 5);
   addText(s, "cover-title", 72, 162, 1050, 132, "Movimiento de datos en\nworkflows científicos", { size: 58, bold: true, color: C.ink, lineSpacing: 0.95 });
   addText(s, "cover-subtitle", 74, 334, 1060, 112,
-    "Dado un workflow y el placement real de sus tareas, ¿cuánto movimiento de datos exigen sus dependencias entre ubicaciones y cuánto movimiento produce realmente el mecanismo de ejecución?",
+    "Dado un workflow y el worker donde se ejecutó cada tarea, ¿cuánto movimiento exigen sus dependencias y cuánto payload científico declara y confirma la ejecución?",
     { size: 30, color: C.body, lineSpacing: 1.05 });
   addText(s, "cover-author", 74, 568, 850, 40, "Luis Sebastián Contreras Díaz  ·  Octubre de 2026", { size: 20, color: C.muted });
   notes(s, "Esta tesis pregunta cuánto movimiento de archivos requiere la estructura del workflow en las ubicaciones donde realmente se ejecutaron las tareas, y cuánto payload científico podemos confirmar a partir de las listas de transferencia y el historial de HTCondor. La palabra confirmado importa: no contamos paquetes de red. El objetivo de esta exposición es mostrar la idea, el cálculo y la evidencia de forma directa.");
@@ -139,8 +139,11 @@ function notes(slide, text) {
   const s = deck.slides.add();
   header(s, "El dato también debe llegar a la tarea", 2);
   addText(s, "problem-intro", 72, 142, 1090, 66,
-    "En workflows de big data, mover archivos entre tareas y máquinas puede convertirse en un cuello de botella.",
+    "En workflows de Big Data, las tareas dependen de archivos que deben llegar a otras máquinas; al crecer los datos, moverlos puede ser un cuello de botella.",
     { size: 28, color: C.body });
+  addText(s, "problem-metric-gap", 92, 204, 1096, 36,
+    "Bytes, ancho de banda y duración describen la transferencia; no dicen cuánto exigían las dependencias.",
+    { size: 20, color: C.muted, align: "center" });
   const w1 = addRect(s, "problem-worker-1", 92, 256, 410, 238, { fill: C.slateLight, line: C.slate, width: 1.6 });
   const w2 = addRect(s, "problem-worker-2", 778, 256, 410, 238, { fill: C.slateLight, line: C.slate, width: 1.6 });
   addText(s, "problem-worker-1-title", 116, 272, 340, 34, "WORKER 1", { size: 20, bold: true, color: C.slate });
@@ -155,51 +158,70 @@ function notes(slide, text) {
     "La flecha muestra una dependencia de archivo; no una ruta física de red.",
     { size: 17, color: C.muted, align: "center" });
   addText(s, "problem-summary", 92, 535, 1096, 68,
-    "La pregunta práctica: ¿cuánto movimiento exige este placement y cuánto confirma la ejecución?",
-    { size: 26, bold: true, color: C.ink, align: "center", valign: "middle" });
+    "Ejemplo ilustrativo: ¿los 500 GB transferidos eran necesarios o bastaban 300 GB?",
+    { size: 25, bold: true, color: C.ink, align: "center", valign: "middle" });
   addText(s, "problem-citation", 92, 622, 1096, 24, "Contexto respaldado por Pietri y Sakellariou (2018) y Tang et al. (2024).", { size: 16, color: C.muted, align: "center" });
-  notes(s, "Las dependencias entre tareas también son dependencias entre archivos. Si un archivo se produce en un worker y otra tarea lo consume en otro, el archivo tiene que estar disponible en la ubicación consumidora. La literatura de workflows intensivos en datos señala que la comunicación y el acceso a datos pueden limitar la ejecución. Eso motiva medir el movimiento, pero no significa que esta tesis haya medido tiempo perdido ni un cuello de botella físico en la red. La flecha representa una necesidad de ubicación, no una ruta de paquetes.\n\nFuentes: Pietri, I., y Sakellariou, R. (2018), https://doi.org/10.1145/3221269.3221298 ; Tang, M. et al. (2024), https://doi.org/10.1109/CLUSTER59578.2024.00038 .");
+  notes(s, "Las dependencias entre tareas también son dependencias entre archivos. Si un archivo se produce en un worker y otra tarea lo consume en otro, el archivo debe estar disponible en la ubicación del consumidor. En workflows intensivos en datos, esta transferencia puede contribuir al tiempo de ejecución; aquí la motivación viene de la literatura, no de una medición de tiempo perdido en nuestro experimento. Bytes, duración o ancho de banda describen lo observado, pero no establecen cuánto movimiento exigía la estructura concreta del workflow. El contraste de 500 GB y 300 GB es un ejemplo ilustrativo, no un resultado de esta tesis. La flecha representa una dependencia lógica, no una ruta de paquetes.\n\nFuentes: Pietri, I., y Sakellariou, R. (2018), https://doi.org/10.1145/3221269.3221298 ; Tang, M. et al. (2024), https://doi.org/10.1109/CLUSTER59578.2024.00038 .");
 }
 
-// 3. Literature, simplified.
+// 3. Traditional metrics and related research.
 {
   const s = deck.slides.add();
-  header(s, "Qué encontró la investigación previa", 3);
-  addText(s, "literature-lead", 72, 137, 1136, 42, "Cada línea ayuda a entender una parte del problema.", { size: 25, color: C.muted });
-  const rows = [
-    ["Bharathi et al. (2008)", "Describen patrones de workflows científicos. Nos orientan a validar más de una forma de dependencia."],
-    ["Pietri y Sakellariou (2018)", "Incluyen costo de comunicación al ubicar tareas. Muestran por qué importa el placement."],
-    ["Lee et al. (2023) · DataLife", "Siguen el ciclo de vida de datos entre tareas. Apoyan mirar archivos y consumidores, además del grafo."],
-    ["Tang et al. (2024) · DaYu", "Relacionan datasets con operaciones I/O. Sus conclusiones requieren evidencia de I/O más detallada."],
-    ["Devarajan et al. (2024) · DFTracer", "Capturan trazas de varias capas. Es más instrumentación que el análisis post-mortem de esta tesis."],
-    ["Aurelio Vivas Meza (2026)", "Estudia scheduling que considera movimiento y NUMA. Su foco de localidad interna es distinto al staging entre workers."],
+  header(s, "Qué explican las métricas y los estudios previos", 3);
+  addText(s, "literature-left-heading", 82, 144, 490, 38, "Métricas habituales", { size: 25, bold: true, color: C.ink });
+  addText(s, "literature-right-heading", 644, 144, 544, 38, "Qué aporta la investigación relacionada", { size: 25, bold: true, color: C.ink });
+  rule(s, "literature-left-rule", 82, 188, 490, C.slate, 2);
+  rule(s, "literature-right-rule", 644, 188, 544, C.slate, 2);
+  const metrics = [
+    ["Bytes transferidos", "Cuánto volumen se reportó; no cuánto exigían las dependencias."],
+    ["Duración / ancho de banda", "Cómo se comportó la transferencia; no si el volumen era necesario."],
+    ["Tiempo total del workflow", "Cuánto tardó la ejecución completa; no separa por sí solo el movimiento."],
   ];
-  let y = 190;
-  for (let i = 0; i < rows.length; i++) {
-    addText(s, "literature-author-" + i, 82, y, 300, 56, rows[i][0], { size: 20, bold: true, color: C.ink, valign: "middle" });
-    addText(s, "literature-finding-" + i, 410, y, 780, 56, rows[i][1], { size: 21, color: C.body, valign: "middle" });
-    if (i < rows.length - 1) rule(s, "literature-rule-" + i, 82, y + 65, 1106, C.rule, 1);
-    y += 75;
+  let my = 207;
+  for (let i = 0; i < metrics.length; i++) {
+    addText(s, "literature-metric-label-" + i, 88, my, 200, 62, metrics[i][0], { size: 20, bold: true, color: C.slate, valign: "middle" });
+    addText(s, "literature-metric-explain-" + i, 290, my, 278, 62, metrics[i][1], { size: 18, color: C.body, valign: "middle" });
+    if (i < metrics.length - 1) rule(s, "literature-metric-rule-" + i, 88, my + 69, 480, C.rule, 1);
+    my += 111;
   }
-  addText(s, "literature-takeaway", 82, 650, 1040, 24, "La métrica de esta tesis complementa estos trabajos; responde una pregunta de medición diferente.", { size: 18, bold: true, color: C.teal });
-  notes(s, "Bharathi y coautores describen estructuras recurrentes y una manera de generar workflows parametrizables. Por eso nuestra validación cubre proceso, pipeline, distribución, agregación y redistribución. Pietri y Sakellariou incorporan comunicación al proceso de scheduling: su interés es decidir una asignación que reduzca costos. Lee y coautores proponen DataLife para razonar sobre el ciclo de vida de datos y coordinar tareas. Tang y coautores presentan DaYu para conectar semántica de datasets con operaciones de I/O de formatos como HDF5. Devarajan y coautores presentan DFTracer para registrar eventos de flujo de datos de distintas capas con contexto de workflow. Aurelio Antonio Vivas Meza estudia estrategias de scheduling conscientes de NUMA; esto ayuda a explicar la importancia de localidad y arquitectura, aunque la localidad NUMA dentro de un nodo no es la misma capa que mover archivos entre workers.\n\nLa tesis no afirma que esos autores no estudiaran movimiento de datos. Su aporte inicial es integrar, por run, una referencia lógica condicionada al placement con movimientos científicos declarados y evidencia de HTCondor a nivel de job. La afirmación de que ninguna métrica existente ofrece la misma combinación debe limitarse a las fuentes consultadas, no presentarse como novedad universal.\n\nFuentes: Bharathi et al. (2008), https://doi.org/10.1109/WORKS.2008.4723958 ; Pietri y Sakellariou (2018), https://doi.org/10.1145/3221269.3221298 ; Lee et al. (2023), https://doi.org/10.1145/3581784.3607104 ; Tang et al. (2024), https://doi.org/10.1109/CLUSTER59578.2024.00038 ; Devarajan et al. (2024), https://doi.org/10.1109/SC41406.2024.00023 ; Vivas Meza (2026), disertación doctoral, Universidad de los Andes.");
+  const studies = [
+    ["Bharathi (2008) · Deelman (2015)", "Patrones de workflows y ejecución con Pegasus."],
+    ["Pietri y Sakellariou (2018)", "Incorporan comunicación al programar tareas."],
+    ["Lee (2023) · Tang (2024)", "Ciclo de vida de datos y semántica de operaciones I/O."],
+    ["Devarajan et al. (2024)", "DFTracer registra flujos de datos con contexto de varias capas."],
+    ["Aurelio Vivas Meza (2026)", "Estudia scheduling para movimiento de datos y localidad NUMA."],
+  ];
+  let sy = 202;
+  for (let i = 0; i < studies.length; i++) {
+    addText(s, "literature-study-" + i, 648, sy, 250, 56, studies[i][0], { size: 18, bold: true, color: C.slate, valign: "middle" });
+    addText(s, "literature-study-contribution-" + i, 901, sy, 287, 56, studies[i][1], { size: 17, color: C.body, valign: "middle" });
+    if (i < studies.length - 1) rule(s, "literature-study-rule-" + i, 648, sy + 59, 540, C.rule, 1);
+    sy += 76;
+  }
+  rule(s, "literature-bottom-rule", 82, 555, 1106, C.rule, 1.4);
+  addText(s, "literature-takeaway", 90, 574, 1090, 66,
+    "Nuestra pregunta reúne workflow + worker real por tarea + evidencia del payload científico. Complementa esas métricas; no las reemplaza.",
+    { size: 22, bold: true, color: C.ink, align: "center", valign: "middle" });
+  notes(s, "Las métricas habituales son necesarias: volumen describe cantidad; duración y ancho de banda describen transferencia; runtime resume la ejecución. Por sí solas no responden cuánto movimiento exigirían las dependencias de un workflow bajo los workers donde corrieron las tareas.\n\nBharathi y coautores caracterizan patrones recurrentes; Deelman y colegas describen Pegasus como sistema de gestión de workflows. Pietri y Sakellariou consideran costos de comunicación al programar tareas. Lee y colegas analizan ciclos de vida de datos y coordinación; Tang y colegas conectan semántica de datasets con operaciones I/O. Devarajan y colegas presentan DFTracer para observar flujos de datos con contexto de varias capas. Aurelio Antonio Vivas Meza estudia scheduling para movimiento de datos y localidad NUMA; NUMA es una capa de localidad dentro del nodo, distinta de las transferencias de archivos entre workers. Estos trabajos informan el problema desde enfoques distintos; no se afirma que sean inútiles ni que ninguno contemple movimiento.\n\nLa contribución aquí es una comparación post-mortem acotada: movimiento lógico requerido por archivos, dependencias y worker real por tarea frente al tamaño de ocurrencias científicas de manifiestos reconciliadas con HTCondor a nivel de job. Esta es una síntesis del conjunto consultado, no una afirmación de novedad universal.\n\nFuentes: Bharathi et al. (2008), https://doi.org/10.1109/WORKS.2008.4723958 ; Deelman et al. (2015), https://doi.org/10.1016/j.future.2014.10.008 ; Pietri y Sakellariou (2018), https://doi.org/10.1145/3221269.3221298 ; Lee et al. (2023), https://doi.org/10.1145/3581784.3607104 ; Tang et al. (2024), https://doi.org/10.1109/CLUSTER59578.2024.00038 ; Devarajan et al. (2024), https://doi.org/10.1109/SC41406.2024.00023 ; Vivas Meza (2026), disertación doctoral, Universidad de los Andes.");
 }
 
 // 4. Research question and contribution.
 {
   const s = deck.slides.add();
   header(s, "La pregunta de esta tesis", 4);
-  addText(s, "research-question", 116, 190, 1048, 190,
-    "Dado un workflow y el placement real de sus tareas, ¿cuánto movimiento de datos exigen sus dependencias entre ubicaciones y cuánto movimiento produce realmente el mecanismo de ejecución?",
-    { size: 38, bold: true, color: C.ink, align: "center", valign: "middle", lineSpacing: 1.02 });
+  addText(s, "research-location-definition", 150, 143, 980, 48,
+    "Ubicación de una tarea = worker donde se ejecutó.", { size: 23, bold: true, color: C.teal, align: "center", valign: "middle" });
+  addText(s, "research-question", 116, 207, 1048, 184,
+    "Dado un workflow y el worker donde corrió cada tarea, ¿cuánto movimiento exigen sus dependencias y cuánto payload científico declara y confirma la ejecución?",
+    { size: 36, bold: true, color: C.ink, align: "center", valign: "middle", lineSpacing: 1.02 });
   rule(s, "rq-accent", 530, 413, 220, C.teal, 4);
   addText(s, "research-contribution", 155, 456, 970, 86,
-    "La respuesta combina el workflow, el worker donde corrió cada tarea, los tamaños de archivo y la evidencia de transferencia de cada job.",
+    "La respuesta combina dependencias del workflow, tamaños de archivo, ubicación real de tareas y evidencia por job.",
     { size: 27, color: C.body, align: "center", valign: "middle" });
   addText(s, "research-boundary", 180, 570, 920, 48,
-    "‘Lo que produce’ se estima con manifiestos y evidencia HTCondor por job; no con paquetes de red.",
+    "La evidencia confirma payload de archivos científicos por job; no captura el tráfico físico de red.",
     { size: 21, color: C.muted, align: "center" });
-  notes(s, "Esta es la pregunta central del proyecto. La formulación es útil porque indica los datos que hacen falta: el workflow, su placement realmente observado y la evidencia de transferencias. Ajusto oralmente el verbo 'produce realmente': en nuestro caso significa volumen de archivos declarado y confirmado a nivel de trabajo, no bytes físicos observados en un cable. Analyzer trabaja después de la ejecución; no decide el placement.");
+  notes(s, "Esta es la pregunta central del proyecto. 'Ubicación de una tarea' significa el worker en el que corrió, reconstruido del historial disponible. En la operacionalización del Analyzer, 'lo producido' se refiere al tamaño de los archivos científicos enumerados en manifiestos y reconciliados con evidencia de transferencia de HTCondor a nivel de job; no a bytes físicos observados en un cable. Analyzer trabaja después de la ejecución; no decide dónde se asigna cada tarea.");
 }
 
 // 5. Three levels of the measurement boundary.
@@ -211,7 +233,7 @@ function notes(slide, text) {
   const body = [
     "Workflow + tamaños + ubicación real de las tareas.\n\nCuenta ubicaciones nuevas distintas donde cada archivo se necesita.",
     "Manifiestos efectivos de cada job.\n\nSuma las ocurrencias científicas que Pegasus/HTCondor declaran transferir.",
-    "Manifiesto reconciliado con historial HTCondor.\n\nSuma las ocurrencias científicas confirmadas, solo con cobertura completa.",
+    "Manifiesto reconciliado con historial HTCondor.\n\nSuma tamaños de ocurrencias científicas confirmadas, solo con cobertura completa.",
   ];
   for (let i = 0; i < 3; i++) {
     addText(s, "boundary-title-" + i, xs[i], 178, 330, 48, titles[i], { size: 27, bold: true, color: i === 2 ? C.teal : C.ink });
@@ -223,7 +245,7 @@ function notes(slide, text) {
     { size: 24, bold: true, color: C.ink, align: "center", valign: "middle" });
   addRect(s, "boundary-note-bg", 82, 565, 1106, 74, { fill: C.tealLight, line: C.teal, width: 1 });
   addText(s, "boundary-note", 104, 577, 1062, 50,
-    "Comparten el payload científico y el run, pero no la misma regla de conteo: M_req cuenta destinos distintos; M_obs cuenta ocurrencias confirmadas por job. Ninguna mide paquetes de red.",
+    "No tienen la misma frontera de conteo: M_req cuenta destinos lógicos; M_obs suma ocurrencias por job. M_obs no es tráfico físico ni bytes evitables.",
     { size: 20, color: C.ink, align: "center", valign: "middle" });
   notes(s, "Esta separación es la parte más importante para no sobreinterpretar. M_req se deriva de dependencias, tamaños y ubicaciones. M_rec sale de listas efectivas de archivos de entrada y salida de los jobs. M_obs no toma BytesSent o BytesRecvd como si fueran bytes científicos por archivo. La implementación usa estadísticas de transferencia por dirección del historial de HTCondor, como método, cantidad de archivos y bytes de la última ejecución, junto con estado, worker y número de intentos. La reconciliación confirma las ocurrencias declaradas a nivel de job. Luego M_obs suma tamaños de esas ocurrencias científicas del manifiesto. Coverage es por ocurrencia declarada. En las 31 ejecuciones experimentales Coverage fue 1; eso no equivale a una captura packet-level ni prueba la ruta física.");
 }
@@ -234,7 +256,7 @@ function notes(slide, text) {
   header(s, "La matemática en palabras sencillas", 6);
   addText(s, "formula-req-label", 90, 148, 1060, 37, "1. Movimiento lógico requerido", { size: 24, bold: true, color: C.slate });
   addText(s, "formula-req", 92, 194, 1096, 83,
-    "M_req = Σ por archivo [ tamaño del archivo × número de ubicaciones nuevas requeridas ]",
+    "M_req = Σ por archivo (tamaño × destinos nuevos requeridos)",
     { size: 31, bold: true, color: C.ink, typeface: "Cambria Math", align: "center", valign: "middle" });
   addText(s, "formula-req-explain", 118, 280, 1040, 48,
     "Si varios consumidores están en el mismo worker, esa ubicación se cuenta una sola vez.",
@@ -245,7 +267,7 @@ function notes(slide, text) {
     "Coverage = |C_sci| / |D_sci|",
     { size: 29, bold: true, color: C.ink, typeface: "Cambria Math", align: "center", valign: "middle" });
   addText(s, "formula-coverage-defs", 92, 457, 1096, 32,
-    "D_sci: ocurrencias declaradas · C_sci: ocurrencias confirmadas por HTCondor a nivel de job",
+    "D_sci = ocurrencias científicas declaradas · C_sci = ocurrencias reconciliadas con HTCondor por job",
     { size: 18, color: C.body, align: "center", valign: "middle" });
   addText(s, "formula-obs", 92, 496, 1096, 42,
     "M_obs = tamaños de C_sci, solo si Coverage = 1",
@@ -256,38 +278,41 @@ function notes(slide, text) {
   addText(s, "formula-dme-note", 92, 612, 1096, 30,
     "La DME es una razón de volúmenes, no una medida de rapidez o rendimiento.",
     { size: 19, color: C.muted, align: "center" });
-  notes(s, "La fórmula de RequiredMovement se puede leer como: tome el tamaño de cada archivo y multiplíquelo por el número de ubicaciones distintas, además de su origen, donde una tarea lo necesita. Luego sume esos valores. La reutilización local evita contar otra vez el mismo archivo para dos tareas en el mismo worker. Coverage pregunta cuántas ocurrencias declaradas fueron confirmadas. Solo si se confirmaron todas se calcula M_obs. Finalmente, DME divide el movimiento lógico requerido entre el volumen confirmado. Por ejemplo, una DME de un tercio dice que, en ese caso y bajo las definiciones acordadas, el requerimiento lógico representa un tercio del volumen confirmado. No demuestra que los otros dos tercios se pudieran evitar.");
+  notes(s, "M_req toma cada archivo, lo multiplica por el tamaño y por el número de destinos nuevos distintos que exige el workflow dadas las ubicaciones reales de sus tareas; luego suma. Si varias tareas del mismo worker usan el archivo, ese destino se cuenta una sola vez. D_sci es el conjunto de ocurrencias científicas declaradas en manifiestos. C_sci es el subconjunto que se pudo reconciliar con las estadísticas de transferencia del historial HTCondor por job. Coverage es la fracción confirmada. M_obs suma el tamaño del archivo para cada ocurrencia de C_sci y solo queda definida en este análisis si Coverage = 1. DME divide M_req entre M_obs. Como ambas cantidades aplican reglas de conteo diferentes, DME no es una medición directa de bytes desperdiciados o físicamente evitables.");
 }
 
-// 7. Deployment model and offline analyzer.
+// 7. Central worked example.
 {
   const s = deck.slides.add();
-  header(s, "Dónde corre cada parte del sistema", 7);
-  addText(s, "deploy-phase", 82, 137, 900, 32, "DURANTE EL WORKFLOW", { size: 18, bold: true, color: C.muted });
-  const master = addRect(s, "deploy-master", 455, 180, 370, 100, { fill: C.white, line: C.ink, width: 2 });
-  const worker1 = addRect(s, "deploy-worker1", 145, 362, 390, 92, { fill: C.white, line: C.slate, width: 1.7 });
-  const worker2 = addRect(s, "deploy-worker2", 745, 362, 390, 92, { fill: C.white, line: C.slate, width: 1.7 });
-  addText(s, "deploy-master-title", 477, 190, 326, 30, "pegasus-master", { size: 22, bold: true, color: C.ink, align: "center" });
-  addText(s, "deploy-master-body", 477, 223, 326, 48,
-    "Pegasus\nHTCondor central services\nSchedd · Collector · Negotiator",
-    { size: 17, color: C.body, align: "center", valign: "middle" });
-  addText(s, "deploy-worker1-title", 169, 371, 342, 27, "pegasus-worker1", { size: 21, bold: true, color: C.ink, align: "center" });
-  addText(s, "deploy-worker1-body", 169, 400, 342, 42, "HTCondor slot · ejecuta tareas científicas", { size: 18, color: C.body, align: "center", valign: "middle" });
-  addText(s, "deploy-worker2-title", 769, 371, 342, 27, "pegasus-worker2", { size: 21, bold: true, color: C.ink, align: "center" });
-  addText(s, "deploy-worker2-body", 769, 400, 342, 42, "HTCondor slot · ejecuta tareas científicas", { size: 18, color: C.body, align: "center", valign: "middle" });
-  arrow(s, master, worker1, { color: C.slate, width: 2, fromSide: "bottom", toSide: "top", kind: "elbow" });
-  arrow(s, master, worker2, { color: C.slate, width: 2, fromSide: "bottom", toSide: "top", kind: "elbow" });
-  addText(s, "deploy-control-label", 82, 154, 1090, 24, "El master coordina; los workers ejecutan los jobs.", { size: 18, color: C.body, align: "center" });
-  addText(s, "deploy-config", 300, 463, 680, 24, "Pegasus 5.1.2 · HTCondor 25.12.2 · condorio", { size: 17, color: C.muted, align: "center" });
-  rule(s, "deploy-separator", 82, 494, 1100, C.rule, 1.4);
-  addText(s, "deploy-post-phase", 82, 508, 900, 27, "DESPUÉS DE LA EJECUCIÓN", { size: 18, bold: true, color: C.muted });
-  const artifacts = addNode(s, "deploy-artifacts", 108, 545, 340, 64, "Run Pegasus preservado\n+ HTCondor history", { size: 18, line: C.slate });
-  const analyzer = addNode(s, "deploy-analyzer", 523, 545, 264, 64, "Analyzer v1 · post-mortem", { size: 19, bold: true, line: C.teal, fill: C.tealLight });
-  const reports = addNode(s, "deploy-reports", 875, 545, 278, 64, "Métricas + diagnósticos\n+ procedencia", { size: 18, line: C.slate });
-  arrow(s, artifacts, analyzer, { color: C.teal });
-  arrow(s, analyzer, reports, { color: C.teal });
-  addText(s, "deploy-path-caveat", 82, 627, 1050, 27, "El diagrama no afirma una ruta física para los archivos.", { size: 17, color: C.muted, align: "center" });
-  notes(s, "El pool probado tiene un master y dos workers. Pegasus y los servicios centrales HTCondor se ubican en pegasus-master; los jobs científicos se ejecutan en worker1 o worker2. El historial exportado aporta dónde corrió el job y estadísticas agregadas de transferencia por dirección. El análisis toma los artefactos preservados después del workflow. Analyzer no se inserta en la ruta de ejecución científica. Las flechas sólidas representan control y el flujo de artefactos hacia el análisis. El dibujo no afirma que el payload pase físicamente por el master ni que viaje directamente de worker a worker. Las versiones y el perfil `condorio` corresponden al entorno de validación documentado.");
+  header(s, "Ejemplo de cálculo en dos ubicaciones", 7);
+  addText(s, "example-sub", 82, 136, 1120, 34, "Tres tareas · 6 ocurrencias científicas confirmadas × 10 MiB = M_obs de 60 MiB.", { size: 22, color: C.muted });
+  // Same-worker row.
+  addText(s, "example-local-label", 82, 188, 185, 34, "Tareas en W1", { size: 22, bold: true, color: C.ink });
+  addText(s, "example-local-lane", 82, 224, 76, 46, "W1", { size: 18, bold: true, color: C.slate, valign: "middle" });
+  const inA = addNode(s, "example-local-input", 168, 226, 95, 40, "input\n10 MiB", { size: 15, geometry: "ellipse", line: C.teal, fill: C.tealLight });
+  const a1 = addNode(s, "example-local-t1", 295, 220, 98, 52, "T1", { size: 20, bold: true });
+  const a2 = addNode(s, "example-local-t2", 457, 220, 98, 52, "T2", { size: 20, bold: true });
+  const a3 = addNode(s, "example-local-t3", 619, 220, 98, 52, "T3", { size: 20, bold: true });
+  const outA = addNode(s, "example-local-output", 765, 226, 110, 40, "final\n10 MiB", { size: 15, geometry: "ellipse", line: C.teal, fill: C.tealLight });
+  arrow(s, inA, a1); arrow(s, a1, a2, { color: C.slate }); arrow(s, a2, a3, { color: C.slate }); arrow(s, a3, outA);
+  addText(s, "example-local-metrics", 903, 212, 282, 68, "M_req = 20 MiB\nDME = 20 / 60 = 0.33", { size: 20, bold: true, color: C.ink, valign: "middle" });
+  rule(s, "example-separator", 82, 309, 1096, C.rule, 1.3);
+  // Cross-worker example: rows are worker lanes.
+  addText(s, "example-cross-label", 82, 336, 185, 34, "Tareas en W1 y W2", { size: 22, bold: true, color: C.ink });
+  addText(s, "example-cross-w1", 82, 385, 72, 34, "W1", { size: 18, bold: true, color: C.slate });
+  addText(s, "example-cross-w2", 82, 475, 72, 34, "W2", { size: 18, bold: true, color: C.slate });
+  rule(s, "example-lane1", 166, 422, 707, C.rule, 1);
+  rule(s, "example-lane2", 166, 512, 707, C.rule, 1);
+  const inB = addNode(s, "example-cross-input", 168, 379, 95, 40, "input\n10 MiB", { size: 15, geometry: "ellipse", line: C.teal, fill: C.tealLight });
+  const b1 = addNode(s, "example-cross-t1", 295, 374, 98, 52, "T1", { size: 20, bold: true });
+  const b2 = addNode(s, "example-cross-t2", 497, 464, 98, 52, "T2", { size: 20, bold: true });
+  const b3 = addNode(s, "example-cross-t3", 699, 374, 98, 52, "T3", { size: 20, bold: true });
+  const outB = addNode(s, "example-cross-output", 820, 379, 95, 40, "final\n10 MiB", { size: 15, geometry: "ellipse", line: C.teal, fill: C.tealLight });
+  arrow(s, inB, b1); arrow(s, b1, b2, { color: C.teal, kind: "elbow" }); arrow(s, b2, b3, { color: C.teal, kind: "elbow" }); arrow(s, b3, outB);
+  addText(s, "example-cross-metrics", 943, 391, 240, 83, "M_req = 40 MiB\nDME = 40 / 60 = 0.67", { size: 20, bold: true, color: C.ink, valign: "middle" });
+  addText(s, "example-coverage", 168, 552, 1000, 42, "Coverage = 6 / 6 = 1 · M_obs = 60 MiB en ambos casos.", { size: 22, bold: true, color: C.teal, align: "center", valign: "middle" });
+  addText(s, "example-caption", 145, 612, 1045, 28, "El modelo cuenta destinos requeridos; el Analyzer suma ocurrencias confirmadas por job. No son bytes evitables.", { size: 17, color: C.muted, align: "center" });
+  notes(s, "El ejemplo central corresponde al pipeline de tres tareas. Cada una de las seis ocurrencias científicas pesa 10 MiB: el input, dos archivos intermedios y tres salidas declaradas por los jobs. La reconciliación confirmó las seis; M_obs suma 60 MiB.\n\nEn el primer caso, T1, T2 y T3 corren en W1. De acuerdo con el oráculo y la regla de destinos lógicos, M_req es 20 MiB; DME = 20/60 = 0.33. En el segundo caso, T1 corre en W1, T2 en W2 y T3 en W1. M_req es 40 MiB; DME = 40/60 = 0.67. El M_obs manifestado-confirmado se mantiene en 60 MiB para ambos.\n\nLa comparación muestra que al repartir estas tareas cambió el requerimiento de destinos lógicos calculado por el modelo. No prueba que los 20 MiB de diferencia sean bytes físicos evitables ni que una ubicación sea más rápida. Las flechas indican dependencias/disponibilidad lógica de archivos, no una ruta física de red ni una transferencia directa worker-a-worker.");
 }
 
 // 8. Workflow patterns.
@@ -327,15 +352,46 @@ function notes(slide, text) {
   const r2 = addNode(s, "pattern-redist-consumers", left + 510, rowY[4], 245, 48, "Consumidores T3, T4", { size: 19, bold: true });
   arrow(s, r1, r2, { color: C.teal });
   addText(s, "patterns-note", 82, 634, 1090, 26, "La estructura del workflow se valida por separado del worker que recibe cada tarea.", { size: 17, color: C.muted, align: "center" });
-  notes(s, "Bharathi y coautores describen patrones para representar formas distintas de workflows científicos. En nuestro banco controlado, process usa una transformación; pipeline conecta etapas; distribución comparte una salida con varias tareas; agregación combina salidas de varias tareas; y redistribución reparte los datos entre varias tareas posteriores. Estos nombres describen la forma de dependencias del workflow. El placement se define aparte, por ejemplo tareas en un mismo worker o distribuidas entre los dos workers. No todos los patrones se validaron con las mismas variantes de ubicación: la matriz tiene diez condiciones en total.");
+  notes(s, "Bharathi y coautores describen patrones para representar formas distintas de workflows científicos. En nuestro banco controlado, process usa una transformación; pipeline conecta etapas; distribución comparte una salida con varias tareas; agregación combina salidas de varias tareas; y redistribución reparte los datos entre varias tareas posteriores. Estos nombres describen la forma de las dependencias del workflow. La ubicación de cada tarea se registra aparte: puede correr en el mismo worker que otra o en un worker distinto. No todos los patrones se validaron con las mismas variantes de ubicación; la matriz contiene diez condiciones en total.");
 }
 
-// 9. Method and validation.
+// 9. Deployment model and offline analyzer.
 {
   const s = deck.slides.add();
-  header(s, "Cómo validamos el cálculo", 9);
+  header(s, "Dónde corre cada parte del sistema", 9);
+  addText(s, "deploy-phase", 82, 137, 900, 32, "DURANTE EL WORKFLOW", { size: 18, bold: true, color: C.muted });
+  const master = addRect(s, "deploy-master", 455, 180, 370, 100, { fill: C.white, line: C.ink, width: 2 });
+  const worker1 = addRect(s, "deploy-worker1", 145, 362, 390, 92, { fill: C.white, line: C.slate, width: 1.7 });
+  const worker2 = addRect(s, "deploy-worker2", 745, 362, 390, 92, { fill: C.white, line: C.slate, width: 1.7 });
+  addText(s, "deploy-master-title", 477, 190, 326, 30, "pegasus-master", { size: 22, bold: true, color: C.ink, align: "center" });
+  addText(s, "deploy-master-body", 477, 223, 326, 48,
+    "Pegasus\nHTCondor central services\nSchedd · Collector · Negotiator",
+    { size: 17, color: C.body, align: "center", valign: "middle" });
+  addText(s, "deploy-worker1-title", 169, 371, 342, 27, "pegasus-worker1", { size: 21, bold: true, color: C.ink, align: "center" });
+  addText(s, "deploy-worker1-body", 169, 400, 342, 42, "HTCondor slot · ejecuta tareas científicas", { size: 18, color: C.body, align: "center", valign: "middle" });
+  addText(s, "deploy-worker2-title", 769, 371, 342, 27, "pegasus-worker2", { size: 21, bold: true, color: C.ink, align: "center" });
+  addText(s, "deploy-worker2-body", 769, 400, 342, 42, "HTCondor slot · ejecuta tareas científicas", { size: 18, color: C.body, align: "center", valign: "middle" });
+  arrow(s, master, worker1, { color: C.slate, width: 2, fromSide: "bottom", toSide: "top", kind: "elbow" });
+  arrow(s, master, worker2, { color: C.slate, width: 2, fromSide: "bottom", toSide: "top", kind: "elbow" });
+  addText(s, "deploy-control-label", 82, 154, 1090, 24, "El master coordina; los workers ejecutan los jobs.", { size: 18, color: C.body, align: "center" });
+  addText(s, "deploy-config", 300, 463, 680, 24, "Pegasus 5.1.2 · HTCondor 25.12.2 · condorio", { size: 17, color: C.muted, align: "center" });
+  rule(s, "deploy-separator", 82, 494, 1100, C.rule, 1.4);
+  addText(s, "deploy-post-phase", 82, 508, 900, 27, "DESPUÉS DE LA EJECUCIÓN", { size: 18, bold: true, color: C.muted });
+  const artifacts = addNode(s, "deploy-artifacts", 108, 545, 340, 64, "Run Pegasus preservado\n+ HTCondor history", { size: 18, line: C.slate });
+  const analyzer = addNode(s, "deploy-analyzer", 523, 545, 264, 64, "Analyzer v1 · post-mortem", { size: 19, bold: true, line: C.teal, fill: C.tealLight });
+  const reports = addNode(s, "deploy-reports", 875, 545, 278, 64, "Métricas + diagnósticos\n+ procedencia", { size: 18, line: C.slate });
+  arrow(s, artifacts, analyzer, { color: C.teal });
+  arrow(s, analyzer, reports, { color: C.teal });
+  addText(s, "deploy-path-caveat", 82, 627, 1050, 27, "El diagrama no afirma una ruta física para los archivos.", { size: 17, color: C.muted, align: "center" });
+  notes(s, "El pool probado tiene un master y dos workers. Pegasus y los servicios centrales HTCondor se ubican en pegasus-master; los jobs científicos se ejecutan en worker1 o worker2. El historial exportado aporta dónde corrió el job y estadísticas agregadas de transferencia por dirección. El análisis toma los artefactos preservados después del workflow. Analyzer no se inserta en la ruta de ejecución científica. Las flechas sólidas representan control y el flujo de artefactos hacia el análisis. El dibujo no afirma que el payload pase físicamente por el master ni que viaje directamente de worker a worker. Las versiones y el perfil `condorio` corresponden al entorno de validación documentado.");
+}
+
+// 10. Method and validation.
+{
+  const s = deck.slides.add();
+  header(s, "Cómo validamos el cálculo", 10);
   const steps = [
-    ["1", "Fijar", "workflow, archivos, tamaños y placement esperado"],
+    ["1", "Fijar", "workflow, archivos, tamaños y worker previsto por tarea"],
     ["2", "Ejecutar", "Pegasus/HTCondor en el pool de dos workers"],
     ["3", "Reconciliar", "manifiestos con el historial por job"],
     ["4", "Comparar", "salidas del Analyzer con cálculos manuales independientes"],
@@ -353,54 +409,20 @@ function notes(slide, text) {
     "5 patrones  ·  10 condiciones  ·  31 workflows independientes  ·  3 o más réplicas por condición",
     { size: 25, bold: true, color: C.ink, align: "center", valign: "middle" });
   addText(s, "method-stat-detail", 125, 446, 1010, 64,
-    "Placement, M_req y M_rec coincidieron con los oráculos. Las 31 ejecuciones fueron válidas y tuvieron Coverage = 1.",
+    "El worker observado, M_req y M_rec coincidieron con los oráculos. Las 31 ejecuciones fueron válidas y tuvieron Coverage = 1.",
     { size: 23, color: C.body, align: "center", valign: "middle" });
   addText(s, "method-caveat", 140, 542, 980, 65,
     "La evidencia valida estas condiciones y este pool. No demuestra el mismo comportamiento en cualquier arquitectura.",
     { size: 20, color: C.muted, align: "center", valign: "middle" });
-  notes(s, "Congelamos el DAG y la lista de archivos, calculamos un oráculo independiente y luego verificamos que el placement observado coincidiera con el diseñado. Reconciliamos entradas y salidas declaradas con estadísticas de HTCondor a nivel de job. Corremos cinco patrones en diez condiciones y 31 workflows independientes, con al menos tres en cada condición. Todas las salidas coincidieron con los oráculos en M_req y M_rec, todas tuvieron Coverage igual a uno y el análisis fue determinista. Process, same-w1, 10 MiB cuenta con cuatro réplicas métricas; el desglose de tiempo completo tiene tres porque falta un registro histórico. La validación es acotada al pool de dos workers y a los tamaños/configuraciones ensayados.");
-}
-
-// 10. Worked pipeline example.
-{
-  const s = deck.slides.add();
-  header(s, "Ejemplo manual: el mismo pipeline, dos placements", 10);
-  addText(s, "example-sub", 82, 136, 1120, 34, "Tres tareas, seis ocurrencias científicas de 10 MiB; el historial confirma las seis.", { size: 22, color: C.muted });
-  // Local placement row.
-  addText(s, "example-local-label", 82, 188, 185, 34, "Todas en W1", { size: 22, bold: true, color: C.ink });
-  addText(s, "example-local-lane", 82, 224, 76, 46, "W1", { size: 18, bold: true, color: C.slate, valign: "middle" });
-  const inA = addNode(s, "example-local-input", 168, 226, 95, 40, "input\n10 MiB", { size: 15, geometry: "ellipse", line: C.teal, fill: C.tealLight });
-  const a1 = addNode(s, "example-local-t1", 295, 220, 98, 52, "T1", { size: 20, bold: true });
-  const a2 = addNode(s, "example-local-t2", 457, 220, 98, 52, "T2", { size: 20, bold: true });
-  const a3 = addNode(s, "example-local-t3", 619, 220, 98, 52, "T3", { size: 20, bold: true });
-  const outA = addNode(s, "example-local-output", 765, 226, 110, 40, "final\n10 MiB", { size: 15, geometry: "ellipse", line: C.teal, fill: C.tealLight });
-  arrow(s, inA, a1); arrow(s, a1, a2, { color: C.slate }); arrow(s, a2, a3, { color: C.slate }); arrow(s, a3, outA);
-  addText(s, "example-local-metrics", 903, 212, 282, 68, "M_req = 20 MiB\nM_obs = 60 MiB · DME = 0.33", { size: 20, bold: true, color: C.ink, valign: "middle" });
-  rule(s, "example-separator", 82, 309, 1096, C.rule, 1.3);
-  // Cross placement: rows are worker lanes.
-  addText(s, "example-cross-label", 82, 336, 185, 34, "Se reparten", { size: 22, bold: true, color: C.ink });
-  addText(s, "example-cross-w1", 82, 385, 72, 34, "W1", { size: 18, bold: true, color: C.slate });
-  addText(s, "example-cross-w2", 82, 475, 72, 34, "W2", { size: 18, bold: true, color: C.slate });
-  rule(s, "example-lane1", 166, 422, 707, C.rule, 1);
-  rule(s, "example-lane2", 166, 512, 707, C.rule, 1);
-  const inB = addNode(s, "example-cross-input", 168, 379, 95, 40, "input\n10 MiB", { size: 15, geometry: "ellipse", line: C.teal, fill: C.tealLight });
-  const b1 = addNode(s, "example-cross-t1", 295, 374, 98, 52, "T1", { size: 20, bold: true });
-  const b2 = addNode(s, "example-cross-t2", 497, 464, 98, 52, "T2", { size: 20, bold: true });
-  const b3 = addNode(s, "example-cross-t3", 699, 374, 98, 52, "T3", { size: 20, bold: true });
-  const outB = addNode(s, "example-cross-output", 820, 379, 95, 40, "final\n10 MiB", { size: 15, geometry: "ellipse", line: C.teal, fill: C.tealLight });
-  arrow(s, inB, b1); arrow(s, b1, b2, { color: C.teal }); arrow(s, b2, b3, { color: C.teal }); arrow(s, b3, outB);
-  addText(s, "example-cross-metrics", 943, 391, 240, 83, "M_req = 40 MiB\nM_obs = 60 MiB\nDME = 0.67", { size: 20, bold: true, color: C.ink, valign: "middle" });
-  addText(s, "example-coverage", 168, 552, 1000, 42, "Coverage = 6 / 6 = 1.  M_obs = 6 × 10 MiB = 60 MiB en ambos placements.", { size: 22, bold: true, color: C.teal, align: "center", valign: "middle" });
-  addText(s, "example-caption", 145, 612, 1045, 28, "Las flechas muestran ubicaciones requeridas en el modelo; no una ruta física de red.", { size: 17, color: C.muted, align: "center" });
-  notes(s, "El ejemplo es el caso de pipeline de tres tareas. Cada una de las seis ocurrencias científicas pesa 10 MiB: el input, dos archivos intermedios y las tres salidas incluidas por el contrato de los jobs. La reconciliación confirmó seis de seis y el volumen manifestado confirmado es 60 MiB.\n\nCon todas las tareas en W1, solo el input tiene que llegar a W1 y el resultado final se ubica en el destino final: 20 MiB de M_req. Los intermedios pasan entre tareas locales. DME es 20/60, aproximadamente 0.33.\n\nCon T1 en W1, T2 en W2 y T3 en W1, los dos intermedios requieren ubicaciones nuevas; junto con input y salida final, M_req es 40 MiB. M_obs sigue en 60 MiB, de modo que DME es 40/60, aproximadamente 0.67. Las flechas representan exigencias lógicas de disponibilidad de archivos; las trazas actuales no prueban la ruta física de red ni una transferencia directa entre workers.");
+  notes(s, "Congelamos el DAG y la lista de archivos, calculamos un oráculo independiente y verificamos que el worker registrado coincidiera con el esperado. Reconciliamos entradas y salidas declaradas con estadísticas de HTCondor por job. Ejecutamos cinco patrones en diez condiciones y 31 workflows independientes, con al menos tres en cada condición. Las salidas coincidieron con los oráculos en M_req y M_rec; todas las ejecuciones fueron válidas, tuvieron Coverage = 1 y el análisis fue determinista. Process, misma ubicación en W1, 10 MiB cuenta con cuatro réplicas métricas; el desglose de tiempo completo tiene tres por la falta de un registro histórico. La validación se limita a este pool de dos workers y a los tamaños y condiciones ensayados.");
 }
 
 // 11. Results chart.
 {
   const s = deck.slides.add();
-  header(s, "Qué cambió al comparar placements", 11);
+  header(s, "Qué cambió al comparar la ubicación de las tareas", 11);
   addText(s, "results-intro", 82, 137, 1116, 50,
-    "DME por patrón. Local = tareas en W1; distribuido = tareas repartidas entre W1 y W2.",
+    "DME por patrón. Local = tareas en W1; repartido = tareas distribuidas entre W1 y W2.",
     { size: 22, color: C.body });
   const chart = s.charts.add("bar", {
     position: { left: 110, top: 196, width: 1060, height: 370 },
@@ -422,12 +444,12 @@ function notes(slide, text) {
   });
   applyPresentationChartFont(chart, { fontFamily: font });
   addText(s, "results-observation", 82, 586, 1116, 48,
-    "Al cambiar el placement, M_req y DME cambiaron en estos cuatro patrones.",
+    "Al repartir las tareas, M_req y DME cambiaron en estos cuatro patrones.",
     { size: 20, color: C.ink, align: "center", valign: "middle" });
   addText(s, "results-process", 82, 636, 1116, 24,
     "DME compara volúmenes; un valor bajo no demuestra por sí solo que hubiera bytes evitables.",
     { size: 16, color: C.muted, align: "center" });
-  notes(s, "El gráfico presenta DME para los cuatro patrones con comparación de ubicación. Pipeline cambia de un tercio a dos tercios. Distribución y agregación cambian de 0.50 a 0.75. Redistribución cambia de 0.25 a 0.625. En esas comparaciones M_rec y M_obs se mantuvieron constantes dentro del patrón; M_req aumentó porque el placement requería más ubicaciones nuevas. Para process, la condición de 20 MiB duplicó tanto M_req como M_obs frente a 10 MiB, y DME quedó en 1. Un valor menor de DME señala que el M_req de este modelo es menor respecto al M_obs confirmado; no identifica por sí solo bytes desperdiciados o evitables. Estas son respuestas de la métrica bajo los factores ensayados, no mejoras o caídas de rendimiento.");
+  notes(s, "El gráfico presenta DME para cuatro patrones al comparar tareas todas en W1 con tareas distribuidas entre W1 y W2. Pipeline cambia de un tercio a dos tercios; distribución y agregación pasan de 0.50 a 0.75; redistribución, de 0.25 a 0.625. En esas comparaciones M_rec y M_obs se mantuvieron constantes dentro del patrón; M_req aumentó porque el modelo contó más ubicaciones de destino nuevas. Para process, la condición de 20 MiB duplicó M_req y M_obs frente a 10 MiB, y DME quedó en 1. DME refleja la razón entre dos magnitudes con reglas de conteo diferentes; no identifica por sí sola bytes desperdiciados o evitables. Estos resultados describen el cálculo de la métrica bajo los factores ensayados, no mejoras o caídas de rendimiento.");
 }
 
 // 12. Operational cost and limits of overhead claims.
@@ -436,10 +458,10 @@ function notes(slide, text) {
   header(s, "El costo medido ocurre después del workflow", 12);
   addText(s, "cost-intro", 82, 140, 1110, 42, "No agregamos un tracer dentro de los jobs. Medimos recolección, análisis y evidencia preservada.", { size: 23, color: C.body });
   const cols = [82, 462, 842];
-  const labels = ["Preparación", "Analyzer v1", "Preservación"];
+  const labels = ["Recolección", "Análisis offline", "Preservación"];
   const values = [
-    "T_collect\n2.53 s promedio\n\nEntrada para el Analyzer\n18.62 MiB",
-    "Wall-clock\n0.73 s promedio\n\nCPU 0.36 s\nMemoria pico 22.49 MiB",
+    "2.53 s promedio\n\nEntrada analizada\n18.62 MiB",
+    "0.73 s wall-clock\nCPU 0.36 s\nRSS pico 22.49 MiB",
     "Informes\n0.185 MiB por run\n\nEvidencia adicional\n0.701 MiB por run",
   ];
   for (let i = 0; i < 3; i++) {
@@ -461,46 +483,43 @@ function notes(slide, text) {
   const s = deck.slides.add();
   header(s, "Para qué sirve la métrica", 13);
   addText(s, "utility-main", 82, 150, 1090, 67,
-    "Permite comparar cuánto movimiento lógico exige cada placement frente al volumen de archivos que la ejecución declara y cuya evidencia logra confirmar.",
+    "Permite comparar el movimiento lógico requerido con el payload científico que la ejecución declara y HTCondor confirma por job.",
     { size: 28, bold: true, color: C.ink, align: "center", valign: "middle" });
   const useY = 272;
-  addText(s, "utility-use-1", 98, useY, 318, 115, "Comparar placements\ny configuraciones", { size: 23, bold: true, color: C.teal, align: "center", valign: "middle" });
-  addText(s, "utility-use-2", 478, useY, 318, 115, "Ubicar patrones con\nmás movimiento confirmado", { size: 23, bold: true, color: C.teal, align: "center", valign: "middle" });
+  addText(s, "utility-use-1", 98, useY, 318, 115, "Comparar dónde corren\nlas tareas", { size: 23, bold: true, color: C.teal, align: "center", valign: "middle" });
+  addText(s, "utility-use-2", 478, useY, 318, 115, "Identificar patrones con\nmayor movimiento", { size: 23, bold: true, color: C.teal, align: "center", valign: "middle" });
   addText(s, "utility-use-3", 858, useY, 318, 115, "Priorizar qué casos\nmedir en rendimiento", { size: 23, bold: true, color: C.teal, align: "center", valign: "middle" });
   addText(s, "utility-business", 120, 418, 1040, 54,
-    "Uso potencial: orientar decisiones de placement y staging; el impacto en tiempo o dinero debe medirse aparte.",
+    "Para el cliente: priorizar qué configuración revisar; medir aparte si el cambio reduce tiempo o costo.",
     { size: 21, color: C.body, align: "center", valign: "middle" });
   rule(s, "utility-rule", 82, 496, 1096, C.rule, 1.2);
   addText(s, "utility-limits", 96, 516, 1072, 95,
-    "No mide paquetes de red, ancho de banda, I/O físico de disco, RAM o NUMA, FLOPs, uso de CPU/GPU ni rendimiento del scheduler. La campaña valida un pool de dos workers.",
+    "No mide tráfico físico de red, ancho de banda, disco, RAM/NUMA, FLOPs, uso de CPU/GPU ni rendimiento del scheduler.",
     { size: 20, color: C.muted, align: "center", valign: "middle" });
   addText(s, "utility-last-line", 98, 630, 1080, 28,
-    "La DME agrega información sobre archivos y placement; no reemplaza métricas de tiempo, I/O o recursos.",
+    "La DME agrega una referencia sobre archivos; no reemplaza tiempo, I/O ni métricas de recursos.",
     { size: 18, bold: true, color: C.ink, align: "center" });
-  notes(s, "La utilidad inmediata es descriptiva. Un equipo puede comparar placements para un mismo workflow, observar qué patrones piden más ubicaciones nuevas y usar esos casos para decidir qué medir después. En un contexto de negocio o de operación, esto puede ayudar a priorizar experimentos de staging, almacenamiento o asignación de tareas. No demuestra que vaya a reducir costos ni que un placement sea el óptimo. Para afirmar impacto en runtime, ancho de banda o gasto harían falta mediciones específicas y controles adecuados. El modelo puede representar más ubicaciones, pero la evidencia empírica actual cubre dos workers. Tampoco mezclamos tráfico de red con I/O físico, memoria RAM o localidad NUMA.");
+  notes(s, "La utilidad inmediata es ayudar a comparar configuraciones del mismo workflow, reconocer qué patrones requieren más destinos de archivo y priorizar qué caso conviene estudiar. Para un cliente o equipo de operación, esto funciona como baseline para decidir dónde investigar posibles cambios en distribución de tareas o staging. No demuestra ahorros, rapidez ni que una configuración sea óptima: runtime, costo, ancho de banda o rendimiento deben medirse aparte. Aunque el modelo representa distintas ubicaciones, la evidencia empírica actual cubre un pool de dos workers. Mantenemos separadas las capas de tráfico de red, disco y memoria/NUMA.");
 }
 
-// 14. Selected references.
+// 14. Client-facing conclusion.
 {
   const s = deck.slides.add();
-  header(s, "Fuentes principales", 14);
-  const refs = [
-    "Bharathi et al. (2008). Characterization of Scientific Workflows. WORKS. doi:10.1109/WORKS.2008.4723958",
-    "Deelman et al. (2015). Pegasus, a Workflow Management System for Science Automation. FGCS. doi:10.1016/j.future.2014.10.008",
-    "Pietri & Sakellariou (2018). Scheduling Data-Intensive Scientific Workflows with Reduced Communication. SSDBM. doi:10.1145/3221269.3221298",
-    "Lee et al. (2023). Data Flow Lifecycles for Optimizing Workflow Coordination. SC. doi:10.1145/3581784.3607104",
-    "Tang et al. (2024). DaYu: Optimizing Distributed Scientific Workflows by Decoding Dataflow Semantics and Dynamics. CLUSTER. doi:10.1109/CLUSTER59578.2024.00038",
-    "Devarajan et al. (2024). DFTracer: An Analysis-Friendly Data Flow Tracer for AI-Driven Workflows. SC. doi:10.1109/SC41406.2024.00023",
-    "Vivas Meza (2026). Scheduling Strategies for Efficient Data Movement in Data-Intensive Scientific Workflow Execution. Disertación doctoral, Universidad de los Andes.",
-  ];
-  let y = 149;
-  for (let i = 0; i < refs.length; i++) {
-    addText(s, "reference-" + i, 91, y, 1090, 59, refs[i], { size: 19, color: C.body, valign: "middle" });
-    if (i < refs.length - 1) rule(s, "reference-rule-" + i, 91, y + 64, 1088, C.rule, 1);
-    y += 72;
-  }
-  addText(s, "reference-note", 91, 660, 1090, 18, "La comparación de literatura cubre el conjunto consultado y no afirma novedad universal.", { size: 15, color: C.muted, align: "center" });
-  notes(s, "Referencias completas y enlaces primarios:\n\nBharathi, S., Chervenak, A., Deelman, E., Mehta, G., Su, M.-H., y Vahi, K. (2008). Characterization of scientific workflows. https://doi.org/10.1109/WORKS.2008.4723958\nDeelman, E. et al. (2015). Pegasus, a workflow management system for science automation. https://doi.org/10.1016/j.future.2014.10.008\nPietri, I., y Sakellariou, R. (2018). Scheduling data-intensive scientific workflows with reduced communication. https://doi.org/10.1145/3221269.3221298\nLee, H. et al. (2023). Data Flow Lifecycles for Optimizing Workflow Coordination. https://doi.org/10.1145/3581784.3607104\nTang, M. et al. (2024). DaYu: Optimizing Distributed Scientific Workflows by Decoding Dataflow Semantics and Dynamics. https://doi.org/10.1109/CLUSTER59578.2024.00038\nDevarajan, H. et al. (2024). DFTracer: An Analysis-Friendly Data Flow Tracer for AI-Driven Workflows. https://doi.org/10.1109/SC41406.2024.00023\nVivas Meza, A. A. (2026). Scheduling strategies for efficient data movement in data-intensive scientific workflow execution. Disertación doctoral, Universidad de los Andes. Descripción institucional del trabajo: https://www.alcf.anl.gov/events/scheduling-strategies-efficient-data-movement-data-intensive-scientific-workflow-execution");
+  header(s, "Una referencia para decidir qué investigar", 14);
+  addText(s, "conclusion-main", 105, 168, 1070, 128,
+    "No basta con saber cuánto se transfirió.\nTambién importa cuánto requería ese workflow.",
+    { size: 38, bold: true, color: C.ink, align: "center", valign: "middle", lineSpacing: 1.0 });
+  rule(s, "conclusion-accent", 515, 325, 250, C.teal, 4);
+  addText(s, "conclusion-measure", 154, 366, 972, 90,
+    "El Analyzer compara los destinos lógicos que exigen las tareas con el payload científico declarado y confirmado por job.",
+    { size: 27, color: C.body, align: "center", valign: "middle" });
+  addText(s, "conclusion-client", 154, 482, 972, 86,
+    "Para el cliente: usar esa referencia para comparar configuraciones y elegir qué casos medir o mejorar.",
+    { size: 25, bold: true, color: C.ink, align: "center", valign: "middle" });
+  addText(s, "conclusion-scope", 154, 594, 972, 46,
+    "Es un baseline de movimiento de archivos; el efecto en tiempo, red o costo se mide aparte.",
+    { size: 20, color: C.muted, align: "center", valign: "middle" });
+  notes(s, "Cierre en lenguaje para el cliente: el volumen transferido aislado no permite juzgar una ejecución. Esta métrica añade una referencia que combina dependencias del workflow y worker donde corrió cada tarea con payload científico declarado en manifiestos y confirmado por HTCondor a nivel de job. Puede ayudar a seleccionar configuraciones y patrones que ameritan análisis adicional. No diagnostica por sí misma una causa de rendimiento y no promete ahorro: esos resultados requieren medir el efecto por separado.\n\nLa literatura consultada incluye Bharathi et al. (2008), https://doi.org/10.1109/WORKS.2008.4723958 ; Deelman et al. (2015), https://doi.org/10.1016/j.future.2014.10.008 ; Pietri y Sakellariou (2018), https://doi.org/10.1145/3221269.3221298 ; Lee et al. (2023), https://doi.org/10.1145/3581784.3607104 ; Tang et al. (2024), https://doi.org/10.1109/CLUSTER59578.2024.00038 ; Devarajan et al. (2024), https://doi.org/10.1109/SC41406.2024.00023 ; y Vivas Meza (2026), disertación doctoral, Universidad de los Andes.");
 }
 
 const pptx = await PresentationFile.exportPptx(deck);
