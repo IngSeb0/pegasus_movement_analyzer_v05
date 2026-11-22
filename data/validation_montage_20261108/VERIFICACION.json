@@ -1,0 +1,57 @@
+{
+  "cases": 4,
+  "comparisons": 3,
+  "pilots": 1,
+  "definition": "condorio_coordinator_relay_v1",
+  "scope": "Recalculation from preserved breakdowns, native metadata/source hashes and native placement; archived reconciliation arithmetic checked. No new workflow or packet capture.",
+  "results": [
+    {
+      "caso": "NCF-MONTAGE-PILOT",
+      "uuid": "36080fd5-65c0-4b65-8175-e076137a6e2c",
+      "fase": "piloto",
+      "requerido_bytes": 3375611,
+      "observado_bytes": 3375611,
+      "dme": "1",
+      "obligaciones": 6,
+      "entregas": 6,
+      "duracion_s": 116.02600002288818,
+      "fuentes_cotejadas": 13
+    },
+    {
+      "caso": "NCF-MONTAGE-R01",
+      "uuid": "f743a096-3c0d-4b5d-be8e-698b1fb8c858",
+      "fase": "comparacion",
+      "requerido_bytes": 3375611,
+      "observado_bytes": 3375611,
+      "dme": "1",
+      "obligaciones": 6,
+      "entregas": 6,
+      "duracion_s": 126.03600001335144,
+      "fuentes_cotejadas": 13
+    },
+    {
+      "caso": "NCF-MONTAGE-R02",
+      "uuid": "1e2e94e3-69e7-4c7c-a298-8914758b01f3",
+      "fase": "comparacion",
+      "requerido_bytes": 3375611,
+      "observado_bytes": 3375611,
+      "dme": "1",
+      "obligaciones": 6,
+      "entregas": 6,
+      "duracion_s": 136.92499995231628,
+      "fuentes_cotejadas": 13
+    },
+    {
+      "caso": "NCF-MONTAGE-R03",
+      "uuid": "e503de6b-1b75-4a0b-ab1f-3ef4c1dc6bf0",
+      "fase": "comparacion",
+      "requerido_bytes": 3375611,
+      "observado_bytes": 3375611,
+      "dme": "1",
+      "obligaciones": 6,
+      "entregas": 6,
+      "duracion_s": 121.02500009536743,
+      "fuentes_cotejadas": 13
+    }
+  ]
+}

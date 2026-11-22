@@ -1,0 +1,530 @@
+{
+  "seed": 2026110809,
+  "rows": [
+    {
+      "id": "PILOT-GL3",
+      "condition": "GL3",
+      "family": "pipeline",
+      "phase": "pilot",
+      "block": 0
+    },
+    {
+      "id": "PILOT-L01",
+      "condition": "L01",
+      "family": "pipeline",
+      "phase": "pilot",
+      "block": 0
+    },
+    {
+      "id": "PILOT-GL2",
+      "condition": "GL2",
+      "family": "pipeline",
+      "phase": "pilot",
+      "block": 0
+    },
+    {
+      "id": "PILOT-AC2",
+      "condition": "AC2",
+      "family": "compartido",
+      "phase": "pilot",
+      "block": 0
+    },
+    {
+      "id": "PILOT-AC1",
+      "condition": "AC1",
+      "family": "compartido",
+      "phase": "pilot",
+      "block": 0
+    },
+    {
+      "id": "PILOT-AC4",
+      "condition": "AC4",
+      "family": "compartido",
+      "phase": "pilot",
+      "block": 0
+    },
+    {
+      "id": "PILOT-D02",
+      "condition": "D02",
+      "family": "particiones",
+      "phase": "pilot",
+      "block": 0
+    },
+    {
+      "id": "PILOT-GD4",
+      "condition": "GD4",
+      "family": "particiones",
+      "phase": "pilot",
+      "block": 0
+    },
+    {
+      "id": "PILOT-GL3_FINAL",
+      "condition": "GL3_FINAL",
+      "family": "contrato",
+      "phase": "pilot",
+      "block": 0
+    },
+    {
+      "id": "PILOT-MONTAGE_GROUP_FINAL-LF",
+      "condition": "MONTAGE_GROUP_FINAL",
+      "family": "montage",
+      "phase": "pilot",
+      "block": 0
+    },
+    {
+      "id": "PILOT-MONTAGE_GROUP-LF",
+      "condition": "MONTAGE_GROUP",
+      "family": "montage",
+      "phase": "pilot",
+      "block": 0
+    },
+    {
+      "id": "PILOT-MONTAGE_SEP-LF",
+      "condition": "MONTAGE_SEP",
+      "family": "montage",
+      "phase": "pilot",
+      "block": 0
+    },
+    {
+      "id": "MAIN-L01-B01",
+      "condition": "L01",
+      "family": "pipeline",
+      "phase": "main",
+      "block": 1
+    },
+    {
+      "id": "MAIN-GL3-B01",
+      "condition": "GL3",
+      "family": "pipeline",
+      "phase": "main",
+      "block": 1
+    },
+    {
+      "id": "MAIN-GL2-B01",
+      "condition": "GL2",
+      "family": "pipeline",
+      "phase": "main",
+      "block": 1
+    },
+    {
+      "id": "MAIN-AC4-B01",
+      "condition": "AC4",
+      "family": "compartido",
+      "phase": "main",
+      "block": 1
+    },
+    {
+      "id": "MAIN-AC1-B01",
+      "condition": "AC1",
+      "family": "compartido",
+      "phase": "main",
+      "block": 1
+    },
+    {
+      "id": "MAIN-AC2-B01",
+      "condition": "AC2",
+      "family": "compartido",
+      "phase": "main",
+      "block": 1
+    },
+    {
+      "id": "MAIN-D02-B01",
+      "condition": "D02",
+      "family": "particiones",
+      "phase": "main",
+      "block": 1
+    },
+    {
+      "id": "MAIN-GD4-B01",
+      "condition": "GD4",
+      "family": "particiones",
+      "phase": "main",
+      "block": 1
+    },
+    {
+      "id": "MAIN-GL3_FINAL-B01",
+      "condition": "GL3_FINAL",
+      "family": "contrato",
+      "phase": "main",
+      "block": 1
+    },
+    {
+      "id": "MAIN-MONTAGE_GROUP-B01",
+      "condition": "MONTAGE_GROUP",
+      "family": "montage",
+      "phase": "main",
+      "block": 1
+    },
+    {
+      "id": "MAIN-MONTAGE_SEP-B01",
+      "condition": "MONTAGE_SEP",
+      "family": "montage",
+      "phase": "main",
+      "block": 1
+    },
+    {
+      "id": "MAIN-MONTAGE_GROUP_FINAL-B01",
+      "condition": "MONTAGE_GROUP_FINAL",
+      "family": "montage",
+      "phase": "main",
+      "block": 1
+    },
+    {
+      "id": "MAIN-AC2-B02",
+      "condition": "AC2",
+      "family": "compartido",
+      "phase": "main",
+      "block": 2
+    },
+    {
+      "id": "MAIN-AC1-B02",
+      "condition": "AC1",
+      "family": "compartido",
+      "phase": "main",
+      "block": 2
+    },
+    {
+      "id": "MAIN-AC4-B02",
+      "condition": "AC4",
+      "family": "compartido",
+      "phase": "main",
+      "block": 2
+    },
+    {
+      "id": "MAIN-D02-B02",
+      "condition": "D02",
+      "family": "particiones",
+      "phase": "main",
+      "block": 2
+    },
+    {
+      "id": "MAIN-GD4-B02",
+      "condition": "GD4",
+      "family": "particiones",
+      "phase": "main",
+      "block": 2
+    },
+    {
+      "id": "MAIN-GL3_FINAL-B02",
+      "condition": "GL3_FINAL",
+      "family": "contrato",
+      "phase": "main",
+      "block": 2
+    },
+    {
+      "id": "MAIN-MONTAGE_GROUP_FINAL-B02",
+      "condition": "MONTAGE_GROUP_FINAL",
+      "family": "montage",
+      "phase": "main",
+      "block": 2
+    },
+    {
+      "id": "MAIN-MONTAGE_GROUP-B02",
+      "condition": "MONTAGE_GROUP",
+      "family": "montage",
+      "phase": "main",
+      "block": 2
+    },
+    {
+      "id": "MAIN-MONTAGE_SEP-B02",
+      "condition": "MONTAGE_SEP",
+      "family": "montage",
+      "phase": "main",
+      "block": 2
+    },
+    {
+      "id": "MAIN-GL2-B02",
+      "condition": "GL2",
+      "family": "pipeline",
+      "phase": "main",
+      "block": 2
+    },
+    {
+      "id": "MAIN-GL3-B02",
+      "condition": "GL3",
+      "family": "pipeline",
+      "phase": "main",
+      "block": 2
+    },
+    {
+      "id": "MAIN-L01-B02",
+      "condition": "L01",
+      "family": "pipeline",
+      "phase": "main",
+      "block": 2
+    },
+    {
+      "id": "MAIN-D02-B03",
+      "condition": "D02",
+      "family": "particiones",
+      "phase": "main",
+      "block": 3
+    },
+    {
+      "id": "MAIN-GD4-B03",
+      "condition": "GD4",
+      "family": "particiones",
+      "phase": "main",
+      "block": 3
+    },
+    {
+      "id": "MAIN-GL3_FINAL-B03",
+      "condition": "GL3_FINAL",
+      "family": "contrato",
+      "phase": "main",
+      "block": 3
+    },
+    {
+      "id": "MAIN-MONTAGE_GROUP-B03",
+      "condition": "MONTAGE_GROUP",
+      "family": "montage",
+      "phase": "main",
+      "block": 3
+    },
+    {
+      "id": "MAIN-MONTAGE_GROUP_FINAL-B03",
+      "condition": "MONTAGE_GROUP_FINAL",
+      "family": "montage",
+      "phase": "main",
+      "block": 3
+    },
+    {
+      "id": "MAIN-MONTAGE_SEP-B03",
+      "condition": "MONTAGE_SEP",
+      "family": "montage",
+      "phase": "main",
+      "block": 3
+    },
+    {
+      "id": "MAIN-GL3-B03",
+      "condition": "GL3",
+      "family": "pipeline",
+      "phase": "main",
+      "block": 3
+    },
+    {
+      "id": "MAIN-L01-B03",
+      "condition": "L01",
+      "family": "pipeline",
+      "phase": "main",
+      "block": 3
+    },
+    {
+      "id": "MAIN-GL2-B03",
+      "condition": "GL2",
+      "family": "pipeline",
+      "phase": "main",
+      "block": 3
+    },
+    {
+      "id": "MAIN-AC4-B03",
+      "condition": "AC4",
+      "family": "compartido",
+      "phase": "main",
+      "block": 3
+    },
+    {
+      "id": "MAIN-AC2-B03",
+      "condition": "AC2",
+      "family": "compartido",
+      "phase": "main",
+      "block": 3
+    },
+    {
+      "id": "MAIN-AC1-B03",
+      "condition": "AC1",
+      "family": "compartido",
+      "phase": "main",
+      "block": 3
+    },
+    {
+      "id": "MAIN-GL3_FINAL-B04",
+      "condition": "GL3_FINAL",
+      "family": "contrato",
+      "phase": "main",
+      "block": 4
+    },
+    {
+      "id": "MAIN-L01-B04",
+      "condition": "L01",
+      "family": "pipeline",
+      "phase": "main",
+      "block": 4
+    },
+    {
+      "id": "MAIN-GL2-B04",
+      "condition": "GL2",
+      "family": "pipeline",
+      "phase": "main",
+      "block": 4
+    },
+    {
+      "id": "MAIN-GL3-B04",
+      "condition": "GL3",
+      "family": "pipeline",
+      "phase": "main",
+      "block": 4
+    },
+    {
+      "id": "MAIN-AC1-B04",
+      "condition": "AC1",
+      "family": "compartido",
+      "phase": "main",
+      "block": 4
+    },
+    {
+      "id": "MAIN-AC4-B04",
+      "condition": "AC4",
+      "family": "compartido",
+      "phase": "main",
+      "block": 4
+    },
+    {
+      "id": "MAIN-AC2-B04",
+      "condition": "AC2",
+      "family": "compartido",
+      "phase": "main",
+      "block": 4
+    },
+    {
+      "id": "MAIN-GD4-B04",
+      "condition": "GD4",
+      "family": "particiones",
+      "phase": "main",
+      "block": 4
+    },
+    {
+      "id": "MAIN-D02-B04",
+      "condition": "D02",
+      "family": "particiones",
+      "phase": "main",
+      "block": 4
+    },
+    {
+      "id": "MAIN-GL3-B05",
+      "condition": "GL3",
+      "family": "pipeline",
+      "phase": "main",
+      "block": 5
+    },
+    {
+      "id": "MAIN-GL2-B05",
+      "condition": "GL2",
+      "family": "pipeline",
+      "phase": "main",
+      "block": 5
+    },
+    {
+      "id": "MAIN-L01-B05",
+      "condition": "L01",
+      "family": "pipeline",
+      "phase": "main",
+      "block": 5
+    },
+    {
+      "id": "MAIN-AC1-B05",
+      "condition": "AC1",
+      "family": "compartido",
+      "phase": "main",
+      "block": 5
+    },
+    {
+      "id": "MAIN-AC2-B05",
+      "condition": "AC2",
+      "family": "compartido",
+      "phase": "main",
+      "block": 5
+    },
+    {
+      "id": "MAIN-AC4-B05",
+      "condition": "AC4",
+      "family": "compartido",
+      "phase": "main",
+      "block": 5
+    },
+    {
+      "id": "MAIN-GD4-B05",
+      "condition": "GD4",
+      "family": "particiones",
+      "phase": "main",
+      "block": 5
+    },
+    {
+      "id": "MAIN-D02-B05",
+      "condition": "D02",
+      "family": "particiones",
+      "phase": "main",
+      "block": 5
+    },
+    {
+      "id": "MAIN-GL3_FINAL-B05",
+      "condition": "GL3_FINAL",
+      "family": "contrato",
+      "phase": "main",
+      "block": 5
+    },
+    {
+      "id": "MAIN-GL2-B06",
+      "condition": "GL2",
+      "family": "pipeline",
+      "phase": "main",
+      "block": 6
+    },
+    {
+      "id": "MAIN-L01-B06",
+      "condition": "L01",
+      "family": "pipeline",
+      "phase": "main",
+      "block": 6
+    },
+    {
+      "id": "MAIN-GL3-B06",
+      "condition": "GL3",
+      "family": "pipeline",
+      "phase": "main",
+      "block": 6
+    },
+    {
+      "id": "MAIN-AC2-B06",
+      "condition": "AC2",
+      "family": "compartido",
+      "phase": "main",
+      "block": 6
+    },
+    {
+      "id": "MAIN-AC4-B06",
+      "condition": "AC4",
+      "family": "compartido",
+      "phase": "main",
+      "block": 6
+    },
+    {
+      "id": "MAIN-AC1-B06",
+      "condition": "AC1",
+      "family": "compartido",
+      "phase": "main",
+      "block": 6
+    },
+    {
+      "id": "MAIN-GD4-B06",
+      "condition": "GD4",
+      "family": "particiones",
+      "phase": "main",
+      "block": 6
+    },
+    {
+      "id": "MAIN-D02-B06",
+      "condition": "D02",
+      "family": "particiones",
+      "phase": "main",
+      "block": 6
+    },
+    {
+      "id": "MAIN-GL3_FINAL-B06",
+      "condition": "GL3_FINAL",
+      "family": "contrato",
+      "phase": "main",
+      "block": 6
+    }
+  ]
+}

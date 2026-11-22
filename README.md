@@ -1,84 +1,38 @@
-# Pegasus Data Movement Analyzer v0.5
+# Analyzer
 
-Analizador de una ejecución Pegasus/HTCondor para la tesis **Data Movement Assessment in Scientific Workflows**.
+Calcula el volumen requerido y el observado en bytes para una ejecución de Pegasus con CondorIO.
+DME divide el requerido entre el observado. El exceso es la diferencia entre el observado y el requerido.
+El informe incluye un desglose por archivo y máquina.
 
-## Definiciones implementadas
+**Entrada.** Directorio de la corrida de Pegasus e historial exportado de HTCondor.
+**Salida.** Informe de texto, JSON y tablas TSV para consultar el cálculo y sus diagnósticos.
 
-- **M_obs**: suma del payload científico materializado por los jobs, reconstruido desde `transfer_input_files` y `transfer_output_files` de los `.sub`. Cada ocurrencia cuenta.
-- **M_req**: mínimo payload científico que debe **cambiar de ubicación**, manteniendo el placement observado de las tareas y permitiendo reutilización ideal de datos locales.
-
-Reglas de `M_req`:
-
-1. Input externo: master → worker cuenta una vez por ubicación destino necesaria.
-2. Intermedio: mismo worker = 0; worker distinto = tamaño del archivo.
-3. Output final: worker → master cuenta su tamaño.
-
-La herramienta **no** usa `BytesSent + BytesRecvd` como payload científico y no cuenta ejecutables, worker packages, logs, `.meta`, scripts ni overhead de protocolo.
-
-## Entrada mínima
-
-Un directorio Pegasus `runXXXX` que conserve:
-
-- `data_task_ID*.sub`
-- `data_task_ID*.meta` para tamaños de outputs
-- acceso a inputs/outputs físicos, cuando el tamaño no aparece en `.meta`
-- placement de cada tarea mediante una de estas fuentes:
-  1. `--placement-tsv`
-  2. `--history-file` generado con `condor_history -long`
-  3. `condor_history` vivo en el master
-
-## Uso recomendado en el master
-
-Desde la raíz del repositorio:
-
-```bash
-python3 tools/analyze_run.py \
-  --run /ruta/al/run0001 \
-  --history-file /ruta/history.long \
-  --out results/movement_v05/distribution_rep1
+```powershell
+python tools/analyze_run_v1.py --run fixtures/audited/runs/process-same-w1-20260917-232331/luis/pegasus/dm-process/run0001 --history-file fixtures/audited/history/process_50mib.long --out results/demo
 ```
 
-Para congelar la evidencia de placement inmediatamente después de una corrida:
+Salida esperada del ejemplo: estado `VALID`, requerido y observado de 104 857 600 B cada uno, DME 1, exceso 0 B.
 
-```bash
-condor_history -long > results/history_distribution_rep1.long
-```
+## Mapa del código
 
-También puede usarse un TSV explícito:
+| Archivo | Función y quién lo usa |
+|---|---|
+| `tools/analyze_run_v1.py` | Lee los argumentos y llama al núcleo y al generador de informes. |
+| `analyzer_v1.py` | Coordina el análisis llamado por la CLI. |
+| `analyzer.py` | Expone la interfaz anterior para sus consumidores existentes. |
+| `pegasus_source.py` | Lee el plan de Pegasus para el análisis. |
+| `htcondor_source.py` | Lee el historial de HTCondor para el análisis. |
+| `normalize.py` | Normaliza datos de Pegasus y HTCondor para el análisis. |
+| `execution_model.py` | Construye el modelo de ejecución para el análisis. |
+| `grouping.py` | Reconstruye tareas agrupadas para el modelo de ejecución. |
+| `dataflow.py` | Representa los archivos científicos y sus dependencias para el análisis. |
+| `condorio_adapter.py` | Adapta la información CondorIO para el análisis. |
+| `movement.py` | Construye los registros de movimiento para el cálculo. |
+| `reconciliation.py` | Concilia registros y manifiestos para el análisis. |
+| `metrics.py` | Calcula volúmenes y DME a partir de los registros de movimiento. |
+| `model.py` | Define los registros que comparten los módulos. |
+| `diagnostics.py` | Define estados y razones que usan el núcleo y el informe. |
+| `reporting.py` | Escribe los informes que solicita la CLI. |
+| `__init__.py` | Identifica el paquete importado por la CLI y los scripts. |
 
-```text
-task\tworker
-data_task_ID0000001\tworker2
-data_task_ID0000002\tworker1
-```
-
-```bash
-python3 tools/analyze_run.py \
-  --run /ruta/al/run0001 \
-  --placement-tsv task_placement.tsv
-```
-
-## Salidas
-
-- `summary.tsv`: M_req, M_obs y diagnóstico agregado.
-- `task_placement.tsv`: dónde ejecutó cada tarea y de qué fuente se obtuvo.
-- `file_sizes.tsv`: tamaño de cada archivo científico y fuente del tamaño.
-- `observed_transfers.tsv`: cada ocurrencia que aporta a M_obs.
-- `required_movement.tsv`: cada entrada/dependencia/output y cuánto aporta a M_req.
-- `summary.json`: todo lo anterior en un único artefacto legible por scripts.
-- `REPORT.txt`: resumen humano.
-
-## Pruebas
-
-```bash
-python3 -m unittest discover -s tests -v
-```
-
-La fixture `distribution_real_reconstructed` reproduce el caso de Distribution de 10 MiB usando el placement capturado en el tracing real del 13 de septiembre de 2026: T1–T4 en worker2 y T5 en worker1. El resultado esperado es:
-
-```text
-M_req = 22.5 MiB
-M_obs = 40.0 MiB
-```
-
-La fixture es una reconstrucción mínima de los artefactos científicos necesarios para probar el cálculo; no pretende ser una copia completa del `run0001` original.
+Ejecuta después del flujo. El perfil de medición es CondorIO. Entorno de las campañas recientes: Pegasus 5.1.2 y HTCondor 26.0.1. El ejemplo funciona con Python 3.12 y PyYAML. Consulta [reproducción](REPRODUCIBILIDAD.md) e [historial](HISTORIAL.md).

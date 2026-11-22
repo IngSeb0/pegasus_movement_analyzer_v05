@@ -1,0 +1,61 @@
+{
+  "kind": "analytical_counterexample_not_executed",
+  "unit_bytes": 1,
+  "required_lower_bound": 8,
+  "minimum_deliveries_under_stated_restrictions": 9,
+  "best_dme": "8/9",
+  "placements": {
+    "T1": "W1",
+    "T2": "W2",
+    "T3": "W1",
+    "T4": "W2"
+  },
+  "dependencies": [
+    [
+      "T1",
+      "T2"
+    ],
+    [
+      "T2",
+      "T3"
+    ],
+    [
+      "T3",
+      "T4"
+    ],
+    [
+      "T1",
+      "T4"
+    ]
+  ],
+  "grouping_enumeration": [
+    {
+      "merge_w1": false,
+      "merge_w2": false,
+      "acyclic": true
+    },
+    {
+      "merge_w1": false,
+      "merge_w2": true,
+      "acyclic": false
+    },
+    {
+      "merge_w1": true,
+      "merge_w2": false,
+      "acyclic": false
+    },
+    {
+      "merge_w1": true,
+      "merge_w2": true,
+      "acyclic": false
+    }
+  ],
+  "assumptions": [
+    "Sequential DAG jobs; a grouped job finishes before dependent jobs start",
+    "Only same-worker tasks can be grouped",
+    "No scientific file reuse across isolated jobs or persistent worker cache",
+    "Complete files and coordinator-only transfers",
+    "Input/finals declared, no extra optional scientific returns"
+  ],
+  "conclusion": "The machine-level lower bound is not attainable for this graph under these additional job-isolation constraints. DME<1 alone does not prove removable excess."
+}

@@ -1,0 +1,179 @@
+\chapter{Validación de la solución}
+\label{ch:validacion}
+\section{Diseño de los contrastes}
+La validación examina la correctitud de los volúmenes reconstruidos y la aplicación del mismo procedimiento en los cinco patrones. El diseño sigue el enfoque de \citet{jain1991} para definir la pregunta, la carga, los factores, las respuestas y los controles. La agrupación se estudia mediante tres mecanismos: eliminar reenvíos entre etapas, reutilizar un archivo entre consumidores y reunir tareas que consumen particiones distintas. Se examina cuándo DME aumenta, cuándo permanece constante y qué entregas explican el resultado. Los contrastes de tamaño y ubicación permiten precisar la interpretación de la referencia.
+
+El bloque A histórico reúne 24 condiciones de la evaluación de DME con flujos sintéticos bajo CondorIO. Sus 72 ejecuciones elegibles corresponden a tres repeticiones por condición, enviadas en orden fijo. La unidad de observación es una ejecución completa. La selección posterior de quince condiciones y 45 ejecuciones organiza siete contrastes en los cinco patrones. AC1, AC2 y AC4 designan los niveles de uno, dos y cuatro consumidores por job en el caso de archivo compartido. El paquete histórico conserva sus identificadores originales; aquí se usan AC1, AC2 y AC4. R01-E y R02-E conservan sus identificadores históricos dentro del bloque A.
+
+\input{other/diseno_jain}
+
+\subsection{Líneas base y controles comunes}
+La línea base es la configuración ejecutada con la cual se compara una variante. El volumen requerido se calcula por separado para cada ejecución. La sección~\ref{sec:repro_patrones} identifica las bases y variantes de los siete contrastes, con su justificación, cuenta esperada y decisión respaldada por los datos.
+
+
+
+Los 10 MiB permiten seguir las entregas del pipeline. En procesamiento se duplica ese tamaño a 20 MiB. En I40 se cambia solo un intermedio a 40 MiB. Estos niveles sirven para comprobar cambios de volumen en cargas controladas. El tiempo se mide por separado.
+
+En los contrastes históricos de agrupación se conservan el grafo, los tamaños, la asignación y la política de entrega. En los de ubicación se mantienen los archivos y la organización en jobs. R02-E modifica la asignación de varias etapas a la vez. Su efecto sobre el requerido se desglosa por dependencia, mientras que la duración corresponde a la configuración completa.
+
+\subsection{Entorno y orden de toma de datos}
+El bloque A se ejecutó con Pegasus 5.1.2, HTCondor 26.0.1 (compilación DAILY) y CondorIO en máquinas virtuales Ubuntu Server 24.04 LTS x64, en una misma región de la nube. Los manuales citados describen Pegasus 5.1.3. Los contratos se verificaron con los planes y registros de 5.1.2; no se presupone equivalencia entre versiones ni estabilidad fuera de la compilación ensayada. L01-r01 se excluyó por un cambio de intervalos durante la ejecución (sección~\ref{sec:protocolo_a}). El coordinador tiene dos CPU virtuales y cerca de 6,77 GiB visibles. Cada worker tiene una CPU virtual y cerca de 3,33 GiB visibles. El slot anuncia una CPU y 1410 MiB, y los jobs científicos solicitan una CPU y 256 MiB. Los contrastes seleccionados tienen dos workers disponibles y cada worker anuncia un slot. Se fijó la ubicación en el archivo de envío de cada job científico mediante \texttt{requirements = TARGET.Machine == "dme-worker1"} para W1 o el nombre \texttt{dme-worker2} para W2. Al agrupar, el requisito se aplica al job que reúne las tareas. Se contrastaron estas declaraciones con la máquina registrada en el historial. El orden de envío de los workflows y la ubicación de sus jobs son decisiones distintas. Cada ejecución se registra con su condición, repetición e identidad.
+
+
+
+\input{other/protocolo_bloque_a}
+
+\section{Correctitud del resultado}
+\subsection{Reconstrucción manual de la referencia}
+Para comprobar que la agrupación conserva la referencia, se toma el pipeline de la Figura~\ref{fig:pat-pipeline}. La entrada $A$ reside en el coordinador. Las tres tareas están en W1. Los dos intermedios nacen en W1 y se consumen en W1. El único final, $B$, debe quedar en el coordinador. Todos los archivos miden 10 MiB. Por la ecuación~\eqref{eq:requerido}, la entrada y el final generan las únicas obligaciones por destino distinto de su origen. El requerido resulta de sumar $10+0+0+10=20$ MiB en las tres configuraciones.
+
+
+
+\subsection{Comprobación del observado en las tres agrupaciones}
+Los contratos efectivos corroborados permiten separar entradas y retornos, como muestra la Tabla~\ref{tab:direcciones_pipeline}. En el caso sin agrupar, cada intermedio se devuelve al coordinador y vuelve a entrar al siguiente job. El primer reenvío desaparece al reunir $T_1$ y $T_2$. Al agrupar las tres tareas desaparece también el segundo reenvío. Los retornos de los intermedios permanecen en los contratos observados. Este desglose explica por qué GL3 entrega 40 MiB, aun cuando su cota es de 20 MiB.
+
+\begin{table}[htbp]\centering\small
+\caption{Entregas corroboradas del pipeline según su agrupación}
+\label{tab:direcciones_pipeline}
+\begin{tabularx}{\linewidth}{@{}P{2.05cm}YYr@{}}
+\toprule Caso & Entradas a W1 & Retornos al coordinador & MiB\\\midrule
+L01-r02 & $A$ a $T_1$, $f_{12}$ a $T_2$ y $f_{23}$ a $T_3$. & $f_{12}$, $f_{23}$ y $B$. & 60\\
+GL2-r01 & $A$ al grupo y $f_{23}$ a $T_3$. & $f_{12}$ y $f_{23}$ del grupo, y $B$ de $T_3$. & 50\\
+GL3-r01 & $A$ al único grupo. & $f_{12}$, $f_{23}$ y $B$ del grupo. & 40\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+L01-r02 fue la primera repetición elegible de L01. La salida del job de GL3-r01 permite verificar un ejemplo del control de bytes. El contrato declara los tres archivos científicos, que aportan 31\,457\,280 bytes en conjunto. Los auxiliares aportan 14\,961 bytes y el contador nativo registra 31\,472\,241 bytes. Al sustituir en la ecuación~\eqref{eq:residuo}, el residuo es cero. El conteo nativo y el esperado coinciden en cinco archivos, tres científicos y dos auxiliares. La auditoría confirma además la terminación y el intento. Por tanto, esta dirección aporta 30 MiB al observado. La entrada científica aporta los otros 10 MiB y $\DME=20/40=1/2$.
+
+\subsection{Comprobación del destino compartido}
+\label{sec:validacion_compartido}
+El caso AC1 comprueba la deduplicación por destino: $g$ requiere un retorno al coordinador y una entrega a W2, aunque allí lo consuman cuatro tareas. Su aporte es $10+10=20$ MiB; la entrada y los cuatro finales añaden 50 MiB. La cota de AC1, AC2 y AC4 es 70 MiB. Las entradas repetidas a sandboxes distintos se cuentan en el observado, no como nuevos destinos de la cota.
+
+El desglose del auditor permite comprobar que las copias son entregas distintas y no registros duplicados. En AC1 aparecen cuatro entradas de $g$ en cuatro jobs de W2. En AC2 quedan dos entradas y en AC4 queda una. El retorno de $g$ desde el productor al coordinador sigue presente. En los tres casos, el plan y el historial sitúan a los cuatro consumidores en W2. La obligación por destino proviene de la definición. El desglose preservado distingue las copias; Analyzer y el auditor local calculan la cota con relevo.
+
+\subsection{Cálculo manual y cotejo de las 45 ejecuciones}
+Para las quince condiciones se reconstruyó el requerido por archivo y destino con el relevo obligatorio. En agregación, A02 suma $40+2(40)+40=160$ MiB; en particiones, D02 y GD4 suman $10+2(10)+10=40$ MiB; en archivo compartido, los tres niveles suman $10+2(10)+40=70$ MiB; en redistribución, R02-E suma $40+2(40+40+40)+40=320$ MiB. En los casos sin dependencia entre workers no se añade relevo. Se revisaron las quince condiciones y las nueve comparaciones libres más el piloto sin modificar el observado.
+
+Las 348 direcciones del bloque A conservan su conciliación histórica de bytes y conteos. El cálculo con relevo coincide en 45 registros de configuraciones documentadas y diez desgloses del contraste libre. Además, se reextrajeron las fuentes administrativas de las 45 cápsulas seleccionadas: Analyzer y una reconstrucción separada coinciden en volúmenes, obligaciones y cobertura. Las copias utilizadas omiten contenido científico y paquetes auxiliares; esta reextracción corrobora por manifiesto exitoso y no repite la conciliación exacta de auxiliares ni verifica el contenido omitido. Materiales distingue las dos comprobaciones.
+
+
+\begin{table}[htbp]\centering\small
+\caption{Volumen requerido y observado por condición (MiB)}
+\label{tab:referencia_relevo}
+\begin{tabular}{@{}lrrr@{}}
+\toprule Caso & $M_{\mathrm{req}}$ & $M_{\mathrm{obs}}$ & DME\\\midrule
+P01 & 20 & 20 & $1$\\
+P02 & 40 & 40 & $1$\\
+L01 & 20 & 60 & $1/3$\\
+GL2 & 20 & 50 & $2/5$\\
+GL3 & 20 & 40 & $1/2$\\
+I40 & 20 & 120 & $1/6$\\
+A01 & 80 & 160 & $1/2$\\
+A02 & 160 & 160 & $1$\\
+D02 & 40 & 40 & $1$\\
+GD4 & 40 & 40 & $1$\\
+AC1 & 70 & 100 & $7/10$\\
+AC2 & 70 & 80 & $7/8$\\
+AC4 & 70 & 70 & $1$\\
+R01-E & 80 & 320 & $1/4$\\
+R02-E & 320 & 320 & $1$\\
+\bottomrule\end{tabular}\end{table}
+
+\subsection{Antecedente de Montage}
+\label{sec:montage}
+Un piloto y tres ejecuciones históricas situaron \texttt{mProject} en W1 y \texttt{mShrink} en W2. Entrada y cabecera suman 1\,650\,491 bytes, el intermedio 529\,920 y los finales 665\,280. El requerido con relevo es $1\,650\,491+2(529\,920)+665\,280=3\,375\,611$ bytes. Las cuatro ejecuciones corroboran seis obligaciones y seis entregas, con observado igual al requerido y DME igual a uno. Este recálculo histórico no compara agrupaciones; se separa del contraste nuevo con ambas tareas en W1.
+
+\section{Comprobación prospectiva de agrupación}
+\label{sec:prospectiva}
+La muestra fijada antes de ejecutar comprende 63 ejecuciones principales en doce condiciones: seis por condición sintética y tres por variante de Montage. Se completó la matriz original sin añadir condiciones ni ampliar la muestra por sus resultados. Las hipótesis se informaron con evidencia histórica; no se trata de una evaluación ciega de flujos nuevos. Los doce pilotos válidos se analizan aparte. Un intento de piloto Montage falló antes de iniciar la aplicación por saltos CRLF en el lanzador; se preservó sin DME. La corrección de formato usó identificadores nuevos y mantuvo el trabajo científico. No hubo reposiciones automáticas ni exclusiones por contrariar una predicción.
+
+Dentro de cada familia se conservan grafo, entradas, tamaños, programa, finales, recursos y ubicación. Se usa el entorno descrito para A: Pegasus 5.1.2, HTCondor 26.0.1 y CondorIO. Cada job científico solicita una CPU y 256 MiB. El orden programado recorre una vez los seis órdenes de las ternas sintéticas y tres veces cada orden de particiones, con semilla 2026110809 y rotación de familias. Montage tiene tres bloques exploratorios, sin balance de sus seis órdenes. Las tres sesiones y sus pausas conservan el orden relativo previsto y se documentan en el libro de envíos; no se interpretan como control de carga o caché. Los pilotos comprobaron contratos y equivalencia antes de abrir la muestra principal.
+
+Las variantes GL3-F y M-F intervienen además el contrato de retorno: mantienen los comandos, las dependencias y los finales, pero omiten intermedios consumidos dentro del único grupo. Se preserva el cambio exacto del archivo de envío. Son intervenciones distintas de agrupar, no una propiedad automática de toda agrupación.
+
+Un auditor separado reconstruye obligaciones y entregas desde los planes, historiales y contratos, sin completar datos a partir de las predicciones. Después se coteja con el cálculo implementado. Las 312 direcciones de la muestra principal se conciliaron exactamente en bytes y conteos, incluidos los auxiliares. Los finales sintéticos coinciden por identidad, tamaño y SHA256 entre variantes de cada familia. En Montage se compararon además dimensiones, máscaras de valores finitos y píxeles; la diferencia máxima fue cero. Los pilotos y los datos principales se preservan por separado.
+
+\begin{table}[htbp]\centering\small
+\caption{Contrastes sintéticos: volúmenes previstos y medidos coincidentes (MiB); conteos por ejecución}\label{tab:prospectiva}
+\begin{tabular}{@{}lrrrrrr@{}}
+\toprule Caso & $n$ & $M_{\mathrm{req}}$ & $M_{\mathrm{obs}}$ & DME & Oblig. & Entregas\\\midrule
+L01 & 6 & 20 & 60 & $1/3$ & 2 & 6\\
+GL2 & 6 & 20 & 50 & $2/5$ & 2 & 5\\
+GL3 & 6 & 20 & 40 & $1/2$ & 2 & 4\\
+GL3-F & 6 & 20 & 20 & $1$ & 2 & 2\\
+AC1 & 6 & 70 & 100 & $7/10$ & 7 & 10\\
+AC2 & 6 & 70 & 80 & $7/8$ & 7 & 8\\
+AC4 & 6 & 70 & 70 & $1$ & 7 & 7\\
+D02 & 6 & 40 & 40 & $1$ & 13 & 13\\
+GD4 & 6 & 40 & 40 & $1$ & 13 & 13\\
+\bottomrule\end{tabular}
+\end{table}
+En las seis repeticiones por condición sintética se obtuvieron los mismos volúmenes y conteos de la Tabla~\ref{tab:prospectiva}; es lo esperado bajo contratos fijos. L01--GL3 reduce un tercio del observado (60 a 40 MiB); AC1--AC4 reduce 30\,\% (100 a 70 MiB). D02--GD4 conserva los 40 MiB y las trece entregas: reunir particiones distintas no elimina ninguna. Esto comprueba tres comportamientos de DME mediante entregas identificadas, sin inferir utilidad de la agrupación solo por el número de jobs.
+
+GL3-F conserva el final y elimina los dos retornos de intermedios que permanecían en GL3: observado de 40 a 20 MiB, DME de $1/2$ a $1$. Esa diferencia de 20 MiB era evitable bajo este contrato y grafo. La intervención prueba su alcanzabilidad concreta; no demuestra que la cota sea alcanzable para cualquier flujo. A requerido común DME conserva el orden inverso del observado. Su aporte es interpretar la proximidad a las obligaciones, como muestra GL3 frente a GD4 con iguales 40 MiB observados y razones distintas.
+
+\subsection{Agrupación del subworkflow de Montage}
+MontagePy 2.3.0 \citep{good2025} ejecuta las mismas dos operaciones de reproyección y reducción de resolución en W1. M-S las separa; M-G las reúne; M-F además omite el retorno del intermedio \texttt{project.fits}. La imagen y la cabecera suman 1\,650\,491 bytes, el intermedio mide 529\,920 y los finales suman 665\,280. Como productor y consumidor están en W1, el intermedio no añade obligación: requerido $1\,650\,491+665\,280=2\,315\,771$ bytes en las tres variantes. Esta ubicación difiere del contraste histórico W1/W2, cuya referencia incluye relevo y destino remoto.
+
+\begin{table}[htbp]\centering\small
+\caption{Montage en W1: volúmenes previstos y medidos coincidentes (bytes); conteos por ejecución}\label{tab:montage_agrupacion}
+\begin{tabular}{@{}lrrrrrr@{}}
+\toprule Caso & $n$ & $M_{\mathrm{req}}$ & $M_{\mathrm{obs}}$ & DME & Oblig. & Entregas\\\midrule
+M-S & 3 & 2\,315\,771 & 3\,375\,611 & $2315771/3375611$ & 4 & 6\\
+M-G & 3 & 2\,315\,771 & 2\,845\,691 & $2315771/2845691$ & 4 & 5\\
+M-F & 3 & 2\,315\,771 & 2\,315\,771 & $1$ & 4 & 4\\
+\bottomrule\end{tabular}
+\end{table}
+M-G elimina el reenvío del intermedio: 529\,920 bytes menos que M-S (15,70\,\%). M-F elimina además su retorno y entrega 1\,059\,840 bytes menos que M-S (31,40\,\%), alcanzando la referencia sin cambiar los finales. Las tres repeticiones por condición coinciden en volúmenes y entregas. El caso comprueba esos mecanismos con datos y operaciones científicas reales; sigue siendo un subworkflow pequeño de dos operaciones, no un mosaico completo ni evidencia general sobre aplicaciones científicas.
+
+\subsection{Límites de la comprobación}
+Las pausas entre sesiones y los tres bloques exploratorios de Montage limitan la interpretación temporal. La duración se conserva por ejecución como respuesta secundaria. Agrupar cambia también jobs y actividad administrativa; no se atribuye una diferencia temporal exclusivamente a bytes. No se controló la caché fría ni la carga de fondo. La ubicación está fijada y contrastada con el historial, en un único entorno CondorIO. La preservación posterior enlaza copias nuevas idénticas con recibos de rutas, hashes y fechas previas, sin alterar sus bytes; no aporta copias físicas independientes. Los pilotos técnicos, el fallo preservado y los límites de sesión están declarados. El costo de captura nativa de OE4 sigue sin aislarse.
+
+\section{Contraste con ubicación libre}
+\label{sec:ubicacion_libre}
+Los contrastes históricos de agrupación del pipeline fijaron las tareas en W1. Para observar cómo cambia la referencia cuando el planificador elige entre dos workers disponibles, se ejecutó un piloto GL2 y nueve comparaciones: L01, GL2 y GL3, tres repeticiones por agrupación. Se usó el mismo flujo sintético con archivos de 10 MiB. El orden predefinido de envío fue L01--GL2--GL3, GL3--L01--GL2 y GL3--GL2--L01. La secuencia organiza las rondas; no asigna al azar las tareas a workers.
+
+Pegasus envió los jobs a un único sitio HTCondor. HTCondor seleccionó un worker elegible según la disponibilidad observada; por ello no se interpreta el selector de Pegasus como una política entre workers. La ubicación efectiva de cada tarea se recuperó del historial de ejecución y se usó para recalcular el requerido por destino. Las comparaciones libres se analizan separadas de las 45 ejecuciones históricas, que tuvieron ubicaciones controladas.
+
+El piloto GL2 comprobó el procedimiento antes de las nueve comparaciones. $T_1$ y $T_2$ se agruparon y $T_3$ quedó en un job separado. Las tres tareas se observaron en W1; $M_{\mathrm{req}}=20$ MiB, $M_{\mathrm{obs}}=50$ MiB, DME $=2/5$ y la duración del DAG fue 106,935 s. El piloto se reporta aparte de las comparaciones.
+
+La Tabla~\ref{tab:libre} registra la ubicación observada, ambos volúmenes, la razón exacta y la duración de cada comparación.
+\begin{table}[htbp]\centering\small
+\caption{Resultados de las nueve comparaciones con ubicación libre (volúmenes en MiB)}
+\label{tab:libre}
+\begin{tabular}{@{}P{1.05cm}cP{2.4cm}rrrc@{}}
+\toprule Caso & Ronda & $T_1/T_2/T_3$ & $M_{\mathrm{req}}$ & $M_{\mathrm{obs}}$ & DME & DAG (s)\\\midrule
+L01 & 1 & W1/W1/W1 & 20 & 60 & $1/3$ & 120,937\\
+GL2 & 1 & W1/W1/W2 & 40 & 50 & $4/5$ & 100,796\\
+GL3 & 1 & W1/W1/W1 & 20 & 40 & $1/2$ & 80,662\\
+GL3 & 2 & W1/W1/W1 & 20 & 40 & $1/2$ & 81,659\\
+L01 & 2 & W1/W2/W2 & 40 & 60 & $2/3$ & 120,933\\
+GL2 & 2 & W1/W1/W1 & 20 & 50 & $2/5$ & 90,784\\
+GL3 & 3 & W1/W1/W1 & 20 & 40 & $1/2$ & 70,646\\
+GL2 & 3 & W1/W1/W1 & 20 & 50 & $2/5$ & 100,797\\
+L01 & 3 & W1/W1/W1 & 20 & 60 & $1/3$ & 125,941\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+En las tres repeticiones, $M_{\mathrm{obs}}$ fue 60 MiB para L01, 50 MiB para GL2 y 40 MiB para GL3. Las medianas de duración fueron 120,937, 100,796 y 80,662 s, respectivamente; GL3 tuvo la menor duración en cada ronda. Son resultados descriptivos de este entorno: cambian la agrupación y algunas ubicaciones, por lo que no se atribuye la diferencia temporal únicamente al volumen.
+
+Con ubicación libre, L01 de la ronda 2 requiere $10+2(10)+0+10=40$ MiB y tiene DME $=2/3$. GL2 de la ronda 1 requiere $10+0+2(10)+10=40$ MiB y tiene DME $=4/5$. El piloto y las otras siete comparaciones mantienen 20 MiB requeridos. La cuenta incluye el retorno obligatorio cuando una dependencia cruza entre workers. GL2 de la primera ronda tiene mayor DME que GL3 ($4/5$ frente a $1/2$), pero entrega más bytes (50 frente a 40 MiB): entre ubicaciones distintas, DME no ordena el observado.
+
+Para escoger una agrupación cuyo objetivo sea reducir bytes, el observado responde directamente a esa pregunta; el requerido y la ubicación explican las obligaciones que acompañan el resultado. DME ordena el volumen observado cuando se compara un requerido positivo común. En el bloque A, agrupar etapas que comparten una dependencia interna y consumidores de un mismo archivo redujo entregas; agrupar consumidores de particiones distintas no lo hizo. Los retornos intermedios registrados limitaron el ahorro. Las nueve comparaciones libres extienden esta lectura bajo una política común, sin generalizarla a otros flujos o planificadores.
+
+\section{Consistencia y comparación entre patrones}
+\label{sec:repro_patrones}
+En las quince condiciones históricas del bloque A, las tres repeticiones coinciden en ubicación, tamaños y observado. Las fichas y tablas siguientes corresponden únicamente a esas 45 ejecuciones. Con esos insumos, el requerido y DME también coinciden. Es una consistencia esperable bajo contratos fijos, no una prueba independiente de correctitud. Las fichas muestran cómo cambian las obligaciones y las entregas en cinco patrones; las duraciones se presentan por separado.
+
+\input{other/fichas_bloque_a}
+
+\input{other/conteos_bloque_a}
+\input{other/tabla_resultados}
+\input{other/decisiones_y_costos_a}
+
+\subsection{Alcance de la reproducción}
+La coincidencia entre repeticiones demuestra consistencia bajo las condiciones ensayadas. Los materiales permiten recalcular los resúmenes del bloque A a partir de datos procesados y ejecutar \Analyzer{} sobre cinco casos históricos portables. Reauditar las 45 ejecuciones desde sus fuentes requiere las cápsulas administrativas. Repetir la medición temporal exige además los ejecutables, sus parámetros y una configuración comparable del entorno.
+
+La validación histórica usa flujos sintéticos pequeños bajo CondorIO; la nueva campaña añade contrastes prospectivos de agrupación y retorno, incluidos dos operadores de Montage. El contraste libre cubre solo el pipeline; la campaña prospectiva mantiene ubicación fija. Otros tamaños o mecanismos requieren contrastes propios. El costo de exportación y análisis se delimita en la sección~\ref{sec:costo_a}.

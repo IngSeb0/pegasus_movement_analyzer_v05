@@ -1,0 +1,33 @@
+\subsection{Conteos que sustentan la comparación}
+\label{sec:conteos_a}
+La Tabla~\ref{tab:conteos_a} presenta las obligaciones calculadas con relevo y los conteos de ejecución preservados. La columna Jobs cuenta los jobs científicos. Los valores corresponden a una ejecución y coinciden en las tres repeticiones de cada condición.
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering\small
+\captionsetup{hypcap=false}
+\captionof{table}{Conteos por workflow en las condiciones seleccionadas}
+\label{tab:conteos_a}
+\begin{tabular}{@{}lrrrr@{}}
+\toprule Caso & Jobs & Obligaciones & Entregas & Direcciones conciliadas\\\midrule
+P01 & 1 & 2 & 2 & 2\\
+P02 & 1 & 2 & 2 & 2\\
+L01 & 3 & 2 & 6 & 6\\
+GL2 & 2 & 2 & 5 & 4\\
+GL3 & 1 & 2 & 4 & 2\\
+I40 & 3 & 2 & 6 & 6\\
+A01 & 5 & 5 & 13 & 10\\
+A02 & 5 & 13 & 13 & 10\\
+D02 & 5 & 13 & 13 & 10\\
+GD4 & 2 & 13 & 13 & 4\\
+AC1 & 5 & 7 & 10 & 10\\
+AC2 & 3 & 7 & 8 & 6\\
+AC4 & 2 & 7 & 7 & 4\\
+R01-E & 10 & 8 & 26 & 20\\
+R02-E & 10 & 26 & 26 & 20\\
+\bottomrule
+\end{tabular}
+\end{minipage}
+\end{center}
+
+En A02, D02, GD4, AC4 y R02-E coinciden obligaciones y entregas, además de los bytes. Bajo cobertura inyectiva por identidad y destino, la igualdad de cardinalidad hace biyectiva la correspondencia: no quedan entregas adicionales. La igualdad de conteos o bytes por sí sola no descarta sustituciones. En GL3, dos direcciones contienen cuatro entregas; en GD4, agrupar conserva trece entregas.

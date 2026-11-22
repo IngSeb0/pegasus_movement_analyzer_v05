@@ -1,0 +1,130 @@
+En las Figuras~\ref{fig:pat-process} a~\ref{fig:pat-redistribution}, los círculos son tareas y los rectángulos archivos; las flechas indican producción y consumo, no transferencias entre máquinas. La ubicación y los contratos se incorporan después al cálculo. Las condiciones comparadas se describen en la sección~\ref{sec:repro_patrones}.
+
+\subsection{Procesamiento}
+Una tarea transforma una entrada en un resultado final. La Figura~\ref{fig:pat-process} presenta el caso utilizado en P01 y P02.
+
+\par\medskip\noindent\begin{minipage}{\linewidth}
+\captionsetup{type=figure}
+\caption{Patrón de procesamiento}
+\label{fig:pat-process}
+\centering
+\begin{lrbox}{\dmediagrambox}\begin{tikzpicture}[>=Stealth,font=\small,
+ t/.style={draw,circle,minimum size=0.75cm,inner sep=1pt},
+ f/.style={draw,rectangle,minimum width=1cm,minimum height=0.6cm,inner sep=2pt}]
+\node[f] (a) at (0,0) {$A$};
+\node[t] (t) at (3,0) {$T_1$};
+\node[f] (b) at (6,0) {$B$};
+\draw[->] (a)--(t); \draw[->] (t)--(b);
+\end{tikzpicture}\end{lrbox}\fitdmediagram
+\par\smallskip\raggedright\normalsize\textit{Nota.} $A$ es la entrada externa y $B$ el resultado final. Ambos miden 10 MiB en P01 y 20 MiB en P02. La estructura permanece constante al cambiar el tamaño.
+\end{minipage}\par\medskip
+
+\subsection{Pipeline}
+Cada etapa consume la salida de la anterior. La Figura~\ref{fig:pat-pipeline} conserva la identidad de los intermediarios, aunque las tareas se agrupen después en jobs.
+
+\par\medskip\noindent\begin{minipage}{\linewidth}
+\captionsetup{type=figure}
+\caption{Patrón pipeline y sus archivos intermedios}
+\label{fig:pat-pipeline}
+\centering
+\begin{lrbox}{\dmediagrambox}\begin{tikzpicture}[>=Stealth,font=\small,
+ t/.style={draw,circle,minimum size=0.75cm,inner sep=1pt},
+ f/.style={draw,rectangle,minimum width=1cm,minimum height=0.6cm,inner sep=2pt}]
+\node[f] (a) at (0,0) {$A$};
+\node[t] (t1) at (2,0) {$T_1$};
+\node[f] (f12) at (4,0) {$f_{12}$};
+\node[t] (t2) at (6,0) {$T_2$};
+\node[f] (f23) at (8,0) {$f_{23}$};
+\node[t] (t3) at (10,0) {$T_3$};
+\node[f] (b) at (12,0) {$B$};
+\foreach \u/\v in {a/t1,t1/f12,f12/t2,t2/f23,f23/t3,t3/b}{\draw[->] (\u)--(\v);}
+\end{tikzpicture}\end{lrbox}\fitdmediagram
+\par\smallskip\raggedright\normalsize\textit{Nota.} En L01, $A$, $f_{12}$, $f_{23}$ y $B$ miden 10 MiB. Agrupar tareas conserva estos archivos y sus dependencias, aunque puede modificar las entregas del mecanismo de ejecución.
+\end{minipage}\par\medskip
+
+\Needspace{16\baselineskip}
+\subsection{Agregación}
+Una tarea agregadora consume archivos distintos de varios productores. La Figura~\ref{fig:pat-aggregation} muestra los cuatro productores del caso base.
+
+\par\medskip\noindent\begin{minipage}{\linewidth}
+\captionsetup{type=figure}
+\caption{Patrón de agregación: varios productores alimentan una tarea agregadora}
+\label{fig:pat-aggregation}
+\centering
+\begin{lrbox}{\dmediagrambox}\begin{tikzpicture}[>=Stealth,font=\small,
+ t/.style={draw,circle,minimum size=0.75cm,inner sep=1pt},
+ f/.style={draw,rectangle,minimum width=1cm,minimum height=0.6cm,inner sep=2pt}]
+\node[t] (agg) at (7,0) {$G$};
+\node[f] (b) at (10,0) {$B$};
+\foreach \i/\y in {1/1.8,2/0.6,3/-0.6,4/-1.8}{
+ \node[f] (a\i) at (0,\y) {$A_{\i}$};
+ \node[t] (p\i) at (2,\y) {$P_{\i}$};
+ \node[f] (f\i) at (4,\y) {$f_{\i}$};
+ \draw[->] (a\i)--(p\i); \draw[->] (p\i)--(f\i); \draw[->] (f\i)--(agg);
+}
+\draw[->] (agg)--(b);
+\end{tikzpicture}\end{lrbox}\fitdmediagram
+\par\smallskip\raggedright\normalsize\textit{Nota.} En A01, cada entrada $A_i$ y cada intermediario $f_i$ mide 10 MiB; $G$ produce el final $B$ de 40 MiB. Cada subíndice identifica un archivo distinto.
+\end{minipage}\par\medskip
+
+\subsection{Distribución}
+Un productor puede repartir particiones distintas o compartir un archivo entre varios consumidores. La Figura~\ref{fig:pat-distribution} distingue ambas relaciones, necesarias para interpretar el efecto de agrupar.
+
+\par\medskip\noindent\begin{minipage}{\linewidth}
+\captionsetup{type=figure}
+\caption{Patrón de distribución: particiones distintas y archivo compartido}
+\label{fig:pat-distribution}
+\centering
+\begin{lrbox}{\dmediagrambox}\begin{tikzpicture}[>=Stealth,font=\small,
+ t/.style={draw,circle,minimum size=0.7cm,inner sep=1pt},
+ f/.style={draw,rectangle,minimum width=0.95cm,minimum height=0.55cm,inner sep=2pt}]
+\node[anchor=west] at (-0.5,2.5) {(a) Particiones distintas};
+\node[f] (a) at (0,0) {$A$}; \node[t] (s) at (2,0) {$S$};
+\draw[->] (a)--(s);
+\foreach \i/\y in {1/1.65,2/0.55,3/-0.55,4/-1.65}{
+ \node[f] (q\i) at (5,\y) {$q_{\i}$};
+ \node[t] (c\i) at (8,\y) {$C_{\i}$};
+ \node[f] (b\i) at (11,\y) {$B_{\i}$};
+ \draw[->] (s)--(q\i); \draw[->] (q\i)--(c\i); \draw[->] (c\i)--(b\i);
+}
+\node[anchor=west] at (-0.5,-3) {(b) Archivo compartido};
+\node[f] (aa) at (0,-5.5) {$A$}; \node[t] (p) at (2,-5.5) {$P$};
+\node[f] (g) at (5,-5.5) {$g$};
+\draw[->] (aa)--(p); \draw[->] (p)--(g);
+\foreach \i/\y in {1/-3.85,2/-4.95,3/-6.05,4/-7.15}{
+ \node[t] (cc\i) at (8,\y) {$C_{\i}$};
+ \node[f] (bb\i) at (11,\y) {$B_{\i}$};
+ \draw[->] (g)--(cc\i); \draw[->] (cc\i)--(bb\i);
+}
+\end{tikzpicture}\end{lrbox}\fitdmediagram
+\par\smallskip\raggedright\normalsize\textit{Nota.} En D02 y GD4, $S$ divide una entrada de 10 MiB en cuatro particiones $q_i$ de 2,5 MiB y cada final $B_i$ conserva ese tamaño. En AC1, AC2 y AC4, $P$ produce un único archivo $g$ de 10 MiB, consumido por cuatro tareas que generan finales de 10 MiB. Las cuatro aristas de consumo de $g$ conservan una sola identidad de archivo.
+\end{minipage}\par\medskip
+
+\subsection{Redistribución}
+La redistribución agrega archivos de varios productores y divide el resultado para nuevos consumidores. La Figura~\ref{fig:pat-redistribution} representa ambas operaciones y sus intermediarios.
+
+\par\medskip\noindent\begin{minipage}{\linewidth}
+\captionsetup{type=figure}
+\caption{Patrón de redistribución: agregación seguida de partición y consumo}
+\label{fig:pat-redistribution}
+\centering
+\begin{lrbox}{\dmediagrambox}\begin{tikzpicture}[>=Stealth,font=\small,
+ t/.style={draw,circle,minimum size=0.65cm,inner sep=1pt},
+ f/.style={draw,rectangle,minimum width=0.85cm,minimum height=0.55cm,inner sep=2pt}]
+\node[t] (agg) at (5.25,0) {$G$};
+\node[f] (h) at (7,0) {$h$};
+\node[t] (s) at (8.75,0) {$S$};
+\draw[->] (agg)--(h); \draw[->] (h)--(s);
+\foreach \i/\y in {1/1.8,2/0.6,3/-0.6,4/-1.8}{
+ \node[f] (a\i) at (0,\y) {$A_{\i}$};
+ \node[t] (p\i) at (1.75,\y) {$P_{\i}$};
+ \node[f] (f\i) at (3.5,\y) {$f_{\i}$};
+ \draw[->] (a\i)--(p\i); \draw[->] (p\i)--(f\i); \draw[->] (f\i)--(agg);
+ \node[f] (q\i) at (10.5,\y) {$q_{\i}$};
+ \node[t] (c\i) at (12.25,\y) {$C_{\i}$};
+ \node[f] (b\i) at (14,\y) {$B_{\i}$};
+ \draw[->] (s)--(q\i); \draw[->] (q\i)--(c\i); \draw[->] (c\i)--(b\i);
+}
+\end{tikzpicture}\end{lrbox}\fitdmediagram
+\par\smallskip\raggedright\normalsize\textit{Nota.} En R01-E, las entradas $A_i$, los intermediarios $f_i$, las particiones $q_i$ y los finales $B_i$ miden 10 MiB cada uno. El archivo agregado $h$ mide 40 MiB. Las tareas $G$ y $S$ representan agregación y división, respectivamente.
+\end{minipage}\par\medskip

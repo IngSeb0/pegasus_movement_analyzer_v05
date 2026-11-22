@@ -1,0 +1,1031 @@
+{
+  "scope": "Tesis: matriz principal de 24 condiciones",
+  "source_index_sha256": "4584f47709dd2b1b9a75eb9ef90c0094db05639c318c338a3c37b4de2e1ddd61",
+  "accepted_capsules": 73,
+  "eligible": 72,
+  "capsules": [
+    {
+      "capsule": "A01-r01.tar.gz",
+      "condition": "A01",
+      "replica": 1,
+      "uuid": "1fb70f96-108d-4f86-8731-244323abcccd",
+      "eligible": true,
+      "sha256": "02055811cdfe166fdca0e66530553e3de113ec5bbeb37f63482fc2fbbd710178",
+      "bytes": 102386005,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261026_noche/compact_capsules/A01-r01.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/A01-r01.tar.sha256.json"
+    },
+    {
+      "capsule": "A01-r02.tar.gz",
+      "condition": "A01",
+      "replica": 2,
+      "uuid": "488be843-4c2f-4e6f-943c-d81f1c7d656c",
+      "eligible": true,
+      "sha256": "3f657fb265a7ad7849ee925ba407eaacc43bc348455190fb57fc4f99452e613a",
+      "bytes": 102384896,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261027_reintento/compact_capsules/A01-r02.tar.gz",
+        "continuacion_cloud_20261028_cierre/compact_capsules/A01-r02.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/A01-r02.tar.sha256.json"
+    },
+    {
+      "capsule": "A01-r03.tar.gz",
+      "condition": "A01",
+      "replica": 3,
+      "uuid": "13e90661-4485-4b36-b594-29ce8e112cc7",
+      "eligible": true,
+      "sha256": "a3a07b04c1a61457db45571e10ecbffb6a9a39c738fcaa5fd4d3b6e45b6a929c",
+      "bytes": 102384793,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261027_reintento/compact_capsules/A01-r03.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/A01-r03.tar.sha256.json"
+    },
+    {
+      "capsule": "A02-r01.tar.gz",
+      "condition": "A02",
+      "replica": 1,
+      "uuid": "800aedb1-4b1e-4296-a771-350ac9bd4e2e",
+      "eligible": true,
+      "sha256": "f41f1fabf6f9da8a21a6984411e208ef0ee4ce9a44cf18c0c70b8787bf026d51",
+      "bytes": 102385209,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261026_noche/compact_capsules/A02-r01.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/A02-r01.tar.sha256.json"
+    },
+    {
+      "capsule": "A02-r02.tar.gz",
+      "condition": "A02",
+      "replica": 2,
+      "uuid": "2c4de8cd-be8d-4899-984e-2b4d8f976d15",
+      "eligible": true,
+      "sha256": "74ca7d07d268edd124aea9cf6a329d7908e452c594396af3056d8243b0e55ac7",
+      "bytes": 102385462,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261027_reintento/compact_capsules/A02-r02.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/A02-r02.tar.sha256.json"
+    },
+    {
+      "capsule": "A02-r03.tar.gz",
+      "condition": "A02",
+      "replica": 3,
+      "uuid": "df67b3e8-c17d-4a21-aaba-c71121102584",
+      "eligible": true,
+      "sha256": "3d313fced6da3ce0f463bac85d7aaa4aefc8462360e223cbd77cf39504ad4749",
+      "bytes": 102385830,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261027_reintento/compact_capsules/A02-r03.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/A02-r03.tar.sha256.json"
+    },
+    {
+      "capsule": "A02B-r01.tar.gz",
+      "condition": "A02B",
+      "replica": 1,
+      "uuid": "23e5e225-e918-499e-a11b-e321118fa164",
+      "eligible": true,
+      "sha256": "1fbe4ee91cbb6813c3ecaf10d53b396c61d38ebaeffb18c67748cfb943c4fcb4",
+      "bytes": 60393168,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261027_reintento/compact_capsules/A02B-r01.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/A02B-r01.tar.sha256.json"
+    },
+    {
+      "capsule": "A02B-r02.tar.gz",
+      "condition": "A02B",
+      "replica": 2,
+      "uuid": "15979e51-58dd-4d19-b192-ea4634441508",
+      "eligible": true,
+      "sha256": "ce7888b687c800fd7d79e97e1125d706302f88ac356b652fb6e84bcbd1a1221d",
+      "bytes": 60393088,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261027_reintento/compact_capsules/A02B-r02.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/A02B-r02.tar.sha256.json"
+    },
+    {
+      "capsule": "A02B-r03.tar.gz",
+      "condition": "A02B",
+      "replica": 3,
+      "uuid": "060a627f-9cdf-45f2-a70b-01024fce3cbf",
+      "eligible": true,
+      "sha256": "4abb1fefd9af659eb6f714d8ba92126af0ccfb9fbc5d93b1fde9c310a8f92bb5",
+      "bytes": 60393450,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261027_reintento/compact_capsules/A02B-r03.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/A02B-r03.tar.sha256.json"
+    },
+    {
+      "capsule": "B01-r01.tar.gz",
+      "condition": "B01",
+      "replica": 1,
+      "uuid": "4f352d32-be2c-4c7d-880f-b2a7543a6fb2",
+      "eligible": true,
+      "sha256": "5ea4cd269652fb48cd7d019ad7fc800ba0811d79ce26dcccbd586b797649c9c8",
+      "bytes": 70921437,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261026_noche/compact_capsules/B01-r01.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/B01-r01.tar.sha256.json"
+    },
+    {
+      "capsule": "B01-r02.tar.gz",
+      "condition": "B01",
+      "replica": 2,
+      "uuid": "0f5301bf-1203-4b64-b16c-a1682ec169fd",
+      "eligible": true,
+      "sha256": "86830846f412b9c7d98c9368225c05ba95f38e42ccd027688f523f26ce75c1a9",
+      "bytes": 70921446,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261026_noche/compact_capsules/B01-r02.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/B01-r02.tar.sha256.json"
+    },
+    {
+      "capsule": "B01-r03.tar.gz",
+      "condition": "B01",
+      "replica": 3,
+      "uuid": "dd50d4af-3b33-425c-8c29-266dbe62797a",
+      "eligible": true,
+      "sha256": "0e8b70eee1ba9ec0d02d07906124d1b5e68bb3933eb779a855d8db2da47947cf",
+      "bytes": 70921110,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261026_noche/compact_capsules/B01-r03.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/B01-r03.tar.sha256.json"
+    },
+    {
+      "capsule": "B02-r01.tar.gz",
+      "condition": "B02",
+      "replica": 1,
+      "uuid": "aa536245-8eef-4b52-95b6-cff9ea687c35",
+      "eligible": true,
+      "sha256": "5ae9499e99ef5601ad4fbb8909705d55a453c79d2fb27c48934258eafc1a5455",
+      "bytes": 70895205,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261026_noche/compact_capsules/B02-r01.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/B02-r01.tar.sha256.json"
+    },
+    {
+      "capsule": "B02-r02.tar.gz",
+      "condition": "B02",
+      "replica": 2,
+      "uuid": "70922b94-4471-46d8-ac5a-f63f09f73abe",
+      "eligible": true,
+      "sha256": "ff462a1cd7442ad3f09ee6bf2da51f074b842d878110a79477fdcd8bd5f5cec2",
+      "bytes": 70895767,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261026_noche/compact_capsules/B02-r02.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/B02-r02.tar.sha256.json"
+    },
+    {
+      "capsule": "B02-r03.tar.gz",
+      "condition": "B02",
+      "replica": 3,
+      "uuid": "882ae6f3-8cec-426f-9177-e669469ae7b1",
+      "eligible": true,
+      "sha256": "2c5af3e4e45329dadc4740106b2a1d4727975e59f19810dfbb6fb2d8bc73f8ad",
+      "bytes": 70895409,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261026_noche/compact_capsules/B02-r03.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/B02-r03.tar.sha256.json"
+    },
+    {
+      "capsule": "B04-r01.tar.gz",
+      "condition": "B04",
+      "replica": 1,
+      "uuid": "a6a48a67-b50b-4021-a6b5-07016e6a8ca2",
+      "eligible": true,
+      "sha256": "2568f28530aeb6b7a202282fab31f6bdba2b3e094d30e56c7caf267db439adde",
+      "bytes": 70888414,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261026_noche/compact_capsules/B04-r01.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/B04-r01.tar.sha256.json"
+    },
+    {
+      "capsule": "B04-r02.tar.gz",
+      "condition": "B04",
+      "replica": 2,
+      "uuid": "539e23d2-75c1-42e8-95f4-4470f49403e4",
+      "eligible": true,
+      "sha256": "3ec44c559710cfd37446ee31b558b3e2bf8edece6c0806f69cb7845adc9ecde4",
+      "bytes": 70887944,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261026_noche/compact_capsules/B04-r02.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/B04-r02.tar.sha256.json"
+    },
+    {
+      "capsule": "B04-r03.tar.gz",
+      "condition": "B04",
+      "replica": 3,
+      "uuid": "a3999460-e346-40f5-bae1-2b36a684365c",
+      "eligible": true,
+      "sha256": "60f0be69459950bb56fef38e12c4ffc066f89a9c0c2e9cc307f02e1202fe1781",
+      "bytes": 70887944,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261026_noche/compact_capsules/B04-r03.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/B04-r03.tar.sha256.json"
+    },
+    {
+      "capsule": "D01-r01.tar.gz",
+      "condition": "D01",
+      "replica": 1,
+      "uuid": "a0cd8355-4668-4033-b6c0-2772027dd17a",
+      "eligible": true,
+      "sha256": "16703d3c1d258e5e9fef406167009343374f6191447a78f8d41a7d80e7949d09",
+      "bytes": 39461642,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261026_noche/compact_capsules/D01-r01.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/D01-r01.tar.sha256.json"
+    },
+    {
+      "capsule": "D01-r02.tar.gz",
+      "condition": "D01",
+      "replica": 2,
+      "uuid": "370b3908-a711-4180-b8bb-193219563abc",
+      "eligible": true,
+      "sha256": "db9fa559056f33f4ee71a7be0d2191e7ba3f2dde4792584fd6be1f16383a270b",
+      "bytes": 39461980,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261027_reintento/compact_capsules/D01-r02.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/D01-r02.tar.sha256.json"
+    },
+    {
+      "capsule": "D01-r03.tar.gz",
+      "condition": "D01",
+      "replica": 3,
+      "uuid": "9db8be1f-7f40-43e5-8485-96317ffaed38",
+      "eligible": true,
+      "sha256": "124af27ff60c0b5484469d76fba18f1d2c4faa9dc1432eb0826096ea47f90d9f",
+      "bytes": 39461652,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261027_reintento/compact_capsules/D01-r03.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/D01-r03.tar.sha256.json"
+    },
+    {
+      "capsule": "D02-r01.tar.gz",
+      "condition": "D02",
+      "replica": 1,
+      "uuid": "0177744b-ac8d-4afa-814f-9643a0b2656d",
+      "eligible": true,
+      "sha256": "7ea1572d3fbeda3ce475e0728ea0d7bacf090cb5bdcf3e9536fdca02bbfeb9a7",
+      "bytes": 39462301,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261026_noche/compact_capsules/D02-r01.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/D02-r01.tar.sha256.json"
+    },
+    {
+      "capsule": "D02-r02.tar.gz",
+      "condition": "D02",
+      "replica": 2,
+      "uuid": "95699837-7fac-4710-a47b-881650ed65d2",
+      "eligible": true,
+      "sha256": "ef54f179e3b1520186d7f113ea2932f7b2e516069b80fcc0577a5bce4ed50457",
+      "bytes": 39462391,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261026_noche/compact_capsules/D02-r02.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/D02-r02.tar.sha256.json"
+    },
+    {
+      "capsule": "D02-r03.tar.gz",
+      "condition": "D02",
+      "replica": 3,
+      "uuid": "8f09e347-f606-4990-af6d-e28ac67d34d6",
+      "eligible": true,
+      "sha256": "19a006f057c5d3bd2f0f7d5e2994d8bc98b1c8456350fab84ee7fd5f01bba340",
+      "bytes": 39462171,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261026_noche/compact_capsules/D02-r03.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/D02-r03.tar.sha256.json"
+    },
+    {
+      "capsule": "D02B-r01.tar.gz",
+      "condition": "D02B",
+      "replica": 1,
+      "uuid": "ac43720d-b735-482e-943e-f3366d074fb2",
+      "eligible": true,
+      "sha256": "266360eb880ce9f5d8073d3df356d0a00f3bd440c990ba7b62327afa4438ed8c",
+      "bytes": 39423889,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261027_reintento/compact_capsules/D02B-r01.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/D02B-r01.tar.sha256.json"
+    },
+    {
+      "capsule": "D02B-r02.tar.gz",
+      "condition": "D02B",
+      "replica": 2,
+      "uuid": "511013f4-eafc-4f96-ad76-c5d5d239c80b",
+      "eligible": true,
+      "sha256": "fc0fa252331abbc0c3b0da7c22b93cba609c2e109b1a63bb93129b0b15f9f394",
+      "bytes": 39424017,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261027_reintento/compact_capsules/D02B-r02.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/D02B-r02.tar.sha256.json"
+    },
+    {
+      "capsule": "D02B-r03.tar.gz",
+      "condition": "D02B",
+      "replica": 3,
+      "uuid": "a94bab26-478c-4532-bd73-9b3616c6b0d2",
+      "eligible": true,
+      "sha256": "5dd5debd52d50bccb8b17f97f845f9f60da4b792de421c7eb7f88497f4bc857f",
+      "bytes": 39423907,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261027_reintento/compact_capsules/D02B-r03.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/D02B-r03.tar.sha256.json"
+    },
+    {
+      "capsule": "GD2-r01.tar.gz",
+      "condition": "GD2",
+      "replica": 1,
+      "uuid": "9a545436-dff8-4505-8edc-0abc57104e19",
+      "eligible": true,
+      "sha256": "575765028e3625675ed777caa701a08435c27e557be926c789b300a735fae1d1",
+      "bytes": 39438651,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261026_noche/compact_capsules/GD2-r01.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/GD2-r01.tar.sha256.json"
+    },
+    {
+      "capsule": "GD2-r02.tar.gz",
+      "condition": "GD2",
+      "replica": 2,
+      "uuid": "6a0897e0-2360-4ff2-846a-0c7cee7e6a62",
+      "eligible": true,
+      "sha256": "d3106351eb562fdce4034c400ab83292bc555d711f34e505bd5288a7f50f2be1",
+      "bytes": 39438643,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261026_noche/compact_capsules/GD2-r02.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/GD2-r02.tar.sha256.json"
+    },
+    {
+      "capsule": "GD2-r03.tar.gz",
+      "condition": "GD2",
+      "replica": 3,
+      "uuid": "d6c536ee-51ad-4f1b-8afe-f8d816d8c1d9",
+      "eligible": true,
+      "sha256": "1ec9d6bb8bc22e8ce236abf7a59d23bea5cbcd4a4f7f335d789ee4fd94ef8b77",
+      "bytes": 39438324,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261026_noche/compact_capsules/GD2-r03.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/GD2-r03.tar.sha256.json"
+    },
+    {
+      "capsule": "GD4-r01.tar.gz",
+      "condition": "GD4",
+      "replica": 1,
+      "uuid": "4727dce9-b2aa-43d4-b308-2cc5ad54fca1",
+      "eligible": true,
+      "sha256": "8833bb8c4be047a956852cc45212c87249badc7357b7b9a411dbb752c7106a1c",
+      "bytes": 39429446,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261026_noche/compact_capsules/GD4-r01.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/GD4-r01.tar.sha256.json"
+    },
+    {
+      "capsule": "GD4-r02.tar.gz",
+      "condition": "GD4",
+      "replica": 2,
+      "uuid": "2bb44716-5772-4544-9869-59b7ea829e39",
+      "eligible": true,
+      "sha256": "1fbab31732ff4e675706ec515fcaff5a28ab30b554d561992060aca136b56d64",
+      "bytes": 39429339,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261026_noche/compact_capsules/GD4-r02.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/GD4-r02.tar.sha256.json"
+    },
+    {
+      "capsule": "GD4-r03.tar.gz",
+      "condition": "GD4",
+      "replica": 3,
+      "uuid": "bbdbd5c9-ee07-445a-b6eb-bdd21d7d4d6c",
+      "eligible": true,
+      "sha256": "f45ee1fd4e375604a5efaf6cb6f13bd39d26b571358ae3ea46bdd240f9be981d",
+      "bytes": 39429716,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261026_noche/compact_capsules/GD4-r03.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/GD4-r03.tar.sha256.json"
+    },
+    {
+      "capsule": "GL2-r01.tar.gz",
+      "condition": "GL2",
+      "replica": 1,
+      "uuid": "ca76e973-9d9e-4c6a-a205-e89cfee116a5",
+      "eligible": true,
+      "sha256": "39672e24a9d72c778ca1e186906ce37e99d337add253f4deaeb3bb73df26eb94",
+      "bytes": 39409646,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261026_noche/compact_capsules/GL2-r01.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/GL2-r01.tar.sha256.json"
+    },
+    {
+      "capsule": "GL2-r02.tar.gz",
+      "condition": "GL2",
+      "replica": 2,
+      "uuid": "24ee3ab5-afff-4ca8-8d11-97b34c5dbb61",
+      "eligible": true,
+      "sha256": "b9797461f7cd844d97f940fad76b4d84b793d37c3c8eedd60d970d009ad9503b",
+      "bytes": 39409083,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261026_noche/compact_capsules/GL2-r02.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/GL2-r02.tar.sha256.json"
+    },
+    {
+      "capsule": "GL2-r03.tar.gz",
+      "condition": "GL2",
+      "replica": 3,
+      "uuid": "3933788d-0b3f-421e-bb25-970e354184cc",
+      "eligible": true,
+      "sha256": "a190896d2cee307d5fa8fba552102a1b53850293cfd547ac21217b9cd74c8eda",
+      "bytes": 39409541,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261026_noche/compact_capsules/GL2-r03.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/GL2-r03.tar.sha256.json"
+    },
+    {
+      "capsule": "GL3-r01.tar.gz",
+      "condition": "GL3",
+      "replica": 1,
+      "uuid": "39bf45df-2674-4bc0-b02f-62456f151e7b",
+      "eligible": true,
+      "sha256": "d96a7ddbebd7f76b7a79976d24f7f8c727464647ad87a2f228805694f863561c",
+      "bytes": 39395515,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261026_noche/compact_capsules/GL3-r01.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/GL3-r01.tar.sha256.json"
+    },
+    {
+      "capsule": "GL3-r02.tar.gz",
+      "condition": "GL3",
+      "replica": 2,
+      "uuid": "2b5c774b-627e-4112-80fa-0d162d966ace",
+      "eligible": true,
+      "sha256": "43280ee0d412e7072c101c7f68145826aa1fd6f6ea61964c95f16b00f5b80875",
+      "bytes": 39395580,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261026_noche/compact_capsules/GL3-r02.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/GL3-r02.tar.sha256.json"
+    },
+    {
+      "capsule": "GL3-r03.tar.gz",
+      "condition": "GL3",
+      "replica": 3,
+      "uuid": "03331c0c-c9e8-4c1d-bc04-935860f2666d",
+      "eligible": true,
+      "sha256": "c4cf2e3db46c54b936702e4db1c57f36cc3f671190b8603acb4290e13a14fe45",
+      "bytes": 39395686,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261026_noche/compact_capsules/GL3-r03.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/GL3-r03.tar.sha256.json"
+    },
+    {
+      "capsule": "I40-r01.tar.gz",
+      "condition": "I40",
+      "replica": 1,
+      "uuid": "06361e53-2c75-47c5-8a79-11971e325201",
+      "eligible": true,
+      "sha256": "ce53f9eac495ba6d1a8082c20ea5ed240488f88c32184a8f7bfe6aa49a5e4646",
+      "bytes": 39419751,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261026_noche/compact_capsules/I40-r01.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/I40-r01.tar.sha256.json"
+    },
+    {
+      "capsule": "I40-r02.tar.gz",
+      "condition": "I40",
+      "replica": 2,
+      "uuid": "656cffbb-da67-4d46-add3-7e698af5b055",
+      "eligible": true,
+      "sha256": "00d8c8621e9091cc871652b2b4f2ddc0eca85b579770d8d3c56f775b5fb2d1be",
+      "bytes": 39416398,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261027_reintento/compact_capsules/I40-r02.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/I40-r02.tar.sha256.json"
+    },
+    {
+      "capsule": "I40-r03.tar.gz",
+      "condition": "I40",
+      "replica": 3,
+      "uuid": "e94e2140-bb66-47ae-9612-75cac9c76a9f",
+      "eligible": true,
+      "sha256": "687bd2250f201e7bb16e12f1345c3f19878bdce0d86237c92304d659d1876775",
+      "bytes": 39419702,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261027_reintento/compact_capsules/I40-r03.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/I40-r03.tar.sha256.json"
+    },
+    {
+      "capsule": "L01-r01.tar.gz",
+      "condition": "L01",
+      "replica": 1,
+      "uuid": "cc93b210-b3cc-4e3d-8868-3974ff0620ce",
+      "eligible": false,
+      "sha256": "ece233c967bc45a213b03c8af9497953fc4cb81defbc04ce47fdd621857c85fc",
+      "bytes": 39423434,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261026_noche/compact_capsules/L01-r01.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/L01-r01.tar.sha256.json"
+    },
+    {
+      "capsule": "L01-r02.tar.gz",
+      "condition": "L01",
+      "replica": 2,
+      "uuid": "9fd3de13-e051-4d88-b336-29bbc1e37f78",
+      "eligible": true,
+      "sha256": "518d53085d72b8ee3cf8e7d6e774307a01f894e552229a5e2c77c814482fb98c",
+      "bytes": 39419124,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261026_noche/compact_capsules/L01-r02.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/L01-r02.tar.sha256.json"
+    },
+    {
+      "capsule": "L01-r03.tar.gz",
+      "condition": "L01",
+      "replica": 3,
+      "uuid": "810cbc13-3f0a-4151-84f8-a6f9792b3f12",
+      "eligible": true,
+      "sha256": "ce6c783538d2f79b0b1b21d38daf76506ff04811a06377cc67f53a9b3c937e65",
+      "bytes": 39419292,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261026_noche/compact_capsules/L01-r03.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/L01-r03.tar.sha256.json"
+    },
+    {
+      "capsule": "L01-r04.tar.gz",
+      "condition": "L01",
+      "replica": 4,
+      "uuid": "c15ddc0a-1343-485f-9308-25336ad36460",
+      "eligible": true,
+      "sha256": "67d99a35078bdf121ef1a934729dc44965dc8c88c6c28bb0f31e9566acbec0ee",
+      "bytes": 39415955,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261026_noche/compact_capsules/L01-r04.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/L01-r04.tar.sha256.json"
+    },
+    {
+      "capsule": "L02-r01.tar.gz",
+      "condition": "L02",
+      "replica": 1,
+      "uuid": "56056fd3-3217-4a90-a930-0be4652992bc",
+      "eligible": true,
+      "sha256": "3320e3ba4d312c6f15b7f5582b3fd9fec48a6fba2e6c4c9a60aadabe1a5d95c5",
+      "bytes": 39420515,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261026_noche/compact_capsules/L02-r01.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/L02-r01.tar.sha256.json"
+    },
+    {
+      "capsule": "L02-r02.tar.gz",
+      "condition": "L02",
+      "replica": 2,
+      "uuid": "2799b670-a4dd-435d-aea1-91fae625d68d",
+      "eligible": true,
+      "sha256": "144c6bff7794d39ca1248c81526c24a808fb2295430b5020fa19fd6b4f2776d5",
+      "bytes": 39419311,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261027_reintento/compact_capsules/L02-r02.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/L02-r02.tar.sha256.json"
+    },
+    {
+      "capsule": "L02-r03.tar.gz",
+      "condition": "L02",
+      "replica": 3,
+      "uuid": "b4c3b579-208c-46ba-99bb-e47a116725b4",
+      "eligible": true,
+      "sha256": "1061667cf8aaea3d14fd536c13e5f0cadba3a03a9da3e56add11a4f1d9f22340",
+      "bytes": 39419852,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261027_reintento/compact_capsules/L02-r03.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/L02-r03.tar.sha256.json"
+    },
+    {
+      "capsule": "L05-r02.tar.gz",
+      "condition": "L05",
+      "replica": 2,
+      "uuid": "24633d5f-0e97-46e2-a52e-fc5d25f94d6a",
+      "eligible": true,
+      "sha256": "b87c50fa8a15b01d954a2e3f77780a39d284c203c836910fd36124ee5327a520",
+      "bytes": 39469012,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261027_reintento/compact_capsules/L05-r02.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/L05-r02.tar.sha256.json"
+    },
+    {
+      "capsule": "L05-r03.tar.gz",
+      "condition": "L05",
+      "replica": 3,
+      "uuid": "e521d146-33c2-46c6-96df-227ca76595d2",
+      "eligible": true,
+      "sha256": "a4582bbc34d470bb01517cbccaa7db3c72d10637998f9f37c69345bcd8d0341c",
+      "bytes": 39470578,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261027_reintento/compact_capsules/L05-r03.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/L05-r03.tar.sha256.json"
+    },
+    {
+      "capsule": "L05-r04.tar.gz",
+      "condition": "L05",
+      "replica": 4,
+      "uuid": "28d1ec7f-d3d3-4d1e-92da-786bed8679b1",
+      "eligible": true,
+      "sha256": "3e0829c3bbdd54c6ee9dd7520fcfac95dbb87f4caed03d7b145f668e283cb140",
+      "bytes": 39470408,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261027_reintento/compact_capsules/L05-r04.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/L05-r04.tar.sha256.json"
+    },
+    {
+      "capsule": "P01-r01.tar.gz",
+      "condition": "P01",
+      "replica": 1,
+      "uuid": "17261e6b-4228-4b56-888f-b122d4a49619",
+      "eligible": true,
+      "sha256": "e8ba8fb0a68cc5181ad47878ed220216437c107a988c3bee54789b71568f2ef3",
+      "bytes": 39369204,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261026_noche/compact_capsules/P01-r01.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/P01-r01.tar.sha256.json"
+    },
+    {
+      "capsule": "P01-r02.tar.gz",
+      "condition": "P01",
+      "replica": 2,
+      "uuid": "28f40115-c1ee-440b-b74f-e0f34a2c5b0a",
+      "eligible": true,
+      "sha256": "7aa8d58955750d535de8a9e51133899f34d4e923a2d1fe86e99fa21dee0149e9",
+      "bytes": 39369136,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261027_reintento/compact_capsules/P01-r02.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/P01-r02.tar.sha256.json"
+    },
+    {
+      "capsule": "P01-r03.tar.gz",
+      "condition": "P01",
+      "replica": 3,
+      "uuid": "7e6527a7-62d3-46da-a416-dfc664a46ae7",
+      "eligible": true,
+      "sha256": "8ffea4708d4bde3b0369017d5d0821bbfacff0bfcf908202bb760ea0a311c42a",
+      "bytes": 39369499,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261027_reintento/compact_capsules/P01-r03.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/P01-r03.tar.sha256.json"
+    },
+    {
+      "capsule": "P02-r01.tar.gz",
+      "condition": "P02",
+      "replica": 1,
+      "uuid": "f4c99678-3192-46f4-84a0-55f499412d3c",
+      "eligible": true,
+      "sha256": "56d6e45647594b01b9cabbfed12eb837ef9767ccaaf2e6beac661bfc0116b565",
+      "bytes": 60349208,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261026_noche/compact_capsules/P02-r01.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/P02-r01.tar.sha256.json"
+    },
+    {
+      "capsule": "P02-r02.tar.gz",
+      "condition": "P02",
+      "replica": 2,
+      "uuid": "89b5f6fa-90ad-424c-bf9b-7764fd8ce66b",
+      "eligible": true,
+      "sha256": "b6ed54614e8d08ad72f0a493d0498067886f47e4519d4f9e34154f3e55a68039",
+      "bytes": 60348527,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261027_reintento/compact_capsules/P02-r02.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/P02-r02.tar.sha256.json"
+    },
+    {
+      "capsule": "P02-r03.tar.gz",
+      "condition": "P02",
+      "replica": 3,
+      "uuid": "bd8c47ba-4180-450e-b4ce-3b0c9929794d",
+      "eligible": true,
+      "sha256": "c80a6eda4462f87ee9543b2a748a13aa900a1da896543e347b5e50c6ce40bd72",
+      "bytes": 60348721,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261027_reintento/compact_capsules/P02-r03.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/P02-r03.tar.sha256.json"
+    },
+    {
+      "capsule": "R01-E-r01.tar.gz",
+      "condition": "R01-E",
+      "replica": 1,
+      "uuid": "35518ba4-f88a-48df-b5a0-df904d92acf7",
+      "eligible": true,
+      "sha256": "08d0c737b18b86cdb7e68cafc456859f1771877366b298f9302d4112cac62ede",
+      "bytes": 102502231,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261026_noche/compact_capsules/R01-E-r01.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/R01-E-r01.tar.sha256.json"
+    },
+    {
+      "capsule": "R01-E-r02.tar.gz",
+      "condition": "R01-E",
+      "replica": 2,
+      "uuid": "ad7f0ef4-1c4c-4ef6-a042-9620e2eda112",
+      "eligible": true,
+      "sha256": "2f2cd6c0856888d1b56534d31bd1eb1ee404f71a7add926f73940726f1c68e02",
+      "bytes": 102499355,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261027_reintento/compact_capsules/R01-E-r02.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/R01-E-r02.tar.sha256.json"
+    },
+    {
+      "capsule": "R01-E-r03.tar.gz",
+      "condition": "R01-E",
+      "replica": 3,
+      "uuid": "e8168b51-d5cc-4c3f-b8d7-ba801e0f31b6",
+      "eligible": true,
+      "sha256": "59fe8a534dc90cc1f5247d8da2b3d2ad0b858fa79590df7d5b8ab0fdbe227e39",
+      "bytes": 102500094,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261027_reintento/compact_capsules/R01-E-r03.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/R01-E-r03.tar.sha256.json"
+    },
+    {
+      "capsule": "R02-E-r01.tar.gz",
+      "condition": "R02-E",
+      "replica": 1,
+      "uuid": "572563b1-fe38-44c9-979d-39d620a03d54",
+      "eligible": true,
+      "sha256": "eaeada3ef28d4078a8516f494a02081d444c075c6a7d4bc83335ffc054720647",
+      "bytes": 102502554,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261026_noche/compact_capsules/R02-E-r01.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/R02-E-r01.tar.sha256.json"
+    },
+    {
+      "capsule": "R02-E-r02.tar.gz",
+      "condition": "R02-E",
+      "replica": 2,
+      "uuid": "5ac58802-b3d9-4694-8d3c-3d49dafe6a95",
+      "eligible": true,
+      "sha256": "595464ecbe228c5fe81e762fdf3b8f67b56c73d05b49b48411f5cc6da276622e",
+      "bytes": 102499936,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261027_reintento/compact_capsules/R02-E-r02.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/R02-E-r02.tar.sha256.json"
+    },
+    {
+      "capsule": "R02-E-r03.tar.gz",
+      "condition": "R02-E",
+      "replica": 3,
+      "uuid": "4147600b-ef11-408d-a361-9c10fbc91525",
+      "eligible": true,
+      "sha256": "3a56078277a398adb6776ab57fb97c2e829124d7fe637e51d4d68c889f6ebd61",
+      "bytes": 102501040,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261027_reintento/compact_capsules/R02-E-r03.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/R02-E-r03.tar.sha256.json"
+    },
+    {
+      "capsule": "R02B-r01.tar.gz",
+      "condition": "R02B",
+      "replica": 1,
+      "uuid": "a9ed638b-b3ea-43b9-baae-bcf7f3341ba5",
+      "eligible": true,
+      "sha256": "9ca8f337e57b424b409e3bc167d7fa39f2f378c66afe0c259c8e8b2f6ff54110",
+      "bytes": 60475836,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261027_reintento/compact_capsules/R02B-r01.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/R02B-r01.tar.sha256.json"
+    },
+    {
+      "capsule": "R02B-r02.tar.gz",
+      "condition": "R02B",
+      "replica": 2,
+      "uuid": "919ec30c-052f-4603-8be2-8a0db0cccbaa",
+      "eligible": true,
+      "sha256": "bdd9d0ee1c9f05d60e39e0dd94039cf63e8fd297284453967f93c0bbb43f3a62",
+      "bytes": 60475357,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261027_reintento/compact_capsules/R02B-r02.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/R02B-r02.tar.sha256.json"
+    },
+    {
+      "capsule": "R02B-r03.tar.gz",
+      "condition": "R02B",
+      "replica": 3,
+      "uuid": "f7b48280-52fa-401b-bfa9-1593519a968d",
+      "eligible": true,
+      "sha256": "6fc715140d81c32a501dd3e6c315f00903ec2dd561835850e0fbb1edcb92ba05",
+      "bytes": 60476329,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261027_reintento/compact_capsules/R02B-r03.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/R02B-r03.tar.sha256.json"
+    },
+    {
+      "capsule": "W01-r01.tar.gz",
+      "condition": "W01",
+      "replica": 1,
+      "uuid": "6eda962b-5a0b-4fad-8b1b-089de3b7dbe2",
+      "eligible": true,
+      "sha256": "7be2be2826220891018dbe25a3aa06a2e7933fce99bdf9f1cbc3539f61315e25",
+      "bytes": 70919900,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261028_cierre/compact_capsules/W01-r01.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/W01-r01.tar.sha256.json"
+    },
+    {
+      "capsule": "W01-r02.tar.gz",
+      "condition": "W01",
+      "replica": 2,
+      "uuid": "f74d590c-2839-4219-a337-34de9a951e22",
+      "eligible": true,
+      "sha256": "749ec1cd7e69208ddb165513a01bb47012b86e6300d23bdc04220b203c94fa9c",
+      "bytes": 70919903,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261028_cierre/compact_capsules/W01-r02.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/W01-r02.tar.sha256.json"
+    },
+    {
+      "capsule": "W01-r03.tar.gz",
+      "condition": "W01",
+      "replica": 3,
+      "uuid": "028e333e-cf82-45bd-91d4-3f51cf9b9da5",
+      "eligible": true,
+      "sha256": "43a4ee61110884ed8055464a25b36a2aded2b0587ded0dfac798ee1f845af878",
+      "bytes": 70920320,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261028_cierre/compact_capsules/W01-r03.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/W01-r03.tar.sha256.json"
+    },
+    {
+      "capsule": "W04-r01.tar.gz",
+      "condition": "W04",
+      "replica": 1,
+      "uuid": "57d05beb-fbc5-4cd1-b626-ff97fe0e985f",
+      "eligible": true,
+      "sha256": "f2617ed03cb5468dafff8270874fd7edb6a09b8975b3191640dbcb61c42e1e0d",
+      "bytes": 70922847,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261028_cierre/compact_capsules/W04-r01.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/W04-r01.tar.sha256.json"
+    },
+    {
+      "capsule": "W04-r02.tar.gz",
+      "condition": "W04",
+      "replica": 2,
+      "uuid": "adf15826-a220-4a7d-80c6-e49e1f7fe2f5",
+      "eligible": true,
+      "sha256": "12ab9d3a6b1de43a25494cc92dd68a4a64f3f8b314287c0199ed28845824809b",
+      "bytes": 70923278,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261028_cierre/compact_capsules/W04-r02.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/W04-r02.tar.sha256.json"
+    },
+    {
+      "capsule": "W04-r03.tar.gz",
+      "condition": "W04",
+      "replica": 3,
+      "uuid": "c9cb48c0-2cbe-4e09-b12a-f9b0c13d7f51",
+      "eligible": true,
+      "sha256": "1771ed90ae581ced19d91d033fbad30e0a5d86642ef390b4d7c5725d7446159d",
+      "bytes": 70922593,
+      "paths_relative_to_project": [
+        "continuacion_cloud_20261028_cierre/compact_capsules/W04-r03.tar.gz"
+      ],
+      "path_selection": "existencia_y_tamano_de_recibo; hash_comprobado_al_reproducir",
+      "receipt": "recibos/W04-r03.tar.sha256.json"
+    }
+  ]
+}

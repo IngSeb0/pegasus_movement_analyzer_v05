@@ -1,0 +1,5 @@
+input.dat @@PFN@@ user="luis" size="52428800" ctime="2026-09-18T04:26:16.759184" checksum.type="sha256" checksum.value="d1213b3755309cbb0670282b04322418f3fdba15fb982d05424b81b3cfda7ffa" checksum.timing="0.626"
+data_task @@PFN@@ user="luis" size="2879" ctime="2026-09-02T00:59:12.469450" checksum.type="sha256" checksum.value="4cc5a30cf85253c035bed2ae92269a939089a0f0d925b6088aba5d82f3694bad" checksum.timing="0.093"
+pipeline.stage1.dat @@PFN@@ user="nobody" size="52428800" ctime="2026-09-17T23:27:32-05:00" checksum.type="sha256" checksum.value="d1213b3755309cbb0670282b04322418f3fdba15fb982d05424b81b3cfda7ffa" checksum.timing="0.38"
+pipeline.stage2.dat @@PFN@@ user="nobody" size="52428800" ctime="2026-09-17T23:27:58-05:00" checksum.type="sha256" checksum.value="d1213b3755309cbb0670282b04322418f3fdba15fb982d05424b81b3cfda7ffa" checksum.timing="1.04"
+pipeline.stage3.dat @@PFN@@ user="nobody" size="52428800" ctime="2026-09-17T23:28:51-05:00" checksum.type="sha256" checksum.value="d1213b3755309cbb0670282b04322418f3fdba15fb982d05424b81b3cfda7ffa" checksum.timing="0.48"

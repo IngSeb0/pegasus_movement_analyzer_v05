@@ -1,0 +1,137 @@
+x-pegasus:
+  apiLang: python
+  createdBy: luis
+  createdOn: 09-17-26T17:15:39Z
+pegasus: 5.0.4
+name: dm-pipeline
+metadata:
+  pattern: pipeline
+  size_mib: '10'
+  branches: '4'
+  stages: '3'
+  placement: balanced-local
+siteCatalog:
+  sites:
+  - name: local
+    arch: x86_64
+    os.type: linux
+    directories:
+    - type: sharedScratch
+      path: /home/luis/pegasus-lab/pegasus_avance_semana_1_6/experiments/pipeline-balanced-local-20260917-171539/scratch
+      sharedFileSystem: false
+      fileServers:
+      - url: file:///home/luis/pegasus-lab/pegasus_avance_semana_1_6/experiments/pipeline-balanced-local-20260917-171539/scratch
+        operation: all
+    - type: localStorage
+      path: /home/luis/pegasus-lab/pegasus_avance_semana_1_6/experiments/pipeline-balanced-local-20260917-171539/outputs
+      sharedFileSystem: false
+      fileServers:
+      - url: file:///home/luis/pegasus-lab/pegasus_avance_semana_1_6/experiments/pipeline-balanced-local-20260917-171539/outputs
+        operation: all
+  - name: condorpool
+    arch: x86_64
+    os.type: linux
+    directories: []
+    profiles:
+      condor:
+        universe: vanilla
+        request_cpus: '1'
+        request_memory: 256
+      pegasus:
+        style: condor
+        auxillary.local: 'true'
+replicaCatalog:
+  replicas:
+  - lfn: input.dat
+    pfns:
+    - site: local
+      pfn: /home/luis/pegasus-lab/pegasus_avance_semana_1_6/experiments/pipeline-balanced-local-20260917-171539/inputs/input.dat
+transformationCatalog:
+  transformations:
+  - name: data_task
+    sites:
+    - name: local
+      pfn: /home/luis/pegasus-lab/pegasus_avance_semana_1_6/bin/data_task.py
+      type: stageable
+      arch: x86_64
+      os.type: linux
+jobs:
+- type: job
+  name: data_task
+  id: ID0000001
+  arguments:
+  - process
+  - --input
+  - input.dat
+  - --output
+  - pipeline.stage1.dat
+  uses:
+  - lfn: input.dat
+    type: input
+  - lfn: pipeline.stage1.dat
+    type: output
+    stageOut: false
+    registerReplica: true
+  profiles:
+    condor:
+      requirements: regexp("pegasus-worker1", TARGET.Name)
+  metadata:
+    pattern: pipeline
+    role: stage-1
+    controlled_worker: worker1
+    placement: balanced-local
+- type: job
+  name: data_task
+  id: ID0000002
+  arguments:
+  - process
+  - --input
+  - pipeline.stage1.dat
+  - --output
+  - pipeline.stage2.dat
+  uses:
+  - lfn: pipeline.stage2.dat
+    type: output
+    stageOut: false
+    registerReplica: true
+  - lfn: pipeline.stage1.dat
+    type: input
+  profiles:
+    condor:
+      requirements: regexp("pegasus-worker1", TARGET.Name)
+  metadata:
+    pattern: pipeline
+    role: stage-2
+    controlled_worker: worker1
+    placement: balanced-local
+- type: job
+  name: data_task
+  id: ID0000003
+  arguments:
+  - process
+  - --input
+  - pipeline.stage2.dat
+  - --output
+  - pipeline.stage3.dat
+  uses:
+  - lfn: pipeline.stage3.dat
+    type: output
+    stageOut: true
+    registerReplica: true
+  - lfn: pipeline.stage2.dat
+    type: input
+  profiles:
+    condor:
+      requirements: regexp("pegasus-worker2", TARGET.Name)
+  metadata:
+    pattern: pipeline
+    role: stage-3
+    controlled_worker: worker2
+    placement: balanced-local
+jobDependencies:
+- id: ID0000001
+  children:
+  - ID0000002
+- id: ID0000002
+  children:
+  - ID0000003

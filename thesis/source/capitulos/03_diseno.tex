@@ -1,0 +1,100 @@
+\chapter{Análisis y diseño de la solución}
+\label{ch:diseno}
+\section{Especificación y frontera}
+La solución debe indicar qué cota de volumen imponen las dependencias y el relevo bajo CondorIO, cuánto se entregó y qué archivos y destinos explican la diferencia. Los tres resultados se refieren al mismo grafo y a la misma ejecución. El registro de salida vincula cada obligación o entrega con el archivo y el contexto utilizado para contarlo.
+
+La medición empieza con las entradas científicas en el coordinador y termina con la disponibilidad de los finales declarados. El observado suma el tamaño lógico de cada archivo científico por entrega completa corroborada. Los auxiliares sirven para conciliar registros y se excluyen de ese volumen. DME no mide cabeceras, retransmisiones ni el efecto de comprimir el transporte. Una ubicación corresponde a una máquina virtual. El perfil de medición es el conjunto de condiciones bajo las cuales se reconstruye el cálculo. Requiere identidades y tamaños estables, un productor por archivo generado, un intento efectivo por job y evidencia suficiente de los contratos. Ante fuentes incompatibles o incompletas se conserva el diagnóstico.
+
+\section{Modelo de tareas, archivos y ubicación}
+Se representa el flujo científico mediante un grafo dirigido acíclico $G=(T,F,D)$, donde $T$ es el conjunto de tareas, $F$ el de archivos y $D$ contiene aristas de producción $(t,f)$ y de consumo $(f,t)$. Cada archivo generado tiene un productor y puede tener varios consumidores. Las entradas externas se reúnen en $F_{\mathrm{ext}}$ y los resultados que deben quedar en el coordinador en $F_{\mathrm{fin}}$. Sea $m$ el coordinador, $p(f)$ el productor de un archivo generado y $\pi(t)$ la máquina donde se ejecutó la tarea $t$. El mapa tarea--job se obtiene del plan, mientras que la ubicación se comprueba en el historial del job.
+
+Cada archivo tiene un tamaño $s(f)$ no negativo en bytes. Un MiB equivale a $2^{20}$ bytes. El origen $o(f)$ de una entrada externa es $m$. Para un archivo generado es $\pi(p(f))$. El conjunto de destinos requeridos es
+\begin{equation}
+R_f=\{\pi(t)\mid (f,t)\in D\}\cup Q_f.
+\end{equation}
+Se define $Q_f=\{m\}$ si $f$ es un final declarado o si es generado y algún consumidor se ejecuta en un worker distinto del productor; en otro caso, $Q_f=\varnothing$. Bajo CondorIO se consideran solo transferencias coordinador--worker: llevar un archivo de W1 a W2 exige recibirlo primero en el coordinador. Los finales y el relevo comparten el mismo destino $m$, que se cuenta una sola vez. Las entradas externas ya tienen origen en $m$.
+
+\section{Definición de la métrica}
+Para cada archivo $f$, sea $n_f=\lvert R_f\setminus\{o(f)\}\rvert$ el número de máquinas distintas de su origen en las que debe estar disponible. Cada máquina aporta una unidad aunque allí lo consuman varias tareas. Si todos los destinos están en el origen o $R_f$ es vacío, $n_f=0$. Así, $s(f)n_f$ expresa los bytes requeridos para el archivo $f$. Los dos volúmenes se calculan como
+\begin{align}
+M_{\mathrm{req}}&=\sum_{f\in F}s(f)\,n_f,\label{eq:requerido}\\
+M_{\mathrm{obs}}&=\sum_{e\in\mathcal E_{\mathrm{conf}}}s(f_e),\label{eq:observado}
+\end{align}
+donde $\mathcal E_{\mathrm{conf}}$ reúne las entregas científicas completas corroboradas y $f_e$ es el archivo de la entrega $e$. La referencia es una cota inferior con ubicación ejecutada fija, archivos completos, transferencias solo por el coordinador y una entrega por worker de destino. La cota se alcanza en las ejecuciones con observado igual al requerido, entre ellas A02, D02, GD4, AC4 y R02-E. Su alcanzabilidad no está demostrada para grafos generales ni para los casos con exceso: no modela todas las restricciones de sandboxes y contratos.
+
+\begin{table}[htbp]\centering\small
+\caption{Conteo de destinos con relevo obligatorio}\label{tab:ejemplos_relevo}
+\begin{tabularx}{\linewidth}{@{}Ylll@{}}
+\toprule Archivo & $Q_f$ & $R_f\setminus\{o(f)\}$ & $n_f$\\\midrule
+Nace en W1, se usa en W2 & $\{m\}$ & $\{m,\mathrm{W2}\}$ & 2\\
+Nace y se usa en W1 & $\varnothing$ & $\varnothing$ & 0\\
+Final en W1, consumido en W2 & $\{m\}$ & $\{m,\mathrm{W2}\}$ & 2\\
+Final nacido en W1 & $\{m\}$ & $\{m\}$ & 1\\
+Entrada en $m$, usada en W1 & $\varnothing$ & $\{\mathrm{W1}\}$ & 1\\
+\bottomrule\end{tabularx}
+\end{table}
+
+La métrica resume la relación entre ambos volúmenes:
+\begin{equation}
+\DME=\frac{M_{\mathrm{req}}}{M_{\mathrm{obs}}}\quad (M_{\mathrm{obs}}>0).
+\label{eq:dme}
+\end{equation}
+El cociente es adimensional. El análisis también usa la diferencia $M_{\mathrm{obs}}-M_{\mathrm{req}}$ cuando ayuda a explicar las entregas que separan la ejecución de su referencia. Esta diferencia expresa exceso sobre la cota inferior. DME igual a uno significa que el observado está en la cota; un valor menor indica exceso sobre ella. El exceso puede incluir retornos y reenvíos entre sandboxes. Agrupar puede reducirlos, según los contratos, pero no se ha demostrado que todo exceso sea evitable.
+
+Un contraejemplo analítico ilustra este límite bajo restricciones adicionales. Sean las dependencias T1--T2--T3--T4 y T1--T4, con ubicación W1/W2/W1/W2. La entrada, los tres intermedios y el final tienen tamaño unitario; el primer intermedio alimenta T2 y T4. La referencia por archivo y destino, con relevo obligatorio por el coordinador, suma ocho unidades. Si los jobs son secuenciales y aislados, los archivos completos pasan por el coordinador y no se reutilizan entre jobs, T2 y T4 requieren dos envíos del intermedio: el mínimo observado es nueve unidades y DME=8/9. Las únicas fusiones no triviales (T1/T3 o T2/T4) contraen caminos y crean ciclos. El ejemplo es analítico, no ejecutado; depende de la ausencia de caché o reutilización y no establece un límite universal.
+
+Con $M_{\mathrm{req}}$ positivo y común, una DME mayor equivale a un $M_{\mathrm{obs}}$ menor: no añade una clasificación distinta por bytes. Su aporte es normalizar el observado respecto de las obligaciones y, junto con el desglose, explicar qué entregas forman la diferencia. Por ello, DME menor que uno no demuestra que el exceso sea evitable.
+
+\subsection{Cobertura y estados de cálculo}
+Para probar la cota, se exige que cada obligación $(f,v)$ pueda asociarse a una entrega corroborada del mismo archivo al mismo destino. Dos obligaciones distintas deben asociarse a entregas distintas. En el perfil CondorIO, cada archivo generado que llega a otro worker pasa antes por el coordinador; por ello existen una entrega de relevo y otra al destino. Esta necesidad del mecanismo no sustituye su corroboración en los registros. Si se cumple esta condición, el requerido suma los tamaños de un subconjunto de las entregas observadas. Por tanto, $0\leq M_{\mathrm{req}}\leq M_{\mathrm{obs}}$, y $0\leq\DME\leq 1$ cuando el denominador es positivo. La cobertura se verifica por identidad y destino, aun con archivos de cero bytes. El observado completo exige incluir todas las entregas científicas del intento admitido y distinguir cada entrega de registros duplicados.
+
+Si ambos volúmenes son cero, la razón queda indefinida. Con requerido cero y observado positivo, el valor es cero. Con requerido positivo y observado cero, debe revisarse la cobertura antes de interpretar la ejecución. Si falta evidencia para determinar un volumen, se conserva su estado indeterminado. Un cociente mayor que uno contradice la condición de cobertura y exige examinar la asignación, las obligaciones y las entregas incluidas.
+
+\section{Interpretación de los contrastes}
+La línea base experimental es la configuración de comparación. La cota con relevo se calcula para cada ejecución. Para un mismo trabajo y perfil, sean $O_b$ y $O_v$ los observados de la base y la variante. La reducción relativa es
+\begin{equation}
+\rho=\frac{O_b-O_v}{O_b}\qquad(O_b>0).
+\end{equation}
+El producto $100\rho$ expresa el porcentaje de reducción respecto de la base. Si el requerido es común y positivo, una reducción del observado aumenta DME. El desglose permite identificar las entregas que explican esa reducción.
+
+Si también cambia el requerido, sean $R_b$ y $R_v$ sus valores respectivos. Con los cuatro volúmenes positivos, se puede escribir
+\begin{equation}
+\frac{\DME_v}{\DME_b}=\frac{R_v/R_b}{O_v/O_b}.
+\end{equation}
+La expresión separa ambos cambios relativos: DME puede aumentar sin ahorro si $M_{\mathrm{obs}}$ permanece constante y crece el requerido. Si cambia el requerido, se comparan los observados para ordenar bytes.
+
+
+
+GL3 y GD4 observan 40 MiB con requeridos de 20 y 40 MiB: DME vale $1/2$ y $1$. La referencia distingue esa relación, sin establecer superioridad global entre trabajos distintos.
+
+La duración se registra por separado: agrupar también cambia los jobs y la actividad administrativa.
+
+\section{Arquitectura del cálculo}
+La Figura~\ref{fig:arquitectura} distingue las fuentes que sustentan la referencia de las que corroboran las entregas. Las dos ramas comparten la identificación de la ejecución, los archivos y sus tamaños. Al integrarlas se comprueban consistencia y cobertura antes de emitir la razón y sus desgloses.
+
+\begin{figure}[htbp]
+\caption{Fuentes y cálculo de los dos volúmenes}
+\label{fig:arquitectura}
+\centering
+\begin{lrbox}{\dmediagrambox}\begin{tikzpicture}[>=Stealth,font=\small]
+\tikzset{b/.style={draw,rounded corners,align=center,text width=3.25cm,minimum height=1.05cm}}
+\node[b] (id) at (0,0) {Identidad de ejecución,\\archivos y tamaños};
+\node[b] (req) at (4.8,1.15) {Grafo y ubicación\\$M_{\mathrm{req}}$ por destino};
+\node[b] (obs) at (4.8,-1.15) {Contratos y registros\\$M_{\mathrm{obs}}$ por entrega};
+\node[b] (out) at (9.6,0) {Consistencia y cobertura\\DME y desglose};
+\draw[->] (id)--(req);\draw[->] (id)--(obs);\draw[->] (req)--(out);\draw[->] (obs)--(out);
+\end{tikzpicture}\end{lrbox}\fitdmediagram
+\end{figure}
+
+\begin{table}[htbp]\centering\small
+\caption{Decisiones del modelo de medición}
+\begin{tabularx}{\linewidth}{@{}P{2.65cm}YY@{}}
+\toprule Decisión & Alternativa considerada & Razón de la decisión\\\midrule
+Relevo obligatorio & Referencia sin relevo. & Omitir el coordinador subestima el volumen exigido cuando un archivo cruza entre workers.\\
+Referencia por máquina & Contar una copia por consumidor. & Se cuenta una disponibilidad por worker y el relevo obligatorio en el coordinador; no una entrada por sandbox.\\
+Ubicación efectiva & Optimizar sobre todas las asignaciones posibles. & La métrica describe la ejecución estudiada. La cota depende de sus ubicaciones, finales y del relevo por el coordinador.\\
+Entrega científica completa & Usar el total bruto de transporte. & Los archivos del grafo y las entregas corroboradas se comparan en una misma unidad y frontera.\\
+Razón con sus volúmenes & Clasificar configuraciones solo por DME. & El numerador y el denominador permiten identificar qué originó un cambio del cociente.\\
+\bottomrule
+\end{tabularx}
+\end{table}

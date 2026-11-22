@@ -1,0 +1,20 @@
+{
+  "unique_workflows": 113,
+  "main_conditions": 24,
+  "eligible_main_workflows": 72,
+  "workflows_by_block": {
+    "A": 72,
+    "COST_SCALE": 12,
+    "E": 5,
+    "REAL_APPLICATION": 4,
+    "RECEIVER_OBSERVATION": 2,
+    "free_placement": 3,
+    "operational_cost": 6,
+    "temporal": 9
+  },
+  "notes": [
+    "The 72 main rows are selected by eligible UUID from the preserved campaign index.",
+    "The 113 rows comprise A-H; 21 local Analyzer profile invocations are not workflows.",
+    "Durations are preserved measurements and may vary on other hardware; byte totals and DME are deterministic for these inputs."
+  ]
+}

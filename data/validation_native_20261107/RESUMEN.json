@@ -1,0 +1,17 @@
+{
+  "selected": 45,
+  "capsules_available": 45,
+  "verified_receipts": 45,
+  "native_oracle_success": 45,
+  "analyzer_statuses": {
+    "VALID": 45
+  },
+  "errors": [],
+  "limit": "Administrative sources extracted without scientific payloads or auxiliary bundles. Native oracle reparses workflow/metadata/history and coverage; it does not independently reconcile auxiliary bytes or rehash omitted scientific contents. Analyzer diagnostic states preserved without repairing sources.",
+  "analyzer_metrics_match_current_table": 45,
+  "native_source_hash_references_verified": 870,
+  "verification_modes": {
+    "SUCCESSFUL_MANIFEST": 348
+  },
+  "exact_byte_reconciliations_in_new_copy": 0
+}

@@ -24,3 +24,7 @@ results/
 # Temporary files
 *.tmp
 *.bak
+
+# Cachés de construcción y gráficos; no son evidencia científica nativa.
+.build/
+.chart-data-*/

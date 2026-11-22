@@ -1,0 +1,32 @@
+\documentclass[11pt,a4paper]{report}
+\input{config/config}
+\begin{document}
+\hypersetup{pageanchor=false}
+\input{other/title}
+\clearpage\pagenumbering{roman}
+\hypersetup{pageanchor=true}
+\chapter*{Resumen}
+La eficiencia del movimiento de datos (DME, por sus siglas en inglés) relaciona el volumen que requieren las dependencias de un flujo científico con sus entregas completas corroboradas. La referencia depende de la ubicación efectiva y del relevo obligatorio bajo CondorIO. La evidencia histórica detalla 45 ejecuciones de quince condiciones en cinco patrones, más nueve comparaciones de ubicación libre y un piloto. Una campaña prospectiva completa 63 ejecuciones principales en doce condiciones, separadas de doce pilotos válidos y un intento técnico fallido preservado. En seis repeticiones por condición sintética, agrupar reduce el observado de 60 a 40 MiB en el pipeline y de 100 a 70 MiB con un archivo compartido; las particiones distintas conservan 40 MiB. Una intervención sobre el retorno de intermedios lleva el pipeline a 20 MiB y DME igual a uno sin alterar el final. Tres repeticiones por variante de un subworkflow de Montage confirman agrupación y retorno selectivo, con finales científicamente equivalentes. DME normaliza respecto de las obligaciones; con requerido común conserva el orden inverso del observado y entre ubicaciones no ordena bytes por sí sola. Un contraejemplo analítico muestra que el exceso no siempre es evitable bajo jobs aislados sin caché. El costo de captura nativa sigue sin aislarse.
+
+\smallskip\noindent\textit{Palabras clave.} Flujos de trabajo científicos, movimiento de datos, Pegasus, HTCondor, agrupación de tareas.
+
+\section*{Abstract}
+Data Movement Efficiency (DME) relates required workflow volume to corroborated complete deliveries. Its reference depends on the graph, placement, and mandatory CondorIO relay. Historical validation covers 45 runs across fifteen conditions and five patterns, plus nine free-placement comparisons and one pilot. A prospective campaign completed 63 main runs across twelve conditions, with twelve valid pilots and one preserved technical failure. Across six repetitions per synthetic condition, clustering reduced observed volume from 60 to 40 MiB in the pipeline and from 100 to 70 MiB for a shared file; distinct partitions retained 40 MiB. Omitting intermediate returns further reduced the pipeline to 20 MiB and DME equal to one, without changing its final output. Three runs per Montage variant confirmed these mechanisms and equivalent outputs. With common required volume, DME preserves the inverse ordering of observed bytes; across placements, it does not rank bytes alone. An analytical counterexample shows an unattainable bound for one graph with isolated, no-cache jobs. Native capture overhead remains unisolated.
+
+\smallskip\noindent\textit{Keywords.} Scientific workflows, data movement, Pegasus, HTCondor, task clustering.
+\begingroup
+\setlength{\cftbeforechapskip}{6pt}
+\tableofcontents
+\endgroup
+\clearpage\pagenumbering{arabic}\pagestyle{fancy}
+\include{capitulos/01_introduccion}
+\include{capitulos/02_marco}
+\include{capitulos/03_diseno}
+\include{capitulos/04_implementacion}
+\include{capitulos/05_validacion}
+\include{capitulos/06_conclusiones}
+\include{capitulos/07_futuro}
+\include{capitulos/08_materiales}
+\clearpage
+\input{other/bibliography}
+\end{document}

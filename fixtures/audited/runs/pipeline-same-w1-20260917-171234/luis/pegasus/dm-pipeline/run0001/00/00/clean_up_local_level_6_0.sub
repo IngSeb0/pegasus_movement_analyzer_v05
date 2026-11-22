@@ -1,0 +1,41 @@
+######################################################################
+# PEGASUS WMS GENERATED SUBMIT FILE
+# DAG : dm-pipeline, Index = 0, Count = null
+# SUBMIT FILE NAME : clean_up_local_level_6_0.sub
+######################################################################
+stream_error  = false
+stream_output = false
+environment = "LANG=en_US.UTF-8 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin PYTHONPATH=/usr/lib/pegasus/python CONDOR_JOBID=$(cluster).$(process) PEGASUS_WF_UUID=1742f123-d0b9-4043-bc2a-ccc1a0ffc407 PEGASUS_WF_LABEL=dm-pipeline PEGASUS_DAG_JOB_ID=clean_up_local_level_6_0 PEGASUS_SITE=local _PEGASUS_WF_SUBMIT_DIR=/home/luis/pegasus-lab/pegasus_avance_semana_1_6/experiments/pipeline-same-w1-20260917-171234/luis/pegasus/dm-pipeline/run0001"
+arguments = " -n pegasus::cleanup -N null -i - -R local  -L dm-pipeline -T 2026-09-17T17:12:34-05:00 /usr/bin/../bin/pegasus-transfer "
+error = /home/luis/pegasus-lab/pegasus_avance_semana_1_6/experiments/pipeline-same-w1-20260917-171234/luis/pegasus/dm-pipeline/run0001//00/00/clean_up_local_level_6_0.err
+executable = /usr/bin/../bin/pegasus-kickstart
+input = /home/luis/pegasus-lab/pegasus_avance_semana_1_6/experiments/pipeline-same-w1-20260917-171234/luis/pegasus/dm-pipeline/run0001//00/00/clean_up_local_level_6_0.in
+log = /home/luis/pegasus-lab/pegasus_avance_semana_1_6/experiments/pipeline-same-w1-20260917-171234/luis/pegasus/dm-pipeline/run0001/dm-pipeline-0.log
+notification = NEVER
+output = /home/luis/pegasus-lab/pegasus_avance_semana_1_6/experiments/pipeline-same-w1-20260917-171234/luis/pegasus/dm-pipeline/run0001//00/00/clean_up_local_level_6_0.out
+periodic_release = False
+periodic_remove = (JobStatus == 5) && ((CurrentTime - EnteredCurrentStatus) > 1800)
+priority = 1000
+submit_event_user_notes = pool:local
+transfer_executable = false
+universe = local
+wf_submit_dir = /home/luis/pegasus-lab/pegasus_avance_semana_1_6/experiments/pipeline-same-w1-20260917-171234/luis/pegasus/dm-pipeline/run0001
++pegasus_generator = "Pegasus"
++pegasus_root_wf_uuid = "1742f123-d0b9-4043-bc2a-ccc1a0ffc407"
++pegasus_wf_uuid = "1742f123-d0b9-4043-bc2a-ccc1a0ffc407"
++pegasus_version = "5.1.2"
++pegasus_wf_name = "dm-pipeline-0"
++pegasus_wf_time = "20260917T171235-0500"
++pegasus_wf_xformation = "pegasus::cleanup"
++pegasus_wf_dax_job_id = "null"
++pegasus_wf_dag_job_id = "clean_up_local_level_6_0"
++pegasus_job_class = 8
++pegasus_site = "local"
++pegasus_job_runtime = 0
++pegasus_cores = 1
++pegasus_gpus = 1
++pegasus_cluster_size = 1
+queue
+######################################################################
+# END OF SUBMIT FILE
+######################################################################

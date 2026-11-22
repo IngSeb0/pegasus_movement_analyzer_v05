@@ -1,0 +1,20 @@
+\subsection{Distribución de un archivo compartido}
+\label{sec:prueba_b}
+\textbf{Pregunta y propósito.} Cuando varios consumidores requieren un mismo archivo, \textquestiondown{}qué cambia al agruparlos? Se compara la reutilización con D02 y GD4, donde cada consumidor necesita una partición distinta.
+
+\begin{table}[htbp]\centering\small
+\caption{Configuraciones de la distribución de un archivo compartido}
+\begin{tabularx}{\linewidth}{@{}P{1.3cm}YY@{}}
+\toprule Caso & Configuración & Por qué se incluye\\\midrule
+AC1 & Cuatro consumidores en jobs separados en W2; productor en W1. & Base con cuatro entradas del mismo archivo a W2.\\
+AC2 & Dos jobs de consumo, uno para $C_1$ y $C_2$ y otro para $C_3$ y $C_4$. & Comprueba una entrada por grupo de dos consumidores.\\
+AC4 & Un job de consumo para las cuatro tareas. & Comprueba si un grupo requiere una entrada.\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\textbf{Factor y controles.} Varía el número de consumidores por job: uno, dos o cuatro. El productor permanece en W1 y los consumidores en W2. La entrada, $g$ y cada final miden 10 MiB; cada consumidor produce un final distinto que se entrega al coordinador.
+
+\textbf{Comprobación esperada.} La cota es 70 MiB: 10 MiB de entrada a W1, 20 MiB por el retorno y la entrega de $g$, y 40 MiB de finales. El observado suma 60 MiB fijos (entrada, retorno de $g$ y finales) y una entrada de $g$ por job de consumo: 100, 80 o 70 MiB en total.
+
+\textbf{Resultado y decisión.} AC1, AC2 y AC4 observaron 100, 80 y 70 MiB; DME fue 7/10, 7/8 y 1. AC4 alcanza la cota con una copia de $g$ a W2 y reduce el observado 30\,\% frente a AC1. La agrupación permite reutilizar $g$ dentro de cada job. En D02 y GD4, cada consumidor necesita una partición distinta, por lo que agrupar no elimina esas cuatro entradas.

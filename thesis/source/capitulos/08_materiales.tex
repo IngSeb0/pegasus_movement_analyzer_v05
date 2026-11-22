@@ -1,0 +1,17 @@
+\chapter{Materiales}
+El paquete reúne fuentes, código, pruebas y datos. Desde su raíz, en Python 3.12:
+\begin{enumerate}
+\item \texttt{python}\ \path{analysis/rebuild_relay_dataset.py}: genera \path{data/derived/dme_relevo_55.csv}, con volúmenes, obligaciones y procedencia.
+\item \texttt{python}\ \path{analysis/audit_relay.py}: coteja esos 55 registros con código separado y produce \path{data/derived/auditoria_relevo_55.csv}.
+\end{enumerate}
+Los 55 registros separan 45 de configuraciones documentadas y diez del contraste libre, incluido el piloto. El archivo A--H conserva resultados históricos; no sustituye las tablas con relevo. Las otras 27 ejecuciones de A no se presentan como recalculadas.
+
+La reextracción posterior de las 45 cápsulas administrativas está documentada en \path{data/validation_native_20261107/}: conserva resultados por ejecución, cobertura y modos de corroboración. Las 348 direcciones se corroboran por manifiesto exitoso en las copias utilizadas, que omiten contenido científico y paquetes auxiliares. Ese análisis no repite la conciliación exacta histórica de auxiliares. El archivo completo de investigación sigue siendo necesario para verificar el contenido omitido.
+
+\path{analysis/rebuild_montage_relay.py} recalcula Montage desde \path{data/validation_montage_20261108/}, sin ejecutar las operaciones astronómicas. El recibo identifica las cuatro cápsulas y las fuentes cotejadas.
+
+El paquete incluye cinco casos históricos portables. El README identifica sus entradas, comandos y límites; su corroboración es por manifiesto exitoso.
+
+\path{data/prospective_20261108/} conserva matriz, predicciones previas, libro de envíos, resultados por UUID, fallo técnico y equivalencia. \path{analysis/prospective_20261108/rebuild.py} recalcula los volúmenes y conteos desde los desgloses extraídos, sin imputar predicciones. Las cápsulas separadas preservan entradas, finales, planes, registros y auxiliares. Los paquetes estáticos de Pegasus se conservan una vez por hash, vinculados mediante los manifiestos. Reauditar fuentes y contenido requiere ambos conjuntos; el paquete compacto solo permite reproducir los datos procesados. Los recibos documentan compresión sin pérdida y enlaces posteriores de copias idénticas, con rutas y bytes conservados.
+
+\path{tools/verify_snapshot.py} comprueba integridad, no correctitud científica. El depósito privado y la licencia siguen pendientes; esta revisión no se ha publicado en GitHub.

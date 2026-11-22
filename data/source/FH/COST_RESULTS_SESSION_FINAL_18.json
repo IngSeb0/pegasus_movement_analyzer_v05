@@ -1,0 +1,244 @@
+{
+  "generatedUtc": "2026-11-01T16:46:01.034513+00:00",
+  "expected_unique_cases": 12,
+  "accepted_unique_cases": 12,
+  "complete_pairs": 6,
+  "missing_cases": [],
+  "pairs": [
+    {
+      "tasks": 1,
+      "pair": 1,
+      "baseline_case": "NCF-COST001-P01-BASELINE",
+      "measurement_case": "NCF-COST001-P01-MEASUREMENT",
+      "baseline_uuid": "647e88ae-9ab5-49ab-b9c0-24ecf1f60aba",
+      "measurement_uuid": "dd8113fd-c4fa-4394-888a-31e6606aa5d2",
+      "baseline_dag_s": 80.63499999046326,
+      "measurement_dag_s": 80.6579999923706,
+      "paired_dag_delta_s": 0.023000001907348633,
+      "baseline_workflow_detection_s": 83.392979019,
+      "measurement_workflow_detection_s": 82.39384021200021,
+      "paired_detection_delta_s": -0.9991388069997811,
+      "required_bytes": 20971520,
+      "observed_bytes": 20971520,
+      "dme_exact": "1",
+      "measurement_postcompletion_increment_s": 2.8283931380001377,
+      "measurement_collection_s": 0.32978859299964824,
+      "measurement_analysis_reports_s": 0.16415949600013846,
+      "measurement_preservation_s": 2.3196159489998536
+    },
+    {
+      "tasks": 1,
+      "pair": 2,
+      "baseline_case": "NCF-COST001-P02-BASELINE",
+      "measurement_case": "NCF-COST001-P02-MEASUREMENT",
+      "baseline_uuid": "22b408a5-886f-47c5-99e8-f2d96d514b41",
+      "measurement_uuid": "dcebcdf0-4c24-4acf-a9be-d4f33413ba35",
+      "baseline_dag_s": 86.63199996948242,
+      "measurement_dag_s": 76.61899995803833,
+      "paired_dag_delta_s": -10.013000011444092,
+      "baseline_workflow_detection_s": 88.39045268799964,
+      "measurement_workflow_detection_s": 82.43308895800055,
+      "paired_detection_delta_s": -5.957363729999088,
+      "required_bytes": 20971520,
+      "observed_bytes": 20971520,
+      "dme_exact": "1",
+      "measurement_postcompletion_increment_s": 2.828352912999435,
+      "measurement_collection_s": 0.3299528250008734,
+      "measurement_analysis_reports_s": 0.1641050609996455,
+      "measurement_preservation_s": 2.319709494999188
+    },
+    {
+      "tasks": 1,
+      "pair": 3,
+      "baseline_case": "NCF-COST001-P03-BASELINE",
+      "measurement_case": "NCF-COST001-P03-MEASUREMENT",
+      "baseline_uuid": "e6046ae1-540d-481b-a9f7-50207e13fd08",
+      "measurement_uuid": "57f9f8ef-4038-4729-b0cf-1cad044a2c8e",
+      "baseline_dag_s": 86.63599991798401,
+      "measurement_dag_s": 86.63199996948242,
+      "paired_dag_delta_s": -0.003999948501586914,
+      "baseline_workflow_detection_s": 91.39293365700087,
+      "measurement_workflow_detection_s": 88.39822253399961,
+      "paired_detection_delta_s": -2.9947111230012524,
+      "required_bytes": 20971520,
+      "observed_bytes": 20971520,
+      "dme_exact": "1",
+      "measurement_postcompletion_increment_s": 2.827601622000657,
+      "measurement_collection_s": 0.3297557930000039,
+      "measurement_analysis_reports_s": 0.1640790970004673,
+      "measurement_preservation_s": 2.3194426410000233
+    },
+    {
+      "tasks": 10,
+      "pair": 1,
+      "baseline_case": "NCF-COST010-P01-BASELINE",
+      "measurement_case": "NCF-COST010-P01-MEASUREMENT",
+      "baseline_uuid": "39dc9e58-d732-455e-97af-3acb1a2fe563",
+      "measurement_uuid": "0657c019-28c4-4066-8225-63381c727c5d",
+      "baseline_dag_s": 96.38700008392334,
+      "measurement_dag_s": 106.42700004577637,
+      "paired_dag_delta_s": 10.039999961853027,
+      "baseline_workflow_detection_s": 101.9470873209998,
+      "measurement_workflow_detection_s": 110.95991523599992,
+      "paired_detection_delta_s": 9.012827915000116,
+      "required_bytes": 209715200,
+      "observed_bytes": 209715200,
+      "dme_exact": "1",
+      "measurement_postcompletion_increment_s": 17.355122559999927,
+      "measurement_collection_s": 0.9810605939999277,
+      "measurement_analysis_reports_s": 0.26425780100021257,
+      "measurement_preservation_s": 16.095636195999987
+    },
+    {
+      "tasks": 10,
+      "pair": 2,
+      "baseline_case": "NCF-COST010-P02-BASELINE",
+      "measurement_case": "NCF-COST010-P02-MEASUREMENT",
+      "baseline_uuid": "34e799fe-33fb-474c-9503-a2487fc1a6ea",
+      "measurement_uuid": "cd4d3b02-6fba-4063-8eb5-d670252bd609",
+      "baseline_dag_s": 106.56299996376038,
+      "measurement_dag_s": 100.37100005149841,
+      "paired_dag_delta_s": -6.191999912261963,
+      "baseline_workflow_detection_s": 109.41917200099988,
+      "measurement_workflow_detection_s": 102.950078975,
+      "paired_detection_delta_s": -6.469093025999882,
+      "required_bytes": 209715200,
+      "observed_bytes": 209715200,
+      "dme_exact": "1",
+      "measurement_postcompletion_increment_s": 17.207973487999993,
+      "measurement_collection_s": 0.8305506689999902,
+      "measurement_analysis_reports_s": 0.264337390000037,
+      "measurement_preservation_s": 16.098543329999984
+    },
+    {
+      "tasks": 10,
+      "pair": 3,
+      "baseline_case": "NCF-COST010-P03-BASELINE",
+      "measurement_case": "NCF-COST010-P03-MEASUREMENT",
+      "baseline_uuid": "9a97a536-9db1-476b-bafb-ca91eb28eaa3",
+      "measurement_uuid": "2ea6144e-26c9-46de-958e-6cffc966cc61",
+      "baseline_dag_s": 96.34100008010864,
+      "measurement_dag_s": 92.35700011253357,
+      "paired_dag_delta_s": -3.9839999675750732,
+      "baseline_workflow_detection_s": 98.90722799000014,
+      "measurement_workflow_detection_s": 95.90237232599975,
+      "paired_detection_delta_s": -3.004855664000388,
+      "required_bytes": 209715200,
+      "observed_bytes": 209715200,
+      "dme_exact": "1",
+      "measurement_postcompletion_increment_s": 16.658184307000283,
+      "measurement_collection_s": 0.3295810929998879,
+      "measurement_analysis_reports_s": 0.26471689400023024,
+      "measurement_preservation_s": 16.049337220000325
+    }
+  ],
+  "summary": [
+    {
+      "tasks": 1,
+      "completed_pairs": 3,
+      "paired_dag_delta_s": {
+        "n": 3,
+        "median": -0.003999948501586914,
+        "min": -10.013000011444092,
+        "max": 0.023000001907348633
+      },
+      "paired_detection_delta_s": {
+        "n": 3,
+        "median": -2.9947111230012524,
+        "min": -5.957363729999088,
+        "max": -0.9991388069997811
+      },
+      "measurement_dag_s": {
+        "median": 80.6579999923706
+      },
+      "baseline_dag_s": {
+        "median": 86.63199996948242
+      },
+      "postcompletion_increment_s": {
+        "n": 3,
+        "median": 2.828352912999435,
+        "min": 2.827601622000657,
+        "max": 2.8283931380001377
+      },
+      "collection_s": {
+        "n": 3,
+        "median": 0.32978859299964824,
+        "min": 0.3297557930000039,
+        "max": 0.3299528250008734
+      },
+      "analysis_reports_s": {
+        "n": 3,
+        "median": 0.1641050609996455,
+        "min": 0.1640790970004673,
+        "max": 0.16415949600013846
+      },
+      "preservation_s": {
+        "n": 3,
+        "median": 2.3196159489998536,
+        "min": 2.3194426410000233,
+        "max": 2.319709494999188
+      }
+    },
+    {
+      "tasks": 10,
+      "completed_pairs": 3,
+      "paired_dag_delta_s": {
+        "n": 3,
+        "median": -3.9839999675750732,
+        "min": -6.191999912261963,
+        "max": 10.039999961853027
+      },
+      "paired_detection_delta_s": {
+        "n": 3,
+        "median": -3.004855664000388,
+        "min": -6.469093025999882,
+        "max": 9.012827915000116
+      },
+      "measurement_dag_s": {
+        "median": 100.37100005149841
+      },
+      "baseline_dag_s": {
+        "median": 96.38700008392334
+      },
+      "postcompletion_increment_s": {
+        "n": 3,
+        "median": 17.207973487999993,
+        "min": 16.658184307000283,
+        "max": 17.355122559999927
+      },
+      "collection_s": {
+        "n": 3,
+        "median": 0.8305506689999902,
+        "min": 0.3295810929998879,
+        "max": 0.9810605939999277
+      },
+      "analysis_reports_s": {
+        "n": 3,
+        "median": 0.264337390000037,
+        "min": 0.26425780100021257,
+        "max": 0.26471689400023024
+      },
+      "preservation_s": {
+        "n": 3,
+        "median": 16.095636195999987,
+        "min": 16.049337220000325,
+        "max": 16.098543329999984
+      }
+    }
+  ],
+  "all_cost_cases_dme_exactly_one": true,
+  "all_cost_cases_required_equals_observed": true,
+  "interpretation_limits": [
+    "Descriptive contrasts only; these are small numbers of fixed-order pairs and do not establish causality.",
+    "The third 10-task pair ran measurement first and baseline second.",
+    "Post-completion increments include preservation and do not isolate native capture overhead or Analyzer alone.",
+    "No result establishes that DME predicts or improves wall-clock runtime."
+  ],
+  "thesis_modified": false,
+  "sources": [
+    "COST_RESULTS_SESSION_FINAL_16.json",
+    "followup_20261101/FOLLOWUP_FINAL_STATUS.json",
+    "followup_20261101/new_evidence/NCF-COST010-P01-MEASUREMENT/",
+    "followup_20261101/new_evidence/NCF-COST010-P01-BASELINE/"
+  ]
+}

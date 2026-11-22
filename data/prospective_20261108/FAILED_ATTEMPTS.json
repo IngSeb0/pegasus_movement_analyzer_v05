@@ -1,0 +1,14 @@
+[
+  {
+    "id": "PILOT-MONTAGE_GROUP_FINAL",
+    "uuid": "450b696d-2c51-4543-9d74-1aebe75a9400",
+    "phase": "pilot",
+    "classification": "FAILED_TECHNICAL_BEFORE_APPLICATION_START",
+    "cause": "CRLF shebang: /usr/bin/env python3\\r not found",
+    "scientific_application_started": false,
+    "dme": null,
+    "automatic_resubmission": false,
+    "resolution": "Removed held job and DAG after preserving native records; new identifiers required for corrected pilots",
+    "resolvedAtUtc": "2026-11-08T13:56:47.175401+00:00"
+  }
+]

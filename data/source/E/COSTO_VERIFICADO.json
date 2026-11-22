@@ -1,0 +1,74 @@
+[
+  {
+    "case": "NCF-COST001-P01-MEASUREMENT",
+    "uuid": "dd8113fd-c4fa-4394-888a-31e6606aa5d2",
+    "archive": "pruebas_cierre_sin_cf_20261031\\new_evidence\\cost\\NCF-COST001-P01-MEASUREMENT\\NCF-COST001-P01-MEASUREMENT.tar.gz.xz",
+    "archive_sha256": "16db2cb88f3be3fc8f08a477a9a496ac80d6a92f280bb6187cccc8304aa5a0d8",
+    "timing_member": "pilot/COST001/COST_TIMING.json",
+    "timing_sha256": "530388cc51d612c9794f35b5b5866d31384a2b1f8b31391a1e476b236a1361a8",
+    "post_s": 2.8283931380001377,
+    "rounded_3": "2.828",
+    "timing": {
+      "submission_epoch": 1793485672.4699125,
+      "workflow_detection_wall_s": 82.39384021200021,
+      "native_logging_same_as_baseline": true,
+      "analysis_is_post_workflow": true,
+      "detection_resolution_poll_s": 0.5,
+      "measurement_mode": "MEASUREMENT",
+      "own_during_workflow_capture_operations": 0,
+      "scope": "Incremental post-workflow protocol; standard native log generation is not isolated",
+      "collection_wall_s": 0.32978859299964824,
+      "analysis_and_reports_wall_s": 0.16415949600013846,
+      "preservation_wall_s": 2.3196159489998536,
+      "post_completion_increment_s": 2.8283931380001377
+    }
+  },
+  {
+    "case": "NCF-COST001-P02-MEASUREMENT",
+    "uuid": "dcebcdf0-4c24-4acf-a9be-d4f33413ba35",
+    "archive": "pruebas_cierre_sin_cf_20261031\\new_evidence\\cost\\NCF-COST001-P02-MEASUREMENT\\NCF-COST001-P02-MEASUREMENT.tar.gz.xz",
+    "archive_sha256": "43ec8a93d66e5fbf042a42de4252225514a418739997b9f05eaf1dc8c00506c0",
+    "timing_member": "pilot/COST001/COST_TIMING.json",
+    "timing_sha256": "74c36dd8f6b572271834b8b604a0866eb8ceca21b9ed45e9e1bc2580d184290e",
+    "post_s": 2.828352912999435,
+    "rounded_3": "2.828",
+    "timing": {
+      "submission_epoch": 1793486987.710764,
+      "workflow_detection_wall_s": 82.43308895800055,
+      "native_logging_same_as_baseline": true,
+      "analysis_is_post_workflow": true,
+      "detection_resolution_poll_s": 0.5,
+      "measurement_mode": "MEASUREMENT",
+      "own_during_workflow_capture_operations": 0,
+      "scope": "Incremental post-workflow protocol; standard native log generation is not isolated",
+      "collection_wall_s": 0.3299528250008734,
+      "analysis_and_reports_wall_s": 0.1641050609996455,
+      "preservation_wall_s": 2.319709494999188,
+      "post_completion_increment_s": 2.828352912999435
+    }
+  },
+  {
+    "case": "NCF-COST001-P03-MEASUREMENT",
+    "uuid": "57f9f8ef-4038-4729-b0cf-1cad044a2c8e",
+    "archive": "pruebas_cierre_sin_cf_20261031\\new_evidence\\cost\\NCF-COST001-P03-MEASUREMENT\\NCF-COST001-P03-MEASUREMENT.tar.gz.xz",
+    "archive_sha256": "4f087c04cf11cc9bbb96430356e1bc6e4d5bbe63b1f11dc02bfbdeea70c555b1",
+    "timing_member": "pilot/COST001/COST_TIMING.json",
+    "timing_sha256": "92f962a7ad65af60b64e8b55005a52a648badd74b7cdd50e0359cbc89595b4ce",
+    "post_s": 2.827601622000657,
+    "rounded_3": "2.828",
+    "timing": {
+      "submission_epoch": 1793487247.107962,
+      "workflow_detection_wall_s": 88.39822253399961,
+      "native_logging_same_as_baseline": true,
+      "analysis_is_post_workflow": true,
+      "detection_resolution_poll_s": 0.5,
+      "measurement_mode": "MEASUREMENT",
+      "own_during_workflow_capture_operations": 0,
+      "scope": "Incremental post-workflow protocol; standard native log generation is not isolated",
+      "collection_wall_s": 0.3297557930000039,
+      "analysis_and_reports_wall_s": 0.1640790970004673,
+      "preservation_wall_s": 2.3194426410000233,
+      "post_completion_increment_s": 2.827601622000657
+    }
+  }
+]

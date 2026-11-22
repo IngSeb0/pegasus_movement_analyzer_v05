@@ -1,0 +1,40 @@
+\chapter{Marco teórico}
+\label{ch:marco}
+\section{Tareas, archivos y jobs}
+Un flujo de trabajo científico puede representarse como un grafo dirigido acíclico. Cada tarea produce archivos que consumen las tareas sucesoras. Las entradas provienen de fuera del grafo; los resultados finales deben quedar disponibles en el destino declarado. Los archivos que conectan tareas son intermedios.
+
+Pegasus transforma el flujo científico en un plan ejecutable con jobs científicos y operaciones auxiliares \citep{deelman2015}. Cada job contiene una tarea o un grupo. DAGMan (\textit{Directed Acyclic Graph Manager}) respeta las dependencias entre jobs \citep{htcondordagman}. HTCondor asigna cada job a recursos elegibles y registra su ejecución \citep{htcondorintro}. El plan muestra qué tareas se agruparon; el historial, dónde se ejecutaron.
+
+\section{Ubicación y entrega de archivos}
+En CondorIO, el coordinador prepara las entradas y recibe las salidas. Cada job trabaja en un directorio aislado o \textit{sandbox}. Un archivo puede volver al coordinador y salir hacia otro job, incluso si ambos corren en la misma máquina \citep{htcondorordinary,pegasustransfers}. Al agrupar tareas consecutivas, algunas lecturas pueden resolverse en el mismo sandbox. Como las salidas declaradas pueden conservarse, los registros permiten comprobar el ahorro.
+
+El volumen observado suma el tamaño de cada entrega completa; un mismo archivo puede generar varias entregas. Los contadores nativos también pueden incluir ejecutables, metadatos y registros auxiliares. Por eso se conservan los archivos y tamaños científicos, el contrato efectivo de cada job, sus estadísticas y eventos. Kickstart y los metadatos de Pegasus aportan información de procedencia \citep{pegasusprovenance}.
+
+\section{Patrones de flujo}
+Los patrones representan relaciones de producción y consumo, y permiten aislar cambios en el movimiento de archivos. La caracterización de workflows científicos identifica estructuras y dependencias diversas \citep{bharathi2008}. Aquí, procesamiento sirve como control; pipeline sigue dependencias consecutivas; agregación reúne salidas; distribución divide un conjunto; y redistribución combina reunión y reparto.
+\input{figures/figuras_patrones}
+
+\section{Antecedentes y relación con DME}
+\citet{chen2015} estudian la agrupación de tareas y sus efectos en la ejecución, una decisión que modifica el plan. Esta tesis pregunta qué entregas científicas cambian entre configuraciones y cómo se relacionan con las obligaciones del mismo grafo. Para responderla, se requiere el mapa de tareas a jobs y las listas de archivos transferidos.
+
+Pietri y Sakellariou (\citeyear{pietri2018}) estudian la planificación para reducir comunicación. \citet{fortmeier2013} relacionan modelos de volumen con métricas de partición de hipergrafos. Aquí, $n_f$ cuenta, para cada archivo, los destinos distintos del origen y se extiende con el relevo CondorIO. No se adopta su métrica de comunicación entre todos los vecinos: se fija la ubicación observada y no se optimiza la partición.
+
+La métrica MUE (Memory Usage Efficiency) usa una referencia teórica de accesos a memoria y el aprovechamiento del ancho de banda para evaluar una implementación \citep{fuhrer2018}. Este antecedente ilustra cómo una referencia ayuda a interpretar un volumen. DME opera a otra escala: define necesidades por archivo y ubicación y las contrasta con las entregas corroboradas durante una ejecución del flujo.
+
+\texttt{pegasus-statistics} informa conteos y tiempos de tareas y jobs \citep{pegasusstats}, pero no expresa la cota por archivo, ubicación y relevo definida aquí. Analyzer añade esa referencia y concilia las entregas científicas. La integración de registros de distintas capas tiene antecedentes en \citet{papadimitriou2021}; para compararlos, las fuentes deben corresponder a una misma ejecución.
+
+\begin{table}[htbp]\centering\small
+\caption{Variables y fuentes de la caracterización}
+\begin{tabularx}{\linewidth}{@{}P{2.75cm}YY@{}}
+\toprule Variable & Fuente de referencia & Función en la medición\\\midrule
+Rol del archivo & Grafo científico y declaración de finales. & Distinguir entrada, intermedio y final, y determinar productores y consumidores.\\
+Identidad y tamaño & Catálogos y metadatos de ejecución. & Vincular cada archivo y expresarlo en bytes.\\
+Tarea y job & Plan de Pegasus y descripción del grupo. & Identificar si dos tareas usan el mismo espacio de ejecución.\\
+Máquina e intento & Historial y eventos de HTCondor. & Resolver ubicación efectiva, terminación y alcance del intento.\\
+Contrato de entrega & Listas efectivas de entrada y salida. & Identificar qué archivos pueden contabilizarse en cada dirección.\\
+Contadores y tiempos & Estadísticas de transferencia y métricas de DAGMan. & Conciliar bytes y conteos. Medir duración del workflow.\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Distinguir el archivo lógico de cada copia entregada evita contar solo por nombre de tarea o job. En el pipeline, un intermedio puede ser local según la referencia si productor y consumidor están en W1. Si sus jobs usan sandboxes distintos, el mecanismo puede devolverlo al coordinador y entregarlo al siguiente job. El plan y los registros permiten establecer ese recorrido; el grafo y la ubicación, determinar si el dato hacía falta en otra máquina.
