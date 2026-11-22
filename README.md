@@ -1,38 +1,47 @@
-# Analyzer
+# Evaluación del movimiento de datos en flujos científicos con Pegasus bajo CondorIO
 
-Calcula el volumen requerido y el observado en bytes para una ejecución de Pegasus con CondorIO.
-DME divide el requerido entre el observado. El exceso es la diferencia entre el observado y el requerido.
-El informe incluye un desglose por archivo y máquina.
+Calcula los **bytes requeridos**, el **volumen observado** (contrato de transferencia corroborado con HTCondor) y su cociente (DME) de un flujo ejecutado con Pegasus y HTCondor (CondorIO), desglosa en qué se fue el tiempo y trae lo necesario para producir esas corridas.
 
-**Entrada.** Directorio de la corrida de Pegasus e historial exportado de HTCondor.
-**Salida.** Informe de texto, JSON y tablas TSV para consultar el cálculo y sus diagnósticos.
+| Carpeta | Archivo de código | Guía |
+|---|---|---|
+| `analyzer/` | `analyzer.py` (114 líneas): DME de una corrida y control de reintentos y transferencias incompletas; `tiempos.py` (57 líneas): desglose de tiempos | `COMO_FUNCIONA.md` |
+| `coordinador/` | `llevar.py` (29 líneas): sube, ejecuta y baja por SSH | `COMO_FUNCIONA.md` |
+| `flujos/` | `crear_flujo.py`, `ejecutar_flujo.py`, `tarea.py`, `fma_kernel.c`; Montage: `montage.py`, `tarea_montage.py` | `COMO_FUNCIONA.md` |
 
-```powershell
-python tools/analyze_run_v1.py --run fixtures/audited/runs/process-same-w1-20260917-232331/luis/pegasus/dm-process/run0001 --history-file fixtures/audited/history/process_50mib.long --out results/demo
+`flujos/especificaciones.json` define las 13 condiciones sintéticas (cinco patrones con 2 y 4 workers, más tres de contraste), con archivos de 200 MiB. Las de Montage (147 fotos, `MG-BASE` y `MG-FINAL`) las escribe `flujos/montage.py`.
+
+## Uso
+
+```
+python coordinador/llevar.py subir flujos analyzer
+python coordinador/llevar.py correr "python3 flujos/crear_flujo.py flujos/especificaciones.json DISTRIBUTION-W2 caso1"
+python coordinador/llevar.py correr "python3 flujos/ejecutar_flujo.py caso1"
+python coordinador/llevar.py correr "python3 analyzer/analyzer.py RUTA_run0001 caso1/history.long -v"
 ```
 
-Salida esperada del ejemplo: estado `VALID`, requerido y observado de 104 857 600 B cada uno, DME 1, exceso 0 B.
+Si ya tienes una corrida:
 
-## Mapa del código
+```
+python analyzer/analyzer.py CARPETA_run0001 history.long -v     # bytes y DME
+python analyzer/tiempos.py  CARPETA_run0001 history.long        # dónde se fue el tiempo
+```
 
-| Archivo | Función y quién lo usa |
-|---|---|
-| `tools/analyze_run_v1.py` | Lee los argumentos y llama al núcleo y al generador de informes. |
-| `analyzer_v1.py` | Coordina el análisis llamado por la CLI. |
-| `analyzer.py` | Expone la interfaz anterior para sus consumidores existentes. |
-| `pegasus_source.py` | Lee el plan de Pegasus para el análisis. |
-| `htcondor_source.py` | Lee el historial de HTCondor para el análisis. |
-| `normalize.py` | Normaliza datos de Pegasus y HTCondor para el análisis. |
-| `execution_model.py` | Construye el modelo de ejecución para el análisis. |
-| `grouping.py` | Reconstruye tareas agrupadas para el modelo de ejecución. |
-| `dataflow.py` | Representa los archivos científicos y sus dependencias para el análisis. |
-| `condorio_adapter.py` | Adapta la información CondorIO para el análisis. |
-| `movement.py` | Construye los registros de movimiento para el cálculo. |
-| `reconciliation.py` | Concilia registros y manifiestos para el análisis. |
-| `metrics.py` | Calcula volúmenes y DME a partir de los registros de movimiento. |
-| `model.py` | Define los registros que comparten los módulos. |
-| `diagnostics.py` | Define estados y razones que usan el núcleo y el informe. |
-| `reporting.py` | Escribe los informes que solicita la CLI. |
-| `__init__.py` | Identifica el paquete importado por la CLI y los scripts. |
+Solo necesitan Python y PyYAML.
 
-Ejecuta después del flujo. El perfil de medición es CondorIO. Entorno de las campañas recientes: Pegasus 5.1.2 y HTCondor 26.0.1. El ejemplo funciona con Python 3.12 y PyYAML. Consulta [reproducción](REPRODUCIBILIDAD.md) e [historial](HISTORIAL.md).
+## Requisitos
+
+- **Analyzer:** Python 3 y `pyyaml`.
+- **Coordinador:** Pegasus 5.1.2, HTCondor 26.0.1, `pegasus-wms.api`, `pyyaml` y `gcc`.
+
+## Qué se comprobó
+
+- `analyzer.py` da los mismos bytes requeridos y el mismo volumen observado que el Analyzer completo en las 30 corridas de 200 MiB y en 2 corridas de ejemplo (32 de 32). Se niega a calcular, y dice qué job falla, cuando hay reintentos, jobs incompletos o transferencias que no cuadran con el contrato (probado con 4 casos fabricados).
+- `tiempos.py` reproduce los seis tramos de tiempo medidos de las 30 corridas (30 de 30).
+- La tesis exige además residuo cero al byte; esta versión comprueba el número exacto de archivos y que los bytes científicos estén cubiertos, pero no conoce el tamaño de los archivos auxiliares.
+- `crear_flujo.py` genera un `workflow.yml` con los mismos jobs, argumentos, archivos y requisitos que los de las corridas reales.
+- Montage: `montage.py` y `crear_flujo.py` se probaron con fotos sintéticas (flujo completo en local); la descarga desde IRSA no se pudo probar desde aquí.
+- No se ejecutó `pegasus-plan` sobre esos `workflow.yml` fuera del coordinador.
+
+## Relación con los experimentos
+
+Las 30 corridas de la tesis se hicieron con scripts más largos (control de tiempo y disco, hashes, auditoría independiente), conservados junto con su evidencia en `intensivo_20261122_resultados.zip`. Este repositorio es la versión corta de lo mismo: calcula igual, pero no incluye esas protecciones ni el cierre al byte del Analyzer completo.

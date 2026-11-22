@@ -1,2 +1,0 @@
-# Dependencia del núcleo congelado usada en la evaluación.
-PyYAML==6.0.3
