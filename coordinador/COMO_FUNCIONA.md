@@ -53,6 +53,30 @@ STARTD_ATTRS = $(STARTD_ATTRS), DMEStudyEligible
 
 Ver el estado: `condor_status -constraint 'DMEStudyEligible == true'` y `condor_q -allusers`.
 
+## `red.py`: cómo se logra que el flujo sea intensivo en datos
+
+Un flujo es intensivo en datos cuando **transferir los archivos tarda más que calcular**. Con archivos de 200 MiB y la red de Azure (cientos de Mbit/s) la transferencia es corta; para que domine se **limita el ancho de banda** con `tc` (control de tráfico de Linux). `red.py` lo hace por SSH en los cinco nodos:
+
+```
+python red.py limitar 50      # tope de 50 Mbit/s
+python red.py ver             # estado de tc en los cinco nodos
+python red.py quitar          # deja la red como estaba (siempre al terminar)
+```
+
+Qué hace en cada nodo (tres comandos `tc`):
+
+| Comando | Para qué |
+|---|---|
+| `qdisc add … root handle 1: prio bands 2` | Crea dos colas de salida. |
+| `qdisc add … parent 1:2 … tbf rate 50mbit burst 256kbit latency 400ms` | A la cola 2 le pone el tope (*token bucket*, `tbf`). |
+| `filter add … match ip dst DESTINO flowid 1:2` | Manda a esa cola solo el tráfico hacia el otro extremo del flujo de datos. El resto (SSH) no se frena. |
+
+Cada nodo limita lo que **envía**: el coordinador hacia los workers y cada worker hacia el coordinador. Así CondorIO, que pasa todo por el coordinador, queda frenado en ambos sentidos. El ancho de banda efectivo se midió con un job de HTCondor de 1 GiB en cada sentido: dio unos 47 Mbit/s para el tope de 50 (`ANCHO_DE_BANDA.json`).
+
+**Regímenes usados:** 100 Mbit/s en las 30 corridas sintéticas de 200 MiB (la transferencia fue el tramo mayor). En Montage de 147 fotos, 100 Mbit/s **no** bastó (transferencia 289 s frente a 394 s de ejecución) y se repitió a **50 Mbit/s** (815 s frente a 465 s), como enmienda declarada y sellada antes de encender las máquinas.
+
+**Diferencia con el procedimiento real:** `red.py` es la versión corta del procedimiento de las corridas, que además guardaba `tc qdisc show` antes, durante y después en `TC.txt` y programaba un temporizador que quitaba el límite si algo fallaba. Aquí `quitar` es manual; no lo olvides, porque con el límite puesto todo lo demás va lento. No se pudo probar fuera de las máquinas virtuales.
+
 ## Encender y apagar las máquinas
 
 Las VMs están en Azure y cobran mientras estén encendidas:

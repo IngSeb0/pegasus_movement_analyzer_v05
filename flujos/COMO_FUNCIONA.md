@@ -142,3 +142,9 @@ python3 ejecutar_flujo.py flujo_base
 - **No se probó** la descarga desde IRSA (la red de esta sesión no llega a ese servidor): se probó con fotos ya puestas en `entradas/`. Tampoco se ejecutó `pegasus-plan`, ni con grupos.
 - El `.sub` real de Montage (corrida de ejemplo M101-FINAL) pasa por el Analyzer y por `tiempos.py` sin que se active ningún control.
 - No se ejecutó `pegasus-plan` sobre este `workflow.yml`: Pegasus y HTCondor solo están en el coordinador.
+
+## Montage reducido y SIA
+
+- **Qué es real:** las 147 fotos (2MASS, banda J, de IRSA) y las herramientas (`mProjectPP`, `mImgtbl`, `mAdd` de MontagePy 2.3.0). **Qué es nuestro:** el diagrama, reducido a alinear → tabla → mosaico, sin `mDiffFit`, `mConcatFit`, `mBgModel`, `mBackground`, `mShrink` ni `mJPEG` (corrección de fondo y vistas previas). Razón: la comparación es dónde corren la tabla y el mosaico y si las alineadas viajan una o dos veces, y `mDiffFit` multiplicaría las tareas (una por par de fotos que se traslapan). Límite: es Montage reducido, no el completo.
+- **SIA (Simple Image Access):** estándar de IVOA para consultar un archivo de imágenes por posición y tamaño; devuelve una tabla con los enlaces. `montage.py` usa el SIA v1 de IRSA con `POS` = centro de M101, `SIZE` = 2° y banda J.
+- **Bloques:** una ronda en la que corren BASE y FINAL una vez cada una, con el orden rotado entre rondas.

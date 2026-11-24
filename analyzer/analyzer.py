@@ -10,7 +10,7 @@ import glob, json, os, re, sys
 import yaml
 
 run, history = sys.argv[1], sys.argv[2]
-JOBS = os.path.join(run, "00", "00")
+RUTA = {os.path.basename(f): f for f in glob.glob(os.path.join(run, "00", "*", "*"))}   # Pegasus reparte los jobs en 00/00, 00/01, ...
 COORDINADOR = "dme-master"
 
 
@@ -26,7 +26,7 @@ def campo(bloque, nombre):
 
 # 1. Tamaño de cada archivo (Pegasus lo anota en los .meta de cada job).
 tamano = {}
-for meta in glob.glob(os.path.join(JOBS, "*.meta")):
+for meta in [f for n, f in RUTA.items() if n.endswith(".meta")]:
     for archivo in json.load(open(meta)):
         tamano[archivo["_id"]] = int(archivo["_attributes"]["size"])
 
@@ -43,7 +43,7 @@ for tarea in yaml.safe_load(open(os.path.join(run, "workflow.yml")))["jobs"]:
 
 # 3. Qué tareas van en cada job: una por job, salvo los jobs agrupados (merge_*.in).
 tareas_del_job = {}
-for sub in glob.glob(os.path.join(JOBS, "*.sub")):
+for sub in [f for n, f in RUTA.items() if n.endswith(".sub")]:
     job = os.path.basename(sub)[:-4]
     if job.startswith("campaign_task_"):
         tareas_del_job[job] = [job[len("campaign_task_"):]]
@@ -94,7 +94,7 @@ for archivo, bytes_ in tamano.items():
 cientificos = set(productor) | set(lectores)
 contrato, problemas = 0, []
 for job in tareas_del_job:
-    sub = open(os.path.join(JOBS, job + ".sub")).read()
+    sub = open(RUTA[job + ".sub"]).read()
     for sentido, extra in (("Input", 1), ("Output", 2)):    # HTCondor suma además: el ejecutable / stdout y stderr
         lista = campo(sub, f"transfer_{sentido.lower()}_files") or ""
         archivos = {os.path.basename(n.strip()) for n in lista.split(",") if n.strip()}   # sin repetidos (jobs agrupados)

@@ -1,0 +1,14 @@
+[
+  {
+    "_id": "B5",
+    "_type": "file",
+    "_attributes": {
+      "user": "nobody",
+      "size": "209715200",
+      "ctime": "2026-11-22T15:08:54+00:00",
+      "checksum.type": "sha256",
+      "checksum.value": "774b96e902834adbcbd70eb07fadef3b429783322f0be7fda5ba3e6b4619b1a0",
+      "checksum.timing": "1.08"
+    }
+  }
+]

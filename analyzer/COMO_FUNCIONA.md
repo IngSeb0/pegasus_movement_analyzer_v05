@@ -111,6 +111,23 @@ HTCondor y Pegasus registran en segundos enteros: cada tramo tiene ±1 s de ince
 | 2 | 31–45 | Lee `history.long` y arma los intervalos de cada tramo. |
 | 3 | 48–52 | Reparte cada segundo al primer tramo que lo cubre. |
 
+## Un job de principio a fin (`campaign_task_T4`, Distribución, 2 workers)
+
+Cada job deja sus instantes en dos archivos. Son segundos desde 1970; solo importan las diferencias:
+
+| Archivo | Línea real | Qué significa | Tramo que cierra |
+|---|---|---|---|
+| `jobstate.log` | `1795360085 campaign_task_T4 SUBMIT` | Pegasus lo manda a la cola | |
+| `history.long` | `TransferInStarted = 1795360153` | Empieza a llegarle la entrada | **cola**: 68 s esperando máquina |
+| `history.long` | `TransferInFinished = 1795360182` | Termina de llegarle la entrada | **transferencia**: 29 s |
+| `history.long` | `TransferOutStarted = 1795360189` | Empieza a devolver la salida | **ejecución**: 7 s |
+| `history.long` | `TransferOutFinished = 1795360207` | Termina de devolverla | **transferencia**: 18 s |
+| `jobstate.log` | `1795360216 campaign_task_T4 POST_SCRIPT_SUCCESS` | Pegasus cierra el job | **cierre**: 9 s |
+
+El inicio y el fin del flujo salen de `DAGMAN_STARTED` y `DAGMAN_FINISHED`, también en `jobstate.log`.
+
+Los jobs se solapan (mientras uno transfiere, otro ejecuta y otro espera), así que sumar los tiempos de todos los jobs da más que la duración del flujo. Por eso el paso 3 recorre el flujo **segundo a segundo** y a cada segundo le pregunta, en orden: ¿alguna tarea ejecutaba? entonces es ejecución; si no, ¿alguna transfería? transferencia; si no, ¿corría un job auxiliar? auxiliares; si no, ¿alguna esperaba máquina? cola; si no, ¿alguna cerraba? cierre; si ninguna, DAGMan sin ningún job activo. En el código: `any(a <= t < b for a, b in tramos[k])` pregunta si algún intervalo del tramo cubre el segundo `t`, y `next(..., "dagman")` toma el primer tramo que responde sí.
+
 ## Ejemplo real (Distribución, 2 workers, 200 MiB)
 
 ```
@@ -127,3 +144,12 @@ Duración del flujo (DAGMan): 292.5 s   (suma de tramos: 292 s)
 La transferencia es el tramo mayor: ahí está el régimen intensivo en datos.
 
 **Validación:** en las 30 corridas, los seis tramos coinciden segundo a segundo con los de `RESULTADOS/patrones/corridas.csv` (30 de 30).
+
+
+## recomendar.py: qué agrupar
+
+Usa los mismos archivos que `analyzer.py`. En cada máquina busca pares de jobs que reciben el mismo archivo o que se pasan uno entre sí, y calcula los bytes que evitaría juntarlos tal como Pegasus arma un job agrupado: el job recibe la unión de las entradas menos lo que produce el grupo, y devuelve todas las salidas que el plan declara. Junta primero el par que más ahorra, sin crear ciclos entre jobs, y repite mientras alguna unión ahorre. Supone que cada tarea sigue en la máquina donde corrió y que cada máquina corre un job a la vez, así que juntar jobs de una misma máquina no quita paralelismo.
+
+```
+python analyzer/recomendar.py CARPETA_run0001 history.long --ancho 11.8
+```
