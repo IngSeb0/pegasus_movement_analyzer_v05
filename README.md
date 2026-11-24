@@ -8,7 +8,7 @@ Calcula los **bytes requeridos**, el **volumen observado** (contrato de transfer
 | `coordinador/` | `llevar.py` (29 líneas): sube, ejecuta y baja por SSH; `red.py`: limita la red para que el flujo sea intensivo en datos | `COMO_FUNCIONA.md` |
 | `flujos/` | `crear_flujo.py`, `ejecutar_flujo.py`, `tarea.py`, `fma_kernel.c`; Montage: `montage.py`, `tarea_montage.py` | `COMO_FUNCIONA.md` |
 
-`flujos/especificaciones.json` define las 13 condiciones sintéticas (cinco patrones con 2 y 4 workers, más tres de contraste), con archivos de 200 MiB. Las de Montage (147 fotos, `MG-BASE` y `MG-FINAL`) las escribe `flujos/montage.py`.
+`flujos/especificaciones.json` define las 14 condiciones sintéticas (cinco patrones con 2 y 4 workers, tres de contraste y REP-REC, la propuesta del recomendador), con archivos de 200 MiB. Las de Montage (147 fotos, `MG-BASE` y `MG-FINAL`) las escribe `flujos/montage.py`.
 
 ## Uso
 
@@ -64,7 +64,7 @@ Propone juntar en W1 el productor con sus tres consumidores y en W2 los otros do
 ## Qué se comprobó
 
 - `analyzer.py` da los mismos bytes requeridos y el mismo volumen observado que el Analyzer completo en las 30 corridas de 200 MiB y en 2 corridas de ejemplo (32 de 32). Se niega a calcular, y dice qué job falla, cuando hay reintentos, jobs incompletos o transferencias que no cuadran con el contrato (probado con 4 casos fabricados).
-- `recomendar.py`, sobre las corridas guardadas, propone primero la agrupación que se midió y con los mismos bytes evitados: Montage de 10 fotos (42 111 884 B), Montage de 147 fotos (616 161 787 B) y W2-SEP (600 MiB); sobre W2-AGR, ya agrupado, no propone nada. Sus propuestas en REP y en los patrones no se han ejecutado.
+- `recomendar.py`, sobre las corridas guardadas, propone primero la agrupación que se midió y con los mismos bytes evitados: Montage de 10 fotos (42 111 884 B), Montage de 147 fotos (616 161 787 B) y W2-SEP (600 MiB); sobre W2-AGR, ya agrupado, no propone nada. Su propuesta nueva para REP (juntar P y C1 en W1, condición REP-REC) se ejecutó después con la predicción sellada, en dos repeticiones: evitó exactamente 209 715 200 B y dejó DME en 1, pero la transferencia no bajó, porque la copia evitada no estaba en el camino crítico. Sus propuestas en los cinco patrones no se han ejecutado.
 - `tiempos.py` reproduce los seis tramos de tiempo medidos de las 30 corridas (30 de 30).
 - La tesis exige además residuo cero al byte; esta versión comprueba el número exacto de archivos y que los bytes científicos estén cubiertos, pero no conoce el tamaño de los archivos auxiliares.
 - `crear_flujo.py` genera un `workflow.yml` con los mismos jobs, argumentos, archivos y requisitos que los de las corridas reales.
