@@ -1,0 +1,38 @@
+[
+  {
+    "_id": "images.tbl",
+    "_type": "file",
+    "_attributes": {
+      "user": "nobody",
+      "size": "77947",
+      "ctime": "2026-11-22T23:49:20+00:00",
+      "checksum.type": "sha256",
+      "checksum.value": "2c800d4e5bb138054c1e713aabe30bf3b7b95c9f525ed878a466f408a91e5ed9",
+      "checksum.timing": "0.0"
+    }
+  },
+  {
+    "_id": "m101.fits",
+    "_type": "file",
+    "_attributes": {
+      "user": "nobody",
+      "size": "488577600",
+      "ctime": "2026-11-22T23:49:33+00:00",
+      "checksum.type": "sha256",
+      "checksum.value": "78488c4997ac9c75cdd97b547e79da2a2937b5d174ed7c99345e176fbcb60227",
+      "checksum.timing": "2.6"
+    }
+  },
+  {
+    "_id": "m101_area.fits",
+    "_type": "file",
+    "_attributes": {
+      "user": "nobody",
+      "size": "488577600",
+      "ctime": "2026-11-22T23:49:33+00:00",
+      "checksum.type": "sha256",
+      "checksum.value": "9f50cb9c0741809a60727f75a425a012e32621904fe284f0b12f80bb77f1ff8e",
+      "checksum.timing": "2.61"
+    }
+  }
+]

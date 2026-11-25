@@ -1,0 +1,98 @@
+{
+  "ubicacion": {
+    "C1": "dme-worker1",
+    "C2": "dme-worker2",
+    "C3": "dme-worker3",
+    "C4": "dme-worker4",
+    "P": "dme-worker1"
+  },
+  "referencias_medidas": [
+    {
+      "id": "contraste-piloto-REP",
+      "placement": {
+        "C1": "dme-worker1",
+        "C2": "dme-worker2",
+        "C3": "dme-worker3",
+        "C4": "dme-worker4",
+        "P": "dme-worker1"
+      },
+      "required_bytes": 94371840,
+      "observed_bytes": 104857600,
+      "dme": "9/10",
+      "requerido_escalado_B": 1887436800
+    },
+    {
+      "id": "contraste-B1-REP",
+      "placement": {
+        "C1": "dme-worker1",
+        "C2": "dme-worker2",
+        "C3": "dme-worker3",
+        "C4": "dme-worker4",
+        "P": "dme-worker1"
+      },
+      "required_bytes": 94371840,
+      "observed_bytes": 104857600,
+      "dme": "9/10",
+      "requerido_escalado_B": 1887436800
+    },
+    {
+      "id": "contraste-B2-REP",
+      "placement": {
+        "C1": "dme-worker1",
+        "C2": "dme-worker2",
+        "C3": "dme-worker3",
+        "C4": "dme-worker4",
+        "P": "dme-worker1"
+      },
+      "required_bytes": 94371840,
+      "observed_bytes": 104857600,
+      "dme": "9/10",
+      "requerido_escalado_B": 1887436800
+    },
+    {
+      "id": "contraste-B3-REP",
+      "placement": {
+        "C1": "dme-worker1",
+        "C2": "dme-worker2",
+        "C3": "dme-worker3",
+        "C4": "dme-worker4",
+        "P": "dme-worker1"
+      },
+      "required_bytes": 94371840,
+      "observed_bytes": 104857600,
+      "dme": "9/10",
+      "requerido_escalado_B": 1887436800
+    },
+    {
+      "id": "contraste-B4-REP",
+      "placement": {
+        "C1": "dme-worker1",
+        "C2": "dme-worker2",
+        "C3": "dme-worker3",
+        "C4": "dme-worker4",
+        "P": "dme-worker1"
+      },
+      "required_bytes": 94371840,
+      "observed_bytes": 104857600,
+      "dme": "9/10",
+      "requerido_escalado_B": 1887436800
+    },
+    {
+      "id": "contraste-B5-REP",
+      "placement": {
+        "C1": "dme-worker1",
+        "C2": "dme-worker2",
+        "C3": "dme-worker3",
+        "C4": "dme-worker4",
+        "P": "dme-worker1"
+      },
+      "required_bytes": 94371840,
+      "observed_bytes": 104857600,
+      "dme": "9/10",
+      "requerido_escalado_B": 1887436800
+    }
+  ],
+  "requerido_10MiB": 94371840,
+  "observado_10MiB": 104857600,
+  "dme": "9/10"
+}

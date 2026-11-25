@@ -1,0 +1,46 @@
+1795368471 INTERNAL *** MONITORD_STARTED ***
+1795368469 INTERNAL *** DAGMAN_STARTED 3829.0 ***
+1795368470 create_dir_dme-six-20261110-w2-agr-r02_0_local SUBMIT 3830.0 local - 1
+1795368474 create_dir_dme-six-20261110-w2-agr-r02_0_local EXECUTE 3830.0 local - 1
+1795368476 create_dir_dme-six-20261110-w2-agr-r02_0_local JOB_TERMINATED 3830.0 local - 1
+1795368480 create_dir_dme-six-20261110-w2-agr-r02_0_local JOB_SUCCESS 0 local - 1
+1795368480 create_dir_dme-six-20261110-w2-agr-r02_0_local POST_SCRIPT_STARTED 3830.0 local - 1
+1795368480 create_dir_dme-six-20261110-w2-agr-r02_0_local POST_SCRIPT_TERMINATED 3830.0 local - 1
+1795368485 create_dir_dme-six-20261110-w2-agr-r02_0_local POST_SCRIPT_SUCCESS 0 local - 1
+1795368490 stage_in_remote_local_0_0 SUBMIT 3831.0 local - 2
+1795368490 stage_in_local_local_0_0 SUBMIT 3832.0 local - 3
+1795368492 stage_in_remote_local_0_0 EXECUTE 3831.0 local - 2
+1795368492 stage_in_local_local_0_0 EXECUTE 3832.0 local - 3
+1795368495 stage_in_remote_local_0_0 JOB_TERMINATED 3831.0 local - 2
+1795368495 stage_in_remote_local_0_0 JOB_SUCCESS 0 local - 2
+1795368495 stage_in_remote_local_0_0 POST_SCRIPT_STARTED 3831.0 local - 2
+1795368495 stage_in_remote_local_0_0 POST_SCRIPT_TERMINATED 3831.0 local - 2
+1795368500 stage_in_remote_local_0_0 POST_SCRIPT_SUCCESS 0 local - 2
+1795368496 stage_in_local_local_0_0 JOB_TERMINATED 3832.0 local - 3
+1795368500 stage_in_local_local_0_0 JOB_SUCCESS 0 local - 3
+1795368500 stage_in_local_local_0_0 POST_SCRIPT_STARTED 3832.0 local - 3
+1795368500 stage_in_local_local_0_0 POST_SCRIPT_TERMINATED 3832.0 local - 3
+1795368505 stage_in_local_local_0_0 POST_SCRIPT_SUCCESS 0 local - 3
+1795368510 campaign_task_P SUBMIT 3833.0 condorpool - 4
+1795368535 campaign_task_P EXECUTE 3833.0 condorpool - 4
+1795368560 campaign_task_P JOB_TERMINATED 3833.0 condorpool - 4
+1795368561 campaign_task_P JOB_SUCCESS 0 condorpool - 4
+1795368561 campaign_task_P POST_SCRIPT_STARTED 3833.0 condorpool - 4
+1795368561 campaign_task_P POST_SCRIPT_TERMINATED 3833.0 condorpool - 4
+1795368566 campaign_task_P POST_SCRIPT_SUCCESS 0 condorpool - 4
+1795368571 merge_group_2 SUBMIT 3834.0 condorpool - 5
+1795368595 merge_group_2 EXECUTE 3834.0 condorpool - 5
+1795368688 merge_group_2 JOB_TERMINATED 3834.0 condorpool - 5
+1795368691 merge_group_2 JOB_SUCCESS 0 condorpool - 5
+1795368691 merge_group_2 POST_SCRIPT_STARTED 3834.0 condorpool - 5
+1795368691 merge_group_2 POST_SCRIPT_TERMINATED 3834.0 condorpool - 5
+1795368696 merge_group_2 POST_SCRIPT_SUCCESS 0 condorpool - 5
+1795368701 stage_out_local_local_1_0 SUBMIT 3835.0 local - 6
+1795368703 stage_out_local_local_1_0 EXECUTE 3835.0 local - 6
+1795368710 stage_out_local_local_1_0 JOB_TERMINATED 3835.0 local - 6
+1795368711 stage_out_local_local_1_0 JOB_SUCCESS 0 local - 6
+1795368711 stage_out_local_local_1_0 POST_SCRIPT_STARTED 3835.0 local - 6
+1795368711 stage_out_local_local_1_0 POST_SCRIPT_TERMINATED 3835.0 local - 6
+1795368716 stage_out_local_local_1_0 POST_SCRIPT_SUCCESS 0 local - 6
+1795368716 INTERNAL *** DAGMAN_FINISHED 0 ***
+1795368718 INTERNAL *** MONITORD_FINISHED 0 ***

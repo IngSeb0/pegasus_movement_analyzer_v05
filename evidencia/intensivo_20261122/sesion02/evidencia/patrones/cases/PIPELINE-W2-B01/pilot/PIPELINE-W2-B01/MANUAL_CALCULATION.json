@@ -1,0 +1,66 @@
+{
+  "files": [
+    {
+      "file": "A",
+      "bytes": 209715200,
+      "origin": "dme-master",
+      "destinations": [
+        "dme-worker1"
+      ],
+      "obligations": 1,
+      "required_bytes": 209715200
+    },
+    {
+      "file": "B",
+      "bytes": 209715200,
+      "origin": "dme-worker1",
+      "destinations": [
+        "dme-master"
+      ],
+      "obligations": 1,
+      "required_bytes": 209715200
+    },
+    {
+      "file": "f12",
+      "bytes": 209715200,
+      "origin": "dme-worker1",
+      "destinations": [],
+      "obligations": 0,
+      "required_bytes": 0
+    },
+    {
+      "file": "f23",
+      "bytes": 209715200,
+      "origin": "dme-worker1",
+      "destinations": [],
+      "obligations": 0,
+      "required_bytes": 0
+    },
+    {
+      "file": "f34",
+      "bytes": 209715200,
+      "origin": "dme-worker1",
+      "destinations": [],
+      "obligations": 0,
+      "required_bytes": 0
+    },
+    {
+      "file": "f45",
+      "bytes": 209715200,
+      "origin": "dme-worker1",
+      "destinations": [],
+      "obligations": 0,
+      "required_bytes": 0
+    },
+    {
+      "file": "f56",
+      "bytes": 209715200,
+      "origin": "dme-worker1",
+      "destinations": [],
+      "obligations": 0,
+      "required_bytes": 0
+    }
+  ],
+  "required_bytes": 419430400,
+  "obligations": 2
+}

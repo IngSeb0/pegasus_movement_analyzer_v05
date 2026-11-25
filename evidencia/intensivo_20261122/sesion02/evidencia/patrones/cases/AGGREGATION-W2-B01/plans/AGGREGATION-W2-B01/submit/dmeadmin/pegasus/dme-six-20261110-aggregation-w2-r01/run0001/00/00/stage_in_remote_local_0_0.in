@@ -1,0 +1,13 @@
+[
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "campaign_task",
+   "id": 1,
+   "generate_checksum": true,
+   "src_urls": [
+     { "site_label": "local", "url": "file:///mnt/intensivo_20261122/patrones/cases/AGGREGATION-W2-B01/plans/AGGREGATION-W2-B01/bin/campaign_task.py", "priority": 100 }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///mnt/intensivo_20261122/patrones/cases/AGGREGATION-W2-B01/plans/AGGREGATION-W2-B01/scratch/dmeadmin/pegasus/dme-six-20261110-aggregation-w2-r01/run0001/./campaign_task" }
+   ] }
+]

@@ -1,0 +1,1968 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<VOTABLE version="1.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://www.ivoa.net/xml/VOTable/v1.3"
+xmlns:stc="http://www.ivoa.net/xml/STC/v1.30">
+<DEFINITIONS>
+	<COOSYS ID="J2000" equinox="J2000.0" epoch="J2000.0" system="eq_FK5" />
+</DEFINITIONS>
+<RESOURCE type="results">
+<INFO name="QUERY_STATUS" value="OK" />
+<PARAM name="crefframe" ucd="VOX:STC_CoordRefFrame" datatype="char" arraysize="*" value="FK5">
+	<DESCRIPTION>Coordinate System Reference Frame</DESCRIPTION>
+</PARAM>
+<PARAM name="cequinox" ucd="VOX:STC_CoordEquinox" datatype="double" value="2000.0">
+	<DESCRIPTION>Equinox of the image world coordinate system (WCS).</DESCRIPTION>
+</PARAM>
+<PARAM name="ctype" ucd="VOX:WCS_CoordProjection" datatype="char" arraysize="3" value="SIN">
+	<DESCRIPTION>Orthographic Projection.
+		The first image axis represents right ascension
+		and the second represents declination.</DESCRIPTION>
+</PARAM>
+<PARAM name="bunit" ucd="VOX:BandPass_Unit" datatype="char" arraysize="*" value="meters">
+	<DESCRIPTION>The units used to represent bandpass values.</DESCRIPTION>
+</PARAM>
+<TABLE>
+<FIELD ID="name" name="name" ucd="VOX:Image_Title" datatype="char" arraysize="*" >
+	<DESCRIPTION>Concise description of the image returned.</DESCRIPTION>
+</FIELD>
+<FIELD ID="download" name="download" ucd="VOX:Image_AccessReference" datatype="char" arraysize="*" >
+	<DESCRIPTION>Image access reference URL.</DESCRIPTION>
+</FIELD>
+<FIELD ID="center_ra" name="center_ra" ucd="POS_EQ_RA_MAIN" ref="J2000" datatype="double" unit="deg" >
+	<DESCRIPTION>ICRS right-ascension of the image center.</DESCRIPTION>
+</FIELD>
+<FIELD ID="center_dec" name="center_dec" ucd="POS_EQ_DEC_MAIN" ref="J2000" datatype="double" unit="deg" >
+	<DESCRIPTION>ICRS declination of the image center.</DESCRIPTION>
+</FIELD>
+<FIELD ID="naxes" name="naxes" ucd="VOX:Image_Naxes" datatype="int" >
+	<DESCRIPTION>Number of Image Axes.</DESCRIPTION>
+</FIELD>
+<FIELD ID="naxis" name="naxis" ucd="VOX:Image_Naxis" datatype="int" arraysize="*" >
+	<DESCRIPTION>An array giving the length in pixels of each image axis.</DESCRIPTION>
+</FIELD>
+<FIELD ID="scale" name="scale" ucd="VOX:Image_Scale" datatype="double" unit="deg" arraysize="*" >
+	<DESCRIPTION>An array giving the scale in degrees per pixel of each image axis.</DESCRIPTION>
+</FIELD>
+<FIELD ID="format" name="format" ucd="VOX:Image_Format" datatype="char" arraysize="*" >
+	<DESCRIPTION>MIME-type of the object pointed to by the image access reference URL.</DESCRIPTION>
+</FIELD>
+<FIELD ID="crpix" name="crpix" ucd="VOX:WCS_CoordRefPixel" datatype="double" arraysize="*" >
+	<DESCRIPTION>An array specifying the image pixel coordinates of the WCS reference pixel.</DESCRIPTION>
+</FIELD>
+<FIELD ID="crval" name="crval" ucd="VOX:WCS_CoordRefValue" datatype="double" unit="deg" arraysize="*" >
+	<DESCRIPTION>An array specifying the world coordinates of the WCS reference pixel.</DESCRIPTION>
+</FIELD>
+<FIELD ID="crota2" name="crota2" datatype="double" unit="deg" >
+	<DESCRIPTION>Twist in degrees about Image Center, +AXIS2 West of North (J2000)</DESCRIPTION>
+</FIELD>
+<FIELD ID="band" name="band" ucd="VOX:BandPass_ID" datatype="char" arraysize="*" >
+	<DESCRIPTION>2MASS Image Band</DESCRIPTION>
+	<VALUES type="actual">
+		<OPTION name="2MASS J-Band" value="J" />
+		<OPTION name="2MASS H-Band" value="H" />
+		<OPTION name="2MASS Ks-Band" value="K" />
+	</VALUES>
+</FIELD>
+<FIELD ID="bref" name="bref" ucd="VOX:BandPass_RefValue" datatype="double" unit="meters" >
+	<DESCRIPTION>The reference wavelength of the 2MASS Image Filter.</DESCRIPTION>
+	<LINK content-role="doc" content-type="text/html" href="https://www.ipac.caltech.edu/2mass/releases/allsky/doc/sec6_4a.html" /></FIELD>
+<FIELD ID="bhi" name="bhi" ucd="VOX:BandPass_HiLimit" datatype="double" unit="meters" >
+	<DESCRIPTION>Upper wavelength limit of the 2MASS Image Filter.</DESCRIPTION>
+	<LINK content-role="doc" content-type="text/html" href="https://www.ipac.caltech.edu/2mass/releases/allsky/doc/sec6_4a.html" /></FIELD>
+<FIELD ID="blo" name="blo" ucd="VOX:BandPass_LoLimit" datatype="double" unit="meters" >
+	<DESCRIPTION>Lower wavelength limit of the 2MASS Image Filter.</DESCRIPTION>
+	<LINK content-role="doc" content-type="text/html" href="https://www.ipac.caltech.edu/2mass/releases/allsky/doc/sec6_4a.html" /></FIELD>
+<FIELD ID="pers_art" name="pers_art" datatype="char" arraysize="*" >
+	<DESCRIPTION>Persistence artifacts URL</DESCRIPTION>
+</FIELD>
+<FIELD ID="glint_art" name="glint_art" datatype="char" arraysize="*" >
+	<DESCRIPTION>Filter glint artifacts URL</DESCRIPTION>
+</FIELD>
+<FIELD ID="type" name="type" datatype="char" arraysize="*" >
+	<DESCRIPTION>Type of Image (Q=Quicklook; A=Atlas)</DESCRIPTION>
+	<VALUES type="actual">
+		<OPTION name="Quicklook" value="Q" />
+		<OPTION name="Atlas" value="A" />
+	</VALUES>
+</FIELD>
+<FIELD ID="dataset" name="dataset" datatype="char" arraysize="*" >
+	<DESCRIPTION>The 2MASS dataset the image belongs to.</DESCRIPTION>
+	<VALUES type="actual">
+		<OPTION name="All-Sky Release Survey" value="asky" />
+		<OPTION name="Full Survey" value="askyw" />
+		<OPTION name="6X Catalog" value="sx" />
+		<OPTION name="Full 6X" value="sxw" />
+		<OPTION name="Calibration" value="cal" />
+	</VALUES>
+</FIELD>
+<FIELD ID="pixflags" name="pixflags" ucd="VOX:Image_PixFlags" datatype="char" arraysize="*" >
+	<DESCRIPTION>Pixel flags of source image</DESCRIPTION>
+</FIELD>
+<FIELD ID="id" name="id" datatype="char" arraysize="*" >
+	<DESCRIPTION>
+An identifier for the search constraint
+the FITS Image was found/retrieved for
+	</DESCRIPTION>
+</FIELD>
+<FIELD ID="scntr" name="scntr" datatype="char" arraysize="*" >
+	<DESCRIPTION>
+This field will contain null values unless the meta-data table is the result
+of a query involving a list of constraints (positions, coadd_keys, or DHSs).
+When non-null, the value of this column is an integer identifier for the search
+constraint the FITS Image was found/retrieved for.
+	</DESCRIPTION>
+</FIELD>
+<FIELD ID="date" name="date" datatype="char" arraysize="*" >
+	<DESCRIPTION>
+The reference date of the FITS image, in yymmdd format (yy: last 2 digits of the
+observation year, mm: integer month, dd: integer day). This can differ by one day
+from the actual UT observation date.
+	</DESCRIPTION>
+</FIELD>
+<FIELD ID="hem" name="hem" datatype="char" arraysize="*" >
+	<DESCRIPTION>
+The hemisphere of the 2MASS observatory where the FITS image was taken. There are
+only two possible values: 'n' = north (Mt. Hopkins), and 's' = south (Cerro Tololo).
+	</DESCRIPTION>
+	<VALUES type="actual">
+		<OPTION name="North (Mt. Hopkins)" value="n" />
+		<OPTION name="South (Cerro Tololo)" value="s" />
+	</VALUES>
+</FIELD>
+<FIELD ID="scan" name="scan" datatype="int" >
+	<DESCRIPTION>The nightly scan number of the FITS image.</DESCRIPTION>
+</FIELD>
+<FIELD ID="image" name="image" datatype="int" >
+	<DESCRIPTION>The image number of the FITS image.</DESCRIPTION>
+</FIELD>
+<FIELD ID="ut_date" name="ut_date" datatype="char" arraysize="*" >
+	<DESCRIPTION>
+UT when the FITS image was taken, in yymmdd format (yy: last 2 digits of the
+observation year, mm: integer month, dd: integer day).
+	</DESCRIPTION>
+</FIELD>
+<FIELD ID="coadd_key" name="coadd_key" datatype="int" >
+	<DESCRIPTION>
+The coadd_key value of the FITS image. This is a unique identifier for the observation
+date, observatory hemisphere, nightly scan number, and image number of the FITS image.
+Each source in the 2MASS All-Sky Point and Extended Source Catalogs is tagged with a
+coadd_key value identifying the 2MASS Image Set it was extracted from.
+	</DESCRIPTION>
+</FIELD>
+<FIELD ID="seesh" name="seesh" datatype="double" unit="arcseconds" >
+	<DESCRIPTION>Seeing Full Width Half Maximum (in arcseconds)</DESCRIPTION>
+</FIELD>
+<FIELD ID="magzp" name="magzp" datatype="double" >
+	<DESCRIPTION>Photometric zero-point magnitude of the FITS image.</DESCRIPTION>
+</FIELD>
+<FIELD ID="msnr10" name="msnr10" datatype="double" >
+	<DESCRIPTION>Approximate SNR=10 magnitude of the FITS image.</DESCRIPTION>
+</FIELD>
+<FIELD ID="bin" name="bin" datatype="int" >
+	<DESCRIPTION>The ID of the HTM triangle (subdivision level 7) containing the FITS image reference location.</DESCRIPTION>
+</FIELD>
+<DATA><TABLEDATA>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 000301 n 065 0256</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti06&dh=000301n&scan=065&name=ji0650256.fits]]></TD>
+	<TD> 2.094294250e+02</TD><TD> 5.365231266e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.094294250e+02  5.365231266e+01</TD>
+	<TD>-2.750201949e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=000301&hem=n&scan=065]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=000301&hem=n&scan=065]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>000301</TD><TD>n</TD><TD>65</TD><TD>256</TD>
+	<TD>000301</TD><TD>1261779</TD>
+	<TD> 2.92179e+00</TD><TD> 2.09546e+01</TD><TD> 1.66850e+01</TD><TD>213021201</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 000301 n 065 0266</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti06&dh=000301n&scan=065&name=ji0650266.fits]]></TD>
+	<TD> 2.094294447e+02</TD><TD> 5.389453488e+01</TD><TD>2</TD>
+	<TD> 512  828</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  4.14500e+02</TD>
+	<TD> 2.094294447e+02  5.389453488e+01</TD>
+	<TD>-2.766118297e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=000301&hem=n&scan=065]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=000301&hem=n&scan=065]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>000301</TD><TD>n</TD><TD>65</TD><TD>266</TD>
+	<TD>000301</TD><TD>1261780</TD>
+	<TD> 2.95314e+00</TD><TD> 2.09545e+01</TD><TD> 1.66850e+01</TD><TD>211112102</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 000319 n 097 0009</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti07&dh=000319n&scan=097&name=ji0970009.fits]]></TD>
+	<TD> 2.096195723e+02</TD><TD> 5.386645156e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.096195723e+02  5.386645156e+01</TD>
+	<TD> 7.834899215e-04</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=000319&hem=n&scan=097]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=000319&hem=n&scan=097]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>000319</TD><TD>n</TD><TD>97</TD><TD>9</TD>
+	<TD>000319</TD><TD>1276639</TD>
+	<TD> 2.82774e+00</TD><TD> 2.10579e+01</TD><TD> 1.66190e+01</TD><TD>211112102</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 000319 n 097 0021</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti07&dh=000319n&scan=097&name=ji0970021.fits]]></TD>
+	<TD> 2.096195785e+02</TD><TD> 5.359700711e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.096195785e+02  5.359700711e+01</TD>
+	<TD> 7.784842719e-04</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=000319&hem=n&scan=097]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=000319&hem=n&scan=097]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>000319</TD><TD>n</TD><TD>97</TD><TD>21</TD>
+	<TD>000319</TD><TD>1276640</TD>
+	<TD> 2.89044e+00</TD><TD> 2.10580e+01</TD><TD> 1.66190e+01</TD><TD>213021201</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 000319 n 098 0256</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti07&dh=000319n&scan=098&name=ji0980256.fits]]></TD>
+	<TD> 2.121563584e+02</TD><TD> 5.365257384e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.121563584e+02  5.365257384e+01</TD>
+	<TD> 7.511641070e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=000319&hem=n&scan=098]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=000319&hem=n&scan=098]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>000319</TD><TD>n</TD><TD>98</TD><TD>256</TD>
+	<TD>000319</TD><TD>1276683</TD>
+	<TD> 3.01584e+00</TD><TD> 2.10582e+01</TD><TD> 1.65490e+01</TD><TD>213023200</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 000319 n 098 0266</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti07&dh=000319n&scan=098&name=ji0980266.fits]]></TD>
+	<TD> 2.121563045e+02</TD><TD> 5.389451829e+01</TD><TD>2</TD>
+	<TD> 512  826</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  4.13500e+02</TD>
+	<TD> 2.121563045e+02  5.389451829e+01</TD>
+	<TD> 7.555063672e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=000319&hem=n&scan=098]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=000319&hem=n&scan=098]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>000319</TD><TD>n</TD><TD>98</TD><TD>266</TD>
+	<TD>000319</TD><TD>1276684</TD>
+	<TD> 3.04719e+00</TD><TD> 2.10581e+01</TD><TD> 1.65490e+01</TD><TD>213023200</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 980621 n 021 0009</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti03&dh=980621n&scan=021&name=ji0210009.fits]]></TD>
+	<TD> 2.119745457e+02</TD><TD> 5.386715233e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.119745457e+02  5.386715233e+01</TD>
+	<TD>-5.684636831e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=980621&hem=n&scan=021]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=980621&hem=n&scan=021]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>980621</TD><TD>n</TD><TD>21</TD><TD>9</TD>
+	<TD>980621</TD><TD>441739</TD>
+	<TD> 2.95314e+00</TD><TD> 2.09163e+01</TD><TD> 1.62320e+01</TD><TD>213021200</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 980621 n 021 0021</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti03&dh=980621n&scan=021&name=ji0210021.fits]]></TD>
+	<TD> 2.119745006e+02</TD><TD> 5.359770789e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.119745006e+02  5.359770789e+01</TD>
+	<TD>-5.648317248e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=980621&hem=n&scan=021]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=980621&hem=n&scan=021]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>980621</TD><TD>n</TD><TD>21</TD><TD>21</TD>
+	<TD>980621</TD><TD>441740</TD>
+	<TD> 2.95314e+00</TD><TD> 2.09164e+01</TD><TD> 1.62320e+01</TD><TD>213023200</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 105 0032</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=105&name=ji1050032.fits]]></TD>
+	<TD> 2.093893436e+02</TD><TD> 5.453132667e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.093893436e+02  5.453132667e+01</TD>
+	<TD>-1.149489174e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=105]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=105]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>105</TD><TD>32</TD>
+	<TD>990214</TD><TD>1603494</TD>
+	<TD> 2.57695e+00</TD><TD> 2.09857e+01</TD><TD> 1.65030e+01</TD><TD>211112132</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 105 0044</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=105&name=ji1050044.fits]]></TD>
+	<TD> 2.093893529e+02</TD><TD> 5.480077111e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.093893529e+02  5.480077111e+01</TD>
+	<TD>-1.157139714e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=105]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=105]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>105</TD><TD>44</TD>
+	<TD>990214</TD><TD>1603495</TD>
+	<TD> 2.57695e+00</TD><TD> 2.09855e+01</TD><TD> 1.65030e+01</TD><TD>211112132</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 105 0056</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=105&name=ji1050056.fits]]></TD>
+	<TD> 2.093893625e+02</TD><TD> 5.507021556e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.093893625e+02  5.507021556e+01</TD>
+	<TD>-1.164918710e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=105]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=105]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>105</TD><TD>56</TD>
+	<TD>990214</TD><TD>1603496</TD>
+	<TD> 2.60830e+00</TD><TD> 2.09853e+01</TD><TD> 1.65030e+01</TD><TD>211112112</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 106 0220</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=106&name=ji1060220.fits]]></TD>
+	<TD> 2.095935251e+02</TD><TD> 5.501553637e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.095935251e+02  5.501553637e+01</TD>
+	<TD>-6.535226210e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=106]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=106]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>106</TD><TD>220</TD>
+	<TD>990214</TD><TD>1603533</TD>
+	<TD> 2.60830e+00</TD><TD> 2.09888e+01</TD><TD> 1.64980e+01</TD><TD>211112112</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 106 0232</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=106&name=ji1060232.fits]]></TD>
+	<TD> 2.095934718e+02</TD><TD> 5.474609193e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.095934718e+02  5.474609193e+01</TD>
+	<TD>-6.491673983e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=106]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=106]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>106</TD><TD>232</TD>
+	<TD>990214</TD><TD>1603534</TD>
+	<TD> 2.57695e+00</TD><TD> 2.09891e+01</TD><TD> 1.64980e+01</TD><TD>211112132</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 106 0244</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=106&name=ji1060244.fits]]></TD>
+	<TD> 2.095934193e+02</TD><TD> 5.447664749e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.095934193e+02  5.447664749e+01</TD>
+	<TD>-6.448840070e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=106]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=106]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>106</TD><TD>244</TD>
+	<TD>990214</TD><TD>1603535</TD>
+	<TD> 2.73370e+00</TD><TD> 2.09894e+01</TD><TD> 1.64980e+01</TD><TD>211112132</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 106 0256</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=106&name=ji1060256.fits]]></TD>
+	<TD> 2.095933674e+02</TD><TD> 5.420720304e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.095933674e+02  5.420720304e+01</TD>
+	<TD>-6.406708470e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=106]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=106]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>106</TD><TD>256</TD>
+	<TD>990214</TD><TD>1603536</TD>
+	<TD> 2.60830e+00</TD><TD> 2.09897e+01</TD><TD> 1.64980e+01</TD><TD>211112102</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 106 0266</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=106&name=ji1060266.fits]]></TD>
+	<TD> 2.095933214e+02</TD><TD> 5.396484193e+01</TD><TD>2</TD>
+	<TD> 512  829</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  4.15000e+02</TD>
+	<TD> 2.095933214e+02  5.396484193e+01</TD>
+	<TD>-6.369398892e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=106]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=106]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>106</TD><TD>266</TD>
+	<TD>990214</TD><TD>1603537</TD>
+	<TD> 2.60830e+00</TD><TD> 2.09900e+01</TD><TD> 1.64980e+01</TD><TD>211112102</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 107 0009</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=107&name=ji1070009.fits]]></TD>
+	<TD> 2.098017962e+02</TD><TD> 5.399280675e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.098017962e+02  5.399280675e+01</TD>
+	<TD>-2.999727164e-02</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=107]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=107]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>107</TD><TD>9</TD>
+	<TD>990214</TD><TD>1603538</TD>
+	<TD> 2.98449e+00</TD><TD> 2.09919e+01</TD><TD> 1.64900e+01</TD><TD>211112102</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 107 0021</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=107&name=ji1070021.fits]]></TD>
+	<TD> 2.098020377e+02</TD><TD> 5.426225116e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.098020377e+02  5.426225116e+01</TD>
+	<TD>-3.019298335e-02</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=107]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=107]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>107</TD><TD>21</TD>
+	<TD>990214</TD><TD>1603539</TD>
+	<TD> 2.60830e+00</TD><TD> 2.09916e+01</TD><TD> 1.64900e+01</TD><TD>211112103</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 107 0032</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=107&name=ji1070032.fits]]></TD>
+	<TD> 2.098022824e+02</TD><TD> 5.453169557e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.098022824e+02  5.453169557e+01</TD>
+	<TD>-3.039194214e-02</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=107]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=107]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>107</TD><TD>32</TD>
+	<TD>990214</TD><TD>1603540</TD>
+	<TD> 2.67100e+00</TD><TD> 2.09914e+01</TD><TD> 1.64900e+01</TD><TD>211112101</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 107 0044</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=107&name=ji1070044.fits]]></TD>
+	<TD> 2.098025303e+02</TD><TD> 5.480113997e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.098025303e+02  5.480113997e+01</TD>
+	<TD>-3.059422151e-02</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=107]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=107]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>107</TD><TD>44</TD>
+	<TD>990214</TD><TD>1603541</TD>
+	<TD> 2.57695e+00</TD><TD> 2.09911e+01</TD><TD> 1.64900e+01</TD><TD>211112132</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 107 0056</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=107&name=ji1070056.fits]]></TD>
+	<TD> 2.098027816e+02</TD><TD> 5.507058438e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.098027816e+02  5.507058438e+01</TD>
+	<TD>-3.079989726e-02</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=107]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=107]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>107</TD><TD>56</TD>
+	<TD>990214</TD><TD>1603542</TD>
+	<TD> 2.60830e+00</TD><TD> 2.09909e+01</TD><TD> 1.64900e+01</TD><TD>211112112</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 108 0220</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=108&name=ji1080220.fits]]></TD>
+	<TD> 2.100078948e+02</TD><TD> 5.501435559e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.100078948e+02  5.501435559e+01</TD>
+	<TD>-1.716165806e-02</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=108]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=108]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>108</TD><TD>220</TD>
+	<TD>990214</TD><TD>1603579</TD>
+	<TD> 2.70235e+00</TD><TD> 2.09937e+01</TD><TD> 1.64900e+01</TD><TD>211113121</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 108 0232</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=108&name=ji1080232.fits]]></TD>
+	<TD> 2.100077550e+02</TD><TD> 5.474491116e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.100077550e+02  5.474491116e+01</TD>
+	<TD>-1.704729388e-02</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=108]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=108]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>108</TD><TD>232</TD>
+	<TD>990214</TD><TD>1603580</TD>
+	<TD> 2.63965e+00</TD><TD> 2.09940e+01</TD><TD> 1.64900e+01</TD><TD>211112101</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 108 0244</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=108&name=ji1080244.fits]]></TD>
+	<TD> 2.100076170e+02</TD><TD> 5.447546673e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.100076170e+02  5.447546673e+01</TD>
+	<TD>-1.693481588e-02</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=108]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=108]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>108</TD><TD>244</TD>
+	<TD>990214</TD><TD>1603581</TD>
+	<TD> 2.73370e+00</TD><TD> 2.09943e+01</TD><TD> 1.64900e+01</TD><TD>211112101</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 108 0256</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=108&name=ji1080256.fits]]></TD>
+	<TD> 2.100074808e+02</TD><TD> 5.420602229e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.100074808e+02  5.420602229e+01</TD>
+	<TD>-1.682418204e-02</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=108]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=108]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>108</TD><TD>256</TD>
+	<TD>990214</TD><TD>1603582</TD>
+	<TD> 2.67100e+00</TD><TD> 2.09947e+01</TD><TD> 1.64900e+01</TD><TD>211112103</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 108 0266</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=108&name=ji1080266.fits]]></TD>
+	<TD> 2.100073599e+02</TD><TD> 5.396380008e+01</TD><TD>2</TD>
+	<TD> 512  828</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  4.14500e+02</TD>
+	<TD> 2.100073599e+02  5.396380008e+01</TD>
+	<TD>-1.672626610e-02</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=108]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=108]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>108</TD><TD>266</TD>
+	<TD>990214</TD><TD>1603583</TD>
+	<TD> 2.73370e+00</TD><TD> 2.09949e+01</TD><TD> 1.64900e+01</TD><TD>211112102</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 109 0009</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=109&name=ji1090009.fits]]></TD>
+	<TD> 2.102156423e+02</TD><TD> 5.399212178e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.102156423e+02  5.399212178e+01</TD>
+	<TD>-6.298727896e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=109]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=109]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>109</TD><TD>9</TD>
+	<TD>990214</TD><TD>1603584</TD>
+	<TD> 2.63965e+00</TD><TD> 2.09968e+01</TD><TD> 1.65180e+01</TD><TD>211112102</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 109 0021</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=109&name=ji1090021.fits]]></TD>
+	<TD> 2.102156930e+02</TD><TD> 5.426156622e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.102156930e+02  5.426156622e+01</TD>
+	<TD>-6.339821757e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=109]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=109]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>109</TD><TD>21</TD>
+	<TD>990214</TD><TD>1603585</TD>
+	<TD> 2.67100e+00</TD><TD> 2.09966e+01</TD><TD> 1.65180e+01</TD><TD>211112103</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 109 0032</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=109&name=ji1090032.fits]]></TD>
+	<TD> 2.102157444e+02</TD><TD> 5.453101066e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.102157444e+02  5.453101066e+01</TD>
+	<TD>-6.381597402e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=109]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=109]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>109</TD><TD>32</TD>
+	<TD>990214</TD><TD>1603586</TD>
+	<TD> 2.67100e+00</TD><TD> 2.09963e+01</TD><TD> 1.65180e+01</TD><TD>211112101</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 109 0044</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=109&name=ji1090044.fits]]></TD>
+	<TD> 2.102157964e+02</TD><TD> 5.480045511e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.102157964e+02  5.480045511e+01</TD>
+	<TD>-6.424070264e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=109]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=109]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>109</TD><TD>44</TD>
+	<TD>990214</TD><TD>1603587</TD>
+	<TD> 2.60830e+00</TD><TD> 2.09960e+01</TD><TD> 1.65180e+01</TD><TD>211112101</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 109 0056</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=109&name=ji1090056.fits]]></TD>
+	<TD> 2.102158492e+02</TD><TD> 5.506989955e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.102158492e+02  5.506989955e+01</TD>
+	<TD>-6.467256256e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=109]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=109]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>109</TD><TD>56</TD>
+	<TD>990214</TD><TD>1603588</TD>
+	<TD> 2.57695e+00</TD><TD> 2.09958e+01</TD><TD> 1.65180e+01</TD><TD>211113131</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 110 0220</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=110&name=ji1100220.fits]]></TD>
+	<TD> 2.104218864e+02</TD><TD> 5.501428035e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.104218864e+02  5.501428035e+01</TD>
+	<TD>-4.450860649e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=110]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=110]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>110</TD><TD>220</TD>
+	<TD>990214</TD><TD>1603625</TD>
+	<TD> 2.67100e+00</TD><TD> 2.09977e+01</TD><TD> 1.65160e+01</TD><TD>211113102</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 110 0232</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=110&name=ji1100232.fits]]></TD>
+	<TD> 2.104218501e+02</TD><TD> 5.474483591e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.104218501e+02  5.474483591e+01</TD>
+	<TD>-4.421200483e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=110]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=110]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>110</TD><TD>232</TD>
+	<TD>990214</TD><TD>1603626</TD>
+	<TD> 2.63965e+00</TD><TD> 2.09980e+01</TD><TD> 1.65160e+01</TD><TD>211112101</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 110 0244</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=110&name=ji1100244.fits]]></TD>
+	<TD> 2.104218143e+02</TD><TD> 5.447539146e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.104218143e+02  5.447539146e+01</TD>
+	<TD>-4.392029494e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=110]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=110]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>110</TD><TD>244</TD>
+	<TD>990214</TD><TD>1603627</TD>
+	<TD> 2.60830e+00</TD><TD> 2.09983e+01</TD><TD> 1.65160e+01</TD><TD>211112101</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 110 0256</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=110&name=ji1100256.fits]]></TD>
+	<TD> 2.104217790e+02</TD><TD> 5.420594702e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.104217790e+02  5.420594702e+01</TD>
+	<TD>-4.363336784e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=110]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=110]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>110</TD><TD>256</TD>
+	<TD>990214</TD><TD>1603628</TD>
+	<TD> 2.60830e+00</TD><TD> 2.09985e+01</TD><TD> 1.65160e+01</TD><TD>211112103</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 110 0266</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=110&name=ji1100266.fits]]></TD>
+	<TD> 2.104217476e+02</TD><TD> 5.396344702e+01</TD><TD>2</TD>
+	<TD> 512  830</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  4.15500e+02</TD>
+	<TD> 2.104217476e+02  5.396344702e+01</TD>
+	<TD>-4.337913532e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=110]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=110]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>110</TD><TD>266</TD>
+	<TD>990214</TD><TD>1603629</TD>
+	<TD> 2.60830e+00</TD><TD> 2.09987e+01</TD><TD> 1.65160e+01</TD><TD>211112103</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 111 0009</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=111&name=ji1110009.fits]]></TD>
+	<TD> 2.106292501e+02</TD><TD> 5.399114878e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.106292501e+02  5.399114878e+01</TD>
+	<TD> 2.556512776e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=111]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=111]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>111</TD><TD>9</TD>
+	<TD>990214</TD><TD>1603630</TD>
+	<TD> 2.70235e+00</TD><TD> 2.10007e+01</TD><TD> 1.65200e+01</TD><TD>211112103</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 111 0021</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=111&name=ji1110021.fits]]></TD>
+	<TD> 2.106292295e+02</TD><TD> 5.426059322e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.106292295e+02  5.426059322e+01</TD>
+	<TD> 2.573191256e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=111]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=111]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>111</TD><TD>21</TD>
+	<TD>990214</TD><TD>1603631</TD>
+	<TD> 2.70235e+00</TD><TD> 2.10004e+01</TD><TD> 1.65200e+01</TD><TD>211112103</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 111 0032</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=111&name=ji1110032.fits]]></TD>
+	<TD> 2.106292087e+02</TD><TD> 5.453003767e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.106292087e+02  5.453003767e+01</TD>
+	<TD> 2.590146442e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=111]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=111]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>111</TD><TD>32</TD>
+	<TD>990214</TD><TD>1603632</TD>
+	<TD> 2.70235e+00</TD><TD> 2.10002e+01</TD><TD> 1.65200e+01</TD><TD>211112101</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 111 0044</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=111&name=ji1110044.fits]]></TD>
+	<TD> 2.106291875e+02</TD><TD> 5.479948211e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.106291875e+02  5.479948211e+01</TD>
+	<TD> 2.607384596e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=111]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=111]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>111</TD><TD>44</TD>
+	<TD>990214</TD><TD>1603633</TD>
+	<TD> 2.63965e+00</TD><TD> 2.10000e+01</TD><TD> 1.65200e+01</TD><TD>211113102</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 111 0056</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=111&name=ji1110056.fits]]></TD>
+	<TD> 2.106291661e+02</TD><TD> 5.506892655e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.106291661e+02  5.506892655e+01</TD>
+	<TD> 2.624912177e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=111]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=111]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>111</TD><TD>56</TD>
+	<TD>990214</TD><TD>1603634</TD>
+	<TD> 2.70235e+00</TD><TD> 2.09998e+01</TD><TD> 1.65200e+01</TD><TD>211113131</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 118 0220</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=118&name=ji1180220.fits]]></TD>
+	<TD> 2.108352673e+02</TD><TD> 5.501302435e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.108352673e+02  5.501302435e+01</TD>
+	<TD> 4.335616378e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=118]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=118]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>118</TD><TD>220</TD>
+	<TD>990214</TD><TD>1603671</TD>
+	<TD> 2.70235e+00</TD><TD> 2.10010e+01</TD><TD> 1.65380e+01</TD><TD>211113102</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 118 0232</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=118&name=ji1180232.fits]]></TD>
+	<TD> 2.108353026e+02</TD><TD> 5.474357991e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.108353026e+02  5.474357991e+01</TD>
+	<TD> 4.306725532e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=118]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=118]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>118</TD><TD>232</TD>
+	<TD>990214</TD><TD>1603672</TD>
+	<TD> 2.70235e+00</TD><TD> 2.10013e+01</TD><TD> 1.65380e+01</TD><TD>211113102</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 118 0244</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=118&name=ji1180244.fits]]></TD>
+	<TD> 2.108353375e+02</TD><TD> 5.447413546e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.108353375e+02  5.447413546e+01</TD>
+	<TD> 4.278311161e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=118]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=118]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>118</TD><TD>244</TD>
+	<TD>990214</TD><TD>1603673</TD>
+	<TD> 2.70235e+00</TD><TD> 2.10016e+01</TD><TD> 1.65380e+01</TD><TD>211112103</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 118 0256</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=118&name=ji1180256.fits]]></TD>
+	<TD> 2.108353719e+02</TD><TD> 5.420469102e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.108353719e+02  5.420469102e+01</TD>
+	<TD> 4.250362651e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=118]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=118]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>118</TD><TD>256</TD>
+	<TD>990214</TD><TD>1603674</TD>
+	<TD> 2.67100e+00</TD><TD> 2.10018e+01</TD><TD> 1.65380e+01</TD><TD>211112103</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 118 0266</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=118&name=ji1180266.fits]]></TD>
+	<TD> 2.108354024e+02</TD><TD> 5.396260769e+01</TD><TD>2</TD>
+	<TD> 512  827</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  4.14000e+02</TD>
+	<TD> 2.108354024e+02  5.396260769e+01</TD>
+	<TD> 4.225641027e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=118]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=118]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>118</TD><TD>266</TD>
+	<TD>990214</TD><TD>1603675</TD>
+	<TD> 2.60830e+00</TD><TD> 2.10021e+01</TD><TD> 1.65380e+01</TD><TD>211112100</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 119 0009</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=119&name=ji1190009.fits]]></TD>
+	<TD> 2.110417726e+02</TD><TD> 5.399101778e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.110417726e+02  5.399101778e+01</TD>
+	<TD> 6.699981475e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=119]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=119]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>119</TD><TD>9</TD>
+	<TD>990214</TD><TD>1603676</TD>
+	<TD> 2.98449e+00</TD><TD> 2.10008e+01</TD><TD> 1.65130e+01</TD><TD>211112100</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 119 0021</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=119&name=ji1190021.fits]]></TD>
+	<TD> 2.110417186e+02</TD><TD> 5.426046222e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.110417186e+02  5.426046222e+01</TD>
+	<TD> 6.743691396e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=119]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=119]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>119</TD><TD>21</TD>
+	<TD>990214</TD><TD>1603677</TD>
+	<TD> 2.70235e+00</TD><TD> 2.10005e+01</TD><TD> 1.65130e+01</TD><TD>211112100</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 119 0032</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=119&name=ji1190032.fits]]></TD>
+	<TD> 2.110416640e+02</TD><TD> 5.452990666e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.110416640e+02  5.452990666e+01</TD>
+	<TD> 6.788126486e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=119]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=119]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>119</TD><TD>32</TD>
+	<TD>990214</TD><TD>1603678</TD>
+	<TD> 2.73370e+00</TD><TD> 2.10003e+01</TD><TD> 1.65130e+01</TD><TD>211112101</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 119 0044</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=119&name=ji1190044.fits]]></TD>
+	<TD> 2.110416086e+02</TD><TD> 5.479935110e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.110416086e+02  5.479935110e+01</TD>
+	<TD> 6.833303161e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=119]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=119]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>119</TD><TD>44</TD>
+	<TD>990214</TD><TD>1603679</TD>
+	<TD> 2.76505e+00</TD><TD> 2.10001e+01</TD><TD> 1.65130e+01</TD><TD>211113102</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 119 0056</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=119&name=ji1190056.fits]]></TD>
+	<TD> 2.110415525e+02</TD><TD> 5.506879555e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.110415525e+02  5.506879555e+01</TD>
+	<TD> 6.879238343e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=119]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=119]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>119</TD><TD>56</TD>
+	<TD>990214</TD><TD>1603680</TD>
+	<TD> 2.73370e+00</TD><TD> 2.09999e+01</TD><TD> 1.65130e+01</TD><TD>211113102</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 120 0220</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=120&name=ji1200220.fits]]></TD>
+	<TD> 2.112475247e+02</TD><TD> 5.501389258e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.112475247e+02  5.501389258e+01</TD>
+	<TD> 5.390860983e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=120]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=120]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>120</TD><TD>220</TD>
+	<TD>990214</TD><TD>1603717</TD>
+	<TD> 2.63965e+00</TD><TD> 2.09994e+01</TD><TD> 1.65230e+01</TD><TD>211113102</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 120 0232</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=120&name=ji1200232.fits]]></TD>
+	<TD> 2.112475687e+02</TD><TD> 5.474444814e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.112475687e+02  5.474444814e+01</TD>
+	<TD> 5.354937247e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=120]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=120]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>120</TD><TD>232</TD>
+	<TD>990214</TD><TD>1603718</TD>
+	<TD> 2.73370e+00</TD><TD> 2.09997e+01</TD><TD> 1.65230e+01</TD><TD>211113102</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 120 0244</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=120&name=ji1200244.fits]]></TD>
+	<TD> 2.112476120e+02</TD><TD> 5.447500369e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.112476120e+02  5.447500369e+01</TD>
+	<TD> 5.319605987e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=120]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=120]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>120</TD><TD>244</TD>
+	<TD>990214</TD><TD>1603719</TD>
+	<TD> 2.79640e+00</TD><TD> 2.10000e+01</TD><TD> 1.65230e+01</TD><TD>211113100</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 120 0256</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=120&name=ji1200256.fits]]></TD>
+	<TD> 2.112476548e+02</TD><TD> 5.420555925e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.112476548e+02  5.420555925e+01</TD>
+	<TD> 5.284854003e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=120]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=120]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>120</TD><TD>256</TD>
+	<TD>990214</TD><TD>1603720</TD>
+	<TD> 2.79640e+00</TD><TD> 2.10002e+01</TD><TD> 1.65230e+01</TD><TD>211112100</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 120 0266</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=120&name=ji1200266.fits]]></TD>
+	<TD> 2.112476927e+02</TD><TD> 5.396361481e+01</TD><TD>2</TD>
+	<TD> 512  826</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  4.13500e+02</TD>
+	<TD> 2.112476927e+02  5.396361481e+01</TD>
+	<TD> 5.254131938e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=120]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=120]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>120</TD><TD>266</TD>
+	<TD>990214</TD><TD>1603721</TD>
+	<TD> 2.76505e+00</TD><TD> 2.10005e+01</TD><TD> 1.65230e+01</TD><TD>211112100</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 121 0009</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=121&name=ji1210009.fits]]></TD>
+	<TD> 2.114541570e+02</TD><TD> 5.399222155e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.114541570e+02  5.399222155e+01</TD>
+	<TD> 6.239208556e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=121]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=121]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>121</TD><TD>9</TD>
+	<TD>990214</TD><TD>1603722</TD>
+	<TD> 2.79640e+00</TD><TD> 2.09992e+01</TD><TD> 1.65200e+01</TD><TD>211112100</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 121 0021</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=121&name=ji1210021.fits]]></TD>
+	<TD> 2.114541068e+02</TD><TD> 5.426166600e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.114541068e+02  5.426166600e+01</TD>
+	<TD> 6.279914254e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=121]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=121]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>121</TD><TD>21</TD>
+	<TD>990214</TD><TD>1603723</TD>
+	<TD> 2.76505e+00</TD><TD> 2.09990e+01</TD><TD> 1.65200e+01</TD><TD>211112100</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 121 0032</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=121&name=ji1210032.fits]]></TD>
+	<TD> 2.114540559e+02</TD><TD> 5.453111044e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.114540559e+02  5.453111044e+01</TD>
+	<TD> 6.321295297e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=121]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=121]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>121</TD><TD>32</TD>
+	<TD>990214</TD><TD>1603724</TD>
+	<TD> 2.76505e+00</TD><TD> 2.09987e+01</TD><TD> 1.65200e+01</TD><TD>211113100</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 121 0044</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=121&name=ji1210044.fits]]></TD>
+	<TD> 2.114540043e+02</TD><TD> 5.480055488e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.114540043e+02  5.480055488e+01</TD>
+	<TD> 6.363366973e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=121]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=121]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>121</TD><TD>44</TD>
+	<TD>990214</TD><TD>1603725</TD>
+	<TD> 2.63965e+00</TD><TD> 2.09985e+01</TD><TD> 1.65200e+01</TD><TD>211113103</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 121 0056</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=121&name=ji1210056.fits]]></TD>
+	<TD> 2.114539520e+02</TD><TD> 5.506999933e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.114539520e+02  5.506999933e+01</TD>
+	<TD> 6.406145044e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=121]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=121]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>121</TD><TD>56</TD>
+	<TD>990214</TD><TD>1603726</TD>
+	<TD> 2.63965e+00</TD><TD> 2.09982e+01</TD><TD> 1.65200e+01</TD><TD>211113102</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 122 0220</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=122&name=ji1220220.fits]]></TD>
+	<TD> 2.116596190e+02</TD><TD> 5.501412156e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.116596190e+02  5.501412156e+01</TD>
+	<TD>-2.040551071e-04</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=122]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=122]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>122</TD><TD>220</TD>
+	<TD>990214</TD><TD>1603763</TD>
+	<TD> 2.67100e+00</TD><TD> 2.09969e+01</TD><TD> 1.65080e+01</TD><TD>211113103</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 122 0232</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=122&name=ji1220232.fits]]></TD>
+	<TD> 2.116596173e+02</TD><TD> 5.474467711e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.116596173e+02  5.474467711e+01</TD>
+	<TD>-2.026953088e-04</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=122]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=122]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>122</TD><TD>232</TD>
+	<TD>990214</TD><TD>1603764</TD>
+	<TD> 2.70235e+00</TD><TD> 2.09972e+01</TD><TD> 1.65080e+01</TD><TD>211113103</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 122 0244</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=122&name=ji1220244.fits]]></TD>
+	<TD> 2.116596157e+02</TD><TD> 5.447523267e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.116596157e+02  5.447523267e+01</TD>
+	<TD>-2.013579371e-04</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=122]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=122]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>122</TD><TD>244</TD>
+	<TD>990214</TD><TD>1603765</TD>
+	<TD> 2.70235e+00</TD><TD> 2.09975e+01</TD><TD> 1.65080e+01</TD><TD>211113100</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 122 0256</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=122&name=ji1220256.fits]]></TD>
+	<TD> 2.116596141e+02</TD><TD> 5.420578822e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.116596141e+02  5.420578822e+01</TD>
+	<TD>-2.000424926e-04</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=122]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=122]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>122</TD><TD>256</TD>
+	<TD>990214</TD><TD>1603766</TD>
+	<TD> 2.73370e+00</TD><TD> 2.09977e+01</TD><TD> 1.65080e+01</TD><TD>211112100</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 122 0266</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=122&name=ji1220266.fits]]></TD>
+	<TD> 2.116596126e+02</TD><TD> 5.396356600e+01</TD><TD>2</TD>
+	<TD> 512  828</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  4.14500e+02</TD>
+	<TD> 2.116596126e+02  5.396356600e+01</TD>
+	<TD>-1.988782648e-04</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=122]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=122]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>122</TD><TD>266</TD>
+	<TD>990214</TD><TD>1603767</TD>
+	<TD> 2.76505e+00</TD><TD> 2.09980e+01</TD><TD> 1.65080e+01</TD><TD>213021200</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 123 0009</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=123&name=ji1230009.fits]]></TD>
+	<TD> 2.118658807e+02</TD><TD> 5.399194855e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.118658807e+02  5.399194855e+01</TD>
+	<TD>-8.753205227e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=123]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=123]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>123</TD><TD>9</TD>
+	<TD>990214</TD><TD>1603768</TD>
+	<TD> 2.63965e+00</TD><TD> 2.09967e+01</TD><TD> 1.65110e+01</TD><TD>213021200</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 123 0021</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=123&name=ji1230021.fits]]></TD>
+	<TD> 2.118659512e+02</TD><TD> 5.426139299e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.118659512e+02  5.426139299e+01</TD>
+	<TD>-8.810312107e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=123]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=123]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>123</TD><TD>21</TD>
+	<TD>990214</TD><TD>1603769</TD>
+	<TD> 2.63965e+00</TD><TD> 2.09965e+01</TD><TD> 1.65110e+01</TD><TD>211113100</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 123 0032</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=123&name=ji1230032.fits]]></TD>
+	<TD> 2.118660226e+02</TD><TD> 5.453083744e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.118660226e+02  5.453083744e+01</TD>
+	<TD>-8.868366438e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=123]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=123]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>123</TD><TD>32</TD>
+	<TD>990214</TD><TD>1603770</TD>
+	<TD> 2.76505e+00</TD><TD> 2.09962e+01</TD><TD> 1.65110e+01</TD><TD>211113100</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 123 0044</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=123&name=ji1230044.fits]]></TD>
+	<TD> 2.118660949e+02</TD><TD> 5.480028188e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.118660949e+02  5.480028188e+01</TD>
+	<TD>-8.927389667e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=123]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=123]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>123</TD><TD>44</TD>
+	<TD>990214</TD><TD>1603771</TD>
+	<TD> 2.76505e+00</TD><TD> 2.09960e+01</TD><TD> 1.65110e+01</TD><TD>211113103</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 123 0056</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=123&name=ji1230056.fits]]></TD>
+	<TD> 2.118661682e+02</TD><TD> 5.506972632e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.118661682e+02  5.506972632e+01</TD>
+	<TD>-8.987403906e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=123]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=123]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>123</TD><TD>56</TD>
+	<TD>990214</TD><TD>1603772</TD>
+	<TD> 2.76505e+00</TD><TD> 2.09957e+01</TD><TD> 1.65110e+01</TD><TD>211113103</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 124 0220</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=124&name=ji1240220.fits]]></TD>
+	<TD> 2.120769171e+02</TD><TD> 5.501480553e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.120769171e+02  5.501480553e+01</TD>
+	<TD> 1.480035205e-02</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=124]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=124]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>124</TD><TD>220</TD>
+	<TD>990214</TD><TD>1603809</TD>
+	<TD> 2.63965e+00</TD><TD> 2.09944e+01</TD><TD> 1.65280e+01</TD><TD>211113101</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 124 0232</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=124&name=ji1240232.fits]]></TD>
+	<TD> 2.120770376e+02</TD><TD> 5.474536109e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.120770376e+02  5.474536109e+01</TD>
+	<TD> 1.470172181e-02</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=124]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=124]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>124</TD><TD>232</TD>
+	<TD>990214</TD><TD>1603810</TD>
+	<TD> 2.73370e+00</TD><TD> 2.09947e+01</TD><TD> 1.65280e+01</TD><TD>211113103</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 124 0244</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=124&name=ji1240244.fits]]></TD>
+	<TD> 2.120771566e+02</TD><TD> 5.447591665e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.120771566e+02  5.447591665e+01</TD>
+	<TD> 1.460471828e-02</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=124]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=124]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>124</TD><TD>244</TD>
+	<TD>990214</TD><TD>1603811</TD>
+	<TD> 2.67100e+00</TD><TD> 2.09950e+01</TD><TD> 1.65280e+01</TD><TD>211113100</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 124 0256</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=124&name=ji1240256.fits]]></TD>
+	<TD> 2.120772741e+02</TD><TD> 5.420647222e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.120772741e+02  5.420647222e+01</TD>
+	<TD> 1.450930521e-02</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=124]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=124]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>124</TD><TD>256</TD>
+	<TD>990214</TD><TD>1603812</TD>
+	<TD> 2.70235e+00</TD><TD> 2.09952e+01</TD><TD> 1.65280e+01</TD><TD>211113100</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990214 n 124 0266</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=124&name=ji1240266.fits]]></TD>
+	<TD> 2.120773785e+02</TD><TD> 5.396383334e+01</TD><TD>2</TD>
+	<TD> 512  831</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  4.16000e+02</TD>
+	<TD> 2.120773785e+02  5.396383334e+01</TD>
+	<TD> 1.442471616e-02</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990214&hem=n&scan=124]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990214&hem=n&scan=124]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990214</TD><TD>n</TD><TD>124</TD><TD>266</TD>
+	<TD>990214</TD><TD>1603813</TD>
+	<TD> 2.70235e+00</TD><TD> 2.09955e+01</TD><TD> 1.65280e+01</TD><TD>213021200</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990311 n 059 0256</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti03&dh=990311n&scan=059&name=ji0590256.fits]]></TD>
+	<TD> 2.098023748e+02</TD><TD> 5.365095011e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.098023748e+02  5.365095011e+01</TD>
+	<TD>-9.228907057e-04</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990311&hem=n&scan=059]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990311&hem=n&scan=059]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990311</TD><TD>n</TD><TD>59</TD><TD>256</TD>
+	<TD>990311</TD><TD>744992</TD>
+	<TD> 2.60830e+00</TD><TD> 2.09809e+01</TD><TD> 1.65870e+01</TD><TD>213021201</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990311 n 059 0266</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti03&dh=990311n&scan=059&name=ji0590266.fits]]></TD>
+	<TD> 2.098023814e+02</TD><TD> 5.389331122e+01</TD><TD>2</TD>
+	<TD> 512  829</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  4.15000e+02</TD>
+	<TD> 2.098023814e+02  5.389331122e+01</TD>
+	<TD>-9.282346038e-04</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990311&hem=n&scan=059]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990311&hem=n&scan=059]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990311</TD><TD>n</TD><TD>59</TD><TD>266</TD>
+	<TD>990311</TD><TD>744993</TD>
+	<TD> 2.60830e+00</TD><TD> 2.09808e+01</TD><TD> 1.65870e+01</TD><TD>211112102</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990311 n 060 0009</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti03&dh=990311n&scan=060&name=ji0600009.fits]]></TD>
+	<TD> 2.099830038e+02</TD><TD> 5.386557856e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.099830038e+02  5.386557856e+01</TD>
+	<TD>-9.462732743e-04</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990311&hem=n&scan=060]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990311&hem=n&scan=060]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990311</TD><TD>n</TD><TD>60</TD><TD>9</TD>
+	<TD>990311</TD><TD>744994</TD>
+	<TD> 2.76505e+00</TD><TD> 2.09789e+01</TD><TD> 1.65600e+01</TD><TD>211112102</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990311 n 060 0021</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti03&dh=990311n&scan=060&name=ji0600021.fits]]></TD>
+	<TD> 2.099829963e+02</TD><TD> 5.359613411e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.099829963e+02  5.359613411e+01</TD>
+	<TD>-9.402278084e-04</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990311&hem=n&scan=060]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990311&hem=n&scan=060]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990311</TD><TD>n</TD><TD>60</TD><TD>21</TD>
+	<TD>990311</TD><TD>744995</TD>
+	<TD> 2.85909e+00</TD><TD> 2.09791e+01</TD><TD> 1.65600e+01</TD><TD>213021201</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990311 n 061 0256</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti03&dh=990311n&scan=061&name=ji0610256.fits]]></TD>
+	<TD> 2.101631986e+02</TD><TD> 5.365120304e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.101631986e+02  5.365120304e+01</TD>
+	<TD> 9.622079130e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990311&hem=n&scan=061]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990311&hem=n&scan=061]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990311</TD><TD>n</TD><TD>61</TD><TD>256</TD>
+	<TD>990311</TD><TD>745038</TD>
+	<TD> 2.67100e+00</TD><TD> 2.09788e+01</TD><TD> 1.65890e+01</TD><TD>213021201</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990311 n 061 0266</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti03&dh=990311n&scan=061&name=ji0610266.fits]]></TD>
+	<TD> 2.101631295e+02</TD><TD> 5.389370304e+01</TD><TD>2</TD>
+	<TD> 512  830</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  4.15500e+02</TD>
+	<TD> 2.101631295e+02  5.389370304e+01</TD>
+	<TD> 9.677827411e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990311&hem=n&scan=061]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990311&hem=n&scan=061]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990311</TD><TD>n</TD><TD>61</TD><TD>266</TD>
+	<TD>990311</TD><TD>745039</TD>
+	<TD> 2.60830e+00</TD><TD> 2.09787e+01</TD><TD> 1.65890e+01</TD><TD>211112102</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990311 n 062 0009</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti03&dh=990311n&scan=062&name=ji0620009.fits]]></TD>
+	<TD> 2.103440989e+02</TD><TD> 5.386611856e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.103440989e+02  5.386611856e+01</TD>
+	<TD>-2.911778110e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990311&hem=n&scan=062]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990311&hem=n&scan=062]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990311</TD><TD>n</TD><TD>62</TD><TD>9</TD>
+	<TD>990311</TD><TD>745040</TD>
+	<TD> 2.63965e+00</TD><TD> 2.09758e+01</TD><TD> 1.66050e+01</TD><TD>211112102</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990311 n 062 0021</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti03&dh=990311n&scan=062&name=ji0620021.fits]]></TD>
+	<TD> 2.103440758e+02</TD><TD> 5.359667411e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.103440758e+02  5.359667411e+01</TD>
+	<TD>-2.893175237e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990311&hem=n&scan=062]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990311&hem=n&scan=062]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990311</TD><TD>n</TD><TD>62</TD><TD>21</TD>
+	<TD>990311</TD><TD>745041</TD>
+	<TD> 2.60830e+00</TD><TD> 2.09760e+01</TD><TD> 1.66050e+01</TD><TD>213021201</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990524 n 028 0009</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti06&dh=990524n&scan=028&name=ji0280009.fits]]></TD>
+	<TD> 2.105279378e+02</TD><TD> 5.386901256e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.105279378e+02  5.386901256e+01</TD>
+	<TD> 8.785121809e-04</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990524&hem=n&scan=028]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990524&hem=n&scan=028]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990524</TD><TD>n</TD><TD>28</TD><TD>9</TD>
+	<TD>990524</TD><TD>869056</TD>
+	<TD> 2.70235e+00</TD><TD> 2.09164e+01</TD><TD> 1.63570e+01</TD><TD>211112102</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990524 n 028 0021</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti06&dh=990524n&scan=028&name=ji0280021.fits]]></TD>
+	<TD> 2.105279448e+02</TD><TD> 5.359956811e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.105279448e+02  5.359956811e+01</TD>
+	<TD> 8.728989179e-04</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990524&hem=n&scan=028]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990524&hem=n&scan=028]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990524</TD><TD>n</TD><TD>28</TD><TD>21</TD>
+	<TD>990524</TD><TD>869057</TD>
+	<TD> 2.82774e+00</TD><TD> 2.09166e+01</TD><TD> 1.63570e+01</TD><TD>213021203</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990524 n 029 0256</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti06&dh=990524n&scan=029&name=ji0290256.fits]]></TD>
+	<TD> 2.107085819e+02</TD><TD> 5.365417311e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.107085819e+02  5.365417311e+01</TD>
+	<TD> 2.237379578e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990524&hem=n&scan=029]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990524&hem=n&scan=029]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990524</TD><TD>n</TD><TD>29</TD><TD>256</TD>
+	<TD>990524</TD><TD>869100</TD>
+	<TD> 2.85909e+00</TD><TD> 2.09158e+01</TD><TD> 1.63390e+01</TD><TD>213021203</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990524 n 029 0266</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti06&dh=990524n&scan=029&name=ji0290266.fits]]></TD>
+	<TD> 2.107085658e+02</TD><TD> 5.389611755e+01</TD><TD>2</TD>
+	<TD> 512  826</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  4.13500e+02</TD>
+	<TD> 2.107085658e+02  5.389611755e+01</TD>
+	<TD> 2.250313975e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990524&hem=n&scan=029]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990524&hem=n&scan=029]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990524</TD><TD>n</TD><TD>29</TD><TD>266</TD>
+	<TD>990524</TD><TD>869101</TD>
+	<TD> 2.95314e+00</TD><TD> 2.09157e+01</TD><TD> 1.63390e+01</TD><TD>211112100</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990524 n 030 0009</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti06&dh=990524n&scan=030&name=ji0300009.fits]]></TD>
+	<TD> 2.108908360e+02</TD><TD> 5.386850133e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.108908360e+02  5.386850133e+01</TD>
+	<TD>-5.808624419e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990524&hem=n&scan=030]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990524&hem=n&scan=030]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990524</TD><TD>n</TD><TD>30</TD><TD>9</TD>
+	<TD>990524</TD><TD>869102</TD>
+	<TD> 2.79640e+00</TD><TD> 2.09141e+01</TD><TD> 1.63670e+01</TD><TD>213021200</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990524 n 030 0021</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti06&dh=990524n&scan=030&name=ji0300021.fits]]></TD>
+	<TD> 2.108907900e+02</TD><TD> 5.359905689e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.108907900e+02  5.359905689e+01</TD>
+	<TD>-5.771510843e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990524&hem=n&scan=030]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990524&hem=n&scan=030]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990524</TD><TD>n</TD><TD>30</TD><TD>21</TD>
+	<TD>990524</TD><TD>869103</TD>
+	<TD> 2.76505e+00</TD><TD> 2.09142e+01</TD><TD> 1.63670e+01</TD><TD>213021203</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990524 n 031 0256</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti06&dh=990524n&scan=031&name=ji0310256.fits]]></TD>
+	<TD> 2.110708069e+02</TD><TD> 5.365405711e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.110708069e+02  5.365405711e+01</TD>
+	<TD>-3.222762621e-04</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990524&hem=n&scan=031]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990524&hem=n&scan=031]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990524</TD><TD>n</TD><TD>31</TD><TD>256</TD>
+	<TD>990524</TD><TD>869146</TD>
+	<TD> 2.70235e+00</TD><TD> 2.09125e+01</TD><TD> 1.64050e+01</TD><TD>213021200</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990524 n 031 0266</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti06&dh=990524n&scan=031&name=ji0310266.fits]]></TD>
+	<TD> 2.110708092e+02</TD><TD> 5.389586267e+01</TD><TD>2</TD>
+	<TD> 512  825</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  4.13000e+02</TD>
+	<TD> 2.110708092e+02  5.389586267e+01</TD>
+	<TD>-3.241382712e-04</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990524&hem=n&scan=031]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990524&hem=n&scan=031]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990524</TD><TD>n</TD><TD>31</TD><TD>266</TD>
+	<TD>990524</TD><TD>869147</TD>
+	<TD> 2.67100e+00</TD><TD> 2.09123e+01</TD><TD> 1.64050e+01</TD><TD>213021200</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990524 n 032 0009</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti06&dh=990524n&scan=032&name=ji0320009.fits]]></TD>
+	<TD> 2.112522461e+02</TD><TD> 5.386801234e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.112522461e+02  5.386801234e+01</TD>
+	<TD>-7.787705558e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990524&hem=n&scan=032]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990524&hem=n&scan=032]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990524</TD><TD>n</TD><TD>32</TD><TD>9</TD>
+	<TD>990524</TD><TD>869148</TD>
+	<TD> 2.70235e+00</TD><TD> 2.09107e+01</TD><TD> 1.64320e+01</TD><TD>213021200</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990524 n 032 0021</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti06&dh=990524n&scan=032&name=ji0320021.fits]]></TD>
+	<TD> 2.112521844e+02</TD><TD> 5.359856789e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.112521844e+02  5.359856789e+01</TD>
+	<TD>-7.737947746e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990524&hem=n&scan=032]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990524&hem=n&scan=032]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990524</TD><TD>n</TD><TD>32</TD><TD>21</TD>
+	<TD>990524</TD><TD>869149</TD>
+	<TD> 2.63965e+00</TD><TD> 2.09108e+01</TD><TD> 1.64320e+01</TD><TD>213021200</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990524 n 033 0256</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti06&dh=990524n&scan=033&name=ji0330256.fits]]></TD>
+	<TD> 2.114316127e+02</TD><TD> 5.365417889e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.114316127e+02  5.365417889e+01</TD>
+	<TD> 8.520941492e-04</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990524&hem=n&scan=033]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990524&hem=n&scan=033]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990524</TD><TD>n</TD><TD>33</TD><TD>256</TD>
+	<TD>990524</TD><TD>869192</TD>
+	<TD> 2.67100e+00</TD><TD> 2.09101e+01</TD><TD> 1.64470e+01</TD><TD>213021200</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990524 n 033 0266</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti06&dh=990524n&scan=033&name=ji0330266.fits]]></TD>
+	<TD> 2.114316066e+02</TD><TD> 5.389612333e+01</TD><TD>2</TD>
+	<TD> 512  826</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  4.13500e+02</TD>
+	<TD> 2.114316066e+02  5.389612333e+01</TD>
+	<TD> 8.570201468e-04</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990524&hem=n&scan=033]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990524&hem=n&scan=033]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990524</TD><TD>n</TD><TD>33</TD><TD>266</TD>
+	<TD>990524</TD><TD>869193</TD>
+	<TD> 2.67100e+00</TD><TD> 2.09100e+01</TD><TD> 1.64470e+01</TD><TD>213021200</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990524 n 034 0009</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti06&dh=990524n&scan=034&name=ji0340009.fits]]></TD>
+	<TD> 2.116139359e+02</TD><TD> 5.386819256e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.116139359e+02  5.386819256e+01</TD>
+	<TD> 1.065047943e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990524&hem=n&scan=034]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990524&hem=n&scan=034]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990524</TD><TD>n</TD><TD>34</TD><TD>9</TD>
+	<TD>990524</TD><TD>869194</TD>
+	<TD> 2.98449e+00</TD><TD> 2.09073e+01</TD><TD> 1.64810e+01</TD><TD>213021200</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990524 n 034 0021</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti06&dh=990524n&scan=034&name=ji0340021.fits]]></TD>
+	<TD> 2.116139443e+02</TD><TD> 5.359874811e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.116139443e+02  5.359874811e+01</TD>
+	<TD> 1.058243011e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990524&hem=n&scan=034]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990524&hem=n&scan=034]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990524</TD><TD>n</TD><TD>34</TD><TD>21</TD>
+	<TD>990524</TD><TD>869195</TD>
+	<TD> 2.63965e+00</TD><TD> 2.09075e+01</TD><TD> 1.64810e+01</TD><TD>213021200</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990524 n 035 0256</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti06&dh=990524n&scan=035&name=ji0350256.fits]]></TD>
+	<TD> 2.117939496e+02</TD><TD> 5.365439887e+01</TD><TD>2</TD>
+	<TD> 512 1024</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  5.12500e+02</TD>
+	<TD> 2.117939496e+02  5.365439887e+01</TD>
+	<TD> 5.333631014e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990524&hem=n&scan=035]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990524&hem=n&scan=035]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990524</TD><TD>n</TD><TD>35</TD><TD>256</TD>
+	<TD>990524</TD><TD>869238</TD>
+	<TD> 2.67100e+00</TD><TD> 2.09067e+01</TD><TD> 1.64860e+01</TD><TD>213021200</TD>
+</TR>
+<TR>
+	<TD>All-Sky Release Survey J-Band Atlas Image: 990524 n 035 0266</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti06&dh=990524n&scan=035&name=ji0350266.fits]]></TD>
+	<TD> 2.117939114e+02</TD><TD> 5.389606553e+01</TD><TD>2</TD>
+	<TD> 512  824</TD>
+	<TD>-2.777777845e-04  2.777777845e-04</TD>
+	<TD>image/fits</TD>
+	<TD> 2.56500e+02  4.12500e+02</TD>
+	<TD> 2.117939114e+02  5.389606553e+01</TD>
+	<TD> 5.364429583e-03</TD>
+	<TD>J</TD><TD>1.235e-06</TD><TD>1.404e-06</TD><TD>1.066e-06</TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=pers&ds=asky&date=990524&hem=n&scan=035]]></TD>
+	<TD><![CDATA[https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-art?arttype=glint&ds=asky&date=990524&hem=n&scan=035]]></TD>
+	<TD>A</TD><TD>asky</TD><TD>CZ</TD><TD>null</TD><TD>null</TD>
+	<TD>990524</TD><TD>n</TD><TD>35</TD><TD>266</TD>
+	<TD>990524</TD><TD>869239</TD>
+	<TD> 2.63965e+00</TD><TD> 2.09066e+01</TD><TD> 1.64860e+01</TD><TD>213021200</TD>
+</TR>
+</TABLEDATA></DATA>
+</TABLE>
+</RESOURCE>
+</VOTABLE>

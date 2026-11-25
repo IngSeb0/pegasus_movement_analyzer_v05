@@ -1,0 +1,553 @@
+{
+  "montage": {
+    "M101-BASE": {
+      "required": 269021436,
+      "observed": 311142466,
+      "dme": "134510718/155571233",
+      "jobs": 12,
+      "directions": 24,
+      "duration": 251.2369999885559,
+      "deliveries": 75,
+      "obligations": 54
+    },
+    "M101-PROJ": {
+      "required": 269021436,
+      "observed": 311142148,
+      "dme": "67255359/77785537",
+      "jobs": 11,
+      "directions": 22,
+      "duration": 256.2239999771118,
+      "deliveries": 74,
+      "obligations": 54,
+      "savings": 318,
+      "relative_savings": 1.0220398523163984e-06,
+      "avoided": [
+        [
+          "template.hdr",
+          "input",
+          "dme-master",
+          "dme-worker2",
+          318,
+          1
+        ]
+      ]
+    },
+    "M101-FINAL": {
+      "required": 269021436,
+      "observed": 269030582,
+      "dme": "134510718/134515291",
+      "jobs": 11,
+      "directions": 22,
+      "duration": 222.1949999332428,
+      "deliveries": 64,
+      "obligations": 54,
+      "savings": 42111884,
+      "relative_savings": 0.13534598649096005,
+      "avoided": [
+        [
+          "images.tbl",
+          "input",
+          "dme-master",
+          "dme-worker1",
+          6284,
+          1
+        ],
+        [
+          "p01.fits",
+          "input",
+          "dme-master",
+          "dme-worker1",
+          4230720,
+          1
+        ],
+        [
+          "p02.fits",
+          "input",
+          "dme-master",
+          "dme-worker1",
+          4222080,
+          1
+        ],
+        [
+          "p03.fits",
+          "input",
+          "dme-master",
+          "dme-worker1",
+          4199040,
+          1
+        ],
+        [
+          "p04.fits",
+          "input",
+          "dme-master",
+          "dme-worker1",
+          4199040,
+          1
+        ],
+        [
+          "p05.fits",
+          "input",
+          "dme-master",
+          "dme-worker1",
+          4190400,
+          1
+        ],
+        [
+          "p06.fits",
+          "input",
+          "dme-master",
+          "dme-worker1",
+          4181760,
+          1
+        ],
+        [
+          "p07.fits",
+          "input",
+          "dme-master",
+          "dme-worker1",
+          4210560,
+          1
+        ],
+        [
+          "p08.fits",
+          "input",
+          "dme-master",
+          "dme-worker1",
+          4210560,
+          1
+        ],
+        [
+          "p09.fits",
+          "input",
+          "dme-master",
+          "dme-worker1",
+          4239360,
+          1
+        ],
+        [
+          "p10.fits",
+          "input",
+          "dme-master",
+          "dme-worker1",
+          4222080,
+          1
+        ]
+      ]
+    }
+  },
+  "timing": {
+    "AGGREGATION-W2": {
+      "submit_at_s": 41,
+      "first_execute_at_s": 47,
+      "first_submit_to_execute_s": 6
+    },
+    "AGGREGATION-W4": {
+      "submit_at_s": 41,
+      "first_execute_at_s": 57,
+      "first_submit_to_execute_s": 16
+    },
+    "REDISTRIBUTION-W2": {
+      "submit_at_s": 41,
+      "first_execute_at_s": 51,
+      "first_submit_to_execute_s": 10
+    },
+    "REDISTRIBUTION-W4": {
+      "submit_at_s": 41,
+      "first_execute_at_s": 64,
+      "first_submit_to_execute_s": 23
+    }
+  },
+  "correctitude": {
+    "runs": 10,
+    "manual_analyzer_matches": 10,
+    "directions": 120,
+    "conditions": 5,
+    "one_run_per_cell": true,
+    "workers": [
+      2,
+      4
+    ],
+    "example": {
+      "case": "DISTRIBUTION-W4",
+      "files": [
+        {
+          "file": "A",
+          "bytes": 10485760,
+          "origin": "dme-master",
+          "destinations": [
+            "dme-worker3"
+          ],
+          "obligations": 1,
+          "required_bytes": 10485760
+        },
+        {
+          "file": "B1",
+          "bytes": 10485760,
+          "origin": "dme-worker4",
+          "destinations": [
+            "dme-master"
+          ],
+          "obligations": 1,
+          "required_bytes": 10485760
+        },
+        {
+          "file": "B2",
+          "bytes": 10485760,
+          "origin": "dme-worker3",
+          "destinations": [
+            "dme-master"
+          ],
+          "obligations": 1,
+          "required_bytes": 10485760
+        },
+        {
+          "file": "B3",
+          "bytes": 10485760,
+          "origin": "dme-worker3",
+          "destinations": [
+            "dme-master"
+          ],
+          "obligations": 1,
+          "required_bytes": 10485760
+        },
+        {
+          "file": "B4",
+          "bytes": 10485760,
+          "origin": "dme-worker3",
+          "destinations": [
+            "dme-master"
+          ],
+          "obligations": 1,
+          "required_bytes": 10485760
+        },
+        {
+          "file": "B5",
+          "bytes": 10485760,
+          "origin": "dme-worker3",
+          "destinations": [
+            "dme-master"
+          ],
+          "obligations": 1,
+          "required_bytes": 10485760
+        },
+        {
+          "file": "g",
+          "bytes": 10485760,
+          "origin": "dme-worker3",
+          "destinations": [
+            "dme-master",
+            "dme-worker4"
+          ],
+          "obligations": 2,
+          "required_bytes": 20971520
+        }
+      ],
+      "deliveries": [
+        {
+          "node": "campaign_task_T1",
+          "global_job_id": "dme-master#1838.0#1794367136",
+          "direction": "input",
+          "file": "A",
+          "bytes": 10485760,
+          "source": "dme-master",
+          "destination": "dme-worker3"
+        },
+        {
+          "node": "campaign_task_T1",
+          "global_job_id": "dme-master#1838.0#1794367136",
+          "direction": "output",
+          "file": "g",
+          "bytes": 10485760,
+          "source": "dme-worker3",
+          "destination": "dme-master"
+        },
+        {
+          "node": "campaign_task_T2",
+          "global_job_id": "dme-master#1843.0#1794367171",
+          "direction": "input",
+          "file": "g",
+          "bytes": 10485760,
+          "source": "dme-master",
+          "destination": "dme-worker4"
+        },
+        {
+          "node": "campaign_task_T2",
+          "global_job_id": "dme-master#1843.0#1794367171",
+          "direction": "output",
+          "file": "B1",
+          "bytes": 10485760,
+          "source": "dme-worker4",
+          "destination": "dme-master"
+        },
+        {
+          "node": "campaign_task_T3",
+          "global_job_id": "dme-master#1841.0#1794367171",
+          "direction": "input",
+          "file": "g",
+          "bytes": 10485760,
+          "source": "dme-master",
+          "destination": "dme-worker3"
+        },
+        {
+          "node": "campaign_task_T3",
+          "global_job_id": "dme-master#1841.0#1794367171",
+          "direction": "output",
+          "file": "B2",
+          "bytes": 10485760,
+          "source": "dme-worker3",
+          "destination": "dme-master"
+        },
+        {
+          "node": "campaign_task_T4",
+          "global_job_id": "dme-master#1842.0#1794367171",
+          "direction": "input",
+          "file": "g",
+          "bytes": 10485760,
+          "source": "dme-master",
+          "destination": "dme-worker3"
+        },
+        {
+          "node": "campaign_task_T4",
+          "global_job_id": "dme-master#1842.0#1794367171",
+          "direction": "output",
+          "file": "B3",
+          "bytes": 10485760,
+          "source": "dme-worker3",
+          "destination": "dme-master"
+        },
+        {
+          "node": "campaign_task_T5",
+          "global_job_id": "dme-master#1839.0#1794367171",
+          "direction": "input",
+          "file": "g",
+          "bytes": 10485760,
+          "source": "dme-master",
+          "destination": "dme-worker3"
+        },
+        {
+          "node": "campaign_task_T5",
+          "global_job_id": "dme-master#1839.0#1794367171",
+          "direction": "output",
+          "file": "B4",
+          "bytes": 10485760,
+          "source": "dme-worker3",
+          "destination": "dme-master"
+        },
+        {
+          "node": "campaign_task_T6",
+          "global_job_id": "dme-master#1840.0#1794367171",
+          "direction": "input",
+          "file": "g",
+          "bytes": 10485760,
+          "source": "dme-master",
+          "destination": "dme-worker3"
+        },
+        {
+          "node": "campaign_task_T6",
+          "global_job_id": "dme-master#1840.0#1794367171",
+          "direction": "output",
+          "file": "B5",
+          "bytes": 10485760,
+          "source": "dme-worker3",
+          "destination": "dme-master"
+        }
+      ],
+      "placement": {
+        "T1": "dme-worker3",
+        "T2": "dme-worker4",
+        "T3": "dme-worker3",
+        "T4": "dme-worker3",
+        "T5": "dme-worker3",
+        "T6": "dme-worker3"
+      }
+    },
+    "compute": {
+      "scientific_tasks": 60,
+      "iterations_per_task": 2000000,
+      "minimum_cpu_s": 1.4790908,
+      "maximum_cpu_s": 1.9799752999999998
+    },
+    "results": [
+      {
+        "case": "PROCESS-W2",
+        "pattern": "Procesamiento",
+        "workers": 2,
+        "placement": "W1 / W2 / W1 / W2 / W1 / W2",
+        "required_mib": 120.0,
+        "observed_mib": 120.0,
+        "analyzer_required_mib": 120.0,
+        "analyzer_observed_mib": 120.0,
+        "dme": "1",
+        "duration_s": 101.949,
+        "obligations": 12,
+        "deliveries": 12,
+        "directions": 12,
+        "exact": true,
+        "uuid": "f3e3849d-7ad3-42a9-80b8-3d8b5377c23e",
+        "capsule": "PROCESS-W2.tar.xz"
+      },
+      {
+        "case": "PIPELINE-W2",
+        "pattern": "Pipeline",
+        "workers": 2,
+        "placement": "W1 / W1 / W1 / W1 / W1 / W1",
+        "required_mib": 20.0,
+        "observed_mib": 120.0,
+        "analyzer_required_mib": 20.0,
+        "analyzer_observed_mib": 120.0,
+        "dme": "1/6",
+        "duration_s": 181.368,
+        "obligations": 2,
+        "deliveries": 12,
+        "directions": 12,
+        "exact": true,
+        "uuid": "da2c4fd6-61b3-4442-adc2-59b812fe2230",
+        "capsule": "PIPELINE-W2.tar.xz"
+      },
+      {
+        "case": "AGGREGATION-W2",
+        "pattern": "Agregación",
+        "workers": 2,
+        "placement": "W1 / W2 / W2 / W2 / W1 / W1",
+        "required_mib": 120.0,
+        "observed_mib": 160.0,
+        "analyzer_required_mib": 120.0,
+        "analyzer_observed_mib": 160.0,
+        "dme": "3/4",
+        "duration_s": 106.254,
+        "obligations": 12,
+        "deliveries": 16,
+        "directions": 12,
+        "exact": true,
+        "uuid": "3cbe28e2-4322-45b6-8914-4e0ad96fa0e6",
+        "capsule": "AGGREGATION-W2.tar.xz"
+      },
+      {
+        "case": "DISTRIBUTION-W2",
+        "pattern": "Distribución",
+        "workers": 2,
+        "placement": "W1 / W1 / W2 / W2 / W1 / W1",
+        "required_mib": 80.0,
+        "observed_mib": 120.0,
+        "analyzer_required_mib": 80.0,
+        "analyzer_observed_mib": 120.0,
+        "dme": "2/3",
+        "duration_s": 136.178,
+        "obligations": 8,
+        "deliveries": 12,
+        "directions": 12,
+        "exact": true,
+        "uuid": "36797481-5d77-428b-bc00-37a609bc2aa3",
+        "capsule": "DISTRIBUTION-W2.tar.xz"
+      },
+      {
+        "case": "REDISTRIBUTION-W2",
+        "pattern": "Redistribución",
+        "workers": 2,
+        "placement": "W2 / W1 / W1 / W1 / W1 / W1",
+        "required_mib": 60.0,
+        "observed_mib": 140.0,
+        "analyzer_required_mib": 60.0,
+        "analyzer_observed_mib": 140.0,
+        "dme": "3/7",
+        "duration_s": 151.274,
+        "obligations": 6,
+        "deliveries": 14,
+        "directions": 12,
+        "exact": true,
+        "uuid": "be50e254-33eb-4319-9342-3f5a954b92b2",
+        "capsule": "REDISTRIBUTION-W2.tar.xz"
+      },
+      {
+        "case": "PROCESS-W4",
+        "pattern": "Procesamiento",
+        "workers": 4,
+        "placement": "W1 / W3 / W2 / W1 / W3 / W4",
+        "required_mib": 120.0,
+        "observed_mib": 120.0,
+        "analyzer_required_mib": 120.0,
+        "analyzer_observed_mib": 120.0,
+        "dme": "1",
+        "duration_s": 90.984,
+        "obligations": 12,
+        "deliveries": 12,
+        "directions": 12,
+        "exact": true,
+        "uuid": "4d214bf3-48f9-49eb-9a77-0f481ada948f",
+        "capsule": "PROCESS-W4.tar.xz"
+      },
+      {
+        "case": "PIPELINE-W4",
+        "pattern": "Pipeline",
+        "workers": 4,
+        "placement": "W3 / W3 / W3 / W3 / W3 / W3",
+        "required_mib": 20.0,
+        "observed_mib": 120.0,
+        "analyzer_required_mib": 20.0,
+        "analyzer_observed_mib": 120.0,
+        "dme": "1/6",
+        "duration_s": 176.423,
+        "obligations": 2,
+        "deliveries": 12,
+        "directions": 12,
+        "exact": true,
+        "uuid": "52c026c0-d7cb-47fe-bdc6-0eca2fef0f9a",
+        "capsule": "PIPELINE-W4.tar.xz"
+      },
+      {
+        "case": "AGGREGATION-W4",
+        "pattern": "Agregación",
+        "workers": 4,
+        "placement": "W1 / W3 / W4 / W2 / W3 / W1",
+        "required_mib": 140.0,
+        "observed_mib": 160.0,
+        "analyzer_required_mib": 140.0,
+        "analyzer_observed_mib": 160.0,
+        "dme": "7/8",
+        "duration_s": 110.199,
+        "obligations": 14,
+        "deliveries": 16,
+        "directions": 12,
+        "exact": true,
+        "uuid": "3721db01-1cd9-493c-bfca-a4c50cfaaec1",
+        "capsule": "AGGREGATION-W4.tar.xz"
+      },
+      {
+        "case": "DISTRIBUTION-W4",
+        "pattern": "Distribución",
+        "workers": 4,
+        "placement": "W3 / W4 / W3 / W3 / W3 / W3",
+        "required_mib": 80.0,
+        "observed_mib": 120.0,
+        "analyzer_required_mib": 80.0,
+        "analyzer_observed_mib": 120.0,
+        "dme": "2/3",
+        "duration_s": 131.38,
+        "obligations": 8,
+        "deliveries": 12,
+        "directions": 12,
+        "exact": true,
+        "uuid": "1a53bb99-8447-44f7-8016-4fdf4a2206cc",
+        "capsule": "DISTRIBUTION-W4.tar.xz"
+      },
+      {
+        "case": "REDISTRIBUTION-W4",
+        "pattern": "Redistribución",
+        "workers": 4,
+        "placement": "W3 / W4 / W2 / W2 / W2 / W2",
+        "required_mib": 80.0,
+        "observed_mib": 140.0,
+        "analyzer_required_mib": 80.0,
+        "analyzer_observed_mib": 140.0,
+        "dme": "4/7",
+        "duration_s": 161.405,
+        "obligations": 8,
+        "deliveries": 14,
+        "directions": 12,
+        "exact": true,
+        "uuid": "3d288741-c170-4882-95eb-14db27c90f30",
+        "capsule": "REDISTRIBUTION-W4.tar.xz"
+      }
+    ]
+  }
+}

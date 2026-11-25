@@ -1,0 +1,50 @@
+[
+  {
+    "_id": "f3",
+    "_type": "file",
+    "_attributes": {
+      "user": "nobody",
+      "size": "209715200",
+      "ctime": "2026-11-22T17:19:21+00:00",
+      "checksum.type": "sha256",
+      "checksum.value": "05b2f478bdbfb782ef4830b67dee7ef0b79daa76e522eeb90c97641c9c43f2c9",
+      "checksum.timing": "1.08"
+    }
+  },
+  {
+    "_id": "f4",
+    "_type": "file",
+    "_attributes": {
+      "user": "nobody",
+      "size": "209715200",
+      "ctime": "2026-11-22T17:19:26+00:00",
+      "checksum.type": "sha256",
+      "checksum.value": "c8130f077339142334a388c4b6f038fbbba46c73860daf428923000a77993d57",
+      "checksum.timing": "1.08"
+    }
+  },
+  {
+    "_id": "f1",
+    "_type": "file",
+    "_attributes": {
+      "user": "nobody",
+      "size": "209715200",
+      "ctime": "2026-11-22T17:19:31+00:00",
+      "checksum.type": "sha256",
+      "checksum.value": "51255cac780aa6cd7c01aa883efd63c93cc78f54c540f5e6044ce173859b1d0a",
+      "checksum.timing": "1.07"
+    }
+  },
+  {
+    "_id": "f2",
+    "_type": "file",
+    "_attributes": {
+      "user": "nobody",
+      "size": "209715200",
+      "ctime": "2026-11-22T17:19:36+00:00",
+      "checksum.type": "sha256",
+      "checksum.value": "5b7870975bc0dd00311a8361fb8bf657bd6c438a9c21a67033cae74284819d92",
+      "checksum.timing": "1.08"
+    }
+  }
+]

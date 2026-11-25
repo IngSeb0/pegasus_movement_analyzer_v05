@@ -1,0 +1,26 @@
+[
+  {
+    "_id": "p103.fits",
+    "_type": "file",
+    "_attributes": {
+      "user": "nobody",
+      "size": "4392000",
+      "ctime": "2026-11-23T00:48:01+00:00",
+      "checksum.type": "sha256",
+      "checksum.value": "b59111426a9da320048a2d373ba2e061be230dde13bce32f99716e634165cd38",
+      "checksum.timing": "0.02"
+    }
+  },
+  {
+    "_id": "p103_area.fits",
+    "_type": "file",
+    "_attributes": {
+      "user": "nobody",
+      "size": "4392000",
+      "ctime": "2026-11-23T00:48:01+00:00",
+      "checksum.type": "sha256",
+      "checksum.value": "83599d2c92ad5ccbbc808dd725bd13e52ff4e0cf9f406e88d31e62d67bb27005",
+      "checksum.timing": "0.02"
+    }
+  }
+]

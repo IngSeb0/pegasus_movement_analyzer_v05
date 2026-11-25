@@ -1,0 +1,9 @@
+
+name        location     powerState     size            privateIps publicIps
+----        --------     ----------     ----            ---------- ---------
+dme-master  chilecentral VM deallocated Standard_D2_v2  10.42.0.4  <omitido>
+dme-worker1 chilecentral VM deallocated Standard_DS1_v2 10.42.1.4  
+dme-worker2 chilecentral VM deallocated Standard_DS1_v2 10.42.1.5  
+dme-worker3 chilecentral VM deallocated Standard_DS1_v2 10.42.1.6  
+dme-worker4 chilecentral VM deallocated Standard_DS1_v2 10.42.1.7  
+

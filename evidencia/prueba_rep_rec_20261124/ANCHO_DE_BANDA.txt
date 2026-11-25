@@ -1,0 +1,28 @@
+$ C:\Users\Acer\AppData\Local\Programs\Python\Python312\python.exe -B coordinador/llevar.py correr "sh -c 'set -eu
+mkdir banda
+cd banda
+fallocate -l 1073741824 datos.bin
+cat > banda.sub <<'\"'\"'SUB'\"'\"'
+executable = /bin/true
+transfer_executable = False
+requirements = TARGET.Machine == \"dme-worker2\"
+request_cpus = 1
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+transfer_input_files = datos.bin
+transfer_output_files = \"\"
+log = eventos.log
+output = stdout.txt
+error = stderr.txt
+queue
+SUB
+id=$(condor_submit -terse banda.sub | cut -d. -f1)
+condor_wait -wait 600 eventos.log
+condor_history \"$id\" -json > history.json
+python3 -c '\"'\"'import json; a=json.load(open(\"history.json\")); assert len(a)==1; a=a[0]; assert a[\"ExitCode\"]==0; s=a[\"TransferInputStats\"][\"CedarSizeBytesTotal\"]; assert s==2**30; d=a[\"TransferInFinished\"]-a[\"TransferInStarted\"]; assert d>0; print(\"MEDICION\",json.dumps(dict(bytes=s,segundos=d,MB_s=s/d/1e6)))'\"'\"'
+unlink datos.bin'"
+All jobs done.
+MEDICION {"bytes": 1073741824, "segundos": 91, "MB_s": 11.799360703296705}
+
+$ C:\Users\Acer\AppData\Local\Programs\Python\Python312\python.exe -B coordinador/llevar.py bajar banda C:\Defensa\Sustentacion_DME\10_Preparacion_Final\prueba_rep_rec_20261124
+

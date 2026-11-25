@@ -1,0 +1,10 @@
+file_id	roles	size_bytes	producer	consumers	origin	final_destinations
+lfn:A1	external_input	209715200		campaign_task_T1	dme-master	
+lfn:A2	external_input	209715200		campaign_task_T2	dme-master	
+lfn:B1	final_output	209715200	campaign_task_T5			dme-master
+lfn:B2	final_output	209715200	campaign_task_T6			dme-master
+lfn:f1	intermediate	209715200	campaign_task_T1	campaign_task_T3		
+lfn:f2	intermediate	209715200	campaign_task_T2	campaign_task_T3		
+lfn:g	intermediate	209715200	campaign_task_T3	campaign_task_T4		
+lfn:p1	intermediate	209715200	campaign_task_T4	campaign_task_T5		
+lfn:p2	intermediate	209715200	campaign_task_T4	campaign_task_T6		

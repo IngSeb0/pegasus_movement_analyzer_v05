@@ -1,0 +1,373 @@
+{
+  "record_type": "planned_run_description_not_transfer_observation",
+  "generator_version": "fma_v1",
+  "program_version": "six_patterns_fma_v1",
+  "created_at_utc": "2026-11-22T14:36:46.957593+00:00",
+  "condition_id": "PROCESS-W4",
+  "replica": 1,
+  "pattern": "Processing",
+  "mode": "CondorIO",
+  "data_configuration": "condorio",
+  "root": "/study/cases/PROCESS-W4/plans/PROCESS-W4",
+  "active_pool": [
+    "W1",
+    "W2",
+    "W3",
+    "W4"
+  ],
+  "worker_map": {
+    "master": "dme-master",
+    "W1": "dme-worker1",
+    "W2": "dme-worker2",
+    "W3": "dme-worker3",
+    "W4": "dme-worker4"
+  },
+  "tasks": [
+    {
+      "task_id": "T1",
+      "assigned_worker": "W1",
+      "input_files": [
+        "A1"
+      ],
+      "output_files": [
+        "B1"
+      ],
+      "flops": 1766799020
+    },
+    {
+      "task_id": "T2",
+      "assigned_worker": "W1",
+      "input_files": [
+        "A2"
+      ],
+      "output_files": [
+        "B2"
+      ],
+      "flops": 1766799020
+    },
+    {
+      "task_id": "T3",
+      "assigned_worker": "W1",
+      "input_files": [
+        "A3"
+      ],
+      "output_files": [
+        "B3"
+      ],
+      "flops": 1766799020
+    },
+    {
+      "task_id": "T4",
+      "assigned_worker": "W1",
+      "input_files": [
+        "A4"
+      ],
+      "output_files": [
+        "B4"
+      ],
+      "flops": 1766799020
+    },
+    {
+      "task_id": "T5",
+      "assigned_worker": "W1",
+      "input_files": [
+        "A5"
+      ],
+      "output_files": [
+        "B5"
+      ],
+      "flops": 1766799020
+    },
+    {
+      "task_id": "T6",
+      "assigned_worker": "W1",
+      "input_files": [
+        "A6"
+      ],
+      "output_files": [
+        "B6"
+      ],
+      "flops": 1766799020
+    }
+  ],
+  "dag": {
+    "tasks": [
+      {
+        "task_id": "T1",
+        "assigned_worker": "W1",
+        "input_files": [
+          "A1"
+        ],
+        "output_files": [
+          "B1"
+        ],
+        "flops": 1766799020
+      },
+      {
+        "task_id": "T2",
+        "assigned_worker": "W1",
+        "input_files": [
+          "A2"
+        ],
+        "output_files": [
+          "B2"
+        ],
+        "flops": 1766799020
+      },
+      {
+        "task_id": "T3",
+        "assigned_worker": "W1",
+        "input_files": [
+          "A3"
+        ],
+        "output_files": [
+          "B3"
+        ],
+        "flops": 1766799020
+      },
+      {
+        "task_id": "T4",
+        "assigned_worker": "W1",
+        "input_files": [
+          "A4"
+        ],
+        "output_files": [
+          "B4"
+        ],
+        "flops": 1766799020
+      },
+      {
+        "task_id": "T5",
+        "assigned_worker": "W1",
+        "input_files": [
+          "A5"
+        ],
+        "output_files": [
+          "B5"
+        ],
+        "flops": 1766799020
+      },
+      {
+        "task_id": "T6",
+        "assigned_worker": "W1",
+        "input_files": [
+          "A6"
+        ],
+        "output_files": [
+          "B6"
+        ],
+        "flops": 1766799020
+      }
+    ],
+    "edges": [],
+    "external_inputs": [
+      "A1",
+      "A2",
+      "A3",
+      "A4",
+      "A5",
+      "A6"
+    ],
+    "final_outputs": [
+      "B1",
+      "B2",
+      "B3",
+      "B4",
+      "B5",
+      "B6"
+    ]
+  },
+  "files": [
+    {
+      "file_id": "A1",
+      "size_bytes": 209715200,
+      "producer_task": null,
+      "consumer_tasks": [
+        "T1"
+      ],
+      "role": "input"
+    },
+    {
+      "file_id": "A2",
+      "size_bytes": 209715200,
+      "producer_task": null,
+      "consumer_tasks": [
+        "T2"
+      ],
+      "role": "input"
+    },
+    {
+      "file_id": "A3",
+      "size_bytes": 209715200,
+      "producer_task": null,
+      "consumer_tasks": [
+        "T3"
+      ],
+      "role": "input"
+    },
+    {
+      "file_id": "A4",
+      "size_bytes": 209715200,
+      "producer_task": null,
+      "consumer_tasks": [
+        "T4"
+      ],
+      "role": "input"
+    },
+    {
+      "file_id": "A5",
+      "size_bytes": 209715200,
+      "producer_task": null,
+      "consumer_tasks": [
+        "T5"
+      ],
+      "role": "input"
+    },
+    {
+      "file_id": "A6",
+      "size_bytes": 209715200,
+      "producer_task": null,
+      "consumer_tasks": [
+        "T6"
+      ],
+      "role": "input"
+    },
+    {
+      "file_id": "B1",
+      "size_bytes": 209715200,
+      "producer_task": "T1",
+      "consumer_tasks": [],
+      "role": "final"
+    },
+    {
+      "file_id": "B2",
+      "size_bytes": 209715200,
+      "producer_task": "T2",
+      "consumer_tasks": [],
+      "role": "final"
+    },
+    {
+      "file_id": "B3",
+      "size_bytes": 209715200,
+      "producer_task": "T3",
+      "consumer_tasks": [],
+      "role": "final"
+    },
+    {
+      "file_id": "B4",
+      "size_bytes": 209715200,
+      "producer_task": "T4",
+      "consumer_tasks": [],
+      "role": "final"
+    },
+    {
+      "file_id": "B5",
+      "size_bytes": 209715200,
+      "producer_task": "T5",
+      "consumer_tasks": [],
+      "role": "final"
+    },
+    {
+      "file_id": "B6",
+      "size_bytes": 209715200,
+      "producer_task": "T6",
+      "consumer_tasks": [],
+      "role": "final"
+    }
+  ],
+  "file_sizes_bytes": {
+    "A1": 209715200,
+    "A2": 209715200,
+    "A3": 209715200,
+    "A4": 209715200,
+    "A5": 209715200,
+    "A6": 209715200,
+    "B1": 209715200,
+    "B2": 209715200,
+    "B3": 209715200,
+    "B4": 209715200,
+    "B5": 209715200,
+    "B6": 209715200
+  },
+  "planned_requirements": {
+    "T1": "TARGET.Machine == \"dme-worker1\"",
+    "T2": "TARGET.Machine == \"dme-worker1\"",
+    "T3": "TARGET.Machine == \"dme-worker1\"",
+    "T4": "TARGET.Machine == \"dme-worker1\"",
+    "T5": "TARGET.Machine == \"dme-worker1\"",
+    "T6": "TARGET.Machine == \"dme-worker1\""
+  },
+  "planned_job_id_map": {
+    "T1": "T1",
+    "T2": "T2",
+    "T3": "T3",
+    "T4": "T4",
+    "T5": "T5",
+    "T6": "T6"
+  },
+  "resources_per_compute_task": {
+    "request_cpus": 1,
+    "request_memory_MiB": 256
+  },
+  "execution_site": "condorpool",
+  "output_site": "local",
+  "selector": "RoundRobin",
+  "shared_file_system": false,
+  "workflow_uuid": null,
+  "actual_placements": null,
+  "oracle_path": "/study/SPECS.json",
+  "oracle_sha256": "bf8bb9dbf116e1ea9bc54f8d784ff25ec7e472a8ef5d1e5bb6ebd34c0bf18ed6",
+  "input_artifacts": [
+    {
+      "lfn": "A1",
+      "bytes_written": 209715200,
+      "sha256": "8b7b24ef47d4e7660446aa87916dd8191e43df3aad230ba6f4c4464af1968b47",
+      "path": "/study/cases/PROCESS-W4/plans/PROCESS-W4/inputs/A1",
+      "evidence_role": "generated_initial_file_not_transfer_evidence"
+    },
+    {
+      "lfn": "A2",
+      "bytes_written": 209715200,
+      "sha256": "14ac3307e5789804ff5308155926e554673788ba0c1c1fcd694a1fc6d5e0823e",
+      "path": "/study/cases/PROCESS-W4/plans/PROCESS-W4/inputs/A2",
+      "evidence_role": "generated_initial_file_not_transfer_evidence"
+    },
+    {
+      "lfn": "A3",
+      "bytes_written": 209715200,
+      "sha256": "88571d5285ca7505b8e27df359ff9f369185b997270a7dfa1995dd8ee987854b",
+      "path": "/study/cases/PROCESS-W4/plans/PROCESS-W4/inputs/A3",
+      "evidence_role": "generated_initial_file_not_transfer_evidence"
+    },
+    {
+      "lfn": "A4",
+      "bytes_written": 209715200,
+      "sha256": "7ac32b6b6e68a624ac1bb821685ece5826a7c2c127d955bdae46974adef741a7",
+      "path": "/study/cases/PROCESS-W4/plans/PROCESS-W4/inputs/A4",
+      "evidence_role": "generated_initial_file_not_transfer_evidence"
+    },
+    {
+      "lfn": "A5",
+      "bytes_written": 209715200,
+      "sha256": "b877cb687d0f0222c34a074250bb08e4e974504626458b33c2dd9d18fdf40d7e",
+      "path": "/study/cases/PROCESS-W4/plans/PROCESS-W4/inputs/A5",
+      "evidence_role": "generated_initial_file_not_transfer_evidence"
+    },
+    {
+      "lfn": "A6",
+      "bytes_written": 209715200,
+      "sha256": "cfb95a24509e91f4b772430dfe730265a53c3c3554012f0904b91b01c9874e52",
+      "path": "/study/cases/PROCESS-W4/plans/PROCESS-W4/inputs/A6",
+      "evidence_role": "generated_initial_file_not_transfer_evidence"
+    }
+  ],
+  "pegasus_api_distribution_version": null,
+  "code_sha256": {
+    "campaign_task.py": "f2bd2df2752ae6890df433e1428f713c29dc6ab3a995a3787a8ebca2d432353f",
+    "generate_workflow.py": "deb2bb9b359c34084bf0babf0421ac4df9c0326ad947f22adca59b5ad699df86",
+    "fma_kernel": "55f11663f236baa2f1fe9989f5d928547992fdab43b2ee228aa2df2baea3aa62"
+  },
+  "workflow_sha256": "bf8753a3aedaae222f27f7ceb385a87017f0f962a709c80967e9af512b91929b",
+  "properties_sha256": "455382e651b2b8203111fd49a86097e183487fddeee259a5b22a2c3a954fc207",
+  "measurement_note": "No M_obs, DME, transfer success, or actual placement is inferred from these generated descriptions."
+}

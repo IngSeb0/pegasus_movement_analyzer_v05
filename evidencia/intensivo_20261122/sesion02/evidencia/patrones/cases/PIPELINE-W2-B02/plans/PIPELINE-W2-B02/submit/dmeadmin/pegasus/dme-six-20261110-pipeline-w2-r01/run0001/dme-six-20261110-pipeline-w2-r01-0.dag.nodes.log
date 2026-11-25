@@ -1,0 +1,288 @@
+000 (3771.000.000) 2026-11-22 16:51:14 Job submitted from host: <10.42.0.4:9618?addrs=10.42.0.4-9618&alias=dme-master&noUDP&sock=schedd_835_51ab>
+    [ DAGNodeName = "create_dir_dme-six-20261110-pipeline-w2-r01_0_local"; JobBatchName = "dme-six-20261110-pipeline-w2-r01-0.dag+3770" ]
+    pool:local
+...
+001 (3771.000.000) 2026-11-22 16:51:18 Job executing on host: <10.42.0.4:9618?addrs=10.42.0.4-9618&alias=dme-master&noUDP&sock=starter_1007_45c2_185>
+...
+005 (3771.000.000) 2026-11-22 16:51:20 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+016 (3771.000.000) 2026-11-22 16:51:24 POST Script terminated.
+	(1) Normal termination (return value 0)
+    DAG Node: create_dir_dme-six-20261110-pipeline-w2-r01_0_local
+...
+000 (3772.000.000) 2026-11-22 16:51:34 Job submitted from host: <10.42.0.4:9618?addrs=10.42.0.4-9618&alias=dme-master&noUDP&sock=schedd_835_51ab>
+    [ DAGNodeName = "stage_in_remote_local_0_0"; JobBatchName = "dme-six-20261110-pipeline-w2-r01-0.dag+3770" ]
+    pool:local
+...
+000 (3773.000.000) 2026-11-22 16:51:34 Job submitted from host: <10.42.0.4:9618?addrs=10.42.0.4-9618&alias=dme-master&noUDP&sock=schedd_835_51ab>
+    [ DAGNodeName = "stage_in_local_local_0_0"; JobBatchName = "dme-six-20261110-pipeline-w2-r01-0.dag+3770" ]
+    pool:local
+...
+001 (3772.000.000) 2026-11-22 16:51:38 Job executing on host: <10.42.0.4:9618?addrs=10.42.0.4-9618&alias=dme-master&noUDP&sock=starter_1007_45c2_186>
+...
+001 (3773.000.000) 2026-11-22 16:51:38 Job executing on host: <10.42.0.4:9618?addrs=10.42.0.4-9618&alias=dme-master&noUDP&sock=starter_1007_45c2_187>
+...
+005 (3772.000.000) 2026-11-22 16:51:40 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+005 (3773.000.000) 2026-11-22 16:51:41 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+016 (3773.000.000) 2026-11-22 16:51:44 POST Script terminated.
+	(1) Normal termination (return value 0)
+    DAG Node: stage_in_local_local_0_0
+...
+016 (3772.000.000) 2026-11-22 16:51:44 POST Script terminated.
+	(1) Normal termination (return value 0)
+    DAG Node: stage_in_remote_local_0_0
+...
+000 (3774.000.000) 2026-11-22 16:51:54 Job submitted from host: <10.42.0.4:9618?addrs=10.42.0.4-9618&alias=dme-master&noUDP&sock=schedd_835_51ab>
+    [ DAGNodeName = "campaign_task_T1"; JobBatchName = "dme-six-20261110-pipeline-w2-r01-0.dag+3770" ]
+    pool:condorpool
+...
+001 (3774.000.000) 2026-11-22 16:52:14 Job executing on host: <10.42.1.4:9618?addrs=10.42.1.4-9618&alias=dme-worker1&noUDP&sock=startd_788_14b8>
+	SlotName: slot1_1@dme-worker1
+	CondorScratchDir = "/var/lib/condor/execute/dir_8669/scratch"
+	Cpus = 1
+	Disk = 1048576
+	GPUs = 0
+	Memory = 256
+...
+005 (3774.000.000) 2026-11-22 16:52:39 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:05, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:05, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	209721489  -  Run Bytes Sent By Job
+	228823488  -  Run Bytes Received By Job
+	209721489  -  Total Bytes Sent By Job
+	228823488  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :        0        1         1 
+	   Disk (KB)            :   460253  1048576   1048576 
+	   GPUs                 :                           0 
+	   Memory (MB)          :        0      256       256 
+	   TimeExecute (s)      :        7                    
+	   TimeSlotBusy (s)     :       44                    
+...
+016 (3774.000.000) 2026-11-22 16:52:44 POST Script terminated.
+	(1) Normal termination (return value 0)
+    DAG Node: campaign_task_T1
+...
+000 (3775.000.000) 2026-11-22 16:52:54 Job submitted from host: <10.42.0.4:9618?addrs=10.42.0.4-9618&alias=dme-master&noUDP&sock=schedd_835_51ab>
+    [ DAGNodeName = "campaign_task_T2"; JobBatchName = "dme-six-20261110-pipeline-w2-r01-0.dag+3770" ]
+    pool:condorpool
+...
+001 (3775.000.000) 2026-11-22 16:53:15 Job executing on host: <10.42.1.4:9618?addrs=10.42.1.4-9618&alias=dme-worker1&noUDP&sock=startd_788_14b8>
+	SlotName: slot1_1@dme-worker1
+	CondorScratchDir = "/var/lib/condor/execute/dir_8824/scratch"
+	Cpus = 1
+	Disk = 1048576
+	GPUs = 0
+	Memory = 256
+...
+005 (3775.000.000) 2026-11-22 16:53:42 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:05, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:05, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	209721497  -  Run Bytes Sent By Job
+	228823490  -  Run Bytes Received By Job
+	209721497  -  Total Bytes Sent By Job
+	228823490  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :        0        1         1 
+	   Disk (KB)            :   460253  1048576   1048576 
+	   GPUs                 :                           0 
+	   Memory (MB)          :        0      256       256 
+	   TimeExecute (s)      :        9                    
+	   TimeSlotBusy (s)     :       46                    
+...
+016 (3775.000.000) 2026-11-22 16:53:44 POST Script terminated.
+	(1) Normal termination (return value 0)
+    DAG Node: campaign_task_T2
+...
+000 (3776.000.000) 2026-11-22 16:53:54 Job submitted from host: <10.42.0.4:9618?addrs=10.42.0.4-9618&alias=dme-master&noUDP&sock=schedd_835_51ab>
+    [ DAGNodeName = "campaign_task_T3"; JobBatchName = "dme-six-20261110-pipeline-w2-r01-0.dag+3770" ]
+    pool:condorpool
+...
+001 (3776.000.000) 2026-11-22 16:54:18 Job executing on host: <10.42.1.4:9618?addrs=10.42.1.4-9618&alias=dme-worker1&noUDP&sock=startd_788_14b8>
+	SlotName: slot1_1@dme-worker1
+	CondorScratchDir = "/var/lib/condor/execute/dir_8978/scratch"
+	Cpus = 1
+	Disk = 1048576
+	GPUs = 0
+	Memory = 256
+...
+005 (3776.000.000) 2026-11-22 16:54:43 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:05, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:05, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	209721496  -  Run Bytes Sent By Job
+	228823490  -  Run Bytes Received By Job
+	209721496  -  Total Bytes Sent By Job
+	228823490  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :        0        1         1 
+	   Disk (KB)            :   460253  1048576   1048576 
+	   GPUs                 :                           0 
+	   Memory (MB)          :        0      256       256 
+	   TimeExecute (s)      :        8                    
+	   TimeSlotBusy (s)     :       45                    
+...
+016 (3776.000.000) 2026-11-22 16:54:44 POST Script terminated.
+	(1) Normal termination (return value 0)
+    DAG Node: campaign_task_T3
+...
+000 (3777.000.000) 2026-11-22 16:54:54 Job submitted from host: <10.42.0.4:9618?addrs=10.42.0.4-9618&alias=dme-master&noUDP&sock=schedd_835_51ab>
+    [ DAGNodeName = "campaign_task_T4"; JobBatchName = "dme-six-20261110-pipeline-w2-r01-0.dag+3770" ]
+    pool:condorpool
+...
+001 (3777.000.000) 2026-11-22 16:55:17 Job executing on host: <10.42.1.4:9618?addrs=10.42.1.4-9618&alias=dme-worker1&noUDP&sock=startd_788_14b8>
+	SlotName: slot1_1@dme-worker1
+	CondorScratchDir = "/var/lib/condor/execute/dir_9132/scratch"
+	Cpus = 1
+	Disk = 1048576
+	GPUs = 0
+	Memory = 256
+...
+005 (3777.000.000) 2026-11-22 16:55:42 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:05, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:05, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	209721497  -  Run Bytes Sent By Job
+	228823490  -  Run Bytes Received By Job
+	209721497  -  Total Bytes Sent By Job
+	228823490  -  Total Bytes Received By Job
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      0.10        1         1 
+	   Disk (KB)            : 460253     1048576   1048576 
+	   GPUs                 :                            0 
+	   Memory (MB)          :      0         256       256 
+	   TimeExecute (s)      :      7                       
+	   TimeSlotBusy (s)     :     45                       
+...
+016 (3777.000.000) 2026-11-22 16:55:45 POST Script terminated.
+	(1) Normal termination (return value 0)
+    DAG Node: campaign_task_T4
+...
+000 (3778.000.000) 2026-11-22 16:55:54 Job submitted from host: <10.42.0.4:9618?addrs=10.42.0.4-9618&alias=dme-master&noUDP&sock=schedd_835_51ab>
+    [ DAGNodeName = "campaign_task_T5"; JobBatchName = "dme-six-20261110-pipeline-w2-r01-0.dag+3770" ]
+    pool:condorpool
+...
+001 (3778.000.000) 2026-11-22 16:56:14 Job executing on host: <10.42.1.4:9618?addrs=10.42.1.4-9618&alias=dme-worker1&noUDP&sock=startd_788_14b8>
+	SlotName: slot1_1@dme-worker1
+	CondorScratchDir = "/var/lib/condor/execute/dir_9296/scratch"
+	Cpus = 1
+	Disk = 1048576
+	GPUs = 0
+	Memory = 256
+...
+005 (3778.000.000) 2026-11-22 16:56:39 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:05, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:05, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	209721497  -  Run Bytes Sent By Job
+	228823490  -  Run Bytes Received By Job
+	209721497  -  Total Bytes Sent By Job
+	228823490  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :        0        1         1 
+	   Disk (KB)            :   460253  1048576   1048576 
+	   GPUs                 :                           0 
+	   Memory (MB)          :        0      256       256 
+	   TimeExecute (s)      :        7                    
+	   TimeSlotBusy (s)     :       43                    
+...
+016 (3778.000.000) 2026-11-22 16:56:39 POST Script terminated.
+	(1) Normal termination (return value 0)
+    DAG Node: campaign_task_T5
+...
+000 (3779.000.000) 2026-11-22 16:56:49 Job submitted from host: <10.42.0.4:9618?addrs=10.42.0.4-9618&alias=dme-master&noUDP&sock=schedd_835_51ab>
+    [ DAGNodeName = "campaign_task_T6"; JobBatchName = "dme-six-20261110-pipeline-w2-r01-0.dag+3770" ]
+    pool:condorpool
+...
+001 (3779.000.000) 2026-11-22 16:57:09 Job executing on host: <10.42.1.4:9618?addrs=10.42.1.4-9618&alias=dme-worker1&noUDP&sock=startd_788_14b8>
+	SlotName: slot1_1@dme-worker1
+	CondorScratchDir = "/var/lib/condor/execute/dir_9450/scratch"
+	Cpus = 1
+	Disk = 1048576
+	GPUs = 0
+	Memory = 256
+...
+005 (3779.000.000) 2026-11-22 16:57:35 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:05, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:05, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	209721487  -  Run Bytes Sent By Job
+	228823484  -  Run Bytes Received By Job
+	209721487  -  Total Bytes Sent By Job
+	228823484  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :        0        1         1 
+	   Disk (KB)            :   460253  1048576   1048576 
+	   GPUs                 :                           0 
+	   Memory (MB)          :        0      256       256 
+	   TimeExecute (s)      :        9                    
+	   TimeSlotBusy (s)     :       45                    
+...
+016 (3779.000.000) 2026-11-22 16:57:39 POST Script terminated.
+	(1) Normal termination (return value 0)
+    DAG Node: campaign_task_T6
+...
+000 (3780.000.000) 2026-11-22 16:57:49 Job submitted from host: <10.42.0.4:9618?addrs=10.42.0.4-9618&alias=dme-master&noUDP&sock=schedd_835_51ab>
+    [ DAGNodeName = "stage_out_local_local_5_0"; JobBatchName = "dme-six-20261110-pipeline-w2-r01-0.dag+3770" ]
+    pool:local
+...
+001 (3780.000.000) 2026-11-22 16:57:54 Job executing on host: <10.42.0.4:9618?addrs=10.42.0.4-9618&alias=dme-master&noUDP&sock=starter_1007_45c2_194>
+...
+005 (3780.000.000) 2026-11-22 16:57:57 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+016 (3780.000.000) 2026-11-22 16:57:59 POST Script terminated.
+	(1) Normal termination (return value 0)
+    DAG Node: stage_out_local_local_5_0
+...

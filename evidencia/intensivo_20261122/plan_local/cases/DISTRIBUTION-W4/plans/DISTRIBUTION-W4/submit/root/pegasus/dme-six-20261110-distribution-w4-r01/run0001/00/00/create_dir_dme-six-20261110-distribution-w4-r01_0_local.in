@@ -1,0 +1,6 @@
+[
+  {
+    "id": 1,
+    "type": "mkdir",
+    "target": { "site_label": "local", "url": "file:///study/cases/DISTRIBUTION-W4/plans/DISTRIBUTION-W4/scratch/root/pegasus/dme-six-20261110-distribution-w4-r01/run0001" } }
+]

@@ -1,0 +1,8 @@
+#@ 1 campaign_task C3 
+pegasus-kickstart  -n campaign_task -N C3 -R condorpool  -s f3=f3 -L dme-six-20261110-w2-agr-r01 -T 2026-11-22T17:16:24+00:00 ./campaign_task --task-id C3 --flops 1766799020 --input g 209715200 --output f3 209715200
+#@ 2 campaign_task C4 
+pegasus-kickstart  -n campaign_task -N C4 -R condorpool  -s f4=f4 -H -L dme-six-20261110-w2-agr-r01 -T 2026-11-22T17:16:24+00:00 ./campaign_task --task-id C4 --flops 1766799020 --input g 209715200 --output f4 209715200
+#@ 3 campaign_task C1 
+pegasus-kickstart  -n campaign_task -N C1 -R condorpool  -s f1=f1 -H -L dme-six-20261110-w2-agr-r01 -T 2026-11-22T17:16:24+00:00 ./campaign_task --task-id C1 --flops 1766799020 --input g 209715200 --output f1 209715200
+#@ 4 campaign_task C2 
+pegasus-kickstart  -n campaign_task -N C2 -R condorpool  -s f2=f2 -H -L dme-six-20261110-w2-agr-r01 -T 2026-11-22T17:16:24+00:00 ./campaign_task --task-id C2 --flops 1766799020 --input g 209715200 --output f2 209715200

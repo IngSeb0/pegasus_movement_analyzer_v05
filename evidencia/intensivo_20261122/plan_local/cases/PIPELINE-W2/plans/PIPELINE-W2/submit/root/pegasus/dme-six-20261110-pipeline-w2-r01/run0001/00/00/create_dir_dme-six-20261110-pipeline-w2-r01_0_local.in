@@ -1,0 +1,6 @@
+[
+  {
+    "id": 1,
+    "type": "mkdir",
+    "target": { "site_label": "local", "url": "file:///study/cases/PIPELINE-W2/plans/PIPELINE-W2/scratch/root/pegasus/dme-six-20261110-pipeline-w2-r01/run0001" } }
+]

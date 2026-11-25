@@ -1,0 +1,22 @@
+{
+  "dme-master": {
+    "available_bytes": 99701755904,
+    "required_bytes": 13120453506
+  },
+  "dme-worker1": {
+    "available_bytes": 27626237952,
+    "required_bytes": 13120453506
+  },
+  "dme-worker2": {
+    "available_bytes": 27491696640,
+    "required_bytes": 13120453506
+  },
+  "dme-worker3": {
+    "available_bytes": 28134998016,
+    "required_bytes": 13120453506
+  },
+  "dme-worker4": {
+    "available_bytes": 28136398848,
+    "required_bytes": 13120453506
+  }
+}

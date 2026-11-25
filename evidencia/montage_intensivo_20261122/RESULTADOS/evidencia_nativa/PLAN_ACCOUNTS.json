@@ -1,0 +1,16 @@
+{
+  "MG-BASE": {
+    "required": 3744551296,
+    "observed": 4360834806,
+    "jobs": 149,
+    "dme": "1872275648/2180417403",
+    "evidence": "/mnt/montage_intensivo_20261122/planes/cases/MG-BASE-PLAN/pilot/MG-BASE"
+  },
+  "MG-FINAL": {
+    "required": 3744551296,
+    "observed": 3744673019,
+    "jobs": 148,
+    "dme": "3744551296/3744673019",
+    "evidence": "/mnt/montage_intensivo_20261122/planes/cases/MG-FINAL-PLAN/pilot/MG-FINAL"
+  }
+}

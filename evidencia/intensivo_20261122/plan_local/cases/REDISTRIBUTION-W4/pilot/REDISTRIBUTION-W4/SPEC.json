@@ -1,0 +1,217 @@
+{
+  "pattern": "Redistribution",
+  "mode": "CondorIO",
+  "groups": [
+    [
+      "T1"
+    ],
+    [
+      "T2"
+    ],
+    [
+      "T3"
+    ],
+    [
+      "T4"
+    ],
+    [
+      "T5"
+    ],
+    [
+      "T6"
+    ]
+  ],
+  "dag": {
+    "tasks": [
+      {
+        "task_id": "T1",
+        "assigned_worker": "W1",
+        "input_files": [
+          "A1"
+        ],
+        "output_files": [
+          "f1"
+        ],
+        "flops": 1766799020
+      },
+      {
+        "task_id": "T2",
+        "assigned_worker": "W1",
+        "input_files": [
+          "A2"
+        ],
+        "output_files": [
+          "f2"
+        ],
+        "flops": 1766799020
+      },
+      {
+        "task_id": "T3",
+        "assigned_worker": "W1",
+        "input_files": [
+          "f1",
+          "f2"
+        ],
+        "output_files": [
+          "g"
+        ],
+        "flops": 1766799020
+      },
+      {
+        "task_id": "T4",
+        "assigned_worker": "W1",
+        "input_files": [
+          "g"
+        ],
+        "output_files": [
+          "p1",
+          "p2"
+        ],
+        "flops": 1766799020
+      },
+      {
+        "task_id": "T5",
+        "assigned_worker": "W1",
+        "input_files": [
+          "p1"
+        ],
+        "output_files": [
+          "B1"
+        ],
+        "flops": 1766799020
+      },
+      {
+        "task_id": "T6",
+        "assigned_worker": "W1",
+        "input_files": [
+          "p2"
+        ],
+        "output_files": [
+          "B2"
+        ],
+        "flops": 1766799020
+      }
+    ],
+    "edges": [
+      {
+        "producer_task": "T1",
+        "consumer_task": "T3",
+        "file_id": "f1"
+      },
+      {
+        "producer_task": "T2",
+        "consumer_task": "T3",
+        "file_id": "f2"
+      },
+      {
+        "producer_task": "T3",
+        "consumer_task": "T4",
+        "file_id": "g"
+      },
+      {
+        "producer_task": "T4",
+        "consumer_task": "T5",
+        "file_id": "p1"
+      },
+      {
+        "producer_task": "T4",
+        "consumer_task": "T6",
+        "file_id": "p2"
+      }
+    ],
+    "external_inputs": [
+      "A1",
+      "A2"
+    ],
+    "final_outputs": [
+      "B1",
+      "B2"
+    ]
+  },
+  "files": [
+    {
+      "file_id": "A1",
+      "size_bytes": 209715200,
+      "producer_task": null,
+      "consumer_tasks": [
+        "T1"
+      ],
+      "role": "input"
+    },
+    {
+      "file_id": "A2",
+      "size_bytes": 209715200,
+      "producer_task": null,
+      "consumer_tasks": [
+        "T2"
+      ],
+      "role": "input"
+    },
+    {
+      "file_id": "B1",
+      "size_bytes": 209715200,
+      "producer_task": "T5",
+      "consumer_tasks": [],
+      "role": "final"
+    },
+    {
+      "file_id": "B2",
+      "size_bytes": 209715200,
+      "producer_task": "T6",
+      "consumer_tasks": [],
+      "role": "final"
+    },
+    {
+      "file_id": "f1",
+      "size_bytes": 209715200,
+      "producer_task": "T1",
+      "consumer_tasks": [
+        "T3"
+      ],
+      "role": "intermediate"
+    },
+    {
+      "file_id": "f2",
+      "size_bytes": 209715200,
+      "producer_task": "T2",
+      "consumer_tasks": [
+        "T3"
+      ],
+      "role": "intermediate"
+    },
+    {
+      "file_id": "g",
+      "size_bytes": 209715200,
+      "producer_task": "T3",
+      "consumer_tasks": [
+        "T4"
+      ],
+      "role": "intermediate"
+    },
+    {
+      "file_id": "p1",
+      "size_bytes": 209715200,
+      "producer_task": "T4",
+      "consumer_tasks": [
+        "T5"
+      ],
+      "role": "intermediate"
+    },
+    {
+      "file_id": "p2",
+      "size_bytes": 209715200,
+      "producer_task": "T4",
+      "consumer_tasks": [
+        "T6"
+      ],
+      "role": "intermediate"
+    }
+  ],
+  "condition_id": "REDISTRIBUTION-W4",
+  "active_pool": [
+    "W1",
+    "W2",
+    "W3",
+    "W4"
+  ]
+}

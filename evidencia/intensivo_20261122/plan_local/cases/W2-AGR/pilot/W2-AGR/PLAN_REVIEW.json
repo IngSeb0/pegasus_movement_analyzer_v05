@@ -1,0 +1,60 @@
+{
+  "state": "NATIVE_PLAN_NOT_OBSERVATION",
+  "jobs": [
+    {
+      "node": "campaign_task_P",
+      "members": [
+        "P"
+      ],
+      "worker": "dme-worker1",
+      "scientific_files": {
+        "input": [
+          "a"
+        ],
+        "output": [
+          "g"
+        ]
+      },
+      "submit_sha256": "1ffd39597827d29f51df0872cb21f9689c74f80f16f853a49d1dc62d453760da"
+    },
+    {
+      "node": "merge_group_2",
+      "members": [
+        "C3",
+        "C4",
+        "C1",
+        "C2"
+      ],
+      "worker": "dme-worker2",
+      "scientific_files": {
+        "input": [
+          "g"
+        ],
+        "output": [
+          "f1",
+          "f2",
+          "f3",
+          "f4"
+        ]
+      },
+      "submit_sha256": "422a03465b178194eae9e70adf71af5fd98c67c8d1eb5c21609a251277dd03b4"
+    }
+  ],
+  "task_to_job": {
+    "P": "campaign_task_P",
+    "C3": "merge_group_2",
+    "C4": "merge_group_2",
+    "C1": "merge_group_2",
+    "C2": "merge_group_2"
+  },
+  "planned_scientific_bytes": 1468006400,
+  "submitted": false,
+  "retry_policy": [
+    "RETRY create_dir_dme-six-20261110-w2-agr-r01_0_local 0",
+    "RETRY stage_in_remote_local_0_0 0",
+    "RETRY stage_in_local_local_0_0 0",
+    "RETRY campaign_task_P 0",
+    "RETRY merge_group_2 0",
+    "RETRY stage_out_local_local_1_0 0"
+  ]
+}

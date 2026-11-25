@@ -1,0 +1,291 @@
+x-pegasus:
+  apiLang: python
+  createdBy: dmeadmin
+  createdOn: 11-22-26T15:37:53Z
+pegasus: 5.0.4
+name: dme-six-20261110-distribution-w4-r01
+metadata:
+  condition_id: DISTRIBUTION-W4
+  pattern: Distribution
+  replica: '1'
+  data_configuration: condorio
+  program_version: six_patterns_fma_v1
+  oracle_sha256: 5fb7899efed14edcee6e1a68ec638765d476beded6b850c24710c5d9bd4249a5
+  scientific_file_sizes_bytes: '{"A": 209715200, "B1": 209715200, "B2": 209715200,
+    "B3": 209715200, "B4": 209715200, "B5": 209715200, "g": 209715200}'
+  study: five_patterns_20261110
+  study_case: DISTRIBUTION-W4-B01
+siteCatalog:
+  sites:
+  - name: local
+    arch: x86_64
+    os.type: linux
+    directories:
+    - type: sharedScratch
+      path: /mnt/intensivo_20261122/patrones/cases/DISTRIBUTION-W4-B01/plans/DISTRIBUTION-W4-B01/scratch
+      sharedFileSystem: false
+      fileServers:
+      - url: file:///mnt/intensivo_20261122/patrones/cases/DISTRIBUTION-W4-B01/plans/DISTRIBUTION-W4-B01/scratch
+        operation: all
+    - type: localStorage
+      path: /mnt/intensivo_20261122/patrones/cases/DISTRIBUTION-W4-B01/plans/DISTRIBUTION-W4-B01/outputs
+      sharedFileSystem: false
+      fileServers:
+      - url: file:///mnt/intensivo_20261122/patrones/cases/DISTRIBUTION-W4-B01/plans/DISTRIBUTION-W4-B01/outputs
+        operation: all
+  - name: condorpool
+    arch: x86_64
+    os.type: linux
+    directories: []
+    profiles:
+      condor:
+        universe: vanilla
+        request_cpus: '1'
+        request_memory: 256
+      pegasus:
+        style: condor
+        auxillary.local: 'True'
+replicaCatalog:
+  replicas:
+  - lfn: A
+    pfns:
+    - site: local
+      pfn: /mnt/intensivo_20261122/patrones/cases/DISTRIBUTION-W4-B01/plans/DISTRIBUTION-W4-B01/inputs/A
+  - lfn: fma_kernel
+    pfns:
+    - site: local
+      pfn: /mnt/intensivo_20261122/patrones/cases/DISTRIBUTION-W4-B01/plans/DISTRIBUTION-W4-B01/bin/fma_kernel
+transformationCatalog:
+  transformations:
+  - name: campaign_task
+    sites:
+    - name: local
+      pfn: /mnt/intensivo_20261122/patrones/cases/DISTRIBUTION-W4-B01/plans/DISTRIBUTION-W4-B01/bin/campaign_task.py
+      type: stageable
+      arch: x86_64
+      os.type: linux
+jobs:
+- type: job
+  name: campaign_task
+  id: T1
+  arguments:
+  - --task-id
+  - T1
+  - --flops
+  - '1766799020'
+  - --input
+  - A
+  - '209715200'
+  - --output
+  - g
+  - '209715200'
+  uses:
+  - lfn: A
+    type: input
+  - lfn: g
+    type: output
+    stageOut: false
+    registerReplica: false
+  profiles:
+    condor:
+      requirements: TARGET.DMEStudyEligible == true
+      request_cpus: '1'
+      request_memory: 256
+  metadata:
+    task_id: T1
+    condition_id: DISTRIBUTION-W4
+    replica: '1'
+    pattern: Distribution
+    controlled_worker: W1
+    target_machine: dme-worker1
+    flops: '1766799020'
+    scientific_inputs: '["A"]'
+    scientific_outputs: '["g"]'
+- type: job
+  name: campaign_task
+  id: T2
+  arguments:
+  - --task-id
+  - T2
+  - --flops
+  - '1766799020'
+  - --input
+  - g
+  - '209715200'
+  - --output
+  - B1
+  - '209715200'
+  uses:
+  - lfn: g
+    type: input
+  - lfn: B1
+    type: output
+    stageOut: true
+    registerReplica: false
+  profiles:
+    condor:
+      requirements: TARGET.DMEStudyEligible == true
+      request_cpus: '1'
+      request_memory: 256
+  metadata:
+    task_id: T2
+    condition_id: DISTRIBUTION-W4
+    replica: '1'
+    pattern: Distribution
+    controlled_worker: W1
+    target_machine: dme-worker1
+    flops: '1766799020'
+    scientific_inputs: '["g"]'
+    scientific_outputs: '["B1"]'
+- type: job
+  name: campaign_task
+  id: T3
+  arguments:
+  - --task-id
+  - T3
+  - --flops
+  - '1766799020'
+  - --input
+  - g
+  - '209715200'
+  - --output
+  - B2
+  - '209715200'
+  uses:
+  - lfn: g
+    type: input
+  - lfn: B2
+    type: output
+    stageOut: true
+    registerReplica: false
+  profiles:
+    condor:
+      requirements: TARGET.DMEStudyEligible == true
+      request_cpus: '1'
+      request_memory: 256
+  metadata:
+    task_id: T3
+    condition_id: DISTRIBUTION-W4
+    replica: '1'
+    pattern: Distribution
+    controlled_worker: W1
+    target_machine: dme-worker1
+    flops: '1766799020'
+    scientific_inputs: '["g"]'
+    scientific_outputs: '["B2"]'
+- type: job
+  name: campaign_task
+  id: T4
+  arguments:
+  - --task-id
+  - T4
+  - --flops
+  - '1766799020'
+  - --input
+  - g
+  - '209715200'
+  - --output
+  - B3
+  - '209715200'
+  uses:
+  - lfn: g
+    type: input
+  - lfn: B3
+    type: output
+    stageOut: true
+    registerReplica: false
+  profiles:
+    condor:
+      requirements: TARGET.DMEStudyEligible == true
+      request_cpus: '1'
+      request_memory: 256
+  metadata:
+    task_id: T4
+    condition_id: DISTRIBUTION-W4
+    replica: '1'
+    pattern: Distribution
+    controlled_worker: W1
+    target_machine: dme-worker1
+    flops: '1766799020'
+    scientific_inputs: '["g"]'
+    scientific_outputs: '["B3"]'
+- type: job
+  name: campaign_task
+  id: T5
+  arguments:
+  - --task-id
+  - T5
+  - --flops
+  - '1766799020'
+  - --input
+  - g
+  - '209715200'
+  - --output
+  - B4
+  - '209715200'
+  uses:
+  - lfn: g
+    type: input
+  - lfn: B4
+    type: output
+    stageOut: true
+    registerReplica: false
+  profiles:
+    condor:
+      requirements: TARGET.DMEStudyEligible == true
+      request_cpus: '1'
+      request_memory: 256
+  metadata:
+    task_id: T5
+    condition_id: DISTRIBUTION-W4
+    replica: '1'
+    pattern: Distribution
+    controlled_worker: W1
+    target_machine: dme-worker1
+    flops: '1766799020'
+    scientific_inputs: '["g"]'
+    scientific_outputs: '["B4"]'
+- type: job
+  name: campaign_task
+  id: T6
+  arguments:
+  - --task-id
+  - T6
+  - --flops
+  - '1766799020'
+  - --input
+  - g
+  - '209715200'
+  - --output
+  - B5
+  - '209715200'
+  uses:
+  - lfn: g
+    type: input
+  - lfn: B5
+    type: output
+    stageOut: true
+    registerReplica: false
+  profiles:
+    condor:
+      requirements: TARGET.DMEStudyEligible == true
+      request_cpus: '1'
+      request_memory: 256
+  metadata:
+    task_id: T6
+    condition_id: DISTRIBUTION-W4
+    replica: '1'
+    pattern: Distribution
+    controlled_worker: W1
+    target_machine: dme-worker1
+    flops: '1766799020'
+    scientific_inputs: '["g"]'
+    scientific_outputs: '["B5"]'
+jobDependencies:
+- id: T1
+  children:
+  - T6
+  - T3
+  - T4
+  - T2
+  - T5

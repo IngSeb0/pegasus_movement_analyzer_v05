@@ -1,0 +1,105 @@
+{
+  "state": "NATIVE_PLAN_NOT_OBSERVATION",
+  "jobs": [
+    {
+      "node": "campaign_task_C1",
+      "members": [
+        "C1"
+      ],
+      "worker": "dme-worker2",
+      "scientific_files": {
+        "input": [
+          "g"
+        ],
+        "output": [
+          "f1"
+        ]
+      },
+      "submit_sha256": "d6acf1736b9fb11a96d7cc8ad9b20dadaaa0d93ea0f38ed5a4773809756c2d7f"
+    },
+    {
+      "node": "campaign_task_C2",
+      "members": [
+        "C2"
+      ],
+      "worker": "dme-worker2",
+      "scientific_files": {
+        "input": [
+          "g"
+        ],
+        "output": [
+          "f2"
+        ]
+      },
+      "submit_sha256": "9b416320930d23b96e6d2b0a65df1f157f251f355946aa2c81ddc2e74d418073"
+    },
+    {
+      "node": "campaign_task_C3",
+      "members": [
+        "C3"
+      ],
+      "worker": "dme-worker2",
+      "scientific_files": {
+        "input": [
+          "g"
+        ],
+        "output": [
+          "f3"
+        ]
+      },
+      "submit_sha256": "da9363e573ec3130e38dccf3ee1ea2435da9127fade549450b023ed9ad2801b9"
+    },
+    {
+      "node": "campaign_task_C4",
+      "members": [
+        "C4"
+      ],
+      "worker": "dme-worker2",
+      "scientific_files": {
+        "input": [
+          "g"
+        ],
+        "output": [
+          "f4"
+        ]
+      },
+      "submit_sha256": "72e732c1a22dadb724ceb9c0fde85ac23ec0232d41a420bac4ba4d1de031cc3a"
+    },
+    {
+      "node": "campaign_task_P",
+      "members": [
+        "P"
+      ],
+      "worker": "dme-worker1",
+      "scientific_files": {
+        "input": [
+          "a"
+        ],
+        "output": [
+          "g"
+        ]
+      },
+      "submit_sha256": "5d52e18e5bf900937a2915e312b54674c695e464a8b81905ac5bf56d85fd0e21"
+    }
+  ],
+  "task_to_job": {
+    "C1": "campaign_task_C1",
+    "C2": "campaign_task_C2",
+    "C3": "campaign_task_C3",
+    "C4": "campaign_task_C4",
+    "P": "campaign_task_P"
+  },
+  "planned_scientific_bytes": 2097152000,
+  "submitted": false,
+  "retry_policy": [
+    "RETRY create_dir_dme-six-20261110-w2-sep-r01_0_local 0",
+    "RETRY stage_in_remote_local_0_0 0",
+    "RETRY stage_in_local_local_0_0 0",
+    "RETRY campaign_task_P 0",
+    "RETRY campaign_task_C4 0",
+    "RETRY campaign_task_C2 0",
+    "RETRY campaign_task_C3 0",
+    "RETRY campaign_task_C1 0",
+    "RETRY stage_out_local_local_1_0 0"
+  ]
+}

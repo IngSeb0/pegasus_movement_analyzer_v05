@@ -1,0 +1,65 @@
+{
+  "id": "PROCESS-W4-B02",
+  "condition": "PROCESS-W4",
+  "workers": 4,
+  "pattern": "PROCESS",
+  "block": 2,
+  "phase": "principal",
+  "uuid": "45e7e83d-3f65-4752-92f0-623a29328fea",
+  "required_bytes": 2516582400,
+  "observed_bytes": 2516582400,
+  "dme": "1",
+  "duration_s": 226.55299997329712,
+  "placement": {
+    "T1": "dme-worker4",
+    "T2": "dme-worker1",
+    "T3": "dme-worker1",
+    "T4": "dme-worker2",
+    "T5": "dme-worker3",
+    "T6": "dme-worker4"
+  },
+  "obligations": 12,
+  "deliveries": 12,
+  "directions": 12,
+  "all_exact": true,
+  "final_files": [
+    {
+      "file": "B1",
+      "bytes": 209715200,
+      "sha256": "f6d98fbc29ba8b9d2c908b848354a428f7e62a7e0b40ee586db4d77f6b527ffe",
+      "matches_native_metadata": true
+    },
+    {
+      "file": "B2",
+      "bytes": 209715200,
+      "sha256": "368463161cdb296c04a0693a55a007163c330e39ac9864a8607f73d43fdb7871",
+      "matches_native_metadata": true
+    },
+    {
+      "file": "B3",
+      "bytes": 209715200,
+      "sha256": "e85cdc92446a5b1c7eec674776f9c60d2cbeaaa50c61d6c8fe02b5b8debc8126",
+      "matches_native_metadata": true
+    },
+    {
+      "file": "B4",
+      "bytes": 209715200,
+      "sha256": "ab9283bfc955353832872fc0bd5c0af3ec6f385ef1f9d14040af2c28e4b7f2e5",
+      "matches_native_metadata": true
+    },
+    {
+      "file": "B5",
+      "bytes": 209715200,
+      "sha256": "76aed11f64505bab1427c6ea6daf1849771ec104c353a2635fae2883f88bf3c3",
+      "matches_native_metadata": true
+    },
+    {
+      "file": "B6",
+      "bytes": 209715200,
+      "sha256": "28e392f7a79e720891693ed943a7e42aa17c3b06fc276badcb83aba12c0b7c0e",
+      "matches_native_metadata": true
+    }
+  ],
+  "manualAgreement": true,
+  "analyzerStatus": "VALID"
+}

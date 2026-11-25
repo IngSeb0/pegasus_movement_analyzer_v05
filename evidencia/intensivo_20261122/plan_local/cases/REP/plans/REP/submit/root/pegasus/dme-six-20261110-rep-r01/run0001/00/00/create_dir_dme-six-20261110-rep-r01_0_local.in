@@ -1,0 +1,6 @@
+[
+  {
+    "id": 1,
+    "type": "mkdir",
+    "target": { "site_label": "local", "url": "file:///study/cases/REP/plans/REP/scratch/root/pegasus/dme-six-20261110-rep-r01/run0001" } }
+]

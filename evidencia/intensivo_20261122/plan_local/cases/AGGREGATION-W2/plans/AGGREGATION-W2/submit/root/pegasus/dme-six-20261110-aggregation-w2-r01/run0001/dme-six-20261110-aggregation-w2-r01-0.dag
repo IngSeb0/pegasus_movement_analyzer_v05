@@ -1,0 +1,95 @@
+######################################################################
+# PEGASUS WMS GENERATED DAG FILE
+# DAG dme-six-20261110-aggregation-w2-r01
+# Index = 0, Count = null
+######################################################################
+MAXJOBS cleanup 4
+MAXJOBS registration 1
+MAXJOBS stageout 10
+MAXJOBS stagein 10
+
+JOB create_dir_dme-six-20261110-aggregation-w2-r01_0_local 00/00/create_dir_dme-six-20261110-aggregation-w2-r01_0_local.sub
+SCRIPT POST create_dir_dme-six-20261110-aggregation-w2-r01_0_local /usr/bin/pegasus-exitcode  -r $RETURN -l dme-six-20261110-aggregation-w2-r01-0.exitcode.log -M dme-six-20261110-aggregation-w2-r01-0.cache.meta   .//00/00/create_dir_dme-six-20261110-aggregation-w2-r01_0_local.out
+PRIORITY create_dir_dme-six-20261110-aggregation-w2-r01_0_local 800
+RETRY create_dir_dme-six-20261110-aggregation-w2-r01_0_local 0
+VARS create_dir_dme-six-20261110-aggregation-w2-r01_0_local My.DAGNodeRetry="$(RETRY)"
+
+JOB stage_in_remote_local_0_0 00/00/stage_in_remote_local_0_0.sub
+SCRIPT POST stage_in_remote_local_0_0 /usr/bin/pegasus-exitcode  -r $RETURN -l dme-six-20261110-aggregation-w2-r01-0.exitcode.log -M dme-six-20261110-aggregation-w2-r01-0.cache.meta   .//00/00/stage_in_remote_local_0_0.out
+PRIORITY stage_in_remote_local_0_0 700
+RETRY stage_in_remote_local_0_0 0
+CATEGORY stage_in_remote_local_0_0 stagein
+VARS stage_in_remote_local_0_0 My.DAGNodeRetry="$(RETRY)"
+
+JOB stage_in_local_local_0_0 00/00/stage_in_local_local_0_0.sub
+SCRIPT POST stage_in_local_local_0_0 /usr/bin/pegasus-exitcode  -r $RETURN -l dme-six-20261110-aggregation-w2-r01-0.exitcode.log -M dme-six-20261110-aggregation-w2-r01-0.cache.meta   .//00/00/stage_in_local_local_0_0.out
+PRIORITY stage_in_local_local_0_0 700
+RETRY stage_in_local_local_0_0 0
+CATEGORY stage_in_local_local_0_0 stagein
+VARS stage_in_local_local_0_0 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_T5 00/00/campaign_task_T5.sub
+SCRIPT POST campaign_task_T5 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-six-20261110-aggregation-w2-r01-0.exitcode.log -M dme-six-20261110-aggregation-w2-r01-0.cache.meta   .//00/00/campaign_task_T5.out
+PRIORITY campaign_task_T5 20
+RETRY campaign_task_T5 0
+VARS campaign_task_T5 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_T3 00/00/campaign_task_T3.sub
+SCRIPT POST campaign_task_T3 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-six-20261110-aggregation-w2-r01-0.exitcode.log -M dme-six-20261110-aggregation-w2-r01-0.cache.meta   .//00/00/campaign_task_T3.out
+PRIORITY campaign_task_T3 20
+RETRY campaign_task_T3 0
+VARS campaign_task_T3 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_T4 00/00/campaign_task_T4.sub
+SCRIPT POST campaign_task_T4 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-six-20261110-aggregation-w2-r01-0.exitcode.log -M dme-six-20261110-aggregation-w2-r01-0.cache.meta   .//00/00/campaign_task_T4.out
+PRIORITY campaign_task_T4 20
+RETRY campaign_task_T4 0
+VARS campaign_task_T4 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_T1 00/00/campaign_task_T1.sub
+SCRIPT POST campaign_task_T1 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-six-20261110-aggregation-w2-r01-0.exitcode.log -M dme-six-20261110-aggregation-w2-r01-0.cache.meta   .//00/00/campaign_task_T1.out
+PRIORITY campaign_task_T1 20
+RETRY campaign_task_T1 0
+VARS campaign_task_T1 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_T2 00/00/campaign_task_T2.sub
+SCRIPT POST campaign_task_T2 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-six-20261110-aggregation-w2-r01-0.exitcode.log -M dme-six-20261110-aggregation-w2-r01-0.cache.meta   .//00/00/campaign_task_T2.out
+PRIORITY campaign_task_T2 20
+RETRY campaign_task_T2 0
+VARS campaign_task_T2 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_T6 00/00/campaign_task_T6.sub
+SCRIPT POST campaign_task_T6 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-six-20261110-aggregation-w2-r01-0.exitcode.log -M dme-six-20261110-aggregation-w2-r01-0.cache.meta   .//00/00/campaign_task_T6.out
+PRIORITY campaign_task_T6 30
+RETRY campaign_task_T6 0
+VARS campaign_task_T6 My.DAGNodeRetry="$(RETRY)"
+
+JOB stage_out_local_local_1_0 00/00/stage_out_local_local_1_0.sub
+SCRIPT POST stage_out_local_local_1_0 /usr/bin/pegasus-exitcode  -r $RETURN -l dme-six-20261110-aggregation-w2-r01-0.exitcode.log -M dme-six-20261110-aggregation-w2-r01-0.cache.meta   .//00/00/stage_out_local_local_1_0.out
+PRIORITY stage_out_local_local_1_0 900
+RETRY stage_out_local_local_1_0 0
+CATEGORY stage_out_local_local_1_0 stageout
+VARS stage_out_local_local_1_0 My.DAGNodeRetry="$(RETRY)"
+
+PARENT  campaign_task_T5 CHILD campaign_task_T6
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_T5
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_T6
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_T3
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_T4
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_T1
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_T2
+PARENT  campaign_task_T6 CHILD stage_out_local_local_1_0
+PARENT  campaign_task_T3 CHILD campaign_task_T6
+PARENT  campaign_task_T4 CHILD campaign_task_T6
+PARENT  campaign_task_T1 CHILD campaign_task_T6
+PARENT  campaign_task_T2 CHILD campaign_task_T6
+PARENT  create_dir_dme-six-20261110-aggregation-w2-r01_0_local CHILD stage_in_remote_local_0_0
+PARENT  create_dir_dme-six-20261110-aggregation-w2-r01_0_local CHILD stage_in_local_local_0_0
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_T5
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_T3
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_T4
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_T1
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_T2
+######################################################################
+# End of DAG
+######################################################################

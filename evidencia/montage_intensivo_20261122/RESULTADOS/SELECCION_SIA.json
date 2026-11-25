@@ -1,0 +1,14 @@
+{
+  "query": {
+    "POS": "210.802,54.349",
+    "SIZE": "2.0",
+    "band": "J",
+    "type": "at",
+    "ds": "asky",
+    "FORMAT": "image/fits"
+  },
+  "side": 2.0,
+  "counts": {
+    "2.0": 147
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "state": "NATIVE_PLAN_NOT_OBSERVATION",
+  "jobs": [
+    {
+      "node": "campaign_task_T1",
+      "members": [
+        "T1"
+      ],
+      "worker": "dme-worker1",
+      "scientific_files": {
+        "input": [
+          "A"
+        ],
+        "output": [
+          "f12"
+        ]
+      },
+      "submit_sha256": "e580ad9131c48017884b666c05a8f89a18e8fbe8de5f0f5a375c11d7e9744092"
+    },
+    {
+      "node": "campaign_task_T2",
+      "members": [
+        "T2"
+      ],
+      "worker": "dme-worker1",
+      "scientific_files": {
+        "input": [
+          "f12"
+        ],
+        "output": [
+          "f23"
+        ]
+      },
+      "submit_sha256": "0fb502a643efbb621d8d8f1e55d51eca221a1ba0f459eb755fe995e8ad6fe4c1"
+    },
+    {
+      "node": "campaign_task_T3",
+      "members": [
+        "T3"
+      ],
+      "worker": "dme-worker1",
+      "scientific_files": {
+        "input": [
+          "f23"
+        ],
+        "output": [
+          "f34"
+        ]
+      },
+      "submit_sha256": "db5ec5810831ca8271f1520ca2470ebf69f34bdb7b1816515a7ae299eea3c40a"
+    },
+    {
+      "node": "campaign_task_T4",
+      "members": [
+        "T4"
+      ],
+      "worker": "dme-worker1",
+      "scientific_files": {
+        "input": [
+          "f34"
+        ],
+        "output": [
+          "f45"
+        ]
+      },
+      "submit_sha256": "14f460ca03b5f2a97a9643489bbe400ca9a342c5d03b9db13a36396b63275d27"
+    },
+    {
+      "node": "campaign_task_T5",
+      "members": [
+        "T5"
+      ],
+      "worker": "dme-worker1",
+      "scientific_files": {
+        "input": [
+          "f45"
+        ],
+        "output": [
+          "f56"
+        ]
+      },
+      "submit_sha256": "3765cadceabc39f1e5206e1914a556a16b3d62a2bfb597ac3856758978b3b6e6"
+    },
+    {
+      "node": "campaign_task_T6",
+      "members": [
+        "T6"
+      ],
+      "worker": "dme-worker1",
+      "scientific_files": {
+        "input": [
+          "f56"
+        ],
+        "output": [
+          "B"
+        ]
+      },
+      "submit_sha256": "6fa622ae7ba347120d54067c2848cd6d31272d591e4f06f58837edb6a6e7f7b5"
+    }
+  ],
+  "task_to_job": {
+    "T1": "campaign_task_T1",
+    "T2": "campaign_task_T2",
+    "T3": "campaign_task_T3",
+    "T4": "campaign_task_T4",
+    "T5": "campaign_task_T5",
+    "T6": "campaign_task_T6"
+  },
+  "planned_scientific_bytes": 2516582400,
+  "submitted": false,
+  "retry_policy": [
+    "RETRY create_dir_dme-six-20261110-pipeline-w4-r01_0_local 0",
+    "RETRY stage_in_remote_local_0_0 0",
+    "RETRY stage_in_local_local_0_0 0",
+    "RETRY campaign_task_T1 0",
+    "RETRY campaign_task_T2 0",
+    "RETRY campaign_task_T3 0",
+    "RETRY campaign_task_T4 0",
+    "RETRY campaign_task_T5 0",
+    "RETRY campaign_task_T6 0",
+    "RETRY stage_out_local_local_5_0 0"
+  ]
+}

@@ -1,0 +1,9 @@
+{"name": ".//00/00/create_dir_flujo-rep_0_local.out", "timestamp": "2026-11-24T16:17:07.685975", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/stage_in_remote_local_0_0.out", "timestamp": "2026-11-24T16:17:22.831746", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/stage_in_local_local_0_0.out", "timestamp": "2026-11-24T16:17:27.948076", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/campaign_task_P.out", "timestamp": "2026-11-24T16:18:43.132254", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/campaign_task_C1.out", "timestamp": "2026-11-24T16:20:08.332723", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/campaign_task_C4.out", "timestamp": "2026-11-24T16:20:28.470946", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/campaign_task_C2.out", "timestamp": "2026-11-24T16:20:33.593924", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/campaign_task_C3.out", "timestamp": "2026-11-24T16:20:43.719586", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/stage_out_local_local_1_0.out", "timestamp": "2026-11-24T16:21:03.864186", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}

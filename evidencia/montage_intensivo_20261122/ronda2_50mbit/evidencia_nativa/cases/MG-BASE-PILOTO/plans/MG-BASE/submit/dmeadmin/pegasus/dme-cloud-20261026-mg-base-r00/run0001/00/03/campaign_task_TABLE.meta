@@ -1,0 +1,14 @@
+[
+  {
+    "_id": "images.tbl",
+    "_type": "file",
+    "_attributes": {
+      "user": "nobody",
+      "size": "77947",
+      "ctime": "2026-11-22T22:35:07+00:00",
+      "checksum.type": "sha256",
+      "checksum.value": "2c800d4e5bb138054c1e713aabe30bf3b7b95c9f525ed878a466f408a91e5ed9",
+      "checksum.timing": "0.0"
+    }
+  }
+]

@@ -1,0 +1,126 @@
+{
+  "files": [
+    {
+      "file": "A1",
+      "bytes": 209715200,
+      "origin": "dme-master",
+      "destinations": [
+        "dme-worker1"
+      ],
+      "obligations": 1,
+      "required_bytes": 209715200
+    },
+    {
+      "file": "A2",
+      "bytes": 209715200,
+      "origin": "dme-master",
+      "destinations": [
+        "dme-worker2"
+      ],
+      "obligations": 1,
+      "required_bytes": 209715200
+    },
+    {
+      "file": "A3",
+      "bytes": 209715200,
+      "origin": "dme-master",
+      "destinations": [
+        "dme-worker1"
+      ],
+      "obligations": 1,
+      "required_bytes": 209715200
+    },
+    {
+      "file": "A4",
+      "bytes": 209715200,
+      "origin": "dme-master",
+      "destinations": [
+        "dme-worker2"
+      ],
+      "obligations": 1,
+      "required_bytes": 209715200
+    },
+    {
+      "file": "A5",
+      "bytes": 209715200,
+      "origin": "dme-master",
+      "destinations": [
+        "dme-worker1"
+      ],
+      "obligations": 1,
+      "required_bytes": 209715200
+    },
+    {
+      "file": "A6",
+      "bytes": 209715200,
+      "origin": "dme-master",
+      "destinations": [
+        "dme-worker2"
+      ],
+      "obligations": 1,
+      "required_bytes": 209715200
+    },
+    {
+      "file": "B1",
+      "bytes": 209715200,
+      "origin": "dme-worker1",
+      "destinations": [
+        "dme-master"
+      ],
+      "obligations": 1,
+      "required_bytes": 209715200
+    },
+    {
+      "file": "B2",
+      "bytes": 209715200,
+      "origin": "dme-worker2",
+      "destinations": [
+        "dme-master"
+      ],
+      "obligations": 1,
+      "required_bytes": 209715200
+    },
+    {
+      "file": "B3",
+      "bytes": 209715200,
+      "origin": "dme-worker1",
+      "destinations": [
+        "dme-master"
+      ],
+      "obligations": 1,
+      "required_bytes": 209715200
+    },
+    {
+      "file": "B4",
+      "bytes": 209715200,
+      "origin": "dme-worker2",
+      "destinations": [
+        "dme-master"
+      ],
+      "obligations": 1,
+      "required_bytes": 209715200
+    },
+    {
+      "file": "B5",
+      "bytes": 209715200,
+      "origin": "dme-worker1",
+      "destinations": [
+        "dme-master"
+      ],
+      "obligations": 1,
+      "required_bytes": 209715200
+    },
+    {
+      "file": "B6",
+      "bytes": 209715200,
+      "origin": "dme-worker2",
+      "destinations": [
+        "dme-master"
+      ],
+      "obligations": 1,
+      "required_bytes": 209715200
+    }
+  ],
+  "required_bytes": 2516582400,
+  "obligations": 12
+}

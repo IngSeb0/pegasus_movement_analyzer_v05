@@ -1,0 +1,13 @@
+[
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "a",
+   "id": 1,
+   "generate_checksum": true,
+   "src_urls": [
+     { "site_label": "local", "url": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-SEP/plans/W2-SEP/inputs/a", "priority": 10 }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-SEP/plans/W2-SEP/scratch/dmeadmin/pegasus/dme-six-20261110-w2-sep-r03/run0001/./a" }
+   ] }
+]

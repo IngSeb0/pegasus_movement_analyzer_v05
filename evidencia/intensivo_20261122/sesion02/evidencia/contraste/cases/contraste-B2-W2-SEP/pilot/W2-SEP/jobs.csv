@@ -1,0 +1,10 @@
+corrida,condicion,job,tipo,maquina,cpu_usuario_s,bytes_entrada,bytes_salida,t_envio,t_inicio,t_fin_entrada,t_inicio_salida,t_fin_salida,t_terminado,t_fin_post,espera_maquina_s,transferencia_entrada_s,ejecucion_s,transferencia_salida_s,cierre_s,vida_total_s
+contraste-B2-W2-SEP,W2-SEP,create_dir_dme-six-20261110-w2-sep-r02_0_local,auxiliar,dme-master,0.0,,,1795368103,1795368108,,,,1795368110,1795368118,5,,2,,8,15
+contraste-B2-W2-SEP,W2-SEP,stage_in_remote_local_0_0,auxiliar,dme-master,0.0,,,1795368123,1795368126,,,,1795368129,1795368138,3,,3,,9,15
+contraste-B2-W2-SEP,W2-SEP,stage_in_local_local_0_0,auxiliar,dme-master,0.0,,,1795368123,1795368126,,,,1795368130,1795368138,3,,4,,8,15
+contraste-B2-W2-SEP,W2-SEP,campaign_task_P,tarea,dme-worker1,5.0,228823475,209721476,1795368143,1795368156,1795368175,1795368182,1795368200,1795368200,1795368208,13,19,7,18,8,65
+contraste-B2-W2-SEP,W2-SEP,campaign_task_C4,tarea,dme-worker2,5.0,228823476,209721479,1795368213,1795368216,1795368235,1795368243,1795368261,1795368261,1795368268,3,19,8,18,7,55
+contraste-B2-W2-SEP,W2-SEP,campaign_task_C2,tarea,dme-worker2,5.0,228823476,209721480,1795368213,1795368261,1795368280,1795368288,1795368306,1795368306,1795368313,48,19,8,18,7,100
+contraste-B2-W2-SEP,W2-SEP,campaign_task_C3,tarea,dme-worker2,5.0,228823476,209721480,1795368213,1795368306,1795368325,1795368333,1795368350,1795368351,1795368358,93,19,8,17,8,145
+contraste-B2-W2-SEP,W2-SEP,campaign_task_C1,tarea,dme-worker2,5.0,228823476,209721479,1795368213,1795368351,1795368370,1795368377,1795368394,1795368395,1795368403,138,19,7,17,9,190
+contraste-B2-W2-SEP,W2-SEP,stage_out_local_local_1_0,auxiliar,dme-master,0.0,,,1795368408,1795368412,,,,1795368420,1795368428,4,,8,,8,20

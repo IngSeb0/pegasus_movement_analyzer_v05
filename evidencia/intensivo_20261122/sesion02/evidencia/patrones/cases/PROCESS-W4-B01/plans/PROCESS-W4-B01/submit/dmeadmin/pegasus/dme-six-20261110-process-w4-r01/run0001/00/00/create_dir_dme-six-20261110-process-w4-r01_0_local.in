@@ -1,0 +1,6 @@
+[
+  {
+    "id": 1,
+    "type": "mkdir",
+    "target": { "site_label": "local", "url": "file:///mnt/intensivo_20261122/patrones/cases/PROCESS-W4-B01/plans/PROCESS-W4-B01/scratch/dmeadmin/pegasus/dme-six-20261110-process-w4-r01/run0001" } }
+]

@@ -1,0 +1,85 @@
+######################################################################
+# PEGASUS WMS GENERATED DAG FILE
+# DAG flujo-rep-rec
+# Index = 0, Count = null
+######################################################################
+MAXJOBS cleanup 4
+MAXJOBS registration 1
+MAXJOBS stageout 10
+MAXJOBS stagein 10
+
+JOB create_dir_flujo-rep-rec_0_local 00/00/create_dir_flujo-rep-rec_0_local.sub
+SCRIPT POST create_dir_flujo-rep-rec_0_local /usr/bin/pegasus-exitcode  -r $RETURN -l flujo-rep-rec-0.exitcode.log -M flujo-rep-rec-0.cache.meta   .//00/00/create_dir_flujo-rep-rec_0_local.out
+PRIORITY create_dir_flujo-rep-rec_0_local 800
+RETRY create_dir_flujo-rep-rec_0_local 0
+VARS create_dir_flujo-rep-rec_0_local My.DAGNodeRetry="$(RETRY)"
+
+JOB stage_in_remote_local_0_0 00/00/stage_in_remote_local_0_0.sub
+SCRIPT POST stage_in_remote_local_0_0 /usr/bin/pegasus-exitcode  -r $RETURN -l flujo-rep-rec-0.exitcode.log -M flujo-rep-rec-0.cache.meta   .//00/00/stage_in_remote_local_0_0.out
+PRIORITY stage_in_remote_local_0_0 700
+RETRY stage_in_remote_local_0_0 0
+CATEGORY stage_in_remote_local_0_0 stagein
+VARS stage_in_remote_local_0_0 My.DAGNodeRetry="$(RETRY)"
+
+JOB stage_in_local_local_0_0 00/00/stage_in_local_local_0_0.sub
+SCRIPT POST stage_in_local_local_0_0 /usr/bin/pegasus-exitcode  -r $RETURN -l flujo-rep-rec-0.exitcode.log -M flujo-rep-rec-0.cache.meta   .//00/00/stage_in_local_local_0_0.out
+PRIORITY stage_in_local_local_0_0 700
+RETRY stage_in_local_local_0_0 0
+CATEGORY stage_in_local_local_0_0 stagein
+VARS stage_in_local_local_0_0 My.DAGNodeRetry="$(RETRY)"
+
+JOB merge_group_1 00/00/merge_group_1.sub
+SCRIPT POST merge_group_1 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l flujo-rep-rec-0.exitcode.log -M flujo-rep-rec-0.cache.meta  .//00/00/merge_group_1.out
+PRIORITY merge_group_1 20
+RETRY merge_group_1 0
+VARS merge_group_1 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_C4 00/00/campaign_task_C4.sub
+SCRIPT POST campaign_task_C4 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l flujo-rep-rec-0.exitcode.log -M flujo-rep-rec-0.cache.meta   .//00/00/campaign_task_C4.out
+PRIORITY campaign_task_C4 30
+RETRY campaign_task_C4 0
+VARS campaign_task_C4 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_C2 00/00/campaign_task_C2.sub
+SCRIPT POST campaign_task_C2 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l flujo-rep-rec-0.exitcode.log -M flujo-rep-rec-0.cache.meta   .//00/00/campaign_task_C2.out
+PRIORITY campaign_task_C2 30
+RETRY campaign_task_C2 0
+VARS campaign_task_C2 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_C3 00/00/campaign_task_C3.sub
+SCRIPT POST campaign_task_C3 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l flujo-rep-rec-0.exitcode.log -M flujo-rep-rec-0.cache.meta   .//00/00/campaign_task_C3.out
+PRIORITY campaign_task_C3 30
+RETRY campaign_task_C3 0
+VARS campaign_task_C3 My.DAGNodeRetry="$(RETRY)"
+
+JOB stage_out_local_local_0_0 00/00/stage_out_local_local_0_0.sub
+SCRIPT POST stage_out_local_local_0_0 /usr/bin/pegasus-exitcode  -r $RETURN -l flujo-rep-rec-0.exitcode.log -M flujo-rep-rec-0.cache.meta   .//00/00/stage_out_local_local_0_0.out
+PRIORITY stage_out_local_local_0_0 900
+RETRY stage_out_local_local_0_0 0
+CATEGORY stage_out_local_local_0_0 stageout
+VARS stage_out_local_local_0_0 My.DAGNodeRetry="$(RETRY)"
+
+JOB stage_out_local_local_1_0 00/00/stage_out_local_local_1_0.sub
+SCRIPT POST stage_out_local_local_1_0 /usr/bin/pegasus-exitcode  -r $RETURN -l flujo-rep-rec-0.exitcode.log -M flujo-rep-rec-0.cache.meta   .//00/00/stage_out_local_local_1_0.out
+PRIORITY stage_out_local_local_1_0 900
+RETRY stage_out_local_local_1_0 0
+CATEGORY stage_out_local_local_1_0 stageout
+VARS stage_out_local_local_1_0 My.DAGNodeRetry="$(RETRY)"
+
+PARENT  campaign_task_C4 CHILD stage_out_local_local_1_0
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_C4
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_C2
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_C3
+PARENT  stage_in_remote_local_0_0 CHILD merge_group_1
+PARENT  campaign_task_C2 CHILD stage_out_local_local_1_0
+PARENT  campaign_task_C3 CHILD stage_out_local_local_1_0
+PARENT  create_dir_flujo-rep-rec_0_local CHILD stage_in_remote_local_0_0
+PARENT  create_dir_flujo-rep-rec_0_local CHILD stage_in_local_local_0_0
+PARENT  merge_group_1 CHILD campaign_task_C4
+PARENT  merge_group_1 CHILD campaign_task_C2
+PARENT  merge_group_1 CHILD campaign_task_C3
+PARENT  merge_group_1 CHILD stage_out_local_local_0_0
+PARENT  stage_in_local_local_0_0 CHILD merge_group_1
+######################################################################
+# End of DAG
+######################################################################

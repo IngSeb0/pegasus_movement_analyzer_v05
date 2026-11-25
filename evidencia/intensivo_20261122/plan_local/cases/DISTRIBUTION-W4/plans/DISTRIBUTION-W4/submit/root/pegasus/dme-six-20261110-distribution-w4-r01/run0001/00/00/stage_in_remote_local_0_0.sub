@@ -1,0 +1,41 @@
+######################################################################
+# PEGASUS WMS GENERATED SUBMIT FILE
+# DAG : dme-six-20261110-distribution-w4-r01, Index = 0, Count = null
+# SUBMIT FILE NAME : stage_in_remote_local_0_0.sub
+######################################################################
+stream_error  = false
+stream_output = false
+environment = "LANG=en_US.UTF-8 PATH=/root/.local/bin:/root/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin CONDOR_JOBID=$(cluster).$(process) PEGASUS_WF_UUID=ca5fd14b-043c-4080-af09-d796d8aa48a0 PEGASUS_WF_LABEL=dme-six-20261110-distribution-w4-r01 PEGASUS_DAG_JOB_ID=stage_in_remote_local_0_0 PEGASUS_SITE=local _PEGASUS_WF_SUBMIT_DIR=/study/cases/DISTRIBUTION-W4/plans/DISTRIBUTION-W4/submit/root/pegasus/dme-six-20261110-distribution-w4-r01/run0001"
+arguments = " -n pegasus::transfer -N null -i - -R local  -L dme-six-20261110-distribution-w4-r01 -T 2026-11-22T14:38:10+00:00 /usr/bin/../bin/pegasus-transfer  --threads 2 "
+error = /study/cases/DISTRIBUTION-W4/plans/DISTRIBUTION-W4/submit/root/pegasus/dme-six-20261110-distribution-w4-r01/run0001//00/00/stage_in_remote_local_0_0.err
+executable = /usr/bin/../bin/pegasus-kickstart
+input = /study/cases/DISTRIBUTION-W4/plans/DISTRIBUTION-W4/submit/root/pegasus/dme-six-20261110-distribution-w4-r01/run0001//00/00/stage_in_remote_local_0_0.in
+log = /study/cases/DISTRIBUTION-W4/plans/DISTRIBUTION-W4/submit/root/pegasus/dme-six-20261110-distribution-w4-r01/run0001/dme-six-20261110-distribution-w4-r01-0.log
+notification = NEVER
+output = /study/cases/DISTRIBUTION-W4/plans/DISTRIBUTION-W4/submit/root/pegasus/dme-six-20261110-distribution-w4-r01/run0001//00/00/stage_in_remote_local_0_0.out
+periodic_release = False
+periodic_remove = (JobStatus == 5) && ((CurrentTime - EnteredCurrentStatus) > 1800)
+priority = 700
+submit_event_user_notes = pool:local
+transfer_executable = false
+universe = local
+wf_submit_dir = /study/cases/DISTRIBUTION-W4/plans/DISTRIBUTION-W4/submit/root/pegasus/dme-six-20261110-distribution-w4-r01/run0001
++pegasus_generator = "Pegasus"
++pegasus_root_wf_uuid = "ca5fd14b-043c-4080-af09-d796d8aa48a0"
++pegasus_wf_uuid = "ca5fd14b-043c-4080-af09-d796d8aa48a0"
++pegasus_version = "5.1.2"
++pegasus_wf_name = "dme-six-20261110-distribution-w4-r01-0"
++pegasus_wf_time = "20261122T143810+0000"
++pegasus_wf_xformation = "pegasus::transfer"
++pegasus_wf_dax_job_id = "null"
++pegasus_wf_dag_job_id = "stage_in_remote_local_0_0"
++pegasus_job_class = 2
++pegasus_site = "local"
++pegasus_job_runtime = 0
++pegasus_cores = 1
++pegasus_gpus = 1
++pegasus_cluster_size = 1
+queue
+######################################################################
+# END OF SUBMIT FILE
+######################################################################

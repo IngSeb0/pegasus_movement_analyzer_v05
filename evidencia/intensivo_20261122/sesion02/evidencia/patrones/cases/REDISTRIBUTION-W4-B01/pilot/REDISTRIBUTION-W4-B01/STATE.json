@@ -1,0 +1,8 @@
+{
+  "status": "ACCEPTED",
+  "uuid": "a9c7b211-f5b6-4c0b-80d9-69a6374b2775",
+  "run": "/mnt/intensivo_20261122/patrones/cases/REDISTRIBUTION-W4-B01/plans/REDISTRIBUTION-W4-B01/submit/dmeadmin/pegasus/dme-six-20261110-redistribution-w4-r01/run0001",
+  "submitted": true,
+  "report_file": "/mnt/intensivo_20261122/patrones/cases/REDISTRIBUTION-W4-B01/pilot/REDISTRIBUTION-W4-B01/reports/analysis.json",
+  "accepted": true
+}

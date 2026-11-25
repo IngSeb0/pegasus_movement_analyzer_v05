@@ -1,0 +1,13 @@
+[
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "a",
+   "id": 1,
+   "generate_checksum": true,
+   "src_urls": [
+     { "site_label": "local", "url": "/mnt/prueba_rep_rec_20261124/rep_r2/inputs/a", "priority": 10 }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///mnt/prueba_rep_rec_20261124/rep_r2/scratch/dmeadmin/pegasus/flujo-rep/run0001/./a" }
+   ] }
+]

@@ -1,0 +1,505 @@
+{
+  "PROCESS-W2": {
+    "first_submit_s": 37,
+    "first_execute_s": 60,
+    "last_terminated_s": 74,
+    "finish_s": 102,
+    "wait_to_first_job_s": 23,
+    "scientific_window_s": 14,
+    "after_last_job_s": 28,
+    "jobs": {
+      "SUBMIT": {
+        "campaign_task_T5": 37,
+        "campaign_task_T6": 37,
+        "campaign_task_T3": 37,
+        "campaign_task_T4": 37,
+        "campaign_task_T1": 37,
+        "campaign_task_T2": 37
+      },
+      "EXECUTE": {
+        "campaign_task_T5": 60,
+        "campaign_task_T6": 60,
+        "campaign_task_T3": 64,
+        "campaign_task_T4": 66,
+        "campaign_task_T1": 68,
+        "campaign_task_T2": 70
+      },
+      "JOB_TERMINATED": {
+        "campaign_task_T5": 64,
+        "campaign_task_T6": 66,
+        "campaign_task_T3": 67,
+        "campaign_task_T4": 70,
+        "campaign_task_T1": 73,
+        "campaign_task_T2": 74
+      }
+    }
+  },
+  "PROCESS-W4": {
+    "first_submit_s": 41,
+    "first_execute_s": 56,
+    "last_terminated_s": 65,
+    "finish_s": 91,
+    "wait_to_first_job_s": 15,
+    "scientific_window_s": 9,
+    "after_last_job_s": 26,
+    "jobs": {
+      "SUBMIT": {
+        "campaign_task_T5": 41,
+        "campaign_task_T6": 41,
+        "campaign_task_T3": 41,
+        "campaign_task_T4": 41,
+        "campaign_task_T1": 41,
+        "campaign_task_T2": 41
+      },
+      "EXECUTE": {
+        "campaign_task_T4": 56,
+        "campaign_task_T3": 56,
+        "campaign_task_T6": 56,
+        "campaign_task_T5": 56,
+        "campaign_task_T1": 60,
+        "campaign_task_T2": 60
+      },
+      "JOB_TERMINATED": {
+        "campaign_task_T4": 59,
+        "campaign_task_T5": 59,
+        "campaign_task_T6": 60,
+        "campaign_task_T3": 60,
+        "campaign_task_T2": 63,
+        "campaign_task_T1": 65
+      }
+    }
+  },
+  "PIPELINE-W2": {
+    "first_submit_s": 36,
+    "first_execute_s": 52,
+    "last_terminated_s": 155,
+    "finish_s": 181,
+    "wait_to_first_job_s": 16,
+    "scientific_window_s": 103,
+    "after_last_job_s": 26,
+    "jobs": {
+      "SUBMIT": {
+        "campaign_task_T1": 36,
+        "campaign_task_T2": 66,
+        "campaign_task_T3": 86,
+        "campaign_task_T4": 106,
+        "campaign_task_T5": 126,
+        "campaign_task_T6": 146
+      },
+      "EXECUTE": {
+        "campaign_task_T1": 52,
+        "campaign_task_T2": 70,
+        "campaign_task_T3": 89,
+        "campaign_task_T4": 111,
+        "campaign_task_T5": 131,
+        "campaign_task_T6": 151
+      },
+      "JOB_TERMINATED": {
+        "campaign_task_T1": 56,
+        "campaign_task_T2": 74,
+        "campaign_task_T3": 92,
+        "campaign_task_T4": 115,
+        "campaign_task_T5": 135,
+        "campaign_task_T6": 155
+      }
+    }
+  },
+  "PIPELINE-W4": {
+    "first_submit_s": 41,
+    "first_execute_s": 52,
+    "last_terminated_s": 154,
+    "finish_s": 176,
+    "wait_to_first_job_s": 11,
+    "scientific_window_s": 102,
+    "after_last_job_s": 22,
+    "jobs": {
+      "SUBMIT": {
+        "campaign_task_T1": 41,
+        "campaign_task_T2": 71,
+        "campaign_task_T3": 91,
+        "campaign_task_T4": 106,
+        "campaign_task_T5": 126,
+        "campaign_task_T6": 146
+      },
+      "EXECUTE": {
+        "campaign_task_T1": 52,
+        "campaign_task_T2": 75,
+        "campaign_task_T3": 92,
+        "campaign_task_T4": 109,
+        "campaign_task_T5": 131,
+        "campaign_task_T6": 151
+      },
+      "JOB_TERMINATED": {
+        "campaign_task_T1": 58,
+        "campaign_task_T2": 79,
+        "campaign_task_T3": 96,
+        "campaign_task_T4": 112,
+        "campaign_task_T5": 134,
+        "campaign_task_T6": 154
+      }
+    }
+  },
+  "AGGREGATION-W2": {
+    "first_submit_s": 41,
+    "first_execute_s": 47,
+    "last_terminated_s": 79,
+    "finish_s": 106,
+    "wait_to_first_job_s": 6,
+    "scientific_window_s": 32,
+    "after_last_job_s": 27,
+    "jobs": {
+      "SUBMIT": {
+        "campaign_task_T5": 41,
+        "campaign_task_T3": 41,
+        "campaign_task_T4": 41,
+        "campaign_task_T1": 41,
+        "campaign_task_T2": 41,
+        "campaign_task_T6": 71
+      },
+      "EXECUTE": {
+        "campaign_task_T5": 47,
+        "campaign_task_T3": 47,
+        "campaign_task_T4": 51,
+        "campaign_task_T1": 51,
+        "campaign_task_T2": 54,
+        "campaign_task_T6": 75
+      },
+      "JOB_TERMINATED": {
+        "campaign_task_T3": 51,
+        "campaign_task_T5": 51,
+        "campaign_task_T4": 54,
+        "campaign_task_T1": 54,
+        "campaign_task_T2": 58,
+        "campaign_task_T6": 79
+      }
+    }
+  },
+  "AGGREGATION-W4": {
+    "first_submit_s": 41,
+    "first_execute_s": 57,
+    "last_terminated_s": 85,
+    "finish_s": 111,
+    "wait_to_first_job_s": 16,
+    "scientific_window_s": 28,
+    "after_last_job_s": 26,
+    "jobs": {
+      "SUBMIT": {
+        "campaign_task_T5": 41,
+        "campaign_task_T3": 41,
+        "campaign_task_T4": 41,
+        "campaign_task_T1": 41,
+        "campaign_task_T2": 41,
+        "campaign_task_T6": 76
+      },
+      "EXECUTE": {
+        "campaign_task_T5": 57,
+        "campaign_task_T1": 57,
+        "campaign_task_T3": 58,
+        "campaign_task_T4": 58,
+        "campaign_task_T2": 61,
+        "campaign_task_T6": 81
+      },
+      "JOB_TERMINATED": {
+        "campaign_task_T5": 61,
+        "campaign_task_T4": 61,
+        "campaign_task_T1": 61,
+        "campaign_task_T3": 61,
+        "campaign_task_T2": 65,
+        "campaign_task_T6": 85
+      }
+    }
+  },
+  "DISTRIBUTION-W2": {
+    "first_submit_s": 41,
+    "first_execute_s": 59,
+    "last_terminated_s": 105,
+    "finish_s": 136,
+    "wait_to_first_job_s": 18,
+    "scientific_window_s": 46,
+    "after_last_job_s": 31,
+    "jobs": {
+      "SUBMIT": {
+        "campaign_task_T1": 41,
+        "campaign_task_T5": 81,
+        "campaign_task_T6": 81,
+        "campaign_task_T3": 81,
+        "campaign_task_T4": 81,
+        "campaign_task_T2": 81
+      },
+      "EXECUTE": {
+        "campaign_task_T1": 59,
+        "campaign_task_T5": 85,
+        "campaign_task_T6": 93,
+        "campaign_task_T3": 94,
+        "campaign_task_T4": 98,
+        "campaign_task_T2": 99
+      },
+      "JOB_TERMINATED": {
+        "campaign_task_T1": 66,
+        "campaign_task_T5": 93,
+        "campaign_task_T3": 98,
+        "campaign_task_T6": 99,
+        "campaign_task_T2": 102,
+        "campaign_task_T4": 105
+      }
+    }
+  },
+  "DISTRIBUTION-W4": {
+    "first_submit_s": 41,
+    "first_execute_s": 58,
+    "last_terminated_s": 101,
+    "finish_s": 131,
+    "wait_to_first_job_s": 17,
+    "scientific_window_s": 43,
+    "after_last_job_s": 30,
+    "jobs": {
+      "SUBMIT": {
+        "campaign_task_T1": 41,
+        "campaign_task_T5": 76,
+        "campaign_task_T6": 76,
+        "campaign_task_T3": 76,
+        "campaign_task_T4": 76,
+        "campaign_task_T2": 76
+      },
+      "EXECUTE": {
+        "campaign_task_T1": 58,
+        "campaign_task_T5": 80,
+        "campaign_task_T6": 84,
+        "campaign_task_T3": 88,
+        "campaign_task_T4": 94,
+        "campaign_task_T2": 97
+      },
+      "JOB_TERMINATED": {
+        "campaign_task_T1": 62,
+        "campaign_task_T5": 84,
+        "campaign_task_T6": 88,
+        "campaign_task_T3": 94,
+        "campaign_task_T4": 97,
+        "campaign_task_T2": 101
+      }
+    }
+  },
+  "REDISTRIBUTION-W2": {
+    "first_submit_s": 41,
+    "first_execute_s": 51,
+    "last_terminated_s": 124,
+    "finish_s": 151,
+    "wait_to_first_job_s": 10,
+    "scientific_window_s": 73,
+    "after_last_job_s": 27,
+    "jobs": {
+      "SUBMIT": {
+        "campaign_task_T1": 41,
+        "campaign_task_T2": 41,
+        "campaign_task_T3": 66,
+        "campaign_task_T4": 86,
+        "campaign_task_T5": 106,
+        "campaign_task_T6": 106
+      },
+      "EXECUTE": {
+        "campaign_task_T1": 51,
+        "campaign_task_T2": 51,
+        "campaign_task_T3": 67,
+        "campaign_task_T4": 88,
+        "campaign_task_T5": 112,
+        "campaign_task_T6": 118
+      },
+      "JOB_TERMINATED": {
+        "campaign_task_T1": 55,
+        "campaign_task_T2": 55,
+        "campaign_task_T3": 73,
+        "campaign_task_T4": 92,
+        "campaign_task_T5": 118,
+        "campaign_task_T6": 124
+      }
+    }
+  },
+  "REDISTRIBUTION-W4": {
+    "first_submit_s": 41,
+    "first_execute_s": 64,
+    "last_terminated_s": 135,
+    "finish_s": 162,
+    "wait_to_first_job_s": 23,
+    "scientific_window_s": 71,
+    "after_last_job_s": 27,
+    "jobs": {
+      "SUBMIT": {
+        "campaign_task_T1": 41,
+        "campaign_task_T2": 41,
+        "campaign_task_T3": 81,
+        "campaign_task_T4": 101,
+        "campaign_task_T5": 126,
+        "campaign_task_T6": 126
+      },
+      "EXECUTE": {
+        "campaign_task_T2": 64,
+        "campaign_task_T1": 64,
+        "campaign_task_T3": 84,
+        "campaign_task_T4": 106,
+        "campaign_task_T5": 127,
+        "campaign_task_T6": 131
+      },
+      "JOB_TERMINATED": {
+        "campaign_task_T1": 68,
+        "campaign_task_T2": 68,
+        "campaign_task_T3": 88,
+        "campaign_task_T4": 111,
+        "campaign_task_T5": 131,
+        "campaign_task_T6": 135
+      }
+    }
+  },
+  "M101-BASE": {
+    "first_submit_s": 41,
+    "first_execute_s": 66,
+    "last_terminated_s": 222,
+    "finish_s": 251,
+    "wait_to_first_job_s": 25,
+    "scientific_window_s": 156,
+    "after_last_job_s": 29,
+    "jobs": {
+      "SUBMIT": {
+        "campaign_task_P01": 41,
+        "campaign_task_P02": 41,
+        "campaign_task_P10": 41,
+        "campaign_task_P09": 41,
+        "campaign_task_P07": 41,
+        "campaign_task_P08": 41,
+        "campaign_task_P05": 41,
+        "campaign_task_P06": 41,
+        "campaign_task_P03": 41,
+        "campaign_task_P04": 41,
+        "campaign_task_TABLE": 196,
+        "campaign_task_ADD": 216
+      },
+      "EXECUTE": {
+        "campaign_task_P01": 66,
+        "campaign_task_P02": 78,
+        "campaign_task_P10": 89,
+        "campaign_task_P09": 100,
+        "campaign_task_P07": 111,
+        "campaign_task_P08": 124,
+        "campaign_task_P05": 135,
+        "campaign_task_P06": 146,
+        "campaign_task_P03": 158,
+        "campaign_task_P04": 171,
+        "campaign_task_TABLE": 202,
+        "campaign_task_ADD": 218
+      },
+      "JOB_TERMINATED": {
+        "campaign_task_P01": 78,
+        "campaign_task_P02": 89,
+        "campaign_task_P10": 100,
+        "campaign_task_P09": 111,
+        "campaign_task_P07": 124,
+        "campaign_task_P08": 135,
+        "campaign_task_P05": 146,
+        "campaign_task_P06": 158,
+        "campaign_task_P03": 170,
+        "campaign_task_P04": 183,
+        "campaign_task_TABLE": 205,
+        "campaign_task_ADD": 222
+      }
+    }
+  },
+  "M101-PROJ": {
+    "first_submit_s": 41,
+    "first_execute_s": 59,
+    "last_terminated_s": 229,
+    "finish_s": 256,
+    "wait_to_first_job_s": 18,
+    "scientific_window_s": 170,
+    "after_last_job_s": 27,
+    "jobs": {
+      "SUBMIT": {
+        "campaign_task_P10": 41,
+        "campaign_task_P09": 41,
+        "campaign_task_P07": 41,
+        "merge_group_1": 41,
+        "campaign_task_P08": 41,
+        "campaign_task_P05": 41,
+        "campaign_task_P06": 41,
+        "campaign_task_P03": 41,
+        "campaign_task_P04": 41,
+        "campaign_task_TABLE": 181,
+        "campaign_task_ADD": 216
+      },
+      "EXECUTE": {
+        "campaign_task_P10": 59,
+        "campaign_task_P09": 70,
+        "campaign_task_P07": 81,
+        "merge_group_1": 92,
+        "campaign_task_P08": 111,
+        "campaign_task_P05": 122,
+        "campaign_task_P06": 135,
+        "campaign_task_P03": 146,
+        "campaign_task_P04": 157,
+        "campaign_task_TABLE": 199,
+        "campaign_task_ADD": 221
+      },
+      "JOB_TERMINATED": {
+        "campaign_task_P10": 70,
+        "campaign_task_P09": 81,
+        "campaign_task_P07": 91,
+        "merge_group_1": 111,
+        "campaign_task_P08": 122,
+        "campaign_task_P05": 135,
+        "campaign_task_P06": 146,
+        "campaign_task_P03": 157,
+        "campaign_task_P04": 168,
+        "campaign_task_TABLE": 201,
+        "campaign_task_ADD": 229
+      }
+    }
+  },
+  "M101-FINAL": {
+    "first_submit_s": 41,
+    "first_execute_s": 48,
+    "last_terminated_s": 194,
+    "finish_s": 222,
+    "wait_to_first_job_s": 7,
+    "scientific_window_s": 146,
+    "after_last_job_s": 28,
+    "jobs": {
+      "SUBMIT": {
+        "campaign_task_P01": 41,
+        "campaign_task_P02": 41,
+        "campaign_task_P10": 41,
+        "campaign_task_P09": 41,
+        "campaign_task_P07": 41,
+        "campaign_task_P08": 42,
+        "campaign_task_P05": 42,
+        "campaign_task_P06": 42,
+        "campaign_task_P03": 42,
+        "campaign_task_P04": 42,
+        "merge_group_1": 172
+      },
+      "EXECUTE": {
+        "campaign_task_P01": 48,
+        "campaign_task_P02": 59,
+        "campaign_task_P10": 70,
+        "campaign_task_P09": 81,
+        "campaign_task_P07": 92,
+        "campaign_task_P08": 103,
+        "campaign_task_P05": 114,
+        "campaign_task_P06": 125,
+        "campaign_task_P03": 138,
+        "campaign_task_P04": 149,
+        "merge_group_1": 188
+      },
+      "JOB_TERMINATED": {
+        "campaign_task_P01": 59,
+        "campaign_task_P02": 70,
+        "campaign_task_P10": 81,
+        "campaign_task_P09": 92,
+        "campaign_task_P07": 102,
+        "campaign_task_P08": 113,
+        "campaign_task_P05": 125,
+        "campaign_task_P06": 138,
+        "campaign_task_P03": 149,
+        "campaign_task_P04": 160,
+        "merge_group_1": 194
+      }
+    }
+  }
+}

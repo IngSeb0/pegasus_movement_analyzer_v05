@@ -1,0 +1,13 @@
+[
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "campaign_task",
+   "id": 1,
+   "generate_checksum": true,
+   "src_urls": [
+     { "site_label": "local", "url": "file:///mnt/intensivo_20261122/contraste/cases/contraste-B1-REP/plans/REP/bin/campaign_task.py", "priority": 100 }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///mnt/intensivo_20261122/contraste/cases/contraste-B1-REP/plans/REP/scratch/dmeadmin/pegasus/dme-six-20261110-rep-r01/run0001/./campaign_task" }
+   ] }
+]

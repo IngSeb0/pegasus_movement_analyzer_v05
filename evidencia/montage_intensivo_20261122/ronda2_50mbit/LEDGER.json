@@ -1,0 +1,65 @@
+[
+  {
+    "id": "MG-BASE-PILOTO",
+    "uuid": "268f98fa-0bcc-4d06-bda4-5dfa2b9c5b17",
+    "condition": "MG-BASE",
+    "phase": "pilot",
+    "block": 0,
+    "submittedAtUtc": "2026-11-22T22:19:18.121733+00:00",
+    "sessionStart": "2026-11-22T22:07:55.9894649+00:00"
+  },
+  {
+    "id": "MG-BASE-B01",
+    "uuid": "d3a8fe9d-a961-4b7e-8868-a700e5bba51f",
+    "condition": "MG-BASE",
+    "phase": "main",
+    "block": 1,
+    "submittedAtUtc": "2026-11-22T22:43:37.032115+00:00",
+    "sessionStart": "2026-11-22T22:07:55.9894649+00:00"
+  },
+  {
+    "id": "MG-FINAL-B01",
+    "uuid": "963e00ef-62ae-46f0-8ed0-044b647410a0",
+    "condition": "MG-FINAL",
+    "phase": "main",
+    "block": 1,
+    "submittedAtUtc": "2026-11-22T23:07:56.138883+00:00",
+    "sessionStart": "2026-11-22T22:07:55.9894649+00:00"
+  },
+  {
+    "id": "MG-FINAL-B02",
+    "uuid": "4508b59a-e329-4695-b68f-160ddf5ec990",
+    "condition": "MG-FINAL",
+    "phase": "main",
+    "block": 2,
+    "submittedAtUtc": "2026-11-22T23:30:22.898840+00:00",
+    "sessionStart": "2026-11-22T22:07:55.9894649+00:00"
+  },
+  {
+    "id": "MG-BASE-B02",
+    "uuid": "0baf68c0-9afe-4c1f-bf92-6450633b3b89",
+    "condition": "MG-BASE",
+    "phase": "main",
+    "block": 2,
+    "submittedAtUtc": "2026-11-22T23:53:51.756838+00:00",
+    "sessionStart": "2026-11-22T22:07:55.9894649+00:00"
+  },
+  {
+    "id": "MG-BASE-B03",
+    "uuid": "ac423427-e47c-478f-9cbc-5c0df33bae43",
+    "condition": "MG-BASE",
+    "phase": "main",
+    "block": 3,
+    "submittedAtUtc": "2026-11-23T00:19:04.670222+00:00",
+    "sessionStart": "2026-11-22T22:07:55.9894649+00:00"
+  },
+  {
+    "id": "MG-FINAL-B03",
+    "uuid": "fb0a7fa6-6f20-42a5-b2ad-a416acc204c6",
+    "condition": "MG-FINAL",
+    "phase": "main",
+    "block": 3,
+    "submittedAtUtc": "2026-11-23T00:44:14.569399+00:00",
+    "sessionStart": "2026-11-22T22:07:55.9894649+00:00"
+  }
+]

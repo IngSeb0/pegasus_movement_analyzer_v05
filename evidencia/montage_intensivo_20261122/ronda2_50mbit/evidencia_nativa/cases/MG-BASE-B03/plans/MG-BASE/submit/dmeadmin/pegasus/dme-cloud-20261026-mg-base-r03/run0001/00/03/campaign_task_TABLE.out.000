@@ -1,0 +1,1243 @@
+- invocation: True
+  version: 3.0
+  start: 2026-11-23T00:35:35.390+00:00
+  duration: 1.310
+  transformation: "campaign_task"
+  derivation: "TABLE"
+  resource: "condorpool"
+  wf-label: "dme-cloud-20261026-mg-base-r03"
+  wf-stamp: "2026-11-23T00:18:57+00:00"
+  interface: eth0
+  hostaddr: 10.42.1.4
+  hostname: dme-worker1
+  pid: 9710
+  uid: 65534
+  user: nobody
+  gid: 65534
+  group: nogroup
+  umask: 0o0022
+  mainjob:
+    start: 2026-11-23T00:35:35.396+00:00
+    duration: 1.305
+    pid: 9711
+    usage:
+      utime: 0.957
+      stime: 0.044
+      maxrss: 45452
+      minflt: 10572
+      majflt: 0
+      nswap: 0
+      inblock: 32
+      outblock: 39240
+      msgsnd: 0
+      msgrcv: 0
+      nsignals: 0
+      nvcsw: 36
+      nivcsw: 45
+    status:
+      raw: 0
+      regular_exitcode: 0
+    executable:
+      file_name: /var/lib/condor/execute/dir_9127/scratch/campaign_task
+      mode: 0o100755
+      size: 8575350
+      inode: 787563
+      nlink: 1
+      blksize: 4096
+      blocks: 16752
+      mtime: 2026-11-23T00:34:39+00:00
+      atime: 2026-11-23T00:35:33+00:00
+      ctime: 2026-11-23T00:35:31+00:00
+      uid: 65534
+      user: nobody
+      gid: 65534
+      group: nogroup
+    argument_vector:
+      - "--task-id"
+      - "TABLE"
+      - "--input"
+      - "p01.fits"
+      - "4334400"
+      - "--input"
+      - "p02.fits"
+      - "4325760"
+      - "--input"
+      - "p03.fits"
+      - "3481920"
+      - "--input"
+      - "p04.fits"
+      - "4302720"
+      - "--input"
+      - "p05.fits"
+      - "4302720"
+      - "--input"
+      - "p06.fits"
+      - "4331520"
+      - "--input"
+      - "p07.fits"
+      - "4317120"
+      - "--input"
+      - "p08.fits"
+      - "3473280"
+      - "--input"
+      - "p09.fits"
+      - "4400640"
+      - "--input"
+      - "p10.fits"
+      - "4406400"
+      - "--input"
+      - "p11.fits"
+      - "4412160"
+      - "--input"
+      - "p12.fits"
+      - "4412160"
+      - "--input"
+      - "p13.fits"
+      - "4409280"
+      - "--input"
+      - "p14.fits"
+      - "3551040"
+      - "--input"
+      - "p15.fits"
+      - "4374720"
+      - "--input"
+      - "p16.fits"
+      - "4374720"
+      - "--input"
+      - "p17.fits"
+      - "4374720"
+      - "--input"
+      - "p18.fits"
+      - "4374720"
+      - "--input"
+      - "p19.fits"
+      - "4368960"
+      - "--input"
+      - "p20.fits"
+      - "4360320"
+      - "--input"
+      - "p21.fits"
+      - "4345920"
+      - "--input"
+      - "p22.fits"
+      - "4345920"
+      - "--input"
+      - "p23.fits"
+      - "4334400"
+      - "--input"
+      - "p24.fits"
+      - "4340160"
+      - "--input"
+      - "p25.fits"
+      - "4331520"
+      - "--input"
+      - "p26.fits"
+      - "3507840"
+      - "--input"
+      - "p27.fits"
+      - "4325760"
+      - "--input"
+      - "p28.fits"
+      - "4314240"
+      - "--input"
+      - "p29.fits"
+      - "4322880"
+      - "--input"
+      - "p30.fits"
+      - "4314240"
+      - "--input"
+      - "p31.fits"
+      - "4322880"
+      - "--input"
+      - "p32.fits"
+      - "4331520"
+      - "--input"
+      - "p33.fits"
+      - "4285440"
+      - "--input"
+      - "p34.fits"
+      - "4285440"
+      - "--input"
+      - "p35.fits"
+      - "4288320"
+      - "--input"
+      - "p36.fits"
+      - "4279680"
+      - "--input"
+      - "p37.fits"
+      - "4279680"
+      - "--input"
+      - "p38.fits"
+      - "3453120"
+      - "--input"
+      - "p39.fits"
+      - "4265280"
+      - "--input"
+      - "p40.fits"
+      - "4273920"
+      - "--input"
+      - "p41.fits"
+      - "4256640"
+      - "--input"
+      - "p42.fits"
+      - "4256640"
+      - "--input"
+      - "p43.fits"
+      - "4265280"
+      - "--input"
+      - "p44.fits"
+      - "4265280"
+      - "--input"
+      - "p45.fits"
+      - "4222080"
+      - "--input"
+      - "p46.fits"
+      - "4219200"
+      - "--input"
+      - "p47.fits"
+      - "4219200"
+      - "--input"
+      - "p48.fits"
+      - "4227840"
+      - "--input"
+      - "p49.fits"
+      - "4227840"
+      - "--input"
+      - "p50.fits"
+      - "3424320"
+      - "--input"
+      - "p51.fits"
+      - "4207680"
+      - "--input"
+      - "p52.fits"
+      - "4199040"
+      - "--input"
+      - "p53.fits"
+      - "4199040"
+      - "--input"
+      - "p54.fits"
+      - "4199040"
+      - "--input"
+      - "p55.fits"
+      - "4199040"
+      - "--input"
+      - "p56.fits"
+      - "4199040"
+      - "--input"
+      - "p57.fits"
+      - "4178880"
+      - "--input"
+      - "p58.fits"
+      - "4181760"
+      - "--input"
+      - "p59.fits"
+      - "4190400"
+      - "--input"
+      - "p60.fits"
+      - "4181760"
+      - "--input"
+      - "p61.fits"
+      - "4181760"
+      - "--input"
+      - "p62.fits"
+      - "3372480"
+      - "--input"
+      - "p63.fits"
+      - "4210560"
+      - "--input"
+      - "p64.fits"
+      - "4201920"
+      - "--input"
+      - "p65.fits"
+      - "4210560"
+      - "--input"
+      - "p66.fits"
+      - "4201920"
+      - "--input"
+      - "p67.fits"
+      - "4210560"
+      - "--input"
+      - "p68.fits"
+      - "4210560"
+      - "--input"
+      - "p69.fits"
+      - "4227840"
+      - "--input"
+      - "p70.fits"
+      - "4230720"
+      - "--input"
+      - "p71.fits"
+      - "4239360"
+      - "--input"
+      - "p72.fits"
+      - "4248000"
+      - "--input"
+      - "p73.fits"
+      - "4222080"
+      - "--input"
+      - "p74.fits"
+      - "3409920"
+      - "--input"
+      - "p75.fits"
+      - "4259520"
+      - "--input"
+      - "p76.fits"
+      - "4259520"
+      - "--input"
+      - "p77.fits"
+      - "4268160"
+      - "--input"
+      - "p78.fits"
+      - "4265280"
+      - "--input"
+      - "p79.fits"
+      - "4259520"
+      - "--input"
+      - "p80.fits"
+      - "4273920"
+      - "--input"
+      - "p81.fits"
+      - "4288320"
+      - "--input"
+      - "p82.fits"
+      - "4294080"
+      - "--input"
+      - "p83.fits"
+      - "4302720"
+      - "--input"
+      - "p84.fits"
+      - "4294080"
+      - "--input"
+      - "p85.fits"
+      - "4294080"
+      - "--input"
+      - "p86.fits"
+      - "3464640"
+      - "--input"
+      - "p87.fits"
+      - "4314240"
+      - "--input"
+      - "p88.fits"
+      - "4314240"
+      - "--input"
+      - "p89.fits"
+      - "4314240"
+      - "--input"
+      - "p90.fits"
+      - "4322880"
+      - "--input"
+      - "p91.fits"
+      - "4322880"
+      - "--input"
+      - "p92.fits"
+      - "4314240"
+      - "--input"
+      - "p93.fits"
+      - "4360320"
+      - "--input"
+      - "p94.fits"
+      - "4351680"
+      - "--input"
+      - "p95.fits"
+      - "4345920"
+      - "--input"
+      - "p96.fits"
+      - "4345920"
+      - "--input"
+      - "p97.fits"
+      - "4343040"
+      - "--input"
+      - "p98.fits"
+      - "3507840"
+      - "--input"
+      - "p99.fits"
+      - "4392000"
+      - "--input"
+      - "p100.fits"
+      - "4392000"
+      - "--input"
+      - "p101.fits"
+      - "4383360"
+      - "--input"
+      - "p102.fits"
+      - "4392000"
+      - "--input"
+      - "p103.fits"
+      - "4392000"
+      - "--input"
+      - "p104.fits"
+      - "4383360"
+      - "--input"
+      - "p105.fits"
+      - "4417920"
+      - "--input"
+      - "p106.fits"
+      - "4409280"
+      - "--input"
+      - "p107.fits"
+      - "4417920"
+      - "--input"
+      - "p108.fits"
+      - "4426560"
+      - "--input"
+      - "p109.fits"
+      - "4409280"
+      - "--input"
+      - "p110.fits"
+      - "3551040"
+      - "--input"
+      - "p111.fits"
+      - "4334400"
+      - "--input"
+      - "p112.fits"
+      - "4345920"
+      - "--input"
+      - "p113.fits"
+      - "4380480"
+      - "--input"
+      - "p114.fits"
+      - "4389120"
+      - "--input"
+      - "p115.fits"
+      - "4325760"
+      - "--input"
+      - "p116.fits"
+      - "4302720"
+      - "--input"
+      - "p117.fits"
+      - "3484800"
+      - "--input"
+      - "p118.fits"
+      - "4279680"
+      - "--input"
+      - "p119.fits"
+      - "4285440"
+      - "--input"
+      - "p120.fits"
+      - "4259520"
+      - "--input"
+      - "p121.fits"
+      - "4259520"
+      - "--input"
+      - "p122.fits"
+      - "3444480"
+      - "--input"
+      - "p123.fits"
+      - "4239360"
+      - "--input"
+      - "p124.fits"
+      - "4239360"
+      - "--input"
+      - "p125.fits"
+      - "4409280"
+      - "--input"
+      - "p126.fits"
+      - "4389120"
+      - "--input"
+      - "p127.fits"
+      - "3510720"
+      - "--input"
+      - "p128.fits"
+      - "4201920"
+      - "--input"
+      - "p129.fits"
+      - "4210560"
+      - "--input"
+      - "p130.fits"
+      - "4178880"
+      - "--input"
+      - "p131.fits"
+      - "4190400"
+      - "--input"
+      - "p132.fits"
+      - "3381120"
+      - "--input"
+      - "p133.fits"
+      - "4178880"
+      - "--input"
+      - "p134.fits"
+      - "4178880"
+      - "--input"
+      - "p135.fits"
+      - "4210560"
+      - "--input"
+      - "p136.fits"
+      - "4210560"
+      - "--input"
+      - "p137.fits"
+      - "3389760"
+      - "--input"
+      - "p138.fits"
+      - "4230720"
+      - "--input"
+      - "p139.fits"
+      - "4230720"
+      - "--input"
+      - "p140.fits"
+      - "4268160"
+      - "--input"
+      - "p141.fits"
+      - "4256640"
+      - "--input"
+      - "p142.fits"
+      - "3438720"
+      - "--input"
+      - "p143.fits"
+      - "4279680"
+      - "--input"
+      - "p144.fits"
+      - "4288320"
+      - "--input"
+      - "p145.fits"
+      - "4322880"
+      - "--input"
+      - "p146.fits"
+      - "4317120"
+      - "--input"
+      - "p147.fits"
+      - "3456000"
+      - "--output"
+      - "images.tbl"
+      - "77947"
+    procs:
+  jobids:
+    condor: 5048.0
+  cwd: /var/lib/condor/execute/dir_9127/scratch
+  usage:
+    utime: 0.002
+    stime: 0.004
+    maxrss: 2984
+    minflt: 153
+    majflt: 0
+    nswap: 0
+    inblock: 0
+    outblock: 0
+    msgsnd: 0
+    msgrcv: 0
+    nsignals: 0
+    nvcsw: 1
+    nivcsw: 2
+  machine:
+    page-size: 4096
+    uname_system: linux
+    uname_nodename: dme-worker1
+    uname_release: 7.0.0-1020-azure
+    uname_machine: x86_64
+    ram_total: 3489540
+    ram_free: 1675480
+    ram_shared: 4172
+    ram_buffer: 29948
+    swap_total: 0
+    swap_free: 0
+    cpu_count: 1
+    cpu_speed: 2793
+    cpu_vendor: GenuineIntel
+    cpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz
+    load_min1: 0.63
+    load_min5: 0.25
+    load_min15: 0.14
+    procs_total: 126
+    procs_running: 1
+    procs_sleeping: 64
+    procs_other: 61
+    procs_vmsize: 3060768
+    procs_rss: 422968
+    task_total: 155
+    task_running: 1
+    task_sleeping: 93
+    task_other: 61
+  files:
+    images.tbl:
+      lfn: "images.tbl"
+      file_name: /var/lib/condor/execute/dir_9127/scratch/images.tbl
+      mode: 0o100644
+      size: 77947
+      inode: 792425
+      nlink: 1
+      blksize: 4096
+      blocks: 160
+      mtime: 2026-11-23T00:35:36+00:00
+      atime: 2026-11-23T00:35:36+00:00
+      ctime: 2026-11-23T00:35:36+00:00
+      uid: 65534
+      user: nobody
+      gid: 65534
+      group: nogroup
+      output: True
+      sha256: 2c800d4e5bb138054c1e713aabe30bf3b7b95c9f525ed878a466f408a91e5ed9
+      checksum_timing: 0.00
+    stdin:
+      file_name: /dev/null
+      mode: 0o20666
+      size: 0
+      inode: 5
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-11-22T22:08:21+00:00
+      atime: 2026-11-22T22:08:21+00:00
+      ctime: 2026-11-22T22:08:21+00:00
+      uid: 0
+      user: root
+      gid: 0
+      group: root
+    stdout:
+      temporary_name: /tmp/ks.out.JXFJiF
+      descriptor: 3
+      mode: 0o100600
+      size: 220
+      inode: 792252
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2026-11-23T00:35:36+00:00
+      atime: 2026-11-23T00:35:35+00:00
+      ctime: 2026-11-23T00:35:36+00:00
+      uid: 65534
+      user: nobody
+      gid: 65534
+      group: nogroup
+      data_truncated: false
+      data: |
+        {"task": "TABLE", "artifacts": [{"file": "images.tbl", "bytes": 77947, "sha256": "2c800d4e5bb138054c1e713aabe30bf3b7b95c9f525ed878a466f408a91e5ed9"}], "montage": {"status": "0", "count": 147, "badfits": 0, "badwcs": 0}}
+        
+    stderr:
+      temporary_name: /tmp/ks.err.50g51j
+      descriptor: 4
+      mode: 0o100600
+      size: 0
+      inode: 792253
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-11-23T00:35:35+00:00
+      atime: 2026-11-23T00:35:35+00:00
+      ctime: 2026-11-23T00:35:35+00:00
+      uid: 65534
+      user: nobody
+      gid: 65534
+      group: nogroup
+    metadata:
+      temporary_name: /tmp/ks.meta.3LiuX5
+      descriptor: 5
+      mode: 0o100600
+      size: 0
+      inode: 792254
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-11-23T00:35:35+00:00
+      atime: 2026-11-23T00:35:35+00:00
+      ctime: 2026-11-23T00:35:35+00:00
+      uid: 65534
+      user: nobody
+      gid: 65534
+      group: nogroup
+
+---------------pegasus-multipart
+- integrity_verification_attempts:
+  - lfn: "p128.fits"
+    pfn: "p128.fits"
+    sha256: 948621040f1dc8c1ac762b4ada09a22d16139ee5c8f410ace2645cddc54b2051
+    success: True
+  - lfn: "p75.fits"
+    pfn: "p75.fits"
+    sha256: 142ab4d6012f90c8b767c5d201a952ac66dbbb1a97d7eee13512b1157fcf031d
+    success: True
+  - lfn: "p30.fits"
+    pfn: "p30.fits"
+    sha256: 3591c9533882f5ab52bf0aef69568f1db2ebb63640bcb7dd6242f44281ebef61
+    success: True
+  - lfn: "p89.fits"
+    pfn: "p89.fits"
+    sha256: 6b4ebc7012d3ac5d3943ff6fea69530f5ab0abbc2fa88965139fd3a0242d2486
+    success: True
+  - lfn: "p114.fits"
+    pfn: "p114.fits"
+    sha256: 2130f6e146174cdc0735915370e915705db90c441b0174709494c828cb47c69a
+    success: True
+  - lfn: "p58.fits"
+    pfn: "p58.fits"
+    sha256: b11a3fd5ed6b7d4b989d656597ab9d6c6f9a89250f4a94ac5388c11954f9b42d
+    success: True
+  - lfn: "p13.fits"
+    pfn: "p13.fits"
+    sha256: d05267178e415b1980bebe8de1851eba09b22b4a42006bf25a347ae0bbb6bd77
+    success: True
+  - lfn: "p131.fits"
+    pfn: "p131.fits"
+    sha256: ab651ac7b4f22e0a0c34c1fe0c22cab4517ce8e4ec89926b7996e65586ba93c7
+    success: True
+  - lfn: "p61.fits"
+    pfn: "p61.fits"
+    sha256: 08a6b1390dfaa7be768f53c002a005e000f147cd6acc7a396602474152bd7be2
+    success: True
+  - lfn: "p144.fits"
+    pfn: "p144.fits"
+    sha256: 28b3389e1318bc52bcd3f3af412b2404c40e219457e44e28f307c0f3d5d1be69
+    success: True
+  - lfn: "p31.fits"
+    pfn: "p31.fits"
+    sha256: 121038339e956b5df28ac57d24ad47c8e55a0c83c7678aa6ad3ea7a86147ffe6
+    success: True
+  - lfn: "p129.fits"
+    pfn: "p129.fits"
+    sha256: 95c81a9c97ca17dd6dfff293231d3a2c396f23645648c4d3dd6b19976e6d1178
+    success: True
+  - lfn: "p27.fits"
+    pfn: "p27.fits"
+    sha256: 4882c22faad4c6d8333a28e63949d823709562321feb265cf7b422d16044f48b
+    success: True
+  - lfn: "p92.fits"
+    pfn: "p92.fits"
+    sha256: 75261f204e16a87b875d48c896a6b9ad4edea44c661bd3ec24886e073a5c02be
+    success: True
+  - lfn: "p145.fits"
+    pfn: "p145.fits"
+    sha256: 377921da73069e596af3989072533f1b75fcbd77c4628bcbd6208e51069870ca
+    success: True
+  - lfn: "p76.fits"
+    pfn: "p76.fits"
+    sha256: b8542db61b76b306656c237b87d75ef68cf134ecf9cba8afb8475c973e9ec830
+    success: True
+  - lfn: "p100.fits"
+    pfn: "p100.fits"
+    sha256: ead4b4e8488093902b217607a16c22970ca6ed4f58eb3e947ba750db18ecc260
+    success: True
+  - lfn: "p62.fits"
+    pfn: "p62.fits"
+    sha256: 1249a77312d0c266e80b14bac6d0d51f86165f8f4bf2fdaa144501aff30eeabb
+    success: True
+  - lfn: "p130.fits"
+    pfn: "p130.fits"
+    sha256: 9a314f729ce45a282e3af6a8bf05bc85dc57fc9130f3afdc3407ebedfb09a2da
+    success: True
+  - lfn: "p57.fits"
+    pfn: "p57.fits"
+    sha256: 13d8b38e40fe129580ed5187aeeed19092f7c7c89073d16b1ef2ee9fddc6dfe1
+    success: True
+  - lfn: "p12.fits"
+    pfn: "p12.fits"
+    sha256: 20509265ee644350a2089c360729e6453b4a0dfc2f88c84df9fe32ec60232240
+    success: True
+  - lfn: "p146.fits"
+    pfn: "p146.fits"
+    sha256: 6a24dfcc732be3ee1f745c5ed7c70f7008d04add1f77991c2faf29550cb985c7
+    success: True
+  - lfn: "p132.fits"
+    pfn: "p132.fits"
+    sha256: 02a2b48466134259983808b807df4a1fcdbbc0a8e13f57e974eb026bd0cee266
+    success: True
+  - lfn: "p15.fits"
+    pfn: "p15.fits"
+    sha256: 9716d1526b748e7b33a261e0ed749e49e954ab71b0b0a7504ef617318ffe5e4e
+    success: True
+  - lfn: "p26.fits"
+    pfn: "p26.fits"
+    sha256: 05fab21ea8294b04dcde65fc79f0bb3e6a27f9acd4a756955fb8c51dc24544f0
+    success: True
+  - lfn: "p43.fits"
+    pfn: "p43.fits"
+    sha256: b0ec2007451e8e8b9faf128d556688d776fb41a292abb16032a37fcc9bd40ed8
+    success: True
+  - lfn: "p32.fits"
+    pfn: "p32.fits"
+    sha256: 30db0173ae76a3d9cdf00f4edecd02e9b1b52c1bc81b6b165d7c2adc227676c5
+    success: True
+  - lfn: "p29.fits"
+    pfn: "p29.fits"
+    sha256: 281e2e166f99763381f85d12bc2bf63bd90c5e97a926633d859c38d1226a7eaf
+    success: True
+  - lfn: "p45.fits"
+    pfn: "p45.fits"
+    sha256: 5f9e9afcabe69269f6860e8f8214f25b4e621039f425c406d0b5f50d0663b8fa
+    success: True
+  - lfn: "p102.fits"
+    pfn: "p102.fits"
+    sha256: 5e70502f4a9810698aec24610af5196a67477b0c8d3007ac2dcd97278aed2950
+    success: True
+  - lfn: "p116.fits"
+    pfn: "p116.fits"
+    sha256: 95bde8e4a0e6f476e50ee0fbe8c08bb6aa947b6f7bfac783e67abea35432563a
+    success: True
+  - lfn: "p91.fits"
+    pfn: "p91.fits"
+    sha256: 12824b7ef529062b27a16e2c4926d74e07ecec6f3d83c2c5e6a3c28e6f15bf74
+    success: True
+  - lfn: "p56.fits"
+    pfn: "p56.fits"
+    sha256: 67cb591b4e75058f3a3576c2fb9d19a9f703752d01d124be39692f1e4ca8d111
+    success: True
+  - lfn: "p59.fits"
+    pfn: "p59.fits"
+    sha256: 958462648ebe0b36138916dd1f7bca9832c21f344fb1a23a2e16b67d78ca7557
+    success: True
+  - lfn: "p113.fits"
+    pfn: "p113.fits"
+    sha256: 85330bdcf650c70030cf968f591eecc60fe9a35ed04d34e4da51037dba5f2fa7
+    success: True
+  - lfn: "p143.fits"
+    pfn: "p143.fits"
+    sha256: 20afcb2bafc26e45a3a23143148d7796ab440e1e2265a2bf382bd92b7e75f8be
+    success: True
+  - lfn: "p127.fits"
+    pfn: "p127.fits"
+    sha256: 48a6fafc3510012ec8f32eb1a5aa5ffeee2f03691eb8d7088c2283d8bc6cfdab
+    success: True
+  - lfn: "p94.fits"
+    pfn: "p94.fits"
+    sha256: 7efaf38d8de802013711aef60b0bbf786d10b97b1cbaf05fee4f55b95f77e215
+    success: True
+  - lfn: "p72.fits"
+    pfn: "p72.fits"
+    sha256: 9ac6f29aa92ab68ea71dfdfa3021f8fa8291a1c03c2f8fd4a853aa47f425dda1
+    success: True
+  - lfn: "p125.fits"
+    pfn: "p125.fits"
+    sha256: 7b49a0ed650852f5ef55eb30551e10fedd40912c6e05fe76774964672d794d1a
+    success: True
+  - lfn: "p47.fits"
+    pfn: "p47.fits"
+    sha256: 2962c062f8fe1aa654accce0c7a9014880d1d3fadf837fa6000a8d4f030c48ae
+    success: True
+  - lfn: "p16.fits"
+    pfn: "p16.fits"
+    sha256: 312c9dec5fc7f5b196ab2b3595bf2ae780bedc6f06a7440f7e1d88dcb8c17f91
+    success: True
+  - lfn: "p95.fits"
+    pfn: "p95.fits"
+    sha256: 8e8ba64d3e2b7fd38c757f859fcc5284193c957850b34a98e3ea13c54818dff6
+    success: True
+  - lfn: "p50.fits"
+    pfn: "p50.fits"
+    sha256: f6d1658219864f4f65830f4683b03694f9373830c8fb34322c8b3849675bbc6d
+    success: True
+  - lfn: "p147.fits"
+    pfn: "p147.fits"
+    sha256: 25ff14c7204132c56aec63ffdf287e90639c320b108d03855b4c1f75047dc8da
+    success: True
+  - lfn: "p69.fits"
+    pfn: "p69.fits"
+    sha256: a9695a6e59c4f5ea7b837a501c481e50a063eaa959a2f5592acad42cc0eac0f8
+    success: True
+  - lfn: "p141.fits"
+    pfn: "p141.fits"
+    sha256: 7b9f278ef4a7e096f88859abad64b56bf2c91f3c4198ebe18f128221e177a76d
+    success: True
+  - lfn: "p38.fits"
+    pfn: "p38.fits"
+    sha256: 8e0621fb73f6dfed981375124d0cbfb4819931f73cf0fe97350645dbd7c488f1
+    success: True
+  - lfn: "p134.fits"
+    pfn: "p134.fits"
+    sha256: ef4db9a13155ef99048026bfb93d0dcd5031eb763d73af8c94fba08cd1a7e6f8
+    success: True
+  - lfn: "p109.fits"
+    pfn: "p109.fits"
+    sha256: 295493fb8df7e3e7feff94c4d8eb8814a62e34212f629af3c1e222446a892472
+    success: True
+  - lfn: "p103.fits"
+    pfn: "p103.fits"
+    sha256: b59111426a9da320048a2d373ba2e061be230dde13bce32f99716e634165cd38
+    success: True
+  - lfn: "p73.fits"
+    pfn: "p73.fits"
+    sha256: ac2bd0792eb7cbe49c25d4205a730f34a93a85f2e80659529a12939e2388a1b8
+    success: True
+  - lfn: "p79.fits"
+    pfn: "p79.fits"
+    sha256: 0272e006534d561028f52212cc1e16a3b24ae6f788b80fdf66cf37a3c59ee206
+    success: True
+  - lfn: "p88.fits"
+    pfn: "p88.fits"
+    sha256: 6d4d036c86569d1aa6fdec0ab066f3cbbd3e6204afc3720cbc445d5dbbc67f83
+    success: True
+  - lfn: "p85.fits"
+    pfn: "p85.fits"
+    sha256: d06e4192e029f69bc195fd823f7c2f1268accd1e341febcabf682d5ad9b3c020
+    success: True
+  - lfn: "p118.fits"
+    pfn: "p118.fits"
+    sha256: f20b981b0ef78c87535d282488be4f9b5f035525ee672eccc0e4682901947764
+    success: True
+  - lfn: "p112.fits"
+    pfn: "p112.fits"
+    sha256: 45aebff0227dbd9b0f3d1628702445e069d97cd1ee5b8971979fb2924d4fbefd
+    success: True
+  - lfn: "p82.fits"
+    pfn: "p82.fits"
+    sha256: 2a515debd90d95d87bafef2659f7c7ca45c89bc16943cf6325bcd2369fa49ae4
+    success: True
+  - lfn: "p115.fits"
+    pfn: "p115.fits"
+    sha256: 4f195e1c7d44febd21acf1e15affcae3d7ce6eddd14f90bc7c5366f6329a7cc2
+    success: True
+  - lfn: "p63.fits"
+    pfn: "p63.fits"
+    sha256: d0e4570f3a068357557c44087fefe23474500a6270f12b2819594dfa5dfd2cb5
+    success: True
+  - lfn: "p66.fits"
+    pfn: "p66.fits"
+    sha256: 2d9da0cd3ee4aad9a9fb753b209e2df403f405de40ff2bfda40c796313b0b2e5
+    success: True
+  - lfn: "p60.fits"
+    pfn: "p60.fits"
+    sha256: aa8e61a1ce8a699061cff87a1d266fb48a316592e124855de4da2cd47c7a1609
+    success: True
+  - lfn: "p03.fits"
+    pfn: "p03.fits"
+    sha256: c97307055a15728353160255aae4438aad115c61ccdbe0705be57d7165cb8463
+    success: True
+  - lfn: "p06.fits"
+    pfn: "p06.fits"
+    sha256: d1a72a7659ba0dac06bd099aaa22e41723f83fe42f8ea3812d23954da07805ac
+    success: True
+  - lfn: "p28.fits"
+    pfn: "p28.fits"
+    sha256: 2469adfae6b7c26eb398c1137759440c1194e441e03028504a23530a06e4d14f
+    success: True
+  - lfn: "p25.fits"
+    pfn: "p25.fits"
+    sha256: a3be2c5178bf9ec9cccb934af50da74586b258b7477b179a8961c1c2aae12bbb
+    success: True
+  - lfn: "p44.fits"
+    pfn: "p44.fits"
+    sha256: 520148b2d131e9bb8656214f0d6ed2aba3822b632da362b8d8c34a4c02e71a57
+    success: True
+  - lfn: "p09.fits"
+    pfn: "p09.fits"
+    sha256: 70472a18e0445779ccbdb7dafd5b67a39dd72612ebd27fa69c656d9b1c25a3ed
+    success: True
+  - lfn: "p41.fits"
+    pfn: "p41.fits"
+    sha256: 61d1bcc3153c0749b4893fb7153edf742467970f79ea689f3150f90bb16f705a
+    success: True
+  - lfn: "p36.fits"
+    pfn: "p36.fits"
+    sha256: 1cb307b6202c23c936fd458f555352ea88f95731ffad0bab670456aaf9f2c1ce
+    success: True
+  - lfn: "p122.fits"
+    pfn: "p122.fits"
+    sha256: 793c88efa4bdfe96812e0258ad1422c5b38c88d11eef2e5a6bb9bdc4257d5a6e
+    success: True
+  - lfn: "p22.fits"
+    pfn: "p22.fits"
+    sha256: b6f37d4702c78a65946ce9c9c80d26a1583f6cc79c11d895e3b92bd80c21880e
+    success: True
+  - lfn: "p136.fits"
+    pfn: "p136.fits"
+    sha256: e11ab1ac05d1bedbf4f23d1b9783cd1659d1aa9543ea9fdaa98541ecbe161e42
+    success: True
+  - lfn: "p19.fits"
+    pfn: "p19.fits"
+    sha256: 5aa436d4fd918cd9503de920bc99d053df179e94e734057b9e14d9cbeb9a1273
+    success: True
+  - lfn: "p05.fits"
+    pfn: "p05.fits"
+    sha256: cab76eb0fb84129cd759aa8915e16a281c8313b8f703e152024a9408ec623be6
+    success: True
+  - lfn: "p53.fits"
+    pfn: "p53.fits"
+    sha256: 1640a683a4beec4ccd851dcf4b47ab9667c794f71838c7881135218e347ebc69
+    success: True
+  - lfn: "p98.fits"
+    pfn: "p98.fits"
+    sha256: b99b57baa1d19999ce0cb0aa2ff2269ef211d73ab080ba95bea5b69cc90b9679
+    success: True
+  - lfn: "p84.fits"
+    pfn: "p84.fits"
+    sha256: 0843781af618bc423607cb36c54990f2b304193bdf406eb00595c6b7915f9d83
+    success: True
+  - lfn: "p137.fits"
+    pfn: "p137.fits"
+    sha256: 0320ffd768eb89e550eedea747e651585b3caac9d8eace3c0c96374443278964
+    success: True
+  - lfn: "p35.fits"
+    pfn: "p35.fits"
+    sha256: 98304284f15015b31a8da4539c6743c1152a5339609bc77bfb27743c1aa49838
+    success: True
+  - lfn: "campaign_task"
+    pfn: "campaign_task"
+    sha256: 8d69de086d6005ad0f63f96568bfd4092398413953f1adbd2a9ed69d4c522f58
+    success: True
+  - lfn: "p106.fits"
+    pfn: "p106.fits"
+    sha256: cd7aaecbdf962f3339c1bb9bd7f5fde03d19b4fa817a494b1630829b72d5436a
+    success: True
+  - lfn: "p70.fits"
+    pfn: "p70.fits"
+    sha256: 26d7dd1cb8c8a4c906c9d3c8f4e1f2b111ecc3cf9e9c22a8d2902df7372e494d
+    success: True
+  - lfn: "p04.fits"
+    pfn: "p04.fits"
+    sha256: b6644236330c947f716322725e1fabe520dcf4653e5c3551c29fb96c16f48809
+    success: True
+  - lfn: "p49.fits"
+    pfn: "p49.fits"
+    sha256: 22521fef6cea1992a2707cf4f9a6a36f8190a258715338d77d7585bb12681ba5
+    success: True
+  - lfn: "p54.fits"
+    pfn: "p54.fits"
+    sha256: b384a7e7f5e4d13563fec6142758526c57e38a7bd8f2739b5b2d06ea11b5670d
+    success: True
+  - lfn: "p18.fits"
+    pfn: "p18.fits"
+    sha256: 0da43e87aab458410403ee32bebb5b0458c9ea05c3f2e0734a75db909feb8769
+    success: True
+  - lfn: "p138.fits"
+    pfn: "p138.fits"
+    sha256: c221dc5c36573fcec0a43daa64b960b15329aacc42e4bb2a7646d5366c063214
+    success: True
+  - lfn: "p23.fits"
+    pfn: "p23.fits"
+    sha256: b17989619afeaaeb0a56706482a87c0d7f543f762aeaddbf5821ffe73afd04a8
+    success: True
+  - lfn: "p51.fits"
+    pfn: "p51.fits"
+    sha256: 96a526d7c148954ce855800e67e8857921a34fd5f3865506622576cf8215027c
+    success: True
+  - lfn: "p121.fits"
+    pfn: "p121.fits"
+    sha256: d49aab5f6f0ae86a13c8aebc80be0c2312c44731bb45d36b21c8be7e02685ccd
+    success: True
+  - lfn: "p37.fits"
+    pfn: "p37.fits"
+    sha256: dc91c657a485feb6b66a99a06fc616813c66c50b993fbdac4bead99601846da7
+    success: True
+  - lfn: "p34.fits"
+    pfn: "p34.fits"
+    sha256: 3f9f1a36b6bbda2469b69cf2c7923fc0ab21d340b0652b84fdbc527ebea80be7
+    success: True
+  - lfn: "p40.fits"
+    pfn: "p40.fits"
+    sha256: af8c796f196b358bb2dfd00874f1ebae006fcd5bf14eb4f3cd9b849091081b79
+    success: True
+  - lfn: "p110.fits"
+    pfn: "p110.fits"
+    sha256: 51d07f6659e890d02308e0af662f0e66242041e5e1880cc3ebd2d6dae50d956a
+    success: True
+  - lfn: "p119.fits"
+    pfn: "p119.fits"
+    sha256: 61f019935d2d1a0711d1c1dc02dafbbf2cbbbd9d309d882e1223a219a2e35570
+    success: True
+  - lfn: "p21.fits"
+    pfn: "p21.fits"
+    sha256: e8934ee2ec5d0daa54a85e5a0b164447031a853252248c9eba548aebb3ffaa0f
+    success: True
+  - lfn: "p48.fits"
+    pfn: "p48.fits"
+    sha256: e822d75c52ce3c969aec2d620e9dba86b9c9139940ab604a89503a5fdb12c4b1
+    success: True
+  - lfn: "p10.fits"
+    pfn: "p10.fits"
+    sha256: 930ee51cea740e2f131922f14bc599ae07acacef60c83d89c990a290762d25e1
+    success: True
+  - lfn: "p105.fits"
+    pfn: "p105.fits"
+    sha256: e981a2f8ada6bbc4d34a56c78e5cc44db9951cad02a96929f1f4f5ac738fd064
+    success: True
+  - lfn: "p124.fits"
+    pfn: "p124.fits"
+    sha256: fe88fc6c26809bf89f60a5a8a9d6c2e9612bba3f9531039d10f5c77c88c43677
+    success: True
+  - lfn: "p67.fits"
+    pfn: "p67.fits"
+    sha256: 0c63d5ba01f66b9066c9a79cadbedd7eda37515dd7c24c8cd10c2235053a4a44
+    success: True
+  - lfn: "p83.fits"
+    pfn: "p83.fits"
+    sha256: b600ca038e68050ecba8d95cb14cf6954c9ec8741a35689e7ef93493ae5b02ff
+    success: True
+  - lfn: "p97.fits"
+    pfn: "p97.fits"
+    sha256: 3f76d92eefadda118feaae2662b7e7c1b622f5923d3807c39873fcb6cf377edd
+    success: True
+  - lfn: "p108.fits"
+    pfn: "p108.fits"
+    sha256: 433656aa2e6a6a1958f85d5a205e964b392e6d2fd695915c7bbf7df9a46ef98b
+    success: True
+  - lfn: "p86.fits"
+    pfn: "p86.fits"
+    sha256: 5e73dbb52e3ae5fc7db47c0b2b97004580a9ad08fde4e4d03d22e0341b06badb
+    success: True
+  - lfn: "p140.fits"
+    pfn: "p140.fits"
+    sha256: e61ee80aef2ad9e65fb5c4bda9c8fccde80199e32c12911b21f40ce383b00214
+    success: True
+  - lfn: "p135.fits"
+    pfn: "p135.fits"
+    sha256: 70b1c129b407ede28e931bb77af868c9d08b3f32e88eae2237f17e5d513817d9
+    success: True
+  - lfn: "p78.fits"
+    pfn: "p78.fits"
+    sha256: 63bcff2823fc781d6f622c1d617465897220a64fe0fc11fcc9fe82d61c434e49
+    success: True
+  - lfn: "p33.fits"
+    pfn: "p33.fits"
+    sha256: 6d7b7ca636869e5e644119786ac89fac1c2a17d0346c76a057bbe8ac0df30e62
+    success: True
+  - lfn: "p02.fits"
+    pfn: "p02.fits"
+    sha256: 61601df7877f20208d5cdbde99fca1b153fde253b56c1ef83d42c1cf68af3381
+    success: True
+  - lfn: "p39.fits"
+    pfn: "p39.fits"
+    sha256: 1e486523bcd2cd3bd367260feadb529e9f55ed5d4286ae5728e822e8e335cd9e
+    success: True
+  - lfn: "p117.fits"
+    pfn: "p117.fits"
+    sha256: 0f9e0e3fbb28a9f30af14296c1a3a5a54226e94647b5c45fa606830abb0350fd
+    success: True
+  - lfn: "p133.fits"
+    pfn: "p133.fits"
+    sha256: 9d4b361a0fc1dbace980c56c1fb198ee775f5bca3d2e9dff2b17cc277911494e
+    success: True
+  - lfn: "p142.fits"
+    pfn: "p142.fits"
+    sha256: c3907abca8c882bbd35649b86e71e0f36cec906411070a685b60d3c4b53c2dd8
+    success: True
+  - lfn: "p80.fits"
+    pfn: "p80.fits"
+    sha256: 5e3bf79684ed25205eeeb21d12546afa6e4f8ebd7878016387bdf926e07453e2
+    success: True
+  - lfn: "p11.fits"
+    pfn: "p11.fits"
+    sha256: fd7afef4bcaf1917eb3c0a8858ca57c78f3d20d46e48c8b5c14ac15747fc9790
+    success: True
+  - lfn: "p64.fits"
+    pfn: "p64.fits"
+    sha256: 529badc1cd93115145e3245d2d2c64d59c3ad8dcfd348a4a92f1e3fe01794948
+    success: True
+  - lfn: "p139.fits"
+    pfn: "p139.fits"
+    sha256: ad9d0db7c0489aa8f5572eb9cf9048a01ab04311b7f9306bbff3410c28660e50
+    success: True
+  - lfn: "p08.fits"
+    pfn: "p08.fits"
+    sha256: 80cf90e43254596bd96265c51e0b4ada9b4f54df4978f5a5baab1a5f81681697
+    success: True
+  - lfn: "p42.fits"
+    pfn: "p42.fits"
+    sha256: 4809cf245813a57a310d13d85463aed960c118317261712b38ed591e94f3743f
+    success: True
+  - lfn: "p24.fits"
+    pfn: "p24.fits"
+    sha256: 629df8d1f62866cdcd54d54e089a48d1704a7f787ede7e8dd1c3c9d567ae6dca
+    success: True
+  - lfn: "p81.fits"
+    pfn: "p81.fits"
+    sha256: 384699d57c5474cc8e976bec0b62e26a3e1465a60fc3dcbfa81029cb0b2981e5
+    success: True
+  - lfn: "p87.fits"
+    pfn: "p87.fits"
+    sha256: d33ee3fce6345ddb6e1c1ee66951439cdc4224357a7e5e74721c97bf4971481e
+    success: True
+  - lfn: "p126.fits"
+    pfn: "p126.fits"
+    sha256: 269b8441494fb9c22f1db053dd0a3028cd482740121d72e32e832a8a7c18f37d
+    success: True
+  - lfn: "p07.fits"
+    pfn: "p07.fits"
+    sha256: ce0cb8e1c1627eb89df534a31c0ca7093d157231426b18741702e0ffd3e39db4
+    success: True
+  - lfn: "p46.fits"
+    pfn: "p46.fits"
+    sha256: 3b5d5fb22681e069a8e2e33bec44fa55dbb684af7984a50004426c460ba68228
+    success: True
+  - lfn: "p01.fits"
+    pfn: "p01.fits"
+    sha256: 05969721db1c2b22f0d3fb23325ae4cdbcd6efb729b355f638c66afd0acf1a2c
+    success: True
+  - lfn: "p65.fits"
+    pfn: "p65.fits"
+    sha256: 6938cea12825a8043a412b53ab34755048e9cbcc2f8956c4808e75591a9b5eca
+    success: True
+  - lfn: "p111.fits"
+    pfn: "p111.fits"
+    sha256: 30e2d943d3516c79d2622a787c685149e77e0ae48898da001712b8b94794e63d
+    success: True
+  - lfn: "p20.fits"
+    pfn: "p20.fits"
+    sha256: 5be97156aa6fede5374a78f16991892145bb8f1cf8673fbcace73580d3c0611c
+    success: True
+  - lfn: "p93.fits"
+    pfn: "p93.fits"
+    sha256: 7d6d7fc64d32ee42e9fc20765b2864c5305dfd8a1d6cdafd696005edd36b98e0
+    success: True
+  - lfn: "p104.fits"
+    pfn: "p104.fits"
+    sha256: af05c3e98b88784288cd0fc429a34c8a2b44964cdb615fbb8566cc4d126ee586
+    success: True
+  - lfn: "p99.fits"
+    pfn: "p99.fits"
+    sha256: 4e8bda5333893d7f6b4b091377700716e70334e0338173ded22fc8308ad00ca6
+    success: True
+  - lfn: "p101.fits"
+    pfn: "p101.fits"
+    sha256: 357dcedfe91863770cd72713d7b88f11d75d296e1608bf6b5234cffb86e96b61
+    success: True
+  - lfn: "p68.fits"
+    pfn: "p68.fits"
+    sha256: 58d9feb6e1b5b008173a346244c2bf8b99a89cc7631f4f88a5a4a6c938e7dcc5
+    success: True
+  - lfn: "p96.fits"
+    pfn: "p96.fits"
+    sha256: 011c7ac7dd7eb74358834a4ee89afd2704002f0d9ffa3bbfe89c89ff94b44986
+    success: True
+  - lfn: "p77.fits"
+    pfn: "p77.fits"
+    sha256: f5831023bea58e6ebab32a2456693e2395d4bfff5f03fb48cd5c6b52071db441
+    success: True
+  - lfn: "p74.fits"
+    pfn: "p74.fits"
+    sha256: e15f87ec91f564074f63d81e8171b3c127be0ce16cf0d660e7728e6f4526e7d3
+    success: True
+  - lfn: "p90.fits"
+    pfn: "p90.fits"
+    sha256: 9714258fed42f61325117a261422a123ad60fa211e063260794963f1a66b4d6a
+    success: True
+  - lfn: "p107.fits"
+    pfn: "p107.fits"
+    sha256: cb66fd285b6574a849345a284bf68706d8a13b1f780418ecab77365a080789f3
+    success: True
+  - lfn: "p123.fits"
+    pfn: "p123.fits"
+    sha256: 92db1e03a37913eb01f565574ca402acbc6ecd2d2d182684ea905ddce6a787d2
+    success: True
+  - lfn: "p120.fits"
+    pfn: "p120.fits"
+    sha256: 59f85d0dfda2c5c6e2a6c7da7de791bd7d1bf89329de3aaffc1d7a488fb523d4
+    success: True
+  - lfn: "p14.fits"
+    pfn: "p14.fits"
+    sha256: f48bfb87f97cf0eb2a454bf43b65a5d07a7b8baf5f7fcd38b91cd9078ab6cd31
+    success: True
+  - lfn: "p71.fits"
+    pfn: "p71.fits"
+    sha256: dca42e1f4b84963cb85968057b6c5b332e9a16980b4ff11574acf810f9b00a7b
+    success: True
+  - lfn: "p55.fits"
+    pfn: "p55.fits"
+    sha256: 0e03948f95f21f8f425340315e7df07d495048200d702fb7de3ca7b3758b2ebc
+    success: True
+  - lfn: "p52.fits"
+    pfn: "p52.fits"
+    sha256: a8d54d053b692be59cbb8e92dff7752a62ababe7067ef2e110895b1260a13500
+    success: True
+  - lfn: "p17.fits"
+    pfn: "p17.fits"
+    sha256: 4a81080fecd38b9955cd2a38d947141162cc48fa9a17f084765c207e84cecef4
+    success: True
+- integrity_summary:
+    succeeded: 148
+    failed: 0
+    duration: 3.314
+
+---------------pegasus-multipart
+location:
+    geohash: 66jc
+    ip: <omitido>
+    latitude: '-33.4521'
+    longitude: '-70.6536'
+    organization: Microsoft Corporation
+    subdomain: N/A

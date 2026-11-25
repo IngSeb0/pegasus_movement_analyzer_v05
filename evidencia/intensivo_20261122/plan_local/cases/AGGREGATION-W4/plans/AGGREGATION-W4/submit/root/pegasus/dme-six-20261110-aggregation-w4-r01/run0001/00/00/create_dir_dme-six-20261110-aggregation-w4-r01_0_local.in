@@ -1,0 +1,6 @@
+[
+  {
+    "id": 1,
+    "type": "mkdir",
+    "target": { "site_label": "local", "url": "file:///study/cases/AGGREGATION-W4/plans/AGGREGATION-W4/scratch/root/pegasus/dme-six-20261110-aggregation-w4-r01/run0001" } }
+]

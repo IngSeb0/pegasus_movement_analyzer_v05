@@ -1,0 +1,1113 @@
+{
+  "PROCESS-W2": {
+    "observado_B": 2516582400,
+    "referencias": [
+      {
+        "id": "validacion-PROCESS-W2",
+        "placement": {
+          "T1": "dme-worker2",
+          "T2": "dme-worker1",
+          "T3": "dme-worker1",
+          "T4": "dme-worker1",
+          "T5": "dme-worker1",
+          "T6": "dme-worker2"
+        },
+        "required_bytes": 125829120,
+        "observed_bytes": 125829120,
+        "dme": "1",
+        "requerido_escalado_B": 2516582400
+      },
+      {
+        "id": "tiempos-PROCESS-W2-B01",
+        "placement": {
+          "T1": "dme-worker1",
+          "T2": "dme-worker2",
+          "T3": "dme-worker1",
+          "T4": "dme-worker2",
+          "T5": "dme-worker2",
+          "T6": "dme-worker1"
+        },
+        "required_bytes": 125829120,
+        "observed_bytes": 125829120,
+        "dme": "1",
+        "requerido_escalado_B": 2516582400
+      },
+      {
+        "id": "tiempos-PROCESS-W2-B02",
+        "placement": {
+          "T1": "dme-worker2",
+          "T2": "dme-worker1",
+          "T3": "dme-worker2",
+          "T4": "dme-worker1",
+          "T5": "dme-worker2",
+          "T6": "dme-worker1"
+        },
+        "required_bytes": 125829120,
+        "observed_bytes": 125829120,
+        "dme": "1",
+        "requerido_escalado_B": 2516582400
+      },
+      {
+        "id": "tiempos-PROCESS-W2-B03",
+        "placement": {
+          "T1": "dme-worker2",
+          "T2": "dme-worker1",
+          "T3": "dme-worker2",
+          "T4": "dme-worker1",
+          "T5": "dme-worker2",
+          "T6": "dme-worker1"
+        },
+        "required_bytes": 125829120,
+        "observed_bytes": 125829120,
+        "dme": "1",
+        "requerido_escalado_B": 2516582400
+      }
+    ],
+    "bytes_por_archivo": 209715200,
+    "plan_local": {
+      "ubicacion": {
+        "T1": "dme-worker1",
+        "T2": "dme-worker1",
+        "T3": "dme-worker1",
+        "T4": "dme-worker1",
+        "T5": "dme-worker1",
+        "T6": "dme-worker1"
+      },
+      "requerido_B": 2516582400,
+      "DME": "1",
+      "fuente": "plan_local/cases/PROCESS-W2/pilot/PROCESS-W2/PLAN_REVIEW.json"
+    }
+  },
+  "PIPELINE-W2": {
+    "observado_B": 2516582400,
+    "referencias": [
+      {
+        "id": "validacion-PIPELINE-W2",
+        "placement": {
+          "T1": "dme-worker2",
+          "T2": "dme-worker2",
+          "T3": "dme-worker2",
+          "T4": "dme-worker2",
+          "T5": "dme-worker2",
+          "T6": "dme-worker2"
+        },
+        "required_bytes": 20971520,
+        "observed_bytes": 125829120,
+        "dme": "1/6",
+        "requerido_escalado_B": 419430400
+      },
+      {
+        "id": "tiempos-PIPELINE-W2-B01",
+        "placement": {
+          "T1": "dme-worker2",
+          "T2": "dme-worker2",
+          "T3": "dme-worker2",
+          "T4": "dme-worker2",
+          "T5": "dme-worker2",
+          "T6": "dme-worker2"
+        },
+        "required_bytes": 20971520,
+        "observed_bytes": 125829120,
+        "dme": "1/6",
+        "requerido_escalado_B": 419430400
+      },
+      {
+        "id": "tiempos-PIPELINE-W2-B02",
+        "placement": {
+          "T1": "dme-worker2",
+          "T2": "dme-worker2",
+          "T3": "dme-worker2",
+          "T4": "dme-worker2",
+          "T5": "dme-worker2",
+          "T6": "dme-worker2"
+        },
+        "required_bytes": 20971520,
+        "observed_bytes": 125829120,
+        "dme": "1/6",
+        "requerido_escalado_B": 419430400
+      },
+      {
+        "id": "tiempos-PIPELINE-W2-B03",
+        "placement": {
+          "T1": "dme-worker2",
+          "T2": "dme-worker2",
+          "T3": "dme-worker2",
+          "T4": "dme-worker2",
+          "T5": "dme-worker2",
+          "T6": "dme-worker2"
+        },
+        "required_bytes": 20971520,
+        "observed_bytes": 125829120,
+        "dme": "1/6",
+        "requerido_escalado_B": 419430400
+      }
+    ],
+    "bytes_por_archivo": 209715200,
+    "plan_local": {
+      "ubicacion": {
+        "T1": "dme-worker1",
+        "T2": "dme-worker1",
+        "T3": "dme-worker1",
+        "T4": "dme-worker1",
+        "T5": "dme-worker1",
+        "T6": "dme-worker1"
+      },
+      "requerido_B": 419430400,
+      "DME": "1/6",
+      "fuente": "plan_local/cases/PIPELINE-W2/pilot/PIPELINE-W2/PLAN_REVIEW.json"
+    }
+  },
+  "AGGREGATION-W2": {
+    "observado_B": 3355443200,
+    "referencias": [
+      {
+        "id": "validacion-AGGREGATION-W2",
+        "placement": {
+          "T1": "dme-worker1",
+          "T2": "dme-worker2",
+          "T3": "dme-worker1",
+          "T4": "dme-worker2",
+          "T5": "dme-worker2",
+          "T6": "dme-worker1"
+        },
+        "required_bytes": 125829120,
+        "observed_bytes": 167772160,
+        "dme": "3/4",
+        "requerido_escalado_B": 2516582400
+      },
+      {
+        "id": "tiempos-AGGREGATION-W2-B01",
+        "placement": {
+          "T1": "dme-worker1",
+          "T2": "dme-worker1",
+          "T3": "dme-worker1",
+          "T4": "dme-worker2",
+          "T5": "dme-worker2",
+          "T6": "dme-worker1"
+        },
+        "required_bytes": 104857600,
+        "observed_bytes": 167772160,
+        "dme": "5/8",
+        "requerido_escalado_B": 2097152000
+      },
+      {
+        "id": "tiempos-AGGREGATION-W2-B02",
+        "placement": {
+          "T1": "dme-worker2",
+          "T2": "dme-worker2",
+          "T3": "dme-worker1",
+          "T4": "dme-worker1",
+          "T5": "dme-worker2",
+          "T6": "dme-worker1"
+        },
+        "required_bytes": 125829120,
+        "observed_bytes": 167772160,
+        "dme": "3/4",
+        "requerido_escalado_B": 2516582400
+      },
+      {
+        "id": "tiempos-AGGREGATION-W2-B03",
+        "placement": {
+          "T1": "dme-worker2",
+          "T2": "dme-worker1",
+          "T3": "dme-worker1",
+          "T4": "dme-worker1",
+          "T5": "dme-worker2",
+          "T6": "dme-worker1"
+        },
+        "required_bytes": 104857600,
+        "observed_bytes": 167772160,
+        "dme": "5/8",
+        "requerido_escalado_B": 2097152000
+      }
+    ],
+    "bytes_por_archivo": 209715200,
+    "plan_local": {
+      "ubicacion": {
+        "T1": "dme-worker1",
+        "T2": "dme-worker1",
+        "T3": "dme-worker1",
+        "T4": "dme-worker1",
+        "T5": "dme-worker1",
+        "T6": "dme-worker1"
+      },
+      "requerido_B": 1258291200,
+      "DME": "3/8",
+      "fuente": "plan_local/cases/AGGREGATION-W2/pilot/AGGREGATION-W2/PLAN_REVIEW.json"
+    }
+  },
+  "DISTRIBUTION-W2": {
+    "observado_B": 2516582400,
+    "referencias": [
+      {
+        "id": "DISTRIBUTION-W2",
+        "placement": {
+          "T1": "dme-worker1",
+          "T2": "dme-worker1",
+          "T3": "dme-worker1",
+          "T4": "dme-worker1",
+          "T5": "dme-worker1",
+          "T6": "dme-worker1"
+        },
+        "required_bytes": 62914560,
+        "observed_bytes": 125829120,
+        "dme": "1/2",
+        "requerido_escalado_B": 1258291200
+      },
+      {
+        "id": "validacion-DISTRIBUTION-W2",
+        "placement": {
+          "T1": "dme-worker2",
+          "T2": "dme-worker1",
+          "T3": "dme-worker1",
+          "T4": "dme-worker2",
+          "T5": "dme-worker2",
+          "T6": "dme-worker1"
+        },
+        "required_bytes": 83886080,
+        "observed_bytes": 125829120,
+        "dme": "2/3",
+        "requerido_escalado_B": 1677721600
+      },
+      {
+        "id": "tiempos-DISTRIBUTION-W2-B01",
+        "placement": {
+          "T1": "dme-worker2",
+          "T2": "dme-worker2",
+          "T3": "dme-worker2",
+          "T4": "dme-worker1",
+          "T5": "dme-worker2",
+          "T6": "dme-worker1"
+        },
+        "required_bytes": 83886080,
+        "observed_bytes": 125829120,
+        "dme": "2/3",
+        "requerido_escalado_B": 1677721600
+      },
+      {
+        "id": "tiempos-DISTRIBUTION-W2-B02",
+        "placement": {
+          "T1": "dme-worker2",
+          "T2": "dme-worker2",
+          "T3": "dme-worker2",
+          "T4": "dme-worker1",
+          "T5": "dme-worker2",
+          "T6": "dme-worker1"
+        },
+        "required_bytes": 83886080,
+        "observed_bytes": 125829120,
+        "dme": "2/3",
+        "requerido_escalado_B": 1677721600
+      },
+      {
+        "id": "tiempos-DISTRIBUTION-W2-B03",
+        "placement": {
+          "T1": "dme-worker2",
+          "T2": "dme-worker1",
+          "T3": "dme-worker2",
+          "T4": "dme-worker2",
+          "T5": "dme-worker2",
+          "T6": "dme-worker2"
+        },
+        "required_bytes": 83886080,
+        "observed_bytes": 125829120,
+        "dme": "2/3",
+        "requerido_escalado_B": 1677721600
+      }
+    ],
+    "bytes_por_archivo": 209715200,
+    "plan_local": {
+      "ubicacion": {
+        "T1": "dme-worker1",
+        "T2": "dme-worker1",
+        "T3": "dme-worker1",
+        "T4": "dme-worker1",
+        "T5": "dme-worker1",
+        "T6": "dme-worker1"
+      },
+      "requerido_B": 1258291200,
+      "DME": "1/2",
+      "fuente": "plan_local/cases/DISTRIBUTION-W2/pilot/DISTRIBUTION-W2/PLAN_REVIEW.json"
+    }
+  },
+  "REDISTRIBUTION-W2": {
+    "observado_B": 2936012800,
+    "referencias": [
+      {
+        "id": "validacion-REDISTRIBUTION-W2",
+        "placement": {
+          "T1": "dme-worker2",
+          "T2": "dme-worker1",
+          "T3": "dme-worker1",
+          "T4": "dme-worker1",
+          "T5": "dme-worker1",
+          "T6": "dme-worker1"
+        },
+        "required_bytes": 62914560,
+        "observed_bytes": 146800640,
+        "dme": "3/7",
+        "requerido_escalado_B": 1258291200
+      },
+      {
+        "id": "tiempos-REDISTRIBUTION-W2-B01",
+        "placement": {
+          "T1": "dme-worker2",
+          "T2": "dme-worker1",
+          "T3": "dme-worker1",
+          "T4": "dme-worker1",
+          "T5": "dme-worker1",
+          "T6": "dme-worker1"
+        },
+        "required_bytes": 62914560,
+        "observed_bytes": 146800640,
+        "dme": "3/7",
+        "requerido_escalado_B": 1258291200
+      },
+      {
+        "id": "tiempos-REDISTRIBUTION-W2-B02-r1",
+        "placement": {
+          "T1": "dme-worker2",
+          "T2": "dme-worker1",
+          "T3": "dme-worker1",
+          "T4": "dme-worker1",
+          "T5": "dme-worker1",
+          "T6": "dme-worker1"
+        },
+        "required_bytes": 62914560,
+        "observed_bytes": 146800640,
+        "dme": "3/7",
+        "requerido_escalado_B": 1258291200
+      },
+      {
+        "id": "tiempos-REDISTRIBUTION-W2-B03",
+        "placement": {
+          "T1": "dme-worker2",
+          "T2": "dme-worker1",
+          "T3": "dme-worker1",
+          "T4": "dme-worker2",
+          "T5": "dme-worker2",
+          "T6": "dme-worker2"
+        },
+        "required_bytes": 83886080,
+        "observed_bytes": 146800640,
+        "dme": "4/7",
+        "requerido_escalado_B": 1677721600
+      }
+    ],
+    "bytes_por_archivo": 209715200,
+    "plan_local": {
+      "ubicacion": {
+        "T1": "dme-worker1",
+        "T2": "dme-worker1",
+        "T3": "dme-worker1",
+        "T4": "dme-worker1",
+        "T5": "dme-worker1",
+        "T6": "dme-worker1"
+      },
+      "requerido_B": 838860800,
+      "DME": "2/7",
+      "fuente": "plan_local/cases/REDISTRIBUTION-W2/pilot/REDISTRIBUTION-W2/PLAN_REVIEW.json"
+    }
+  },
+  "PROCESS-W4": {
+    "observado_B": 2516582400,
+    "referencias": [
+      {
+        "id": "validacion-PROCESS-W4",
+        "placement": {
+          "T1": "dme-worker2",
+          "T2": "dme-worker4",
+          "T3": "dme-worker3",
+          "T4": "dme-worker4",
+          "T5": "dme-worker2",
+          "T6": "dme-worker1"
+        },
+        "required_bytes": 125829120,
+        "observed_bytes": 125829120,
+        "dme": "1",
+        "requerido_escalado_B": 2516582400
+      },
+      {
+        "id": "tiempos-PROCESS-W4-B01",
+        "placement": {
+          "T1": "dme-worker4",
+          "T2": "dme-worker2",
+          "T3": "dme-worker1",
+          "T4": "dme-worker3",
+          "T5": "dme-worker4",
+          "T6": "dme-worker2"
+        },
+        "required_bytes": 125829120,
+        "observed_bytes": 125829120,
+        "dme": "1",
+        "requerido_escalado_B": 2516582400
+      },
+      {
+        "id": "tiempos-PROCESS-W4-B02",
+        "placement": {
+          "T1": "dme-worker2",
+          "T2": "dme-worker4",
+          "T3": "dme-worker1",
+          "T4": "dme-worker3",
+          "T5": "dme-worker4",
+          "T6": "dme-worker2"
+        },
+        "required_bytes": 125829120,
+        "observed_bytes": 125829120,
+        "dme": "1",
+        "requerido_escalado_B": 2516582400
+      },
+      {
+        "id": "tiempos-PROCESS-W4-B03",
+        "placement": {
+          "T1": "dme-worker4",
+          "T2": "dme-worker3",
+          "T3": "dme-worker1",
+          "T4": "dme-worker3",
+          "T5": "dme-worker4",
+          "T6": "dme-worker2"
+        },
+        "required_bytes": 125829120,
+        "observed_bytes": 125829120,
+        "dme": "1",
+        "requerido_escalado_B": 2516582400
+      }
+    ],
+    "bytes_por_archivo": 209715200,
+    "plan_local": {
+      "ubicacion": {
+        "T1": "dme-worker1",
+        "T2": "dme-worker1",
+        "T3": "dme-worker1",
+        "T4": "dme-worker1",
+        "T5": "dme-worker1",
+        "T6": "dme-worker1"
+      },
+      "requerido_B": 2516582400,
+      "DME": "1",
+      "fuente": "plan_local/cases/PROCESS-W4/pilot/PROCESS-W4/PLAN_REVIEW.json"
+    }
+  },
+  "PIPELINE-W4": {
+    "observado_B": 2516582400,
+    "referencias": [
+      {
+        "id": "validacion-PIPELINE-W4",
+        "placement": {
+          "T1": "dme-worker2",
+          "T2": "dme-worker2",
+          "T3": "dme-worker2",
+          "T4": "dme-worker2",
+          "T5": "dme-worker2",
+          "T6": "dme-worker2"
+        },
+        "required_bytes": 20971520,
+        "observed_bytes": 125829120,
+        "dme": "1/6",
+        "requerido_escalado_B": 419430400
+      },
+      {
+        "id": "tiempos-PIPELINE-W4-B01",
+        "placement": {
+          "T1": "dme-worker4",
+          "T2": "dme-worker4",
+          "T3": "dme-worker4",
+          "T4": "dme-worker4",
+          "T5": "dme-worker4",
+          "T6": "dme-worker4"
+        },
+        "required_bytes": 20971520,
+        "observed_bytes": 125829120,
+        "dme": "1/6",
+        "requerido_escalado_B": 419430400
+      },
+      {
+        "id": "tiempos-PIPELINE-W4-B02",
+        "placement": {
+          "T1": "dme-worker4",
+          "T2": "dme-worker4",
+          "T3": "dme-worker4",
+          "T4": "dme-worker4",
+          "T5": "dme-worker4",
+          "T6": "dme-worker4"
+        },
+        "required_bytes": 20971520,
+        "observed_bytes": 125829120,
+        "dme": "1/6",
+        "requerido_escalado_B": 419430400
+      },
+      {
+        "id": "tiempos-PIPELINE-W4-B03",
+        "placement": {
+          "T1": "dme-worker4",
+          "T2": "dme-worker4",
+          "T3": "dme-worker4",
+          "T4": "dme-worker4",
+          "T5": "dme-worker4",
+          "T6": "dme-worker4"
+        },
+        "required_bytes": 20971520,
+        "observed_bytes": 125829120,
+        "dme": "1/6",
+        "requerido_escalado_B": 419430400
+      }
+    ],
+    "bytes_por_archivo": 209715200,
+    "plan_local": {
+      "ubicacion": {
+        "T1": "dme-worker1",
+        "T2": "dme-worker1",
+        "T3": "dme-worker1",
+        "T4": "dme-worker1",
+        "T5": "dme-worker1",
+        "T6": "dme-worker1"
+      },
+      "requerido_B": 419430400,
+      "DME": "1/6",
+      "fuente": "plan_local/cases/PIPELINE-W4/pilot/PIPELINE-W4/PLAN_REVIEW.json"
+    }
+  },
+  "AGGREGATION-W4": {
+    "observado_B": 3355443200,
+    "referencias": [
+      {
+        "id": "validacion-AGGREGATION-W4",
+        "placement": {
+          "T1": "dme-worker4",
+          "T2": "dme-worker4",
+          "T3": "dme-worker1",
+          "T4": "dme-worker3",
+          "T5": "dme-worker2",
+          "T6": "dme-worker1"
+        },
+        "required_bytes": 146800640,
+        "observed_bytes": 167772160,
+        "dme": "7/8",
+        "requerido_escalado_B": 2936012800
+      },
+      {
+        "id": "tiempos-AGGREGATION-W4-B01",
+        "placement": {
+          "T1": "dme-worker3",
+          "T2": "dme-worker3",
+          "T3": "dme-worker2",
+          "T4": "dme-worker1",
+          "T5": "dme-worker4",
+          "T6": "dme-worker1"
+        },
+        "required_bytes": 146800640,
+        "observed_bytes": 167772160,
+        "dme": "7/8",
+        "requerido_escalado_B": 2936012800
+      },
+      {
+        "id": "tiempos-AGGREGATION-W4-B02",
+        "placement": {
+          "T1": "dme-worker3",
+          "T2": "dme-worker2",
+          "T3": "dme-worker2",
+          "T4": "dme-worker1",
+          "T5": "dme-worker4",
+          "T6": "dme-worker1"
+        },
+        "required_bytes": 146800640,
+        "observed_bytes": 167772160,
+        "dme": "7/8",
+        "requerido_escalado_B": 2936012800
+      },
+      {
+        "id": "tiempos-AGGREGATION-W4-B03",
+        "placement": {
+          "T1": "dme-worker3",
+          "T2": "dme-worker4",
+          "T3": "dme-worker2",
+          "T4": "dme-worker1",
+          "T5": "dme-worker4",
+          "T6": "dme-worker1"
+        },
+        "required_bytes": 146800640,
+        "observed_bytes": 167772160,
+        "dme": "7/8",
+        "requerido_escalado_B": 2936012800
+      }
+    ],
+    "bytes_por_archivo": 209715200,
+    "plan_local": {
+      "ubicacion": {
+        "T1": "dme-worker1",
+        "T2": "dme-worker1",
+        "T3": "dme-worker1",
+        "T4": "dme-worker1",
+        "T5": "dme-worker1",
+        "T6": "dme-worker1"
+      },
+      "requerido_B": 1258291200,
+      "DME": "3/8",
+      "fuente": "plan_local/cases/AGGREGATION-W4/pilot/AGGREGATION-W4/PLAN_REVIEW.json"
+    }
+  },
+  "DISTRIBUTION-W4": {
+    "observado_B": 2516582400,
+    "referencias": [
+      {
+        "id": "validacion-DISTRIBUTION-W4",
+        "placement": {
+          "T1": "dme-worker2",
+          "T2": "dme-worker2",
+          "T3": "dme-worker3",
+          "T4": "dme-worker4",
+          "T5": "dme-worker2",
+          "T6": "dme-worker1"
+        },
+        "required_bytes": 104857600,
+        "observed_bytes": 125829120,
+        "dme": "5/6",
+        "requerido_escalado_B": 2097152000
+      },
+      {
+        "id": "tiempos-DISTRIBUTION-W4-B01",
+        "placement": {
+          "T1": "dme-worker4",
+          "T2": "dme-worker4",
+          "T3": "dme-worker1",
+          "T4": "dme-worker3",
+          "T5": "dme-worker4",
+          "T6": "dme-worker2"
+        },
+        "required_bytes": 104857600,
+        "observed_bytes": 125829120,
+        "dme": "5/6",
+        "requerido_escalado_B": 2097152000
+      },
+      {
+        "id": "tiempos-DISTRIBUTION-W4-B02",
+        "placement": {
+          "T1": "dme-worker4",
+          "T2": "dme-worker4",
+          "T3": "dme-worker3",
+          "T4": "dme-worker4",
+          "T5": "dme-worker2",
+          "T6": "dme-worker1"
+        },
+        "required_bytes": 104857600,
+        "observed_bytes": 125829120,
+        "dme": "5/6",
+        "requerido_escalado_B": 2097152000
+      },
+      {
+        "id": "tiempos-DISTRIBUTION-W4-B03",
+        "placement": {
+          "T1": "dme-worker4",
+          "T2": "dme-worker2",
+          "T3": "dme-worker3",
+          "T4": "dme-worker4",
+          "T5": "dme-worker2",
+          "T6": "dme-worker1"
+        },
+        "required_bytes": 104857600,
+        "observed_bytes": 125829120,
+        "dme": "5/6",
+        "requerido_escalado_B": 2097152000
+      }
+    ],
+    "bytes_por_archivo": 209715200,
+    "plan_local": {
+      "ubicacion": {
+        "T1": "dme-worker1",
+        "T2": "dme-worker1",
+        "T3": "dme-worker1",
+        "T4": "dme-worker1",
+        "T5": "dme-worker1",
+        "T6": "dme-worker1"
+      },
+      "requerido_B": 1258291200,
+      "DME": "1/2",
+      "fuente": "plan_local/cases/DISTRIBUTION-W4/pilot/DISTRIBUTION-W4/PLAN_REVIEW.json"
+    }
+  },
+  "REDISTRIBUTION-W4": {
+    "observado_B": 2936012800,
+    "referencias": [
+      {
+        "id": "validacion-REDISTRIBUTION-W4",
+        "placement": {
+          "T1": "dme-worker1",
+          "T2": "dme-worker3",
+          "T3": "dme-worker1",
+          "T4": "dme-worker1",
+          "T5": "dme-worker1",
+          "T6": "dme-worker3"
+        },
+        "required_bytes": 83886080,
+        "observed_bytes": 146800640,
+        "dme": "4/7",
+        "requerido_escalado_B": 1677721600
+      },
+      {
+        "id": "tiempos-REDISTRIBUTION-W4-B01",
+        "placement": {
+          "T1": "dme-worker4",
+          "T2": "dme-worker2",
+          "T3": "dme-worker2",
+          "T4": "dme-worker2",
+          "T5": "dme-worker2",
+          "T6": "dme-worker2"
+        },
+        "required_bytes": 62914560,
+        "observed_bytes": 146800640,
+        "dme": "3/7",
+        "requerido_escalado_B": 1258291200
+      },
+      {
+        "id": "tiempos-REDISTRIBUTION-W4-B02",
+        "placement": {
+          "T1": "dme-worker4",
+          "T2": "dme-worker2",
+          "T3": "dme-worker1",
+          "T4": "dme-worker1",
+          "T5": "dme-worker1",
+          "T6": "dme-worker1"
+        },
+        "required_bytes": 83886080,
+        "observed_bytes": 146800640,
+        "dme": "4/7",
+        "requerido_escalado_B": 1677721600
+      },
+      {
+        "id": "tiempos-REDISTRIBUTION-W4-B03",
+        "placement": {
+          "T1": "dme-worker4",
+          "T2": "dme-worker2",
+          "T3": "dme-worker2",
+          "T4": "dme-worker2",
+          "T5": "dme-worker2",
+          "T6": "dme-worker2"
+        },
+        "required_bytes": 62914560,
+        "observed_bytes": 146800640,
+        "dme": "3/7",
+        "requerido_escalado_B": 1258291200
+      }
+    ],
+    "bytes_por_archivo": 209715200,
+    "plan_local": {
+      "ubicacion": {
+        "T1": "dme-worker1",
+        "T2": "dme-worker1",
+        "T3": "dme-worker1",
+        "T4": "dme-worker1",
+        "T5": "dme-worker1",
+        "T6": "dme-worker1"
+      },
+      "requerido_B": 838860800,
+      "DME": "2/7",
+      "fuente": "plan_local/cases/REDISTRIBUTION-W4/pilot/REDISTRIBUTION-W4/PLAN_REVIEW.json"
+    }
+  },
+  "REP": {
+    "observado_B": 2097152000,
+    "referencias": [
+      {
+        "id": "contraste-piloto-REP",
+        "placement": {
+          "C1": "dme-worker1",
+          "C2": "dme-worker2",
+          "C3": "dme-worker3",
+          "C4": "dme-worker4",
+          "P": "dme-worker1"
+        },
+        "required_bytes": 94371840,
+        "observed_bytes": 104857600,
+        "dme": "9/10",
+        "requerido_escalado_B": 1887436800
+      },
+      {
+        "id": "contraste-B1-REP",
+        "placement": {
+          "C1": "dme-worker1",
+          "C2": "dme-worker2",
+          "C3": "dme-worker3",
+          "C4": "dme-worker4",
+          "P": "dme-worker1"
+        },
+        "required_bytes": 94371840,
+        "observed_bytes": 104857600,
+        "dme": "9/10",
+        "requerido_escalado_B": 1887436800
+      },
+      {
+        "id": "contraste-B2-REP",
+        "placement": {
+          "C1": "dme-worker1",
+          "C2": "dme-worker2",
+          "C3": "dme-worker3",
+          "C4": "dme-worker4",
+          "P": "dme-worker1"
+        },
+        "required_bytes": 94371840,
+        "observed_bytes": 104857600,
+        "dme": "9/10",
+        "requerido_escalado_B": 1887436800
+      },
+      {
+        "id": "contraste-B3-REP",
+        "placement": {
+          "C1": "dme-worker1",
+          "C2": "dme-worker2",
+          "C3": "dme-worker3",
+          "C4": "dme-worker4",
+          "P": "dme-worker1"
+        },
+        "required_bytes": 94371840,
+        "observed_bytes": 104857600,
+        "dme": "9/10",
+        "requerido_escalado_B": 1887436800
+      },
+      {
+        "id": "contraste-B4-REP",
+        "placement": {
+          "C1": "dme-worker1",
+          "C2": "dme-worker2",
+          "C3": "dme-worker3",
+          "C4": "dme-worker4",
+          "P": "dme-worker1"
+        },
+        "required_bytes": 94371840,
+        "observed_bytes": 104857600,
+        "dme": "9/10",
+        "requerido_escalado_B": 1887436800
+      },
+      {
+        "id": "contraste-B5-REP",
+        "placement": {
+          "C1": "dme-worker1",
+          "C2": "dme-worker2",
+          "C3": "dme-worker3",
+          "C4": "dme-worker4",
+          "P": "dme-worker1"
+        },
+        "required_bytes": 94371840,
+        "observed_bytes": 104857600,
+        "dme": "9/10",
+        "requerido_escalado_B": 1887436800
+      }
+    ],
+    "bytes_por_archivo": 209715200,
+    "plan_local": {
+      "ubicacion": {
+        "C1": "dme-worker1",
+        "C2": "dme-worker2",
+        "C3": "dme-worker3",
+        "C4": "dme-worker4",
+        "P": "dme-worker1"
+      },
+      "requerido_B": 1887436800,
+      "DME": "9/10",
+      "fuente": "plan_local/cases/REP/pilot/REP/PLAN_REVIEW.json"
+    }
+  },
+  "W2-SEP": {
+    "observado_B": 2097152000,
+    "referencias": [
+      {
+        "id": "contraste-piloto-W2-SEP",
+        "placement": {
+          "C1": "dme-worker2",
+          "C2": "dme-worker2",
+          "C3": "dme-worker2",
+          "C4": "dme-worker2",
+          "P": "dme-worker1"
+        },
+        "required_bytes": 73400320,
+        "observed_bytes": 104857600,
+        "dme": "7/10",
+        "requerido_escalado_B": 1468006400
+      },
+      {
+        "id": "contraste-B1-W2-SEP",
+        "placement": {
+          "C1": "dme-worker2",
+          "C2": "dme-worker2",
+          "C3": "dme-worker2",
+          "C4": "dme-worker2",
+          "P": "dme-worker1"
+        },
+        "required_bytes": 73400320,
+        "observed_bytes": 104857600,
+        "dme": "7/10",
+        "requerido_escalado_B": 1468006400
+      },
+      {
+        "id": "contraste-B2-W2-SEP",
+        "placement": {
+          "C1": "dme-worker2",
+          "C2": "dme-worker2",
+          "C3": "dme-worker2",
+          "C4": "dme-worker2",
+          "P": "dme-worker1"
+        },
+        "required_bytes": 73400320,
+        "observed_bytes": 104857600,
+        "dme": "7/10",
+        "requerido_escalado_B": 1468006400
+      },
+      {
+        "id": "contraste-B3-W2-SEP",
+        "placement": {
+          "C1": "dme-worker2",
+          "C2": "dme-worker2",
+          "C3": "dme-worker2",
+          "C4": "dme-worker2",
+          "P": "dme-worker1"
+        },
+        "required_bytes": 73400320,
+        "observed_bytes": 104857600,
+        "dme": "7/10",
+        "requerido_escalado_B": 1468006400
+      },
+      {
+        "id": "contraste-B4-W2-SEP",
+        "placement": {
+          "C1": "dme-worker2",
+          "C2": "dme-worker2",
+          "C3": "dme-worker2",
+          "C4": "dme-worker2",
+          "P": "dme-worker1"
+        },
+        "required_bytes": 73400320,
+        "observed_bytes": 104857600,
+        "dme": "7/10",
+        "requerido_escalado_B": 1468006400
+      },
+      {
+        "id": "contraste-B5-W2-SEP",
+        "placement": {
+          "C1": "dme-worker2",
+          "C2": "dme-worker2",
+          "C3": "dme-worker2",
+          "C4": "dme-worker2",
+          "P": "dme-worker1"
+        },
+        "required_bytes": 73400320,
+        "observed_bytes": 104857600,
+        "dme": "7/10",
+        "requerido_escalado_B": 1468006400
+      }
+    ],
+    "bytes_por_archivo": 209715200,
+    "plan_local": {
+      "ubicacion": {
+        "C1": "dme-worker2",
+        "C2": "dme-worker2",
+        "C3": "dme-worker2",
+        "C4": "dme-worker2",
+        "P": "dme-worker1"
+      },
+      "requerido_B": 1468006400,
+      "DME": "7/10",
+      "fuente": "plan_local/cases/W2-SEP/pilot/W2-SEP/PLAN_REVIEW.json"
+    }
+  },
+  "W2-AGR": {
+    "observado_B": 1468006400,
+    "referencias": [
+      {
+        "id": "contraste-piloto-W2-AGR",
+        "placement": {
+          "P": "dme-worker1",
+          "C3": "dme-worker2",
+          "C4": "dme-worker2",
+          "C1": "dme-worker2",
+          "C2": "dme-worker2"
+        },
+        "required_bytes": 73400320,
+        "observed_bytes": 73400320,
+        "dme": "1",
+        "requerido_escalado_B": 1468006400
+      },
+      {
+        "id": "contraste-B1-W2-AGR",
+        "placement": {
+          "P": "dme-worker1",
+          "C3": "dme-worker2",
+          "C4": "dme-worker2",
+          "C1": "dme-worker2",
+          "C2": "dme-worker2"
+        },
+        "required_bytes": 73400320,
+        "observed_bytes": 73400320,
+        "dme": "1",
+        "requerido_escalado_B": 1468006400
+      },
+      {
+        "id": "contraste-B2-W2-AGR",
+        "placement": {
+          "P": "dme-worker1",
+          "C3": "dme-worker2",
+          "C4": "dme-worker2",
+          "C1": "dme-worker2",
+          "C2": "dme-worker2"
+        },
+        "required_bytes": 73400320,
+        "observed_bytes": 73400320,
+        "dme": "1",
+        "requerido_escalado_B": 1468006400
+      },
+      {
+        "id": "contraste-B3-W2-AGR",
+        "placement": {
+          "P": "dme-worker1",
+          "C3": "dme-worker2",
+          "C4": "dme-worker2",
+          "C1": "dme-worker2",
+          "C2": "dme-worker2"
+        },
+        "required_bytes": 73400320,
+        "observed_bytes": 73400320,
+        "dme": "1",
+        "requerido_escalado_B": 1468006400
+      },
+      {
+        "id": "contraste-B4-W2-AGR",
+        "placement": {
+          "P": "dme-worker1",
+          "C3": "dme-worker2",
+          "C4": "dme-worker2",
+          "C1": "dme-worker2",
+          "C2": "dme-worker2"
+        },
+        "required_bytes": 73400320,
+        "observed_bytes": 73400320,
+        "dme": "1",
+        "requerido_escalado_B": 1468006400
+      },
+      {
+        "id": "contraste-B5-W2-AGR",
+        "placement": {
+          "P": "dme-worker1",
+          "C3": "dme-worker2",
+          "C4": "dme-worker2",
+          "C1": "dme-worker2",
+          "C2": "dme-worker2"
+        },
+        "required_bytes": 73400320,
+        "observed_bytes": 73400320,
+        "dme": "1",
+        "requerido_escalado_B": 1468006400
+      }
+    ],
+    "bytes_por_archivo": 209715200,
+    "plan_local": {
+      "ubicacion": {
+        "P": "dme-worker1",
+        "C3": "dme-worker2",
+        "C4": "dme-worker2",
+        "C1": "dme-worker2",
+        "C2": "dme-worker2"
+      },
+      "requerido_B": 1468006400,
+      "DME": "1",
+      "fuente": "plan_local/cases/W2-AGR/pilot/W2-AGR/PLAN_REVIEW.json"
+    }
+  }
+}

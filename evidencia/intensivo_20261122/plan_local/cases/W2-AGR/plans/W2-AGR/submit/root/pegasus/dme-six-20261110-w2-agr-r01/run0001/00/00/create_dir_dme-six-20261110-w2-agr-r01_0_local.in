@@ -1,0 +1,6 @@
+[
+  {
+    "id": 1,
+    "type": "mkdir",
+    "target": { "site_label": "local", "url": "file:///study/cases/W2-AGR/plans/W2-AGR/scratch/root/pegasus/dme-six-20261110-w2-agr-r01/run0001" } }
+]

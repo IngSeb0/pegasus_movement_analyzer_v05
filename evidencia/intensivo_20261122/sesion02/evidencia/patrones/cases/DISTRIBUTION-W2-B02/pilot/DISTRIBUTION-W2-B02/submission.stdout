@@ -1,0 +1,12 @@
+
+Your workflow has been started and is running in the base directory:
+
+/mnt/intensivo_20261122/patrones/cases/DISTRIBUTION-W2-B02/plans/DISTRIBUTION-W2-B02/submit/dmeadmin/pegasus/dme-six-20261110-distribution-w2-r01/run0001
+
+*** To monitor the workflow you can run ***
+
+pegasus-status -l /mnt/intensivo_20261122/patrones/cases/DISTRIBUTION-W2-B02/plans/DISTRIBUTION-W2-B02/submit/dmeadmin/pegasus/dme-six-20261110-distribution-w2-r01/run0001
+
+*** To remove your workflow run ***
+
+pegasus-remove /mnt/intensivo_20261122/patrones/cases/DISTRIBUTION-W2-B02/plans/DISTRIBUTION-W2-B02/submit/dmeadmin/pegasus/dme-six-20261110-distribution-w2-r01/run0001

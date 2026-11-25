@@ -1,0 +1,13 @@
+[
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "A",
+   "id": 1,
+   "generate_checksum": true,
+   "src_urls": [
+     { "site_label": "local", "url": "/mnt/intensivo_20261122/patrones/cases/DISTRIBUTION-W4-B01/plans/DISTRIBUTION-W4-B01/inputs/A", "priority": 10 }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///mnt/intensivo_20261122/patrones/cases/DISTRIBUTION-W4-B01/plans/DISTRIBUTION-W4-B01/scratch/dmeadmin/pegasus/dme-six-20261110-distribution-w4-r01/run0001/./A" }
+   ] }
+]

@@ -1,0 +1,6 @@
+python -B C:/Defensa/Sustentacion_DME/10_Preparacion_Final/prueba_rep_rec_20261124/Repositorio_Simple/analyzer/recomendar.py C:/Defensa/Sustentacion_DME/10_Preparacion_Final/prueba_rep_rec_20261124/rep_r1/run0001 C:/Defensa/Sustentacion_DME/10_Preparacion_Final/prueba_rep_rec_20261124/rep_r1/history.long --ancho 11.799360703296705
+Observado actual:   2097152000 B
+  1. En dme-worker1: juntar [C1] con [P]  evita 209715200 B
+Observado previsto: 1887436800 B   (evita 209715200 B, 10.00 %)
+Orden de magnitud del ahorro de transferencia: 17.8 s
+Jobs: 5 -> 4

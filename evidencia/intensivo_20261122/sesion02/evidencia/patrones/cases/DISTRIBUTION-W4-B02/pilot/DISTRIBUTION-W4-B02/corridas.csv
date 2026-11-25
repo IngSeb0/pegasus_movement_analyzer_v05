@@ -1,0 +1,2 @@
+corrida,condicion,duracion_dagman_s,duracion_jobstate_s,diferencia_resolucion_s,tramo_ejecucion_s,tramo_transferencia_s,tramo_auxiliares_s,tramo_cola_s,tramo_cierre_post_s,tramo_dagman_s,tareas,auxiliares,suma_ejecucion_tareas_s,suma_transferencia_entrada_s,suma_transferencia_salida_s,suma_espera_maquina_s,suma_cierre_s,bytes_transferidos,preparacion_hasta_primera_tarea_s,ventana_ejecucion_s
+DISTRIBUTION-W4-B02,DISTRIBUTION-W4,276.41,276,0.410000000000025,46,121,50,22,16,21,6,4,50,271,106,139,54,2631269835,41,148

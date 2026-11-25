@@ -1,0 +1,6 @@
+[
+  {
+    "id": 1,
+    "type": "mkdir",
+    "target": { "site_label": "local", "url": "file:///study/cases/PROCESS-W2/plans/PROCESS-W2/scratch/root/pegasus/dme-six-20261110-process-w2-r01/run0001" } }
+]

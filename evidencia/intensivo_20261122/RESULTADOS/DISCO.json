@@ -1,0 +1,7 @@
+{
+  "dme-master": "Filesystem         1-blocks  Used   Available Capacity Mounted on\n/dev/sda1      105087164416 28672 99701755904       1% /mnt\nFilesystem      Size  Used Avail Use% Mounted on\n/dev/sda1        98G   28K   93G   1% /mnt\n",
+  "dme-worker1": "Filesystem        1-blocks       Used   Available Capacity Mounted on\n/dev/root      32162967552 4499648512 27646541824      14% /\nFilesystem      Size  Used Avail Use% Mounted on\n/dev/root        30G  4.2G   26G  14% /\n",
+  "dme-worker2": "Filesystem        1-blocks       Used   Available Capacity Mounted on\n/dev/root      32162967552 4634218496 27511971840      15% /\nFilesystem      Size  Used Avail Use% Mounted on\n/dev/root        30G  4.4G   26G  15% /\n",
+  "dme-worker3": "Filesystem        1-blocks       Used   Available Capacity Mounted on\n/dev/root      32162967552 3990237184 28155953152      13% /\nFilesystem      Size  Used Avail Use% Mounted on\n/dev/root        30G  3.8G   27G  13% /\n",
+  "dme-worker4": "Filesystem        1-blocks       Used   Available Capacity Mounted on\n/dev/root      32162967552 3989557248 28156633088      13% /\nFilesystem      Size  Used Avail Use% Mounted on\n/dev/root        30G  3.8G   27G  13% /\n"
+}

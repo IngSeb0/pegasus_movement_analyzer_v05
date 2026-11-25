@@ -1,0 +1,3 @@
+WARNING: Esta region no dispone del horario automatico configurado. Desasignar explicitamente al terminar la sesion.
+Se encendieron los nodos solicitados. Otros workers que ya estuvieran encendidos no se apagaron.
+Comprobar el pool real y sus anuncios antes de acreditar un nivel de 1/2/4 workers.

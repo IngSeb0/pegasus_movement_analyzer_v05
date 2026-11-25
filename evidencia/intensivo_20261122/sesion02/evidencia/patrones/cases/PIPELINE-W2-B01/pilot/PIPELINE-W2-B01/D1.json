@@ -1,0 +1,14 @@
+{
+  "ubicacion": {
+    "T1": "dme-worker1",
+    "T2": "dme-worker1",
+    "T3": "dme-worker1",
+    "T4": "dme-worker1",
+    "T5": "dme-worker1",
+    "T6": "dme-worker1"
+  },
+  "referencias_medidas": [],
+  "requerido_10MiB": 20971520,
+  "observado_10MiB": 125829120,
+  "dme": "1/6"
+}

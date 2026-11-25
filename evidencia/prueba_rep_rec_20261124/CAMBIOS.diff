@@ -1,0 +1,231 @@
+--- coordinador/llevar.py
++++ coordinador/llevar.py
+@@ -10,6 +10,9 @@
+ import os, subprocess, sys
+ 
+ HOST = os.environ.get("COORDINADOR", "dme-master")
++SSH_CONFIG = os.environ.get("SSH_CONFIG")
++SSH_OPTIONS = ["-F", SSH_CONFIG] if SSH_CONFIG else []
++TRABAJO = "trabajo/prueba_rep_rec_20261124"
+ 
+ 
+ def ejecutar(*comando):
+@@ -19,11 +22,11 @@
+ 
+ accion, *args = sys.argv[1:]
+ if accion == "subir":
+-    ejecutar("ssh", HOST, "mkdir -p ~/trabajo")
+-    ejecutar("scp", "-r", *args, f"{HOST}:trabajo/")
++    ejecutar("ssh", *SSH_OPTIONS, HOST, f"mkdir -p ~/{TRABAJO}")
++    ejecutar("scp", *SSH_OPTIONS, "-r", *args, f"{HOST}:{TRABAJO}/")
+ elif accion == "correr":
+-    ejecutar("ssh", HOST, f"cd ~/trabajo && {args[0]}")
++    ejecutar("ssh", *SSH_OPTIONS, HOST, f"cd ~/{TRABAJO} && {args[0]}")
+ elif accion == "bajar":
+-    ejecutar("scp", "-r", f"{HOST}:trabajo/{args[0]}", args[1])
++    ejecutar("scp", *SSH_OPTIONS, "-r", f"{HOST}:{TRABAJO}/{args[0]}", args[1])
+ else:
+     sys.exit(__doc__)
+--- flujos/especificaciones.json
++++ flujos/especificaciones.json
+@@ -2640,5 +2640,177 @@
+     }
+    ]
+   }
++ },
++ "REP-REC": {
++  "condition_id": "REP-REC",
++  "pattern": "distribution",
++  "mode": "CondorIO",
++  "active_pool": [
++   "W1",
++   "W2",
++   "W3",
++   "W4"
++  ],
++  "files": [
++   {
++    "file_id": "a",
++    "role": "external",
++    "size_bytes": 209715200,
++    "producer_task": null,
++    "consumer_tasks": [
++     "P"
++    ]
++   },
++   {
++    "file_id": "g",
++    "role": "intermediate",
++    "size_bytes": 209715200,
++    "producer_task": "P",
++    "consumer_tasks": [
++     "C1",
++     "C2",
++     "C3",
++     "C4"
++    ]
++   },
++   {
++    "file_id": "f1",
++    "role": "final",
++    "size_bytes": 209715200,
++    "producer_task": "C1",
++    "consumer_tasks": []
++   },
++   {
++    "file_id": "f2",
++    "role": "final",
++    "size_bytes": 209715200,
++    "producer_task": "C2",
++    "consumer_tasks": []
++   },
++   {
++    "file_id": "f3",
++    "role": "final",
++    "size_bytes": 209715200,
++    "producer_task": "C3",
++    "consumer_tasks": []
++   },
++   {
++    "file_id": "f4",
++    "role": "final",
++    "size_bytes": 209715200,
++    "producer_task": "C4",
++    "consumer_tasks": []
++   }
++  ],
++  "groups": [
++   [
++    "P",
++    "C1"
++   ],
++   [
++    "C2"
++   ],
++   [
++    "C3"
++   ],
++   [
++    "C4"
++   ]
++  ],
++  "dag": {
++   "tasks": [
++    {
++     "task_id": "P",
++     "assigned_worker": "W1",
++     "input_files": [
++      "a"
++     ],
++     "output_files": [
++      "g"
++     ],
++     "flops": 1766799020,
++     "maquina": "dme-worker1"
++    },
++    {
++     "task_id": "C1",
++     "assigned_worker": "W1",
++     "input_files": [
++      "g"
++     ],
++     "output_files": [
++      "f1"
++     ],
++     "flops": 1766799020,
++     "maquina": "dme-worker1"
++    },
++    {
++     "task_id": "C2",
++     "assigned_worker": "W2",
++     "input_files": [
++      "g"
++     ],
++     "output_files": [
++      "f2"
++     ],
++     "flops": 1766799020,
++     "maquina": "dme-worker2"
++    },
++    {
++     "task_id": "C3",
++     "assigned_worker": "W3",
++     "input_files": [
++      "g"
++     ],
++     "output_files": [
++      "f3"
++     ],
++     "flops": 1766799020,
++     "maquina": "dme-worker3"
++    },
++    {
++     "task_id": "C4",
++     "assigned_worker": "W4",
++     "input_files": [
++      "g"
++     ],
++     "output_files": [
++      "f4"
++     ],
++     "flops": 1766799020,
++     "maquina": "dme-worker4"
++    }
++   ],
++   "external_inputs": [
++    "a"
++   ],
++   "final_outputs": [
++    "f1",
++    "f2",
++    "f3",
++    "f4"
++   ],
++   "edges": [
++    {
++     "producer_task": "P",
++     "consumer_task": "C1",
++     "file_id": "g"
++    },
++    {
++     "producer_task": "P",
++     "consumer_task": "C2",
++     "file_id": "g"
++    },
++    {
++     "producer_task": "P",
++     "consumer_task": "C3",
++     "file_id": "g"
++    },
++    {
++     "producer_task": "P",
++     "consumer_task": "C4",
++     "file_id": "g"
++    }
++   ]
++  }
+  }
+-}+}
+--- coordinador/red.py
++++ coordinador/red.py
+@@ -8,14 +8,18 @@
+ Usa tc (control de tráfico de Linux) por SSH. Cada nodo limita lo que ENVÍA: el coordinador hacia los workers
+ y cada worker hacia el coordinador. Solo se frena el tráfico hacia esos destinos; el resto (SSH) sigue libre.
+ """
+-import subprocess, sys
++import os, subprocess, sys
+ 
+ # (nodo, un par al que enviar, red destino que se limita)
+ NODOS = [("dme-master", "10.42.1.5", "10.42.1.0/24")] + [(f"dme-worker{i}", "10.42.0.4", "10.42.0.4/32") for i in range(1, 5)]
+ 
+ 
++SSH_CONFIG = os.environ.get("SSH_CONFIG")
++SSH_OPTIONS = ["-F", SSH_CONFIG] if SSH_CONFIG else []
++
++
+ def ssh(nodo, orden):
+-    return subprocess.run(["ssh", nodo, orden], capture_output=True, text=True, check=True).stdout
++    return subprocess.run(["ssh", *SSH_OPTIONS, nodo, orden], capture_output=True, text=True, check=True).stdout
+ 
+ 
+ accion, *args = sys.argv[1:] or ["?"]

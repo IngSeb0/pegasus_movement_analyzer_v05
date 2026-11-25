@@ -1,0 +1,74 @@
+[
+  {
+    "id": "contraste-B1-REP",
+    "condition": "REP",
+    "block": 1,
+    "phase": "main",
+    "grupo": "contraste",
+    "workers": 4
+  },
+  {
+    "id": "contraste-B1-W2-SEP",
+    "condition": "W2-SEP",
+    "block": 1,
+    "phase": "main",
+    "grupo": "contraste",
+    "workers": 4
+  },
+  {
+    "id": "contraste-B1-W2-AGR",
+    "condition": "W2-AGR",
+    "block": 1,
+    "phase": "main",
+    "grupo": "contraste",
+    "workers": 4
+  },
+  {
+    "id": "contraste-B2-W2-SEP",
+    "condition": "W2-SEP",
+    "block": 2,
+    "phase": "main",
+    "grupo": "contraste",
+    "workers": 4
+  },
+  {
+    "id": "contraste-B2-W2-AGR",
+    "condition": "W2-AGR",
+    "block": 2,
+    "phase": "main",
+    "grupo": "contraste",
+    "workers": 4
+  },
+  {
+    "id": "contraste-B2-REP",
+    "condition": "REP",
+    "block": 2,
+    "phase": "main",
+    "grupo": "contraste",
+    "workers": 4
+  },
+  {
+    "id": "contraste-B3-W2-AGR",
+    "condition": "W2-AGR",
+    "block": 3,
+    "phase": "main",
+    "grupo": "contraste",
+    "workers": 4
+  },
+  {
+    "id": "contraste-B3-REP",
+    "condition": "REP",
+    "block": 3,
+    "phase": "main",
+    "grupo": "contraste",
+    "workers": 4
+  },
+  {
+    "id": "contraste-B3-W2-SEP",
+    "condition": "W2-SEP",
+    "block": 3,
+    "phase": "main",
+    "grupo": "contraste",
+    "workers": 4
+  }
+]

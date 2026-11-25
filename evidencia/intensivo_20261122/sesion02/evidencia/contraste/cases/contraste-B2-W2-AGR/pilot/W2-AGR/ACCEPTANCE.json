@@ -1,0 +1,52 @@
+{
+  "id": "contraste-B2-W2-AGR",
+  "condition": "W2-AGR",
+  "block": 2,
+  "phase": "main",
+  "grupo": "contraste",
+  "workers": 4,
+  "uuid": "6d6e5c3b-8d98-49c2-b1ea-864696965f59",
+  "required_bytes": 1468006400,
+  "observed_bytes": 1468006400,
+  "dme": "1",
+  "predictions_match": true,
+  "duration_s": 247.03800010681152,
+  "obligations": 7,
+  "deliveries": 7,
+  "directions": 4,
+  "all_exact": true,
+  "final_files": [
+    {
+      "file": "f1",
+      "bytes": 209715200,
+      "sha256": "51255cac780aa6cd7c01aa883efd63c93cc78f54c540f5e6044ce173859b1d0a",
+      "matches_native_metadata": true
+    },
+    {
+      "file": "f2",
+      "bytes": 209715200,
+      "sha256": "5b7870975bc0dd00311a8361fb8bf657bd6c438a9c21a67033cae74284819d92",
+      "matches_native_metadata": true
+    },
+    {
+      "file": "f3",
+      "bytes": 209715200,
+      "sha256": "05b2f478bdbfb782ef4830b67dee7ef0b79daa76e522eeb90c97641c9c43f2c9",
+      "matches_native_metadata": true
+    },
+    {
+      "file": "f4",
+      "bytes": 209715200,
+      "sha256": "c8130f077339142334a388c4b6f038fbbba46c73860daf428923000a77993d57",
+      "matches_native_metadata": true
+    }
+  ],
+  "placement": {
+    "P": "dme-worker1",
+    "C3": "dme-worker2",
+    "C4": "dme-worker2",
+    "C1": "dme-worker2",
+    "C2": "dme-worker2"
+  },
+  "acceptedAtUtc": "2026-11-22T17:32:07.055708+00:00"
+}

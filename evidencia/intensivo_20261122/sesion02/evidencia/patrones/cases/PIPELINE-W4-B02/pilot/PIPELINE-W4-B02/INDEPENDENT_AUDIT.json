@@ -1,0 +1,1175 @@
+{
+  "condition": "PIPELINE-W4-B02",
+  "status": "CORROBORATED_BY_JOB_DIRECTION_CONTRACT",
+  "errors": [],
+  "required_bytes": 419430400,
+  "observed_bytes": 2516582400,
+  "dme_exact": "1/6",
+  "files": {
+    "A": {
+      "producer": null,
+      "consumers": [
+        "T1"
+      ],
+      "final": false,
+      "bytes": 209715200,
+      "checksum": "1496e435a9338fca4aa1242a6a8feaccdd0ed091cd60fd831260b1a0d4b346f4",
+      "metadata": [
+        {
+          "bytes": 209715200,
+          "checksum": "1496e435a9338fca4aa1242a6a8feaccdd0ed091cd60fd831260b1a0d4b346f4",
+          "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/stage_in_local_local_0_0.meta",
+          "sha256": "e2b38cc9ab28ec89d2e5ef7d58a47ca423cbda4fdb9af247da85caab75571c23"
+        }
+      ],
+      "origin": "dme-master",
+      "destinations": [
+        "dme-worker3"
+      ],
+      "n_f": 1,
+      "required_bytes": 209715200
+    },
+    "f12": {
+      "producer": "T1",
+      "consumers": [
+        "T2"
+      ],
+      "final": false,
+      "bytes": 209715200,
+      "checksum": "4b49c38292e8ef32a6a8f7469100c7041c73893613c4645e913973c2ee76233a",
+      "metadata": [
+        {
+          "bytes": 209715200,
+          "checksum": "4b49c38292e8ef32a6a8f7469100c7041c73893613c4645e913973c2ee76233a",
+          "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/campaign_task_T1.meta",
+          "sha256": "7de73c9d2a07828fbb19c01570ab3bb35d228ae85aaf0e39e8bf4df8f9e96de4"
+        }
+      ],
+      "origin": "dme-worker3",
+      "destinations": [],
+      "n_f": 0,
+      "required_bytes": 0
+    },
+    "f23": {
+      "producer": "T2",
+      "consumers": [
+        "T3"
+      ],
+      "final": false,
+      "bytes": 209715200,
+      "checksum": "139140785776f6fb7b1730e697417ccd243454ae9bc8394d7a0ceb4d8d512fd8",
+      "metadata": [
+        {
+          "bytes": 209715200,
+          "checksum": "139140785776f6fb7b1730e697417ccd243454ae9bc8394d7a0ceb4d8d512fd8",
+          "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/campaign_task_T2.meta",
+          "sha256": "963ba60d628c7eeb6907cbbab8437f55035b1b4830172aee3d9e81891cf22ecc"
+        }
+      ],
+      "origin": "dme-worker3",
+      "destinations": [],
+      "n_f": 0,
+      "required_bytes": 0
+    },
+    "f34": {
+      "producer": "T3",
+      "consumers": [
+        "T4"
+      ],
+      "final": false,
+      "bytes": 209715200,
+      "checksum": "f0ec5e0a0dccd8e5dba38ec62c729753c16a2201103feb919b7e5dcbb9bd4ff2",
+      "metadata": [
+        {
+          "bytes": 209715200,
+          "checksum": "f0ec5e0a0dccd8e5dba38ec62c729753c16a2201103feb919b7e5dcbb9bd4ff2",
+          "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/campaign_task_T3.meta",
+          "sha256": "cae736a1b9dbe3d59f390dcd959e2c67f6f45ebb7fbd1572886d3a288846f835"
+        }
+      ],
+      "origin": "dme-worker3",
+      "destinations": [],
+      "n_f": 0,
+      "required_bytes": 0
+    },
+    "f45": {
+      "producer": "T4",
+      "consumers": [
+        "T5"
+      ],
+      "final": false,
+      "bytes": 209715200,
+      "checksum": "71e3849652b09c8676d643b1f64535be2d651b32f2b47714378eb455d974082d",
+      "metadata": [
+        {
+          "bytes": 209715200,
+          "checksum": "71e3849652b09c8676d643b1f64535be2d651b32f2b47714378eb455d974082d",
+          "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/campaign_task_T4.meta",
+          "sha256": "b2470472420fc1e86c2491651682e6714373700b458c9417646f3970d321ef65"
+        }
+      ],
+      "origin": "dme-worker3",
+      "destinations": [],
+      "n_f": 0,
+      "required_bytes": 0
+    },
+    "f56": {
+      "producer": "T5",
+      "consumers": [
+        "T6"
+      ],
+      "final": false,
+      "bytes": 209715200,
+      "checksum": "d04e42940bfe5e30a67ec6a241b8f248b7ef165f725567fb2976cb646bc71135",
+      "metadata": [
+        {
+          "bytes": 209715200,
+          "checksum": "d04e42940bfe5e30a67ec6a241b8f248b7ef165f725567fb2976cb646bc71135",
+          "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/campaign_task_T5.meta",
+          "sha256": "92917800f33fb2fd6911caedf43d2298588f703d44138757c009b384cd016329"
+        }
+      ],
+      "origin": "dme-worker3",
+      "destinations": [],
+      "n_f": 0,
+      "required_bytes": 0
+    },
+    "B": {
+      "producer": "T6",
+      "consumers": [],
+      "final": true,
+      "bytes": 209715200,
+      "checksum": "706c92fddcfb302539c59c75703cefefaf6a6d7e007068f23e950a24e11a5d80",
+      "metadata": [
+        {
+          "bytes": 209715200,
+          "checksum": "706c92fddcfb302539c59c75703cefefaf6a6d7e007068f23e950a24e11a5d80",
+          "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/campaign_task_T6.meta",
+          "sha256": "b3891b5dd9ab99835e322148d29ee76bcbb583db2c10ebb49185c1e42288df1d"
+        }
+      ],
+      "origin": "dme-worker3",
+      "destinations": [
+        "dme-master"
+      ],
+      "n_f": 1,
+      "required_bytes": 209715200
+    }
+  },
+  "task_to_node": {
+    "T1": "campaign_task_T1",
+    "T2": "campaign_task_T2",
+    "T3": "campaign_task_T3",
+    "T4": "campaign_task_T4",
+    "T5": "campaign_task_T5",
+    "T6": "campaign_task_T6"
+  },
+  "jobs": [
+    {
+      "node": "campaign_task_T1",
+      "members": [
+        "T1"
+      ],
+      "worker": "dme-worker3",
+      "global_job_id": "dme-master#3719.0#1795364406",
+      "counts": {
+        "JobRunCount": 1,
+        "NumJobStarts": 1,
+        "NumShadowStarts": 1,
+        "NumInputTransferStarts": 1,
+        "NumOutputTransferStarts": 1
+      },
+      "event_counts": {
+        "000": 1,
+        "001": 1,
+        "005": 1,
+        "016": 1
+      }
+    },
+    {
+      "node": "campaign_task_T2",
+      "members": [
+        "T2"
+      ],
+      "worker": "dme-worker3",
+      "global_job_id": "dme-master#3720.0#1795364471",
+      "counts": {
+        "JobRunCount": 1,
+        "NumJobStarts": 1,
+        "NumShadowStarts": 1,
+        "NumInputTransferStarts": 1,
+        "NumOutputTransferStarts": 1
+      },
+      "event_counts": {
+        "000": 1,
+        "001": 1,
+        "005": 1,
+        "016": 1
+      }
+    },
+    {
+      "node": "campaign_task_T3",
+      "members": [
+        "T3"
+      ],
+      "worker": "dme-worker3",
+      "global_job_id": "dme-master#3721.0#1795364531",
+      "counts": {
+        "JobRunCount": 1,
+        "NumJobStarts": 1,
+        "NumShadowStarts": 1,
+        "NumInputTransferStarts": 1,
+        "NumOutputTransferStarts": 1
+      },
+      "event_counts": {
+        "000": 1,
+        "001": 1,
+        "005": 1,
+        "016": 1
+      }
+    },
+    {
+      "node": "campaign_task_T4",
+      "members": [
+        "T4"
+      ],
+      "worker": "dme-worker3",
+      "global_job_id": "dme-master#3722.0#1795364591",
+      "counts": {
+        "JobRunCount": 1,
+        "NumJobStarts": 1,
+        "NumShadowStarts": 1,
+        "NumInputTransferStarts": 1,
+        "NumOutputTransferStarts": 1
+      },
+      "event_counts": {
+        "000": 1,
+        "001": 1,
+        "005": 1,
+        "016": 1
+      }
+    },
+    {
+      "node": "campaign_task_T5",
+      "members": [
+        "T5"
+      ],
+      "worker": "dme-worker3",
+      "global_job_id": "dme-master#3723.0#1795364651",
+      "counts": {
+        "JobRunCount": 1,
+        "NumJobStarts": 1,
+        "NumShadowStarts": 1,
+        "NumInputTransferStarts": 1,
+        "NumOutputTransferStarts": 1
+      },
+      "event_counts": {
+        "000": 1,
+        "001": 1,
+        "005": 1,
+        "016": 1
+      }
+    },
+    {
+      "node": "campaign_task_T6",
+      "members": [
+        "T6"
+      ],
+      "worker": "dme-worker3",
+      "global_job_id": "dme-master#3724.0#1795364711",
+      "counts": {
+        "JobRunCount": 1,
+        "NumJobStarts": 1,
+        "NumShadowStarts": 1,
+        "NumInputTransferStarts": 1,
+        "NumOutputTransferStarts": 1
+      },
+      "event_counts": {
+        "000": 1,
+        "001": 1,
+        "005": 1,
+        "016": 1
+      }
+    }
+  ],
+  "directions": [
+    {
+      "node": "campaign_task_T1",
+      "direction": "input",
+      "raw_contract": [
+        "A",
+        "campaign_task",
+        "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+        "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+        "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/stage_in_local_local_0_0.meta",
+        "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/pegasus-lite-common.sh",
+        "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/bin/fma_kernel"
+      ],
+      "unique_contract": [
+        "A",
+        "campaign_task",
+        "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+        "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+        "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/stage_in_local_local_0_0.meta",
+        "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/pegasus-lite-common.sh",
+        "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/bin/fma_kernel"
+      ],
+      "identical_duplicate_tokens": 0,
+      "scientific_files": [
+        "A"
+      ],
+      "scientific_bytes": 209715200,
+      "auxiliary_bytes": 19108288,
+      "native_bytes": 228823488,
+      "native_last_bytes": 228823488,
+      "native_count": 8,
+      "expected_count": 8,
+      "exact": true,
+      "residual": 0,
+      "auxiliaries": [
+        {
+          "contract_path": "campaign_task",
+          "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/scratch/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/campaign_task",
+          "bytes": 5151,
+          "sha256": "f2bd2df2752ae6890df433e1428f713c29dc6ab3a995a3787a8ebca2d432353f"
+        },
+        {
+          "contract_path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+          "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+          "bytes": 18251217,
+          "sha256": "b1d82cc0c6b2c26bfa308c51e7eeb661a48691af2355ad4755f0c5262d5e4cc1"
+        },
+        {
+          "contract_path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+          "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+          "bytes": 338,
+          "sha256": "a8fd9cb5775051b27659007ed4887c7c2f3b4f2f120c4afab50a09732c1651ac"
+        },
+        {
+          "contract_path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/stage_in_local_local_0_0.meta",
+          "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/stage_in_local_local_0_0.meta",
+          "bytes": 331,
+          "sha256": "e2b38cc9ab28ec89d2e5ef7d58a47ca423cbda4fdb9af247da85caab75571c23"
+        },
+        {
+          "contract_path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/pegasus-lite-common.sh",
+          "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/pegasus-lite-common.sh",
+          "bytes": 28862,
+          "sha256": "48cde664b6af1939ecbe9622456b1ddd32d91c2db7373a1e98e833fb2aa0d9a2"
+        },
+        {
+          "contract_path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/bin/fma_kernel",
+          "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/bin/fma_kernel",
+          "bytes": 820576,
+          "sha256": "55f11663f236baa2f1fe9989f5d928547992fdab43b2ee228aa2df2baea3aa62"
+        },
+        {
+          "contract_path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/campaign_task_T1.sh",
+          "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/campaign_task_T1.sh",
+          "bytes": 1813,
+          "sha256": "de39ceedf146c3a8099b2a4f7c5d254736ec0195c9f560425e2ef948089f9a64"
+        }
+      ]
+    },
+    {
+      "node": "campaign_task_T1",
+      "direction": "output",
+      "raw_contract": [
+        "f12"
+      ],
+      "unique_contract": [
+        "f12"
+      ],
+      "identical_duplicate_tokens": 0,
+      "scientific_files": [
+        "f12"
+      ],
+      "scientific_bytes": 209715200,
+      "auxiliary_bytes": 6290,
+      "native_bytes": 209721490,
+      "native_last_bytes": 209721490,
+      "native_count": 3,
+      "expected_count": 3,
+      "exact": true,
+      "residual": 0,
+      "auxiliaries": [
+        {
+          "contract_path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001//00/00/campaign_task_T1.out",
+          "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/campaign_task_T1.out.000",
+          "bytes": 5547,
+          "sha256": "66ed1cd6523ebb503537a7a26db559dbe85ce6dd222d268865906cab11fe4cb8"
+        },
+        {
+          "contract_path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001//00/00/campaign_task_T1.err",
+          "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/campaign_task_T1.err.000",
+          "bytes": 743,
+          "sha256": "95fc217e3aeb7413330c97cb52d9f65c1505a78569c8062cad91f662327d8635"
+        }
+      ]
+    },
+    {
+      "node": "campaign_task_T2",
+      "direction": "input",
+      "raw_contract": [
+        "campaign_task",
+        "f12",
+        "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+        "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+        "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/campaign_task_T1.meta",
+        "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/pegasus-lite-common.sh",
+        "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/bin/fma_kernel"
+      ],
+      "unique_contract": [
+        "campaign_task",
+        "f12",
+        "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+        "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+        "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/campaign_task_T1.meta",
+        "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/pegasus-lite-common.sh",
+        "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/bin/fma_kernel"
+      ],
+      "identical_duplicate_tokens": 0,
+      "scientific_files": [
+        "f12"
+      ],
+      "scientific_bytes": 209715200,
+      "auxiliary_bytes": 19108290,
+      "native_bytes": 228823490,
+      "native_last_bytes": 228823490,
+      "native_count": 8,
+      "expected_count": 8,
+      "exact": true,
+      "residual": 0,
+      "auxiliaries": [
+        {
+          "contract_path": "campaign_task",
+          "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/scratch/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/campaign_task",
+          "bytes": 5151,
+          "sha256": "f2bd2df2752ae6890df433e1428f713c29dc6ab3a995a3787a8ebca2d432353f"
+        },
+        {
+          "contract_path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+          "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+          "bytes": 18251217,
+          "sha256": "b1d82cc0c6b2c26bfa308c51e7eeb661a48691af2355ad4755f0c5262d5e4cc1"
+        },
+        {
+          "contract_path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+          "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+          "bytes": 338,
+          "sha256": "a8fd9cb5775051b27659007ed4887c7c2f3b4f2f120c4afab50a09732c1651ac"
+        },
+        {
+          "contract_path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/campaign_task_T1.meta",
+          "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/campaign_task_T1.meta",
+          "bytes": 329,
+          "sha256": "7de73c9d2a07828fbb19c01570ab3bb35d228ae85aaf0e39e8bf4df8f9e96de4"
+        },
+        {
+          "contract_path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/pegasus-lite-common.sh",
+          "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/pegasus-lite-common.sh",
+          "bytes": 28862,
+          "sha256": "48cde664b6af1939ecbe9622456b1ddd32d91c2db7373a1e98e833fb2aa0d9a2"
+        },
+        {
+          "contract_path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/bin/fma_kernel",
+          "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/bin/fma_kernel",
+          "bytes": 820576,
+          "sha256": "55f11663f236baa2f1fe9989f5d928547992fdab43b2ee228aa2df2baea3aa62"
+        },
+        {
+          "contract_path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/campaign_task_T2.sh",
+          "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/campaign_task_T2.sh",
+          "bytes": 1817,
+          "sha256": "44ac2b08b1946822c64e0834f893f2f5f1197898f224be8d253da28e1edb1e56"
+        }
+      ]
+    },
+    {
+      "node": "campaign_task_T2",
+      "direction": "output",
+      "raw_contract": [
+        "f23"
+      ],
+      "unique_contract": [
+        "f23"
+      ],
+      "identical_duplicate_tokens": 0,
+      "scientific_files": [
+        "f23"
+      ],
+      "scientific_bytes": 209715200,
+      "auxiliary_bytes": 6296,
+      "native_bytes": 209721496,
+      "native_last_bytes": 209721496,
+      "native_count": 3,
+      "expected_count": 3,
+      "exact": true,
+      "residual": 0,
+      "auxiliaries": [
+        {
+          "contract_path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001//00/00/campaign_task_T2.out",
+          "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/campaign_task_T2.out.000",
+          "bytes": 5553,
+          "sha256": "14719db01a8d42b0980ed0827b03851ad00cf30c7511d067ffa71d399e803936"
+        },
+        {
+          "contract_path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001//00/00/campaign_task_T2.err",
+          "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/campaign_task_T2.err.000",
+          "bytes": 743,
+          "sha256": "897f4dc9e042f9e9ecdad67f06ba12d2bfa26689f189e576573a869d0a063895"
+        }
+      ]
+    },
+    {
+      "node": "campaign_task_T3",
+      "direction": "input",
+      "raw_contract": [
+        "f23",
+        "campaign_task",
+        "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+        "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+        "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/campaign_task_T2.meta",
+        "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/pegasus-lite-common.sh",
+        "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/bin/fma_kernel"
+      ],
+      "unique_contract": [
+        "f23",
+        "campaign_task",
+        "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+        "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+        "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/campaign_task_T2.meta",
+        "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/pegasus-lite-common.sh",
+        "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/bin/fma_kernel"
+      ],
+      "identical_duplicate_tokens": 0,
+      "scientific_files": [
+        "f23"
+      ],
+      "scientific_bytes": 209715200,
+      "auxiliary_bytes": 19108290,
+      "native_bytes": 228823490,
+      "native_last_bytes": 228823490,
+      "native_count": 8,
+      "expected_count": 8,
+      "exact": true,
+      "residual": 0,
+      "auxiliaries": [
+        {
+          "contract_path": "campaign_task",
+          "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/scratch/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/campaign_task",
+          "bytes": 5151,
+          "sha256": "f2bd2df2752ae6890df433e1428f713c29dc6ab3a995a3787a8ebca2d432353f"
+        },
+        {
+          "contract_path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+          "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+          "bytes": 18251217,
+          "sha256": "b1d82cc0c6b2c26bfa308c51e7eeb661a48691af2355ad4755f0c5262d5e4cc1"
+        },
+        {
+          "contract_path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+          "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+          "bytes": 338,
+          "sha256": "a8fd9cb5775051b27659007ed4887c7c2f3b4f2f120c4afab50a09732c1651ac"
+        },
+        {
+          "contract_path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/campaign_task_T2.meta",
+          "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/campaign_task_T2.meta",
+          "bytes": 329,
+          "sha256": "963ba60d628c7eeb6907cbbab8437f55035b1b4830172aee3d9e81891cf22ecc"
+        },
+        {
+          "contract_path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/pegasus-lite-common.sh",
+          "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/pegasus-lite-common.sh",
+          "bytes": 28862,
+          "sha256": "48cde664b6af1939ecbe9622456b1ddd32d91c2db7373a1e98e833fb2aa0d9a2"
+        },
+        {
+          "contract_path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/bin/fma_kernel",
+          "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/bin/fma_kernel",
+          "bytes": 820576,
+          "sha256": "55f11663f236baa2f1fe9989f5d928547992fdab43b2ee228aa2df2baea3aa62"
+        },
+        {
+          "contract_path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/campaign_task_T3.sh",
+          "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/campaign_task_T3.sh",
+          "bytes": 1817,
+          "sha256": "a3e434cd038a7afd856b06600fdc877420aa10b8820aad4edfda6dce81085a17"
+        }
+      ]
+    },
+    {
+      "node": "campaign_task_T3",
+      "direction": "output",
+      "raw_contract": [
+        "f34"
+      ],
+      "unique_contract": [
+        "f34"
+      ],
+      "identical_duplicate_tokens": 0,
+      "scientific_files": [
+        "f34"
+      ],
+      "scientific_bytes": 209715200,
+      "auxiliary_bytes": 6298,
+      "native_bytes": 209721498,
+      "native_last_bytes": 209721498,
+      "native_count": 3,
+      "expected_count": 3,
+      "exact": true,
+      "residual": 0,
+      "auxiliaries": [
+        {
+          "contract_path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001//00/00/campaign_task_T3.out",
+          "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/campaign_task_T3.out.000",
+          "bytes": 5555,
+          "sha256": "c331590541e89d022a6f71746e95fa393f3d9afbe097e44c8963f6a9110cba22"
+        },
+        {
+          "contract_path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001//00/00/campaign_task_T3.err",
+          "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/campaign_task_T3.err.000",
+          "bytes": 743,
+          "sha256": "9c76782b55b219a36286584b7219f50773eef8e7f0a0521fbac7b535553ecd1a"
+        }
+      ]
+    },
+    {
+      "node": "campaign_task_T4",
+      "direction": "input",
+      "raw_contract": [
+        "f34",
+        "campaign_task",
+        "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+        "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+        "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/campaign_task_T3.meta",
+        "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/pegasus-lite-common.sh",
+        "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/bin/fma_kernel"
+      ],
+      "unique_contract": [
+        "f34",
+        "campaign_task",
+        "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+        "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+        "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/campaign_task_T3.meta",
+        "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/pegasus-lite-common.sh",
+        "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/bin/fma_kernel"
+      ],
+      "identical_duplicate_tokens": 0,
+      "scientific_files": [
+        "f34"
+      ],
+      "scientific_bytes": 209715200,
+      "auxiliary_bytes": 19108290,
+      "native_bytes": 228823490,
+      "native_last_bytes": 228823490,
+      "native_count": 8,
+      "expected_count": 8,
+      "exact": true,
+      "residual": 0,
+      "auxiliaries": [
+        {
+          "contract_path": "campaign_task",
+          "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/scratch/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/campaign_task",
+          "bytes": 5151,
+          "sha256": "f2bd2df2752ae6890df433e1428f713c29dc6ab3a995a3787a8ebca2d432353f"
+        },
+        {
+          "contract_path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+          "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+          "bytes": 18251217,
+          "sha256": "b1d82cc0c6b2c26bfa308c51e7eeb661a48691af2355ad4755f0c5262d5e4cc1"
+        },
+        {
+          "contract_path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+          "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+          "bytes": 338,
+          "sha256": "a8fd9cb5775051b27659007ed4887c7c2f3b4f2f120c4afab50a09732c1651ac"
+        },
+        {
+          "contract_path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/campaign_task_T3.meta",
+          "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/campaign_task_T3.meta",
+          "bytes": 329,
+          "sha256": "cae736a1b9dbe3d59f390dcd959e2c67f6f45ebb7fbd1572886d3a288846f835"
+        },
+        {
+          "contract_path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/pegasus-lite-common.sh",
+          "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/pegasus-lite-common.sh",
+          "bytes": 28862,
+          "sha256": "48cde664b6af1939ecbe9622456b1ddd32d91c2db7373a1e98e833fb2aa0d9a2"
+        },
+        {
+          "contract_path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/bin/fma_kernel",
+          "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/bin/fma_kernel",
+          "bytes": 820576,
+          "sha256": "55f11663f236baa2f1fe9989f5d928547992fdab43b2ee228aa2df2baea3aa62"
+        },
+        {
+          "contract_path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/campaign_task_T4.sh",
+          "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/campaign_task_T4.sh",
+          "bytes": 1817,
+          "sha256": "31e4ccf5ca4f50994f0bf9102332fd92ae888430570d3c6ed9232301748544e6"
+        }
+      ]
+    },
+    {
+      "node": "campaign_task_T4",
+      "direction": "output",
+      "raw_contract": [
+        "f45"
+      ],
+      "unique_contract": [
+        "f45"
+      ],
+      "identical_duplicate_tokens": 0,
+      "scientific_files": [
+        "f45"
+      ],
+      "scientific_bytes": 209715200,
+      "auxiliary_bytes": 6338,
+      "native_bytes": 209721538,
+      "native_last_bytes": 209721538,
+      "native_count": 3,
+      "expected_count": 3,
+      "exact": true,
+      "residual": 0,
+      "auxiliaries": [
+        {
+          "contract_path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001//00/00/campaign_task_T4.out",
+          "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/campaign_task_T4.out.000",
+          "bytes": 5595,
+          "sha256": "53c08193caa08d4ccc0a876bb464f9ad843a07323c1eef11e179cdc17a42c761"
+        },
+        {
+          "contract_path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001//00/00/campaign_task_T4.err",
+          "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/campaign_task_T4.err.000",
+          "bytes": 743,
+          "sha256": "f800c8a26d20e740fc196b187201af96a9bae17962221b326842fb4b521835c4"
+        }
+      ]
+    },
+    {
+      "node": "campaign_task_T5",
+      "direction": "input",
+      "raw_contract": [
+        "campaign_task",
+        "f45",
+        "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+        "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+        "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/campaign_task_T4.meta",
+        "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/pegasus-lite-common.sh",
+        "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/bin/fma_kernel"
+      ],
+      "unique_contract": [
+        "campaign_task",
+        "f45",
+        "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+        "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+        "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/campaign_task_T4.meta",
+        "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/pegasus-lite-common.sh",
+        "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/bin/fma_kernel"
+      ],
+      "identical_duplicate_tokens": 0,
+      "scientific_files": [
+        "f45"
+      ],
+      "scientific_bytes": 209715200,
+      "auxiliary_bytes": 19108290,
+      "native_bytes": 228823490,
+      "native_last_bytes": 228823490,
+      "native_count": 8,
+      "expected_count": 8,
+      "exact": true,
+      "residual": 0,
+      "auxiliaries": [
+        {
+          "contract_path": "campaign_task",
+          "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/scratch/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/campaign_task",
+          "bytes": 5151,
+          "sha256": "f2bd2df2752ae6890df433e1428f713c29dc6ab3a995a3787a8ebca2d432353f"
+        },
+        {
+          "contract_path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+          "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+          "bytes": 18251217,
+          "sha256": "b1d82cc0c6b2c26bfa308c51e7eeb661a48691af2355ad4755f0c5262d5e4cc1"
+        },
+        {
+          "contract_path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+          "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+          "bytes": 338,
+          "sha256": "a8fd9cb5775051b27659007ed4887c7c2f3b4f2f120c4afab50a09732c1651ac"
+        },
+        {
+          "contract_path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/campaign_task_T4.meta",
+          "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/campaign_task_T4.meta",
+          "bytes": 329,
+          "sha256": "b2470472420fc1e86c2491651682e6714373700b458c9417646f3970d321ef65"
+        },
+        {
+          "contract_path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/pegasus-lite-common.sh",
+          "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/pegasus-lite-common.sh",
+          "bytes": 28862,
+          "sha256": "48cde664b6af1939ecbe9622456b1ddd32d91c2db7373a1e98e833fb2aa0d9a2"
+        },
+        {
+          "contract_path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/bin/fma_kernel",
+          "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/bin/fma_kernel",
+          "bytes": 820576,
+          "sha256": "55f11663f236baa2f1fe9989f5d928547992fdab43b2ee228aa2df2baea3aa62"
+        },
+        {
+          "contract_path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/campaign_task_T5.sh",
+          "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/campaign_task_T5.sh",
+          "bytes": 1817,
+          "sha256": "a50c35b824ea2ad5ec92596c42dfb437abbe6442c672c051d8cd9bb827bb3f01"
+        }
+      ]
+    },
+    {
+      "node": "campaign_task_T5",
+      "direction": "output",
+      "raw_contract": [
+        "f56"
+      ],
+      "unique_contract": [
+        "f56"
+      ],
+      "identical_duplicate_tokens": 0,
+      "scientific_files": [
+        "f56"
+      ],
+      "scientific_bytes": 209715200,
+      "auxiliary_bytes": 6339,
+      "native_bytes": 209721539,
+      "native_last_bytes": 209721539,
+      "native_count": 3,
+      "expected_count": 3,
+      "exact": true,
+      "residual": 0,
+      "auxiliaries": [
+        {
+          "contract_path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001//00/00/campaign_task_T5.out",
+          "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/campaign_task_T5.out.000",
+          "bytes": 5596,
+          "sha256": "6fd685f831f621820184d389fa7165533c94305ccbb813392e1448b5c53422c3"
+        },
+        {
+          "contract_path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001//00/00/campaign_task_T5.err",
+          "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/campaign_task_T5.err.000",
+          "bytes": 743,
+          "sha256": "9d085320e44712d157fb82520232225539cd90f9d8d85e8f8ce6d3d93357a886"
+        }
+      ]
+    },
+    {
+      "node": "campaign_task_T6",
+      "direction": "input",
+      "raw_contract": [
+        "campaign_task",
+        "f56",
+        "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+        "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/campaign_task_T5.meta",
+        "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+        "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/pegasus-lite-common.sh",
+        "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/bin/fma_kernel"
+      ],
+      "unique_contract": [
+        "campaign_task",
+        "f56",
+        "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+        "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/campaign_task_T5.meta",
+        "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+        "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/pegasus-lite-common.sh",
+        "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/bin/fma_kernel"
+      ],
+      "identical_duplicate_tokens": 0,
+      "scientific_files": [
+        "f56"
+      ],
+      "scientific_bytes": 209715200,
+      "auxiliary_bytes": 19108284,
+      "native_bytes": 228823484,
+      "native_last_bytes": 228823484,
+      "native_count": 8,
+      "expected_count": 8,
+      "exact": true,
+      "residual": 0,
+      "auxiliaries": [
+        {
+          "contract_path": "campaign_task",
+          "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/scratch/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/campaign_task",
+          "bytes": 5151,
+          "sha256": "f2bd2df2752ae6890df433e1428f713c29dc6ab3a995a3787a8ebca2d432353f"
+        },
+        {
+          "contract_path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+          "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+          "bytes": 18251217,
+          "sha256": "b1d82cc0c6b2c26bfa308c51e7eeb661a48691af2355ad4755f0c5262d5e4cc1"
+        },
+        {
+          "contract_path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/campaign_task_T5.meta",
+          "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/campaign_task_T5.meta",
+          "bytes": 329,
+          "sha256": "92917800f33fb2fd6911caedf43d2298588f703d44138757c009b384cd016329"
+        },
+        {
+          "contract_path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+          "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+          "bytes": 338,
+          "sha256": "a8fd9cb5775051b27659007ed4887c7c2f3b4f2f120c4afab50a09732c1651ac"
+        },
+        {
+          "contract_path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/pegasus-lite-common.sh",
+          "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/pegasus-lite-common.sh",
+          "bytes": 28862,
+          "sha256": "48cde664b6af1939ecbe9622456b1ddd32d91c2db7373a1e98e833fb2aa0d9a2"
+        },
+        {
+          "contract_path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/bin/fma_kernel",
+          "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/bin/fma_kernel",
+          "bytes": 820576,
+          "sha256": "55f11663f236baa2f1fe9989f5d928547992fdab43b2ee228aa2df2baea3aa62"
+        },
+        {
+          "contract_path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/campaign_task_T6.sh",
+          "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/campaign_task_T6.sh",
+          "bytes": 1811,
+          "sha256": "7770e206bb163447e725f70385fc5f20f5ba5c783e4a8aed77ba5a6483374131"
+        }
+      ]
+    },
+    {
+      "node": "campaign_task_T6",
+      "direction": "output",
+      "raw_contract": [
+        "B"
+      ],
+      "unique_contract": [
+        "B"
+      ],
+      "identical_duplicate_tokens": 0,
+      "scientific_files": [
+        "B"
+      ],
+      "scientific_bytes": 209715200,
+      "auxiliary_bytes": 6288,
+      "native_bytes": 209721488,
+      "native_last_bytes": 209721488,
+      "native_count": 3,
+      "expected_count": 3,
+      "exact": true,
+      "residual": 0,
+      "auxiliaries": [
+        {
+          "contract_path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001//00/00/campaign_task_T6.out",
+          "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/campaign_task_T6.out.000",
+          "bytes": 5545,
+          "sha256": "26adf03cde3a431d8f52596800fa61924b4cc58aad44a5a4798aefbbab496564"
+        },
+        {
+          "contract_path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001//00/00/campaign_task_T6.err",
+          "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/campaign_task_T6.err.000",
+          "bytes": 743,
+          "sha256": "483ae78b2d42a036e4f621b88feabcb90efc8e5ee5f9ad20c99a2fa0896f2d67"
+        }
+      ]
+    }
+  ],
+  "deliveries": [
+    {
+      "node": "campaign_task_T1",
+      "global_job_id": "dme-master#3719.0#1795364406",
+      "direction": "input",
+      "file": "A",
+      "bytes": 209715200,
+      "source": "dme-master",
+      "destination": "dme-worker3"
+    },
+    {
+      "node": "campaign_task_T1",
+      "global_job_id": "dme-master#3719.0#1795364406",
+      "direction": "output",
+      "file": "f12",
+      "bytes": 209715200,
+      "source": "dme-worker3",
+      "destination": "dme-master"
+    },
+    {
+      "node": "campaign_task_T2",
+      "global_job_id": "dme-master#3720.0#1795364471",
+      "direction": "input",
+      "file": "f12",
+      "bytes": 209715200,
+      "source": "dme-master",
+      "destination": "dme-worker3"
+    },
+    {
+      "node": "campaign_task_T2",
+      "global_job_id": "dme-master#3720.0#1795364471",
+      "direction": "output",
+      "file": "f23",
+      "bytes": 209715200,
+      "source": "dme-worker3",
+      "destination": "dme-master"
+    },
+    {
+      "node": "campaign_task_T3",
+      "global_job_id": "dme-master#3721.0#1795364531",
+      "direction": "input",
+      "file": "f23",
+      "bytes": 209715200,
+      "source": "dme-master",
+      "destination": "dme-worker3"
+    },
+    {
+      "node": "campaign_task_T3",
+      "global_job_id": "dme-master#3721.0#1795364531",
+      "direction": "output",
+      "file": "f34",
+      "bytes": 209715200,
+      "source": "dme-worker3",
+      "destination": "dme-master"
+    },
+    {
+      "node": "campaign_task_T4",
+      "global_job_id": "dme-master#3722.0#1795364591",
+      "direction": "input",
+      "file": "f34",
+      "bytes": 209715200,
+      "source": "dme-master",
+      "destination": "dme-worker3"
+    },
+    {
+      "node": "campaign_task_T4",
+      "global_job_id": "dme-master#3722.0#1795364591",
+      "direction": "output",
+      "file": "f45",
+      "bytes": 209715200,
+      "source": "dme-worker3",
+      "destination": "dme-master"
+    },
+    {
+      "node": "campaign_task_T5",
+      "global_job_id": "dme-master#3723.0#1795364651",
+      "direction": "input",
+      "file": "f45",
+      "bytes": 209715200,
+      "source": "dme-master",
+      "destination": "dme-worker3"
+    },
+    {
+      "node": "campaign_task_T5",
+      "global_job_id": "dme-master#3723.0#1795364651",
+      "direction": "output",
+      "file": "f56",
+      "bytes": 209715200,
+      "source": "dme-worker3",
+      "destination": "dme-master"
+    },
+    {
+      "node": "campaign_task_T6",
+      "global_job_id": "dme-master#3724.0#1795364711",
+      "direction": "input",
+      "file": "f56",
+      "bytes": 209715200,
+      "source": "dme-master",
+      "destination": "dme-worker3"
+    },
+    {
+      "node": "campaign_task_T6",
+      "global_job_id": "dme-master#3724.0#1795364711",
+      "direction": "output",
+      "file": "B",
+      "bytes": 209715200,
+      "source": "dme-worker3",
+      "destination": "dme-master"
+    }
+  ],
+  "final_files": [
+    {
+      "file": "B",
+      "bytes": 209715200,
+      "sha256": "706c92fddcfb302539c59c75703cefefaf6a6d7e007068f23e950a24e11a5d80",
+      "matches_native_metadata": true
+    }
+  ],
+  "comparison_only_after_independent_reconstruction": {
+    "required_match": true,
+    "observed_match": true,
+    "reported_dme": 0.16666666666666666,
+    "reported_evidence_levels": [
+      "JOB_LEVEL_RECONCILED"
+    ]
+  },
+  "sources": [
+    {
+      "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/dme-six-20261110-pipeline-w4-r01-0.dag.nodes.log",
+      "sha256": "41fa595629095f53a825657294ed5a66b410d23ed4f28ed3f58e1d0b842df5ab"
+    },
+    {
+      "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/campaign_task_T1.sub",
+      "sha256": "a33f93dd06fcd086282d5cc0fca38dcf99f6404d24ad6b6efcf262277c40c51a"
+    },
+    {
+      "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/dme-six-20261110-pipeline-w4-r01-0.dag.nodes.log",
+      "sha256": "41fa595629095f53a825657294ed5a66b410d23ed4f28ed3f58e1d0b842df5ab"
+    },
+    {
+      "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/campaign_task_T2.sub",
+      "sha256": "defb36fc6ea900ecbe0aecb46261fa42d86e2eef0a93c0f3be1c3b49da641bcd"
+    },
+    {
+      "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/dme-six-20261110-pipeline-w4-r01-0.dag.nodes.log",
+      "sha256": "41fa595629095f53a825657294ed5a66b410d23ed4f28ed3f58e1d0b842df5ab"
+    },
+    {
+      "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/campaign_task_T3.sub",
+      "sha256": "874b2ae979290361d50b998e01303102fa9204dd723eaceab262ce20ea936e97"
+    },
+    {
+      "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/dme-six-20261110-pipeline-w4-r01-0.dag.nodes.log",
+      "sha256": "41fa595629095f53a825657294ed5a66b410d23ed4f28ed3f58e1d0b842df5ab"
+    },
+    {
+      "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/campaign_task_T4.sub",
+      "sha256": "156c6c04b90bc0b3961681e270ec2f6d85065a7e67f6e5c7376ab244d54cc797"
+    },
+    {
+      "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/dme-six-20261110-pipeline-w4-r01-0.dag.nodes.log",
+      "sha256": "41fa595629095f53a825657294ed5a66b410d23ed4f28ed3f58e1d0b842df5ab"
+    },
+    {
+      "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/campaign_task_T5.sub",
+      "sha256": "250c952bc7cef8092a0c9288f4f2270f78c07e4eddcbe63bd5ee9718839dfd65"
+    },
+    {
+      "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/dme-six-20261110-pipeline-w4-r01-0.dag.nodes.log",
+      "sha256": "41fa595629095f53a825657294ed5a66b410d23ed4f28ed3f58e1d0b842df5ab"
+    },
+    {
+      "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/campaign_task_T6.sub",
+      "sha256": "1290ac475739fdaeb41e56cc3e69bd065b824f6ce6a7072c764e1031c683a831"
+    },
+    {
+      "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/workflow.yml",
+      "sha256": "6d6ad78a30d2e4dac353020887b3bf7b8becf39fe5514559f4f43b7eafd38a50"
+    },
+    {
+      "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/pilot/PIPELINE-W4-B02/history.long",
+      "sha256": "3f7214e5731b8d06d60070d4ae2efed978ecfe0c143c9af140cebe840549c0fd"
+    },
+    {
+      "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/pilot/PIPELINE-W4-B02/history.json",
+      "sha256": "fd42e15d90d87f67c5b13221eb17ea4d3f7b6a4cbf5e7237c7b1ec2f18011d89"
+    },
+    {
+      "path": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/bin/campaign_task.py",
+      "sha256": "f2bd2df2752ae6890df433e1428f713c29dc6ab3a995a3787a8ebca2d432353f"
+    }
+  ],
+  "replicas": 1,
+  "limit": "Native counters are aggregate by job and direction. Scientific deliveries corroborated under complete file contracts and exact auxiliary reconciliation, not independent per-file network or packet counters."
+}

@@ -1,0 +1,27 @@
+digraph dag {
+    ratio=fill
+    node [style=filled,color="#444444",fillcolor="#ffed6f"]
+    edge [arrowhead=normal,arrowsize=1.0]
+
+    "campaign_task_C1" [shape=ellipse,color="#000000",fillcolor="#1b9e77",label="campaign_task_C1"]
+    "campaign_task_C2" [shape=ellipse,color="#000000",fillcolor="#1b9e77",label="campaign_task_C2"]
+    "campaign_task_C3" [shape=ellipse,color="#000000",fillcolor="#1b9e77",label="campaign_task_C3"]
+    "campaign_task_C4" [shape=ellipse,color="#000000",fillcolor="#1b9e77",label="campaign_task_C4"]
+    "campaign_task_P" [shape=ellipse,color="#000000",fillcolor="#1b9e77",label="campaign_task_P"]
+    "create_dir_flujo-rep_0_local" [shape=ellipse,color="#000000",fillcolor="#d95f02",label="create_dir_flujo-rep_0_local"]
+    "stage_in_local_local_0_0" [shape=ellipse,color="#000000",fillcolor="#7570b3",label="stage_in_local_local_0_0"]
+    "stage_in_remote_local_0_0" [shape=ellipse,color="#000000",fillcolor="#7570b3",label="stage_in_remote_local_0_0"]
+    "stage_out_local_local_1_0" [shape=ellipse,color="#000000",fillcolor="#e7298a",label="stage_out_local_local_1_0"]
+    "campaign_task_C1" -> "stage_out_local_local_1_0" [color="#000000"]
+    "campaign_task_C2" -> "stage_out_local_local_1_0" [color="#000000"]
+    "campaign_task_C3" -> "stage_out_local_local_1_0" [color="#000000"]
+    "campaign_task_C4" -> "stage_out_local_local_1_0" [color="#000000"]
+    "campaign_task_P" -> "campaign_task_C1" [color="#000000"]
+    "campaign_task_P" -> "campaign_task_C2" [color="#000000"]
+    "campaign_task_P" -> "campaign_task_C3" [color="#000000"]
+    "campaign_task_P" -> "campaign_task_C4" [color="#000000"]
+    "create_dir_flujo-rep_0_local" -> "stage_in_local_local_0_0" [color="#000000"]
+    "create_dir_flujo-rep_0_local" -> "stage_in_remote_local_0_0" [color="#000000"]
+    "stage_in_local_local_0_0" -> "campaign_task_P" [color="#000000"]
+    "stage_in_remote_local_0_0" -> "campaign_task_P" [color="#000000"]
+}

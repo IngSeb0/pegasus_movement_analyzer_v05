@@ -1,0 +1,326 @@
+000 (3760.000.000) 2026-11-22 16:44:07 Job submitted from host: <10.42.0.4:9618?addrs=10.42.0.4-9618&alias=dme-master&noUDP&sock=schedd_835_51ab>
+    [ DAGNodeName = "create_dir_dme-six-20261110-redistribution-w2-r01_0_local"; JobBatchName = "dme-six-20261110-redistribution-w2-r01-0.dag+3759" ]
+    pool:local
+...
+001 (3760.000.000) 2026-11-22 16:44:11 Job executing on host: <10.42.0.4:9618?addrs=10.42.0.4-9618&alias=dme-master&noUDP&sock=starter_1007_45c2_174>
+...
+005 (3760.000.000) 2026-11-22 16:44:13 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+000 (3761.000.000) 2026-11-22 16:44:27 Job submitted from host: <10.42.0.4:9618?addrs=10.42.0.4-9618&alias=dme-master&noUDP&sock=schedd_835_51ab>
+    [ DAGNodeName = "stage_in_remote_local_0_0"; JobBatchName = "dme-six-20261110-redistribution-w2-r01-0.dag+3759" ]
+    pool:local
+...
+000 (3762.000.000) 2026-11-22 16:44:27 Job submitted from host: <10.42.0.4:9618?addrs=10.42.0.4-9618&alias=dme-master&noUDP&sock=schedd_835_51ab>
+    [ DAGNodeName = "stage_in_local_local_0_0"; JobBatchName = "dme-six-20261110-redistribution-w2-r01-0.dag+3759" ]
+    pool:local
+...
+001 (3761.000.000) 2026-11-22 16:44:29 Job executing on host: <10.42.0.4:9618?addrs=10.42.0.4-9618&alias=dme-master&noUDP&sock=starter_1007_45c2_175>
+...
+001 (3762.000.000) 2026-11-22 16:44:29 Job executing on host: <10.42.0.4:9618?addrs=10.42.0.4-9618&alias=dme-master&noUDP&sock=starter_1007_45c2_176>
+...
+005 (3761.000.000) 2026-11-22 16:44:31 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+005 (3762.000.000) 2026-11-22 16:44:34 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:01, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+000 (3763.000.000) 2026-11-22 16:44:47 Job submitted from host: <10.42.0.4:9618?addrs=10.42.0.4-9618&alias=dme-master&noUDP&sock=schedd_835_51ab>
+    [ DAGNodeName = "campaign_task_T1"; JobBatchName = "dme-six-20261110-redistribution-w2-r01-0.dag+3759" ]
+    pool:condorpool
+...
+000 (3764.000.000) 2026-11-22 16:44:47 Job submitted from host: <10.42.0.4:9618?addrs=10.42.0.4-9618&alias=dme-master&noUDP&sock=schedd_835_51ab>
+    [ DAGNodeName = "campaign_task_T2"; JobBatchName = "dme-six-20261110-redistribution-w2-r01-0.dag+3759" ]
+    pool:condorpool
+...
+040 (3763.000.000) 2026-11-22 16:45:14 Started transferring input files
+	Transferring to host: <10.42.1.4:9618?addrs=10.42.1.4-9618&alias=dme-worker1&noUDP&sock=slot1_1_913_0a7e_41>
+...
+040 (3764.000.000) 2026-11-22 16:45:14 Started transferring input files
+	Transferring to host: <10.42.1.5:9618?addrs=10.42.1.5-9618&alias=dme-worker2&noUDP&sock=slot1_1_936_3f1f_29>
+...
+040 (3763.000.000) 2026-11-22 16:45:40 Finished transferring input files
+...
+001 (3763.000.000) 2026-11-22 16:45:40 Job executing on host: <10.42.1.4:9618?addrs=10.42.1.4-9618&alias=dme-worker1&noUDP&sock=startd_788_14b8>
+	SlotName: slot1_1@dme-worker1
+	CondorScratchDir = "/var/lib/condor/execute/dir_8325/scratch"
+	Cpus = 1
+	Disk = 1048576
+	GPUs = 0
+	Memory = 256
+...
+006 (3763.000.000) 2026-11-22 16:45:47 Image size of job updated: 9256
+	0  -  MemoryUsage of job (MB)
+	0  -  ResidentSetSize of job (KB)
+...
+040 (3763.000.000) 2026-11-22 16:45:47 Started transferring output files
+...
+040 (3764.000.000) 2026-11-22 16:45:52 Finished transferring input files
+...
+001 (3764.000.000) 2026-11-22 16:45:52 Job executing on host: <10.42.1.5:9618?addrs=10.42.1.5-9618&alias=dme-worker2&noUDP&sock=startd_791_2380>
+	SlotName: slot1_1@dme-worker2
+	CondorScratchDir = "/var/lib/condor/execute/dir_6189/scratch"
+	Cpus = 1
+	Disk = 1048576
+	GPUs = 0
+	Memory = 256
+...
+006 (3764.000.000) 2026-11-22 16:46:00 Image size of job updated: 9260
+	0  -  MemoryUsage of job (MB)
+	0  -  ResidentSetSize of job (KB)
+...
+040 (3764.000.000) 2026-11-22 16:46:00 Started transferring output files
+...
+040 (3763.000.000) 2026-11-22 16:46:05 Finished transferring output files
+...
+005 (3763.000.000) 2026-11-22 16:46:05 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:05, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:05, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	209721495  -  Run Bytes Sent By Job
+	228823824  -  Run Bytes Received By Job
+	209721495  -  Total Bytes Sent By Job
+	228823824  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :        0        1         1 
+	   Disk (KB)            :   460253  1048576   1048576 
+	   GPUs                 :                           0 
+	   Memory (MB)          :        0      256       256 
+	   TimeExecute (s)      :        7                    
+	   TimeSlotBusy (s)     :       51                    
+...
+040 (3764.000.000) 2026-11-22 16:46:17 Finished transferring output files
+...
+005 (3764.000.000) 2026-11-22 16:46:17 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:05, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:05, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	209721495  -  Run Bytes Sent By Job
+	228823824  -  Run Bytes Received By Job
+	209721495  -  Total Bytes Sent By Job
+	228823824  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :        0        1         1 
+	   Disk (KB)            :   460253  1048576   1048576 
+	   GPUs                 :                           0 
+	   Memory (MB)          :        0      256       256 
+	   TimeExecute (s)      :        8                    
+	   TimeSlotBusy (s)     :       63                    
+...
+000 (3765.000.000) 2026-11-22 16:46:28 Job submitted from host: <10.42.0.4:9618?addrs=10.42.0.4-9618&alias=dme-master&noUDP&sock=schedd_835_51ab>
+    [ DAGNodeName = "campaign_task_T3"; JobBatchName = "dme-six-20261110-redistribution-w2-r01-0.dag+3759" ]
+    pool:condorpool
+...
+040 (3765.000.000) 2026-11-22 16:46:32 Started transferring input files
+	Transferring to host: <10.42.1.5:9618?addrs=10.42.1.5-9618&alias=dme-worker2&noUDP&sock=slot1_1_936_3f1f_30>
+...
+040 (3765.000.000) 2026-11-22 16:47:09 Finished transferring input files
+...
+001 (3765.000.000) 2026-11-22 16:47:09 Job executing on host: <10.42.1.5:9618?addrs=10.42.1.5-9618&alias=dme-worker2&noUDP&sock=startd_791_2380>
+	SlotName: slot1_1@dme-worker2
+	CondorScratchDir = "/var/lib/condor/execute/dir_6350/scratch"
+	Cpus = 1
+	Disk = 1048576
+	GPUs = 0
+	Memory = 256
+...
+006 (3765.000.000) 2026-11-22 16:47:17 Image size of job updated: 9244
+	10  -  MemoryUsage of job (MB)
+	9244  -  ResidentSetSize of job (KB)
+...
+040 (3765.000.000) 2026-11-22 16:47:18 Started transferring output files
+...
+040 (3765.000.000) 2026-11-22 16:47:36 Finished transferring output files
+...
+005 (3765.000.000) 2026-11-22 16:47:36 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:06, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:06, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	209721781  -  Run Bytes Sent By Job
+	438539041  -  Run Bytes Received By Job
+	209721781  -  Total Bytes Sent By Job
+	438539041  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :        0        1         1 
+	   Disk (KB)            :   665054  1048576   1048576 
+	   GPUs                 :                           0 
+	   Memory (MB)          :       10      256       256 
+	   TimeExecute (s)      :        9                    
+	   TimeSlotBusy (s)     :       64                    
+...
+000 (3766.000.000) 2026-11-22 16:47:48 Job submitted from host: <10.42.0.4:9618?addrs=10.42.0.4-9618&alias=dme-master&noUDP&sock=schedd_835_51ab>
+    [ DAGNodeName = "campaign_task_T4"; JobBatchName = "dme-six-20261110-redistribution-w2-r01-0.dag+3759" ]
+    pool:condorpool
+...
+040 (3766.000.000) 2026-11-22 16:47:50 Started transferring input files
+	Transferring to host: <10.42.1.5:9618?addrs=10.42.1.5-9618&alias=dme-worker2&noUDP&sock=slot1_1_936_3f1f_31>
+...
+040 (3766.000.000) 2026-11-22 16:48:09 Finished transferring input files
+...
+001 (3766.000.000) 2026-11-22 16:48:09 Job executing on host: <10.42.1.5:9618?addrs=10.42.1.5-9618&alias=dme-worker2&noUDP&sock=startd_791_2380>
+	SlotName: slot1_1@dme-worker2
+	CondorScratchDir = "/var/lib/condor/execute/dir_6507/scratch"
+	Cpus = 1
+	Disk = 1048576
+	GPUs = 0
+	Memory = 256
+...
+006 (3766.000.000) 2026-11-22 16:48:18 Image size of job updated: 9256
+	1  -  MemoryUsage of job (MB)
+	864  -  ResidentSetSize of job (KB)
+...
+040 (3766.000.000) 2026-11-22 16:48:19 Started transferring output files
+...
+040 (3766.000.000) 2026-11-22 16:48:55 Finished transferring output files
+...
+005 (3766.000.000) 2026-11-22 16:48:55 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:07, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:07, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	419437386  -  Run Bytes Sent By Job
+	228823518  -  Run Bytes Received By Job
+	419437386  -  Total Bytes Sent By Job
+	228823518  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :        0        1         1 
+	   Disk (KB)            :   665054  1048576   1048576 
+	   GPUs                 :                           0 
+	   Memory (MB)          :        1      256       256 
+	   TimeExecute (s)      :       10                    
+	   TimeSlotBusy (s)     :       65                    
+...
+000 (3767.000.000) 2026-11-22 16:49:08 Job submitted from host: <10.42.0.4:9618?addrs=10.42.0.4-9618&alias=dme-master&noUDP&sock=schedd_835_51ab>
+    [ DAGNodeName = "campaign_task_T5"; JobBatchName = "dme-six-20261110-redistribution-w2-r01-0.dag+3759" ]
+    pool:condorpool
+...
+000 (3768.000.000) 2026-11-22 16:49:08 Job submitted from host: <10.42.0.4:9618?addrs=10.42.0.4-9618&alias=dme-master&noUDP&sock=schedd_835_51ab>
+    [ DAGNodeName = "campaign_task_T6"; JobBatchName = "dme-six-20261110-redistribution-w2-r01-0.dag+3759" ]
+    pool:condorpool
+...
+040 (3767.000.000) 2026-11-22 16:49:11 Started transferring input files
+	Transferring to host: <10.42.1.5:9618?addrs=10.42.1.5-9618&alias=dme-worker2&noUDP&sock=slot1_1_936_3f1f_32>
+...
+040 (3768.000.000) 2026-11-22 16:49:14 Started transferring input files
+	Transferring to host: <10.42.1.4:9618?addrs=10.42.1.4-9618&alias=dme-worker1&noUDP&sock=slot1_1_913_0a7e_42>
+...
+040 (3767.000.000) 2026-11-22 16:49:37 Finished transferring input files
+...
+001 (3767.000.000) 2026-11-22 16:49:37 Job executing on host: <10.42.1.5:9618?addrs=10.42.1.5-9618&alias=dme-worker2&noUDP&sock=startd_791_2380>
+	SlotName: slot1_1@dme-worker2
+	CondorScratchDir = "/var/lib/condor/execute/dir_6662/scratch"
+	Cpus = 1
+	Disk = 1048576
+	GPUs = 0
+	Memory = 256
+...
+006 (3767.000.000) 2026-11-22 16:49:45 Image size of job updated: 9256
+	0  -  MemoryUsage of job (MB)
+	0  -  ResidentSetSize of job (KB)
+...
+040 (3767.000.000) 2026-11-22 16:49:45 Started transferring output files
+...
+040 (3768.000.000) 2026-11-22 16:49:50 Finished transferring input files
+...
+001 (3768.000.000) 2026-11-22 16:49:50 Job executing on host: <10.42.1.4:9618?addrs=10.42.1.4-9618&alias=dme-worker1&noUDP&sock=startd_788_14b8>
+	SlotName: slot1_1@dme-worker1
+	CondorScratchDir = "/var/lib/condor/execute/dir_8485/scratch"
+	Cpus = 1
+	Disk = 1048576
+	GPUs = 0
+	Memory = 256
+...
+006 (3768.000.000) 2026-11-22 16:49:57 Image size of job updated: 9244
+	0  -  MemoryUsage of job (MB)
+	0  -  ResidentSetSize of job (KB)
+...
+040 (3768.000.000) 2026-11-22 16:49:57 Started transferring output files
+...
+040 (3767.000.000) 2026-11-22 16:50:02 Finished transferring output files
+...
+005 (3767.000.000) 2026-11-22 16:50:02 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:05, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:05, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	209721536  -  Run Bytes Sent By Job
+	228823816  -  Run Bytes Received By Job
+	209721536  -  Total Bytes Sent By Job
+	228823816  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :        0        1         1 
+	   Disk (KB)            :   460254  1048576   1048576 
+	   GPUs                 :                           0 
+	   Memory (MB)          :        0      256       256 
+	   TimeExecute (s)      :        8                    
+	   TimeSlotBusy (s)     :       51                    
+...
+040 (3768.000.000) 2026-11-22 16:50:15 Finished transferring output files
+...
+005 (3768.000.000) 2026-11-22 16:50:15 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:05, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:05, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	209721495  -  Run Bytes Sent By Job
+	228823816  -  Run Bytes Received By Job
+	209721495  -  Total Bytes Sent By Job
+	228823816  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :        0        1         1 
+	   Disk (KB)            :   460253  1048576   1048576 
+	   GPUs                 :                           0 
+	   Memory (MB)          :        0      256       256 
+	   TimeExecute (s)      :        7                    
+	   TimeSlotBusy (s)     :       61                    
+...
+000 (3769.000.000) 2026-11-22 16:50:28 Job submitted from host: <10.42.0.4:9618?addrs=10.42.0.4-9618&alias=dme-master&noUDP&sock=schedd_835_51ab>
+    [ DAGNodeName = "stage_out_local_local_3_0"; JobBatchName = "dme-six-20261110-redistribution-w2-r01-0.dag+3759" ]
+    pool:local
+...
+001 (3769.000.000) 2026-11-22 16:50:31 Job executing on host: <10.42.0.4:9618?addrs=10.42.0.4-9618&alias=dme-master&noUDP&sock=starter_1007_45c2_183>
+...
+005 (3769.000.000) 2026-11-22 16:50:36 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:01, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...

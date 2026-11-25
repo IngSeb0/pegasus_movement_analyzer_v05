@@ -1,0 +1,12 @@
+{
+  "startedAtUtc": "2026-11-11T22:30:23.534682+00:00",
+  "deadlineUtc": "2026-11-12T00:00:23.534682+00:00",
+  "stopSubmissionsUtc": "2026-11-11T23:30:23.534682+00:00",
+  "maximumNewWorkflows": 3,
+  "resources": [
+    "dme-master",
+    "dme-worker1",
+    "dme-worker2"
+  ],
+  "authorization": "Montage M101 complete workflow requested on 2026-11-11; scope in PROTOCOLO.md."
+}

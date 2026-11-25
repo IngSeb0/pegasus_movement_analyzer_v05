@@ -1,0 +1,2 @@
+corrida,condicion,duracion_dagman_s,duracion_jobstate_s,diferencia_resolucion_s,tramo_ejecucion_s,tramo_transferencia_s,tramo_auxiliares_s,tramo_cola_s,tramo_cierre_post_s,tramo_dagman_s,tareas,auxiliares,suma_ejecucion_tareas_s,suma_transferencia_entrada_s,suma_transferencia_salida_s,suma_espera_maquina_s,suma_cierre_s,bytes_transferidos,preparacion_hasta_primera_tarea_s,ventana_ejecucion_s
+PROCESS-W4-B01,PROCESS-W4,245.605,246,-0.39500000000001023,46,96,60,18,10,16,6,4,48,329,106,259,43,2631279789,46,95

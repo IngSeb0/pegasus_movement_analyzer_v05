@@ -1,0 +1,9 @@
+{
+  "status": "ACCEPTED",
+  "uuid": "b778bbe5-c726-4901-ad67-738cadfb8d46",
+  "run": "/mnt/intensivo_20261122/contraste/cases/contraste-B2-REP/plans/REP/submit/dmeadmin/pegasus/dme-six-20261110-rep-r02/run0001",
+  "submitted": true,
+  "program_sha256": "f2bd2df2752ae6890df433e1428f713c29dc6ab3a995a3787a8ebca2d432353f",
+  "report_file": "/mnt/intensivo_20261122/contraste/cases/contraste-B2-REP/pilot/REP/reports/analysis.json",
+  "accepted": true
+}

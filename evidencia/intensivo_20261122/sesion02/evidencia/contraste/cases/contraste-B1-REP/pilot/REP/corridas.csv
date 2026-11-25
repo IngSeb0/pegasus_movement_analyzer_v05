@@ -1,0 +1,2 @@
+corrida,condicion,duracion_dagman_s,duracion_jobstate_s,diferencia_resolucion_s,tramo_ejecucion_s,tramo_transferencia_s,tramo_auxiliares_s,tramo_cola_s,tramo_cierre_post_s,tramo_dagman_s,tareas,auxiliares,suma_ejecucion_tareas_s,suma_transferencia_entrada_s,suma_transferencia_salida_s,suma_espera_maquina_s,suma_cierre_s,bytes_transferidos,preparacion_hasta_primera_tarea_s,ventana_ejecucion_s
+contraste-B1-REP,REP,251.153,251,0.1529999999999916,32,116,50,18,14,21,5,4,44,266,88,30,37,2192724793,41,126

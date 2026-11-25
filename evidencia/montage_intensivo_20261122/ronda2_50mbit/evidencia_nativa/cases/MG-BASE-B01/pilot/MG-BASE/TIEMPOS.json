@@ -1,0 +1,23 @@
+{
+  "corrida": "MG-BASE-B01",
+  "condicion": "MG-BASE",
+  "duracion_dagman_s": 1406.608,
+  "duracion_jobstate_s": 1407,
+  "diferencia_resolucion_s": -0.39200000000005275,
+  "tramo_ejecucion_s": 501,
+  "tramo_transferencia_s": 769,
+  "tramo_auxiliares_s": 60,
+  "tramo_cola_s": 35,
+  "tramo_cierre_post_s": 21,
+  "tramo_dagman_s": 21,
+  "tareas": 149,
+  "auxiliares": 18,
+  "suma_ejecucion_tareas_s": 566,
+  "suma_transferencia_entrada_s": 1685,
+  "suma_transferencia_salida_s": 366,
+  "suma_espera_maquina_s": 53460,
+  "suma_cierre_s": 1156,
+  "bytes_transferidos": 8364946807,
+  "preparacion_hasta_primera_tarea_s": 41,
+  "ventana_ejecucion_s": 1157
+}

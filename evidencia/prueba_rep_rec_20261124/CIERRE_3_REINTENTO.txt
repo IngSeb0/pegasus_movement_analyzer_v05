@@ -1,0 +1,1 @@
+Cinco VMs desasignadas. Discos e IP publica persistentes pueden seguir generando cargos.

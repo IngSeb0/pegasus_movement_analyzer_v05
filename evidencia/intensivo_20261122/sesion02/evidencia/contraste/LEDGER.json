@@ -1,0 +1,83 @@
+[
+  {
+    "id": "contraste-B1-REP",
+    "uuid": "359c066b-8eb5-4b7f-b690-c34a9607d72a",
+    "condition": "REP",
+    "phase": "main",
+    "block": 1,
+    "submittedAtUtc": "2026-11-22T17:05:35.761290+00:00",
+    "sessionStart": "2026-11-22T14:44:33.1521935+00:00"
+  },
+  {
+    "id": "contraste-B1-W2-SEP",
+    "uuid": "2c33016f-dce4-428c-ba9b-6d66cb0b07f7",
+    "condition": "W2-SEP",
+    "phase": "main",
+    "block": 1,
+    "submittedAtUtc": "2026-11-22T17:10:28.468286+00:00",
+    "sessionStart": "2026-11-22T14:44:33.1521935+00:00"
+  },
+  {
+    "id": "contraste-B1-W2-AGR",
+    "uuid": "de1f6088-b001-4c9e-9fbb-d26441ef6530",
+    "condition": "W2-AGR",
+    "phase": "main",
+    "block": 1,
+    "submittedAtUtc": "2026-11-22T17:16:31.240786+00:00",
+    "sessionStart": "2026-11-22T14:44:33.1521935+00:00"
+  },
+  {
+    "id": "contraste-B2-W2-SEP",
+    "uuid": "76948338-37d3-4e73-a552-44b6eff4a134",
+    "condition": "W2-SEP",
+    "phase": "main",
+    "block": 2,
+    "submittedAtUtc": "2026-11-22T17:21:41.321792+00:00",
+    "sessionStart": "2026-11-22T14:44:33.1521935+00:00"
+  },
+  {
+    "id": "contraste-B2-W2-AGR",
+    "uuid": "6d6e5c3b-8d98-49c2-b1ea-864696965f59",
+    "condition": "W2-AGR",
+    "phase": "main",
+    "block": 2,
+    "submittedAtUtc": "2026-11-22T17:27:44.144171+00:00",
+    "sessionStart": "2026-11-22T14:44:33.1521935+00:00"
+  },
+  {
+    "id": "contraste-B2-REP",
+    "uuid": "b778bbe5-c726-4901-ad67-738cadfb8d46",
+    "condition": "REP",
+    "phase": "main",
+    "block": 2,
+    "submittedAtUtc": "2026-11-22T17:32:19.921495+00:00",
+    "sessionStart": "2026-11-22T14:44:33.1521935+00:00"
+  },
+  {
+    "id": "contraste-B3-W2-AGR",
+    "uuid": "a9c5cb1c-26fd-4cab-9022-318e6d0412ad",
+    "condition": "W2-AGR",
+    "phase": "main",
+    "block": 3,
+    "submittedAtUtc": "2026-11-22T17:36:57.619571+00:00",
+    "sessionStart": "2026-11-22T14:44:33.1521935+00:00"
+  },
+  {
+    "id": "contraste-B3-REP",
+    "uuid": "2de3a25c-63de-4648-8c49-d0406ecea62e",
+    "condition": "REP",
+    "phase": "main",
+    "block": 3,
+    "submittedAtUtc": "2026-11-22T17:41:50.158280+00:00",
+    "sessionStart": "2026-11-22T14:44:33.1521935+00:00"
+  },
+  {
+    "id": "contraste-B3-W2-SEP",
+    "uuid": "bc13bdfc-3c39-40fd-a45f-0567b7685285",
+    "condition": "W2-SEP",
+    "phase": "main",
+    "block": 3,
+    "submittedAtUtc": "2026-11-22T17:46:26.844397+00:00",
+    "sessionStart": "2026-11-22T14:44:33.1521935+00:00"
+  }
+]

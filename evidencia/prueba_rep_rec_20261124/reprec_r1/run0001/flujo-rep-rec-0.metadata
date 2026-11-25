@@ -1,0 +1,20 @@
+{
+  "root_workflow_uuid": "b4af058d-9e53-40e8-a456-52d34abcd5fc",
+  "workflow_uuid": "b4af058d-9e53-40e8-a456-52d34abcd5fc",
+  "wf_metadata": {
+    "wf.api": "python"
+  },
+  "graph": {
+    "jobs": {
+      "campaign_task_C4": {},
+      "stage_in_remote_local_0_0": {},
+      "campaign_task_C2": {},
+      "campaign_task_C3": {},
+      "create_dir_flujo-rep-rec_0_local": {},
+      "stage_out_local_local_1_0": {},
+      "stage_out_local_local_0_0": {},
+      "merge_group_1": {},
+      "stage_in_local_local_0_0": {}
+    }
+  }
+}

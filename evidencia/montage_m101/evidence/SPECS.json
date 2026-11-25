@@ -1,0 +1,2161 @@
+{
+  "M101-BASE": {
+    "condition_id": "M101-BASE",
+    "pattern": "montage_m101",
+    "mode": "CondorIO",
+    "active_pool": [
+      "W1",
+      "W2"
+    ],
+    "application": "montage",
+    "files": [
+      {
+        "file_id": "2mass-atlas-990214n-j1100244.fits",
+        "size_bytes": 2111040,
+        "role": "external",
+        "producer_task": null,
+        "consumer_tasks": [
+          "P01"
+        ]
+      },
+      {
+        "file_id": "2mass-atlas-990214n-j1100256.fits",
+        "size_bytes": 2111040,
+        "role": "external",
+        "producer_task": null,
+        "consumer_tasks": [
+          "P02"
+        ]
+      },
+      {
+        "file_id": "2mass-atlas-990214n-j1110021.fits",
+        "size_bytes": 2111040,
+        "role": "external",
+        "producer_task": null,
+        "consumer_tasks": [
+          "P03"
+        ]
+      },
+      {
+        "file_id": "2mass-atlas-990214n-j1110032.fits",
+        "size_bytes": 2111040,
+        "role": "external",
+        "producer_task": null,
+        "consumer_tasks": [
+          "P04"
+        ]
+      },
+      {
+        "file_id": "2mass-atlas-990214n-j1180244.fits",
+        "size_bytes": 2111040,
+        "role": "external",
+        "producer_task": null,
+        "consumer_tasks": [
+          "P05"
+        ]
+      },
+      {
+        "file_id": "2mass-atlas-990214n-j1180256.fits",
+        "size_bytes": 2111040,
+        "role": "external",
+        "producer_task": null,
+        "consumer_tasks": [
+          "P06"
+        ]
+      },
+      {
+        "file_id": "2mass-atlas-990214n-j1190021.fits",
+        "size_bytes": 2111040,
+        "role": "external",
+        "producer_task": null,
+        "consumer_tasks": [
+          "P07"
+        ]
+      },
+      {
+        "file_id": "2mass-atlas-990214n-j1190032.fits",
+        "size_bytes": 2111040,
+        "role": "external",
+        "producer_task": null,
+        "consumer_tasks": [
+          "P08"
+        ]
+      },
+      {
+        "file_id": "2mass-atlas-990214n-j1200244.fits",
+        "size_bytes": 2111040,
+        "role": "external",
+        "producer_task": null,
+        "consumer_tasks": [
+          "P09"
+        ]
+      },
+      {
+        "file_id": "2mass-atlas-990214n-j1200256.fits",
+        "size_bytes": 2111040,
+        "role": "external",
+        "producer_task": null,
+        "consumer_tasks": [
+          "P10"
+        ]
+      },
+      {
+        "file_id": "images.tbl",
+        "size_bytes": 6284,
+        "role": "intermediate",
+        "producer_task": "TABLE",
+        "consumer_tasks": [
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "m101.fits",
+        "size_bytes": 39744000,
+        "role": "final",
+        "producer_task": "ADD",
+        "consumer_tasks": []
+      },
+      {
+        "file_id": "m101_area.fits",
+        "size_bytes": 39744000,
+        "role": "final",
+        "producer_task": "ADD",
+        "consumer_tasks": []
+      },
+      {
+        "file_id": "p01.fits",
+        "size_bytes": 4230720,
+        "role": "intermediate",
+        "producer_task": "P01",
+        "consumer_tasks": [
+          "TABLE",
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "p01_area.fits",
+        "size_bytes": 4230720,
+        "role": "intermediate",
+        "producer_task": "P01",
+        "consumer_tasks": [
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "p02.fits",
+        "size_bytes": 4222080,
+        "role": "intermediate",
+        "producer_task": "P02",
+        "consumer_tasks": [
+          "TABLE",
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "p02_area.fits",
+        "size_bytes": 4222080,
+        "role": "intermediate",
+        "producer_task": "P02",
+        "consumer_tasks": [
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "p03.fits",
+        "size_bytes": 4199040,
+        "role": "intermediate",
+        "producer_task": "P03",
+        "consumer_tasks": [
+          "TABLE",
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "p03_area.fits",
+        "size_bytes": 4199040,
+        "role": "intermediate",
+        "producer_task": "P03",
+        "consumer_tasks": [
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "p04.fits",
+        "size_bytes": 4199040,
+        "role": "intermediate",
+        "producer_task": "P04",
+        "consumer_tasks": [
+          "TABLE",
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "p04_area.fits",
+        "size_bytes": 4199040,
+        "role": "intermediate",
+        "producer_task": "P04",
+        "consumer_tasks": [
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "p05.fits",
+        "size_bytes": 4190400,
+        "role": "intermediate",
+        "producer_task": "P05",
+        "consumer_tasks": [
+          "TABLE",
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "p05_area.fits",
+        "size_bytes": 4190400,
+        "role": "intermediate",
+        "producer_task": "P05",
+        "consumer_tasks": [
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "p06.fits",
+        "size_bytes": 4181760,
+        "role": "intermediate",
+        "producer_task": "P06",
+        "consumer_tasks": [
+          "TABLE",
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "p06_area.fits",
+        "size_bytes": 4181760,
+        "role": "intermediate",
+        "producer_task": "P06",
+        "consumer_tasks": [
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "p07.fits",
+        "size_bytes": 4210560,
+        "role": "intermediate",
+        "producer_task": "P07",
+        "consumer_tasks": [
+          "TABLE",
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "p07_area.fits",
+        "size_bytes": 4210560,
+        "role": "intermediate",
+        "producer_task": "P07",
+        "consumer_tasks": [
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "p08.fits",
+        "size_bytes": 4210560,
+        "role": "intermediate",
+        "producer_task": "P08",
+        "consumer_tasks": [
+          "TABLE",
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "p08_area.fits",
+        "size_bytes": 4210560,
+        "role": "intermediate",
+        "producer_task": "P08",
+        "consumer_tasks": [
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "p09.fits",
+        "size_bytes": 4239360,
+        "role": "intermediate",
+        "producer_task": "P09",
+        "consumer_tasks": [
+          "TABLE",
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "p09_area.fits",
+        "size_bytes": 4239360,
+        "role": "intermediate",
+        "producer_task": "P09",
+        "consumer_tasks": [
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "p10.fits",
+        "size_bytes": 4222080,
+        "role": "intermediate",
+        "producer_task": "P10",
+        "consumer_tasks": [
+          "TABLE",
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "p10_area.fits",
+        "size_bytes": 4222080,
+        "role": "intermediate",
+        "producer_task": "P10",
+        "consumer_tasks": [
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "template.hdr",
+        "size_bytes": 318,
+        "role": "external",
+        "producer_task": null,
+        "consumer_tasks": [
+          "P01",
+          "P02",
+          "P03",
+          "P04",
+          "P05",
+          "P06",
+          "P07",
+          "P08",
+          "P09",
+          "P10",
+          "ADD"
+        ]
+      }
+    ],
+    "dag": {
+      "tasks": [
+        {
+          "task_id": "P01",
+          "assigned_worker": "W2",
+          "input_files": [
+            "2mass-atlas-990214n-j1100244.fits",
+            "template.hdr"
+          ],
+          "output_files": [
+            "p01.fits",
+            "p01_area.fits"
+          ]
+        },
+        {
+          "task_id": "P02",
+          "assigned_worker": "W2",
+          "input_files": [
+            "2mass-atlas-990214n-j1100256.fits",
+            "template.hdr"
+          ],
+          "output_files": [
+            "p02.fits",
+            "p02_area.fits"
+          ]
+        },
+        {
+          "task_id": "P03",
+          "assigned_worker": "W2",
+          "input_files": [
+            "2mass-atlas-990214n-j1110021.fits",
+            "template.hdr"
+          ],
+          "output_files": [
+            "p03.fits",
+            "p03_area.fits"
+          ]
+        },
+        {
+          "task_id": "P04",
+          "assigned_worker": "W2",
+          "input_files": [
+            "2mass-atlas-990214n-j1110032.fits",
+            "template.hdr"
+          ],
+          "output_files": [
+            "p04.fits",
+            "p04_area.fits"
+          ]
+        },
+        {
+          "task_id": "P05",
+          "assigned_worker": "W2",
+          "input_files": [
+            "2mass-atlas-990214n-j1180244.fits",
+            "template.hdr"
+          ],
+          "output_files": [
+            "p05.fits",
+            "p05_area.fits"
+          ]
+        },
+        {
+          "task_id": "P06",
+          "assigned_worker": "W2",
+          "input_files": [
+            "2mass-atlas-990214n-j1180256.fits",
+            "template.hdr"
+          ],
+          "output_files": [
+            "p06.fits",
+            "p06_area.fits"
+          ]
+        },
+        {
+          "task_id": "P07",
+          "assigned_worker": "W2",
+          "input_files": [
+            "2mass-atlas-990214n-j1190021.fits",
+            "template.hdr"
+          ],
+          "output_files": [
+            "p07.fits",
+            "p07_area.fits"
+          ]
+        },
+        {
+          "task_id": "P08",
+          "assigned_worker": "W2",
+          "input_files": [
+            "2mass-atlas-990214n-j1190032.fits",
+            "template.hdr"
+          ],
+          "output_files": [
+            "p08.fits",
+            "p08_area.fits"
+          ]
+        },
+        {
+          "task_id": "P09",
+          "assigned_worker": "W2",
+          "input_files": [
+            "2mass-atlas-990214n-j1200244.fits",
+            "template.hdr"
+          ],
+          "output_files": [
+            "p09.fits",
+            "p09_area.fits"
+          ]
+        },
+        {
+          "task_id": "P10",
+          "assigned_worker": "W2",
+          "input_files": [
+            "2mass-atlas-990214n-j1200256.fits",
+            "template.hdr"
+          ],
+          "output_files": [
+            "p10.fits",
+            "p10_area.fits"
+          ]
+        },
+        {
+          "task_id": "TABLE",
+          "assigned_worker": "W1",
+          "input_files": [
+            "p01.fits",
+            "p02.fits",
+            "p03.fits",
+            "p04.fits",
+            "p05.fits",
+            "p06.fits",
+            "p07.fits",
+            "p08.fits",
+            "p09.fits",
+            "p10.fits"
+          ],
+          "output_files": [
+            "images.tbl"
+          ]
+        },
+        {
+          "task_id": "ADD",
+          "assigned_worker": "W1",
+          "input_files": [
+            "p01.fits",
+            "p01_area.fits",
+            "p02.fits",
+            "p02_area.fits",
+            "p03.fits",
+            "p03_area.fits",
+            "p04.fits",
+            "p04_area.fits",
+            "p05.fits",
+            "p05_area.fits",
+            "p06.fits",
+            "p06_area.fits",
+            "p07.fits",
+            "p07_area.fits",
+            "p08.fits",
+            "p08_area.fits",
+            "p09.fits",
+            "p09_area.fits",
+            "p10.fits",
+            "p10_area.fits",
+            "images.tbl",
+            "template.hdr"
+          ],
+          "output_files": [
+            "m101.fits",
+            "m101_area.fits"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "producer_task": "TABLE",
+          "consumer_task": "ADD",
+          "file_id": "images.tbl"
+        },
+        {
+          "producer_task": "P01",
+          "consumer_task": "TABLE",
+          "file_id": "p01.fits"
+        },
+        {
+          "producer_task": "P01",
+          "consumer_task": "ADD",
+          "file_id": "p01.fits"
+        },
+        {
+          "producer_task": "P01",
+          "consumer_task": "ADD",
+          "file_id": "p01_area.fits"
+        },
+        {
+          "producer_task": "P02",
+          "consumer_task": "TABLE",
+          "file_id": "p02.fits"
+        },
+        {
+          "producer_task": "P02",
+          "consumer_task": "ADD",
+          "file_id": "p02.fits"
+        },
+        {
+          "producer_task": "P02",
+          "consumer_task": "ADD",
+          "file_id": "p02_area.fits"
+        },
+        {
+          "producer_task": "P03",
+          "consumer_task": "TABLE",
+          "file_id": "p03.fits"
+        },
+        {
+          "producer_task": "P03",
+          "consumer_task": "ADD",
+          "file_id": "p03.fits"
+        },
+        {
+          "producer_task": "P03",
+          "consumer_task": "ADD",
+          "file_id": "p03_area.fits"
+        },
+        {
+          "producer_task": "P04",
+          "consumer_task": "TABLE",
+          "file_id": "p04.fits"
+        },
+        {
+          "producer_task": "P04",
+          "consumer_task": "ADD",
+          "file_id": "p04.fits"
+        },
+        {
+          "producer_task": "P04",
+          "consumer_task": "ADD",
+          "file_id": "p04_area.fits"
+        },
+        {
+          "producer_task": "P05",
+          "consumer_task": "TABLE",
+          "file_id": "p05.fits"
+        },
+        {
+          "producer_task": "P05",
+          "consumer_task": "ADD",
+          "file_id": "p05.fits"
+        },
+        {
+          "producer_task": "P05",
+          "consumer_task": "ADD",
+          "file_id": "p05_area.fits"
+        },
+        {
+          "producer_task": "P06",
+          "consumer_task": "TABLE",
+          "file_id": "p06.fits"
+        },
+        {
+          "producer_task": "P06",
+          "consumer_task": "ADD",
+          "file_id": "p06.fits"
+        },
+        {
+          "producer_task": "P06",
+          "consumer_task": "ADD",
+          "file_id": "p06_area.fits"
+        },
+        {
+          "producer_task": "P07",
+          "consumer_task": "TABLE",
+          "file_id": "p07.fits"
+        },
+        {
+          "producer_task": "P07",
+          "consumer_task": "ADD",
+          "file_id": "p07.fits"
+        },
+        {
+          "producer_task": "P07",
+          "consumer_task": "ADD",
+          "file_id": "p07_area.fits"
+        },
+        {
+          "producer_task": "P08",
+          "consumer_task": "TABLE",
+          "file_id": "p08.fits"
+        },
+        {
+          "producer_task": "P08",
+          "consumer_task": "ADD",
+          "file_id": "p08.fits"
+        },
+        {
+          "producer_task": "P08",
+          "consumer_task": "ADD",
+          "file_id": "p08_area.fits"
+        },
+        {
+          "producer_task": "P09",
+          "consumer_task": "TABLE",
+          "file_id": "p09.fits"
+        },
+        {
+          "producer_task": "P09",
+          "consumer_task": "ADD",
+          "file_id": "p09.fits"
+        },
+        {
+          "producer_task": "P09",
+          "consumer_task": "ADD",
+          "file_id": "p09_area.fits"
+        },
+        {
+          "producer_task": "P10",
+          "consumer_task": "TABLE",
+          "file_id": "p10.fits"
+        },
+        {
+          "producer_task": "P10",
+          "consumer_task": "ADD",
+          "file_id": "p10.fits"
+        },
+        {
+          "producer_task": "P10",
+          "consumer_task": "ADD",
+          "file_id": "p10_area.fits"
+        }
+      ],
+      "external_inputs": [
+        "2mass-atlas-990214n-j1100244.fits",
+        "2mass-atlas-990214n-j1100256.fits",
+        "2mass-atlas-990214n-j1110021.fits",
+        "2mass-atlas-990214n-j1110032.fits",
+        "2mass-atlas-990214n-j1180244.fits",
+        "2mass-atlas-990214n-j1180256.fits",
+        "2mass-atlas-990214n-j1190021.fits",
+        "2mass-atlas-990214n-j1190032.fits",
+        "2mass-atlas-990214n-j1200244.fits",
+        "2mass-atlas-990214n-j1200256.fits",
+        "template.hdr"
+      ],
+      "final_outputs": [
+        "m101.fits",
+        "m101_area.fits"
+      ]
+    },
+    "groups": [
+      [
+        "P01"
+      ],
+      [
+        "P02"
+      ],
+      [
+        "P03"
+      ],
+      [
+        "P04"
+      ],
+      [
+        "P05"
+      ],
+      [
+        "P06"
+      ],
+      [
+        "P07"
+      ],
+      [
+        "P08"
+      ],
+      [
+        "P09"
+      ],
+      [
+        "P10"
+      ],
+      [
+        "TABLE"
+      ],
+      [
+        "ADD"
+      ]
+    ]
+  },
+  "M101-PROJ": {
+    "condition_id": "M101-PROJ",
+    "pattern": "montage_m101",
+    "mode": "CondorIO",
+    "active_pool": [
+      "W1",
+      "W2"
+    ],
+    "application": "montage",
+    "files": [
+      {
+        "file_id": "2mass-atlas-990214n-j1100244.fits",
+        "size_bytes": 2111040,
+        "role": "external",
+        "producer_task": null,
+        "consumer_tasks": [
+          "P01"
+        ]
+      },
+      {
+        "file_id": "2mass-atlas-990214n-j1100256.fits",
+        "size_bytes": 2111040,
+        "role": "external",
+        "producer_task": null,
+        "consumer_tasks": [
+          "P02"
+        ]
+      },
+      {
+        "file_id": "2mass-atlas-990214n-j1110021.fits",
+        "size_bytes": 2111040,
+        "role": "external",
+        "producer_task": null,
+        "consumer_tasks": [
+          "P03"
+        ]
+      },
+      {
+        "file_id": "2mass-atlas-990214n-j1110032.fits",
+        "size_bytes": 2111040,
+        "role": "external",
+        "producer_task": null,
+        "consumer_tasks": [
+          "P04"
+        ]
+      },
+      {
+        "file_id": "2mass-atlas-990214n-j1180244.fits",
+        "size_bytes": 2111040,
+        "role": "external",
+        "producer_task": null,
+        "consumer_tasks": [
+          "P05"
+        ]
+      },
+      {
+        "file_id": "2mass-atlas-990214n-j1180256.fits",
+        "size_bytes": 2111040,
+        "role": "external",
+        "producer_task": null,
+        "consumer_tasks": [
+          "P06"
+        ]
+      },
+      {
+        "file_id": "2mass-atlas-990214n-j1190021.fits",
+        "size_bytes": 2111040,
+        "role": "external",
+        "producer_task": null,
+        "consumer_tasks": [
+          "P07"
+        ]
+      },
+      {
+        "file_id": "2mass-atlas-990214n-j1190032.fits",
+        "size_bytes": 2111040,
+        "role": "external",
+        "producer_task": null,
+        "consumer_tasks": [
+          "P08"
+        ]
+      },
+      {
+        "file_id": "2mass-atlas-990214n-j1200244.fits",
+        "size_bytes": 2111040,
+        "role": "external",
+        "producer_task": null,
+        "consumer_tasks": [
+          "P09"
+        ]
+      },
+      {
+        "file_id": "2mass-atlas-990214n-j1200256.fits",
+        "size_bytes": 2111040,
+        "role": "external",
+        "producer_task": null,
+        "consumer_tasks": [
+          "P10"
+        ]
+      },
+      {
+        "file_id": "images.tbl",
+        "size_bytes": 6284,
+        "role": "intermediate",
+        "producer_task": "TABLE",
+        "consumer_tasks": [
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "m101.fits",
+        "size_bytes": 39744000,
+        "role": "final",
+        "producer_task": "ADD",
+        "consumer_tasks": []
+      },
+      {
+        "file_id": "m101_area.fits",
+        "size_bytes": 39744000,
+        "role": "final",
+        "producer_task": "ADD",
+        "consumer_tasks": []
+      },
+      {
+        "file_id": "p01.fits",
+        "size_bytes": 4230720,
+        "role": "intermediate",
+        "producer_task": "P01",
+        "consumer_tasks": [
+          "TABLE",
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "p01_area.fits",
+        "size_bytes": 4230720,
+        "role": "intermediate",
+        "producer_task": "P01",
+        "consumer_tasks": [
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "p02.fits",
+        "size_bytes": 4222080,
+        "role": "intermediate",
+        "producer_task": "P02",
+        "consumer_tasks": [
+          "TABLE",
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "p02_area.fits",
+        "size_bytes": 4222080,
+        "role": "intermediate",
+        "producer_task": "P02",
+        "consumer_tasks": [
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "p03.fits",
+        "size_bytes": 4199040,
+        "role": "intermediate",
+        "producer_task": "P03",
+        "consumer_tasks": [
+          "TABLE",
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "p03_area.fits",
+        "size_bytes": 4199040,
+        "role": "intermediate",
+        "producer_task": "P03",
+        "consumer_tasks": [
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "p04.fits",
+        "size_bytes": 4199040,
+        "role": "intermediate",
+        "producer_task": "P04",
+        "consumer_tasks": [
+          "TABLE",
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "p04_area.fits",
+        "size_bytes": 4199040,
+        "role": "intermediate",
+        "producer_task": "P04",
+        "consumer_tasks": [
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "p05.fits",
+        "size_bytes": 4190400,
+        "role": "intermediate",
+        "producer_task": "P05",
+        "consumer_tasks": [
+          "TABLE",
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "p05_area.fits",
+        "size_bytes": 4190400,
+        "role": "intermediate",
+        "producer_task": "P05",
+        "consumer_tasks": [
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "p06.fits",
+        "size_bytes": 4181760,
+        "role": "intermediate",
+        "producer_task": "P06",
+        "consumer_tasks": [
+          "TABLE",
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "p06_area.fits",
+        "size_bytes": 4181760,
+        "role": "intermediate",
+        "producer_task": "P06",
+        "consumer_tasks": [
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "p07.fits",
+        "size_bytes": 4210560,
+        "role": "intermediate",
+        "producer_task": "P07",
+        "consumer_tasks": [
+          "TABLE",
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "p07_area.fits",
+        "size_bytes": 4210560,
+        "role": "intermediate",
+        "producer_task": "P07",
+        "consumer_tasks": [
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "p08.fits",
+        "size_bytes": 4210560,
+        "role": "intermediate",
+        "producer_task": "P08",
+        "consumer_tasks": [
+          "TABLE",
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "p08_area.fits",
+        "size_bytes": 4210560,
+        "role": "intermediate",
+        "producer_task": "P08",
+        "consumer_tasks": [
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "p09.fits",
+        "size_bytes": 4239360,
+        "role": "intermediate",
+        "producer_task": "P09",
+        "consumer_tasks": [
+          "TABLE",
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "p09_area.fits",
+        "size_bytes": 4239360,
+        "role": "intermediate",
+        "producer_task": "P09",
+        "consumer_tasks": [
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "p10.fits",
+        "size_bytes": 4222080,
+        "role": "intermediate",
+        "producer_task": "P10",
+        "consumer_tasks": [
+          "TABLE",
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "p10_area.fits",
+        "size_bytes": 4222080,
+        "role": "intermediate",
+        "producer_task": "P10",
+        "consumer_tasks": [
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "template.hdr",
+        "size_bytes": 318,
+        "role": "external",
+        "producer_task": null,
+        "consumer_tasks": [
+          "P01",
+          "P02",
+          "P03",
+          "P04",
+          "P05",
+          "P06",
+          "P07",
+          "P08",
+          "P09",
+          "P10",
+          "ADD"
+        ]
+      }
+    ],
+    "dag": {
+      "tasks": [
+        {
+          "task_id": "P01",
+          "assigned_worker": "W2",
+          "input_files": [
+            "2mass-atlas-990214n-j1100244.fits",
+            "template.hdr"
+          ],
+          "output_files": [
+            "p01.fits",
+            "p01_area.fits"
+          ]
+        },
+        {
+          "task_id": "P02",
+          "assigned_worker": "W2",
+          "input_files": [
+            "2mass-atlas-990214n-j1100256.fits",
+            "template.hdr"
+          ],
+          "output_files": [
+            "p02.fits",
+            "p02_area.fits"
+          ]
+        },
+        {
+          "task_id": "P03",
+          "assigned_worker": "W2",
+          "input_files": [
+            "2mass-atlas-990214n-j1110021.fits",
+            "template.hdr"
+          ],
+          "output_files": [
+            "p03.fits",
+            "p03_area.fits"
+          ]
+        },
+        {
+          "task_id": "P04",
+          "assigned_worker": "W2",
+          "input_files": [
+            "2mass-atlas-990214n-j1110032.fits",
+            "template.hdr"
+          ],
+          "output_files": [
+            "p04.fits",
+            "p04_area.fits"
+          ]
+        },
+        {
+          "task_id": "P05",
+          "assigned_worker": "W2",
+          "input_files": [
+            "2mass-atlas-990214n-j1180244.fits",
+            "template.hdr"
+          ],
+          "output_files": [
+            "p05.fits",
+            "p05_area.fits"
+          ]
+        },
+        {
+          "task_id": "P06",
+          "assigned_worker": "W2",
+          "input_files": [
+            "2mass-atlas-990214n-j1180256.fits",
+            "template.hdr"
+          ],
+          "output_files": [
+            "p06.fits",
+            "p06_area.fits"
+          ]
+        },
+        {
+          "task_id": "P07",
+          "assigned_worker": "W2",
+          "input_files": [
+            "2mass-atlas-990214n-j1190021.fits",
+            "template.hdr"
+          ],
+          "output_files": [
+            "p07.fits",
+            "p07_area.fits"
+          ]
+        },
+        {
+          "task_id": "P08",
+          "assigned_worker": "W2",
+          "input_files": [
+            "2mass-atlas-990214n-j1190032.fits",
+            "template.hdr"
+          ],
+          "output_files": [
+            "p08.fits",
+            "p08_area.fits"
+          ]
+        },
+        {
+          "task_id": "P09",
+          "assigned_worker": "W2",
+          "input_files": [
+            "2mass-atlas-990214n-j1200244.fits",
+            "template.hdr"
+          ],
+          "output_files": [
+            "p09.fits",
+            "p09_area.fits"
+          ]
+        },
+        {
+          "task_id": "P10",
+          "assigned_worker": "W2",
+          "input_files": [
+            "2mass-atlas-990214n-j1200256.fits",
+            "template.hdr"
+          ],
+          "output_files": [
+            "p10.fits",
+            "p10_area.fits"
+          ]
+        },
+        {
+          "task_id": "TABLE",
+          "assigned_worker": "W1",
+          "input_files": [
+            "p01.fits",
+            "p02.fits",
+            "p03.fits",
+            "p04.fits",
+            "p05.fits",
+            "p06.fits",
+            "p07.fits",
+            "p08.fits",
+            "p09.fits",
+            "p10.fits"
+          ],
+          "output_files": [
+            "images.tbl"
+          ]
+        },
+        {
+          "task_id": "ADD",
+          "assigned_worker": "W1",
+          "input_files": [
+            "p01.fits",
+            "p01_area.fits",
+            "p02.fits",
+            "p02_area.fits",
+            "p03.fits",
+            "p03_area.fits",
+            "p04.fits",
+            "p04_area.fits",
+            "p05.fits",
+            "p05_area.fits",
+            "p06.fits",
+            "p06_area.fits",
+            "p07.fits",
+            "p07_area.fits",
+            "p08.fits",
+            "p08_area.fits",
+            "p09.fits",
+            "p09_area.fits",
+            "p10.fits",
+            "p10_area.fits",
+            "images.tbl",
+            "template.hdr"
+          ],
+          "output_files": [
+            "m101.fits",
+            "m101_area.fits"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "producer_task": "TABLE",
+          "consumer_task": "ADD",
+          "file_id": "images.tbl"
+        },
+        {
+          "producer_task": "P01",
+          "consumer_task": "TABLE",
+          "file_id": "p01.fits"
+        },
+        {
+          "producer_task": "P01",
+          "consumer_task": "ADD",
+          "file_id": "p01.fits"
+        },
+        {
+          "producer_task": "P01",
+          "consumer_task": "ADD",
+          "file_id": "p01_area.fits"
+        },
+        {
+          "producer_task": "P02",
+          "consumer_task": "TABLE",
+          "file_id": "p02.fits"
+        },
+        {
+          "producer_task": "P02",
+          "consumer_task": "ADD",
+          "file_id": "p02.fits"
+        },
+        {
+          "producer_task": "P02",
+          "consumer_task": "ADD",
+          "file_id": "p02_area.fits"
+        },
+        {
+          "producer_task": "P03",
+          "consumer_task": "TABLE",
+          "file_id": "p03.fits"
+        },
+        {
+          "producer_task": "P03",
+          "consumer_task": "ADD",
+          "file_id": "p03.fits"
+        },
+        {
+          "producer_task": "P03",
+          "consumer_task": "ADD",
+          "file_id": "p03_area.fits"
+        },
+        {
+          "producer_task": "P04",
+          "consumer_task": "TABLE",
+          "file_id": "p04.fits"
+        },
+        {
+          "producer_task": "P04",
+          "consumer_task": "ADD",
+          "file_id": "p04.fits"
+        },
+        {
+          "producer_task": "P04",
+          "consumer_task": "ADD",
+          "file_id": "p04_area.fits"
+        },
+        {
+          "producer_task": "P05",
+          "consumer_task": "TABLE",
+          "file_id": "p05.fits"
+        },
+        {
+          "producer_task": "P05",
+          "consumer_task": "ADD",
+          "file_id": "p05.fits"
+        },
+        {
+          "producer_task": "P05",
+          "consumer_task": "ADD",
+          "file_id": "p05_area.fits"
+        },
+        {
+          "producer_task": "P06",
+          "consumer_task": "TABLE",
+          "file_id": "p06.fits"
+        },
+        {
+          "producer_task": "P06",
+          "consumer_task": "ADD",
+          "file_id": "p06.fits"
+        },
+        {
+          "producer_task": "P06",
+          "consumer_task": "ADD",
+          "file_id": "p06_area.fits"
+        },
+        {
+          "producer_task": "P07",
+          "consumer_task": "TABLE",
+          "file_id": "p07.fits"
+        },
+        {
+          "producer_task": "P07",
+          "consumer_task": "ADD",
+          "file_id": "p07.fits"
+        },
+        {
+          "producer_task": "P07",
+          "consumer_task": "ADD",
+          "file_id": "p07_area.fits"
+        },
+        {
+          "producer_task": "P08",
+          "consumer_task": "TABLE",
+          "file_id": "p08.fits"
+        },
+        {
+          "producer_task": "P08",
+          "consumer_task": "ADD",
+          "file_id": "p08.fits"
+        },
+        {
+          "producer_task": "P08",
+          "consumer_task": "ADD",
+          "file_id": "p08_area.fits"
+        },
+        {
+          "producer_task": "P09",
+          "consumer_task": "TABLE",
+          "file_id": "p09.fits"
+        },
+        {
+          "producer_task": "P09",
+          "consumer_task": "ADD",
+          "file_id": "p09.fits"
+        },
+        {
+          "producer_task": "P09",
+          "consumer_task": "ADD",
+          "file_id": "p09_area.fits"
+        },
+        {
+          "producer_task": "P10",
+          "consumer_task": "TABLE",
+          "file_id": "p10.fits"
+        },
+        {
+          "producer_task": "P10",
+          "consumer_task": "ADD",
+          "file_id": "p10.fits"
+        },
+        {
+          "producer_task": "P10",
+          "consumer_task": "ADD",
+          "file_id": "p10_area.fits"
+        }
+      ],
+      "external_inputs": [
+        "2mass-atlas-990214n-j1100244.fits",
+        "2mass-atlas-990214n-j1100256.fits",
+        "2mass-atlas-990214n-j1110021.fits",
+        "2mass-atlas-990214n-j1110032.fits",
+        "2mass-atlas-990214n-j1180244.fits",
+        "2mass-atlas-990214n-j1180256.fits",
+        "2mass-atlas-990214n-j1190021.fits",
+        "2mass-atlas-990214n-j1190032.fits",
+        "2mass-atlas-990214n-j1200244.fits",
+        "2mass-atlas-990214n-j1200256.fits",
+        "template.hdr"
+      ],
+      "final_outputs": [
+        "m101.fits",
+        "m101_area.fits"
+      ]
+    },
+    "groups": [
+      [
+        "P01",
+        "P02"
+      ],
+      [
+        "P03"
+      ],
+      [
+        "P04"
+      ],
+      [
+        "P05"
+      ],
+      [
+        "P06"
+      ],
+      [
+        "P07"
+      ],
+      [
+        "P08"
+      ],
+      [
+        "P09"
+      ],
+      [
+        "P10"
+      ],
+      [
+        "TABLE"
+      ],
+      [
+        "ADD"
+      ]
+    ]
+  },
+  "M101-FINAL": {
+    "condition_id": "M101-FINAL",
+    "pattern": "montage_m101",
+    "mode": "CondorIO",
+    "active_pool": [
+      "W1",
+      "W2"
+    ],
+    "application": "montage",
+    "files": [
+      {
+        "file_id": "2mass-atlas-990214n-j1100244.fits",
+        "size_bytes": 2111040,
+        "role": "external",
+        "producer_task": null,
+        "consumer_tasks": [
+          "P01"
+        ]
+      },
+      {
+        "file_id": "2mass-atlas-990214n-j1100256.fits",
+        "size_bytes": 2111040,
+        "role": "external",
+        "producer_task": null,
+        "consumer_tasks": [
+          "P02"
+        ]
+      },
+      {
+        "file_id": "2mass-atlas-990214n-j1110021.fits",
+        "size_bytes": 2111040,
+        "role": "external",
+        "producer_task": null,
+        "consumer_tasks": [
+          "P03"
+        ]
+      },
+      {
+        "file_id": "2mass-atlas-990214n-j1110032.fits",
+        "size_bytes": 2111040,
+        "role": "external",
+        "producer_task": null,
+        "consumer_tasks": [
+          "P04"
+        ]
+      },
+      {
+        "file_id": "2mass-atlas-990214n-j1180244.fits",
+        "size_bytes": 2111040,
+        "role": "external",
+        "producer_task": null,
+        "consumer_tasks": [
+          "P05"
+        ]
+      },
+      {
+        "file_id": "2mass-atlas-990214n-j1180256.fits",
+        "size_bytes": 2111040,
+        "role": "external",
+        "producer_task": null,
+        "consumer_tasks": [
+          "P06"
+        ]
+      },
+      {
+        "file_id": "2mass-atlas-990214n-j1190021.fits",
+        "size_bytes": 2111040,
+        "role": "external",
+        "producer_task": null,
+        "consumer_tasks": [
+          "P07"
+        ]
+      },
+      {
+        "file_id": "2mass-atlas-990214n-j1190032.fits",
+        "size_bytes": 2111040,
+        "role": "external",
+        "producer_task": null,
+        "consumer_tasks": [
+          "P08"
+        ]
+      },
+      {
+        "file_id": "2mass-atlas-990214n-j1200244.fits",
+        "size_bytes": 2111040,
+        "role": "external",
+        "producer_task": null,
+        "consumer_tasks": [
+          "P09"
+        ]
+      },
+      {
+        "file_id": "2mass-atlas-990214n-j1200256.fits",
+        "size_bytes": 2111040,
+        "role": "external",
+        "producer_task": null,
+        "consumer_tasks": [
+          "P10"
+        ]
+      },
+      {
+        "file_id": "images.tbl",
+        "size_bytes": 6284,
+        "role": "intermediate",
+        "producer_task": "TABLE",
+        "consumer_tasks": [
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "m101.fits",
+        "size_bytes": 39744000,
+        "role": "final",
+        "producer_task": "ADD",
+        "consumer_tasks": []
+      },
+      {
+        "file_id": "m101_area.fits",
+        "size_bytes": 39744000,
+        "role": "final",
+        "producer_task": "ADD",
+        "consumer_tasks": []
+      },
+      {
+        "file_id": "p01.fits",
+        "size_bytes": 4230720,
+        "role": "intermediate",
+        "producer_task": "P01",
+        "consumer_tasks": [
+          "TABLE",
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "p01_area.fits",
+        "size_bytes": 4230720,
+        "role": "intermediate",
+        "producer_task": "P01",
+        "consumer_tasks": [
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "p02.fits",
+        "size_bytes": 4222080,
+        "role": "intermediate",
+        "producer_task": "P02",
+        "consumer_tasks": [
+          "TABLE",
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "p02_area.fits",
+        "size_bytes": 4222080,
+        "role": "intermediate",
+        "producer_task": "P02",
+        "consumer_tasks": [
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "p03.fits",
+        "size_bytes": 4199040,
+        "role": "intermediate",
+        "producer_task": "P03",
+        "consumer_tasks": [
+          "TABLE",
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "p03_area.fits",
+        "size_bytes": 4199040,
+        "role": "intermediate",
+        "producer_task": "P03",
+        "consumer_tasks": [
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "p04.fits",
+        "size_bytes": 4199040,
+        "role": "intermediate",
+        "producer_task": "P04",
+        "consumer_tasks": [
+          "TABLE",
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "p04_area.fits",
+        "size_bytes": 4199040,
+        "role": "intermediate",
+        "producer_task": "P04",
+        "consumer_tasks": [
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "p05.fits",
+        "size_bytes": 4190400,
+        "role": "intermediate",
+        "producer_task": "P05",
+        "consumer_tasks": [
+          "TABLE",
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "p05_area.fits",
+        "size_bytes": 4190400,
+        "role": "intermediate",
+        "producer_task": "P05",
+        "consumer_tasks": [
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "p06.fits",
+        "size_bytes": 4181760,
+        "role": "intermediate",
+        "producer_task": "P06",
+        "consumer_tasks": [
+          "TABLE",
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "p06_area.fits",
+        "size_bytes": 4181760,
+        "role": "intermediate",
+        "producer_task": "P06",
+        "consumer_tasks": [
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "p07.fits",
+        "size_bytes": 4210560,
+        "role": "intermediate",
+        "producer_task": "P07",
+        "consumer_tasks": [
+          "TABLE",
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "p07_area.fits",
+        "size_bytes": 4210560,
+        "role": "intermediate",
+        "producer_task": "P07",
+        "consumer_tasks": [
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "p08.fits",
+        "size_bytes": 4210560,
+        "role": "intermediate",
+        "producer_task": "P08",
+        "consumer_tasks": [
+          "TABLE",
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "p08_area.fits",
+        "size_bytes": 4210560,
+        "role": "intermediate",
+        "producer_task": "P08",
+        "consumer_tasks": [
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "p09.fits",
+        "size_bytes": 4239360,
+        "role": "intermediate",
+        "producer_task": "P09",
+        "consumer_tasks": [
+          "TABLE",
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "p09_area.fits",
+        "size_bytes": 4239360,
+        "role": "intermediate",
+        "producer_task": "P09",
+        "consumer_tasks": [
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "p10.fits",
+        "size_bytes": 4222080,
+        "role": "intermediate",
+        "producer_task": "P10",
+        "consumer_tasks": [
+          "TABLE",
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "p10_area.fits",
+        "size_bytes": 4222080,
+        "role": "intermediate",
+        "producer_task": "P10",
+        "consumer_tasks": [
+          "ADD"
+        ]
+      },
+      {
+        "file_id": "template.hdr",
+        "size_bytes": 318,
+        "role": "external",
+        "producer_task": null,
+        "consumer_tasks": [
+          "P01",
+          "P02",
+          "P03",
+          "P04",
+          "P05",
+          "P06",
+          "P07",
+          "P08",
+          "P09",
+          "P10",
+          "ADD"
+        ]
+      }
+    ],
+    "dag": {
+      "tasks": [
+        {
+          "task_id": "P01",
+          "assigned_worker": "W2",
+          "input_files": [
+            "2mass-atlas-990214n-j1100244.fits",
+            "template.hdr"
+          ],
+          "output_files": [
+            "p01.fits",
+            "p01_area.fits"
+          ]
+        },
+        {
+          "task_id": "P02",
+          "assigned_worker": "W2",
+          "input_files": [
+            "2mass-atlas-990214n-j1100256.fits",
+            "template.hdr"
+          ],
+          "output_files": [
+            "p02.fits",
+            "p02_area.fits"
+          ]
+        },
+        {
+          "task_id": "P03",
+          "assigned_worker": "W2",
+          "input_files": [
+            "2mass-atlas-990214n-j1110021.fits",
+            "template.hdr"
+          ],
+          "output_files": [
+            "p03.fits",
+            "p03_area.fits"
+          ]
+        },
+        {
+          "task_id": "P04",
+          "assigned_worker": "W2",
+          "input_files": [
+            "2mass-atlas-990214n-j1110032.fits",
+            "template.hdr"
+          ],
+          "output_files": [
+            "p04.fits",
+            "p04_area.fits"
+          ]
+        },
+        {
+          "task_id": "P05",
+          "assigned_worker": "W2",
+          "input_files": [
+            "2mass-atlas-990214n-j1180244.fits",
+            "template.hdr"
+          ],
+          "output_files": [
+            "p05.fits",
+            "p05_area.fits"
+          ]
+        },
+        {
+          "task_id": "P06",
+          "assigned_worker": "W2",
+          "input_files": [
+            "2mass-atlas-990214n-j1180256.fits",
+            "template.hdr"
+          ],
+          "output_files": [
+            "p06.fits",
+            "p06_area.fits"
+          ]
+        },
+        {
+          "task_id": "P07",
+          "assigned_worker": "W2",
+          "input_files": [
+            "2mass-atlas-990214n-j1190021.fits",
+            "template.hdr"
+          ],
+          "output_files": [
+            "p07.fits",
+            "p07_area.fits"
+          ]
+        },
+        {
+          "task_id": "P08",
+          "assigned_worker": "W2",
+          "input_files": [
+            "2mass-atlas-990214n-j1190032.fits",
+            "template.hdr"
+          ],
+          "output_files": [
+            "p08.fits",
+            "p08_area.fits"
+          ]
+        },
+        {
+          "task_id": "P09",
+          "assigned_worker": "W2",
+          "input_files": [
+            "2mass-atlas-990214n-j1200244.fits",
+            "template.hdr"
+          ],
+          "output_files": [
+            "p09.fits",
+            "p09_area.fits"
+          ]
+        },
+        {
+          "task_id": "P10",
+          "assigned_worker": "W2",
+          "input_files": [
+            "2mass-atlas-990214n-j1200256.fits",
+            "template.hdr"
+          ],
+          "output_files": [
+            "p10.fits",
+            "p10_area.fits"
+          ]
+        },
+        {
+          "task_id": "TABLE",
+          "assigned_worker": "W1",
+          "input_files": [
+            "p01.fits",
+            "p02.fits",
+            "p03.fits",
+            "p04.fits",
+            "p05.fits",
+            "p06.fits",
+            "p07.fits",
+            "p08.fits",
+            "p09.fits",
+            "p10.fits"
+          ],
+          "output_files": [
+            "images.tbl"
+          ]
+        },
+        {
+          "task_id": "ADD",
+          "assigned_worker": "W1",
+          "input_files": [
+            "p01.fits",
+            "p01_area.fits",
+            "p02.fits",
+            "p02_area.fits",
+            "p03.fits",
+            "p03_area.fits",
+            "p04.fits",
+            "p04_area.fits",
+            "p05.fits",
+            "p05_area.fits",
+            "p06.fits",
+            "p06_area.fits",
+            "p07.fits",
+            "p07_area.fits",
+            "p08.fits",
+            "p08_area.fits",
+            "p09.fits",
+            "p09_area.fits",
+            "p10.fits",
+            "p10_area.fits",
+            "images.tbl",
+            "template.hdr"
+          ],
+          "output_files": [
+            "m101.fits",
+            "m101_area.fits"
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "producer_task": "TABLE",
+          "consumer_task": "ADD",
+          "file_id": "images.tbl"
+        },
+        {
+          "producer_task": "P01",
+          "consumer_task": "TABLE",
+          "file_id": "p01.fits"
+        },
+        {
+          "producer_task": "P01",
+          "consumer_task": "ADD",
+          "file_id": "p01.fits"
+        },
+        {
+          "producer_task": "P01",
+          "consumer_task": "ADD",
+          "file_id": "p01_area.fits"
+        },
+        {
+          "producer_task": "P02",
+          "consumer_task": "TABLE",
+          "file_id": "p02.fits"
+        },
+        {
+          "producer_task": "P02",
+          "consumer_task": "ADD",
+          "file_id": "p02.fits"
+        },
+        {
+          "producer_task": "P02",
+          "consumer_task": "ADD",
+          "file_id": "p02_area.fits"
+        },
+        {
+          "producer_task": "P03",
+          "consumer_task": "TABLE",
+          "file_id": "p03.fits"
+        },
+        {
+          "producer_task": "P03",
+          "consumer_task": "ADD",
+          "file_id": "p03.fits"
+        },
+        {
+          "producer_task": "P03",
+          "consumer_task": "ADD",
+          "file_id": "p03_area.fits"
+        },
+        {
+          "producer_task": "P04",
+          "consumer_task": "TABLE",
+          "file_id": "p04.fits"
+        },
+        {
+          "producer_task": "P04",
+          "consumer_task": "ADD",
+          "file_id": "p04.fits"
+        },
+        {
+          "producer_task": "P04",
+          "consumer_task": "ADD",
+          "file_id": "p04_area.fits"
+        },
+        {
+          "producer_task": "P05",
+          "consumer_task": "TABLE",
+          "file_id": "p05.fits"
+        },
+        {
+          "producer_task": "P05",
+          "consumer_task": "ADD",
+          "file_id": "p05.fits"
+        },
+        {
+          "producer_task": "P05",
+          "consumer_task": "ADD",
+          "file_id": "p05_area.fits"
+        },
+        {
+          "producer_task": "P06",
+          "consumer_task": "TABLE",
+          "file_id": "p06.fits"
+        },
+        {
+          "producer_task": "P06",
+          "consumer_task": "ADD",
+          "file_id": "p06.fits"
+        },
+        {
+          "producer_task": "P06",
+          "consumer_task": "ADD",
+          "file_id": "p06_area.fits"
+        },
+        {
+          "producer_task": "P07",
+          "consumer_task": "TABLE",
+          "file_id": "p07.fits"
+        },
+        {
+          "producer_task": "P07",
+          "consumer_task": "ADD",
+          "file_id": "p07.fits"
+        },
+        {
+          "producer_task": "P07",
+          "consumer_task": "ADD",
+          "file_id": "p07_area.fits"
+        },
+        {
+          "producer_task": "P08",
+          "consumer_task": "TABLE",
+          "file_id": "p08.fits"
+        },
+        {
+          "producer_task": "P08",
+          "consumer_task": "ADD",
+          "file_id": "p08.fits"
+        },
+        {
+          "producer_task": "P08",
+          "consumer_task": "ADD",
+          "file_id": "p08_area.fits"
+        },
+        {
+          "producer_task": "P09",
+          "consumer_task": "TABLE",
+          "file_id": "p09.fits"
+        },
+        {
+          "producer_task": "P09",
+          "consumer_task": "ADD",
+          "file_id": "p09.fits"
+        },
+        {
+          "producer_task": "P09",
+          "consumer_task": "ADD",
+          "file_id": "p09_area.fits"
+        },
+        {
+          "producer_task": "P10",
+          "consumer_task": "TABLE",
+          "file_id": "p10.fits"
+        },
+        {
+          "producer_task": "P10",
+          "consumer_task": "ADD",
+          "file_id": "p10.fits"
+        },
+        {
+          "producer_task": "P10",
+          "consumer_task": "ADD",
+          "file_id": "p10_area.fits"
+        }
+      ],
+      "external_inputs": [
+        "2mass-atlas-990214n-j1100244.fits",
+        "2mass-atlas-990214n-j1100256.fits",
+        "2mass-atlas-990214n-j1110021.fits",
+        "2mass-atlas-990214n-j1110032.fits",
+        "2mass-atlas-990214n-j1180244.fits",
+        "2mass-atlas-990214n-j1180256.fits",
+        "2mass-atlas-990214n-j1190021.fits",
+        "2mass-atlas-990214n-j1190032.fits",
+        "2mass-atlas-990214n-j1200244.fits",
+        "2mass-atlas-990214n-j1200256.fits",
+        "template.hdr"
+      ],
+      "final_outputs": [
+        "m101.fits",
+        "m101_area.fits"
+      ]
+    },
+    "groups": [
+      [
+        "TABLE",
+        "ADD"
+      ],
+      [
+        "P01"
+      ],
+      [
+        "P02"
+      ],
+      [
+        "P03"
+      ],
+      [
+        "P04"
+      ],
+      [
+        "P05"
+      ],
+      [
+        "P06"
+      ],
+      [
+        "P07"
+      ],
+      [
+        "P08"
+      ],
+      [
+        "P09"
+      ],
+      [
+        "P10"
+      ]
+    ]
+  }
+}

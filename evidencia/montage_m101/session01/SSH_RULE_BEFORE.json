@@ -1,0 +1,7 @@
+{
+  "nsg": "nsg-dme-cloud",
+  "name": "SSH-from-author",
+  "prefixes": [
+    "186.86.33.30/32"
+  ]
+}

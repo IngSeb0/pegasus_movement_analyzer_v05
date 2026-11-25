@@ -1,0 +1,121 @@
+[
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "1603627_ji1100244.fits",
+   "id": 1,
+   "generate_checksum": true,
+   "src_urls": [
+     { "site_label": "local", "url": "/mnt/montage_intensivo_20261122/ronda2/cases/MG-FINAL-B03/plans/MG-FINAL/inputs/1603627_ji1100244.fits", "priority": 10 }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///mnt/montage_intensivo_20261122/ronda2/cases/MG-FINAL-B03/plans/MG-FINAL/scratch/dmeadmin/pegasus/dme-cloud-20261026-mg-final-r03/run0001/./1603627_ji1100244.fits" }
+   ] }
+ ,
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "869146_ji0310256.fits",
+   "id": 2,
+   "generate_checksum": true,
+   "src_urls": [
+     { "site_label": "local", "url": "/mnt/montage_intensivo_20261122/ronda2/cases/MG-FINAL-B03/plans/MG-FINAL/inputs/869146_ji0310256.fits", "priority": 10 }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///mnt/montage_intensivo_20261122/ronda2/cases/MG-FINAL-B03/plans/MG-FINAL/scratch/dmeadmin/pegasus/dme-cloud-20261026-mg-final-r03/run0001/./869146_ji0310256.fits" }
+   ] }
+ ,
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "1603537_ji1060266.fits",
+   "id": 3,
+   "generate_checksum": true,
+   "src_urls": [
+     { "site_label": "local", "url": "/mnt/montage_intensivo_20261122/ronda2/cases/MG-FINAL-B03/plans/MG-FINAL/inputs/1603537_ji1060266.fits", "priority": 10 }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///mnt/montage_intensivo_20261122/ronda2/cases/MG-FINAL-B03/plans/MG-FINAL/scratch/dmeadmin/pegasus/dme-cloud-20261026-mg-final-r03/run0001/./1603537_ji1060266.fits" }
+   ] }
+ ,
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "1603809_ji1240220.fits",
+   "id": 4,
+   "generate_checksum": true,
+   "src_urls": [
+     { "site_label": "local", "url": "/mnt/montage_intensivo_20261122/ronda2/cases/MG-FINAL-B03/plans/MG-FINAL/inputs/1603809_ji1240220.fits", "priority": 10 }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///mnt/montage_intensivo_20261122/ronda2/cases/MG-FINAL-B03/plans/MG-FINAL/scratch/dmeadmin/pegasus/dme-cloud-20261026-mg-final-r03/run0001/./1603809_ji1240220.fits" }
+   ] }
+ ,
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "744994_ji0600009.fits",
+   "id": 5,
+   "generate_checksum": true,
+   "src_urls": [
+     { "site_label": "local", "url": "/mnt/montage_intensivo_20261122/ronda2/cases/MG-FINAL-B03/plans/MG-FINAL/inputs/744994_ji0600009.fits", "priority": 10 }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///mnt/montage_intensivo_20261122/ronda2/cases/MG-FINAL-B03/plans/MG-FINAL/scratch/dmeadmin/pegasus/dme-cloud-20261026-mg-final-r03/run0001/./744994_ji0600009.fits" }
+   ] }
+ ,
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "1603767_ji1220266.fits",
+   "id": 6,
+   "generate_checksum": true,
+   "src_urls": [
+     { "site_label": "local", "url": "/mnt/montage_intensivo_20261122/ronda2/cases/MG-FINAL-B03/plans/MG-FINAL/inputs/1603767_ji1220266.fits", "priority": 10 }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///mnt/montage_intensivo_20261122/ronda2/cases/MG-FINAL-B03/plans/MG-FINAL/scratch/dmeadmin/pegasus/dme-cloud-20261026-mg-final-r03/run0001/./1603767_ji1220266.fits" }
+   ] }
+ ,
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "827770_ji0490266.fits",
+   "id": 7,
+   "generate_checksum": true,
+   "src_urls": [
+     { "site_label": "local", "url": "/mnt/montage_intensivo_20261122/ronda2/cases/MG-FINAL-B03/plans/MG-FINAL/inputs/827770_ji0490266.fits", "priority": 10 }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///mnt/montage_intensivo_20261122/ronda2/cases/MG-FINAL-B03/plans/MG-FINAL/scratch/dmeadmin/pegasus/dme-cloud-20261026-mg-final-r03/run0001/./827770_ji0490266.fits" }
+   ] }
+ ,
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "1603720_ji1200256.fits",
+   "id": 8,
+   "generate_checksum": true,
+   "src_urls": [
+     { "site_label": "local", "url": "/mnt/montage_intensivo_20261122/ronda2/cases/MG-FINAL-B03/plans/MG-FINAL/inputs/1603720_ji1200256.fits", "priority": 10 }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///mnt/montage_intensivo_20261122/ronda2/cases/MG-FINAL-B03/plans/MG-FINAL/scratch/dmeadmin/pegasus/dme-cloud-20261026-mg-final-r03/run0001/./1603720_ji1200256.fits" }
+   ] }
+ ,
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "1603856_ji1320232.fits",
+   "id": 9,
+   "generate_checksum": true,
+   "src_urls": [
+     { "site_label": "local", "url": "/mnt/montage_intensivo_20261122/ronda2/cases/MG-FINAL-B03/plans/MG-FINAL/inputs/1603856_ji1320232.fits", "priority": 10 }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///mnt/montage_intensivo_20261122/ronda2/cases/MG-FINAL-B03/plans/MG-FINAL/scratch/dmeadmin/pegasus/dme-cloud-20261026-mg-final-r03/run0001/./1603856_ji1320232.fits" }
+   ] }
+ ,
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "1603630_ji1110009.fits",
+   "id": 10,
+   "generate_checksum": true,
+   "src_urls": [
+     { "site_label": "local", "url": "/mnt/montage_intensivo_20261122/ronda2/cases/MG-FINAL-B03/plans/MG-FINAL/inputs/1603630_ji1110009.fits", "priority": 10 }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///mnt/montage_intensivo_20261122/ronda2/cases/MG-FINAL-B03/plans/MG-FINAL/scratch/dmeadmin/pegasus/dme-cloud-20261026-mg-final-r03/run0001/./1603630_ji1110009.fits" }
+   ] }
+]

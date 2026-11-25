@@ -1,0 +1,6 @@
+[
+  {
+    "id": 1,
+    "type": "mkdir",
+    "target": { "site_label": "local", "url": "file:///mnt/prueba_rep_rec_20261124/plan_reprec/scratch/dmeadmin/pegasus/flujo-rep-rec/run0001" } }
+]

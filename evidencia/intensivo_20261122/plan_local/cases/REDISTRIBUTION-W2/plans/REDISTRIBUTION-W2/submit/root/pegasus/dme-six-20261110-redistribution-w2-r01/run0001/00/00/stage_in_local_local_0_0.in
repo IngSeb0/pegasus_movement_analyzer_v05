@@ -1,0 +1,25 @@
+[
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "A1",
+   "id": 1,
+   "generate_checksum": true,
+   "src_urls": [
+     { "site_label": "local", "url": "/study/cases/REDISTRIBUTION-W2/plans/REDISTRIBUTION-W2/inputs/A1", "priority": 10 }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///study/cases/REDISTRIBUTION-W2/plans/REDISTRIBUTION-W2/scratch/root/pegasus/dme-six-20261110-redistribution-w2-r01/run0001/./A1" }
+   ] }
+ ,
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "A2",
+   "id": 2,
+   "generate_checksum": true,
+   "src_urls": [
+     { "site_label": "local", "url": "/study/cases/REDISTRIBUTION-W2/plans/REDISTRIBUTION-W2/inputs/A2", "priority": 10 }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///study/cases/REDISTRIBUTION-W2/plans/REDISTRIBUTION-W2/scratch/root/pegasus/dme-six-20261110-redistribution-w2-r01/run0001/./A2" }
+   ] }
+]

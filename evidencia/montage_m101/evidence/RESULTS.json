@@ -1,0 +1,137 @@
+[
+  {
+    "id": "M101-BASE",
+    "condition": "M101-BASE",
+    "block": 1,
+    "phase": "main",
+    "uuid": "6ae4b240-5567-4548-91df-358a228166ea",
+    "required_bytes": 269021436,
+    "observed_bytes": 311142466,
+    "dme": "134510718/155571233",
+    "predictions_match": true,
+    "duration_s": 251.2369999885559,
+    "obligations": 54,
+    "deliveries": 75,
+    "directions": 24,
+    "all_exact": true,
+    "final_files": [
+      {
+        "file": "m101.fits",
+        "bytes": 39744000,
+        "sha256": "8129a53e6f4e922a958df215c9103d7431a534c60154746452683f19f82e1eca",
+        "matches_native_metadata": true
+      },
+      {
+        "file": "m101_area.fits",
+        "bytes": 39744000,
+        "sha256": "5e7e93bc193e7b245171eb8df1985d7c8f4bd3dc778a88ccf5d362f2dcba5db2",
+        "matches_native_metadata": true
+      }
+    ],
+    "placement": {
+      "ADD": "dme-worker1",
+      "P01": "dme-worker2",
+      "P02": "dme-worker2",
+      "P03": "dme-worker2",
+      "P04": "dme-worker2",
+      "P05": "dme-worker2",
+      "P06": "dme-worker2",
+      "P07": "dme-worker2",
+      "P08": "dme-worker2",
+      "P09": "dme-worker2",
+      "P10": "dme-worker2",
+      "TABLE": "dme-worker1"
+    },
+    "acceptedAtUtc": "2026-11-11T22:49:14.564066+00:00"
+  },
+  {
+    "id": "M101-PROJ",
+    "condition": "M101-PROJ",
+    "block": 1,
+    "phase": "main",
+    "uuid": "1ee8f5ee-9402-425e-882b-781ac881c948",
+    "required_bytes": 269021436,
+    "observed_bytes": 311142148,
+    "dme": "67255359/77785537",
+    "predictions_match": true,
+    "duration_s": 256.2239999771118,
+    "obligations": 54,
+    "deliveries": 74,
+    "directions": 22,
+    "all_exact": true,
+    "final_files": [
+      {
+        "file": "m101.fits",
+        "bytes": 39744000,
+        "sha256": "8129a53e6f4e922a958df215c9103d7431a534c60154746452683f19f82e1eca",
+        "matches_native_metadata": true
+      },
+      {
+        "file": "m101_area.fits",
+        "bytes": 39744000,
+        "sha256": "5e7e93bc193e7b245171eb8df1985d7c8f4bd3dc778a88ccf5d362f2dcba5db2",
+        "matches_native_metadata": true
+      }
+    ],
+    "placement": {
+      "ADD": "dme-worker1",
+      "P03": "dme-worker2",
+      "P04": "dme-worker2",
+      "P05": "dme-worker2",
+      "P06": "dme-worker2",
+      "P07": "dme-worker2",
+      "P08": "dme-worker2",
+      "P09": "dme-worker2",
+      "P10": "dme-worker2",
+      "TABLE": "dme-worker1",
+      "P01": "dme-worker2",
+      "P02": "dme-worker2"
+    },
+    "acceptedAtUtc": "2026-11-11T22:54:20.315454+00:00"
+  },
+  {
+    "id": "M101-FINAL",
+    "condition": "M101-FINAL",
+    "block": 1,
+    "phase": "main",
+    "uuid": "c9963eb5-a2b9-48d9-b7a3-e8d0917feffd",
+    "required_bytes": 269021436,
+    "observed_bytes": 269030582,
+    "dme": "134510718/134515291",
+    "predictions_match": true,
+    "duration_s": 222.1949999332428,
+    "obligations": 54,
+    "deliveries": 64,
+    "directions": 22,
+    "all_exact": true,
+    "final_files": [
+      {
+        "file": "m101.fits",
+        "bytes": 39744000,
+        "sha256": "8129a53e6f4e922a958df215c9103d7431a534c60154746452683f19f82e1eca",
+        "matches_native_metadata": true
+      },
+      {
+        "file": "m101_area.fits",
+        "bytes": 39744000,
+        "sha256": "5e7e93bc193e7b245171eb8df1985d7c8f4bd3dc778a88ccf5d362f2dcba5db2",
+        "matches_native_metadata": true
+      }
+    ],
+    "placement": {
+      "P01": "dme-worker2",
+      "P02": "dme-worker2",
+      "P03": "dme-worker2",
+      "P04": "dme-worker2",
+      "P05": "dme-worker2",
+      "P06": "dme-worker2",
+      "P07": "dme-worker2",
+      "P08": "dme-worker2",
+      "P09": "dme-worker2",
+      "P10": "dme-worker2",
+      "TABLE": "dme-worker1",
+      "ADD": "dme-worker1"
+    },
+    "acceptedAtUtc": "2026-11-11T22:58:57.335901+00:00"
+  }
+]

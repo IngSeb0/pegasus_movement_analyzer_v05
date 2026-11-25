@@ -1,0 +1,8 @@
+{
+  "status": "ACCEPTED",
+  "uuid": "08a6317a-b8ad-413b-8469-018c78e5d0a8",
+  "run": "/mnt/intensivo_20261122/patrones/cases/AGGREGATION-W4-B01/plans/AGGREGATION-W4-B01/submit/dmeadmin/pegasus/dme-six-20261110-aggregation-w4-r01/run0001",
+  "submitted": true,
+  "report_file": "/mnt/intensivo_20261122/patrones/cases/AGGREGATION-W4-B01/pilot/AGGREGATION-W4-B01/reports/analysis.json",
+  "accepted": true
+}

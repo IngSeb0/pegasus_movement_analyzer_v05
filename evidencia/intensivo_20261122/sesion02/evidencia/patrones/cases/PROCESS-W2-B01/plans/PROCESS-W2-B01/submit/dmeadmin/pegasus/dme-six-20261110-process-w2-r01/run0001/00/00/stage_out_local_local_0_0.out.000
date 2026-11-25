@@ -1,0 +1,195 @@
+- invocation: True
+  version: 3.0
+  start: 2026-11-22T15:23:07.101+00:00
+  duration: 10.398
+  transformation: "pegasus::transfer"
+  derivation: "null"
+  resource: "local"
+  wf-label: "dme-six-20261110-process-w2-r01"
+  wf-stamp: "2026-11-22T15:19:04+00:00"
+  interface: eth0
+  hostaddr: 10.42.0.4
+  hostname: dme-master
+  pid: 16289
+  uid: 1000
+  user: dmeadmin
+  gid: 1000
+  group: dmeadmin
+  umask: 0o0022
+  mainjob:
+    start: 2026-11-22T15:23:07.106+00:00
+    duration: 10.393
+    pid: 16290
+    usage:
+      utime: 4.877
+      stime: 0.880
+      maxrss: 28064
+      minflt: 59266
+      majflt: 0
+      nswap: 0
+      inblock: 0
+      outblock: 2457712
+      msgsnd: 0
+      msgrcv: 0
+      nsignals: 0
+      nvcsw: 969
+      nivcsw: 331
+    status:
+      raw: 0
+      regular_exitcode: 0
+    executable:
+      file_name: /usr/bin/pegasus-transfer
+      mode: 0o100755
+      size: 2901
+      inode: 91827
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2026-02-03T22:39:35+00:00
+      atime: 2026-11-22T14:53:50+00:00
+      ctime: 2026-10-26T03:07:39+00:00
+      uid: 0
+      user: root
+      gid: 0
+      group: root
+    argument_vector:
+      - "--threads"
+      - "2"
+    procs:
+  jobids:
+    condor: 3615.0
+  cwd: /var/spool/condor/local_univ_execute/dir_16280/scratch
+  usage:
+    utime: 0.002
+    stime: 0.004
+    maxrss: 3000
+    minflt: 157
+    majflt: 0
+    nswap: 0
+    inblock: 0
+    outblock: 0
+    msgsnd: 0
+    msgrcv: 0
+    nsignals: 0
+    nvcsw: 1
+    nivcsw: 1
+  machine:
+    page-size: 4096
+    uname_system: linux
+    uname_nodename: dme-master
+    uname_release: 7.0.0-1020-azure
+    uname_machine: x86_64
+    ram_total: 7095724
+    ram_free: 2063948
+    ram_shared: 4212
+    ram_buffer: 49940
+    swap_total: 0
+    swap_free: 0
+    cpu_count: 2
+    cpu_speed: 2793
+    cpu_vendor: GenuineIntel
+    cpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz
+    load_min1: 0.33
+    load_min5: 0.30
+    load_min15: 0.23
+    procs_total: 146
+    procs_running: 1
+    procs_sleeping: 76
+    procs_other: 69
+    procs_vmsize: 2894952
+    procs_rss: 552072
+    task_total: 172
+    task_running: 1
+    task_sleeping: 102
+    task_other: 69
+  files:
+    stdin:
+      descriptor_number: 0
+      mode: 0o10600
+      size: 0
+      inode: 88880
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-11-22T15:23:07+00:00
+      atime: 2026-11-22T15:23:07+00:00
+      ctime: 2026-11-22T15:23:07+00:00
+      uid: 1000
+      user: dmeadmin
+      gid: 1000
+      group: dmeadmin
+    stdout:
+      temporary_name: /var/spool/condor/local_univ_execute/dir_16280/scratch/ks.out.s9DChX
+      descriptor: 3
+      mode: 0o100600
+      size: 0
+      inode: 547281
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-11-22T15:23:07+00:00
+      atime: 2026-11-22T15:23:07+00:00
+      ctime: 2026-11-22T15:23:07+00:00
+      uid: 1000
+      user: dmeadmin
+      gid: 1000
+      group: dmeadmin
+    stderr:
+      temporary_name: /var/spool/condor/local_univ_execute/dir_16280/scratch/ks.err.MLF8sK
+      descriptor: 4
+      mode: 0o100600
+      size: 3999
+      inode: 547282
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2026-11-22T15:23:17+00:00
+      atime: 2026-11-22T15:23:07+00:00
+      ctime: 2026-11-22T15:23:17+00:00
+      uid: 1000
+      user: dmeadmin
+      gid: 1000
+      group: dmeadmin
+      data_truncated: false
+      data: |
+        2026-11-22 15:23:07,220    INFO:  Reading URL pairs from stdin
+        2026-11-22 15:23:07,220    INFO:  6 transfers loaded
+        2026-11-22 15:23:07,221    INFO:  PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/snap/bin:/bin:/usr/bin:/usr/local/bin:/opt/local/bin
+        2026-11-22 15:23:07,221    INFO:  LD_LIBRARY_PATH=
+        2026-11-22 15:23:07,228    INFO:  --------------------------------------------------------------------------------
+        2026-11-22 15:23:07,228    INFO:  Starting transfers - attempt 1
+        2026-11-22 15:23:09,229    INFO:  /bin/cp -f -R -L '/mnt/intensivo_20261122/patrones/cases/PROCESS-W2-B01/plans/PROCESS-W2-B01/scratch/dmeadmin/pegasus/dme-six-20261110-process-w2-r01/run0001/./B1' '/mnt/intensivo_20261122/patrones/cases/PROCESS-W2-B01/plans/PROCESS-W2-B01/outputs/B1'
+        2026-11-22 15:23:09,747    INFO:  /bin/cp -f -R -L '/mnt/intensivo_20261122/patrones/cases/PROCESS-W2-B01/plans/PROCESS-W2-B01/scratch/dmeadmin/pegasus/dme-six-20261110-process-w2-r01/run0001/./B2' '/mnt/intensivo_20261122/patrones/cases/PROCESS-W2-B01/plans/PROCESS-W2-B01/outputs/B2'
+        2026-11-22 15:23:10,775    INFO:  /bin/cp -f -R -L '/mnt/intensivo_20261122/patrones/cases/PROCESS-W2-B01/plans/PROCESS-W2-B01/scratch/dmeadmin/pegasus/dme-six-20261110-process-w2-r01/run0001/./B3' '/mnt/intensivo_20261122/patrones/cases/PROCESS-W2-B01/plans/PROCESS-W2-B01/outputs/B3'
+        2026-11-22 15:23:11,229    INFO:  /bin/cp -f -R -L '/mnt/intensivo_20261122/patrones/cases/PROCESS-W2-B01/plans/PROCESS-W2-B01/scratch/dmeadmin/pegasus/dme-six-20261110-process-w2-r01/run0001/./B5' '/mnt/intensivo_20261122/patrones/cases/PROCESS-W2-B01/plans/PROCESS-W2-B01/outputs/B5'
+        2026-11-22 15:23:12,587    INFO:  Tool found: pegasus-integrity   Version: N/A   Path: /usr/bin/pegasus-integrity
+        2026-11-22 15:23:12,587    INFO:  /usr/bin/pegasus-integrity --verify="B1=/mnt/intensivo_20261122/patrones/cases/PROCESS-W2-B01/plans/PROCESS-W2-B01/outputs/B1"
+        2026-11-22 15:23:12,854    INFO:  /bin/cp -f -R -L '/mnt/intensivo_20261122/patrones/cases/PROCESS-W2-B01/plans/PROCESS-W2-B01/scratch/dmeadmin/pegasus/dme-six-20261110-process-w2-r01/run0001/./B6' '/mnt/intensivo_20261122/patrones/cases/PROCESS-W2-B01/plans/PROCESS-W2-B01/outputs/B6'
+        2026-11-22 15:23:13,444    INFO:  /usr/bin/pegasus-integrity --verify="B2=/mnt/intensivo_20261122/patrones/cases/PROCESS-W2-B01/plans/PROCESS-W2-B01/outputs/B2"
+        2026-11-22 15:23:13,877    INFO:  /bin/cp -f -R -L '/mnt/intensivo_20261122/patrones/cases/PROCESS-W2-B01/plans/PROCESS-W2-B01/scratch/dmeadmin/pegasus/dme-six-20261110-process-w2-r01/run0001/./B4' '/mnt/intensivo_20261122/patrones/cases/PROCESS-W2-B01/plans/PROCESS-W2-B01/outputs/B4'
+        2026-11-22 15:23:14,296    INFO:  /usr/bin/pegasus-integrity --verify="B3=/mnt/intensivo_20261122/patrones/cases/PROCESS-W2-B01/plans/PROCESS-W2-B01/outputs/B3"
+        2026-11-22 15:23:14,918    INFO:  /usr/bin/pegasus-integrity --verify="B5=/mnt/intensivo_20261122/patrones/cases/PROCESS-W2-B01/plans/PROCESS-W2-B01/outputs/B5"
+        2026-11-22 15:23:15,771    INFO:  /usr/bin/pegasus-integrity --verify="B6=/mnt/intensivo_20261122/patrones/cases/PROCESS-W2-B01/plans/PROCESS-W2-B01/outputs/B6"
+        2026-11-22 15:23:16,633    INFO:  /usr/bin/pegasus-integrity --verify="B4=/mnt/intensivo_20261122/patrones/cases/PROCESS-W2-B01/plans/PROCESS-W2-B01/outputs/B4"
+        2026-11-22 15:23:17,485    INFO:  --------------------------------------------------------------------------------
+        2026-11-22 15:23:17,485    INFO:  @@@MONITORING_PAYLOAD - START@@@{"ts": 1795360997, "monitoring_event": "int.metric", "payload": [{"event": "check", "file_type": "output", "succeeded": 6, "failed": 0, "duration": "5.126"}]}@@@MONITORING_PAYLOAD - END@@@
+        2026-11-22 15:23:17,485    INFO:  Stats: Total 6 transfers, 1.2 GB transferred in 10 seconds. Rate: 116.9 MB/s (935.1 Mb/s)
+        2026-11-22 15:23:17,485    INFO:         Between sites local->local : 6 transfers, 1.2 GB transferred in 10 seconds. Rate: 116.9 MB/s (935.1 Mb/s)
+        2026-11-22 15:23:17,486    INFO:  All transfers completed successfully.
+        
+    metadata:
+      temporary_name: /var/spool/condor/local_univ_execute/dir_16280/scratch/ks.meta.kNlBOD
+      descriptor: 5
+      mode: 0o100600
+      size: 0
+      inode: 547283
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-11-22T15:23:07+00:00
+      atime: 2026-11-22T15:23:07+00:00
+      ctime: 2026-11-22T15:23:07+00:00
+      uid: 1000
+      user: dmeadmin
+      gid: 1000
+      group: dmeadmin

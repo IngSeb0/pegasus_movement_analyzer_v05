@@ -1,0 +1,8 @@
+{
+  "status": "ACCEPTED",
+  "uuid": "a777afb8-ee0e-49bf-bf1b-4ded148e8e02",
+  "run": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B01/plans/PIPELINE-W4-B01/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001",
+  "submitted": true,
+  "report_file": "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B01/pilot/PIPELINE-W4-B01/reports/analysis.json",
+  "accepted": true
+}

@@ -1,0 +1,6 @@
+[
+  {
+    "id": 1,
+    "type": "mkdir",
+    "target": { "site_label": "local", "url": "file:///mnt/intensivo_20261122/contraste/cases/contraste-B2-REP/plans/REP/scratch/dmeadmin/pegasus/dme-six-20261110-rep-r02/run0001" } }
+]

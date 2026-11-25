@@ -1,0 +1,2308 @@
+- invocation: True
+  version: 3.0
+  start: 2026-11-22T22:39:12.421+00:00
+  duration: 14.223
+  transformation: "campaign_task"
+  derivation: "ADD"
+  resource: "condorpool"
+  wf-label: "dme-cloud-20261026-mg-base-r00"
+  wf-stamp: "2026-11-22T22:19:08+00:00"
+  interface: eth0
+  hostaddr: 10.42.1.4
+  hostname: dme-worker1
+  pid: 3305
+  uid: 65534
+  user: nobody
+  gid: 65534
+  group: nogroup
+  umask: 0o0022
+  mainjob:
+    start: 2026-11-22T22:39:12.426+00:00
+    duration: 14.218
+    pid: 3306
+    usage:
+      utime: 6.317
+      stime: 1.246
+      maxrss: 111368
+      minflt: 28415
+      majflt: 1
+      nswap: 0
+      inblock: 1634824
+      outblock: 1947288
+      msgsnd: 0
+      msgrcv: 0
+      nsignals: 0
+      nvcsw: 1316
+      nivcsw: 1938
+    status:
+      raw: 0
+      regular_exitcode: 0
+    executable:
+      file_name: /var/lib/condor/execute/dir_2276/scratch/campaign_task
+      mode: 0o100755
+      size: 8575350
+      inode: 787721
+      nlink: 1
+      blksize: 4096
+      blocks: 16752
+      mtime: 2026-11-22T22:38:20+00:00
+      atime: 2026-11-22T22:39:11+00:00
+      ctime: 2026-11-22T22:39:05+00:00
+      uid: 65534
+      user: nobody
+      gid: 65534
+      group: nogroup
+    argument_vector:
+      - "--task-id"
+      - "ADD"
+      - "--input"
+      - "p01.fits"
+      - "4334400"
+      - "--input"
+      - "p01_area.fits"
+      - "4334400"
+      - "--input"
+      - "p02.fits"
+      - "4325760"
+      - "--input"
+      - "p02_area.fits"
+      - "4325760"
+      - "--input"
+      - "p03.fits"
+      - "3481920"
+      - "--input"
+      - "p03_area.fits"
+      - "3481920"
+      - "--input"
+      - "p04.fits"
+      - "4302720"
+      - "--input"
+      - "p04_area.fits"
+      - "4302720"
+      - "--input"
+      - "p05.fits"
+      - "4302720"
+      - "--input"
+      - "p05_area.fits"
+      - "4302720"
+      - "--input"
+      - "p06.fits"
+      - "4331520"
+      - "--input"
+      - "p06_area.fits"
+      - "4331520"
+      - "--input"
+      - "p07.fits"
+      - "4317120"
+      - "--input"
+      - "p07_area.fits"
+      - "4317120"
+      - "--input"
+      - "p08.fits"
+      - "3473280"
+      - "--input"
+      - "p08_area.fits"
+      - "3473280"
+      - "--input"
+      - "p09.fits"
+      - "4400640"
+      - "--input"
+      - "p09_area.fits"
+      - "4400640"
+      - "--input"
+      - "p10.fits"
+      - "4406400"
+      - "--input"
+      - "p10_area.fits"
+      - "4406400"
+      - "--input"
+      - "p11.fits"
+      - "4412160"
+      - "--input"
+      - "p11_area.fits"
+      - "4412160"
+      - "--input"
+      - "p12.fits"
+      - "4412160"
+      - "--input"
+      - "p12_area.fits"
+      - "4412160"
+      - "--input"
+      - "p13.fits"
+      - "4409280"
+      - "--input"
+      - "p13_area.fits"
+      - "4409280"
+      - "--input"
+      - "p14.fits"
+      - "3551040"
+      - "--input"
+      - "p14_area.fits"
+      - "3551040"
+      - "--input"
+      - "p15.fits"
+      - "4374720"
+      - "--input"
+      - "p15_area.fits"
+      - "4374720"
+      - "--input"
+      - "p16.fits"
+      - "4374720"
+      - "--input"
+      - "p16_area.fits"
+      - "4374720"
+      - "--input"
+      - "p17.fits"
+      - "4374720"
+      - "--input"
+      - "p17_area.fits"
+      - "4374720"
+      - "--input"
+      - "p18.fits"
+      - "4374720"
+      - "--input"
+      - "p18_area.fits"
+      - "4374720"
+      - "--input"
+      - "p19.fits"
+      - "4368960"
+      - "--input"
+      - "p19_area.fits"
+      - "4368960"
+      - "--input"
+      - "p20.fits"
+      - "4360320"
+      - "--input"
+      - "p20_area.fits"
+      - "4360320"
+      - "--input"
+      - "p21.fits"
+      - "4345920"
+      - "--input"
+      - "p21_area.fits"
+      - "4345920"
+      - "--input"
+      - "p22.fits"
+      - "4345920"
+      - "--input"
+      - "p22_area.fits"
+      - "4345920"
+      - "--input"
+      - "p23.fits"
+      - "4334400"
+      - "--input"
+      - "p23_area.fits"
+      - "4334400"
+      - "--input"
+      - "p24.fits"
+      - "4340160"
+      - "--input"
+      - "p24_area.fits"
+      - "4340160"
+      - "--input"
+      - "p25.fits"
+      - "4331520"
+      - "--input"
+      - "p25_area.fits"
+      - "4331520"
+      - "--input"
+      - "p26.fits"
+      - "3507840"
+      - "--input"
+      - "p26_area.fits"
+      - "3507840"
+      - "--input"
+      - "p27.fits"
+      - "4325760"
+      - "--input"
+      - "p27_area.fits"
+      - "4325760"
+      - "--input"
+      - "p28.fits"
+      - "4314240"
+      - "--input"
+      - "p28_area.fits"
+      - "4314240"
+      - "--input"
+      - "p29.fits"
+      - "4322880"
+      - "--input"
+      - "p29_area.fits"
+      - "4322880"
+      - "--input"
+      - "p30.fits"
+      - "4314240"
+      - "--input"
+      - "p30_area.fits"
+      - "4314240"
+      - "--input"
+      - "p31.fits"
+      - "4322880"
+      - "--input"
+      - "p31_area.fits"
+      - "4322880"
+      - "--input"
+      - "p32.fits"
+      - "4331520"
+      - "--input"
+      - "p32_area.fits"
+      - "4331520"
+      - "--input"
+      - "p33.fits"
+      - "4285440"
+      - "--input"
+      - "p33_area.fits"
+      - "4285440"
+      - "--input"
+      - "p34.fits"
+      - "4285440"
+      - "--input"
+      - "p34_area.fits"
+      - "4285440"
+      - "--input"
+      - "p35.fits"
+      - "4288320"
+      - "--input"
+      - "p35_area.fits"
+      - "4288320"
+      - "--input"
+      - "p36.fits"
+      - "4279680"
+      - "--input"
+      - "p36_area.fits"
+      - "4279680"
+      - "--input"
+      - "p37.fits"
+      - "4279680"
+      - "--input"
+      - "p37_area.fits"
+      - "4279680"
+      - "--input"
+      - "p38.fits"
+      - "3453120"
+      - "--input"
+      - "p38_area.fits"
+      - "3453120"
+      - "--input"
+      - "p39.fits"
+      - "4265280"
+      - "--input"
+      - "p39_area.fits"
+      - "4265280"
+      - "--input"
+      - "p40.fits"
+      - "4273920"
+      - "--input"
+      - "p40_area.fits"
+      - "4273920"
+      - "--input"
+      - "p41.fits"
+      - "4256640"
+      - "--input"
+      - "p41_area.fits"
+      - "4256640"
+      - "--input"
+      - "p42.fits"
+      - "4256640"
+      - "--input"
+      - "p42_area.fits"
+      - "4256640"
+      - "--input"
+      - "p43.fits"
+      - "4265280"
+      - "--input"
+      - "p43_area.fits"
+      - "4265280"
+      - "--input"
+      - "p44.fits"
+      - "4265280"
+      - "--input"
+      - "p44_area.fits"
+      - "4265280"
+      - "--input"
+      - "p45.fits"
+      - "4222080"
+      - "--input"
+      - "p45_area.fits"
+      - "4222080"
+      - "--input"
+      - "p46.fits"
+      - "4219200"
+      - "--input"
+      - "p46_area.fits"
+      - "4219200"
+      - "--input"
+      - "p47.fits"
+      - "4219200"
+      - "--input"
+      - "p47_area.fits"
+      - "4219200"
+      - "--input"
+      - "p48.fits"
+      - "4227840"
+      - "--input"
+      - "p48_area.fits"
+      - "4227840"
+      - "--input"
+      - "p49.fits"
+      - "4227840"
+      - "--input"
+      - "p49_area.fits"
+      - "4227840"
+      - "--input"
+      - "p50.fits"
+      - "3424320"
+      - "--input"
+      - "p50_area.fits"
+      - "3424320"
+      - "--input"
+      - "p51.fits"
+      - "4207680"
+      - "--input"
+      - "p51_area.fits"
+      - "4207680"
+      - "--input"
+      - "p52.fits"
+      - "4199040"
+      - "--input"
+      - "p52_area.fits"
+      - "4199040"
+      - "--input"
+      - "p53.fits"
+      - "4199040"
+      - "--input"
+      - "p53_area.fits"
+      - "4199040"
+      - "--input"
+      - "p54.fits"
+      - "4199040"
+      - "--input"
+      - "p54_area.fits"
+      - "4199040"
+      - "--input"
+      - "p55.fits"
+      - "4199040"
+      - "--input"
+      - "p55_area.fits"
+      - "4199040"
+      - "--input"
+      - "p56.fits"
+      - "4199040"
+      - "--input"
+      - "p56_area.fits"
+      - "4199040"
+      - "--input"
+      - "p57.fits"
+      - "4178880"
+      - "--input"
+      - "p57_area.fits"
+      - "4178880"
+      - "--input"
+      - "p58.fits"
+      - "4181760"
+      - "--input"
+      - "p58_area.fits"
+      - "4181760"
+      - "--input"
+      - "p59.fits"
+      - "4190400"
+      - "--input"
+      - "p59_area.fits"
+      - "4190400"
+      - "--input"
+      - "p60.fits"
+      - "4181760"
+      - "--input"
+      - "p60_area.fits"
+      - "4181760"
+      - "--input"
+      - "p61.fits"
+      - "4181760"
+      - "--input"
+      - "p61_area.fits"
+      - "4181760"
+      - "--input"
+      - "p62.fits"
+      - "3372480"
+      - "--input"
+      - "p62_area.fits"
+      - "3372480"
+      - "--input"
+      - "p63.fits"
+      - "4210560"
+      - "--input"
+      - "p63_area.fits"
+      - "4210560"
+      - "--input"
+      - "p64.fits"
+      - "4201920"
+      - "--input"
+      - "p64_area.fits"
+      - "4201920"
+      - "--input"
+      - "p65.fits"
+      - "4210560"
+      - "--input"
+      - "p65_area.fits"
+      - "4210560"
+      - "--input"
+      - "p66.fits"
+      - "4201920"
+      - "--input"
+      - "p66_area.fits"
+      - "4201920"
+      - "--input"
+      - "p67.fits"
+      - "4210560"
+      - "--input"
+      - "p67_area.fits"
+      - "4210560"
+      - "--input"
+      - "p68.fits"
+      - "4210560"
+      - "--input"
+      - "p68_area.fits"
+      - "4210560"
+      - "--input"
+      - "p69.fits"
+      - "4227840"
+      - "--input"
+      - "p69_area.fits"
+      - "4227840"
+      - "--input"
+      - "p70.fits"
+      - "4230720"
+      - "--input"
+      - "p70_area.fits"
+      - "4230720"
+      - "--input"
+      - "p71.fits"
+      - "4239360"
+      - "--input"
+      - "p71_area.fits"
+      - "4239360"
+      - "--input"
+      - "p72.fits"
+      - "4248000"
+      - "--input"
+      - "p72_area.fits"
+      - "4248000"
+      - "--input"
+      - "p73.fits"
+      - "4222080"
+      - "--input"
+      - "p73_area.fits"
+      - "4222080"
+      - "--input"
+      - "p74.fits"
+      - "3409920"
+      - "--input"
+      - "p74_area.fits"
+      - "3409920"
+      - "--input"
+      - "p75.fits"
+      - "4259520"
+      - "--input"
+      - "p75_area.fits"
+      - "4259520"
+      - "--input"
+      - "p76.fits"
+      - "4259520"
+      - "--input"
+      - "p76_area.fits"
+      - "4259520"
+      - "--input"
+      - "p77.fits"
+      - "4268160"
+      - "--input"
+      - "p77_area.fits"
+      - "4268160"
+      - "--input"
+      - "p78.fits"
+      - "4265280"
+      - "--input"
+      - "p78_area.fits"
+      - "4265280"
+      - "--input"
+      - "p79.fits"
+      - "4259520"
+      - "--input"
+      - "p79_area.fits"
+      - "4259520"
+      - "--input"
+      - "p80.fits"
+      - "4273920"
+      - "--input"
+      - "p80_area.fits"
+      - "4273920"
+      - "--input"
+      - "p81.fits"
+      - "4288320"
+      - "--input"
+      - "p81_area.fits"
+      - "4288320"
+      - "--input"
+      - "p82.fits"
+      - "4294080"
+      - "--input"
+      - "p82_area.fits"
+      - "4294080"
+      - "--input"
+      - "p83.fits"
+      - "4302720"
+      - "--input"
+      - "p83_area.fits"
+      - "4302720"
+      - "--input"
+      - "p84.fits"
+      - "4294080"
+      - "--input"
+      - "p84_area.fits"
+      - "4294080"
+      - "--input"
+      - "p85.fits"
+      - "4294080"
+      - "--input"
+      - "p85_area.fits"
+      - "4294080"
+      - "--input"
+      - "p86.fits"
+      - "3464640"
+      - "--input"
+      - "p86_area.fits"
+      - "3464640"
+      - "--input"
+      - "p87.fits"
+      - "4314240"
+      - "--input"
+      - "p87_area.fits"
+      - "4314240"
+      - "--input"
+      - "p88.fits"
+      - "4314240"
+      - "--input"
+      - "p88_area.fits"
+      - "4314240"
+      - "--input"
+      - "p89.fits"
+      - "4314240"
+      - "--input"
+      - "p89_area.fits"
+      - "4314240"
+      - "--input"
+      - "p90.fits"
+      - "4322880"
+      - "--input"
+      - "p90_area.fits"
+      - "4322880"
+      - "--input"
+      - "p91.fits"
+      - "4322880"
+      - "--input"
+      - "p91_area.fits"
+      - "4322880"
+      - "--input"
+      - "p92.fits"
+      - "4314240"
+      - "--input"
+      - "p92_area.fits"
+      - "4314240"
+      - "--input"
+      - "p93.fits"
+      - "4360320"
+      - "--input"
+      - "p93_area.fits"
+      - "4360320"
+      - "--input"
+      - "p94.fits"
+      - "4351680"
+      - "--input"
+      - "p94_area.fits"
+      - "4351680"
+      - "--input"
+      - "p95.fits"
+      - "4345920"
+      - "--input"
+      - "p95_area.fits"
+      - "4345920"
+      - "--input"
+      - "p96.fits"
+      - "4345920"
+      - "--input"
+      - "p96_area.fits"
+      - "4345920"
+      - "--input"
+      - "p97.fits"
+      - "4343040"
+      - "--input"
+      - "p97_area.fits"
+      - "4343040"
+      - "--input"
+      - "p98.fits"
+      - "3507840"
+      - "--input"
+      - "p98_area.fits"
+      - "3507840"
+      - "--input"
+      - "p99.fits"
+      - "4392000"
+      - "--input"
+      - "p99_area.fits"
+      - "4392000"
+      - "--input"
+      - "p100.fits"
+      - "4392000"
+      - "--input"
+      - "p100_area.fits"
+      - "4392000"
+      - "--input"
+      - "p101.fits"
+      - "4383360"
+      - "--input"
+      - "p101_area.fits"
+      - "4383360"
+      - "--input"
+      - "p102.fits"
+      - "4392000"
+      - "--input"
+      - "p102_area.fits"
+      - "4392000"
+      - "--input"
+      - "p103.fits"
+      - "4392000"
+      - "--input"
+      - "p103_area.fits"
+      - "4392000"
+      - "--input"
+      - "p104.fits"
+      - "4383360"
+      - "--input"
+      - "p104_area.fits"
+      - "4383360"
+      - "--input"
+      - "p105.fits"
+      - "4417920"
+      - "--input"
+      - "p105_area.fits"
+      - "4417920"
+      - "--input"
+      - "p106.fits"
+      - "4409280"
+      - "--input"
+      - "p106_area.fits"
+      - "4409280"
+      - "--input"
+      - "p107.fits"
+      - "4417920"
+      - "--input"
+      - "p107_area.fits"
+      - "4417920"
+      - "--input"
+      - "p108.fits"
+      - "4426560"
+      - "--input"
+      - "p108_area.fits"
+      - "4426560"
+      - "--input"
+      - "p109.fits"
+      - "4409280"
+      - "--input"
+      - "p109_area.fits"
+      - "4409280"
+      - "--input"
+      - "p110.fits"
+      - "3551040"
+      - "--input"
+      - "p110_area.fits"
+      - "3551040"
+      - "--input"
+      - "p111.fits"
+      - "4334400"
+      - "--input"
+      - "p111_area.fits"
+      - "4334400"
+      - "--input"
+      - "p112.fits"
+      - "4345920"
+      - "--input"
+      - "p112_area.fits"
+      - "4345920"
+      - "--input"
+      - "p113.fits"
+      - "4380480"
+      - "--input"
+      - "p113_area.fits"
+      - "4380480"
+      - "--input"
+      - "p114.fits"
+      - "4389120"
+      - "--input"
+      - "p114_area.fits"
+      - "4389120"
+      - "--input"
+      - "p115.fits"
+      - "4325760"
+      - "--input"
+      - "p115_area.fits"
+      - "4325760"
+      - "--input"
+      - "p116.fits"
+      - "4302720"
+      - "--input"
+      - "p116_area.fits"
+      - "4302720"
+      - "--input"
+      - "p117.fits"
+      - "3484800"
+      - "--input"
+      - "p117_area.fits"
+      - "3484800"
+      - "--input"
+      - "p118.fits"
+      - "4279680"
+      - "--input"
+      - "p118_area.fits"
+      - "4279680"
+      - "--input"
+      - "p119.fits"
+      - "4285440"
+      - "--input"
+      - "p119_area.fits"
+      - "4285440"
+      - "--input"
+      - "p120.fits"
+      - "4259520"
+      - "--input"
+      - "p120_area.fits"
+      - "4259520"
+      - "--input"
+      - "p121.fits"
+      - "4259520"
+      - "--input"
+      - "p121_area.fits"
+      - "4259520"
+      - "--input"
+      - "p122.fits"
+      - "3444480"
+      - "--input"
+      - "p122_area.fits"
+      - "3444480"
+      - "--input"
+      - "p123.fits"
+      - "4239360"
+      - "--input"
+      - "p123_area.fits"
+      - "4239360"
+      - "--input"
+      - "p124.fits"
+      - "4239360"
+      - "--input"
+      - "p124_area.fits"
+      - "4239360"
+      - "--input"
+      - "p125.fits"
+      - "4409280"
+      - "--input"
+      - "p125_area.fits"
+      - "4409280"
+      - "--input"
+      - "p126.fits"
+      - "4389120"
+      - "--input"
+      - "p126_area.fits"
+      - "4389120"
+      - "--input"
+      - "p127.fits"
+      - "3510720"
+      - "--input"
+      - "p127_area.fits"
+      - "3510720"
+      - "--input"
+      - "p128.fits"
+      - "4201920"
+      - "--input"
+      - "p128_area.fits"
+      - "4201920"
+      - "--input"
+      - "p129.fits"
+      - "4210560"
+      - "--input"
+      - "p129_area.fits"
+      - "4210560"
+      - "--input"
+      - "p130.fits"
+      - "4178880"
+      - "--input"
+      - "p130_area.fits"
+      - "4178880"
+      - "--input"
+      - "p131.fits"
+      - "4190400"
+      - "--input"
+      - "p131_area.fits"
+      - "4190400"
+      - "--input"
+      - "p132.fits"
+      - "3381120"
+      - "--input"
+      - "p132_area.fits"
+      - "3381120"
+      - "--input"
+      - "p133.fits"
+      - "4178880"
+      - "--input"
+      - "p133_area.fits"
+      - "4178880"
+      - "--input"
+      - "p134.fits"
+      - "4178880"
+      - "--input"
+      - "p134_area.fits"
+      - "4178880"
+      - "--input"
+      - "p135.fits"
+      - "4210560"
+      - "--input"
+      - "p135_area.fits"
+      - "4210560"
+      - "--input"
+      - "p136.fits"
+      - "4210560"
+      - "--input"
+      - "p136_area.fits"
+      - "4210560"
+      - "--input"
+      - "p137.fits"
+      - "3389760"
+      - "--input"
+      - "p137_area.fits"
+      - "3389760"
+      - "--input"
+      - "p138.fits"
+      - "4230720"
+      - "--input"
+      - "p138_area.fits"
+      - "4230720"
+      - "--input"
+      - "p139.fits"
+      - "4230720"
+      - "--input"
+      - "p139_area.fits"
+      - "4230720"
+      - "--input"
+      - "p140.fits"
+      - "4268160"
+      - "--input"
+      - "p140_area.fits"
+      - "4268160"
+      - "--input"
+      - "p141.fits"
+      - "4256640"
+      - "--input"
+      - "p141_area.fits"
+      - "4256640"
+      - "--input"
+      - "p142.fits"
+      - "3438720"
+      - "--input"
+      - "p142_area.fits"
+      - "3438720"
+      - "--input"
+      - "p143.fits"
+      - "4279680"
+      - "--input"
+      - "p143_area.fits"
+      - "4279680"
+      - "--input"
+      - "p144.fits"
+      - "4288320"
+      - "--input"
+      - "p144_area.fits"
+      - "4288320"
+      - "--input"
+      - "p145.fits"
+      - "4322880"
+      - "--input"
+      - "p145_area.fits"
+      - "4322880"
+      - "--input"
+      - "p146.fits"
+      - "4317120"
+      - "--input"
+      - "p146_area.fits"
+      - "4317120"
+      - "--input"
+      - "p147.fits"
+      - "3456000"
+      - "--input"
+      - "p147_area.fits"
+      - "3456000"
+      - "--input"
+      - "images.tbl"
+      - "77947"
+      - "--input"
+      - "template.hdr"
+      - "304"
+      - "--output"
+      - "m101.fits"
+      - "488577600"
+      - "--output"
+      - "m101_area.fits"
+      - "488577600"
+    procs:
+  jobids:
+    condor: 4211.0
+  cwd: /var/lib/condor/execute/dir_2276/scratch
+  usage:
+    utime: 0.001
+    stime: 0.005
+    maxrss: 2976
+    minflt: 162
+    majflt: 0
+    nswap: 0
+    inblock: 0
+    outblock: 0
+    msgsnd: 0
+    msgrcv: 0
+    nsignals: 0
+    nvcsw: 1
+    nivcsw: 2
+  machine:
+    page-size: 4096
+    uname_system: linux
+    uname_nodename: dme-worker1
+    uname_release: 7.0.0-1020-azure
+    uname_machine: x86_64
+    ram_total: 3489540
+    ram_free: 1129380
+    ram_shared: 4168
+    ram_buffer: 33920
+    swap_total: 0
+    swap_free: 0
+    cpu_count: 1
+    cpu_speed: 2793
+    cpu_vendor: GenuineIntel
+    cpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz
+    load_min1: 0.23
+    load_min5: 0.19
+    load_min15: 0.16
+    procs_total: 125
+    procs_running: 1
+    procs_sleeping: 63
+    procs_other: 61
+    procs_vmsize: 2659440
+    procs_rss: 374372
+    task_total: 151
+    task_running: 1
+    task_sleeping: 89
+    task_other: 61
+  files:
+    m101.fits:
+      lfn: "m101.fits"
+      file_name: /var/lib/condor/execute/dir_2276/scratch/m101.fits
+      mode: 0o100644
+      size: 488577600
+      inode: 787935
+      nlink: 1
+      blksize: 4096
+      blocks: 954264
+      mtime: 2026-11-22T22:39:22+00:00
+      atime: 2026-11-22T22:39:22+00:00
+      ctime: 2026-11-22T22:39:22+00:00
+      uid: 65534
+      user: nobody
+      gid: 65534
+      group: nogroup
+      output: True
+      sha256: 78488c4997ac9c75cdd97b547e79da2a2937b5d174ed7c99345e176fbcb60227
+      checksum_timing: 2.62
+    m101_area.fits:
+      lfn: "m101_area.fits"
+      file_name: /var/lib/condor/execute/dir_2276/scratch/m101_area.fits
+      mode: 0o100644
+      size: 488577600
+      inode: 787936
+      nlink: 1
+      blksize: 4096
+      blocks: 954264
+      mtime: 2026-11-22T22:39:22+00:00
+      atime: 2026-11-22T22:39:24+00:00
+      ctime: 2026-11-22T22:39:22+00:00
+      uid: 65534
+      user: nobody
+      gid: 65534
+      group: nogroup
+      output: True
+      sha256: 9f50cb9c0741809a60727f75a425a012e32621904fe284f0b12f80bb77f1ff8e
+      checksum_timing: 2.61
+    stdin:
+      file_name: /dev/null
+      mode: 0o20666
+      size: 0
+      inode: 5
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-11-22T22:08:21+00:00
+      atime: 2026-11-22T22:08:21+00:00
+      ctime: 2026-11-22T22:08:21+00:00
+      uid: 0
+      user: root
+      gid: 0
+      group: root
+    stdout:
+      temporary_name: /tmp/ks.out.CybbWl
+      descriptor: 3
+      mode: 0o100600
+      size: 320
+      inode: 1053058
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2026-11-22T22:39:26+00:00
+      atime: 2026-11-22T22:39:12+00:00
+      ctime: 2026-11-22T22:39:26+00:00
+      uid: 65534
+      user: nobody
+      gid: 65534
+      group: nogroup
+      data_truncated: false
+      data: |
+        {"task": "ADD", "artifacts": [{"file": "m101.fits", "bytes": 488577600, "sha256": "78488c4997ac9c75cdd97b547e79da2a2937b5d174ed7c99345e176fbcb60227"}, {"file": "m101_area.fits", "bytes": 488577600, "sha256": "9f50cb9c0741809a60727f75a425a012e32621904fe284f0b12f80bb77f1ff8e"}], "montage": {"status": "0", "time": 10.0}}
+        
+    stderr:
+      temporary_name: /tmp/ks.err.k33a6A
+      descriptor: 4
+      mode: 0o100600
+      size: 0
+      inode: 1053059
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-11-22T22:39:12+00:00
+      atime: 2026-11-22T22:39:12+00:00
+      ctime: 2026-11-22T22:39:12+00:00
+      uid: 65534
+      user: nobody
+      gid: 65534
+      group: nogroup
+    metadata:
+      temporary_name: /tmp/ks.meta.iUYOsW
+      descriptor: 5
+      mode: 0o100600
+      size: 0
+      inode: 1053060
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-11-22T22:39:12+00:00
+      atime: 2026-11-22T22:39:12+00:00
+      ctime: 2026-11-22T22:39:12+00:00
+      uid: 65534
+      user: nobody
+      gid: 65534
+      group: nogroup
+
+---------------pegasus-multipart
+- integrity_verification_attempts:
+  - lfn: "p75.fits"
+    pfn: "p75.fits"
+    sha256: 142ab4d6012f90c8b767c5d201a952ac66dbbb1a97d7eee13512b1157fcf031d
+    success: True
+  - lfn: "p30.fits"
+    pfn: "p30.fits"
+    sha256: 3591c9533882f5ab52bf0aef69568f1db2ebb63640bcb7dd6242f44281ebef61
+    success: True
+  - lfn: "p99_area.fits"
+    pfn: "p99_area.fits"
+    sha256: f113c08c6af4c2cec3747f7f4bf210c065809866cd1224cba10634a6c74632e3
+    success: True
+  - lfn: "p89.fits"
+    pfn: "p89.fits"
+    sha256: 6b4ebc7012d3ac5d3943ff6fea69530f5ab0abbc2fa88965139fd3a0242d2486
+    success: True
+  - lfn: "p54_area.fits"
+    pfn: "p54_area.fits"
+    sha256: 0505c3efc0d48f21c384a1d077cd5b20dbec6439214872e07ac2400b78451b61
+    success: True
+  - lfn: "p01_area.fits"
+    pfn: "p01_area.fits"
+    sha256: b71daa2c7c6e53f237374fc178ade51be87b3473a9eae8b1fe4e3e990f53c103
+    success: True
+  - lfn: "p58.fits"
+    pfn: "p58.fits"
+    sha256: b11a3fd5ed6b7d4b989d656597ab9d6c6f9a89250f4a94ac5388c11954f9b42d
+    success: True
+  - lfn: "p116_area.fits"
+    pfn: "p116_area.fits"
+    sha256: ed1fb85de19152a56d682d7123d0d72eb04b9260ce2d14e7af8440c4b535ab15
+    success: True
+  - lfn: "p13.fits"
+    pfn: "p13.fits"
+    sha256: d05267178e415b1980bebe8de1851eba09b22b4a42006bf25a347ae0bbb6bd77
+    success: True
+  - lfn: "p124_area.fits"
+    pfn: "p124_area.fits"
+    sha256: 3529a9c078f139c93ed2131577df24cd46cc14d2c7b5fac7eca58c49049cbb03
+    success: True
+  - lfn: "p61.fits"
+    pfn: "p61.fits"
+    sha256: 08a6b1390dfaa7be768f53c002a005e000f147cd6acc7a396602474152bd7be2
+    success: True
+  - lfn: "p144.fits"
+    pfn: "p144.fits"
+    sha256: 28b3389e1318bc52bcd3f3af412b2404c40e219457e44e28f307c0f3d5d1be69
+    success: True
+  - lfn: "p62_area.fits"
+    pfn: "p62_area.fits"
+    sha256: 278ed3147cdd14a7e7df2398a234e896462c817b07de589cff265bbb5a7e9810
+    success: True
+  - lfn: "p109_area.fits"
+    pfn: "p109_area.fits"
+    sha256: 9c01b5d4d3be726118517c1bb5b3d8da572e0cbacfca2b316718aa046de3f0e0
+    success: True
+  - lfn: "p129.fits"
+    pfn: "p129.fits"
+    sha256: 95c81a9c97ca17dd6dfff293231d3a2c396f23645648c4d3dd6b19976e6d1178
+    success: True
+  - lfn: "p27.fits"
+    pfn: "p27.fits"
+    sha256: 4882c22faad4c6d8333a28e63949d823709562321feb265cf7b422d16044f48b
+    success: True
+  - lfn: "p92.fits"
+    pfn: "p92.fits"
+    sha256: 75261f204e16a87b875d48c896a6b9ad4edea44c661bd3ec24886e073a5c02be
+    success: True
+  - lfn: "p132_area.fits"
+    pfn: "p132_area.fits"
+    sha256: 0558a50a850af9df1e880164156b06f69bbae66f3fcbac6216a61d6f05600b25
+    success: True
+  - lfn: "p46_area.fits"
+    pfn: "p46_area.fits"
+    sha256: cdff92aefefdde56ab136afd63fabd56e7dfc7f28df3dd138791ef97d154fc0b
+    success: True
+  - lfn: "p130.fits"
+    pfn: "p130.fits"
+    sha256: 9a314f729ce45a282e3af6a8bf05bc85dc57fc9130f3afdc3407ebedfb09a2da
+    success: True
+  - lfn: "p140_area.fits"
+    pfn: "p140_area.fits"
+    sha256: c9621579841729d60a8fe9d53d7a4be38d0a740d69cb570f0db6314b94f0f33c
+    success: True
+  - lfn: "p38_area.fits"
+    pfn: "p38_area.fits"
+    sha256: 2a402f9a88707df1763edc242d6f5ca2bf7807f0752763c3c294ae15f1572765
+    success: True
+  - lfn: "p146.fits"
+    pfn: "p146.fits"
+    sha256: 6a24dfcc732be3ee1f745c5ed7c70f7008d04add1f77991c2faf29550cb985c7
+    success: True
+  - lfn: "p132.fits"
+    pfn: "p132.fits"
+    sha256: 02a2b48466134259983808b807df4a1fcdbbc0a8e13f57e974eb026bd0cee266
+    success: True
+  - lfn: "p15.fits"
+    pfn: "p15.fits"
+    sha256: 9716d1526b748e7b33a261e0ed749e49e954ab71b0b0a7504ef617318ffe5e4e
+    success: True
+  - lfn: "p70_area.fits"
+    pfn: "p70_area.fits"
+    sha256: 1ba080edf6580bd41f52e10596ec9d1bb5e75dd7ce03aff8afdaa5f022ad2916
+    success: True
+  - lfn: "p32.fits"
+    pfn: "p32.fits"
+    sha256: 30db0173ae76a3d9cdf00f4edecd02e9b1b52c1bc81b6b165d7c2adc227676c5
+    success: True
+  - lfn: "p131_area.fits"
+    pfn: "p131_area.fits"
+    sha256: bfed9963725d77ed63950a3cf4df620e88995e678ea1620ce813cd6922e94d6a
+    success: True
+  - lfn: "p10_area.fits"
+    pfn: "p10_area.fits"
+    sha256: 099ca42d6ec0baa514da4ca72ab8e17beee4b06d5d3cc809a6d86253379e10fe
+    success: True
+  - lfn: "p29.fits"
+    pfn: "p29.fits"
+    sha256: 281e2e166f99763381f85d12bc2bf63bd90c5e97a926633d859c38d1226a7eaf
+    success: True
+  - lfn: "p55_area.fits"
+    pfn: "p55_area.fits"
+    sha256: abb1b220eaff5e9420863f7cf5da8401e289c9bf9c1e9949e51de428d1417d7f
+    success: True
+  - lfn: "p39_area.fits"
+    pfn: "p39_area.fits"
+    sha256: 3d2f19dbd1cbe43bb7bb98bfd175c97f0a12d3e550dbcd0985608e897bc712bc
+    success: True
+  - lfn: "p56.fits"
+    pfn: "p56.fits"
+    sha256: 67cb591b4e75058f3a3576c2fb9d19a9f703752d01d124be39692f1e4ca8d111
+    success: True
+  - lfn: "p61_area.fits"
+    pfn: "p61_area.fits"
+    sha256: 525a4b5750d883efbb3d45425657e7357acbd5edea9dcc460c342ced0e66c67c
+    success: True
+  - lfn: "p113.fits"
+    pfn: "p113.fits"
+    sha256: 85330bdcf650c70030cf968f591eecc60fe9a35ed04d34e4da51037dba5f2fa7
+    success: True
+  - lfn: "p125_area.fits"
+    pfn: "p125_area.fits"
+    sha256: 454a7e705486ca65b27512666f51056a238f5295872d5cd2cf433838b6249ebd
+    success: True
+  - lfn: "p127.fits"
+    pfn: "p127.fits"
+    sha256: 48a6fafc3510012ec8f32eb1a5aa5ffeee2f03691eb8d7088c2283d8bc6cfdab
+    success: True
+  - lfn: "p94.fits"
+    pfn: "p94.fits"
+    sha256: 7efaf38d8de802013711aef60b0bbf786d10b97b1cbaf05fee4f55b95f77e215
+    success: True
+  - lfn: "p45_area.fits"
+    pfn: "p45_area.fits"
+    sha256: 0a067de76269f2be999d47fe96b0073a080149942e9e740a01c2a9598ba4981e
+    success: True
+  - lfn: "p48_area.fits"
+    pfn: "p48_area.fits"
+    sha256: 259c14bf1b9893e6620b963ece4f593fef40bbdbfdb65011a59fad8e557f408b
+    success: True
+  - lfn: "template.hdr"
+    pfn: "template.hdr"
+    sha256: 35d0ab35f63a6ee85a8e7a31aa7923073ba6d141f85975ec21e70cbabaa1d044
+    success: True
+  - lfn: "p71_area.fits"
+    pfn: "p71_area.fits"
+    sha256: 91d77ece42a2650ef43f607ce52b83264b91ce4c10726e422ec2b5577352d39a
+    success: True
+  - lfn: "p125.fits"
+    pfn: "p125.fits"
+    sha256: 7b49a0ed650852f5ef55eb30551e10fedd40912c6e05fe76774964672d794d1a
+    success: True
+  - lfn: "p122_area.fits"
+    pfn: "p122_area.fits"
+    sha256: 7c41306913db6f8a129e6ec8278be9e905818c01c0b610aa0822f59259496bdf
+    success: True
+  - lfn: "p134.fits"
+    pfn: "p134.fits"
+    sha256: ef4db9a13155ef99048026bfb93d0dcd5031eb763d73af8c94fba08cd1a7e6f8
+    success: True
+  - lfn: "p63_area.fits"
+    pfn: "p63_area.fits"
+    sha256: 86b44fb12ac5090aad20a48a16ef5bcb7c2482ee81aad871c59763368e6ec249
+    success: True
+  - lfn: "p89_area.fits"
+    pfn: "p89_area.fits"
+    sha256: aa036074c34377d88b4b524091dc4184c7ecaa272e07248d2af9d752ac4cb001
+    success: True
+  - lfn: "p103.fits"
+    pfn: "p103.fits"
+    sha256: b59111426a9da320048a2d373ba2e061be230dde13bce32f99716e634165cd38
+    success: True
+  - lfn: "p97_area.fits"
+    pfn: "p97_area.fits"
+    sha256: eae072415ab04898c1e1d5bbc852dfbb4bd2c71fa5900807cf50163a3aed2b93
+    success: True
+  - lfn: "p107_area.fits"
+    pfn: "p107_area.fits"
+    sha256: f9570f30439e3e606a0371e26ba877e2827554b2f83a84532bbdc339feb8c37c
+    success: True
+  - lfn: "p134_area.fits"
+    pfn: "p134_area.fits"
+    sha256: 6bf4ba302498f868fc8db973c1ce48c7e5e18e7358c1eb5aa970d2e11728c64e
+    success: True
+  - lfn: "p60_area.fits"
+    pfn: "p60_area.fits"
+    sha256: f0d5137c874034a9a6e681d7a1a5ef158bdc2edf62dc7c43eb2ab732741f3fd1
+    success: True
+  - lfn: "p73.fits"
+    pfn: "p73.fits"
+    sha256: ac2bd0792eb7cbe49c25d4205a730f34a93a85f2e80659529a12939e2388a1b8
+    success: True
+  - lfn: "p53_area.fits"
+    pfn: "p53_area.fits"
+    sha256: 1e9ba4f18f5f68c8231d8fd2cd35c45dd3437bb0f5ff6b4af24edce91f920640
+    success: True
+  - lfn: "p02_area.fits"
+    pfn: "p02_area.fits"
+    sha256: 230e8009c49f67761754d45812ab23ce2635aa1ac3ef0588e79b79c14b4030c5
+    success: True
+  - lfn: "p117_area.fits"
+    pfn: "p117_area.fits"
+    sha256: 242d722f50e61b057affe245c33056c05d7bc37f923a5cb2d0f5e2b4df1da275
+    success: True
+  - lfn: "p142_area.fits"
+    pfn: "p142_area.fits"
+    sha256: b64083b99fafa045437ac5009e7ecd0dfa9a78bc04a4c4fba9f1c7338932d73d
+    success: True
+  - lfn: "p79.fits"
+    pfn: "p79.fits"
+    sha256: 0272e006534d561028f52212cc1e16a3b24ae6f788b80fdf66cf37a3c59ee206
+    success: True
+  - lfn: "p85.fits"
+    pfn: "p85.fits"
+    sha256: d06e4192e029f69bc195fd823f7c2f1268accd1e341febcabf682d5ad9b3c020
+    success: True
+  - lfn: "p82.fits"
+    pfn: "p82.fits"
+    sha256: 2a515debd90d95d87bafef2659f7c7ca45c89bc16943cf6325bcd2369fa49ae4
+    success: True
+  - lfn: "p28_area.fits"
+    pfn: "p28_area.fits"
+    sha256: 64b5d7cd8da26da59604942158169adeab1b573e255ca40eff1f3a5ce1ea8d0f
+    success: True
+  - lfn: "p115.fits"
+    pfn: "p115.fits"
+    sha256: 4f195e1c7d44febd21acf1e15affcae3d7ce6eddd14f90bc7c5366f6329a7cc2
+    success: True
+  - lfn: "p63.fits"
+    pfn: "p63.fits"
+    sha256: d0e4570f3a068357557c44087fefe23474500a6270f12b2819594dfa5dfd2cb5
+    success: True
+  - lfn: "p114_area.fits"
+    pfn: "p114_area.fits"
+    sha256: a8500c7797e90706ca3955303d25512619378836ac2a713054896c95403e93d2
+    success: True
+  - lfn: "p127_area.fits"
+    pfn: "p127_area.fits"
+    sha256: 5195b2926d0171fd33c0942fd006ff9c2e994fa00b73c28148341bc6038518a5
+    success: True
+  - lfn: "p03.fits"
+    pfn: "p03.fits"
+    sha256: c97307055a15728353160255aae4438aad115c61ccdbe0705be57d7165cb8463
+    success: True
+  - lfn: "p43_area.fits"
+    pfn: "p43_area.fits"
+    sha256: 06ec482edb1172d7f638c7b014d0d017d487c9c3997a8ce8810a969a81acdf16
+    success: True
+  - lfn: "p56_area.fits"
+    pfn: "p56_area.fits"
+    sha256: 7e09a7612cff1c90b091358964ea766ecef610747bb084ed6e1eacc2f16a1b40
+    success: True
+  - lfn: "p06.fits"
+    pfn: "p06.fits"
+    sha256: d1a72a7659ba0dac06bd099aaa22e41723f83fe42f8ea3812d23954da07805ac
+    success: True
+  - lfn: "p25.fits"
+    pfn: "p25.fits"
+    sha256: a3be2c5178bf9ec9cccb934af50da74586b258b7477b179a8961c1c2aae12bbb
+    success: True
+  - lfn: "p44.fits"
+    pfn: "p44.fits"
+    sha256: 520148b2d131e9bb8656214f0d6ed2aba3822b632da362b8d8c34a4c02e71a57
+    success: True
+  - lfn: "p22.fits"
+    pfn: "p22.fits"
+    sha256: b6f37d4702c78a65946ce9c9c80d26a1583f6cc79c11d895e3b92bd80c21880e
+    success: True
+  - lfn: "p73_area.fits"
+    pfn: "p73_area.fits"
+    sha256: 23d97b2a170575be9ff22a5e17e0814a344ac6895f02be5c8359edb8739ba65e
+    success: True
+  - lfn: "p105_area.fits"
+    pfn: "p105_area.fits"
+    sha256: 078f9d07391905b2dbb36e1322fc1763c53a67e63d25ead8e3f21b9761a4c27e
+    success: True
+  - lfn: "p136.fits"
+    pfn: "p136.fits"
+    sha256: e11ab1ac05d1bedbf4f23d1b9783cd1659d1aa9543ea9fdaa98541ecbe161e42
+    success: True
+  - lfn: "p19.fits"
+    pfn: "p19.fits"
+    sha256: 5aa436d4fd918cd9503de920bc99d053df179e94e734057b9e14d9cbeb9a1273
+    success: True
+  - lfn: "p05.fits"
+    pfn: "p05.fits"
+    sha256: cab76eb0fb84129cd759aa8915e16a281c8313b8f703e152024a9408ec623be6
+    success: True
+  - lfn: "p53.fits"
+    pfn: "p53.fits"
+    sha256: 1640a683a4beec4ccd851dcf4b47ab9667c794f71838c7881135218e347ebc69
+    success: True
+  - lfn: "p137.fits"
+    pfn: "p137.fits"
+    sha256: 0320ffd768eb89e550eedea747e651585b3caac9d8eace3c0c96374443278964
+    success: True
+  - lfn: "p12_area.fits"
+    pfn: "p12_area.fits"
+    sha256: 3f488fe2cb93295bc97767a2edca241d07c8ee8d9b23fab83abf17881be79cd4
+    success: True
+  - lfn: "p113_area.fits"
+    pfn: "p113_area.fits"
+    sha256: 0a5bd163254041325ecfcff598a5ce1479d549786cbee6311888b276b09747e6
+    success: True
+  - lfn: "p57_area.fits"
+    pfn: "p57_area.fits"
+    sha256: 5c4a3191d34c87f35679b0bc5aca29818fe12d25a9f8348e7ef5f7483e660e1d
+    success: True
+  - lfn: "p121_area.fits"
+    pfn: "p121_area.fits"
+    sha256: b7929439379d1351a4d6dc89d67065d7132f3b952a35dfb085a8b9fc2a485486
+    success: True
+  - lfn: "p106.fits"
+    pfn: "p106.fits"
+    sha256: cd7aaecbdf962f3339c1bb9bd7f5fde03d19b4fa817a494b1630829b72d5436a
+    success: True
+  - lfn: "p70.fits"
+    pfn: "p70.fits"
+    sha256: 26d7dd1cb8c8a4c906c9d3c8f4e1f2b111ecc3cf9e9c22a8d2902df7372e494d
+    success: True
+  - lfn: "p65_area.fits"
+    pfn: "p65_area.fits"
+    sha256: 81426ac5330bd86b89371547728b053074c5f44c0f68f7de88e0834cfc052a08
+    success: True
+  - lfn: "p04.fits"
+    pfn: "p04.fits"
+    sha256: b6644236330c947f716322725e1fabe520dcf4653e5c3551c29fb96c16f48809
+    success: True
+  - lfn: "p49.fits"
+    pfn: "p49.fits"
+    sha256: 22521fef6cea1992a2707cf4f9a6a36f8190a258715338d77d7585bb12681ba5
+    success: True
+  - lfn: "p49_area.fits"
+    pfn: "p49_area.fits"
+    sha256: 98e6a9d34308b327089737e2c670e4793facf2b1dafa596739a5cf4cba428330
+    success: True
+  - lfn: "p23.fits"
+    pfn: "p23.fits"
+    sha256: b17989619afeaaeb0a56706482a87c0d7f543f762aeaddbf5821ffe73afd04a8
+    success: True
+  - lfn: "p04_area.fits"
+    pfn: "p04_area.fits"
+    sha256: d2d9518048c9bf15a5ec423d2981ac4fc63c3c61e72021fbfd72fddff82936fe
+    success: True
+  - lfn: "p51.fits"
+    pfn: "p51.fits"
+    sha256: 96a526d7c148954ce855800e67e8857921a34fd5f3865506622576cf8215027c
+    success: True
+  - lfn: "p121.fits"
+    pfn: "p121.fits"
+    sha256: d49aab5f6f0ae86a13c8aebc80be0c2312c44731bb45d36b21c8be7e02685ccd
+    success: True
+  - lfn: "p36_area.fits"
+    pfn: "p36_area.fits"
+    sha256: adb8d09f44563730c39fba6600d42e2828bb5359cf24a4578054afb97c1d842d
+    success: True
+  - lfn: "p34.fits"
+    pfn: "p34.fits"
+    sha256: 3f9f1a36b6bbda2469b69cf2c7923fc0ab21d340b0652b84fdbc527ebea80be7
+    success: True
+  - lfn: "p110.fits"
+    pfn: "p110.fits"
+    sha256: 51d07f6659e890d02308e0af662f0e66242041e5e1880cc3ebd2d6dae50d956a
+    success: True
+  - lfn: "p48.fits"
+    pfn: "p48.fits"
+    sha256: e822d75c52ce3c969aec2d620e9dba86b9c9139940ab604a89503a5fdb12c4b1
+    success: True
+  - lfn: "p80_area.fits"
+    pfn: "p80_area.fits"
+    sha256: 099aac1af683cd3840c9088e8dd15542f9b54fd9b4c49684461d82ea69537c23
+    success: True
+  - lfn: "p112_area.fits"
+    pfn: "p112_area.fits"
+    sha256: 9cf23bdc09a71d0aa08d23f5db085f31bd4dc0a0696145827b5cd235d4fa783d
+    success: True
+  - lfn: "p51_area.fits"
+    pfn: "p51_area.fits"
+    sha256: 10fb07ab42845916492f5f6f4c1e6f4483e89cfce928eabd872d9c3af8903af8
+    success: True
+  - lfn: "p67.fits"
+    pfn: "p67.fits"
+    sha256: 0c63d5ba01f66b9066c9a79cadbedd7eda37515dd7c24c8cd10c2235053a4a44
+    success: True
+  - lfn: "p64_area.fits"
+    pfn: "p64_area.fits"
+    sha256: b3bb771d3722813ed2a1d4de09e9e3de05ec7cae27c2d52471bb2e583801c8e1
+    success: True
+  - lfn: "p106_area.fits"
+    pfn: "p106_area.fits"
+    sha256: e4ec7a9e8f683c9b042a661f068fae2e5b00077684fb768e1c6ebed09d5b977a
+    success: True
+  - lfn: "p97.fits"
+    pfn: "p97.fits"
+    sha256: 3f76d92eefadda118feaae2662b7e7c1b622f5923d3807c39873fcb6cf377edd
+    success: True
+  - lfn: "p108.fits"
+    pfn: "p108.fits"
+    sha256: 433656aa2e6a6a1958f85d5a205e964b392e6d2fd695915c7bbf7df9a46ef98b
+    success: True
+  - lfn: "p119_area.fits"
+    pfn: "p119_area.fits"
+    sha256: 17e2216e8dc2b59df13ef88c8c67c0f331f53bbecddb46bab69b1c4a3bbdb693
+    success: True
+  - lfn: "p86.fits"
+    pfn: "p86.fits"
+    sha256: 5e73dbb52e3ae5fc7db47c0b2b97004580a9ad08fde4e4d03d22e0341b06badb
+    success: True
+  - lfn: "p140.fits"
+    pfn: "p140.fits"
+    sha256: e61ee80aef2ad9e65fb5c4bda9c8fccde80199e32c12911b21f40ce383b00214
+    success: True
+  - lfn: "p135.fits"
+    pfn: "p135.fits"
+    sha256: 70b1c129b407ede28e931bb77af868c9d08b3f32e88eae2237f17e5d513817d9
+    success: True
+  - lfn: "p58_area.fits"
+    pfn: "p58_area.fits"
+    sha256: b5684f5b8d4b2960e06cbc89a9bf34fbe41bbad0a502f40a33d8a9550e40f36a
+    success: True
+  - lfn: "p78.fits"
+    pfn: "p78.fits"
+    sha256: 63bcff2823fc781d6f622c1d617465897220a64fe0fc11fcc9fe82d61c434e49
+    success: True
+  - lfn: "p118_area.fits"
+    pfn: "p118_area.fits"
+    sha256: abae44b661e26990c6bfde33a7e90fda0f6fcd8f7391d0ee6e71f1b048696bf3
+    success: True
+  - lfn: "p33.fits"
+    pfn: "p33.fits"
+    sha256: 6d7b7ca636869e5e644119786ac89fac1c2a17d0346c76a057bbe8ac0df30e62
+    success: True
+  - lfn: "p141_area.fits"
+    pfn: "p141_area.fits"
+    sha256: 365c275ef474014a127726b51a11291c50d1e88b1b88766909889a1fd0cab69d
+    success: True
+  - lfn: "p29_area.fits"
+    pfn: "p29_area.fits"
+    sha256: 2d1dada0e08a7fd20ebb4af0f518223974824906a12638069e22aebf72296ac7
+    success: True
+  - lfn: "p39.fits"
+    pfn: "p39.fits"
+    sha256: 1e486523bcd2cd3bd367260feadb529e9f55ed5d4286ae5728e822e8e335cd9e
+    success: True
+  - lfn: "p117.fits"
+    pfn: "p117.fits"
+    sha256: 0f9e0e3fbb28a9f30af14296c1a3a5a54226e94647b5c45fa606830abb0350fd
+    success: True
+  - lfn: "p80.fits"
+    pfn: "p80.fits"
+    sha256: 5e3bf79684ed25205eeeb21d12546afa6e4f8ebd7878016387bdf926e07453e2
+    success: True
+  - lfn: "p03_area.fits"
+    pfn: "p03_area.fits"
+    sha256: 638e5428469d07faadec53e32fe90ace6d5143023556ab165b32f10505d6fa54
+    success: True
+  - lfn: "p100_area.fits"
+    pfn: "p100_area.fits"
+    sha256: 1cdc7bf536a3a1dbe629dd22f960265f943fd62077fa3bd4b3e38c1ee1885570
+    success: True
+  - lfn: "p42.fits"
+    pfn: "p42.fits"
+    sha256: 4809cf245813a57a310d13d85463aed960c118317261712b38ed591e94f3743f
+    success: True
+  - lfn: "p24.fits"
+    pfn: "p24.fits"
+    sha256: 629df8d1f62866cdcd54d54e089a48d1704a7f787ede7e8dd1c3c9d567ae6dca
+    success: True
+  - lfn: "p81.fits"
+    pfn: "p81.fits"
+    sha256: 384699d57c5474cc8e976bec0b62e26a3e1465a60fc3dcbfa81029cb0b2981e5
+    success: True
+  - lfn: "p44_area.fits"
+    pfn: "p44_area.fits"
+    sha256: 5720ac8d7a2472b14e964151c2da194378f7571d96ad106e57c6bc7671c731f5
+    success: True
+  - lfn: "p87.fits"
+    pfn: "p87.fits"
+    sha256: d33ee3fce6345ddb6e1c1ee66951439cdc4224357a7e5e74721c97bf4971481e
+    success: True
+  - lfn: "p126.fits"
+    pfn: "p126.fits"
+    sha256: 269b8441494fb9c22f1db053dd0a3028cd482740121d72e32e832a8a7c18f37d
+    success: True
+  - lfn: "p78_area.fits"
+    pfn: "p78_area.fits"
+    sha256: d67d9b499b7882d824e4c3c8f30b71e22ea4048ee97e0f48a3e1c3c96efd5692
+    success: True
+  - lfn: "p126_area.fits"
+    pfn: "p126_area.fits"
+    sha256: 0bd897f3e18f57284f0e1bab1273055fa853549cfdd3bc18d12365a3f381b494
+    success: True
+  - lfn: "p52_area.fits"
+    pfn: "p52_area.fits"
+    sha256: 7ba8d0d7eeac74c9707fb0564adce53fed587bc859c1f2129ee591ec0221f294
+    success: True
+  - lfn: "p111.fits"
+    pfn: "p111.fits"
+    sha256: 30e2d943d3516c79d2622a787c685149e77e0ae48898da001712b8b94794e63d
+    success: True
+  - lfn: "p85_area.fits"
+    pfn: "p85_area.fits"
+    sha256: 7db5a6ca1cbb64ff8abd3f2e3a4d1877f30b95bf57a6d7092621f60d27d65b93
+    success: True
+  - lfn: "p98_area.fits"
+    pfn: "p98_area.fits"
+    sha256: 9b489c010bd5d437abf3cd0bcbab05e44cc85712aca21a16c9b0be100c2138b0
+    success: True
+  - lfn: "p101.fits"
+    pfn: "p101.fits"
+    sha256: 357dcedfe91863770cd72713d7b88f11d75d296e1608bf6b5234cffb86e96b61
+    success: True
+  - lfn: "p68.fits"
+    pfn: "p68.fits"
+    sha256: 58d9feb6e1b5b008173a346244c2bf8b99a89cc7631f4f88a5a4a6c938e7dcc5
+    success: True
+  - lfn: "p96.fits"
+    pfn: "p96.fits"
+    sha256: 011c7ac7dd7eb74358834a4ee89afd2704002f0d9ffa3bbfe89c89ff94b44986
+    success: True
+  - lfn: "p09_area.fits"
+    pfn: "p09_area.fits"
+    sha256: 82943b51ef47cc6cb745d607e1d3ff631ddb91b1fc826acbec84657db0498384
+    success: True
+  - lfn: "p77.fits"
+    pfn: "p77.fits"
+    sha256: f5831023bea58e6ebab32a2456693e2395d4bfff5f03fb48cd5c6b52071db441
+    success: True
+  - lfn: "p90.fits"
+    pfn: "p90.fits"
+    sha256: 9714258fed42f61325117a261422a123ad60fa211e063260794963f1a66b4d6a
+    success: True
+  - lfn: "p107.fits"
+    pfn: "p107.fits"
+    sha256: cb66fd285b6574a849345a284bf68706d8a13b1f780418ecab77365a080789f3
+    success: True
+  - lfn: "p120.fits"
+    pfn: "p120.fits"
+    sha256: 59f85d0dfda2c5c6e2a6c7da7de791bd7d1bf89329de3aaffc1d7a488fb523d4
+    success: True
+  - lfn: "p14.fits"
+    pfn: "p14.fits"
+    sha256: f48bfb87f97cf0eb2a454bf43b65a5d07a7b8baf5f7fcd38b91cd9078ab6cd31
+    success: True
+  - lfn: "p24_area.fits"
+    pfn: "p24_area.fits"
+    sha256: 25cafcaff0421b2061012a018ce34544fac57cf628ff2c94ec857712e24bf85e
+    success: True
+  - lfn: "p11_area.fits"
+    pfn: "p11_area.fits"
+    sha256: ca280f766f781818386ba90e32c67efc0c61feadddce91da389f1695173c6e23
+    success: True
+  - lfn: "p71.fits"
+    pfn: "p71.fits"
+    sha256: dca42e1f4b84963cb85968057b6c5b332e9a16980b4ff11574acf810f9b00a7b
+    success: True
+  - lfn: "p37_area.fits"
+    pfn: "p37_area.fits"
+    sha256: aec8de4822a488e829650fb629358685a613e88d13484b4ce97a2f55650eeb07
+    success: True
+  - lfn: "p120_area.fits"
+    pfn: "p120_area.fits"
+    sha256: 7d9a80810a6bd086d63c56f63d9b2ec8e7dbe642d1fc69043223c8f4a565d10a
+    success: True
+  - lfn: "p52.fits"
+    pfn: "p52.fits"
+    sha256: a8d54d053b692be59cbb8e92dff7752a62ababe7067ef2e110895b1260a13500
+    success: True
+  - lfn: "p133_area.fits"
+    pfn: "p133_area.fits"
+    sha256: 79b7ea9524de5f65d7ad78ff68abf08763109d87b6610aeb8c242bb9f0c7e474
+    success: True
+  - lfn: "p146_area.fits"
+    pfn: "p146_area.fits"
+    sha256: 97b982ee88e87a630b887160be92fcd5d10b2ded3f9e2a06f69ab2db4fd3165f
+    success: True
+  - lfn: "p72_area.fits"
+    pfn: "p72_area.fits"
+    sha256: 2ec561f601f1169573176b0c9f3020980a6f621c29e828e75c2b136db22750cf
+    success: True
+  - lfn: "p128.fits"
+    pfn: "p128.fits"
+    sha256: 948621040f1dc8c1ac762b4ada09a22d16139ee5c8f410ace2645cddc54b2051
+    success: True
+  - lfn: "p16_area.fits"
+    pfn: "p16_area.fits"
+    sha256: 2d023ca354d3bcca238057d8d8d14d520b92669ef5c27ae313d0b2e39a70fe01
+    success: True
+  - lfn: "p114.fits"
+    pfn: "p114.fits"
+    sha256: 2130f6e146174cdc0735915370e915705db90c441b0174709494c828cb47c69a
+    success: True
+  - lfn: "p131.fits"
+    pfn: "p131.fits"
+    sha256: ab651ac7b4f22e0a0c34c1fe0c22cab4517ce8e4ec89926b7996e65586ba93c7
+    success: True
+  - lfn: "p08_area.fits"
+    pfn: "p08_area.fits"
+    sha256: 193b6c80c1277d5a69490f365911c27ad3fa935cebf2151c014cf1623e9f3002
+    success: True
+  - lfn: "p76_area.fits"
+    pfn: "p76_area.fits"
+    sha256: 4392d3330b9d9df94d5b3e225bd4f054f82befdfdad00e00cbfd319156adeb77
+    success: True
+  - lfn: "p147_area.fits"
+    pfn: "p147_area.fits"
+    sha256: 15512377393d7412e54832fef60be397c3e3bc017859b1a799e2897dec3ed36c
+    success: True
+  - lfn: "p31.fits"
+    pfn: "p31.fits"
+    sha256: 121038339e956b5df28ac57d24ad47c8e55a0c83c7678aa6ad3ea7a86147ffe6
+    success: True
+  - lfn: "p31_area.fits"
+    pfn: "p31_area.fits"
+    sha256: 2144ea36545e94af5fa444116279ce985cee9699b91fdb130534b09be49820ee
+    success: True
+  - lfn: "p102_area.fits"
+    pfn: "p102_area.fits"
+    sha256: 71c663bf409618f5065eea445b440e6305a1077d4f4a6dda557a9b4df4dff562
+    success: True
+  - lfn: "p92_area.fits"
+    pfn: "p92_area.fits"
+    sha256: 4aea2d4866b22f2b1af1e9e9df56f9072e486e609ecd9728eefea7a2cb1feeca
+    success: True
+  - lfn: "p145.fits"
+    pfn: "p145.fits"
+    sha256: 377921da73069e596af3989072533f1b75fcbd77c4628bcbd6208e51069870ca
+    success: True
+  - lfn: "p76.fits"
+    pfn: "p76.fits"
+    sha256: b8542db61b76b306656c237b87d75ef68cf134ecf9cba8afb8475c973e9ec830
+    success: True
+  - lfn: "p100.fits"
+    pfn: "p100.fits"
+    sha256: ead4b4e8488093902b217607a16c22970ca6ed4f58eb3e947ba750db18ecc260
+    success: True
+  - lfn: "p62.fits"
+    pfn: "p62.fits"
+    sha256: 1249a77312d0c266e80b14bac6d0d51f86165f8f4bf2fdaa144501aff30eeabb
+    success: True
+  - lfn: "p84_area.fits"
+    pfn: "p84_area.fits"
+    sha256: 276b5e40b9784e76c0681c6c2000cb1441e088c218026bd56fa7eef78c40b526
+    success: True
+  - lfn: "p57.fits"
+    pfn: "p57.fits"
+    sha256: 13d8b38e40fe129580ed5187aeeed19092f7c7c89073d16b1ef2ee9fddc6dfe1
+    success: True
+  - lfn: "p139_area.fits"
+    pfn: "p139_area.fits"
+    sha256: 9f139537b636df689501758ba6443bf60eb8ee6d9ffef81e8c308bc4dcd0ca72
+    success: True
+  - lfn: "p12.fits"
+    pfn: "p12.fits"
+    sha256: 20509265ee644350a2089c360729e6453b4a0dfc2f88c84df9fe32ec60232240
+    success: True
+  - lfn: "p17_area.fits"
+    pfn: "p17_area.fits"
+    sha256: ad8507d0f9c0a807c38ce457391e9735b91cbca70c0a3832d983723e822918af
+    success: True
+  - lfn: "p26.fits"
+    pfn: "p26.fits"
+    sha256: 05fab21ea8294b04dcde65fc79f0bb3e6a27f9acd4a756955fb8c51dc24544f0
+    success: True
+  - lfn: "p43.fits"
+    pfn: "p43.fits"
+    sha256: b0ec2007451e8e8b9faf128d556688d776fb41a292abb16032a37fcc9bd40ed8
+    success: True
+  - lfn: "p83_area.fits"
+    pfn: "p83_area.fits"
+    sha256: 16f6152f4d6d7de73e5e8041d3de2f4bb4fc576056a674d38b9d7085ac148939
+    success: True
+  - lfn: "p23_area.fits"
+    pfn: "p23_area.fits"
+    sha256: 501582e8e93800c181abea6510ee18ad4e729a4eb51058d4e5815a74ce86cb66
+    success: True
+  - lfn: "p68_area.fits"
+    pfn: "p68_area.fits"
+    sha256: ec19575d4c7c69057dd9c51c421b6e02e0c5ed3a4d1803af2b6d41ade8c75202
+    success: True
+  - lfn: "p45.fits"
+    pfn: "p45.fits"
+    sha256: 5f9e9afcabe69269f6860e8f8214f25b4e621039f425c406d0b5f50d0663b8fa
+    success: True
+  - lfn: "p102.fits"
+    pfn: "p102.fits"
+    sha256: 5e70502f4a9810698aec24610af5196a67477b0c8d3007ac2dcd97278aed2950
+    success: True
+  - lfn: "p116.fits"
+    pfn: "p116.fits"
+    sha256: 95bde8e4a0e6f476e50ee0fbe8c08bb6aa947b6f7bfac783e67abea35432563a
+    success: True
+  - lfn: "p91.fits"
+    pfn: "p91.fits"
+    sha256: 12824b7ef529062b27a16e2c4926d74e07ecec6f3d83c2c5e6a3c28e6f15bf74
+    success: True
+  - lfn: "p59.fits"
+    pfn: "p59.fits"
+    sha256: 958462648ebe0b36138916dd1f7bca9832c21f344fb1a23a2e16b67d78ca7557
+    success: True
+  - lfn: "p93_area.fits"
+    pfn: "p93_area.fits"
+    sha256: 827eaf110dbc3aa590a1767fa40ecf701993cacb08d0ee9b81e65dc804964899
+    success: True
+  - lfn: "p07_area.fits"
+    pfn: "p07_area.fits"
+    sha256: a2ce17eeda13a2856a26e48dd07fd67204714784706078f4a3c3d86094546d4a
+    success: True
+  - lfn: "p32_area.fits"
+    pfn: "p32_area.fits"
+    sha256: b2805dcff918489c98d0438ef2a977ce13d86cd09413603bacf28dcc6684df75
+    success: True
+  - lfn: "p138_area.fits"
+    pfn: "p138_area.fits"
+    sha256: 3d38ac7f3df8e4ebc6351c6620d0c5bb143a6948cdbb91fde3407e1be0b20cbb
+    success: True
+  - lfn: "p77_area.fits"
+    pfn: "p77_area.fits"
+    sha256: a45d4d61a08d1fc7b36b0776a680f5282034a6785e79a01b7b265e1dbe17ee3e
+    success: True
+  - lfn: "p143.fits"
+    pfn: "p143.fits"
+    sha256: 20afcb2bafc26e45a3a23143148d7796ab440e1e2265a2bf382bd92b7e75f8be
+    success: True
+  - lfn: "p72.fits"
+    pfn: "p72.fits"
+    sha256: 9ac6f29aa92ab68ea71dfdfa3021f8fa8291a1c03c2f8fd4a853aa47f425dda1
+    success: True
+  - lfn: "p137_area.fits"
+    pfn: "p137_area.fits"
+    sha256: 3456f466666793091474003414b3cf6f8a9b57a9be381c572970d149075224ab
+    success: True
+  - lfn: "p47.fits"
+    pfn: "p47.fits"
+    sha256: 2962c062f8fe1aa654accce0c7a9014880d1d3fadf837fa6000a8d4f030c48ae
+    success: True
+  - lfn: "p86_area.fits"
+    pfn: "p86_area.fits"
+    sha256: d7509203a6ea85ecb134f939023c84f04c4551e731cf9807c987b4ef676a7b85
+    success: True
+  - lfn: "p16.fits"
+    pfn: "p16.fits"
+    sha256: 312c9dec5fc7f5b196ab2b3595bf2ae780bedc6f06a7440f7e1d88dcb8c17f91
+    success: True
+  - lfn: "p50.fits"
+    pfn: "p50.fits"
+    sha256: f6d1658219864f4f65830f4683b03694f9373830c8fb34322c8b3849675bbc6d
+    success: True
+  - lfn: "p95.fits"
+    pfn: "p95.fits"
+    sha256: 8e8ba64d3e2b7fd38c757f859fcc5284193c957850b34a98e3ea13c54818dff6
+    success: True
+  - lfn: "p22_area.fits"
+    pfn: "p22_area.fits"
+    sha256: e37e2592172e435f8d64b8245a393e948aba4dc42a2678513fde4c403fa560d5
+    success: True
+  - lfn: "p147.fits"
+    pfn: "p147.fits"
+    sha256: 25ff14c7204132c56aec63ffdf287e90639c320b108d03855b4c1f75047dc8da
+    success: True
+  - lfn: "p69.fits"
+    pfn: "p69.fits"
+    sha256: a9695a6e59c4f5ea7b837a501c481e50a063eaa959a2f5592acad42cc0eac0f8
+    success: True
+  - lfn: "p111_area.fits"
+    pfn: "p111_area.fits"
+    sha256: 047794344ea0ed3bd0ea6780623bdbabd7f44d9e1aa558f7169d47b9bdddcf78
+    success: True
+  - lfn: "p141.fits"
+    pfn: "p141.fits"
+    sha256: 7b9f278ef4a7e096f88859abad64b56bf2c91f3c4198ebe18f128221e177a76d
+    success: True
+  - lfn: "p25_area.fits"
+    pfn: "p25_area.fits"
+    sha256: dbe08852bc802eae12bbb83c2b9c9227f86e27fccf47c7ff8c72c4d2e2f4fd81
+    success: True
+  - lfn: "p38.fits"
+    pfn: "p38.fits"
+    sha256: 8e0621fb73f6dfed981375124d0cbfb4819931f73cf0fe97350645dbd7c488f1
+    success: True
+  - lfn: "p94_area.fits"
+    pfn: "p94_area.fits"
+    sha256: fd00a7b1f7d3482e3e04c2c47b8a75ed9cd7181278e1091c6db7395054abc285
+    success: True
+  - lfn: "p145_area.fits"
+    pfn: "p145_area.fits"
+    sha256: 63e7895a088baa7b0ff882e57d6b6f094fd6247cc249b86d6f64eb98bc383388
+    success: True
+  - lfn: "p59_area.fits"
+    pfn: "p59_area.fits"
+    sha256: 39fb6e0fdec3cf5f199d9dcd7b7a4b5b0b0b47e24fe2fce050e9fc9f7855614d
+    success: True
+  - lfn: "p109.fits"
+    pfn: "p109.fits"
+    sha256: 295493fb8df7e3e7feff94c4d8eb8814a62e34212f629af3c1e222446a892472
+    success: True
+  - lfn: "p33_area.fits"
+    pfn: "p33_area.fits"
+    sha256: e776b1e4b6d91e2d357155e8eeee2b3223bdc94d12cb002ddf118e7dd39170d1
+    success: True
+  - lfn: "p104_area.fits"
+    pfn: "p104_area.fits"
+    sha256: f4a0d61abe8485a07ac7e89b81443cdaadc4898657bb3c816df5ba7cd8fce1ff
+    success: True
+  - lfn: "p40_area.fits"
+    pfn: "p40_area.fits"
+    sha256: 018c5a4273a9b8e27bf43c9f4010a338d868b0e1c7a8a94d124c2220abeace29
+    success: True
+  - lfn: "p91_area.fits"
+    pfn: "p91_area.fits"
+    sha256: 78cd5ca27302c8f6a181df093ed4fb21a0ea120a5eedcf9d9897636894269da5
+    success: True
+  - lfn: "p66_area.fits"
+    pfn: "p66_area.fits"
+    sha256: 27d0a67fc18dbac0358f06bd5dd78a1d017fc11d9b625f5d67e39ee741d5db6e
+    success: True
+  - lfn: "p79_area.fits"
+    pfn: "p79_area.fits"
+    sha256: e0d8b1eb59591906f6c81f465477a73d6a0abcde9bd10332aab3d3d877b58c86
+    success: True
+  - lfn: "p88.fits"
+    pfn: "p88.fits"
+    sha256: 6d4d036c86569d1aa6fdec0ab066f3cbbd3e6204afc3720cbc445d5dbbc67f83
+    success: True
+  - lfn: "p118.fits"
+    pfn: "p118.fits"
+    sha256: f20b981b0ef78c87535d282488be4f9b5f035525ee672eccc0e4682901947764
+    success: True
+  - lfn: "p112.fits"
+    pfn: "p112.fits"
+    sha256: 45aebff0227dbd9b0f3d1628702445e069d97cd1ee5b8971979fb2924d4fbefd
+    success: True
+  - lfn: "p15_area.fits"
+    pfn: "p15_area.fits"
+    sha256: 8b45984ab3c19d77f477554c36abde16f1a3552627092504d10cca12b0997b27
+    success: True
+  - lfn: "p30_area.fits"
+    pfn: "p30_area.fits"
+    sha256: 4bdb09c172b2e4721e9093fb2fec9ecb3343128aa10b0b046cf0ae1952fb65c6
+    success: True
+  - lfn: "p66.fits"
+    pfn: "p66.fits"
+    sha256: 2d9da0cd3ee4aad9a9fb753b209e2df403f405de40ff2bfda40c796313b0b2e5
+    success: True
+  - lfn: "p60.fits"
+    pfn: "p60.fits"
+    sha256: aa8e61a1ce8a699061cff87a1d266fb48a316592e124855de4da2cd47c7a1609
+    success: True
+  - lfn: "p69_area.fits"
+    pfn: "p69_area.fits"
+    sha256: de23f7d6db00aff0939c596731c2f70ee5d9cc78490e876a79a20a00a85fd0e5
+    success: True
+  - lfn: "p28.fits"
+    pfn: "p28.fits"
+    sha256: 2469adfae6b7c26eb398c1137759440c1194e441e03028504a23530a06e4d14f
+    success: True
+  - lfn: "p18_area.fits"
+    pfn: "p18_area.fits"
+    sha256: 2127426dada05561a0069bcd75b7f57bed0f083790c207fcb139a32c09bf855a
+    success: True
+  - lfn: "p05_area.fits"
+    pfn: "p05_area.fits"
+    sha256: b367d4d1290642b93d05bec797d813510ed12338cf1ca74ef50bf6aedb1a1723
+    success: True
+  - lfn: "p09.fits"
+    pfn: "p09.fits"
+    sha256: 70472a18e0445779ccbdb7dafd5b67a39dd72612ebd27fa69c656d9b1c25a3ed
+    success: True
+  - lfn: "p101_area.fits"
+    pfn: "p101_area.fits"
+    sha256: 946f63edd88859786a9b8762cfe8e16a2151c93b79423d3003ca7e16d7b28a1a
+    success: True
+  - lfn: "p41.fits"
+    pfn: "p41.fits"
+    sha256: 61d1bcc3153c0749b4893fb7153edf742467970f79ea689f3150f90bb16f705a
+    success: True
+  - lfn: "p36.fits"
+    pfn: "p36.fits"
+    sha256: 1cb307b6202c23c936fd458f555352ea88f95731ffad0bab670456aaf9f2c1ce
+    success: True
+  - lfn: "p122.fits"
+    pfn: "p122.fits"
+    sha256: 793c88efa4bdfe96812e0258ad1422c5b38c88d11eef2e5a6bb9bdc4257d5a6e
+    success: True
+  - lfn: "p135_area.fits"
+    pfn: "p135_area.fits"
+    sha256: fe8ad3cc833d5e367f85ec592e542d4faa5d90dea592c164e6fe803a61e41018
+    success: True
+  - lfn: "p27_area.fits"
+    pfn: "p27_area.fits"
+    sha256: e1e3043ca60ce61c7b2f3282ce2a353c0bd5bd1d5b766e1f0fd778e94d178d22
+    success: True
+  - lfn: "p88_area.fits"
+    pfn: "p88_area.fits"
+    sha256: ba6b61042e3eb4446f38467bdab5882de1f8105662cd7e4c30dd0decc643fccd
+    success: True
+  - lfn: "p50_area.fits"
+    pfn: "p50_area.fits"
+    sha256: 2fbb405b3d7df352e52a5b36679cbcaf37255b3dd8cd2a379a3cb2bdec3dfddf
+    success: True
+  - lfn: "p143_area.fits"
+    pfn: "p143_area.fits"
+    sha256: 72c33c01f1235f026f68d019e35061c01ac420ca71a2497685d9c1d601ac8cf9
+    success: True
+  - lfn: "p35_area.fits"
+    pfn: "p35_area.fits"
+    sha256: d8ae3da16c0447d3da3f42a9484d9ff73bdb216e2e6353324954eb0c154336e3
+    success: True
+  - lfn: "p98.fits"
+    pfn: "p98.fits"
+    sha256: b99b57baa1d19999ce0cb0aa2ff2269ef211d73ab080ba95bea5b69cc90b9679
+    success: True
+  - lfn: "p84.fits"
+    pfn: "p84.fits"
+    sha256: 0843781af618bc423607cb36c54990f2b304193bdf406eb00595c6b7915f9d83
+    success: True
+  - lfn: "p81_area.fits"
+    pfn: "p81_area.fits"
+    sha256: 948bb86ca54cb1fb6ba213ee43089c6a04df383ce165a50785882767bd733da5
+    success: True
+  - lfn: "p95_area.fits"
+    pfn: "p95_area.fits"
+    sha256: 7d3bd250166b472a4cd985380d2c012b7a818bac6401625024044e8fc31afb0b
+    success: True
+  - lfn: "p35.fits"
+    pfn: "p35.fits"
+    sha256: 98304284f15015b31a8da4539c6743c1152a5339609bc77bfb27743c1aa49838
+    success: True
+  - lfn: "p128_area.fits"
+    pfn: "p128_area.fits"
+    sha256: 80fd4b6413750e6465cc2dc27691634103e96127edcf29a57609a0c5b07fd575
+    success: True
+  - lfn: "campaign_task"
+    pfn: "campaign_task"
+    sha256: 8d69de086d6005ad0f63f96568bfd4092398413953f1adbd2a9ed69d4c522f58
+    success: True
+  - lfn: "p19_area.fits"
+    pfn: "p19_area.fits"
+    sha256: cedb8b5c98ab6be9b675146caa2da08dd156fae96519cc1b6983af41a152c20a
+    success: True
+  - lfn: "p20_area.fits"
+    pfn: "p20_area.fits"
+    sha256: 6347b328f200a47b7304019affa9b9b92b91484025e615ffe83abe9ac70fa506
+    success: True
+  - lfn: "p54.fits"
+    pfn: "p54.fits"
+    sha256: b384a7e7f5e4d13563fec6142758526c57e38a7bd8f2739b5b2d06ea11b5670d
+    success: True
+  - lfn: "p18.fits"
+    pfn: "p18.fits"
+    sha256: 0da43e87aab458410403ee32bebb5b0458c9ea05c3f2e0734a75db909feb8769
+    success: True
+  - lfn: "p138.fits"
+    pfn: "p138.fits"
+    sha256: c221dc5c36573fcec0a43daa64b960b15329aacc42e4bb2a7646d5366c063214
+    success: True
+  - lfn: "p37.fits"
+    pfn: "p37.fits"
+    sha256: dc91c657a485feb6b66a99a06fc616813c66c50b993fbdac4bead99601846da7
+    success: True
+  - lfn: "p87_area.fits"
+    pfn: "p87_area.fits"
+    sha256: b9b101c0cb27e547434faabb025760dff901ce0f092ef139aa74189c3c64fcb8
+    success: True
+  - lfn: "p144_area.fits"
+    pfn: "p144_area.fits"
+    sha256: 508235c8a8f9e92d0d152fdc5dd6f9d83264a3f9b3c18e062f84e4be288b4be7
+    success: True
+  - lfn: "p74_area.fits"
+    pfn: "p74_area.fits"
+    sha256: eb9096b8ba3cbe24dd5a2d5a3b45b3920df02ceda9c88a767d00fb9e18a3f7f2
+    success: True
+  - lfn: "p40.fits"
+    pfn: "p40.fits"
+    sha256: af8c796f196b358bb2dfd00874f1ebae006fcd5bf14eb4f3cd9b849091081b79
+    success: True
+  - lfn: "p42_area.fits"
+    pfn: "p42_area.fits"
+    sha256: 9ecb3540f6fc93f41fe675b29540e6c49769660f9eceb82c84245bd93fd20d2b
+    success: True
+  - lfn: "p119.fits"
+    pfn: "p119.fits"
+    sha256: 61f019935d2d1a0711d1c1dc02dafbbf2cbbbd9d309d882e1223a219a2e35570
+    success: True
+  - lfn: "p21.fits"
+    pfn: "p21.fits"
+    sha256: e8934ee2ec5d0daa54a85e5a0b164447031a853252248c9eba548aebb3ffaa0f
+    success: True
+  - lfn: "images.tbl"
+    pfn: "images.tbl"
+    sha256: 2c800d4e5bb138054c1e713aabe30bf3b7b95c9f525ed878a466f408a91e5ed9
+    success: True
+  - lfn: "p26_area.fits"
+    pfn: "p26_area.fits"
+    sha256: 6e7280ebcb53a68dcc8a1b02f6ffd5ffc59bf2640cde7a2fbe3d82f12a367487
+    success: True
+  - lfn: "p10.fits"
+    pfn: "p10.fits"
+    sha256: 930ee51cea740e2f131922f14bc599ae07acacef60c83d89c990a290762d25e1
+    success: True
+  - lfn: "p105.fits"
+    pfn: "p105.fits"
+    sha256: e981a2f8ada6bbc4d34a56c78e5cc44db9951cad02a96929f1f4f5ac738fd064
+    success: True
+  - lfn: "p96_area.fits"
+    pfn: "p96_area.fits"
+    sha256: 0771d328a79e844fe172f00afd6764024a8874e7d6f40b8509f64df6177a1c4a
+    success: True
+  - lfn: "p124.fits"
+    pfn: "p124.fits"
+    sha256: fe88fc6c26809bf89f60a5a8a9d6c2e9612bba3f9531039d10f5c77c88c43677
+    success: True
+  - lfn: "p83.fits"
+    pfn: "p83.fits"
+    sha256: b600ca038e68050ecba8d95cb14cf6954c9ec8741a35689e7ef93493ae5b02ff
+    success: True
+  - lfn: "p13_area.fits"
+    pfn: "p13_area.fits"
+    sha256: 6a9d5676933e8a5fe54b80b130dc4ddbcfde69cd582440dc64d5c4dc1a1be0b2
+    success: True
+  - lfn: "p90_area.fits"
+    pfn: "p90_area.fits"
+    sha256: c80b7bb20b25c56e5109345d40f7ff5b651fbadbd3fefe4e221698ada6f1d0ec
+    success: True
+  - lfn: "p67_area.fits"
+    pfn: "p67_area.fits"
+    sha256: 9312df1bb3d6e3e5d3fafd84a6ce962528c681aae4668fbdfea18ee49c395b7f
+    success: True
+  - lfn: "p41_area.fits"
+    pfn: "p41_area.fits"
+    sha256: 4a853f1b66e81048aeb4c3627ebd1954e0b86077b45a4d57262c0da77e976f3e
+    success: True
+  - lfn: "p14_area.fits"
+    pfn: "p14_area.fits"
+    sha256: 1a7a19565bb33f7c9d1912571b600475bdabf66ec4cefa8c54d5bec6e1667185
+    success: True
+  - lfn: "p02.fits"
+    pfn: "p02.fits"
+    sha256: 61601df7877f20208d5cdbde99fca1b153fde253b56c1ef83d42c1cf68af3381
+    success: True
+  - lfn: "p130_area.fits"
+    pfn: "p130_area.fits"
+    sha256: b5dc3b96f7009d58e23ae264826784c5901cdcc5e30e889c6a99c588a671c7c0
+    success: True
+  - lfn: "p133.fits"
+    pfn: "p133.fits"
+    sha256: 9d4b361a0fc1dbace980c56c1fb198ee775f5bca3d2e9dff2b17cc277911494e
+    success: True
+  - lfn: "p142.fits"
+    pfn: "p142.fits"
+    sha256: c3907abca8c882bbd35649b86e71e0f36cec906411070a685b60d3c4b53c2dd8
+    success: True
+  - lfn: "p11.fits"
+    pfn: "p11.fits"
+    sha256: fd7afef4bcaf1917eb3c0a8858ca57c78f3d20d46e48c8b5c14ac15747fc9790
+    success: True
+  - lfn: "p64.fits"
+    pfn: "p64.fits"
+    sha256: 529badc1cd93115145e3245d2d2c64d59c3ad8dcfd348a4a92f1e3fe01794948
+    success: True
+  - lfn: "p103_area.fits"
+    pfn: "p103_area.fits"
+    sha256: 83599d2c92ad5ccbbc808dd725bd13e52ff4e0cf9f406e88d31e62d67bb27005
+    success: True
+  - lfn: "p82_area.fits"
+    pfn: "p82_area.fits"
+    sha256: 6fef6577fdb082a9005303dcfbb100407cb847fa3ac53ee48744e2ee0aafecbd
+    success: True
+  - lfn: "p139.fits"
+    pfn: "p139.fits"
+    sha256: ad9d0db7c0489aa8f5572eb9cf9048a01ab04311b7f9306bbff3410c28660e50
+    success: True
+  - lfn: "p75_area.fits"
+    pfn: "p75_area.fits"
+    sha256: db9b8725bac1105729da23a6087777e41f5b2d65b5c2c3cfede193c2d6efba47
+    success: True
+  - lfn: "p08.fits"
+    pfn: "p08.fits"
+    sha256: 80cf90e43254596bd96265c51e0b4ada9b4f54df4978f5a5baab1a5f81681697
+    success: True
+  - lfn: "p129_area.fits"
+    pfn: "p129_area.fits"
+    sha256: b37bb121c462bd848d0e8a541a3b4f0ce73ad801dd11d4148c0b1fb37bb12ff9
+    success: True
+  - lfn: "p06_area.fits"
+    pfn: "p06_area.fits"
+    sha256: e439f22f8792d2c4ce6c518028f64f2673ca6a1467cda5297a746491c4e3ee9a
+    success: True
+  - lfn: "p115_area.fits"
+    pfn: "p115_area.fits"
+    sha256: 050c62b1126c13ae64735eaaf2d1ea18e1fd69cb0b65c567d3772c4c5858e70a
+    success: True
+  - lfn: "p07.fits"
+    pfn: "p07.fits"
+    sha256: ce0cb8e1c1627eb89df534a31c0ca7093d157231426b18741702e0ffd3e39db4
+    success: True
+  - lfn: "p46.fits"
+    pfn: "p46.fits"
+    sha256: 3b5d5fb22681e069a8e2e33bec44fa55dbb684af7984a50004426c460ba68228
+    success: True
+  - lfn: "p01.fits"
+    pfn: "p01.fits"
+    sha256: 05969721db1c2b22f0d3fb23325ae4cdbcd6efb729b355f638c66afd0acf1a2c
+    success: True
+  - lfn: "p65.fits"
+    pfn: "p65.fits"
+    sha256: 6938cea12825a8043a412b53ab34755048e9cbcc2f8956c4808e75591a9b5eca
+    success: True
+  - lfn: "p20.fits"
+    pfn: "p20.fits"
+    sha256: 5be97156aa6fede5374a78f16991892145bb8f1cf8673fbcace73580d3c0611c
+    success: True
+  - lfn: "p93.fits"
+    pfn: "p93.fits"
+    sha256: 7d6d7fc64d32ee42e9fc20765b2864c5305dfd8a1d6cdafd696005edd36b98e0
+    success: True
+  - lfn: "p123_area.fits"
+    pfn: "p123_area.fits"
+    sha256: 765fc735bd412394907b35da1e7e4358e80607170fca0231e722179253b4580f
+    success: True
+  - lfn: "p104.fits"
+    pfn: "p104.fits"
+    sha256: af05c3e98b88784288cd0fc429a34c8a2b44964cdb615fbb8566cc4d126ee586
+    success: True
+  - lfn: "p110_area.fits"
+    pfn: "p110_area.fits"
+    sha256: 6b97e10f3e50e8e0756cec223c7fb8448bb183f8b52c25262ed315800f0ea80c
+    success: True
+  - lfn: "p99.fits"
+    pfn: "p99.fits"
+    sha256: 4e8bda5333893d7f6b4b091377700716e70334e0338173ded22fc8308ad00ca6
+    success: True
+  - lfn: "p47_area.fits"
+    pfn: "p47_area.fits"
+    sha256: a926296adc1d8676d01722982087f3250e8a0e9d4be5254e5c7d7329e6693145
+    success: True
+  - lfn: "p34_area.fits"
+    pfn: "p34_area.fits"
+    sha256: f123043d072e10da61a7747d345f47de740b3a902aea4d67c52b0f548c10bc8c
+    success: True
+  - lfn: "p21_area.fits"
+    pfn: "p21_area.fits"
+    sha256: c7acf8f9160a04f920742314b883d209502432239bdcf0ae420467ebd660e091
+    success: True
+  - lfn: "p74.fits"
+    pfn: "p74.fits"
+    sha256: e15f87ec91f564074f63d81e8171b3c127be0ce16cf0d660e7728e6f4526e7d3
+    success: True
+  - lfn: "p136_area.fits"
+    pfn: "p136_area.fits"
+    sha256: 8df0363213dbfff8ede29d0114e1a360c573f899c46e01d68266345d7bdd06c1
+    success: True
+  - lfn: "p123.fits"
+    pfn: "p123.fits"
+    sha256: 92db1e03a37913eb01f565574ca402acbc6ecd2d2d182684ea905ddce6a787d2
+    success: True
+  - lfn: "p108_area.fits"
+    pfn: "p108_area.fits"
+    sha256: 1a5e13b019c99e461e715ba0503d164b296ea8ec5c81e41a9d04ada15236c982
+    success: True
+  - lfn: "p55.fits"
+    pfn: "p55.fits"
+    sha256: 0e03948f95f21f8f425340315e7df07d495048200d702fb7de3ca7b3758b2ebc
+    success: True
+  - lfn: "p17.fits"
+    pfn: "p17.fits"
+    sha256: 4a81080fecd38b9955cd2a38d947141162cc48fa9a17f084765c207e84cecef4
+    success: True
+- integrity_summary:
+    succeeded: 297
+    failed: 0
+    duration: 6.466
+
+---------------pegasus-multipart
+location:
+    geohash: 66jc
+    ip: <omitido>
+    latitude: '-33.4521'
+    longitude: '-70.6536'
+    organization: Microsoft Corporation
+    subdomain: N/A

@@ -1,0 +1,15 @@
+2026.11.22 17:46:21.896 UTC:    
+2026.11.22 17:46:21.903 UTC:   ----------------------------------------------------------------------- 
+2026.11.22 17:46:21.908 UTC:   File for submitting this DAG to HTCondor           : dme-six-20261110-w2-sep-r03-0.dag.condor.sub 
+2026.11.22 17:46:21.914 UTC:   Log of DAGMan debugging messages                   : dme-six-20261110-w2-sep-r03-0.dag.dagman.out 
+2026.11.22 17:46:21.919 UTC:   Log of HTCondor library output                     : dme-six-20261110-w2-sep-r03-0.dag.lib.out 
+2026.11.22 17:46:21.924 UTC:   Log of HTCondor library error messages             : dme-six-20261110-w2-sep-r03-0.dag.lib.err 
+2026.11.22 17:46:21.929 UTC:   Log of the life of condor_dagman itself            : dme-six-20261110-w2-sep-r03-0.dag.dagman.log 
+2026.11.22 17:46:21.935 UTC:    
+2026.11.22 17:46:21.940 UTC:   -no_submit given, not submitting DAG to HTCondor. You can do this with: 
+2026.11.22 17:46:21.950 UTC:   ----------------------------------------------------------------------- 
+2026.11.22 17:46:24.380 UTC:   Database version: '5.1.2' (sqlite:////home/dmeadmin/.pegasus/workflow.db) 
+2026.11.22 17:46:25.898 UTC:   Pegasus database was successfully created. 
+2026.11.22 17:46:25.903 UTC:   Database version: '5.1.2' (sqlite:////mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-SEP/plans/W2-SEP/submit/dmeadmin/pegasus/dme-six-20261110-w2-sep-r03/run0001/dme-six-20261110-w2-sep-r03-0.replicas.db) 
+2026.11.22 17:46:25.952 UTC:   Output replica catalog set to jdbc:sqlite:/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-SEP/plans/W2-SEP/submit/dmeadmin/pegasus/dme-six-20261110-w2-sep-r03/run0001/dme-six-20261110-w2-sep-r03-0.replicas.db 
+2026.11.22 17:46:26.606 UTC:   Time taken to execute is 5.181 seconds 

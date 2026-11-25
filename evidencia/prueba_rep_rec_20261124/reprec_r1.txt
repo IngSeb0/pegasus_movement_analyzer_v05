@@ -1,0 +1,34 @@
+$ C:\Users\Acer\AppData\Local\Programs\Python\Python312\python.exe -B coordinador/llevar.py correr "python3 flujos/crear_flujo.py flujos/especificaciones.json REP-REC reprec_r1"
+Flujo creado en /mnt/prueba_rep_rec_20261124/reprec_r1
+
+$ C:\Users\Acer\AppData\Local\Programs\Python\Python312\python.exe -B coordinador/llevar.py correr "python3 flujos/ejecutar_flujo.py reprec_r1"
+Listo. Para calcular DME:
+  python3 analyzer.py /mnt/prueba_rep_rec_20261124/reprec_r1/submit/dmeadmin/pegasus/flujo-rep-rec/run0001 /mnt/prueba_rep_rec_20261124/reprec_r1/history.long
+
+$ C:\Users\Acer\AppData\Local\Programs\Python\Python312\python.exe -B coordinador/llevar.py correr "find reprec_r1/submit -name braindump.yml -printf '%h\n'"
+reprec_r1/submit/dmeadmin/pegasus/flujo-rep-rec/run0001
+
+$ C:\Users\Acer\AppData\Local\Programs\Python\Python312\python.exe -B coordinador/llevar.py bajar reprec_r1/submit/dmeadmin/pegasus/flujo-rep-rec/run0001 C:\Defensa\Sustentacion_DME\10_Preparacion_Final\prueba_rep_rec_20261124\reprec_r1
+
+$ C:\Users\Acer\AppData\Local\Programs\Python\Python312\python.exe -B coordinador/llevar.py bajar reprec_r1/history.long C:\Defensa\Sustentacion_DME\10_Preparacion_Final\prueba_rep_rec_20261124\reprec_r1
+
+$ C:\Users\Acer\AppData\Local\Programs\Python\Python312\python.exe -B analyzer/analyzer.py C:\Defensa\Sustentacion_DME\10_Preparacion_Final\prueba_rep_rec_20261124\reprec_r1\run0001 C:\Defensa\Sustentacion_DME\10_Preparacion_Final\prueba_rep_rec_20261124\reprec_r1\history.long -v
+  f2: dme-worker2 -> ['dme-master']
+  f3: dme-worker3 -> ['dme-master']
+  f4: dme-worker4 -> ['dme-master']
+  g: dme-worker1 -> ['dme-master', 'dme-worker2', 'dme-worker3', 'dme-worker4']
+  f1: dme-worker1 -> ['dme-master']
+  a: dme-master -> ['dme-worker1']
+Requerido:           1887436800 B
+Contrato (.sub):     1887436800 B   (corroborado: un intento por job y mismo número de archivos)
+DME con el contrato: 1.000000
+
+$ C:\Users\Acer\AppData\Local\Programs\Python\Python312\python.exe -B analyzer/tiempos.py C:\Defensa\Sustentacion_DME\10_Preparacion_Final\prueba_rep_rec_20261124\reprec_r1\run0001 C:\Defensa\Sustentacion_DME\10_Preparacion_Final\prueba_rep_rec_20261124\reprec_r1\history.long
+Duración del flujo (DAGMan): 250.3 s   (suma de tramos: 251 s)
+  ejecucion        31 s   12.4 %
+  transferencia   117 s   46.6 %
+  auxiliares       55 s   21.9 %
+  cola              8 s    3.2 %
+  cierre           19 s    7.6 %
+  dagman           21 s    8.4 %
+

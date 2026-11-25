@@ -1,0 +1,170 @@
+[
+  {
+    "id": "DISTRIBUTION-W2-PILOTO",
+    "condition": "DISTRIBUTION-W2",
+    "workers": 2,
+    "pattern": "DISTRIBUTION",
+    "block": 0,
+    "phase": "piloto"
+  },
+  {
+    "id": "REDISTRIBUTION-W2-B01",
+    "condition": "REDISTRIBUTION-W2",
+    "workers": 2,
+    "pattern": "REDISTRIBUTION",
+    "block": 1,
+    "phase": "principal"
+  },
+  {
+    "id": "DISTRIBUTION-W2-B01",
+    "condition": "DISTRIBUTION-W2",
+    "workers": 2,
+    "pattern": "DISTRIBUTION",
+    "block": 1,
+    "phase": "principal"
+  },
+  {
+    "id": "PIPELINE-W2-B01",
+    "condition": "PIPELINE-W2",
+    "workers": 2,
+    "pattern": "PIPELINE",
+    "block": 1,
+    "phase": "principal"
+  },
+  {
+    "id": "PROCESS-W2-B01",
+    "condition": "PROCESS-W2",
+    "workers": 2,
+    "pattern": "PROCESS",
+    "block": 1,
+    "phase": "principal"
+  },
+  {
+    "id": "AGGREGATION-W2-B01",
+    "condition": "AGGREGATION-W2",
+    "workers": 2,
+    "pattern": "AGGREGATION",
+    "block": 1,
+    "phase": "principal"
+  },
+  {
+    "id": "REDISTRIBUTION-W4-B01",
+    "condition": "REDISTRIBUTION-W4",
+    "workers": 4,
+    "pattern": "REDISTRIBUTION",
+    "block": 1,
+    "phase": "principal"
+  },
+  {
+    "id": "DISTRIBUTION-W4-B01",
+    "condition": "DISTRIBUTION-W4",
+    "workers": 4,
+    "pattern": "DISTRIBUTION",
+    "block": 1,
+    "phase": "principal"
+  },
+  {
+    "id": "PIPELINE-W4-B01",
+    "condition": "PIPELINE-W4",
+    "workers": 4,
+    "pattern": "PIPELINE",
+    "block": 1,
+    "phase": "principal"
+  },
+  {
+    "id": "PROCESS-W4-B01",
+    "condition": "PROCESS-W4",
+    "workers": 4,
+    "pattern": "PROCESS",
+    "block": 1,
+    "phase": "principal"
+  },
+  {
+    "id": "AGGREGATION-W4-B01",
+    "condition": "AGGREGATION-W4",
+    "workers": 4,
+    "pattern": "AGGREGATION",
+    "block": 1,
+    "phase": "principal"
+  },
+  {
+    "id": "PROCESS-W4-B02",
+    "condition": "PROCESS-W4",
+    "workers": 4,
+    "pattern": "PROCESS",
+    "block": 2,
+    "phase": "principal"
+  },
+  {
+    "id": "DISTRIBUTION-W4-B02",
+    "condition": "DISTRIBUTION-W4",
+    "workers": 4,
+    "pattern": "DISTRIBUTION",
+    "block": 2,
+    "phase": "principal"
+  },
+  {
+    "id": "REDISTRIBUTION-W4-B02",
+    "condition": "REDISTRIBUTION-W4",
+    "workers": 4,
+    "pattern": "REDISTRIBUTION",
+    "block": 2,
+    "phase": "principal"
+  },
+  {
+    "id": "PIPELINE-W4-B02",
+    "condition": "PIPELINE-W4",
+    "workers": 4,
+    "pattern": "PIPELINE",
+    "block": 2,
+    "phase": "principal"
+  },
+  {
+    "id": "AGGREGATION-W4-B02",
+    "condition": "AGGREGATION-W4",
+    "workers": 4,
+    "pattern": "AGGREGATION",
+    "block": 2,
+    "phase": "principal"
+  },
+  {
+    "id": "PROCESS-W2-B02",
+    "condition": "PROCESS-W2",
+    "workers": 2,
+    "pattern": "PROCESS",
+    "block": 2,
+    "phase": "principal"
+  },
+  {
+    "id": "DISTRIBUTION-W2-B02",
+    "condition": "DISTRIBUTION-W2",
+    "workers": 2,
+    "pattern": "DISTRIBUTION",
+    "block": 2,
+    "phase": "principal"
+  },
+  {
+    "id": "REDISTRIBUTION-W2-B02",
+    "condition": "REDISTRIBUTION-W2",
+    "workers": 2,
+    "pattern": "REDISTRIBUTION",
+    "block": 2,
+    "phase": "principal"
+  },
+  {
+    "id": "PIPELINE-W2-B02",
+    "condition": "PIPELINE-W2",
+    "workers": 2,
+    "pattern": "PIPELINE",
+    "block": 2,
+    "phase": "principal"
+  },
+  {
+    "id": "AGGREGATION-W2-B02",
+    "condition": "AGGREGATION-W2",
+    "workers": 2,
+    "pattern": "AGGREGATION",
+    "block": 2,
+    "phase": "principal"
+  }
+]

@@ -1,0 +1,252 @@
+x-pegasus:
+  apiLang: python
+  createdBy: root
+  createdOn: 11-22-26T14:39:19Z
+pegasus: 5.0.4
+name: dme-six-20261110-w2-sep-r01
+metadata:
+  condition_id: W2-SEP
+  pattern: distribution
+  replica: '1'
+  data_configuration: condorio
+  program_version: six_patterns_fma_v1
+  oracle_sha256: bf8bb9dbf116e1ea9bc54f8d784ff25ec7e472a8ef5d1e5bb6ebd34c0bf18ed6
+  scientific_file_sizes_bytes: '{"a": 209715200, "f1": 209715200, "f2": 209715200,
+    "f3": 209715200, "f4": 209715200, "g": 209715200}'
+siteCatalog:
+  sites:
+  - name: local
+    arch: x86_64
+    os.type: linux
+    directories:
+    - type: sharedScratch
+      path: /study/cases/W2-SEP/plans/W2-SEP/scratch
+      sharedFileSystem: false
+      fileServers:
+      - url: file:///study/cases/W2-SEP/plans/W2-SEP/scratch
+        operation: all
+    - type: localStorage
+      path: /study/cases/W2-SEP/plans/W2-SEP/outputs
+      sharedFileSystem: false
+      fileServers:
+      - url: file:///study/cases/W2-SEP/plans/W2-SEP/outputs
+        operation: all
+  - name: condorpool
+    arch: x86_64
+    os.type: linux
+    directories: []
+    profiles:
+      condor:
+        universe: vanilla
+        request_cpus: '1'
+        request_memory: 256
+      pegasus:
+        style: condor
+        auxillary.local: 'True'
+replicaCatalog:
+  replicas:
+  - lfn: a
+    pfns:
+    - site: local
+      pfn: /study/cases/W2-SEP/plans/W2-SEP/inputs/a
+  - lfn: fma_kernel
+    pfns:
+    - site: local
+      pfn: /study/cases/W2-SEP/plans/W2-SEP/bin/fma_kernel
+transformationCatalog:
+  transformations:
+  - name: campaign_task
+    sites:
+    - name: local
+      pfn: /study/cases/W2-SEP/plans/W2-SEP/bin/campaign_task.py
+      type: stageable
+      arch: x86_64
+      os.type: linux
+jobs:
+- type: job
+  name: campaign_task
+  id: P
+  arguments:
+  - --task-id
+  - P
+  - --flops
+  - '1766799020'
+  - --input
+  - a
+  - '209715200'
+  - --output
+  - g
+  - '209715200'
+  uses:
+  - lfn: a
+    type: input
+  - lfn: g
+    type: output
+    stageOut: false
+    registerReplica: false
+  profiles:
+    condor:
+      requirements: TARGET.Machine == "dme-worker1"
+      request_cpus: '1'
+      request_memory: 256
+  metadata:
+    task_id: P
+    condition_id: W2-SEP
+    replica: '1'
+    pattern: distribution
+    controlled_worker: W1
+    target_machine: dme-worker1
+    flops: '1766799020'
+    scientific_inputs: '["a"]'
+    scientific_outputs: '["g"]'
+- type: job
+  name: campaign_task
+  id: C1
+  arguments:
+  - --task-id
+  - C1
+  - --flops
+  - '1766799020'
+  - --input
+  - g
+  - '209715200'
+  - --output
+  - f1
+  - '209715200'
+  uses:
+  - lfn: f1
+    type: output
+    stageOut: true
+    registerReplica: false
+  - lfn: g
+    type: input
+  profiles:
+    condor:
+      requirements: TARGET.Machine == "dme-worker2"
+      request_cpus: '1'
+      request_memory: 256
+  metadata:
+    task_id: C1
+    condition_id: W2-SEP
+    replica: '1'
+    pattern: distribution
+    controlled_worker: W2
+    target_machine: dme-worker2
+    flops: '1766799020'
+    scientific_inputs: '["g"]'
+    scientific_outputs: '["f1"]'
+- type: job
+  name: campaign_task
+  id: C2
+  arguments:
+  - --task-id
+  - C2
+  - --flops
+  - '1766799020'
+  - --input
+  - g
+  - '209715200'
+  - --output
+  - f2
+  - '209715200'
+  uses:
+  - lfn: f2
+    type: output
+    stageOut: true
+    registerReplica: false
+  - lfn: g
+    type: input
+  profiles:
+    condor:
+      requirements: TARGET.Machine == "dme-worker2"
+      request_cpus: '1'
+      request_memory: 256
+  metadata:
+    task_id: C2
+    condition_id: W2-SEP
+    replica: '1'
+    pattern: distribution
+    controlled_worker: W2
+    target_machine: dme-worker2
+    flops: '1766799020'
+    scientific_inputs: '["g"]'
+    scientific_outputs: '["f2"]'
+- type: job
+  name: campaign_task
+  id: C3
+  arguments:
+  - --task-id
+  - C3
+  - --flops
+  - '1766799020'
+  - --input
+  - g
+  - '209715200'
+  - --output
+  - f3
+  - '209715200'
+  uses:
+  - lfn: f3
+    type: output
+    stageOut: true
+    registerReplica: false
+  - lfn: g
+    type: input
+  profiles:
+    condor:
+      requirements: TARGET.Machine == "dme-worker2"
+      request_cpus: '1'
+      request_memory: 256
+  metadata:
+    task_id: C3
+    condition_id: W2-SEP
+    replica: '1'
+    pattern: distribution
+    controlled_worker: W2
+    target_machine: dme-worker2
+    flops: '1766799020'
+    scientific_inputs: '["g"]'
+    scientific_outputs: '["f3"]'
+- type: job
+  name: campaign_task
+  id: C4
+  arguments:
+  - --task-id
+  - C4
+  - --flops
+  - '1766799020'
+  - --input
+  - g
+  - '209715200'
+  - --output
+  - f4
+  - '209715200'
+  uses:
+  - lfn: f4
+    type: output
+    stageOut: true
+    registerReplica: false
+  - lfn: g
+    type: input
+  profiles:
+    condor:
+      requirements: TARGET.Machine == "dme-worker2"
+      request_cpus: '1'
+      request_memory: 256
+  metadata:
+    task_id: C4
+    condition_id: W2-SEP
+    replica: '1'
+    pattern: distribution
+    controlled_worker: W2
+    target_machine: dme-worker2
+    flops: '1766799020'
+    scientific_inputs: '["g"]'
+    scientific_outputs: '["f4"]'
+jobDependencies:
+- id: P
+  children:
+  - C3
+  - C4
+  - C2
+  - C1

@@ -1,0 +1,275 @@
+{
+  "record_type": "planned_run_description_not_transfer_observation",
+  "generator_version": "fma_v1",
+  "program_version": "six_patterns_fma_v1",
+  "created_at_utc": "2026-11-22T17:16:24.669905+00:00",
+  "condition_id": "W2-AGR",
+  "replica": 1,
+  "pattern": "distribution",
+  "mode": "CondorIO",
+  "data_configuration": "condorio",
+  "root": "/mnt/intensivo_20261122/contraste/cases/contraste-B1-W2-AGR/plans/W2-AGR",
+  "active_pool": [
+    "W1",
+    "W2",
+    "W3",
+    "W4"
+  ],
+  "worker_map": {
+    "master": "dme-master",
+    "W1": "dme-worker1",
+    "W2": "dme-worker2",
+    "W3": "dme-worker3",
+    "W4": "dme-worker4"
+  },
+  "tasks": [
+    {
+      "task_id": "P",
+      "assigned_worker": "W1",
+      "input_files": [
+        "a"
+      ],
+      "output_files": [
+        "g"
+      ],
+      "flops": 1766799020
+    },
+    {
+      "task_id": "C1",
+      "assigned_worker": "W2",
+      "input_files": [
+        "g"
+      ],
+      "output_files": [
+        "f1"
+      ],
+      "flops": 1766799020
+    },
+    {
+      "task_id": "C2",
+      "assigned_worker": "W2",
+      "input_files": [
+        "g"
+      ],
+      "output_files": [
+        "f2"
+      ],
+      "flops": 1766799020
+    },
+    {
+      "task_id": "C3",
+      "assigned_worker": "W2",
+      "input_files": [
+        "g"
+      ],
+      "output_files": [
+        "f3"
+      ],
+      "flops": 1766799020
+    },
+    {
+      "task_id": "C4",
+      "assigned_worker": "W2",
+      "input_files": [
+        "g"
+      ],
+      "output_files": [
+        "f4"
+      ],
+      "flops": 1766799020
+    }
+  ],
+  "dag": {
+    "tasks": [
+      {
+        "task_id": "P",
+        "assigned_worker": "W1",
+        "input_files": [
+          "a"
+        ],
+        "output_files": [
+          "g"
+        ],
+        "flops": 1766799020
+      },
+      {
+        "task_id": "C1",
+        "assigned_worker": "W2",
+        "input_files": [
+          "g"
+        ],
+        "output_files": [
+          "f1"
+        ],
+        "flops": 1766799020
+      },
+      {
+        "task_id": "C2",
+        "assigned_worker": "W2",
+        "input_files": [
+          "g"
+        ],
+        "output_files": [
+          "f2"
+        ],
+        "flops": 1766799020
+      },
+      {
+        "task_id": "C3",
+        "assigned_worker": "W2",
+        "input_files": [
+          "g"
+        ],
+        "output_files": [
+          "f3"
+        ],
+        "flops": 1766799020
+      },
+      {
+        "task_id": "C4",
+        "assigned_worker": "W2",
+        "input_files": [
+          "g"
+        ],
+        "output_files": [
+          "f4"
+        ],
+        "flops": 1766799020
+      }
+    ],
+    "external_inputs": [
+      "a"
+    ],
+    "final_outputs": [
+      "f1",
+      "f2",
+      "f3",
+      "f4"
+    ],
+    "edges": [
+      {
+        "producer_task": "P",
+        "consumer_task": "C1",
+        "file_id": "g"
+      },
+      {
+        "producer_task": "P",
+        "consumer_task": "C2",
+        "file_id": "g"
+      },
+      {
+        "producer_task": "P",
+        "consumer_task": "C3",
+        "file_id": "g"
+      },
+      {
+        "producer_task": "P",
+        "consumer_task": "C4",
+        "file_id": "g"
+      }
+    ]
+  },
+  "files": [
+    {
+      "file_id": "a",
+      "role": "external",
+      "size_bytes": 209715200,
+      "producer_task": null,
+      "consumer_tasks": [
+        "P"
+      ]
+    },
+    {
+      "file_id": "g",
+      "role": "intermediate",
+      "size_bytes": 209715200,
+      "producer_task": "P",
+      "consumer_tasks": [
+        "C1",
+        "C2",
+        "C3",
+        "C4"
+      ]
+    },
+    {
+      "file_id": "f1",
+      "role": "final",
+      "size_bytes": 209715200,
+      "producer_task": "C1",
+      "consumer_tasks": []
+    },
+    {
+      "file_id": "f2",
+      "role": "final",
+      "size_bytes": 209715200,
+      "producer_task": "C2",
+      "consumer_tasks": []
+    },
+    {
+      "file_id": "f3",
+      "role": "final",
+      "size_bytes": 209715200,
+      "producer_task": "C3",
+      "consumer_tasks": []
+    },
+    {
+      "file_id": "f4",
+      "role": "final",
+      "size_bytes": 209715200,
+      "producer_task": "C4",
+      "consumer_tasks": []
+    }
+  ],
+  "file_sizes_bytes": {
+    "a": 209715200,
+    "g": 209715200,
+    "f1": 209715200,
+    "f2": 209715200,
+    "f3": 209715200,
+    "f4": 209715200
+  },
+  "planned_requirements": {
+    "P": "TARGET.Machine == \"dme-worker1\"",
+    "C1": "TARGET.Machine == \"dme-worker2\"",
+    "C2": "TARGET.Machine == \"dme-worker2\"",
+    "C3": "TARGET.Machine == \"dme-worker2\"",
+    "C4": "TARGET.Machine == \"dme-worker2\""
+  },
+  "planned_job_id_map": {
+    "P": "P",
+    "C1": "C1",
+    "C2": "C2",
+    "C3": "C3",
+    "C4": "C4"
+  },
+  "resources_per_compute_task": {
+    "request_cpus": 1,
+    "request_memory_MiB": 256
+  },
+  "execution_site": "condorpool",
+  "output_site": "local",
+  "selector": "RoundRobin",
+  "shared_file_system": false,
+  "workflow_uuid": null,
+  "actual_placements": null,
+  "oracle_path": "/mnt/intensivo_20261122/contraste/SPECS.json",
+  "oracle_sha256": "8c43358680e2f39dcec0ca255f30088e278096256f03beb1c554422c03d721a2",
+  "input_artifacts": [
+    {
+      "lfn": "a",
+      "bytes_written": 209715200,
+      "sha256": "ef177553e146d10b1a801a586a7e8b97025719607f004185c7407dc73e6fe7bc",
+      "path": "/mnt/intensivo_20261122/contraste/cases/contraste-B1-W2-AGR/plans/W2-AGR/inputs/a",
+      "evidence_role": "generated_initial_file_not_transfer_evidence"
+    }
+  ],
+  "pegasus_api_distribution_version": "5.1.2",
+  "code_sha256": {
+    "campaign_task.py": "f2bd2df2752ae6890df433e1428f713c29dc6ab3a995a3787a8ebca2d432353f",
+    "generate_workflow.py": "deb2bb9b359c34084bf0babf0421ac4df9c0326ad947f22adca59b5ad699df86",
+    "fma_kernel": "55f11663f236baa2f1fe9989f5d928547992fdab43b2ee228aa2df2baea3aa62"
+  },
+  "workflow_sha256": "aa1bfea148a2ee64838315d3f3807083bb5e8537b6b4e7b082450515dff2c83c",
+  "properties_sha256": "455382e651b2b8203111fd49a86097e183487fddeee259a5b22a2c3a954fc207",
+  "measurement_note": "No M_obs, DME, transfer success, or actual placement is inferred from these generated descriptions."
+}

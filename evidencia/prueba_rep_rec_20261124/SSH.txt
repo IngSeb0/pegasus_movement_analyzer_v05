@@ -1,0 +1,14 @@
+dme-master
+Name                               OpSys      Arch     State     Activity LoadAv Mem     ActvtyTime
+
+slot1@dme-worker1                  LINUX      X86_64   Unclaimed Idle      0.000   1410  0+00:00:00
+slot1@dme-worker2                  LINUX      X86_64   Unclaimed Idle      0.000   1410  0+00:00:00
+slot1@dme-worker3                  LINUX      X86_64   Unclaimed Idle      0.000   1410  0+00:00:00
+slot1@dme-worker4                  LINUX      X86_64   Unclaimed Idle      0.000   1410  0+00:00:00
+
+               Total Owner Claimed Unclaimed Matched Preempting  Drain Backfill BkIdle
+
+  X86_64/LINUX     4     0       0         4       0          0      0        0      0
+
+         Total     4     0       0         4       0          0      0        0      0
+5.1.2

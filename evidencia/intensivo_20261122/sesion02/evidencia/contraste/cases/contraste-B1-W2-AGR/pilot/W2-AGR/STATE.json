@@ -1,0 +1,9 @@
+{
+  "status": "ACCEPTED",
+  "uuid": "de1f6088-b001-4c9e-9fbb-d26441ef6530",
+  "run": "/mnt/intensivo_20261122/contraste/cases/contraste-B1-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r01/run0001",
+  "submitted": true,
+  "program_sha256": "f2bd2df2752ae6890df433e1428f713c29dc6ab3a995a3787a8ebca2d432353f",
+  "report_file": "/mnt/intensivo_20261122/contraste/cases/contraste-B1-W2-AGR/pilot/W2-AGR/reports/analysis.json",
+  "accepted": true
+}

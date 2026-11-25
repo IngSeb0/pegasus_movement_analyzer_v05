@@ -1,0 +1,10 @@
+{"name": ".//00/00/create_dir_dme-six-20261110-redistribution-w4-r01_0_local.out", "timestamp": "2026-11-22T15:31:06.142861", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/stage_in_remote_local_0_0.out", "timestamp": "2026-11-22T15:31:26.294326", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/stage_in_local_local_0_0.out", "timestamp": "2026-11-22T15:31:26.294352", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/campaign_task_T2.out", "timestamp": "2026-11-22T15:32:46.470672", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/campaign_task_T1.out", "timestamp": "2026-11-22T15:32:56.599649", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/campaign_task_T3.out", "timestamp": "2026-11-22T15:34:16.773329", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/campaign_task_T4.out", "timestamp": "2026-11-22T15:35:41.962447", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/campaign_task_T5.out", "timestamp": "2026-11-22T15:36:47.158885", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/campaign_task_T6.out", "timestamp": "2026-11-22T15:37:02.290683", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/stage_out_local_local_3_0.out", "timestamp": "2026-11-22T15:37:27.443018", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}

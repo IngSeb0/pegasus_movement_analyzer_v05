@@ -1,0 +1,37 @@
+Job campaign_task_P45 Change in level to 0
+execution sites size -> 1 condorpool-->0,
+Job campaign_task_TABLE Change in level to 1
+execution sites size -> 1 condorpool-->147,
+Job campaign_task_ADD Change in level to 2
+execution sites size -> 1 condorpool-->1,
+{
+  "user" : "dmeadmin",
+  "grid_dn" : null,
+  "submit_hostname" : "dme-master",
+  "root_wf_uuid" : "268f98fa-0bcc-4d06-bda4-5dfa2b9c5b17",
+  "wf_uuid" : "268f98fa-0bcc-4d06-bda4-5dfa2b9c5b17",
+  "dax" : "/mnt/montage_intensivo_20261122/ronda2/cases/MG-BASE-PILOTO/plans/MG-BASE/workflow_for_plan.yml",
+  "dax_label" : "dme-cloud-20261026-mg-base-r00",
+  "dax_index" : "0",
+  "dax_version" : "5.0.4",
+  "pegasus_wf_name" : "dme-cloud-20261026-mg-base-r00-0",
+  "timestamp" : "20261122T221910+0000",
+  "basedir" : "/mnt/montage_intensivo_20261122/ronda2/cases/MG-BASE-PILOTO/plans/MG-BASE/submit",
+  "submit_dir" : "/mnt/montage_intensivo_20261122/ronda2/cases/MG-BASE-PILOTO/plans/MG-BASE/submit/dmeadmin/pegasus/dme-cloud-20261026-mg-base-r00/run0001",
+  "planner" : "/usr/bin/pegasus-plan",
+  "planner_version" : "5.1.2",
+  "pegasus_build" : "20260203223935Z",
+  "planner_arguments" : "\"--conf /mnt/montage_intensivo_20261122/ronda2/cases/MG-BASE-PILOTO/plans/MG-BASE/pegasus.properties --dir /mnt/montage_intensivo_20261122/ronda2/cases/MG-BASE-PILOTO/plans/MG-BASE/submit --sites condorpool --output-sites local --cleanup none --json /mnt/montage_intensivo_20261122/ronda2/cases/MG-BASE-PILOTO/plans/MG-BASE/workflow_for_plan.yml \"",
+  "jsd" : "jobstate.log",
+  "rundir" : "run0001",
+  "bindir" : "/usr/bin",
+  "vogroup" : "pegasus",
+  "uses_pmc" : "false",
+  "properties" : "pegasus.6169704543597645545.properties",
+  "condor_log" : "dme-cloud-20261026-mg-base-r00-0.log",
+  "dag" : "dme-cloud-20261026-mg-base-r00-0.dag",
+  "type" : "dag",
+  "notify" : "dme-cloud-20261026-mg-base-r00-0.notify",
+  "message" : "\n\n\nI have concretized your abstract workflow. The workflow has been entered \ninto the workflow database with a state of \"planned\". The next step is \nto start or execute your workflow. The invocation required is\n\n\n",
+  "pegasus-run" : "pegasus-run --json  /mnt/montage_intensivo_20261122/ronda2/cases/MG-BASE-PILOTO/plans/MG-BASE/submit/dmeadmin/pegasus/dme-cloud-20261026-mg-base-r00/run0001"
+}

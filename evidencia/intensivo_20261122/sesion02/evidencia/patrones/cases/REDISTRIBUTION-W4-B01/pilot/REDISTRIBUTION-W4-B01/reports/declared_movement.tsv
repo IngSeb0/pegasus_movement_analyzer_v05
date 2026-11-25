@@ -1,0 +1,15 @@
+movement_id	job_id	attempt	file_id	direction	source	destination	size_bytes	confirmed	evidence_level
+3631.0:input:1	3631.0	attempt:1	lfn:A1	input	dme-master	dme-worker3	209715200	true	JOB_LEVEL_RECONCILED
+3631.0:output:2	3631.0	attempt:1	lfn:f1	output	dme-worker3	dme-master	209715200	true	JOB_LEVEL_RECONCILED
+3632.0:input:3	3632.0	attempt:1	lfn:A2	input	dme-master	dme-worker4	209715200	true	JOB_LEVEL_RECONCILED
+3632.0:output:4	3632.0	attempt:1	lfn:f2	output	dme-worker4	dme-master	209715200	true	JOB_LEVEL_RECONCILED
+3633.0:input:5	3633.0	attempt:1	lfn:f1	input	dme-master	dme-worker3	209715200	true	JOB_LEVEL_RECONCILED
+3633.0:input:6	3633.0	attempt:1	lfn:f2	input	dme-master	dme-worker3	209715200	true	JOB_LEVEL_RECONCILED
+3633.0:output:7	3633.0	attempt:1	lfn:g	output	dme-worker3	dme-master	209715200	true	JOB_LEVEL_RECONCILED
+3634.0:input:8	3634.0	attempt:1	lfn:g	input	dme-master	dme-worker3	209715200	true	JOB_LEVEL_RECONCILED
+3634.0:output:10	3634.0	attempt:1	lfn:p2	output	dme-worker3	dme-master	209715200	true	JOB_LEVEL_RECONCILED
+3634.0:output:9	3634.0	attempt:1	lfn:p1	output	dme-worker3	dme-master	209715200	true	JOB_LEVEL_RECONCILED
+3635.0:input:11	3635.0	attempt:1	lfn:p1	input	dme-master	dme-worker3	209715200	true	JOB_LEVEL_RECONCILED
+3635.0:output:12	3635.0	attempt:1	lfn:B1	output	dme-worker3	dme-master	209715200	true	JOB_LEVEL_RECONCILED
+3636.0:input:13	3636.0	attempt:1	lfn:p2	input	dme-master	dme-worker4	209715200	true	JOB_LEVEL_RECONCILED
+3636.0:output:14	3636.0	attempt:1	lfn:B2	output	dme-worker4	dme-master	209715200	true	JOB_LEVEL_RECONCILED

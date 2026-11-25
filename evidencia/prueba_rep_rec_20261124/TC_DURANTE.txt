@@ -1,0 +1,1 @@
+$ C:\Users\Acer\AppData\Local\Programs\Python\Python312\python.exe -B coordinador/red.py limitar 100

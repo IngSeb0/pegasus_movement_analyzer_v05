@@ -1,0 +1,14 @@
+[
+  {
+    "_id": "campaign_task",
+    "_type": "file",
+    "_attributes": {
+      "user": "dmeadmin",
+      "size": "5151",
+      "ctime": "2026-11-22T15:43:03.561654",
+      "checksum.type": "sha256",
+      "checksum.value": "f2bd2df2752ae6890df433e1428f713c29dc6ab3a995a3787a8ebca2d432353f",
+      "checksum.timing": "0.015"
+    }
+  }
+]

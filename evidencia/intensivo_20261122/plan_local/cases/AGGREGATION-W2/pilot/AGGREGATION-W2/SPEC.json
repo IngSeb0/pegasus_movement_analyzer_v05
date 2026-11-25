@@ -1,0 +1,239 @@
+{
+  "pattern": "Aggregation",
+  "mode": "CondorIO",
+  "groups": [
+    [
+      "T1"
+    ],
+    [
+      "T2"
+    ],
+    [
+      "T3"
+    ],
+    [
+      "T4"
+    ],
+    [
+      "T5"
+    ],
+    [
+      "T6"
+    ]
+  ],
+  "dag": {
+    "tasks": [
+      {
+        "task_id": "T1",
+        "assigned_worker": "W1",
+        "input_files": [
+          "A1"
+        ],
+        "output_files": [
+          "f1"
+        ],
+        "flops": 1766799020
+      },
+      {
+        "task_id": "T2",
+        "assigned_worker": "W1",
+        "input_files": [
+          "A2"
+        ],
+        "output_files": [
+          "f2"
+        ],
+        "flops": 1766799020
+      },
+      {
+        "task_id": "T3",
+        "assigned_worker": "W1",
+        "input_files": [
+          "A3"
+        ],
+        "output_files": [
+          "f3"
+        ],
+        "flops": 1766799020
+      },
+      {
+        "task_id": "T4",
+        "assigned_worker": "W1",
+        "input_files": [
+          "A4"
+        ],
+        "output_files": [
+          "f4"
+        ],
+        "flops": 1766799020
+      },
+      {
+        "task_id": "T5",
+        "assigned_worker": "W1",
+        "input_files": [
+          "A5"
+        ],
+        "output_files": [
+          "f5"
+        ],
+        "flops": 1766799020
+      },
+      {
+        "task_id": "T6",
+        "assigned_worker": "W1",
+        "input_files": [
+          "f1",
+          "f2",
+          "f3",
+          "f4",
+          "f5"
+        ],
+        "output_files": [
+          "B"
+        ],
+        "flops": 1766799020
+      }
+    ],
+    "edges": [
+      {
+        "producer_task": "T1",
+        "consumer_task": "T6",
+        "file_id": "f1"
+      },
+      {
+        "producer_task": "T2",
+        "consumer_task": "T6",
+        "file_id": "f2"
+      },
+      {
+        "producer_task": "T3",
+        "consumer_task": "T6",
+        "file_id": "f3"
+      },
+      {
+        "producer_task": "T4",
+        "consumer_task": "T6",
+        "file_id": "f4"
+      },
+      {
+        "producer_task": "T5",
+        "consumer_task": "T6",
+        "file_id": "f5"
+      }
+    ],
+    "external_inputs": [
+      "A1",
+      "A2",
+      "A3",
+      "A4",
+      "A5"
+    ],
+    "final_outputs": [
+      "B"
+    ]
+  },
+  "files": [
+    {
+      "file_id": "A1",
+      "size_bytes": 209715200,
+      "producer_task": null,
+      "consumer_tasks": [
+        "T1"
+      ],
+      "role": "input"
+    },
+    {
+      "file_id": "A2",
+      "size_bytes": 209715200,
+      "producer_task": null,
+      "consumer_tasks": [
+        "T2"
+      ],
+      "role": "input"
+    },
+    {
+      "file_id": "A3",
+      "size_bytes": 209715200,
+      "producer_task": null,
+      "consumer_tasks": [
+        "T3"
+      ],
+      "role": "input"
+    },
+    {
+      "file_id": "A4",
+      "size_bytes": 209715200,
+      "producer_task": null,
+      "consumer_tasks": [
+        "T4"
+      ],
+      "role": "input"
+    },
+    {
+      "file_id": "A5",
+      "size_bytes": 209715200,
+      "producer_task": null,
+      "consumer_tasks": [
+        "T5"
+      ],
+      "role": "input"
+    },
+    {
+      "file_id": "B",
+      "size_bytes": 209715200,
+      "producer_task": "T6",
+      "consumer_tasks": [],
+      "role": "final"
+    },
+    {
+      "file_id": "f1",
+      "size_bytes": 209715200,
+      "producer_task": "T1",
+      "consumer_tasks": [
+        "T6"
+      ],
+      "role": "intermediate"
+    },
+    {
+      "file_id": "f2",
+      "size_bytes": 209715200,
+      "producer_task": "T2",
+      "consumer_tasks": [
+        "T6"
+      ],
+      "role": "intermediate"
+    },
+    {
+      "file_id": "f3",
+      "size_bytes": 209715200,
+      "producer_task": "T3",
+      "consumer_tasks": [
+        "T6"
+      ],
+      "role": "intermediate"
+    },
+    {
+      "file_id": "f4",
+      "size_bytes": 209715200,
+      "producer_task": "T4",
+      "consumer_tasks": [
+        "T6"
+      ],
+      "role": "intermediate"
+    },
+    {
+      "file_id": "f5",
+      "size_bytes": 209715200,
+      "producer_task": "T5",
+      "consumer_tasks": [
+        "T6"
+      ],
+      "role": "intermediate"
+    }
+  ],
+  "condition_id": "AGGREGATION-W2",
+  "active_pool": [
+    "W1",
+    "W2"
+  ]
+}

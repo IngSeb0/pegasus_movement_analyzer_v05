@@ -1,0 +1,14 @@
+executable = /bin/true
+arguments = 
+transfer_executable = False
+requirements = TARGET.Machine == "dme-worker2"
+request_cpus = 1
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+transfer_input_files = /mnt/intensivo_20261122/patrones/banda-entrada/datos.bin
+transfer_output_files = ""
+initialdir = /mnt/intensivo_20261122/patrones/banda-entrada
+log = /mnt/intensivo_20261122/patrones/banda-entrada/eventos.log
+output = /mnt/intensivo_20261122/patrones/banda-entrada/stdout.txt
+error = /mnt/intensivo_20261122/patrones/banda-entrada/stderr.txt
+queue

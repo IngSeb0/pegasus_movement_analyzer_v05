@@ -1,0 +1,8 @@
+{
+  "status": "ACCEPTED",
+  "uuid": "6e716e30-9410-40c5-8a1e-9bf77f2805df",
+  "run": "/mnt/intensivo_20261122/patrones/cases/PROCESS-W2-B01/plans/PROCESS-W2-B01/submit/dmeadmin/pegasus/dme-six-20261110-process-w2-r01/run0001",
+  "submitted": true,
+  "report_file": "/mnt/intensivo_20261122/patrones/cases/PROCESS-W2-B01/pilot/PROCESS-W2-B01/reports/analysis.json",
+  "accepted": true
+}

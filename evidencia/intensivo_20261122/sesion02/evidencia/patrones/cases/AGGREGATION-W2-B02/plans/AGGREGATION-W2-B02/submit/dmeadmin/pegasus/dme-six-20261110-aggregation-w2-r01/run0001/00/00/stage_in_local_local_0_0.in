@@ -1,0 +1,61 @@
+[
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "A5",
+   "id": 1,
+   "generate_checksum": true,
+   "src_urls": [
+     { "site_label": "local", "url": "/mnt/intensivo_20261122/patrones/cases/AGGREGATION-W2-B02/plans/AGGREGATION-W2-B02/inputs/A5", "priority": 10 }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///mnt/intensivo_20261122/patrones/cases/AGGREGATION-W2-B02/plans/AGGREGATION-W2-B02/scratch/dmeadmin/pegasus/dme-six-20261110-aggregation-w2-r01/run0001/./A5" }
+   ] }
+ ,
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "A3",
+   "id": 2,
+   "generate_checksum": true,
+   "src_urls": [
+     { "site_label": "local", "url": "/mnt/intensivo_20261122/patrones/cases/AGGREGATION-W2-B02/plans/AGGREGATION-W2-B02/inputs/A3", "priority": 10 }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///mnt/intensivo_20261122/patrones/cases/AGGREGATION-W2-B02/plans/AGGREGATION-W2-B02/scratch/dmeadmin/pegasus/dme-six-20261110-aggregation-w2-r01/run0001/./A3" }
+   ] }
+ ,
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "A4",
+   "id": 3,
+   "generate_checksum": true,
+   "src_urls": [
+     { "site_label": "local", "url": "/mnt/intensivo_20261122/patrones/cases/AGGREGATION-W2-B02/plans/AGGREGATION-W2-B02/inputs/A4", "priority": 10 }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///mnt/intensivo_20261122/patrones/cases/AGGREGATION-W2-B02/plans/AGGREGATION-W2-B02/scratch/dmeadmin/pegasus/dme-six-20261110-aggregation-w2-r01/run0001/./A4" }
+   ] }
+ ,
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "A1",
+   "id": 4,
+   "generate_checksum": true,
+   "src_urls": [
+     { "site_label": "local", "url": "/mnt/intensivo_20261122/patrones/cases/AGGREGATION-W2-B02/plans/AGGREGATION-W2-B02/inputs/A1", "priority": 10 }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///mnt/intensivo_20261122/patrones/cases/AGGREGATION-W2-B02/plans/AGGREGATION-W2-B02/scratch/dmeadmin/pegasus/dme-six-20261110-aggregation-w2-r01/run0001/./A1" }
+   ] }
+ ,
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "A2",
+   "id": 5,
+   "generate_checksum": true,
+   "src_urls": [
+     { "site_label": "local", "url": "/mnt/intensivo_20261122/patrones/cases/AGGREGATION-W2-B02/plans/AGGREGATION-W2-B02/inputs/A2", "priority": 10 }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///mnt/intensivo_20261122/patrones/cases/AGGREGATION-W2-B02/plans/AGGREGATION-W2-B02/scratch/dmeadmin/pegasus/dme-six-20261110-aggregation-w2-r01/run0001/./A2" }
+   ] }
+]

@@ -1,0 +1,459 @@
+11/22/26 17:32:22 ******************************************************
+11/22/26 17:32:22 ** condor_scheduniv_exec.3836.0 (CONDOR_DAGMAN) STARTING UP
+11/22/26 17:32:22 ** /usr/bin/condor_dagman
+11/22/26 17:32:22 ** SubsystemInfo: name=DAGMAN type=DAGMAN(9) class=CLIENT(2)
+11/22/26 17:32:22 ** Configuration: subsystem:DAGMAN local:<NONE> class:CLIENT
+11/22/26 17:32:22 ** $CondorVersion: 26.0.1 2026-08-25 BuildID: 945720 PackageID: 26.0.1-0.945720+ubu24 GitSHA: 54c9c049 DAILY $
+11/22/26 17:32:22 ** $CondorPlatform: X86_64-Ubuntu_24.04 $
+11/22/26 17:32:22 ** PID = 67470 RealUID = 1000
+11/22/26 17:32:22 ** Log last touched time unavailable (No such file or directory)
+11/22/26 17:32:22 ******************************************************
+11/22/26 17:32:22 Using config source: /etc/condor/condor_config
+11/22/26 17:32:22 Using local config sources: 
+11/22/26 17:32:22    /etc/condor/config.d/00-security
+11/22/26 17:32:22    /etc/condor/config.d/10-stash-plugin.conf
+11/22/26 17:32:22    /etc/condor/config.d/99-dme-cloud.config
+11/22/26 17:32:22    /etc/condor/config.d/zz-dme-pilot-scheduling.config
+11/22/26 17:32:22    /etc/condor/condor_config.local
+11/22/26 17:32:22 config Macros = 81, Sorted = 81, StringBytes = 2590, TablesBytes = 2988
+11/22/26 17:32:22 CLASSAD_CACHING is ENABLED
+11/22/26 17:32:22 Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+11/22/26 17:32:22 Daemoncore: Listening at <0.0.0.0:15235> on TCP (ReliSock) and UDP (SafeSock).
+11/22/26 17:32:22 DaemonCore: command socket at <10.42.0.4:15235?addrs=10.42.0.4-15235&alias=dme-master>
+11/22/26 17:32:22 DaemonCore: private command socket at <10.42.0.4:15235?addrs=10.42.0.4-15235&alias=dme-master>
+11/22/26 17:32:22 Administrator set throttle limits enabled
+11/22/26 17:32:22 DAGMAN_USE_OLD_FILE_PARSER setting: False
+11/22/26 17:32:22 DAGMAN_USE_STRICT setting: 1
+11/22/26 17:32:22 DAGMAN_VERBOSITY setting: 3
+11/22/26 17:32:22 DAGMAN_DEBUG_CACHE_SIZE setting: 5242880
+11/22/26 17:32:22 DAGMAN_DEBUG_CACHE_ENABLE setting: False
+11/22/26 17:32:22 DAGMAN_SUBMIT_DELAY setting: 0
+11/22/26 17:32:22 DAGMAN_MAX_SUBMIT_ATTEMPTS setting: 6
+11/22/26 17:32:22 DAGMAN_STARTUP_CYCLE_DETECT setting: False
+11/22/26 17:32:22 DAGMAN_USE_JOIN_NODES setting: True
+11/22/26 17:32:22 DAGMAN_REPORT_GRAPH_METRICS setting: False
+11/22/26 17:32:22 DAGMAN_MAX_SUBMITS_PER_INTERVAL setting: 100
+11/22/26 17:32:22 DAGMAN_AGGRESSIVE_SUBMIT setting: False
+11/22/26 17:32:22 DAGMAN_USER_LOG_SCAN_INTERVAL setting: 5
+11/22/26 17:32:22 DAGMAN_QUEUE_UPDATE_INTERVAL setting: 300.000000
+11/22/26 17:32:22 DAGMAN_DEFAULT_PRIORITY setting: 0
+11/22/26 17:32:22 DAGMAN_SUPPRESS_NOTIFICATION setting: False
+11/22/26 17:32:22 allow_events (DAGMAN_ALLOW_EVENTS) setting: 114
+11/22/26 17:32:22 DAGMAN_RETRY_SUBMIT_FIRST setting: True
+11/22/26 17:32:22 DAGMAN_RETRY_NODE_FIRST setting: False
+11/22/26 17:32:22 DAGMAN_MAX_JOBS_IDLE setting: 1000
+11/22/26 17:32:22 DAGMAN_MAX_JOBS_SUBMITTED setting: 0
+11/22/26 17:32:22 DAGMAN_MAX_PRE_SCRIPTS setting: 20
+11/22/26 17:32:22 DAGMAN_MAX_POST_SCRIPTS setting: 20
+11/22/26 17:32:22 DAGMAN_MAX_HOLD_SCRIPTS setting: 20
+11/22/26 17:32:22 DAGMAN_MUNGE_NODE_NAMES setting: True
+11/22/26 17:32:22 DAGMAN_ALLOW_ANY_NODE_NAME_CHARACTERS setting: False
+11/22/26 17:32:22 DAGMAN_PROHIBIT_MULTI_JOBS setting: False
+11/22/26 17:32:22 DAGMAN_SUBMIT_DEPTH_FIRST setting: False
+11/22/26 17:32:22 DAGMAN_ALWAYS_RUN_POST setting: False
+11/22/26 17:32:22 DAGMAN_CONDOR_SUBMIT_EXE setting: /usr/bin/condor_submit
+11/22/26 17:32:22 DAGMAN_CONDOR_RM_EXE setting: /usr/bin/condor_rm
+11/22/26 17:32:22 DAGMAN_USE_DIRECT_SUBMIT setting: True
+11/22/26 17:32:22 DAGMAN_PRODUCE_JOB_CREDENTIALS setting: True
+11/22/26 17:32:22 DAGMAN_DEFAULT_APPEND_VARS setting: False
+11/22/26 17:32:22 DAGMAN_INHERIT_ATTRS_PREFIX setting: 
+11/22/26 17:32:22 DAGMAN_INHERIT_ATTRS setting: 
+11/22/26 17:32:22 DAGMAN_ABORT_DUPLICATES setting: True
+11/22/26 17:32:22 DAGMAN_ABORT_ON_SCARY_SUBMIT setting: True
+11/22/26 17:32:22 DAGMAN_REMOVE_JOB_LIST_ON_FAILURE setting: True
+11/22/26 17:32:22 DAGMAN_PENDING_REPORT_INTERVAL setting: 600
+11/22/26 17:32:22 DAGMAN_CHECK_QUEUE_INTERVAL setting: 28800
+11/22/26 17:32:22 DAGMAN_PRINT_JOB_TABLE_INTERVAL setting: 900
+11/22/26 17:32:22 DAGMAN_AUTO_RESCUE setting: True
+11/22/26 17:32:22 DAGMAN_MAX_RESCUE_NUM setting: 100
+11/22/26 17:32:22 DAGMAN_RESET_RETRIES_UPON_RESCUE setting: True
+11/22/26 17:32:22 DAGMAN_METRICS_FILE_VERSION setting: 2
+11/22/26 17:32:22 DAGMAN_DEFAULT_NODE_LOG setting: @(DAG_DIR)/@(DAG_FILE).nodes.log
+11/22/26 17:32:22 DAGMAN_LOG_ON_NFS_IS_ERROR setting: False
+11/22/26 17:32:22 DAGMAN_GENERATE_SUBDAG_SUBMITS setting: True
+11/22/26 17:32:22 DAGMAN_MAX_JOB_HOLDS setting: 100
+11/22/26 17:32:22 DAGMAN_NODE_JOB_FAILURE_TOLERANCE setting: 0
+11/22/26 17:32:22 DAGMAN_HOLD_CLAIM_TIME setting: 20
+11/22/26 17:32:22 DAGMAN_SUPPRESS_JOB_LOGS setting: False
+11/22/26 17:32:22 DAGMAN_REMOVE_NODE_JOBS setting: True
+11/22/26 17:32:22 DAGMAN_PUT_FAILED_JOBS_ON_HOLD setting: False
+11/22/26 17:32:22 DAGMAN_REMOVE_JOBS_AFTER_LIMIT_CHANGE setting: False
+11/22/26 17:32:22 DAGMAN will adjust edges after parsing
+11/22/26 17:32:22 Can't open directory "/etc/condor/passwords.d" as PRIV_ROOT, errno: 13 (Permission denied)
+11/22/26 17:32:22 Can't open directory "/etc/condor/passwords.d" as PRIV_ROOT, errno: 13 (Permission denied)
+11/22/26 17:32:22 argv[0] == "condor_scheduniv_exec.3836.0"
+11/22/26 17:32:22 argv[1] == "-Lockfile"
+11/22/26 17:32:22 argv[2] == "dme-six-20261110-rep-r02-0.dag.lock"
+11/22/26 17:32:22 argv[3] == "-Dag"
+11/22/26 17:32:22 argv[4] == "dme-six-20261110-rep-r02-0.dag"
+11/22/26 17:32:22 argv[5] == "-MaxPost"
+11/22/26 17:32:22 argv[6] == "20"
+11/22/26 17:32:22 argv[7] == "-CsdVersion"
+11/22/26 17:32:22 argv[8] == "$CondorVersion: 26.0.1 2026-08-25 BuildID: 945720 PackageID: 26.0.1-0.945720+ubu24 GitSHA: 54c9c049 DAILY $"
+11/22/26 17:32:22 argv[9] == "-dagman"
+11/22/26 17:32:22 argv[10] == "/usr/bin/condor_dagman"
+11/22/26 17:32:22 argv[11] == "-AutoRescue"
+11/22/26 17:32:22 argv[12] == "1"
+11/22/26 17:32:22 Workflow batch-id: <3836.0>
+11/22/26 17:32:22 Workflow batch-name: <dme-six-20261110-rep-r02-0.dag+3836>
+11/22/26 17:32:22 Workflow accounting_group: <>
+11/22/26 17:32:22 Workflow accounting_group_user: <>
+11/22/26 17:32:22 Warning: failed to get attribute DAGNodeName
+11/22/26 17:32:22 Default node log file is: </mnt/intensivo_20261122/contraste/cases/contraste-B2-REP/plans/REP/submit/dmeadmin/pegasus/dme-six-20261110-rep-r02/run0001/./dme-six-20261110-rep-r02-0.dag.nodes.log>
+11/22/26 17:32:22 Setting DAGMan throttles:
+11/22/26 17:32:22 	Maximum Idle Jobs-------------: 1000
+11/22/26 17:32:22 	Maximum Pre Scripts-----------: 20
+11/22/26 17:32:22 	Maximum Hold Scripts----------: 20
+11/22/26 17:32:22 	Maximum Post Scripts----------: 20
+11/22/26 17:32:22 	Maximum Submitted Nodes-------: 0
+11/22/26 17:32:22 	Maximum Submits Per Interval--: 100
+11/22/26 17:32:22 DAG Lockfile will be written to dme-six-20261110-rep-r02-0.dag.lock
+11/22/26 17:32:22 DAG Input file is dme-six-20261110-rep-r02-0.dag
+11/22/26 17:32:22 Parsing 1 dagfiles
+11/22/26 17:32:22 Parsing dme-six-20261110-rep-r02-0.dag ...
+11/22/26 17:32:22 Adjusting edges
+11/22/26 17:32:22 Warning: category cleanup has no assigned nodes, so the throttle setting (4) will have no effect
+11/22/26 17:32:22 Warning: category registration has no assigned nodes, so the throttle setting (1) will have no effect
+11/22/26 17:32:22 Dag contains 9 total nodes
+11/22/26 17:32:22 Bootstrapping...
+11/22/26 17:32:22 Number of pre-completed nodes: 0
+11/22/26 17:32:22 MultiLogFiles: truncating log file /mnt/intensivo_20261122/contraste/cases/contraste-B2-REP/plans/REP/submit/dmeadmin/pegasus/dme-six-20261110-rep-r02/run0001/./dme-six-20261110-rep-r02-0.dag.nodes.log
+11/22/26 17:32:22 DAG status: 0 (DAG_STATUS_OK)
+11/22/26 17:32:22 Of 9 nodes total:
+11/22/26 17:32:22  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+11/22/26 17:32:22   ===     ===      ===     ===     ===        ===      ===      ===
+11/22/26 17:32:22     0       0        0       0       1          8        0        0
+11/22/26 17:32:22 0 job proc(s) currently held
+11/22/26 17:32:22 DAGMan Runtime Statistics: [EventCycleTimeSum=0.000; SleepCycleTimeSum=0.000; SubmitCycleTimeSum=0.000; EventCycleTimeCount=0.000; SleepCycleTimeCount=0.000; SubmitCycleTimeCount=0.000; LogProcessCycleTimeSum=0.000; LogProcessCycleTimeCount=0.000; ]
+11/22/26 17:32:22 Registering condor_event_timer...
+11/22/26 17:32:23 Submitting HTCondor Node create_dir_dme-six-20261110-rep-r02_0_local job(s)...
+11/22/26 17:32:23 Submitting node create_dir_dme-six-20261110-rep-r02_0_local from file 00/00/create_dir_dme-six-20261110-rep-r02_0_local.sub using direct job submission
+11/22/26 17:32:23 Submit warning: Submit:0:the line 'wf_submit_dir = /mnt/intensivo_20261122/contraste/cases/contraste-B2-REP/plans/REP/submit/dmeadmin/pegasus/dme-six-20261110-rep-r02/run0001' was unused by DAGMAN. Is it a typo?
+11/22/26 17:32:23 	assigned HTCondor ID (3837.0.0)
+11/22/26 17:32:23 Just submitted 1 job this cycle...
+11/22/26 17:32:23 DAG status: 0 (DAG_STATUS_OK)
+11/22/26 17:32:23 Of 9 nodes total:
+11/22/26 17:32:23  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+11/22/26 17:32:23   ===     ===      ===     ===     ===        ===      ===      ===
+11/22/26 17:32:23     0       0        1       0       0          8        0        0
+11/22/26 17:32:23 0 job proc(s) currently held
+11/22/26 17:32:23 DAGMan Runtime Statistics: [EventCycleTimeSum=0.000; SleepCycleTimeSum=0.000; SubmitCycleTimeAvg=0.009; SubmitCycleTimeMax=0.009; SubmitCycleTimeMin=0.009; SubmitCycleTimeStd=0.009; SubmitCycleTimeSum=0.009; EventCycleTimeCount=0.000; SleepCycleTimeCount=0.000; SubmitCycleTimeCount=1.000; LogProcessCycleTimeSum=0.000; LogProcessCycleTimeCount=0.000; ]
+11/22/26 17:32:28 Currently monitoring 1 HTCondor log file(s)
+11/22/26 17:32:28 Reassigning the id of job create_dir_dme-six-20261110-rep-r02_0_local from (3837.0.0) to (3837.0.0)
+11/22/26 17:32:28 Event: ULOG_SUBMIT for HTCondor Node create_dir_dme-six-20261110-rep-r02_0_local (3837.0.0) {11/22/26 17:32:23}
+11/22/26 17:32:28 Number of idle job procs: 1
+11/22/26 17:32:28 Event: ULOG_EXECUTE for HTCondor Node create_dir_dme-six-20261110-rep-r02_0_local (3837.0.0) {11/22/26 17:32:27}
+11/22/26 17:32:28 Number of idle job procs: 0
+11/22/26 17:32:33 Currently monitoring 1 HTCondor log file(s)
+11/22/26 17:32:33 Event: ULOG_JOB_TERMINATED for HTCondor Node create_dir_dme-six-20261110-rep-r02_0_local (3837.0.0) {11/22/26 17:32:29}
+11/22/26 17:32:33 Number of idle job procs: 0
+11/22/26 17:32:33 Node create_dir_dme-six-20261110-rep-r02_0_local job proc (3837.0.0) completed successfully.
+11/22/26 17:32:33 Node create_dir_dme-six-20261110-rep-r02_0_local job(s) have exited the queue
+11/22/26 17:32:33 Running POST script of Node create_dir_dme-six-20261110-rep-r02_0_local...
+11/22/26 17:32:33 DAG status: 0 (DAG_STATUS_OK)
+11/22/26 17:32:33 Of 9 nodes total:
+11/22/26 17:32:33  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+11/22/26 17:32:33   ===     ===      ===     ===     ===        ===      ===      ===
+11/22/26 17:32:33     0       0        0       1       0          8        0        0
+11/22/26 17:32:33 0 job proc(s) currently held
+11/22/26 17:32:33 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.007; EventCycleTimeMax=0.009; EventCycleTimeMin=0.006; EventCycleTimeStd=0.002; EventCycleTimeSum=0.015; SleepCycleTimeAvg=5.005; SleepCycleTimeMax=5.005; SleepCycleTimeMin=5.005; SleepCycleTimeStd=0.000; SleepCycleTimeSum=10.010; SubmitCycleTimeAvg=0.003; SubmitCycleTimeMax=0.009; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.005; SubmitCycleTimeSum=0.009; EventCycleTimeCount=2.000; SleepCycleTimeCount=2.000; SubmitCycleTimeCount=3.000; LogProcessCycleTimeAvg=0.001; LogProcessCycleTimeMax=0.002; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.001; LogProcessCycleTimeSum=0.002; LogProcessCycleTimeCount=2.000; ]
+11/22/26 17:32:33 Initializing user log writer for /mnt/intensivo_20261122/contraste/cases/contraste-B2-REP/plans/REP/submit/dmeadmin/pegasus/dme-six-20261110-rep-r02/run0001/./dme-six-20261110-rep-r02-0.dag.nodes.log, (3837.0.0)
+11/22/26 17:32:38 Currently monitoring 1 HTCondor log file(s)
+11/22/26 17:32:38 Event: ULOG_POST_SCRIPT_TERMINATED for HTCondor Node create_dir_dme-six-20261110-rep-r02_0_local (3837.0.0) {11/22/26 17:32:33}
+11/22/26 17:32:38 POST Script of node create_dir_dme-six-20261110-rep-r02_0_local completed successfully.
+11/22/26 17:32:38 DAG status: 0 (DAG_STATUS_OK)
+11/22/26 17:32:38 Of 9 nodes total:
+11/22/26 17:32:38  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+11/22/26 17:32:38   ===     ===      ===     ===     ===        ===      ===      ===
+11/22/26 17:32:38     1       0        0       0       2          6        0        0
+11/22/26 17:32:38 0 job proc(s) currently held
+11/22/26 17:32:38 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.005; EventCycleTimeMax=0.009; EventCycleTimeMin=0.002; EventCycleTimeStd=0.003; EventCycleTimeSum=0.016; SleepCycleTimeAvg=5.042; SleepCycleTimeMax=5.115; SleepCycleTimeMin=5.005; SleepCycleTimeStd=0.064; SleepCycleTimeSum=15.126; SubmitCycleTimeAvg=0.002; SubmitCycleTimeMax=0.009; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.004; SubmitCycleTimeSum=0.009; EventCycleTimeCount=3.000; SleepCycleTimeCount=3.000; SubmitCycleTimeCount=4.000; LogProcessCycleTimeAvg=0.001; LogProcessCycleTimeMax=0.002; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.001; LogProcessCycleTimeSum=0.002; LogProcessCycleTimeCount=3.000; ]
+11/22/26 17:32:43 Submitting HTCondor Node stage_in_remote_local_0_0 job(s)...
+11/22/26 17:32:43 Submitting node stage_in_remote_local_0_0 from file 00/00/stage_in_remote_local_0_0.sub using direct job submission
+11/22/26 17:32:43 Submit warning: Submit:0:the line 'wf_submit_dir = /mnt/intensivo_20261122/contraste/cases/contraste-B2-REP/plans/REP/submit/dmeadmin/pegasus/dme-six-20261110-rep-r02/run0001' was unused by DAGMAN. Is it a typo?
+11/22/26 17:32:43 	assigned HTCondor ID (3838.0.0)
+11/22/26 17:32:43 Submitting HTCondor Node stage_in_local_local_0_0 job(s)...
+11/22/26 17:32:43 Submitting node stage_in_local_local_0_0 from file 00/00/stage_in_local_local_0_0.sub using direct job submission
+11/22/26 17:32:43 Submit warning: Submit:0:the line 'wf_submit_dir = /mnt/intensivo_20261122/contraste/cases/contraste-B2-REP/plans/REP/submit/dmeadmin/pegasus/dme-six-20261110-rep-r02/run0001' was unused by DAGMAN. Is it a typo?
+11/22/26 17:32:43 	assigned HTCondor ID (3839.0.0)
+11/22/26 17:32:43 Just submitted 2 jobs this cycle...
+11/22/26 17:32:43 DAG status: 0 (DAG_STATUS_OK)
+11/22/26 17:32:43 Of 9 nodes total:
+11/22/26 17:32:43  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+11/22/26 17:32:43   ===     ===      ===     ===     ===        ===      ===      ===
+11/22/26 17:32:43     1       0        2       0       0          6        0        0
+11/22/26 17:32:43 0 job proc(s) currently held
+11/22/26 17:32:43 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.004; EventCycleTimeMax=0.009; EventCycleTimeMin=0.000; EventCycleTimeStd=0.004; EventCycleTimeSum=0.016; SleepCycleTimeAvg=5.033; SleepCycleTimeMax=5.115; SleepCycleTimeMin=5.005; SleepCycleTimeStd=0.055; SleepCycleTimeSum=20.131; SubmitCycleTimeAvg=0.005; SubmitCycleTimeMax=0.014; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.007; SubmitCycleTimeSum=0.023; EventCycleTimeCount=4.000; SleepCycleTimeCount=4.000; SubmitCycleTimeCount=5.000; LogProcessCycleTimeAvg=0.001; LogProcessCycleTimeMax=0.002; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.001; LogProcessCycleTimeSum=0.002; LogProcessCycleTimeCount=3.000; ]
+11/22/26 17:32:48 Currently monitoring 1 HTCondor log file(s)
+11/22/26 17:32:48 Reassigning the id of job stage_in_remote_local_0_0 from (3838.0.0) to (3838.0.0)
+11/22/26 17:32:48 Event: ULOG_SUBMIT for HTCondor Node stage_in_remote_local_0_0 (3838.0.0) {11/22/26 17:32:43}
+11/22/26 17:32:48 Number of idle job procs: 1
+11/22/26 17:32:48 Reassigning the id of job stage_in_local_local_0_0 from (3839.0.0) to (3839.0.0)
+11/22/26 17:32:48 Event: ULOG_SUBMIT for HTCondor Node stage_in_local_local_0_0 (3839.0.0) {11/22/26 17:32:43}
+11/22/26 17:32:48 Number of idle job procs: 2
+11/22/26 17:32:48 Event: ULOG_EXECUTE for HTCondor Node stage_in_remote_local_0_0 (3838.0.0) {11/22/26 17:32:44}
+11/22/26 17:32:48 Number of idle job procs: 1
+11/22/26 17:32:48 Event: ULOG_EXECUTE for HTCondor Node stage_in_local_local_0_0 (3839.0.0) {11/22/26 17:32:44}
+11/22/26 17:32:48 Number of idle job procs: 0
+11/22/26 17:32:48 Event: ULOG_JOB_TERMINATED for HTCondor Node stage_in_remote_local_0_0 (3838.0.0) {11/22/26 17:32:46}
+11/22/26 17:32:48 Number of idle job procs: 0
+11/22/26 17:32:48 Node stage_in_remote_local_0_0 job proc (3838.0.0) completed successfully.
+11/22/26 17:32:48 Node stage_in_remote_local_0_0 job(s) have exited the queue
+11/22/26 17:32:48 Running POST script of Node stage_in_remote_local_0_0...
+11/22/26 17:32:48 Event: ULOG_JOB_TERMINATED for HTCondor Node stage_in_local_local_0_0 (3839.0.0) {11/22/26 17:32:48}
+11/22/26 17:32:48 Number of idle job procs: 0
+11/22/26 17:32:48 Node stage_in_local_local_0_0 job proc (3839.0.0) completed successfully.
+11/22/26 17:32:48 Node stage_in_local_local_0_0 job(s) have exited the queue
+11/22/26 17:32:48 Running POST script of Node stage_in_local_local_0_0...
+11/22/26 17:32:48 DAG status: 0 (DAG_STATUS_OK)
+11/22/26 17:32:48 Of 9 nodes total:
+11/22/26 17:32:48  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+11/22/26 17:32:48   ===     ===      ===     ===     ===        ===      ===      ===
+11/22/26 17:32:48     1       0        0       2       0          6        0        0
+11/22/26 17:32:48 0 job proc(s) currently held
+11/22/26 17:32:48 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.006; EventCycleTimeMax=0.014; EventCycleTimeMin=0.000; EventCycleTimeStd=0.006; EventCycleTimeSum=0.031; SleepCycleTimeAvg=5.027; SleepCycleTimeMax=5.115; SleepCycleTimeMin=5.003; SleepCycleTimeStd=0.050; SleepCycleTimeSum=25.133; SubmitCycleTimeAvg=0.004; SubmitCycleTimeMax=0.014; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.006; SubmitCycleTimeSum=0.023; EventCycleTimeCount=5.000; SleepCycleTimeCount=5.000; SubmitCycleTimeCount=6.000; LogProcessCycleTimeAvg=0.001; LogProcessCycleTimeMax=0.003; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.001; LogProcessCycleTimeSum=0.005; LogProcessCycleTimeCount=4.000; ]
+11/22/26 17:32:48 Initializing user log writer for /mnt/intensivo_20261122/contraste/cases/contraste-B2-REP/plans/REP/submit/dmeadmin/pegasus/dme-six-20261110-rep-r02/run0001/./dme-six-20261110-rep-r02-0.dag.nodes.log, (3839.0.0)
+11/22/26 17:32:48 Initializing user log writer for /mnt/intensivo_20261122/contraste/cases/contraste-B2-REP/plans/REP/submit/dmeadmin/pegasus/dme-six-20261110-rep-r02/run0001/./dme-six-20261110-rep-r02-0.dag.nodes.log, (3838.0.0)
+11/22/26 17:32:53 Currently monitoring 1 HTCondor log file(s)
+11/22/26 17:32:53 Event: ULOG_POST_SCRIPT_TERMINATED for HTCondor Node stage_in_local_local_0_0 (3839.0.0) {11/22/26 17:32:48}
+11/22/26 17:32:53 POST Script of node stage_in_local_local_0_0 completed successfully.
+11/22/26 17:32:53 Event: ULOG_POST_SCRIPT_TERMINATED for HTCondor Node stage_in_remote_local_0_0 (3838.0.0) {11/22/26 17:32:48}
+11/22/26 17:32:53 POST Script of node stage_in_remote_local_0_0 completed successfully.
+11/22/26 17:32:53 DAG status: 0 (DAG_STATUS_OK)
+11/22/26 17:32:53 Of 9 nodes total:
+11/22/26 17:32:53  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+11/22/26 17:32:53   ===     ===      ===     ===     ===        ===      ===      ===
+11/22/26 17:32:53     3       0        0       0       1          5        0        0
+11/22/26 17:32:53 0 job proc(s) currently held
+11/22/26 17:32:53 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.006; EventCycleTimeMax=0.014; EventCycleTimeMin=0.000; EventCycleTimeStd=0.005; EventCycleTimeSum=0.034; SleepCycleTimeAvg=5.041; SleepCycleTimeMax=5.115; SleepCycleTimeMin=5.003; SleepCycleTimeStd=0.057; SleepCycleTimeSum=30.247; SubmitCycleTimeAvg=0.003; SubmitCycleTimeMax=0.014; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.006; SubmitCycleTimeSum=0.023; EventCycleTimeCount=6.000; SleepCycleTimeCount=6.000; SubmitCycleTimeCount=7.000; LogProcessCycleTimeAvg=0.001; LogProcessCycleTimeMax=0.003; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.001; LogProcessCycleTimeSum=0.005; LogProcessCycleTimeCount=5.000; ]
+11/22/26 17:32:58 Submitting HTCondor Node campaign_task_P job(s)...
+11/22/26 17:32:58 Submitting node campaign_task_P from file 00/00/campaign_task_P.sub using direct job submission
+11/22/26 17:32:58 	assigned HTCondor ID (3840.0.0)
+11/22/26 17:32:58 Just submitted 1 job this cycle...
+11/22/26 17:32:58 DAG status: 0 (DAG_STATUS_OK)
+11/22/26 17:32:58 Of 9 nodes total:
+11/22/26 17:32:58  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+11/22/26 17:32:58   ===     ===      ===     ===     ===        ===      ===      ===
+11/22/26 17:32:58     3       0        1       0       0          5        0        0
+11/22/26 17:32:58 0 job proc(s) currently held
+11/22/26 17:32:58 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.005; EventCycleTimeMax=0.014; EventCycleTimeMin=0.000; EventCycleTimeStd=0.005; EventCycleTimeSum=0.034; SleepCycleTimeAvg=5.036; SleepCycleTimeMax=5.115; SleepCycleTimeMin=5.003; SleepCycleTimeStd=0.054; SleepCycleTimeSum=35.252; SubmitCycleTimeAvg=0.004; SubmitCycleTimeMax=0.014; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.006; SubmitCycleTimeSum=0.031; EventCycleTimeCount=7.000; SleepCycleTimeCount=7.000; SubmitCycleTimeCount=8.000; LogProcessCycleTimeAvg=0.001; LogProcessCycleTimeMax=0.003; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.001; LogProcessCycleTimeSum=0.005; LogProcessCycleTimeCount=5.000; ]
+11/22/26 17:33:03 Currently monitoring 1 HTCondor log file(s)
+11/22/26 17:33:03 Reassigning the id of job campaign_task_P from (3840.0.0) to (3840.0.0)
+11/22/26 17:33:03 Event: ULOG_SUBMIT for HTCondor Node campaign_task_P (3840.0.0) {11/22/26 17:32:58}
+11/22/26 17:33:03 Number of idle job procs: 1
+11/22/26 17:33:38 Currently monitoring 1 HTCondor log file(s)
+11/22/26 17:33:38 Event: ULOG_EXECUTE for HTCondor Node campaign_task_P (3840.0.0) {11/22/26 17:33:36}
+11/22/26 17:33:38 Number of idle job procs: 0
+11/22/26 17:34:03 Currently monitoring 1 HTCondor log file(s)
+11/22/26 17:34:03 Event: ULOG_JOB_TERMINATED for HTCondor Node campaign_task_P (3840.0.0) {11/22/26 17:34:00}
+11/22/26 17:34:03 Number of idle job procs: 0
+11/22/26 17:34:03 Node campaign_task_P job proc (3840.0.0) completed successfully.
+11/22/26 17:34:03 Node campaign_task_P job(s) have exited the queue
+11/22/26 17:34:03 Running POST script of Node campaign_task_P...
+11/22/26 17:34:03 DAG status: 0 (DAG_STATUS_OK)
+11/22/26 17:34:03 Of 9 nodes total:
+11/22/26 17:34:03  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+11/22/26 17:34:03   ===     ===      ===     ===     ===        ===      ===      ===
+11/22/26 17:34:03     3       0        0       1       0          5        0        0
+11/22/26 17:34:03 0 job proc(s) currently held
+11/22/26 17:34:03 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.002; EventCycleTimeMax=0.014; EventCycleTimeMin=0.000; EventCycleTimeStd=0.004; EventCycleTimeSum=0.043; SleepCycleTimeAvg=5.016; SleepCycleTimeMax=5.115; SleepCycleTimeMin=5.001; SleepCycleTimeStd=0.034; SleepCycleTimeSum=100.311; SubmitCycleTimeAvg=0.001; SubmitCycleTimeMax=0.014; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.004; SubmitCycleTimeSum=0.031; EventCycleTimeCount=20.000; SleepCycleTimeCount=20.000; SubmitCycleTimeCount=21.000; LogProcessCycleTimeAvg=0.001; LogProcessCycleTimeMax=0.003; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.001; LogProcessCycleTimeSum=0.008; LogProcessCycleTimeCount=8.000; ]
+11/22/26 17:34:03 Initializing user log writer for /mnt/intensivo_20261122/contraste/cases/contraste-B2-REP/plans/REP/submit/dmeadmin/pegasus/dme-six-20261110-rep-r02/run0001/./dme-six-20261110-rep-r02-0.dag.nodes.log, (3840.0.0)
+11/22/26 17:34:08 Currently monitoring 1 HTCondor log file(s)
+11/22/26 17:34:08 Event: ULOG_POST_SCRIPT_TERMINATED for HTCondor Node campaign_task_P (3840.0.0) {11/22/26 17:34:03}
+11/22/26 17:34:08 POST Script of node campaign_task_P completed successfully.
+11/22/26 17:34:08 DAG status: 0 (DAG_STATUS_OK)
+11/22/26 17:34:08 Of 9 nodes total:
+11/22/26 17:34:08  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+11/22/26 17:34:08   ===     ===      ===     ===     ===        ===      ===      ===
+11/22/26 17:34:08     4       0        0       0       4          1        0        0
+11/22/26 17:34:08 0 job proc(s) currently held
+11/22/26 17:34:08 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.002; EventCycleTimeMax=0.014; EventCycleTimeMin=0.000; EventCycleTimeStd=0.004; EventCycleTimeSum=0.045; SleepCycleTimeAvg=5.021; SleepCycleTimeMax=5.121; SleepCycleTimeMin=5.001; SleepCycleTimeStd=0.040; SleepCycleTimeSum=105.432; SubmitCycleTimeAvg=0.001; SubmitCycleTimeMax=0.014; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.004; SubmitCycleTimeSum=0.031; EventCycleTimeCount=21.000; SleepCycleTimeCount=21.000; SubmitCycleTimeCount=22.000; LogProcessCycleTimeAvg=0.001; LogProcessCycleTimeMax=0.003; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.001; LogProcessCycleTimeSum=0.008; LogProcessCycleTimeCount=9.000; ]
+11/22/26 17:34:13 Submitting HTCondor Node campaign_task_C4 job(s)...
+11/22/26 17:34:13 Submitting node campaign_task_C4 from file 00/00/campaign_task_C4.sub using direct job submission
+11/22/26 17:34:13 	assigned HTCondor ID (3841.0.0)
+11/22/26 17:34:13 Submitting HTCondor Node campaign_task_C2 job(s)...
+11/22/26 17:34:13 Submitting node campaign_task_C2 from file 00/00/campaign_task_C2.sub using direct job submission
+11/22/26 17:34:13 	assigned HTCondor ID (3842.0.0)
+11/22/26 17:34:13 Submitting HTCondor Node campaign_task_C3 job(s)...
+11/22/26 17:34:13 Submitting node campaign_task_C3 from file 00/00/campaign_task_C3.sub using direct job submission
+11/22/26 17:34:13 	assigned HTCondor ID (3843.0.0)
+11/22/26 17:34:13 Submitting HTCondor Node campaign_task_C1 job(s)...
+11/22/26 17:34:13 Submitting node campaign_task_C1 from file 00/00/campaign_task_C1.sub using direct job submission
+11/22/26 17:34:13 	assigned HTCondor ID (3844.0.0)
+11/22/26 17:34:13 Just submitted 4 jobs this cycle...
+11/22/26 17:34:13 DAG status: 0 (DAG_STATUS_OK)
+11/22/26 17:34:13 Of 9 nodes total:
+11/22/26 17:34:13  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+11/22/26 17:34:13   ===     ===      ===     ===     ===        ===      ===      ===
+11/22/26 17:34:13     4       0        4       0       0          1        0        0
+11/22/26 17:34:13 0 job proc(s) currently held
+11/22/26 17:34:13 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.002; EventCycleTimeMax=0.014; EventCycleTimeMin=0.000; EventCycleTimeStd=0.004; EventCycleTimeSum=0.045; SleepCycleTimeAvg=5.020; SleepCycleTimeMax=5.121; SleepCycleTimeMin=5.001; SleepCycleTimeStd=0.039; SleepCycleTimeSum=110.437; SubmitCycleTimeAvg=0.003; SubmitCycleTimeMax=0.030; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.007; SubmitCycleTimeSum=0.061; EventCycleTimeCount=22.000; SleepCycleTimeCount=22.000; SubmitCycleTimeCount=23.000; LogProcessCycleTimeAvg=0.001; LogProcessCycleTimeMax=0.003; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.001; LogProcessCycleTimeSum=0.008; LogProcessCycleTimeCount=9.000; ]
+11/22/26 17:34:18 Currently monitoring 1 HTCondor log file(s)
+11/22/26 17:34:18 Reassigning the id of job campaign_task_C4 from (3841.0.0) to (3841.0.0)
+11/22/26 17:34:18 Event: ULOG_SUBMIT for HTCondor Node campaign_task_C4 (3841.0.0) {11/22/26 17:34:13}
+11/22/26 17:34:18 Number of idle job procs: 1
+11/22/26 17:34:18 Reassigning the id of job campaign_task_C2 from (3842.0.0) to (3842.0.0)
+11/22/26 17:34:18 Event: ULOG_SUBMIT for HTCondor Node campaign_task_C2 (3842.0.0) {11/22/26 17:34:13}
+11/22/26 17:34:18 Number of idle job procs: 2
+11/22/26 17:34:18 Reassigning the id of job campaign_task_C3 from (3843.0.0) to (3843.0.0)
+11/22/26 17:34:18 Event: ULOG_SUBMIT for HTCondor Node campaign_task_C3 (3843.0.0) {11/22/26 17:34:13}
+11/22/26 17:34:18 Number of idle job procs: 3
+11/22/26 17:34:18 Reassigning the id of job campaign_task_C1 from (3844.0.0) to (3844.0.0)
+11/22/26 17:34:18 Event: ULOG_SUBMIT for HTCondor Node campaign_task_C1 (3844.0.0) {11/22/26 17:34:13}
+11/22/26 17:34:18 Number of idle job procs: 4
+11/22/26 17:34:38 Currently monitoring 1 HTCondor log file(s)
+11/22/26 17:34:38 Event: ULOG_EXECUTE for HTCondor Node campaign_task_C1 (3844.0.0) {11/22/26 17:34:35}
+11/22/26 17:34:38 Number of idle job procs: 3
+11/22/26 17:35:03 Currently monitoring 1 HTCondor log file(s)
+11/22/26 17:35:03 Event: ULOG_JOB_TERMINATED for HTCondor Node campaign_task_C1 (3844.0.0) {11/22/26 17:35:00}
+11/22/26 17:35:03 Number of idle job procs: 3
+11/22/26 17:35:03 Node campaign_task_C1 job proc (3844.0.0) completed successfully.
+11/22/26 17:35:03 Node campaign_task_C1 job(s) have exited the queue
+11/22/26 17:35:03 Running POST script of Node campaign_task_C1...
+11/22/26 17:35:03 DAG status: 0 (DAG_STATUS_OK)
+11/22/26 17:35:03 Of 9 nodes total:
+11/22/26 17:35:03  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+11/22/26 17:35:03   ===     ===      ===     ===     ===        ===      ===      ===
+11/22/26 17:35:03     4       0        3       1       0          1        0        0
+11/22/26 17:35:03 0 job proc(s) currently held
+11/22/26 17:35:03 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.002; EventCycleTimeMax=0.030; EventCycleTimeMin=0.000; EventCycleTimeStd=0.006; EventCycleTimeSum=0.076; SleepCycleTimeAvg=5.015; SleepCycleTimeMax=5.121; SleepCycleTimeMin=5.000; SleepCycleTimeStd=0.033; SleepCycleTimeSum=160.481; SubmitCycleTimeAvg=0.002; SubmitCycleTimeMax=0.030; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.006; SubmitCycleTimeSum=0.061; EventCycleTimeCount=32.000; SleepCycleTimeCount=32.000; SubmitCycleTimeCount=33.000; LogProcessCycleTimeAvg=0.001; LogProcessCycleTimeMax=0.003; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.001; LogProcessCycleTimeSum=0.010; LogProcessCycleTimeCount=12.000; ]
+11/22/26 17:35:04 Initializing user log writer for /mnt/intensivo_20261122/contraste/cases/contraste-B2-REP/plans/REP/submit/dmeadmin/pegasus/dme-six-20261110-rep-r02/run0001/./dme-six-20261110-rep-r02-0.dag.nodes.log, (3844.0.0)
+11/22/26 17:35:08 Currently monitoring 1 HTCondor log file(s)
+11/22/26 17:35:08 Event: ULOG_POST_SCRIPT_TERMINATED for HTCondor Node campaign_task_C1 (3844.0.0) {11/22/26 17:35:04}
+11/22/26 17:35:08 POST Script of node campaign_task_C1 completed successfully.
+11/22/26 17:35:08 Event: ULOG_EXECUTE for HTCondor Node campaign_task_C3 (3843.0.0) {11/22/26 17:35:06}
+11/22/26 17:35:08 Number of idle job procs: 2
+11/22/26 17:35:08 DAG status: 0 (DAG_STATUS_OK)
+11/22/26 17:35:08 Of 9 nodes total:
+11/22/26 17:35:08  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+11/22/26 17:35:08   ===     ===      ===     ===     ===        ===      ===      ===
+11/22/26 17:35:08     5       0        3       0       0          1        0        0
+11/22/26 17:35:08 0 job proc(s) currently held
+11/22/26 17:35:08 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.002; EventCycleTimeMax=0.030; EventCycleTimeMin=0.000; EventCycleTimeStd=0.006; EventCycleTimeSum=0.078; SleepCycleTimeAvg=4.988; SleepCycleTimeMax=5.121; SleepCycleTimeMin=4.130; SleepCycleTimeStd=0.158; SleepCycleTimeSum=164.611; SubmitCycleTimeAvg=0.002; SubmitCycleTimeMax=0.030; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.006; SubmitCycleTimeSum=0.061; EventCycleTimeCount=33.000; SleepCycleTimeCount=33.000; SubmitCycleTimeCount=34.000; LogProcessCycleTimeAvg=0.001; LogProcessCycleTimeMax=0.003; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.001; LogProcessCycleTimeSum=0.010; LogProcessCycleTimeCount=13.000; ]
+11/22/26 17:35:33 Currently monitoring 1 HTCondor log file(s)
+11/22/26 17:35:33 Event: ULOG_EXECUTE for HTCondor Node campaign_task_C4 (3841.0.0) {11/22/26 17:35:29}
+11/22/26 17:35:33 Number of idle job procs: 1
+11/22/26 17:35:33 Event: ULOG_JOB_TERMINATED for HTCondor Node campaign_task_C3 (3843.0.0) {11/22/26 17:35:31}
+11/22/26 17:35:33 Number of idle job procs: 1
+11/22/26 17:35:33 Node campaign_task_C3 job proc (3843.0.0) completed successfully.
+11/22/26 17:35:33 Node campaign_task_C3 job(s) have exited the queue
+11/22/26 17:35:33 Running POST script of Node campaign_task_C3...
+11/22/26 17:35:33 DAG status: 0 (DAG_STATUS_OK)
+11/22/26 17:35:33 Of 9 nodes total:
+11/22/26 17:35:33  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+11/22/26 17:35:33   ===     ===      ===     ===     ===        ===      ===      ===
+11/22/26 17:35:33     5       0        2       1       0          1        0        0
+11/22/26 17:35:33 0 job proc(s) currently held
+11/22/26 17:35:33 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.002; EventCycleTimeMax=0.030; EventCycleTimeMin=0.000; EventCycleTimeStd=0.006; EventCycleTimeSum=0.078; SleepCycleTimeAvg=4.990; SleepCycleTimeMax=5.121; SleepCycleTimeMin=4.130; SleepCycleTimeStd=0.147; SleepCycleTimeSum=189.619; SubmitCycleTimeAvg=0.002; SubmitCycleTimeMax=0.030; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.005; SubmitCycleTimeSum=0.061; EventCycleTimeCount=38.000; SleepCycleTimeCount=38.000; SubmitCycleTimeCount=39.000; LogProcessCycleTimeAvg=0.001; LogProcessCycleTimeMax=0.003; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.001; LogProcessCycleTimeSum=0.012; LogProcessCycleTimeCount=14.000; ]
+11/22/26 17:35:33 Initializing user log writer for /mnt/intensivo_20261122/contraste/cases/contraste-B2-REP/plans/REP/submit/dmeadmin/pegasus/dme-six-20261110-rep-r02/run0001/./dme-six-20261110-rep-r02-0.dag.nodes.log, (3843.0.0)
+11/22/26 17:35:38 Currently monitoring 1 HTCondor log file(s)
+11/22/26 17:35:38 Event: ULOG_POST_SCRIPT_TERMINATED for HTCondor Node campaign_task_C3 (3843.0.0) {11/22/26 17:35:33}
+11/22/26 17:35:38 POST Script of node campaign_task_C3 completed successfully.
+11/22/26 17:35:38 Event: ULOG_EXECUTE for HTCondor Node campaign_task_C2 (3842.0.0) {11/22/26 17:35:34}
+11/22/26 17:35:38 Number of idle job procs: 0
+11/22/26 17:35:38 DAG status: 0 (DAG_STATUS_OK)
+11/22/26 17:35:38 Of 9 nodes total:
+11/22/26 17:35:38  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+11/22/26 17:35:38   ===     ===      ===     ===     ===        ===      ===      ===
+11/22/26 17:35:38     6       0        2       0       0          1        0        0
+11/22/26 17:35:38 0 job proc(s) currently held
+11/22/26 17:35:38 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.002; EventCycleTimeMax=0.030; EventCycleTimeMin=0.000; EventCycleTimeStd=0.006; EventCycleTimeSum=0.080; SleepCycleTimeAvg=4.994; SleepCycleTimeMax=5.132; SleepCycleTimeMin=4.130; SleepCycleTimeStd=0.146; SleepCycleTimeSum=194.750; SubmitCycleTimeAvg=0.002; SubmitCycleTimeMax=0.030; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.005; SubmitCycleTimeSum=0.061; EventCycleTimeCount=39.000; SleepCycleTimeCount=39.000; SubmitCycleTimeCount=40.000; LogProcessCycleTimeAvg=0.001; LogProcessCycleTimeMax=0.003; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.001; LogProcessCycleTimeSum=0.012; LogProcessCycleTimeCount=15.000; ]
+11/22/26 17:35:58 Currently monitoring 1 HTCondor log file(s)
+11/22/26 17:35:58 Event: ULOG_JOB_TERMINATED for HTCondor Node campaign_task_C4 (3841.0.0) {11/22/26 17:35:55}
+11/22/26 17:35:58 Number of idle job procs: 0
+11/22/26 17:35:58 Node campaign_task_C4 job proc (3841.0.0) completed successfully.
+11/22/26 17:35:58 Node campaign_task_C4 job(s) have exited the queue
+11/22/26 17:35:58 Running POST script of Node campaign_task_C4...
+11/22/26 17:35:58 DAG status: 0 (DAG_STATUS_OK)
+11/22/26 17:35:58 Of 9 nodes total:
+11/22/26 17:35:58  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+11/22/26 17:35:58   ===     ===      ===     ===     ===        ===      ===      ===
+11/22/26 17:35:58     6       0        1       1       0          1        0        0
+11/22/26 17:35:58 0 job proc(s) currently held
+11/22/26 17:35:58 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.002; EventCycleTimeMax=0.030; EventCycleTimeMin=0.000; EventCycleTimeStd=0.005; EventCycleTimeSum=0.081; SleepCycleTimeAvg=4.995; SleepCycleTimeMax=5.132; SleepCycleTimeMin=4.130; SleepCycleTimeStd=0.139; SleepCycleTimeSum=214.770; SubmitCycleTimeAvg=0.001; SubmitCycleTimeMax=0.030; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.005; SubmitCycleTimeSum=0.061; EventCycleTimeCount=43.000; SleepCycleTimeCount=43.000; SubmitCycleTimeCount=44.000; LogProcessCycleTimeAvg=0.001; LogProcessCycleTimeMax=0.003; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.001; LogProcessCycleTimeSum=0.014; LogProcessCycleTimeCount=16.000; ]
+11/22/26 17:35:58 Initializing user log writer for /mnt/intensivo_20261122/contraste/cases/contraste-B2-REP/plans/REP/submit/dmeadmin/pegasus/dme-six-20261110-rep-r02/run0001/./dme-six-20261110-rep-r02-0.dag.nodes.log, (3841.0.0)
+11/22/26 17:36:03 Currently monitoring 1 HTCondor log file(s)
+11/22/26 17:36:03 Event: ULOG_POST_SCRIPT_TERMINATED for HTCondor Node campaign_task_C4 (3841.0.0) {11/22/26 17:35:58}
+11/22/26 17:36:03 POST Script of node campaign_task_C4 completed successfully.
+11/22/26 17:36:03 Event: ULOG_JOB_TERMINATED for HTCondor Node campaign_task_C2 (3842.0.0) {11/22/26 17:35:59}
+11/22/26 17:36:03 Number of idle job procs: 0
+11/22/26 17:36:03 Node campaign_task_C2 job proc (3842.0.0) completed successfully.
+11/22/26 17:36:03 Node campaign_task_C2 job(s) have exited the queue
+11/22/26 17:36:03 Running POST script of Node campaign_task_C2...
+11/22/26 17:36:03 DAG status: 0 (DAG_STATUS_OK)
+11/22/26 17:36:03 Of 9 nodes total:
+11/22/26 17:36:03  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+11/22/26 17:36:03   ===     ===      ===     ===     ===        ===      ===      ===
+11/22/26 17:36:03     7       0        0       1       0          1        0        0
+11/22/26 17:36:03 0 job proc(s) currently held
+11/22/26 17:36:03 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.002; EventCycleTimeMax=0.030; EventCycleTimeMin=0.000; EventCycleTimeStd=0.005; EventCycleTimeSum=0.083; SleepCycleTimeAvg=4.998; SleepCycleTimeMax=5.132; SleepCycleTimeMin=4.130; SleepCycleTimeStd=0.139; SleepCycleTimeSum=219.891; SubmitCycleTimeAvg=0.001; SubmitCycleTimeMax=0.030; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.005; SubmitCycleTimeSum=0.061; EventCycleTimeCount=44.000; SleepCycleTimeCount=44.000; SubmitCycleTimeCount=45.000; LogProcessCycleTimeAvg=0.001; LogProcessCycleTimeMax=0.003; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.001; LogProcessCycleTimeSum=0.016; LogProcessCycleTimeCount=17.000; ]
+11/22/26 17:36:03 Initializing user log writer for /mnt/intensivo_20261122/contraste/cases/contraste-B2-REP/plans/REP/submit/dmeadmin/pegasus/dme-six-20261110-rep-r02/run0001/./dme-six-20261110-rep-r02-0.dag.nodes.log, (3842.0.0)
+11/22/26 17:36:08 Currently monitoring 1 HTCondor log file(s)
+11/22/26 17:36:08 Event: ULOG_POST_SCRIPT_TERMINATED for HTCondor Node campaign_task_C2 (3842.0.0) {11/22/26 17:36:03}
+11/22/26 17:36:08 POST Script of node campaign_task_C2 completed successfully.
+11/22/26 17:36:08 DAG status: 0 (DAG_STATUS_OK)
+11/22/26 17:36:08 Of 9 nodes total:
+11/22/26 17:36:08  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+11/22/26 17:36:08   ===     ===      ===     ===     ===        ===      ===      ===
+11/22/26 17:36:08     8       0        0       0       1          0        0        0
+11/22/26 17:36:08 0 job proc(s) currently held
+11/22/26 17:36:08 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.002; EventCycleTimeMax=0.030; EventCycleTimeMin=0.000; EventCycleTimeStd=0.005; EventCycleTimeSum=0.085; SleepCycleTimeAvg=5.000; SleepCycleTimeMax=5.132; SleepCycleTimeMin=4.130; SleepCycleTimeStd=0.139; SleepCycleTimeSum=225.012; SubmitCycleTimeAvg=0.001; SubmitCycleTimeMax=0.030; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.005; SubmitCycleTimeSum=0.061; EventCycleTimeCount=45.000; SleepCycleTimeCount=45.000; SubmitCycleTimeCount=46.000; LogProcessCycleTimeAvg=0.001; LogProcessCycleTimeMax=0.003; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.001; LogProcessCycleTimeSum=0.016; LogProcessCycleTimeCount=18.000; ]
+11/22/26 17:36:13 Submitting HTCondor Node stage_out_local_local_1_0 job(s)...
+11/22/26 17:36:13 Submitting node stage_out_local_local_1_0 from file 00/00/stage_out_local_local_1_0.sub using direct job submission
+11/22/26 17:36:13 	assigned HTCondor ID (3845.0.0)
+11/22/26 17:36:13 Just submitted 1 job this cycle...
+11/22/26 17:36:13 DAG status: 0 (DAG_STATUS_OK)
+11/22/26 17:36:13 Of 9 nodes total:
+11/22/26 17:36:13  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+11/22/26 17:36:13   ===     ===      ===     ===     ===        ===      ===      ===
+11/22/26 17:36:13     8       0        1       0       0          0        0        0
+11/22/26 17:36:13 0 job proc(s) currently held
+11/22/26 17:36:13 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.002; EventCycleTimeMax=0.030; EventCycleTimeMin=0.000; EventCycleTimeStd=0.005; EventCycleTimeSum=0.085; SleepCycleTimeAvg=5.000; SleepCycleTimeMax=5.132; SleepCycleTimeMin=4.130; SleepCycleTimeStd=0.137; SleepCycleTimeSum=230.016; SubmitCycleTimeAvg=0.002; SubmitCycleTimeMax=0.030; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.005; SubmitCycleTimeSum=0.071; EventCycleTimeCount=46.000; SleepCycleTimeCount=46.000; SubmitCycleTimeCount=47.000; LogProcessCycleTimeAvg=0.001; LogProcessCycleTimeMax=0.003; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.001; LogProcessCycleTimeSum=0.016; LogProcessCycleTimeCount=18.000; ]
+11/22/26 17:36:18 Currently monitoring 1 HTCondor log file(s)
+11/22/26 17:36:18 Reassigning the id of job stage_out_local_local_1_0 from (3845.0.0) to (3845.0.0)
+11/22/26 17:36:18 Event: ULOG_SUBMIT for HTCondor Node stage_out_local_local_1_0 (3845.0.0) {11/22/26 17:36:13}
+11/22/26 17:36:18 Number of idle job procs: 1
+11/22/26 17:36:23 Currently monitoring 1 HTCondor log file(s)
+11/22/26 17:36:23 Event: ULOG_EXECUTE for HTCondor Node stage_out_local_local_1_0 (3845.0.0) {11/22/26 17:36:18}
+11/22/26 17:36:23 Number of idle job procs: 0
+11/22/26 17:36:28 Currently monitoring 1 HTCondor log file(s)
+11/22/26 17:36:28 Event: ULOG_JOB_TERMINATED for HTCondor Node stage_out_local_local_1_0 (3845.0.0) {11/22/26 17:36:25}
+11/22/26 17:36:28 Number of idle job procs: 0
+11/22/26 17:36:28 Node stage_out_local_local_1_0 job proc (3845.0.0) completed successfully.
+11/22/26 17:36:28 Node stage_out_local_local_1_0 job(s) have exited the queue
+11/22/26 17:36:28 Running POST script of Node stage_out_local_local_1_0...
+11/22/26 17:36:28 DAG status: 0 (DAG_STATUS_OK)
+11/22/26 17:36:28 Of 9 nodes total:
+11/22/26 17:36:28  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+11/22/26 17:36:28   ===     ===      ===     ===     ===        ===      ===      ===
+11/22/26 17:36:28     8       0        0       1       0          0        0        0
+11/22/26 17:36:28 0 job proc(s) currently held
+11/22/26 17:36:28 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.002; EventCycleTimeMax=0.030; EventCycleTimeMin=0.000; EventCycleTimeStd=0.005; EventCycleTimeSum=0.095; SleepCycleTimeAvg=5.001; SleepCycleTimeMax=5.132; SleepCycleTimeMin=4.130; SleepCycleTimeStd=0.133; SleepCycleTimeSum=245.031; SubmitCycleTimeAvg=0.001; SubmitCycleTimeMax=0.030; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.005; SubmitCycleTimeSum=0.071; EventCycleTimeCount=49.000; SleepCycleTimeCount=49.000; SubmitCycleTimeCount=50.000; LogProcessCycleTimeAvg=0.001; LogProcessCycleTimeMax=0.003; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.001; LogProcessCycleTimeSum=0.018; LogProcessCycleTimeCount=21.000; ]
+11/22/26 17:36:28 Initializing user log writer for /mnt/intensivo_20261122/contraste/cases/contraste-B2-REP/plans/REP/submit/dmeadmin/pegasus/dme-six-20261110-rep-r02/run0001/./dme-six-20261110-rep-r02-0.dag.nodes.log, (3845.0.0)
+11/22/26 17:36:33 Currently monitoring 1 HTCondor log file(s)
+11/22/26 17:36:33 Event: ULOG_POST_SCRIPT_TERMINATED for HTCondor Node stage_out_local_local_1_0 (3845.0.0) {11/22/26 17:36:28}
+11/22/26 17:36:33 POST Script of node stage_out_local_local_1_0 completed successfully.
+11/22/26 17:36:33 DAG status: 0 (DAG_STATUS_OK)
+11/22/26 17:36:33 Of 9 nodes total:
+11/22/26 17:36:33  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+11/22/26 17:36:33   ===     ===      ===     ===     ===        ===      ===      ===
+11/22/26 17:36:33     9       0        0       0       0          0        0        0
+11/22/26 17:36:33 0 job proc(s) currently held
+11/22/26 17:36:33 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.002; EventCycleTimeMax=0.030; EventCycleTimeMin=0.000; EventCycleTimeStd=0.005; EventCycleTimeSum=0.097; SleepCycleTimeAvg=5.003; SleepCycleTimeMax=5.132; SleepCycleTimeMin=4.130; SleepCycleTimeStd=0.132; SleepCycleTimeSum=250.149; SubmitCycleTimeAvg=0.001; SubmitCycleTimeMax=0.030; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.005; SubmitCycleTimeSum=0.071; EventCycleTimeCount=50.000; SleepCycleTimeCount=50.000; SubmitCycleTimeCount=51.000; LogProcessCycleTimeAvg=0.001; LogProcessCycleTimeMax=0.003; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.001; LogProcessCycleTimeSum=0.018; LogProcessCycleTimeCount=22.000; ]
+11/22/26 17:36:33 All jobs Completed!
+11/22/26 17:36:33 Note: 0 total node deferrals because of -MaxJobs limit (0)
+11/22/26 17:36:33 Note: 0 total node deferrals because of -MaxIdle limit (1000)
+11/22/26 17:36:33 Note: 0 total node deferrals because of node category throttles
+11/22/26 17:36:33 Note: 0 total PRE script deferrals because of -MaxPre limit (20) or DEFER
+11/22/26 17:36:33 Note: 0 total POST script deferrals because of -MaxPost limit (20) or DEFER
+11/22/26 17:36:33 Note: 0 total HOLD script deferrals because of -MaxHold limit (20) or DEFER
+11/22/26 17:36:33 DAG status: 0 (DAG_STATUS_OK)
+11/22/26 17:36:33 Of 9 nodes total:
+11/22/26 17:36:33  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+11/22/26 17:36:33   ===     ===      ===     ===     ===        ===      ===      ===
+11/22/26 17:36:33     9       0        0       0       0          0        0        0
+11/22/26 17:36:33 0 job proc(s) currently held
+11/22/26 17:36:33 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.002; EventCycleTimeMax=0.030; EventCycleTimeMin=0.000; EventCycleTimeStd=0.005; EventCycleTimeSum=0.097; SleepCycleTimeAvg=5.003; SleepCycleTimeMax=5.132; SleepCycleTimeMin=4.130; SleepCycleTimeStd=0.132; SleepCycleTimeSum=250.149; SubmitCycleTimeAvg=0.001; SubmitCycleTimeMax=0.030; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.005; SubmitCycleTimeSum=0.071; EventCycleTimeCount=50.000; SleepCycleTimeCount=50.000; SubmitCycleTimeCount=51.000; LogProcessCycleTimeAvg=0.001; LogProcessCycleTimeMax=0.003; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.001; LogProcessCycleTimeSum=0.018; LogProcessCycleTimeCount=22.000; ]
+11/22/26 17:36:33 Wrote metrics file dme-six-20261110-rep-r02-0.dag.metrics.
+11/22/26 17:36:33 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.002; EventCycleTimeMax=0.030; EventCycleTimeMin=0.000; EventCycleTimeStd=0.005; EventCycleTimeSum=0.097; SleepCycleTimeAvg=5.003; SleepCycleTimeMax=5.132; SleepCycleTimeMin=4.130; SleepCycleTimeStd=0.132; SleepCycleTimeSum=250.149; SubmitCycleTimeAvg=0.001; SubmitCycleTimeMax=0.030; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.005; SubmitCycleTimeSum=0.071; EventCycleTimeCount=50.000; SleepCycleTimeCount=50.000; SubmitCycleTimeCount=51.000; LogProcessCycleTimeAvg=0.001; LogProcessCycleTimeMax=0.003; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.001; LogProcessCycleTimeSum=0.018; LogProcessCycleTimeCount=22.000; ]
+11/22/26 17:36:33 **** condor_scheduniv_exec.3836.0 (condor_DAGMAN) pid 67470 EXITING WITH STATUS 0

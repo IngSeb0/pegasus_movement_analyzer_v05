@@ -1,0 +1,23 @@
+$ C:\Users\Acer\AppData\Local\Programs\Python\Python312\python.exe -B coordinador/red.py quitar
+== dme-master (eth0)
+qdisc mq 0: root 
+qdisc fq_codel 0: parent :2 limit 10240p flows 1024 quantum 1514 target 5ms interval 100ms memory_limit 32Mb ecn drop_batch 64 
+qdisc fq_codel 0: parent :1 limit 10240p flows 1024 quantum 1514 target 5ms interval 100ms memory_limit 32Mb ecn drop_batch 64 
+
+== dme-worker1 (eth0)
+qdisc mq 0: root 
+qdisc fq_codel 0: parent :1 limit 10240p flows 1024 quantum 1514 target 5ms interval 100ms memory_limit 32Mb ecn drop_batch 64 
+
+== dme-worker2 (eth0)
+qdisc mq 0: root 
+qdisc fq_codel 0: parent :1 limit 10240p flows 1024 quantum 1514 target 5ms interval 100ms memory_limit 32Mb ecn drop_batch 64 
+
+== dme-worker3 (eth0)
+qdisc mq 0: root 
+qdisc fq_codel 0: parent :1 limit 10240p flows 1024 quantum 1514 target 5ms interval 100ms memory_limit 32Mb ecn drop_batch 64 
+
+== dme-worker4 (eth0)
+qdisc mq 0: root 
+qdisc fq_codel 0: parent :1 limit 10240p flows 1024 quantum 1514 target 5ms interval 100ms memory_limit 32Mb ecn drop_batch 64 
+
+

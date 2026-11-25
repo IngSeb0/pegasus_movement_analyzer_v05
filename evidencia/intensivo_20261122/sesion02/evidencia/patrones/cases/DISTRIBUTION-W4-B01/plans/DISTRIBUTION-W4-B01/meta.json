@@ -1,0 +1,315 @@
+{
+  "record_type": "planned_run_description_not_transfer_observation",
+  "generator_version": "fma_v1",
+  "program_version": "six_patterns_fma_v1",
+  "created_at_utc": "2026-11-22T15:37:53.569982+00:00",
+  "condition_id": "DISTRIBUTION-W4",
+  "replica": 1,
+  "pattern": "Distribution",
+  "mode": "CondorIO",
+  "data_configuration": "condorio",
+  "root": "/mnt/intensivo_20261122/patrones/cases/DISTRIBUTION-W4-B01/plans/DISTRIBUTION-W4-B01",
+  "active_pool": [
+    "W1",
+    "W2",
+    "W3",
+    "W4"
+  ],
+  "worker_map": {
+    "master": "dme-master",
+    "W1": "dme-worker1",
+    "W2": "dme-worker2",
+    "W3": "dme-worker3",
+    "W4": "dme-worker4"
+  },
+  "tasks": [
+    {
+      "task_id": "T1",
+      "assigned_worker": "W1",
+      "input_files": [
+        "A"
+      ],
+      "output_files": [
+        "g"
+      ],
+      "flops": 1766799020
+    },
+    {
+      "task_id": "T2",
+      "assigned_worker": "W1",
+      "input_files": [
+        "g"
+      ],
+      "output_files": [
+        "B1"
+      ],
+      "flops": 1766799020
+    },
+    {
+      "task_id": "T3",
+      "assigned_worker": "W1",
+      "input_files": [
+        "g"
+      ],
+      "output_files": [
+        "B2"
+      ],
+      "flops": 1766799020
+    },
+    {
+      "task_id": "T4",
+      "assigned_worker": "W1",
+      "input_files": [
+        "g"
+      ],
+      "output_files": [
+        "B3"
+      ],
+      "flops": 1766799020
+    },
+    {
+      "task_id": "T5",
+      "assigned_worker": "W1",
+      "input_files": [
+        "g"
+      ],
+      "output_files": [
+        "B4"
+      ],
+      "flops": 1766799020
+    },
+    {
+      "task_id": "T6",
+      "assigned_worker": "W1",
+      "input_files": [
+        "g"
+      ],
+      "output_files": [
+        "B5"
+      ],
+      "flops": 1766799020
+    }
+  ],
+  "dag": {
+    "tasks": [
+      {
+        "task_id": "T1",
+        "assigned_worker": "W1",
+        "input_files": [
+          "A"
+        ],
+        "output_files": [
+          "g"
+        ],
+        "flops": 1766799020
+      },
+      {
+        "task_id": "T2",
+        "assigned_worker": "W1",
+        "input_files": [
+          "g"
+        ],
+        "output_files": [
+          "B1"
+        ],
+        "flops": 1766799020
+      },
+      {
+        "task_id": "T3",
+        "assigned_worker": "W1",
+        "input_files": [
+          "g"
+        ],
+        "output_files": [
+          "B2"
+        ],
+        "flops": 1766799020
+      },
+      {
+        "task_id": "T4",
+        "assigned_worker": "W1",
+        "input_files": [
+          "g"
+        ],
+        "output_files": [
+          "B3"
+        ],
+        "flops": 1766799020
+      },
+      {
+        "task_id": "T5",
+        "assigned_worker": "W1",
+        "input_files": [
+          "g"
+        ],
+        "output_files": [
+          "B4"
+        ],
+        "flops": 1766799020
+      },
+      {
+        "task_id": "T6",
+        "assigned_worker": "W1",
+        "input_files": [
+          "g"
+        ],
+        "output_files": [
+          "B5"
+        ],
+        "flops": 1766799020
+      }
+    ],
+    "edges": [
+      {
+        "producer_task": "T1",
+        "consumer_task": "T2",
+        "file_id": "g"
+      },
+      {
+        "producer_task": "T1",
+        "consumer_task": "T3",
+        "file_id": "g"
+      },
+      {
+        "producer_task": "T1",
+        "consumer_task": "T4",
+        "file_id": "g"
+      },
+      {
+        "producer_task": "T1",
+        "consumer_task": "T5",
+        "file_id": "g"
+      },
+      {
+        "producer_task": "T1",
+        "consumer_task": "T6",
+        "file_id": "g"
+      }
+    ],
+    "external_inputs": [
+      "A"
+    ],
+    "final_outputs": [
+      "B1",
+      "B2",
+      "B3",
+      "B4",
+      "B5"
+    ]
+  },
+  "files": [
+    {
+      "file_id": "A",
+      "size_bytes": 209715200,
+      "producer_task": null,
+      "consumer_tasks": [
+        "T1"
+      ],
+      "role": "input"
+    },
+    {
+      "file_id": "B1",
+      "size_bytes": 209715200,
+      "producer_task": "T2",
+      "consumer_tasks": [],
+      "role": "final"
+    },
+    {
+      "file_id": "B2",
+      "size_bytes": 209715200,
+      "producer_task": "T3",
+      "consumer_tasks": [],
+      "role": "final"
+    },
+    {
+      "file_id": "B3",
+      "size_bytes": 209715200,
+      "producer_task": "T4",
+      "consumer_tasks": [],
+      "role": "final"
+    },
+    {
+      "file_id": "B4",
+      "size_bytes": 209715200,
+      "producer_task": "T5",
+      "consumer_tasks": [],
+      "role": "final"
+    },
+    {
+      "file_id": "B5",
+      "size_bytes": 209715200,
+      "producer_task": "T6",
+      "consumer_tasks": [],
+      "role": "final"
+    },
+    {
+      "file_id": "g",
+      "size_bytes": 209715200,
+      "producer_task": "T1",
+      "consumer_tasks": [
+        "T2",
+        "T3",
+        "T4",
+        "T5",
+        "T6"
+      ],
+      "role": "intermediate"
+    }
+  ],
+  "file_sizes_bytes": {
+    "A": 209715200,
+    "B1": 209715200,
+    "B2": 209715200,
+    "B3": 209715200,
+    "B4": 209715200,
+    "B5": 209715200,
+    "g": 209715200
+  },
+  "planned_job_id_map": {
+    "T1": "T1",
+    "T2": "T2",
+    "T3": "T3",
+    "T4": "T4",
+    "T5": "T5",
+    "T6": "T6"
+  },
+  "resources_per_compute_task": {
+    "request_cpus": 1,
+    "request_memory_MiB": 256
+  },
+  "execution_site": "condorpool",
+  "output_site": "local",
+  "selector": "RoundRobin",
+  "shared_file_system": false,
+  "workflow_uuid": null,
+  "actual_placements": null,
+  "oracle_path": "/mnt/intensivo_20261122/patrones/SPECS.json",
+  "oracle_sha256": "5fb7899efed14edcee6e1a68ec638765d476beded6b850c24710c5d9bd4249a5",
+  "input_artifacts": [
+    {
+      "lfn": "A",
+      "bytes_written": 209715200,
+      "sha256": "1496e435a9338fca4aa1242a6a8feaccdd0ed091cd60fd831260b1a0d4b346f4",
+      "path": "/mnt/intensivo_20261122/patrones/cases/DISTRIBUTION-W4-B01/plans/DISTRIBUTION-W4-B01/inputs/A",
+      "evidence_role": "generated_initial_file_not_transfer_evidence"
+    }
+  ],
+  "pegasus_api_distribution_version": "5.1.2",
+  "code_sha256": {
+    "campaign_task.py": "f2bd2df2752ae6890df433e1428f713c29dc6ab3a995a3787a8ebca2d432353f",
+    "generate_workflow.py": "deb2bb9b359c34084bf0babf0421ac4df9c0326ad947f22adca59b5ad699df86",
+    "fma_kernel": "55f11663f236baa2f1fe9989f5d928547992fdab43b2ee228aa2df2baea3aa62"
+  },
+  "workflow_sha256": "4d09d9a3f91fcb0394b9d399e9740adbe3248f67d4f92a389d1286038a516e92",
+  "properties_sha256": "455382e651b2b8203111fd49a86097e183487fddeee259a5b22a2c3a954fc207",
+  "measurement_note": "No M_obs, DME, transfer success, or actual placement is inferred from these generated descriptions.",
+  "placement_policy": "HTCondor native; eligible workers selected by common pool attribute",
+  "baseline_template_requirements": {
+    "T1": "TARGET.Machine == \"dme-worker1\"",
+    "T2": "TARGET.Machine == \"dme-worker1\"",
+    "T3": "TARGET.Machine == \"dme-worker1\"",
+    "T4": "TARGET.Machine == \"dme-worker1\"",
+    "T5": "TARGET.Machine == \"dme-worker1\"",
+    "T6": "TARGET.Machine == \"dme-worker1\""
+  }
+}

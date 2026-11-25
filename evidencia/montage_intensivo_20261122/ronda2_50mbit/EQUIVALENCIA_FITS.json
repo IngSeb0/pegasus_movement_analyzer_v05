@@ -1,0 +1,20 @@
+{
+  "m101_area.fits": {
+    "coinciden": true,
+    "firmas": [
+      [
+        488577600,
+        "9f50cb9c0741809a60727f75a425a012e32621904fe284f0b12f80bb77f1ff8e"
+      ]
+    ]
+  },
+  "m101.fits": {
+    "coinciden": true,
+    "firmas": [
+      [
+        488577600,
+        "78488c4997ac9c75cdd97b547e79da2a2937b5d174ed7c99345e176fbcb60227"
+      ]
+    ]
+  }
+}

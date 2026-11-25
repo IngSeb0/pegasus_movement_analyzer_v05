@@ -1,0 +1,7 @@
+campaign_task @@PFN@@ user="dmeadmin" size="1547" ctime="2026-11-24T16:22:22.275318" checksum.type="sha256" checksum.value="2b0612e9066bb7bd1981e1b98600959b58454288f49f8cc2cd07e53fbb6fd314" checksum.timing="0.013"
+a @@PFN@@ user="dmeadmin" size="209715200" ctime="2026-11-24T16:22:22.772885" checksum.type="sha256" checksum.value="51090a2bf1eded43dd6f80caf2b9b639888d627641a45a11c0fdc7ae339ab5dc" checksum.timing="0.759"
+g @@PFN@@ user="nobody" size="209715200" ctime="2026-11-24T16:23:40+00:00" checksum.type="sha256" checksum.value="19c3875b3b75b38c48549b0e0889a5674d783595d30c9f1527f907e0061ff169" checksum.timing="1.08"
+f1 @@PFN@@ user="nobody" size="209715200" ctime="2026-11-24T16:23:45+00:00" checksum.type="sha256" checksum.value="f7dad75ee3ed5b1e38ae646c835a04160e84eaf03b9a324ff40d691eaa1fc9df" checksum.timing="1.08"
+f4 @@PFN@@ user="nobody" size="209715200" ctime="2026-11-24T16:25:30+00:00" checksum.type="sha256" checksum.value="45eabe498b2521871f93731f19d94ed192f1f8d3bfcdcd3d89ad2c3def6ddb57" checksum.timing="1.08"
+f2 @@PFN@@ user="nobody" size="209715200" ctime="2026-11-24T16:25:53+00:00" checksum.type="sha256" checksum.value="5b48d9b6ddf1f3ec7bbc330e295bc353afc606a93f468b059161d1a5349d5507" checksum.timing="1.08"
+f3 @@PFN@@ user="nobody" size="209715200" ctime="2026-11-24T16:25:59+00:00" checksum.type="sha256" checksum.value="2152d479b73f30abc015a1f7d541b820854763d482ba0b4e7ae1a5fda3cb1e6a" checksum.timing="1.08"

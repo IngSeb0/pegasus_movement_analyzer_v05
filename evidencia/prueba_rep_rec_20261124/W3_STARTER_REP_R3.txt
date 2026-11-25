@@ -1,0 +1,50 @@
+11/24/26 16:37:16 (pid:2240) Create_Process succeeded, pid=2242
+11/24/26 16:37:24 (pid:2240) Process exited, pid=2242, status=0
+11/24/26 16:37:24 (pid:2240) Returning from Starter::JobReaper()
+11/24/26 16:37:24 (pid:2240) unregister_family cgroup not found for pid 2242, not unregistering
+11/24/26 16:37:24 (pid:2240) error unregistering pid 2242 with the procd
+11/24/26 16:37:42 (pid:2394) Transfer exit info: Success = True | Error[0.0] = '' | Ack = BOTH | Line = 0 | Files = 3 | Retry = False
+11/24/26 16:37:42 (pid:2240) has_been_oom_killed cgroup not found for pid 2394, returning false
+11/24/26 16:37:42 (pid:2240) File transfer completed successfully.
+11/24/26 16:37:42 (pid:2240) All jobs have exited... starter exiting
+11/24/26 16:37:42 (pid:2240) **** condor_starter (condor_STARTER) pid 2240 EXITING WITH STATUS 0
+11/24/26 16:41:56 (pid:2404) ******************************************************
+11/24/26 16:41:56 (pid:2404) ** condor_starter (CONDOR_STARTER) STARTING UP
+11/24/26 16:41:56 (pid:2404) ** /usr/sbin/condor_starter
+11/24/26 16:41:56 (pid:2404) ** SubsystemInfo: name=STARTER type=STARTER(7) class=DAEMON(1)
+11/24/26 16:41:56 (pid:2404) ** Configuration: subsystem:STARTER local:slot_type_1 class:DAEMON
+11/24/26 16:41:56 (pid:2404) ** $CondorVersion: 26.0.1 2026-08-25 BuildID: 945720 PackageID: 26.0.1-0.945720+ubu24 GitSHA: 54c9c049 DAILY $
+11/24/26 16:41:56 (pid:2404) ** $CondorPlatform: X86_64-Ubuntu_24.04 $
+11/24/26 16:41:56 (pid:2404) ** PID = 2404 RealUID = 0
+11/24/26 16:41:56 (pid:2404) ** Log last touched 11/24 16:37:42
+11/24/26 16:41:56 (pid:2404) ******************************************************
+11/24/26 16:41:56 (pid:2404) Using config source: /etc/condor/condor_config
+11/24/26 16:41:56 (pid:2404) Using local config sources: 
+11/24/26 16:41:56 (pid:2404)    /etc/condor/config.d/00-security
+11/24/26 16:41:56 (pid:2404)    /etc/condor/config.d/10-stash-plugin.conf
+11/24/26 16:41:56 (pid:2404)    /etc/condor/config.d/99-dme-cloud.config
+11/24/26 16:41:56 (pid:2404)    /etc/condor/config.d/zz-dme-authorized-pilot.config
+11/24/26 16:41:56 (pid:2404)    /etc/condor/condor_config.local
+11/24/26 16:41:56 (pid:2404) config Macros = 81, Sorted = 79, StringBytes = 2451, TablesBytes = 2988
+11/24/26 16:41:56 (pid:2404) CLASSAD_CACHING is OFF
+11/24/26 16:41:56 (pid:2404) Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+11/24/26 16:41:56 (pid:2404) SharedPortEndpoint: waiting for connections to named socket slot1_1_944_e21f_7
+11/24/26 16:41:56 (pid:2404) DaemonCore: command socket at <10.42.1.6:9618?addrs=10.42.1.6-9618&alias=dme-worker3&noUDP&sock=slot1_1_944_e21f_7>
+11/24/26 16:41:56 (pid:2404) DaemonCore: private command socket at <10.42.1.6:9618?addrs=10.42.1.6-9618&alias=dme-worker3&noUDP&sock=slot1_1_944_e21f_7>
+11/24/26 16:41:56 (pid:2404) Communicating with shadow <10.42.0.4:9618?addrs=10.42.0.4-9618&alias=dme-master&noUDP&sock=shadow_972_9ca1_49>
+11/24/26 16:41:56 (pid:2404) Submitting machine is "10.42.0.4"
+11/24/26 16:41:56 (pid:2404) setting the orig job name in starter
+11/24/26 16:41:56 (pid:2404) setting the orig job iwd in starter
+11/24/26 16:41:56 (pid:2404) ERROR: the submitting host claims to be in our UidDomain (dme-master), yet its hostname (10.42.0.4) does not match.  If the above hostname is actually an IP address, Condor could not perform a reverse DNS lookup to convert the IP back into a name.  To solve this problem, you can either correctly configure DNS to allow the reverse lookup, or you can enable TRUST_UID_DOMAIN in your condor configuration.
+11/24/26 16:41:56 (pid:2404) Job has WantIOProxy=true
+11/24/26 16:41:56 (pid:2404) Chirp config summary: IO true, Updates true, Delayed updates true.
+11/24/26 16:41:56 (pid:2404) Initialized IO Proxy.
+11/24/26 16:41:56 (pid:2404) Done setting resource limits
+11/24/26 16:41:56 (pid:2404) Requesting guidance from the shadow about JobSetup...
+11/24/26 16:41:56 (pid:2404) Set filetransfer runtime ads to /var/lib/condor/execute/dir_2404/scratch/.job.ad and /var/lib/condor/execute/dir_2404/scratch/.machine.ad.
+11/24/26 16:42:40 (pid:2404) Got vacate code=1013 subcode=0 reason=Startd was shutdown
+11/24/26 16:42:40 (pid:2404) ShutdownFast all jobs.
+11/24/26 16:42:40 (pid:2404) FileTransfer: killing active transfer 2422
+11/24/26 16:42:40 (pid:2404) All jobs have exited... starter exiting
+11/24/26 16:42:41 (pid:2404) Daemon exiting before all child processes gone; killing 2422
+11/24/26 16:42:41 (pid:2404) **** condor_starter (condor_STARTER) pid 2404 EXITING WITH STATUS 0

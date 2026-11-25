@@ -1,0 +1,181 @@
+{
+  "matches": true,
+  "reference": {
+    "m101.fits": {
+      "cards": {
+        "SIMPLE": "T",
+        "BITPIX": "-64",
+        "NAXIS": "2",
+        "NAXIS1": "2259",
+        "NAXIS2": "2199",
+        "EXTEND": "T / FITS dataset may contain extensions",
+        "CTYPE1": "'RA---TAN'",
+        "CTYPE2": "'DEC--TAN'",
+        "CRVAL1": "210.835222357",
+        "CRVAL2": "54.367562188",
+        "CDELT1": "-0.000277780",
+        "CDELT2": "0.000277780",
+        "CRPIX1": "1130.",
+        "CRPIX2": "1100.",
+        "CROTA2": "-0.052834592",
+        "HISTORY": "MONTAGE TUTORIAL"
+      },
+      "pixelHash": "0f22264d47637d57fe6cea51e8906ed5222d22393d5984da60071ed4d7a0aaa9"
+    },
+    "m101_area.fits": {
+      "cards": {
+        "SIMPLE": "T",
+        "BITPIX": "-64",
+        "NAXIS": "2",
+        "NAXIS1": "2259",
+        "NAXIS2": "2199",
+        "EXTEND": "T / FITS dataset may contain extensions",
+        "CTYPE1": "'RA---TAN'",
+        "CTYPE2": "'DEC--TAN'",
+        "CRVAL1": "210.835222357",
+        "CRVAL2": "54.367562188",
+        "CDELT1": "-0.000277780",
+        "CDELT2": "0.000277780",
+        "CRPIX1": "1130.",
+        "CRPIX2": "1100.",
+        "CROTA2": "-0.052834592",
+        "HISTORY": "MONTAGE TUTORIAL"
+      },
+      "pixelHash": "5e135fd11763a9ad92e105a9205d1ff69510fa52dcd2590f41229e0184c6dad8"
+    }
+  },
+  "conditions": {
+    "M101-BASE": {
+      "m101.fits": {
+        "cards": {
+          "SIMPLE": "T",
+          "BITPIX": "-64",
+          "NAXIS": "2",
+          "NAXIS1": "2259",
+          "NAXIS2": "2199",
+          "EXTEND": "T / FITS dataset may contain extensions",
+          "CTYPE1": "'RA---TAN'",
+          "CTYPE2": "'DEC--TAN'",
+          "CRVAL1": "210.835222357",
+          "CRVAL2": "54.367562188",
+          "CDELT1": "-0.000277780",
+          "CDELT2": "0.000277780",
+          "CRPIX1": "1130.",
+          "CRPIX2": "1100.",
+          "CROTA2": "-0.052834592",
+          "HISTORY": "MONTAGE TUTORIAL"
+        },
+        "pixelHash": "0f22264d47637d57fe6cea51e8906ed5222d22393d5984da60071ed4d7a0aaa9"
+      },
+      "m101_area.fits": {
+        "cards": {
+          "SIMPLE": "T",
+          "BITPIX": "-64",
+          "NAXIS": "2",
+          "NAXIS1": "2259",
+          "NAXIS2": "2199",
+          "EXTEND": "T / FITS dataset may contain extensions",
+          "CTYPE1": "'RA---TAN'",
+          "CTYPE2": "'DEC--TAN'",
+          "CRVAL1": "210.835222357",
+          "CRVAL2": "54.367562188",
+          "CDELT1": "-0.000277780",
+          "CDELT2": "0.000277780",
+          "CRPIX1": "1130.",
+          "CRPIX2": "1100.",
+          "CROTA2": "-0.052834592",
+          "HISTORY": "MONTAGE TUTORIAL"
+        },
+        "pixelHash": "5e135fd11763a9ad92e105a9205d1ff69510fa52dcd2590f41229e0184c6dad8"
+      }
+    },
+    "M101-PROJ": {
+      "m101.fits": {
+        "cards": {
+          "SIMPLE": "T",
+          "BITPIX": "-64",
+          "NAXIS": "2",
+          "NAXIS1": "2259",
+          "NAXIS2": "2199",
+          "EXTEND": "T / FITS dataset may contain extensions",
+          "CTYPE1": "'RA---TAN'",
+          "CTYPE2": "'DEC--TAN'",
+          "CRVAL1": "210.835222357",
+          "CRVAL2": "54.367562188",
+          "CDELT1": "-0.000277780",
+          "CDELT2": "0.000277780",
+          "CRPIX1": "1130.",
+          "CRPIX2": "1100.",
+          "CROTA2": "-0.052834592",
+          "HISTORY": "MONTAGE TUTORIAL"
+        },
+        "pixelHash": "0f22264d47637d57fe6cea51e8906ed5222d22393d5984da60071ed4d7a0aaa9"
+      },
+      "m101_area.fits": {
+        "cards": {
+          "SIMPLE": "T",
+          "BITPIX": "-64",
+          "NAXIS": "2",
+          "NAXIS1": "2259",
+          "NAXIS2": "2199",
+          "EXTEND": "T / FITS dataset may contain extensions",
+          "CTYPE1": "'RA---TAN'",
+          "CTYPE2": "'DEC--TAN'",
+          "CRVAL1": "210.835222357",
+          "CRVAL2": "54.367562188",
+          "CDELT1": "-0.000277780",
+          "CDELT2": "0.000277780",
+          "CRPIX1": "1130.",
+          "CRPIX2": "1100.",
+          "CROTA2": "-0.052834592",
+          "HISTORY": "MONTAGE TUTORIAL"
+        },
+        "pixelHash": "5e135fd11763a9ad92e105a9205d1ff69510fa52dcd2590f41229e0184c6dad8"
+      }
+    },
+    "M101-FINAL": {
+      "m101.fits": {
+        "cards": {
+          "SIMPLE": "T",
+          "BITPIX": "-64",
+          "NAXIS": "2",
+          "NAXIS1": "2259",
+          "NAXIS2": "2199",
+          "EXTEND": "T / FITS dataset may contain extensions",
+          "CTYPE1": "'RA---TAN'",
+          "CTYPE2": "'DEC--TAN'",
+          "CRVAL1": "210.835222357",
+          "CRVAL2": "54.367562188",
+          "CDELT1": "-0.000277780",
+          "CDELT2": "0.000277780",
+          "CRPIX1": "1130.",
+          "CRPIX2": "1100.",
+          "CROTA2": "-0.052834592",
+          "HISTORY": "MONTAGE TUTORIAL"
+        },
+        "pixelHash": "0f22264d47637d57fe6cea51e8906ed5222d22393d5984da60071ed4d7a0aaa9"
+      },
+      "m101_area.fits": {
+        "cards": {
+          "SIMPLE": "T",
+          "BITPIX": "-64",
+          "NAXIS": "2",
+          "NAXIS1": "2259",
+          "NAXIS2": "2199",
+          "EXTEND": "T / FITS dataset may contain extensions",
+          "CTYPE1": "'RA---TAN'",
+          "CTYPE2": "'DEC--TAN'",
+          "CRVAL1": "210.835222357",
+          "CRVAL2": "54.367562188",
+          "CDELT1": "-0.000277780",
+          "CDELT2": "0.000277780",
+          "CRPIX1": "1130.",
+          "CRPIX2": "1100.",
+          "CROTA2": "-0.052834592",
+          "HISTORY": "MONTAGE TUTORIAL"
+        },
+        "pixelHash": "5e135fd11763a9ad92e105a9205d1ff69510fa52dcd2590f41229e0184c6dad8"
+      }
+    }
+  }
+}

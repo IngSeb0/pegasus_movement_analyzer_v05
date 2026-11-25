@@ -1,0 +1,22 @@
+$ C:\Users\Acer\AppData\Local\Programs\Python\Python312\python.exe -B coordinador/red.py limitar 100
+== dme-master (eth0)
+qdisc prio 1: root refcnt 65 bands 2 priomap 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+qdisc tbf 20: parent 1:2 rate 100Mbit burst 32Kb lat 400ms 
+
+== dme-worker1 (eth0)
+qdisc prio 1: root refcnt 65 bands 2 priomap 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+qdisc tbf 20: parent 1:2 rate 100Mbit burst 32Kb lat 400ms 
+
+== dme-worker2 (eth0)
+qdisc prio 1: root refcnt 65 bands 2 priomap 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+qdisc tbf 20: parent 1:2 rate 100Mbit burst 32Kb lat 400ms 
+
+== dme-worker3 (eth0)
+qdisc prio 1: root refcnt 65 bands 2 priomap 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+qdisc tbf 20: parent 1:2 rate 100Mbit burst 32Kb lat 400ms 
+
+== dme-worker4 (eth0)
+qdisc prio 1: root refcnt 65 bands 2 priomap 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+qdisc tbf 20: parent 1:2 rate 100Mbit burst 32Kb lat 400ms 
+
+

@@ -1,0 +1,14 @@
+executable = /bin/true
+arguments = 
+transfer_executable = False
+requirements = TARGET.Machine == "dme-worker2"
+request_cpus = 1
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+transfer_input_files = /mnt/montage_intensivo_20261122/medicion/banda-entrada/datos.bin
+transfer_output_files = ""
+initialdir = /mnt/montage_intensivo_20261122/medicion/banda-entrada
+log = /mnt/montage_intensivo_20261122/medicion/banda-entrada/eventos.log
+output = /mnt/montage_intensivo_20261122/medicion/banda-entrada/stdout.txt
+error = /mnt/montage_intensivo_20261122/medicion/banda-entrada/stderr.txt
+queue

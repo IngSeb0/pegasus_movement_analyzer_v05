@@ -1,0 +1,12 @@
+{
+  "bytes": 124215044,
+  "sha256": "b22f01c8d9f6c351eae9f9540dd37f8b621099c92e2f85d7af0fdddf5d80ad86",
+  "excluded_static_bundles": [
+    {
+      "path": "/mnt/montage_m101_20261111/cases/M101-BASE/plans/M101-BASE/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-base-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+      "bytes": 18251217,
+      "sha256": "b1d82cc0c6b2c26bfa308c51e7eeb661a48691af2355ad4755f0c5262d5e4cc1"
+    }
+  ],
+  "scope": "Native administrative sources, scientific inputs/finals and task outputs; excludes only static Pegasus worker archives, preserved on remote filesystem."
+}

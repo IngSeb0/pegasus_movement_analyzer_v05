@@ -1,0 +1,12 @@
+{
+  "archivos_B": 209715200,
+  "pilotos": 1,
+  "principales": {
+    "patrones": 20,
+    "contraste": 9
+  },
+  "direcciones_exactas": 324,
+  "reglas_tc_retiradas": true,
+  "vms_desasignadas": 5,
+  "ventana_acumulada_s": 11603.490205
+}

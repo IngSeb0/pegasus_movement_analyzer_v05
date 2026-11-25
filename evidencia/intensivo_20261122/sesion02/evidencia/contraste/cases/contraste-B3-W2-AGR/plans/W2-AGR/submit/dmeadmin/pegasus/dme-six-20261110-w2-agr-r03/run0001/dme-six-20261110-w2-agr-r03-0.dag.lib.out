@@ -1,0 +1,7 @@
+Pegasus DAGMAN is /usr/lib/pegasus/python/Pegasus/cli/pegasus-dagman.py
+2026-11-22 17:37:03,018:INFO:pegasus-dagman(147): DAGMAN_COPY_TO_SPOOL is set to b''
+2026-11-22 17:37:03,018:INFO:pegasus-dagman(103): Launched Dagman with Pid 69439
+2026-11-22 17:37:03,020:INFO:pegasus-dagman(130): Launched Monitord with Pid 69440
+Executing condor dagman ... 
+2026-11-22 17:41:33,022:INFO:pegasus-dagman(284): Dagman exited with code 0
+2026-11-22 17:41:33,022:INFO:pegasus-dagman(285): Monitord exited with code 0 with a total of 1 launch attempts on the workflow

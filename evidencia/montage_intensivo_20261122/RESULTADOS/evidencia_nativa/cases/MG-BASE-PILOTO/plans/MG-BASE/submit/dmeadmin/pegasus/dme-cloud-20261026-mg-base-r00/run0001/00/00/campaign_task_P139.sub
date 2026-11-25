@@ -1,0 +1,48 @@
+######################################################################
+# PEGASUS WMS GENERATED SUBMIT FILE
+# DAG : dme-cloud-20261026-mg-base-r00, Index = 0, Count = null
+# SUBMIT FILE NAME : campaign_task_P139.sub
+######################################################################
+stream_error  = false
+stream_output = false
+environment = "LANG=en_US.UTF-8 CONDOR_JOBID=$(cluster).$(process) PEGASUS_WF_UUID=5d102b8a-4265-4817-a1d1-b99053fac29d PEGASUS_WF_LABEL=dme-cloud-20261026-mg-base-r00 PEGASUS_DAG_JOB_ID=campaign_task_P139 PEGASUS_SITE=condorpool"
++WantIOProxy = True
+error = /mnt/montage_intensivo_20261122/medicion/cases/MG-BASE-PILOTO/plans/MG-BASE/submit/dmeadmin/pegasus/dme-cloud-20261026-mg-base-r00/run0001//00/00/campaign_task_P139.err
+executable = /mnt/montage_intensivo_20261122/medicion/cases/MG-BASE-PILOTO/plans/MG-BASE/submit/dmeadmin/pegasus/dme-cloud-20261026-mg-base-r00/run0001/00/00/campaign_task_P139.sh
+initialdir = /mnt/montage_intensivo_20261122/medicion/cases/MG-BASE-PILOTO/plans/MG-BASE/scratch/dmeadmin/pegasus/dme-cloud-20261026-mg-base-r00/run0001
+log = /mnt/montage_intensivo_20261122/medicion/cases/MG-BASE-PILOTO/plans/MG-BASE/submit/dmeadmin/pegasus/dme-cloud-20261026-mg-base-r00/run0001/dme-cloud-20261026-mg-base-r00-0.log
+notification = NEVER
+output = /mnt/montage_intensivo_20261122/medicion/cases/MG-BASE-PILOTO/plans/MG-BASE/submit/dmeadmin/pegasus/dme-cloud-20261026-mg-base-r00/run0001//00/00/campaign_task_P139.out
+periodic_release = False
+periodic_remove = (JobStatus == 5) && ((CurrentTime - EnteredCurrentStatus) > 1800)
+priority = 20
+request_cpus = 1
+request_memory = 256
+requirements = TARGET.Machine == "dme-worker2"
+should_transfer_files = YES
+submit_event_user_notes = pool:condorpool
+transfer_executable = true
+transfer_input_files = template.hdr,campaign_task,869149_ji0320021.fits,$(wf_submit_dir)/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz,$(wf_submit_dir)/00/03/stage_in_remote_local_0_0.meta,$(wf_submit_dir)/00/03/stage_in_local_local_0_6.meta,$(wf_submit_dir)/00/03/stage_in_local_local_0_0.meta,$(wf_submit_dir)/pegasus-lite-common.sh
+transfer_output_files = p139.fits,p139_area.fits
+universe = vanilla
+wf_submit_dir = /mnt/montage_intensivo_20261122/medicion/cases/MG-BASE-PILOTO/plans/MG-BASE/submit/dmeadmin/pegasus/dme-cloud-20261026-mg-base-r00/run0001
+when_to_transfer_output = ON_EXIT
++pegasus_generator = "Pegasus"
++pegasus_root_wf_uuid = "5d102b8a-4265-4817-a1d1-b99053fac29d"
++pegasus_wf_uuid = "5d102b8a-4265-4817-a1d1-b99053fac29d"
++pegasus_version = "5.1.2"
++pegasus_wf_name = "dme-cloud-20261026-mg-base-r00-0"
++pegasus_wf_time = "20261122T212811+0000"
++pegasus_wf_xformation = "campaign_task"
++pegasus_wf_dax_job_id = "P139"
++pegasus_wf_dag_job_id = "campaign_task_P139"
++pegasus_job_class = 1
++pegasus_site = "condorpool"
++pegasus_job_runtime = 0
++pegasus_cores = 1
++pegasus_gpus = 1
++pegasus_cluster_size = 1
+queue
+######################################################################
+# END OF SUBMIT FILE
+######################################################################

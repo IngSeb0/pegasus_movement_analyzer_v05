@@ -1,0 +1,3 @@
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda1        98G  6.2M   93G   1% /mnt
+Python 3.12.3

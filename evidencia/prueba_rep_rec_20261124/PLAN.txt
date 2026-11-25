@@ -1,0 +1,60 @@
+$ C:\Users\Acer\AppData\Local\Programs\Python\Python312\python.exe -B coordinador/llevar.py correr "python3 flujos/crear_flujo.py flujos/especificaciones.json REP-REC plan_reprec"
+Flujo creado en /mnt/prueba_rep_rec_20261124/plan_reprec
+
+$ C:\Users\Acer\AppData\Local\Programs\Python\Python312\python.exe -B coordinador/llevar.py correr "cd plan_reprec && pegasus-plan --conf pegasus.properties --dir submit --sites condorpool --output-sites local --cleanup none --cluster label --json workflow.yml"
+Job campaign_task_P Change in level to 0
+execution sites size -> 1 condorpool-->0,
+Job campaign_task_C4 Change in level to 1
+execution sites size -> 1 condorpool-->1,
+{
+  "user" : "dmeadmin",
+  "grid_dn" : null,
+  "submit_hostname" : "dme-master",
+  "root_wf_uuid" : "5d51e978-0bb2-4f34-b09b-91a8c648e1e9",
+  "wf_uuid" : "5d51e978-0bb2-4f34-b09b-91a8c648e1e9",
+  "dax" : "/mnt/prueba_rep_rec_20261124/plan_reprec/workflow.yml",
+  "dax_label" : "flujo-rep-rec",
+  "dax_index" : "0",
+  "dax_version" : "5.0.4",
+  "pegasus_wf_name" : "flujo-rep-rec-0",
+  "timestamp" : "20261124T154720+0000",
+  "basedir" : "/mnt/prueba_rep_rec_20261124/plan_reprec/submit",
+  "submit_dir" : "/mnt/prueba_rep_rec_20261124/plan_reprec/submit/dmeadmin/pegasus/flujo-rep-rec/run0001",
+  "planner" : "/usr/bin/pegasus-plan",
+  "planner_version" : "5.1.2",
+  "pegasus_build" : "20260203223935Z",
+  "planner_arguments" : "\"--conf pegasus.properties --dir submit --sites condorpool --output-sites local --cleanup none --cluster label --json workflow.yml \"",
+  "jsd" : "jobstate.log",
+  "rundir" : "run0001",
+  "bindir" : "/usr/bin",
+  "vogroup" : "pegasus",
+  "uses_pmc" : "false",
+  "properties" : "pegasus.5458145154405205583.properties",
+  "condor_log" : "flujo-rep-rec-0.log",
+  "dag" : "flujo-rep-rec-0.dag",
+  "type" : "dag",
+  "notify" : "flujo-rep-rec-0.notify",
+  "message" : "\n\n\nI have concretized your abstract workflow. The workflow has been entered \ninto the workflow database with a state of \"planned\". The next step is \nto start or execute your workflow. The invocation required is\n\n\n",
+  "pegasus-run" : "pegasus-run --json  /mnt/prueba_rep_rec_20261124/plan_reprec/submit/dmeadmin/pegasus/flujo-rep-rec/run0001"
+}
+2026.11.24 15:47:22.405 UTC:    
+2026.11.24 15:47:22.415 UTC:   ----------------------------------------------------------------------- 
+2026.11.24 15:47:22.421 UTC:   File for submitting this DAG to HTCondor           : flujo-rep-rec-0.dag.condor.sub 
+2026.11.24 15:47:22.426 UTC:   Log of DAGMan debugging messages                   : flujo-rep-rec-0.dag.dagman.out 
+2026.11.24 15:47:22.431 UTC:   Log of HTCondor library output                     : flujo-rep-rec-0.dag.lib.out 
+2026.11.24 15:47:22.436 UTC:   Log of HTCondor library error messages             : flujo-rep-rec-0.dag.lib.err 
+2026.11.24 15:47:22.441 UTC:   Log of the life of condor_dagman itself            : flujo-rep-rec-0.dag.dagman.log 
+2026.11.24 15:47:22.447 UTC:    
+2026.11.24 15:47:22.452 UTC:   -no_submit given, not submitting DAG to HTCondor. You can do this with: 
+2026.11.24 15:47:22.462 UTC:   ----------------------------------------------------------------------- 
+2026.11.24 15:47:25.575 UTC:   Database version: '5.1.2' (sqlite:////home/dmeadmin/.pegasus/workflow.db) 
+2026.11.24 15:47:27.062 UTC:   Pegasus database was successfully created. 
+2026.11.24 15:47:27.068 UTC:   Database version: '5.1.2' (sqlite:////mnt/prueba_rep_rec_20261124/plan_reprec/submit/dmeadmin/pegasus/flujo-rep-rec/run0001/flujo-rep-rec-0.replicas.db) 
+2026.11.24 15:47:27.113 UTC:   Output replica catalog set to jdbc:sqlite:/mnt/prueba_rep_rec_20261124/plan_reprec/submit/dmeadmin/pegasus/flujo-rep-rec/run0001/flujo-rep-rec-0.replicas.db 
+2026.11.24 15:47:28.630 UTC:   Time taken to execute is 6.642 seconds 
+
+$ C:\Users\Acer\AppData\Local\Programs\Python\Python312\python.exe -B coordinador/llevar.py correr "find plan_reprec/submit -name braindump.yml -printf '%h\n'"
+plan_reprec/submit/dmeadmin/pegasus/flujo-rep-rec/run0001
+
+$ C:\Users\Acer\AppData\Local\Programs\Python\Python312\python.exe -B coordinador/llevar.py bajar plan_reprec/submit/dmeadmin/pegasus/flujo-rep-rec/run0001 C:\Defensa\Sustentacion_DME\10_Preparacion_Final\prueba_rep_rec_20261124\PLAN_NATIVO
+

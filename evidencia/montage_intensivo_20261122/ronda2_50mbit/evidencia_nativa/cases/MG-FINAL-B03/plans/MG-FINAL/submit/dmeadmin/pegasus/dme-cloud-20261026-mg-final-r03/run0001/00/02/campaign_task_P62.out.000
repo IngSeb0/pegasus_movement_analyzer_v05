@@ -1,0 +1,250 @@
+- invocation: True
+  version: 3.0
+  start: 2026-11-23T00:51:11.884+00:00
+  duration: 1.802
+  transformation: "campaign_task"
+  derivation: "P62"
+  resource: "condorpool"
+  wf-label: "dme-cloud-20261026-mg-final-r03"
+  wf-stamp: "2026-11-23T00:44:08+00:00"
+  interface: eth0
+  hostaddr: 10.42.1.6
+  hostname: dme-worker3
+  pid: 52356
+  uid: 65534
+  user: nobody
+  gid: 65534
+  group: nogroup
+  umask: 0o0022
+  mainjob:
+    start: 2026-11-23T00:51:11.889+00:00
+    duration: 1.797
+    pid: 52357
+    usage:
+      utime: 0.533
+      stime: 0.036
+      maxrss: 46416
+      minflt: 10669
+      majflt: 0
+      nswap: 0
+      inblock: 0
+      outblock: 51960
+      msgsnd: 0
+      msgrcv: 0
+      nsignals: 0
+      nvcsw: 673
+      nivcsw: 31
+    status:
+      raw: 0
+      regular_exitcode: 0
+    executable:
+      file_name: /var/lib/condor/execute/dir_52215/scratch/campaign_task
+      mode: 0o100755
+      size: 8575350
+      inode: 544666
+      nlink: 1
+      blksize: 4096
+      blocks: 16752
+      mtime: 2026-11-23T00:51:05+00:00
+      atime: 2026-11-23T00:51:11+00:00
+      ctime: 2026-11-23T00:51:11+00:00
+      uid: 65534
+      user: nobody
+      gid: 65534
+      group: nogroup
+    argument_vector:
+      - "--task-id"
+      - "P62"
+      - "--input"
+      - "1603675_ji1180266.fits"
+      - "1707840"
+      - "--input"
+      - "template.hdr"
+      - "304"
+      - "--output"
+      - "p62.fits"
+      - "3372480"
+      - "--output"
+      - "p62_area.fits"
+      - "3372480"
+    procs:
+  jobids:
+    condor: 5154.0
+  cwd: /var/lib/condor/execute/dir_52215/scratch
+  usage:
+    utime: 0.000
+    stime: 0.006
+    maxrss: 3028
+    minflt: 137
+    majflt: 0
+    nswap: 0
+    inblock: 0
+    outblock: 0
+    msgsnd: 0
+    msgrcv: 0
+    nsignals: 0
+    nvcsw: 1
+    nivcsw: 2
+  machine:
+    page-size: 4096
+    uname_system: linux
+    uname_nodename: dme-worker3
+    uname_release: 7.0.0-1017-azure
+    uname_machine: x86_64
+    ram_total: 3489568
+    ram_free: 1648468
+    ram_shared: 4172
+    ram_buffer: 60296
+    swap_total: 0
+    swap_free: 0
+    cpu_count: 1
+    cpu_speed: 2793
+    cpu_vendor: GenuineIntel
+    cpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz
+    load_min1: 0.34
+    load_min5: 0.31
+    load_min15: 0.26
+    procs_total: 127
+    procs_running: 1
+    procs_sleeping: 64
+    procs_other: 62
+    procs_vmsize: 3060300
+    procs_rss: 421396
+    task_total: 156
+    task_running: 1
+    task_sleeping: 93
+    task_other: 62
+  files:
+    p62.fits:
+      lfn: "p62.fits"
+      file_name: /var/lib/condor/execute/dir_52215/scratch/p62.fits
+      mode: 0o100644
+      size: 3372480
+      inode: 549306
+      nlink: 1
+      blksize: 4096
+      blocks: 6592
+      mtime: 2026-11-23T00:51:13+00:00
+      atime: 2026-11-23T00:51:13+00:00
+      ctime: 2026-11-23T00:51:13+00:00
+      uid: 65534
+      user: nobody
+      gid: 65534
+      group: nogroup
+      output: True
+      sha256: 1249a77312d0c266e80b14bac6d0d51f86165f8f4bf2fdaa144501aff30eeabb
+      checksum_timing: 0.02
+    p62_area.fits:
+      lfn: "p62_area.fits"
+      file_name: /var/lib/condor/execute/dir_52215/scratch/p62_area.fits
+      mode: 0o100644
+      size: 3372480
+      inode: 549307
+      nlink: 1
+      blksize: 4096
+      blocks: 6592
+      mtime: 2026-11-23T00:51:13+00:00
+      atime: 2026-11-23T00:51:13+00:00
+      ctime: 2026-11-23T00:51:13+00:00
+      uid: 65534
+      user: nobody
+      gid: 65534
+      group: nogroup
+      output: True
+      sha256: 278ed3147cdd14a7e7df2398a234e896462c817b07de589cff265bbb5a7e9810
+      checksum_timing: 0.02
+    stdin:
+      file_name: /dev/null
+      mode: 0o20666
+      size: 0
+      inode: 5
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-11-22T22:08:27+00:00
+      atime: 2026-11-22T22:08:27+00:00
+      ctime: 2026-11-22T22:08:27+00:00
+      uid: 0
+      user: root
+      gid: 0
+      group: root
+    stdout:
+      temporary_name: /tmp/ks.out.OsKMLT
+      descriptor: 3
+      mode: 0o100600
+      size: 313
+      inode: 549281
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2026-11-23T00:51:13+00:00
+      atime: 2026-11-23T00:51:11+00:00
+      ctime: 2026-11-23T00:51:13+00:00
+      uid: 65534
+      user: nobody
+      gid: 65534
+      group: nogroup
+      data_truncated: false
+      data: |
+        {"task": "P62", "artifacts": [{"file": "p62.fits", "bytes": 3372480, "sha256": "1249a77312d0c266e80b14bac6d0d51f86165f8f4bf2fdaa144501aff30eeabb"}, {"file": "p62_area.fits", "bytes": 3372480, "sha256": "278ed3147cdd14a7e7df2398a234e896462c817b07de589cff265bbb5a7e9810"}], "montage": {"status": "0", "time": 0.0}}
+        
+    stderr:
+      temporary_name: /tmp/ks.err.QTg8vX
+      descriptor: 4
+      mode: 0o100600
+      size: 0
+      inode: 549282
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-11-23T00:51:11+00:00
+      atime: 2026-11-23T00:51:11+00:00
+      ctime: 2026-11-23T00:51:11+00:00
+      uid: 65534
+      user: nobody
+      gid: 65534
+      group: nogroup
+    metadata:
+      temporary_name: /tmp/ks.meta.40Jh4a
+      descriptor: 5
+      mode: 0o100600
+      size: 0
+      inode: 549283
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-11-23T00:51:11+00:00
+      atime: 2026-11-23T00:51:11+00:00
+      ctime: 2026-11-23T00:51:11+00:00
+      uid: 65534
+      user: nobody
+      gid: 65534
+      group: nogroup
+
+---------------pegasus-multipart
+- integrity_verification_attempts:
+  - lfn: "template.hdr"
+    pfn: "template.hdr"
+    sha256: 35d0ab35f63a6ee85a8e7a31aa7923073ba6d141f85975ec21e70cbabaa1d044
+    success: True
+  - lfn: "campaign_task"
+    pfn: "campaign_task"
+    sha256: 8d69de086d6005ad0f63f96568bfd4092398413953f1adbd2a9ed69d4c522f58
+    success: True
+  - lfn: "1603675_ji1180266.fits"
+    pfn: "1603675_ji1180266.fits"
+    sha256: 0ed22c38ff779cd9c845739cc196e0ddb05bce7e466a33abb1d21c60cb72d58b
+    success: True
+- integrity_summary:
+    succeeded: 3
+    failed: 0
+    duration: 0.062
+
+---------------pegasus-multipart
+location:
+    geohash: 66jc
+    ip: <omitido>
+    latitude: '-33.4521'
+    longitude: '-70.6536'
+    organization: Microsoft Corporation
+    subdomain: N/A

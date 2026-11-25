@@ -1,0 +1,12 @@
+executable = /bin/true
+transfer_executable = False
+requirements = TARGET.Machine == "dme-worker2"
+request_cpus = 1
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+transfer_input_files = datos.bin
+transfer_output_files = ""
+log = eventos.log
+output = stdout.txt
+error = stderr.txt
+queue

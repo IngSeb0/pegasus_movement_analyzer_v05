@@ -1,0 +1,13 @@
+{
+  "scientificJobs": 6,
+  "scientificBytes": 2936012800,
+  "noFixedWorkerRequirements": true,
+  "jobs": [
+    "/mnt/intensivo_20261122/patrones/cases/REDISTRIBUTION-W2-B02/plans/REDISTRIBUTION-W2-B02/submit/dmeadmin/pegasus/dme-six-20261110-redistribution-w2-r01/run0001/00/00/campaign_task_T1.sub",
+    "/mnt/intensivo_20261122/patrones/cases/REDISTRIBUTION-W2-B02/plans/REDISTRIBUTION-W2-B02/submit/dmeadmin/pegasus/dme-six-20261110-redistribution-w2-r01/run0001/00/00/campaign_task_T6.sub",
+    "/mnt/intensivo_20261122/patrones/cases/REDISTRIBUTION-W2-B02/plans/REDISTRIBUTION-W2-B02/submit/dmeadmin/pegasus/dme-six-20261110-redistribution-w2-r01/run0001/00/00/campaign_task_T5.sub",
+    "/mnt/intensivo_20261122/patrones/cases/REDISTRIBUTION-W2-B02/plans/REDISTRIBUTION-W2-B02/submit/dmeadmin/pegasus/dme-six-20261110-redistribution-w2-r01/run0001/00/00/campaign_task_T4.sub",
+    "/mnt/intensivo_20261122/patrones/cases/REDISTRIBUTION-W2-B02/plans/REDISTRIBUTION-W2-B02/submit/dmeadmin/pegasus/dme-six-20261110-redistribution-w2-r01/run0001/00/00/campaign_task_T2.sub",
+    "/mnt/intensivo_20261122/patrones/cases/REDISTRIBUTION-W2-B02/plans/REDISTRIBUTION-W2-B02/submit/dmeadmin/pegasus/dme-six-20261110-redistribution-w2-r01/run0001/00/00/campaign_task_T3.sub"
+  ]
+}

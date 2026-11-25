@@ -1,0 +1,13 @@
+[
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "campaign_task",
+   "id": 1,
+   "generate_checksum": true,
+   "src_urls": [
+     { "site_label": "local", "url": "file:///mnt/montage_intensivo_20261122/ronda2/cases/MG-BASE-B02/plans/MG-BASE/bin/campaign_task.py", "priority": 100 }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///mnt/montage_intensivo_20261122/ronda2/cases/MG-BASE-B02/plans/MG-BASE/scratch/dmeadmin/pegasus/dme-cloud-20261026-mg-base-r02/run0001/./campaign_task" }
+   ] }
+]

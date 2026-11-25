@@ -1,0 +1,42 @@
+{
+  "client": "pegasus-plan",
+  "version": "5.1.2",
+  "wf_api": "python",
+  "type": "metrics",
+  "start_time": 1.795537345287E9,
+  "end_time": 1.79553735035E9,
+  "duration": 5.063,
+  "exitcode": 0,
+  "root_wf_uuid": "b4af058d-9e53-40e8-a456-52d34abcd5fc",
+  "wf_uuid": "b4af058d-9e53-40e8-a456-52d34abcd5fc",
+  "data_config": "condorio",
+  "planner_args": "--conf /mnt/prueba_rep_rec_20261124/reprec_r1/pegasus.properties --dir /mnt/prueba_rep_rec_20261124/reprec_r1/submit --sites condorpool --output-sites local --cleanup none --cluster label --json /mnt/prueba_rep_rec_20261124/reprec_r1/workflow.yml ",
+  "uses_pmc": false,
+  "wf_metrics": {
+    "compute_tasks": 5,
+    "dax_tasks": 0,
+    "dag_tasks": 0,
+    "total_tasks": 5,
+    "deleted_tasks": 0,
+    "dax_input_files": 1,
+    "dax_inter_files": 1,
+    "dax_output_files": 4,
+    "dax_total_files": 6,
+    "compute_jobs": 3,
+    "clustered_jobs": 1,
+    "si_tx_jobs": 2,
+    "so_tx_jobs": 2,
+    "inter_tx_jobs": 0,
+    "reg_jobs": 0,
+    "cleanup_jobs": 0,
+    "create_dir_jobs": 1,
+    "dax_jobs": 0,
+    "dag_jobs": 0,
+    "chmod_jobs": 0,
+    "total_jobs": 9
+  },
+  "app_metrics": {
+    "name": "flujo-rep-rec"
+  }
+}
+

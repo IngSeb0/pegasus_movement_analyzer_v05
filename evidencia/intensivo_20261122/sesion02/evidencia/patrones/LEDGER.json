@@ -1,0 +1,212 @@
+[
+  {
+    "id": "DISTRIBUTION-W2-PILOTO",
+    "condition": "DISTRIBUTION-W2",
+    "workers": 2,
+    "pattern": "DISTRIBUTION",
+    "block": 0,
+    "phase": "piloto",
+    "uuid": "08440f54-7e56-43c4-ba73-1441fe436a6c",
+    "submittedAtUtc": "2026-11-22T14:53:42.767897+00:00"
+  },
+  {
+    "id": "REDISTRIBUTION-W2-B01",
+    "condition": "REDISTRIBUTION-W2",
+    "workers": 2,
+    "pattern": "REDISTRIBUTION",
+    "block": 1,
+    "phase": "principal",
+    "uuid": "cd1fed82-78c8-49ff-8a48-18a08039361f",
+    "submittedAtUtc": "2026-11-22T14:59:15.862189+00:00"
+  },
+  {
+    "id": "DISTRIBUTION-W2-B01",
+    "condition": "DISTRIBUTION-W2",
+    "workers": 2,
+    "pattern": "DISTRIBUTION",
+    "block": 1,
+    "phase": "principal",
+    "uuid": "f4830b2f-9c59-45ba-add1-055e5e654783",
+    "submittedAtUtc": "2026-11-22T15:06:11.685841+00:00"
+  },
+  {
+    "id": "PIPELINE-W2-B01",
+    "condition": "PIPELINE-W2",
+    "workers": 2,
+    "pattern": "PIPELINE",
+    "block": 1,
+    "phase": "principal",
+    "uuid": "c1b0bf1d-b7f4-4fd9-a125-6d55af5a1635",
+    "submittedAtUtc": "2026-11-22T15:11:34.130489+00:00"
+  },
+  {
+    "id": "PROCESS-W2-B01",
+    "condition": "PROCESS-W2",
+    "workers": 2,
+    "pattern": "PROCESS",
+    "block": 1,
+    "phase": "principal",
+    "uuid": "6e716e30-9410-40c5-8a1e-9bf77f2805df",
+    "submittedAtUtc": "2026-11-22T15:19:10.247412+00:00"
+  },
+  {
+    "id": "AGGREGATION-W2-B01",
+    "condition": "AGGREGATION-W2",
+    "workers": 2,
+    "pattern": "AGGREGATION",
+    "block": 1,
+    "phase": "principal",
+    "uuid": "19997c64-3510-4e2a-abf5-f43b3114ba1c",
+    "submittedAtUtc": "2026-11-22T15:24:04.389577+00:00"
+  },
+  {
+    "id": "REDISTRIBUTION-W4-B01",
+    "condition": "REDISTRIBUTION-W4",
+    "workers": 4,
+    "pattern": "REDISTRIBUTION",
+    "block": 1,
+    "phase": "principal",
+    "uuid": "a9c7b211-f5b6-4c0b-80d9-69a6374b2775",
+    "submittedAtUtc": "2026-11-22T15:30:48.603307+00:00"
+  },
+  {
+    "id": "DISTRIBUTION-W4-B01",
+    "condition": "DISTRIBUTION-W4",
+    "workers": 4,
+    "pattern": "DISTRIBUTION",
+    "block": 1,
+    "phase": "principal",
+    "uuid": "03b1ace2-cf13-409d-9d6c-a236cf1e7b69",
+    "submittedAtUtc": "2026-11-22T15:37:59.840449+00:00"
+  },
+  {
+    "id": "PIPELINE-W4-B01",
+    "condition": "PIPELINE-W4",
+    "workers": 4,
+    "pattern": "PIPELINE",
+    "block": 1,
+    "phase": "principal",
+    "uuid": "a777afb8-ee0e-49bf-bf1b-4ded148e8e02",
+    "submittedAtUtc": "2026-11-22T15:43:10.457362+00:00"
+  },
+  {
+    "id": "PROCESS-W4-B01",
+    "condition": "PROCESS-W4",
+    "workers": 4,
+    "pattern": "PROCESS",
+    "block": 1,
+    "phase": "principal",
+    "uuid": "061310d7-4332-405d-967b-e9db7c4882aa",
+    "submittedAtUtc": "2026-11-22T15:51:02.395262+00:00"
+  },
+  {
+    "id": "AGGREGATION-W4-B01",
+    "condition": "AGGREGATION-W4",
+    "workers": 4,
+    "pattern": "AGGREGATION",
+    "block": 1,
+    "phase": "principal",
+    "uuid": "08a6317a-b8ad-413b-8469-018c78e5d0a8",
+    "submittedAtUtc": "2026-11-22T15:55:57.841803+00:00"
+  },
+  {
+    "id": "PROCESS-W4-B02",
+    "condition": "PROCESS-W4",
+    "workers": 4,
+    "pattern": "PROCESS",
+    "block": 2,
+    "phase": "principal",
+    "uuid": "45e7e83d-3f65-4752-92f0-623a29328fea",
+    "submittedAtUtc": "2026-11-22T16:02:53.552156+00:00"
+  },
+  {
+    "id": "DISTRIBUTION-W4-B02",
+    "condition": "DISTRIBUTION-W4",
+    "workers": 4,
+    "pattern": "DISTRIBUTION",
+    "block": 2,
+    "phase": "principal",
+    "uuid": "e20758aa-a023-4e8d-8d19-12cd0c97b71d",
+    "submittedAtUtc": "2026-11-22T16:07:26.731323+00:00"
+  },
+  {
+    "id": "REDISTRIBUTION-W4-B02",
+    "condition": "REDISTRIBUTION-W4",
+    "workers": 4,
+    "pattern": "REDISTRIBUTION",
+    "block": 2,
+    "phase": "principal",
+    "uuid": "6adced9e-1591-4304-81e2-6d8d1c0883ba",
+    "submittedAtUtc": "2026-11-22T16:12:39.229635+00:00"
+  },
+  {
+    "id": "PIPELINE-W4-B02",
+    "condition": "PIPELINE-W4",
+    "workers": 4,
+    "pattern": "PIPELINE",
+    "block": 2,
+    "phase": "principal",
+    "uuid": "b6599b31-929a-42d6-8b0f-43ad1af898c6",
+    "submittedAtUtc": "2026-11-22T16:19:24.166556+00:00"
+  },
+  {
+    "id": "AGGREGATION-W4-B02",
+    "condition": "AGGREGATION-W4",
+    "workers": 4,
+    "pattern": "AGGREGATION",
+    "block": 2,
+    "phase": "principal",
+    "uuid": "e63acf83-83cb-43ad-b399-33caf836a705",
+    "submittedAtUtc": "2026-11-22T16:26:55.030122+00:00"
+  },
+  {
+    "id": "PROCESS-W2-B02",
+    "condition": "PROCESS-W2",
+    "workers": 2,
+    "pattern": "PROCESS",
+    "block": 2,
+    "phase": "principal",
+    "uuid": "147be6e2-cd79-4c3c-b190-7bbabec1c003",
+    "submittedAtUtc": "2026-11-22T16:33:37.987763+00:00"
+  },
+  {
+    "id": "DISTRIBUTION-W2-B02",
+    "condition": "DISTRIBUTION-W2",
+    "workers": 2,
+    "pattern": "DISTRIBUTION",
+    "block": 2,
+    "phase": "principal",
+    "uuid": "f0724b63-aba0-4a8c-a5b3-b67045ed016b",
+    "submittedAtUtc": "2026-11-22T16:38:37.888829+00:00"
+  },
+  {
+    "id": "REDISTRIBUTION-W2-B02",
+    "condition": "REDISTRIBUTION-W2",
+    "workers": 2,
+    "pattern": "REDISTRIBUTION",
+    "block": 2,
+    "phase": "principal",
+    "uuid": "af194887-e4ff-47c1-9782-a9b98a2166a9",
+    "submittedAtUtc": "2026-11-22T16:44:03.083563+00:00"
+  },
+  {
+    "id": "PIPELINE-W2-B02",
+    "condition": "PIPELINE-W2",
+    "workers": 2,
+    "pattern": "PIPELINE",
+    "block": 2,
+    "phase": "principal",
+    "uuid": "441398c4-e121-4bee-b9e2-c6e0df063dee",
+    "submittedAtUtc": "2026-11-22T16:51:07.618234+00:00"
+  },
+  {
+    "id": "AGGREGATION-W2-B02",
+    "condition": "AGGREGATION-W2",
+    "workers": 2,
+    "pattern": "AGGREGATION",
+    "block": 2,
+    "phase": "principal",
+    "uuid": "96dc61e2-6ed3-440f-813b-36c63d315c2e",
+    "submittedAtUtc": "2026-11-22T16:58:39.334321+00:00"
+  }
+]

@@ -1,0 +1,107 @@
+[
+  {
+    "id": "DISTRIBUTION-W2-PILOTO",
+    "expectedObservedBytes": 2516582400,
+    "expectedDeliveries": 12
+  },
+  {
+    "id": "REDISTRIBUTION-W2-B01",
+    "expectedObservedBytes": 2936012800,
+    "expectedDeliveries": 14
+  },
+  {
+    "id": "DISTRIBUTION-W2-B01",
+    "expectedObservedBytes": 2516582400,
+    "expectedDeliveries": 12
+  },
+  {
+    "id": "PIPELINE-W2-B01",
+    "expectedObservedBytes": 2516582400,
+    "expectedDeliveries": 12
+  },
+  {
+    "id": "PROCESS-W2-B01",
+    "expectedObservedBytes": 2516582400,
+    "expectedDeliveries": 12
+  },
+  {
+    "id": "AGGREGATION-W2-B01",
+    "expectedObservedBytes": 3355443200,
+    "expectedDeliveries": 16
+  },
+  {
+    "id": "REDISTRIBUTION-W4-B01",
+    "expectedObservedBytes": 2936012800,
+    "expectedDeliveries": 14
+  },
+  {
+    "id": "DISTRIBUTION-W4-B01",
+    "expectedObservedBytes": 2516582400,
+    "expectedDeliveries": 12
+  },
+  {
+    "id": "PIPELINE-W4-B01",
+    "expectedObservedBytes": 2516582400,
+    "expectedDeliveries": 12
+  },
+  {
+    "id": "PROCESS-W4-B01",
+    "expectedObservedBytes": 2516582400,
+    "expectedDeliveries": 12
+  },
+  {
+    "id": "AGGREGATION-W4-B01",
+    "expectedObservedBytes": 3355443200,
+    "expectedDeliveries": 16
+  },
+  {
+    "id": "PROCESS-W4-B02",
+    "expectedObservedBytes": 2516582400,
+    "expectedDeliveries": 12
+  },
+  {
+    "id": "DISTRIBUTION-W4-B02",
+    "expectedObservedBytes": 2516582400,
+    "expectedDeliveries": 12
+  },
+  {
+    "id": "REDISTRIBUTION-W4-B02",
+    "expectedObservedBytes": 2936012800,
+    "expectedDeliveries": 14
+  },
+  {
+    "id": "PIPELINE-W4-B02",
+    "expectedObservedBytes": 2516582400,
+    "expectedDeliveries": 12
+  },
+  {
+    "id": "AGGREGATION-W4-B02",
+    "expectedObservedBytes": 3355443200,
+    "expectedDeliveries": 16
+  },
+  {
+    "id": "PROCESS-W2-B02",
+    "expectedObservedBytes": 2516582400,
+    "expectedDeliveries": 12
+  },
+  {
+    "id": "DISTRIBUTION-W2-B02",
+    "expectedObservedBytes": 2516582400,
+    "expectedDeliveries": 12
+  },
+  {
+    "id": "REDISTRIBUTION-W2-B02",
+    "expectedObservedBytes": 2936012800,
+    "expectedDeliveries": 14
+  },
+  {
+    "id": "PIPELINE-W2-B02",
+    "expectedObservedBytes": 2516582400,
+    "expectedDeliveries": 12
+  },
+  {
+    "id": "AGGREGATION-W2-B02",
+    "expectedObservedBytes": 3355443200,
+    "expectedDeliveries": 16
+  }
+]

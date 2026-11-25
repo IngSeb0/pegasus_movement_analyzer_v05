@@ -1,0 +1,22 @@
+[
+  {
+    "name": "dme-master",
+    "state": "VM deallocated"
+  },
+  {
+    "name": "dme-worker1",
+    "state": "VM deallocated"
+  },
+  {
+    "name": "dme-worker2",
+    "state": "VM deallocated"
+  },
+  {
+    "name": "dme-worker3",
+    "state": "VM deallocated"
+  },
+  {
+    "name": "dme-worker4",
+    "state": "VM deallocated"
+  }
+]

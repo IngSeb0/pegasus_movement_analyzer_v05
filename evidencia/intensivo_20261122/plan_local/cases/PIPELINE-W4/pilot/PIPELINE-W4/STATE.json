@@ -1,0 +1,7 @@
+{
+  "status": "PREPARED",
+  "uuid": "afd1b0e1-638b-4a18-8650-ded7a97e0183",
+  "run": "/study/cases/PIPELINE-W4/plans/PIPELINE-W4/submit/root/pegasus/dme-six-20261110-pipeline-w4-r01/run0001",
+  "submitted": false,
+  "program_sha256": "f2bd2df2752ae6890df433e1428f713c29dc6ab3a995a3787a8ebca2d432353f"
+}

@@ -1,0 +1,14 @@
+executable = /usr/bin/fallocate
+arguments = -l 1073741824 datos.bin
+transfer_executable = False
+requirements = TARGET.Machine == "dme-worker2"
+request_cpus = 1
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+transfer_input_files = ""
+transfer_output_files = datos.bin
+initialdir = /mnt/montage_intensivo_20261122/ronda2/banda-salida
+log = /mnt/montage_intensivo_20261122/ronda2/banda-salida/eventos.log
+output = /mnt/montage_intensivo_20261122/ronda2/banda-salida/stdout.txt
+error = /mnt/montage_intensivo_20261122/ronda2/banda-salida/stderr.txt
+queue

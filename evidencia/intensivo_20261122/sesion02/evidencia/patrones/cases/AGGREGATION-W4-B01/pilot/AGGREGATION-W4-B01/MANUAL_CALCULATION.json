@@ -1,0 +1,115 @@
+{
+  "files": [
+    {
+      "file": "A1",
+      "bytes": 209715200,
+      "origin": "dme-master",
+      "destinations": [
+        "dme-worker2"
+      ],
+      "obligations": 1,
+      "required_bytes": 209715200
+    },
+    {
+      "file": "A2",
+      "bytes": 209715200,
+      "origin": "dme-master",
+      "destinations": [
+        "dme-worker3"
+      ],
+      "obligations": 1,
+      "required_bytes": 209715200
+    },
+    {
+      "file": "A3",
+      "bytes": 209715200,
+      "origin": "dme-master",
+      "destinations": [
+        "dme-worker4"
+      ],
+      "obligations": 1,
+      "required_bytes": 209715200
+    },
+    {
+      "file": "A4",
+      "bytes": 209715200,
+      "origin": "dme-master",
+      "destinations": [
+        "dme-worker1"
+      ],
+      "obligations": 1,
+      "required_bytes": 209715200
+    },
+    {
+      "file": "A5",
+      "bytes": 209715200,
+      "origin": "dme-master",
+      "destinations": [
+        "dme-worker3"
+      ],
+      "obligations": 1,
+      "required_bytes": 209715200
+    },
+    {
+      "file": "B",
+      "bytes": 209715200,
+      "origin": "dme-worker3",
+      "destinations": [
+        "dme-master"
+      ],
+      "obligations": 1,
+      "required_bytes": 209715200
+    },
+    {
+      "file": "f1",
+      "bytes": 209715200,
+      "origin": "dme-worker2",
+      "destinations": [
+        "dme-master",
+        "dme-worker3"
+      ],
+      "obligations": 2,
+      "required_bytes": 419430400
+    },
+    {
+      "file": "f2",
+      "bytes": 209715200,
+      "origin": "dme-worker3",
+      "destinations": [],
+      "obligations": 0,
+      "required_bytes": 0
+    },
+    {
+      "file": "f3",
+      "bytes": 209715200,
+      "origin": "dme-worker4",
+      "destinations": [
+        "dme-master",
+        "dme-worker3"
+      ],
+      "obligations": 2,
+      "required_bytes": 419430400
+    },
+    {
+      "file": "f4",
+      "bytes": 209715200,
+      "origin": "dme-worker1",
+      "destinations": [
+        "dme-master",
+        "dme-worker3"
+      ],
+      "obligations": 2,
+      "required_bytes": 419430400
+    },
+    {
+      "file": "f5",
+      "bytes": 209715200,
+      "origin": "dme-worker3",
+      "destinations": [],
+      "obligations": 0,
+      "required_bytes": 0
+    }
+  ],
+  "required_bytes": 2516582400,
+  "obligations": 12
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "id": "M101-BASE",
+    "uuid": "6ae4b240-5567-4548-91df-358a228166ea",
+    "condition": "M101-BASE",
+    "phase": "main",
+    "block": 1,
+    "submittedAtUtc": "2026-11-11T22:44:54.257643+00:00",
+    "sessionStart": "2026-11-11T22:30:23.534682+00:00"
+  },
+  {
+    "id": "M101-PROJ",
+    "uuid": "1ee8f5ee-9402-425e-882b-781ac881c948",
+    "condition": "M101-PROJ",
+    "phase": "main",
+    "block": 1,
+    "submittedAtUtc": "2026-11-11T22:49:58.068742+00:00",
+    "sessionStart": "2026-11-11T22:30:23.534682+00:00"
+  },
+  {
+    "id": "M101-FINAL",
+    "uuid": "c9963eb5-a2b9-48d9-b7a3-e8d0917feffd",
+    "condition": "M101-FINAL",
+    "phase": "main",
+    "block": 1,
+    "submittedAtUtc": "2026-11-11T22:55:07.098708+00:00",
+    "sessionStart": "2026-11-11T22:30:23.534682+00:00"
+  }
+]

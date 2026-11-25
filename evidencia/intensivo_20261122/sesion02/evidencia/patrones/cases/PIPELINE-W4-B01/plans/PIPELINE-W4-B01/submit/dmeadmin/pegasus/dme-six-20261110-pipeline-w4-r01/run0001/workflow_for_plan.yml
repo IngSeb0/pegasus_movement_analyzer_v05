@@ -1,0 +1,299 @@
+x-pegasus:
+  apiLang: python
+  createdBy: dmeadmin
+  createdOn: 11-22-26T15:43:04Z
+pegasus: 5.0.4
+name: dme-six-20261110-pipeline-w4-r01
+metadata:
+  condition_id: PIPELINE-W4
+  pattern: Pipeline
+  replica: '1'
+  data_configuration: condorio
+  program_version: six_patterns_fma_v1
+  oracle_sha256: 5fb7899efed14edcee6e1a68ec638765d476beded6b850c24710c5d9bd4249a5
+  scientific_file_sizes_bytes: '{"A": 209715200, "B": 209715200, "f12": 209715200,
+    "f23": 209715200, "f34": 209715200, "f45": 209715200, "f56": 209715200}'
+  study: five_patterns_20261110
+  study_case: PIPELINE-W4-B01
+siteCatalog:
+  sites:
+  - name: local
+    arch: x86_64
+    os.type: linux
+    directories:
+    - type: sharedScratch
+      path: /mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B01/plans/PIPELINE-W4-B01/scratch
+      sharedFileSystem: false
+      fileServers:
+      - url: file:///mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B01/plans/PIPELINE-W4-B01/scratch
+        operation: all
+    - type: localStorage
+      path: /mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B01/plans/PIPELINE-W4-B01/outputs
+      sharedFileSystem: false
+      fileServers:
+      - url: file:///mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B01/plans/PIPELINE-W4-B01/outputs
+        operation: all
+  - name: condorpool
+    arch: x86_64
+    os.type: linux
+    directories: []
+    profiles:
+      condor:
+        universe: vanilla
+        request_cpus: '1'
+        request_memory: 256
+      pegasus:
+        style: condor
+        auxillary.local: 'True'
+replicaCatalog:
+  replicas:
+  - lfn: A
+    pfns:
+    - site: local
+      pfn: /mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B01/plans/PIPELINE-W4-B01/inputs/A
+  - lfn: fma_kernel
+    pfns:
+    - site: local
+      pfn: /mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B01/plans/PIPELINE-W4-B01/bin/fma_kernel
+transformationCatalog:
+  transformations:
+  - name: campaign_task
+    sites:
+    - name: local
+      pfn: /mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B01/plans/PIPELINE-W4-B01/bin/campaign_task.py
+      type: stageable
+      arch: x86_64
+      os.type: linux
+jobs:
+- type: job
+  name: campaign_task
+  id: T1
+  arguments:
+  - --task-id
+  - T1
+  - --flops
+  - '1766799020'
+  - --input
+  - A
+  - '209715200'
+  - --output
+  - f12
+  - '209715200'
+  uses:
+  - lfn: f12
+    type: output
+    stageOut: false
+    registerReplica: false
+  - lfn: A
+    type: input
+  profiles:
+    condor:
+      requirements: TARGET.DMEStudyEligible == true
+      request_cpus: '1'
+      request_memory: 256
+  metadata:
+    task_id: T1
+    condition_id: PIPELINE-W4
+    replica: '1'
+    pattern: Pipeline
+    controlled_worker: W1
+    target_machine: dme-worker1
+    flops: '1766799020'
+    scientific_inputs: '["A"]'
+    scientific_outputs: '["f12"]'
+- type: job
+  name: campaign_task
+  id: T2
+  arguments:
+  - --task-id
+  - T2
+  - --flops
+  - '1766799020'
+  - --input
+  - f12
+  - '209715200'
+  - --output
+  - f23
+  - '209715200'
+  uses:
+  - lfn: f12
+    type: input
+  - lfn: f23
+    type: output
+    stageOut: false
+    registerReplica: false
+  profiles:
+    condor:
+      requirements: TARGET.DMEStudyEligible == true
+      request_cpus: '1'
+      request_memory: 256
+  metadata:
+    task_id: T2
+    condition_id: PIPELINE-W4
+    replica: '1'
+    pattern: Pipeline
+    controlled_worker: W1
+    target_machine: dme-worker1
+    flops: '1766799020'
+    scientific_inputs: '["f12"]'
+    scientific_outputs: '["f23"]'
+- type: job
+  name: campaign_task
+  id: T3
+  arguments:
+  - --task-id
+  - T3
+  - --flops
+  - '1766799020'
+  - --input
+  - f23
+  - '209715200'
+  - --output
+  - f34
+  - '209715200'
+  uses:
+  - lfn: f23
+    type: input
+  - lfn: f34
+    type: output
+    stageOut: false
+    registerReplica: false
+  profiles:
+    condor:
+      requirements: TARGET.DMEStudyEligible == true
+      request_cpus: '1'
+      request_memory: 256
+  metadata:
+    task_id: T3
+    condition_id: PIPELINE-W4
+    replica: '1'
+    pattern: Pipeline
+    controlled_worker: W1
+    target_machine: dme-worker1
+    flops: '1766799020'
+    scientific_inputs: '["f23"]'
+    scientific_outputs: '["f34"]'
+- type: job
+  name: campaign_task
+  id: T4
+  arguments:
+  - --task-id
+  - T4
+  - --flops
+  - '1766799020'
+  - --input
+  - f34
+  - '209715200'
+  - --output
+  - f45
+  - '209715200'
+  uses:
+  - lfn: f45
+    type: output
+    stageOut: false
+    registerReplica: false
+  - lfn: f34
+    type: input
+  profiles:
+    condor:
+      requirements: TARGET.DMEStudyEligible == true
+      request_cpus: '1'
+      request_memory: 256
+  metadata:
+    task_id: T4
+    condition_id: PIPELINE-W4
+    replica: '1'
+    pattern: Pipeline
+    controlled_worker: W1
+    target_machine: dme-worker1
+    flops: '1766799020'
+    scientific_inputs: '["f34"]'
+    scientific_outputs: '["f45"]'
+- type: job
+  name: campaign_task
+  id: T5
+  arguments:
+  - --task-id
+  - T5
+  - --flops
+  - '1766799020'
+  - --input
+  - f45
+  - '209715200'
+  - --output
+  - f56
+  - '209715200'
+  uses:
+  - lfn: f45
+    type: input
+  - lfn: f56
+    type: output
+    stageOut: false
+    registerReplica: false
+  profiles:
+    condor:
+      requirements: TARGET.DMEStudyEligible == true
+      request_cpus: '1'
+      request_memory: 256
+  metadata:
+    task_id: T5
+    condition_id: PIPELINE-W4
+    replica: '1'
+    pattern: Pipeline
+    controlled_worker: W1
+    target_machine: dme-worker1
+    flops: '1766799020'
+    scientific_inputs: '["f45"]'
+    scientific_outputs: '["f56"]'
+- type: job
+  name: campaign_task
+  id: T6
+  arguments:
+  - --task-id
+  - T6
+  - --flops
+  - '1766799020'
+  - --input
+  - f56
+  - '209715200'
+  - --output
+  - B
+  - '209715200'
+  uses:
+  - lfn: B
+    type: output
+    stageOut: true
+    registerReplica: false
+  - lfn: f56
+    type: input
+  profiles:
+    condor:
+      requirements: TARGET.DMEStudyEligible == true
+      request_cpus: '1'
+      request_memory: 256
+  metadata:
+    task_id: T6
+    condition_id: PIPELINE-W4
+    replica: '1'
+    pattern: Pipeline
+    controlled_worker: W1
+    target_machine: dme-worker1
+    flops: '1766799020'
+    scientific_inputs: '["f56"]'
+    scientific_outputs: '["B"]'
+jobDependencies:
+- id: T1
+  children:
+  - T2
+- id: T2
+  children:
+  - T3
+- id: T3
+  children:
+  - T4
+- id: T4
+  children:
+  - T5
+- id: T5
+  children:
+  - T6

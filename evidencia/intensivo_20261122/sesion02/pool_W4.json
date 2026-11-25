@@ -1,0 +1,22 @@
+[
+  {
+    "worker": "dme-worker1",
+    "cpus": 1,
+    "eligible": true
+  },
+  {
+    "worker": "dme-worker2",
+    "cpus": 1,
+    "eligible": true
+  },
+  {
+    "worker": "dme-worker3",
+    "cpus": 1,
+    "eligible": true
+  },
+  {
+    "worker": "dme-worker4",
+    "cpus": 1,
+    "eligible": true
+  }
+]

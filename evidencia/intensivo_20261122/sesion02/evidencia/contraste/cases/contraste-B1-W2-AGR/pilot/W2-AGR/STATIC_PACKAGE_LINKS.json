@@ -1,0 +1,10 @@
+[
+  {
+    "path": "/mnt/intensivo_20261122/contraste/cases/contraste-B1-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+    "canonical": "/mnt/intensivo_20261122/contraste/static_worker_bundles/b1d82cc0c6b2c26bfa308c51e7eeb661a48691af2355ad4755f0c5262d5e4cc1.tar.gz",
+    "sha256": "b1d82cc0c6b2c26bfa308c51e7eeb661a48691af2355ad4755f0c5262d5e4cc1",
+    "bytes": 18251217,
+    "prior_mtime_ns": 1795367785846415290,
+    "scope": "new immutable static worker package only; bytes and logical paths preserved"
+  }
+]

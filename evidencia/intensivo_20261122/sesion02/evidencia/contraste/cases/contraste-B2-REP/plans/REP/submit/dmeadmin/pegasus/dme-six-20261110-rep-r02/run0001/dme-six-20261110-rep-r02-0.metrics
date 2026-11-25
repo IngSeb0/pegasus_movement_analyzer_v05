@@ -1,0 +1,42 @@
+{
+  "client": "pegasus-plan",
+  "version": "5.1.2",
+  "wf_api": "python",
+  "type": "metrics",
+  "start_time": 1.795368733954E9,
+  "end_time": 1.795368739169E9,
+  "duration": 5.215,
+  "exitcode": 0,
+  "root_wf_uuid": "b778bbe5-c726-4901-ad67-738cadfb8d46",
+  "wf_uuid": "b778bbe5-c726-4901-ad67-738cadfb8d46",
+  "data_config": "condorio",
+  "planner_args": "--conf /mnt/intensivo_20261122/contraste/cases/contraste-B2-REP/plans/REP/pegasus.properties --dir /mnt/intensivo_20261122/contraste/cases/contraste-B2-REP/plans/REP/submit --sites condorpool --output-sites local --cleanup none --json /mnt/intensivo_20261122/contraste/cases/contraste-B2-REP/plans/REP/workflow_for_plan.yml ",
+  "uses_pmc": false,
+  "wf_metrics": {
+    "compute_tasks": 5,
+    "dax_tasks": 0,
+    "dag_tasks": 0,
+    "total_tasks": 5,
+    "deleted_tasks": 0,
+    "dax_input_files": 1,
+    "dax_inter_files": 1,
+    "dax_output_files": 4,
+    "dax_total_files": 6,
+    "compute_jobs": 5,
+    "clustered_jobs": 0,
+    "si_tx_jobs": 2,
+    "so_tx_jobs": 1,
+    "inter_tx_jobs": 0,
+    "reg_jobs": 0,
+    "cleanup_jobs": 0,
+    "create_dir_jobs": 1,
+    "dax_jobs": 0,
+    "dag_jobs": 0,
+    "chmod_jobs": 0,
+    "total_jobs": 9
+  },
+  "app_metrics": {
+    "name": "dme-six-20261110-rep-r02"
+  }
+}
+

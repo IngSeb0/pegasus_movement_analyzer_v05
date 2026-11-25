@@ -1,0 +1,65 @@
+11/24/26 16:42:28 Of 9 nodes total:
+11/24/26 16:42:28  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+11/24/26 16:42:28   ===     ===      ===     ===     ===        ===      ===      ===
+11/24/26 16:42:28     5       0        3       0       0          1        0        0
+11/24/26 16:42:28 0 job proc(s) currently held
+11/24/26 16:42:28 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.003; EventCycleTimeMax=0.031; EventCycleTimeMin=0.000; EventCycleTimeStd=0.006; EventCycleTimeSum=0.083; SleepCycleTimeAvg=5.017; SleepCycleTimeMax=5.119; SleepCycleTimeMin=5.000; SleepCycleTimeStd=0.038; SleepCycleTimeSum=160.545; SubmitCycleTimeAvg=0.002; SubmitCycleTimeMax=0.031; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.006; SubmitCycleTimeSum=0.065; EventCycleTimeCount=32.000; SleepCycleTimeCount=32.000; SubmitCycleTimeCount=33.000; LogProcessCycleTimeAvg=0.001; LogProcessCycleTimeMax=0.003; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.001; LogProcessCycleTimeSum=0.010; LogProcessCycleTimeCount=13.000; ]
+11/24/26 16:42:53 Currently monitoring 1 HTCondor log file(s)
+11/24/26 16:42:53 Event: ULOG_EXECUTE for HTCondor Node campaign_task_C4 (5264.0.0) {11/24/26 16:42:50}
+11/24/26 16:42:53 Number of idle job procs: 2
+11/24/26 16:42:53 Event: ULOG_EXECUTE for HTCondor Node campaign_task_C2 (5265.0.0) {11/24/26 16:42:51}
+11/24/26 16:42:53 Number of idle job procs: 1
+11/24/26 16:43:18 Currently monitoring 1 HTCondor log file(s)
+11/24/26 16:43:18 Event: ULOG_JOB_TERMINATED for HTCondor Node campaign_task_C4 (5264.0.0) {11/24/26 16:43:14}
+11/24/26 16:43:18 Number of idle job procs: 1
+11/24/26 16:43:18 Node campaign_task_C4 job proc (5264.0.0) completed successfully.
+11/24/26 16:43:18 Node campaign_task_C4 job(s) have exited the queue
+11/24/26 16:43:18 Running POST script of Node campaign_task_C4...
+11/24/26 16:43:18 Event: ULOG_JOB_TERMINATED for HTCondor Node campaign_task_C2 (5265.0.0) {11/24/26 16:43:16}
+11/24/26 16:43:18 Number of idle job procs: 1
+11/24/26 16:43:18 Node campaign_task_C2 job proc (5265.0.0) completed successfully.
+11/24/26 16:43:18 Node campaign_task_C2 job(s) have exited the queue
+11/24/26 16:43:18 Running POST script of Node campaign_task_C2...
+11/24/26 16:43:18 DAG status: 0 (DAG_STATUS_OK)
+11/24/26 16:43:18 Of 9 nodes total:
+11/24/26 16:43:18  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+11/24/26 16:43:18   ===     ===      ===     ===     ===        ===      ===      ===
+11/24/26 16:43:18     5       0        1       2       0          1        0        0
+11/24/26 16:43:18 0 job proc(s) currently held
+11/24/26 16:43:18 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.002; EventCycleTimeMax=0.031; EventCycleTimeMin=0.000; EventCycleTimeStd=0.006; EventCycleTimeSum=0.083; SleepCycleTimeAvg=5.014; SleepCycleTimeMax=5.119; SleepCycleTimeMin=5.000; SleepCycleTimeStd=0.034; SleepCycleTimeSum=210.590; SubmitCycleTimeAvg=0.002; SubmitCycleTimeMax=0.031; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.005; SubmitCycleTimeSum=0.065; EventCycleTimeCount=42.000; SleepCycleTimeCount=42.000; SubmitCycleTimeCount=43.000; LogProcessCycleTimeAvg=0.001; LogProcessCycleTimeMax=0.003; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.001; LogProcessCycleTimeSum=0.013; LogProcessCycleTimeCount=15.000; ]
+11/24/26 16:43:19 Initializing user log writer for /mnt/prueba_rep_rec_20261124/rep_r3/submit/dmeadmin/pegasus/flujo-rep/run0001/./flujo-rep-0.dag.nodes.log, (5264.0.0)
+11/24/26 16:43:19 Initializing user log writer for /mnt/prueba_rep_rec_20261124/rep_r3/submit/dmeadmin/pegasus/flujo-rep/run0001/./flujo-rep-0.dag.nodes.log, (5265.0.0)
+11/24/26 16:43:23 Currently monitoring 1 HTCondor log file(s)
+11/24/26 16:43:23 Event: ULOG_POST_SCRIPT_TERMINATED for HTCondor Node campaign_task_C4 (5264.0.0) {11/24/26 16:43:19}
+11/24/26 16:43:23 POST Script of node campaign_task_C4 completed successfully.
+11/24/26 16:43:23 Event: ULOG_POST_SCRIPT_TERMINATED for HTCondor Node campaign_task_C2 (5265.0.0) {11/24/26 16:43:19}
+11/24/26 16:43:23 POST Script of node campaign_task_C2 completed successfully.
+11/24/26 16:43:23 DAG status: 0 (DAG_STATUS_OK)
+11/24/26 16:43:23 Of 9 nodes total:
+11/24/26 16:43:23  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+11/24/26 16:43:23   ===     ===      ===     ===     ===        ===      ===      ===
+11/24/26 16:43:23     7       0        1       0       0          1        0        0
+11/24/26 16:43:23 0 job proc(s) currently held
+11/24/26 16:43:23 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.002; EventCycleTimeMax=0.031; EventCycleTimeMin=0.000; EventCycleTimeStd=0.006; EventCycleTimeSum=0.086; SleepCycleTimeAvg=4.993; SleepCycleTimeMax=5.119; SleepCycleTimeMin=4.120; SleepCycleTimeStd=0.140; SleepCycleTimeSum=214.710; SubmitCycleTimeAvg=0.001; SubmitCycleTimeMax=0.031; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.005; SubmitCycleTimeSum=0.065; EventCycleTimeCount=43.000; SleepCycleTimeCount=43.000; SubmitCycleTimeCount=44.000; LogProcessCycleTimeAvg=0.001; LogProcessCycleTimeMax=0.003; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.001; LogProcessCycleTimeSum=0.013; LogProcessCycleTimeCount=16.000; ]
+11/24/26 16:48:27 Received SIGUSR1
+11/24/26 16:48:27 Aborting DAG...
+11/24/26 16:48:27 Writing Rescue DAG to flujo-rep-0.dag.rescue001...
+11/24/26 16:48:27 Removing submitted jobs...
+11/24/26 16:48:27 Removing any/all submitted HTCondor jobs...
+11/24/26 16:48:27 Running: /usr/bin/condor_rm -const DAGManJobId==5259 -reason DAG' 'Removed:' 'User' 'removed' 'scheduler' 'job' 'from' 'queue.
+11/24/26 16:48:27 Note: 0 total node deferrals because of -MaxJobs limit (0)
+11/24/26 16:48:27 Note: 0 total node deferrals because of -MaxIdle limit (1000)
+11/24/26 16:48:27 Note: 0 total node deferrals because of node category throttles
+11/24/26 16:48:27 Note: 0 total PRE script deferrals because of -MaxPre limit (20) or DEFER
+11/24/26 16:48:27 Note: 0 total POST script deferrals because of -MaxPost limit (20) or DEFER
+11/24/26 16:48:27 Note: 0 total HOLD script deferrals because of -MaxHold limit (20) or DEFER
+11/24/26 16:48:27 DAG status: 4 (DAG_STATUS_RM)
+11/24/26 16:48:27 Of 9 nodes total:
+11/24/26 16:48:27  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+11/24/26 16:48:27   ===     ===      ===     ===     ===        ===      ===      ===
+11/24/26 16:48:27     7       0        1       0       0          1        0        0
+11/24/26 16:48:27 0 job proc(s) currently held
+11/24/26 16:48:27 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.001; EventCycleTimeMax=0.031; EventCycleTimeMin=0.000; EventCycleTimeStd=0.004; EventCycleTimeSum=0.094; SleepCycleTimeAvg=5.000; SleepCycleTimeMax=5.119; SleepCycleTimeMin=4.120; SleepCycleTimeStd=0.090; SleepCycleTimeSum=515.005; SubmitCycleTimeAvg=0.001; SubmitCycleTimeMax=0.031; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.004; SubmitCycleTimeSum=0.065; EventCycleTimeCount=104.000; SleepCycleTimeCount=103.000; SubmitCycleTimeCount=104.000; LogProcessCycleTimeAvg=0.001; LogProcessCycleTimeMax=0.003; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.001; LogProcessCycleTimeSum=0.013; LogProcessCycleTimeCount=16.000; ]
+11/24/26 16:48:27 Wrote metrics file flujo-rep-0.dag.metrics.
+11/24/26 16:48:27 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.001; EventCycleTimeMax=0.031; EventCycleTimeMin=0.000; EventCycleTimeStd=0.004; EventCycleTimeSum=0.094; SleepCycleTimeAvg=5.000; SleepCycleTimeMax=5.119; SleepCycleTimeMin=4.120; SleepCycleTimeStd=0.090; SleepCycleTimeSum=515.005; SubmitCycleTimeAvg=0.001; SubmitCycleTimeMax=0.031; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.004; SubmitCycleTimeSum=0.065; EventCycleTimeCount=104.000; SleepCycleTimeCount=103.000; SubmitCycleTimeCount=104.000; LogProcessCycleTimeAvg=0.001; LogProcessCycleTimeMax=0.003; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.001; LogProcessCycleTimeSum=0.013; LogProcessCycleTimeCount=16.000; ]
+11/24/26 16:48:27 **** condor_scheduniv_exec.5259.0 (condor_DAGMAN) pid 8282 EXITING WITH STATUS 2

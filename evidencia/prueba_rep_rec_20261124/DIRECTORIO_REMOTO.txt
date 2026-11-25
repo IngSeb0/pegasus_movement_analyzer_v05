@@ -1,0 +1,2 @@
+$ ssh -o BatchMode=yes -o ConnectTimeout=12 -F C:\Users\Acer\Documents\ChatGPT\THESIS\azure_cloud_20261025\.local\ssh_config dme-master "set -eu; mkdir -p ~/trabajo; test ! -e ~/trabajo/prueba_rep_rec_20261124; sudo -n install -d -o \"$(id -un)\" -g \"$(id -gn)\" /mnt/prueba_rep_rec_20261124; ln -s /mnt/prueba_rep_rec_20261124 ~/trabajo/prueba_rep_rec_20261124"
+

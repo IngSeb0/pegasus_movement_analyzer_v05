@@ -1,0 +1,43 @@
+Job campaign_task_T1 Change in level to 0
+execution sites size -> 1 condorpool-->0,
+Job campaign_task_T2 Change in level to 1
+execution sites size -> 1 condorpool-->1,
+Job campaign_task_T3 Change in level to 2
+execution sites size -> 1 condorpool-->1,
+Job campaign_task_T4 Change in level to 3
+execution sites size -> 1 condorpool-->1,
+Job campaign_task_T5 Change in level to 4
+execution sites size -> 1 condorpool-->1,
+Job campaign_task_T6 Change in level to 5
+execution sites size -> 1 condorpool-->1,
+{
+  "user" : "dmeadmin",
+  "grid_dn" : null,
+  "submit_hostname" : "dme-master",
+  "root_wf_uuid" : "b6599b31-929a-42d6-8b0f-43ad1af898c6",
+  "wf_uuid" : "b6599b31-929a-42d6-8b0f-43ad1af898c6",
+  "dax" : "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/workflow_for_plan.yml",
+  "dax_label" : "dme-six-20261110-pipeline-w4-r01",
+  "dax_index" : "0",
+  "dax_version" : "5.0.4",
+  "pegasus_wf_name" : "dme-six-20261110-pipeline-w4-r01-0",
+  "timestamp" : "20261122T161917+0000",
+  "basedir" : "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit",
+  "submit_dir" : "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001",
+  "planner" : "/usr/bin/pegasus-plan",
+  "planner_version" : "5.1.2",
+  "pegasus_build" : "20260203223935Z",
+  "planner_arguments" : "\"--conf /mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/pegasus.properties --dir /mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit --sites condorpool --output-sites local --cleanup none --json /mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/workflow_for_plan.yml \"",
+  "jsd" : "jobstate.log",
+  "rundir" : "run0001",
+  "bindir" : "/usr/bin",
+  "vogroup" : "pegasus",
+  "uses_pmc" : "false",
+  "properties" : "pegasus.11276829086235859684.properties",
+  "condor_log" : "dme-six-20261110-pipeline-w4-r01-0.log",
+  "dag" : "dme-six-20261110-pipeline-w4-r01-0.dag",
+  "type" : "dag",
+  "notify" : "dme-six-20261110-pipeline-w4-r01-0.notify",
+  "message" : "\n\n\nI have concretized your abstract workflow. The workflow has been entered \ninto the workflow database with a state of \"planned\". The next step is \nto start or execute your workflow. The invocation required is\n\n\n",
+  "pegasus-run" : "pegasus-run --json  /mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B02/plans/PIPELINE-W4-B02/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001"
+}

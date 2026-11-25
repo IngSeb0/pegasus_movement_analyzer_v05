@@ -1,0 +1,187 @@
+- invocation: True
+  version: 3.0
+  start: 2026-11-22T15:05:35.847+00:00
+  duration: 5.013
+  transformation: "pegasus::transfer"
+  derivation: "null"
+  resource: "local"
+  wf-label: "dme-six-20261110-redistribution-w2-r01"
+  wf-stamp: "2026-11-22T14:59:09+00:00"
+  interface: eth0
+  hostaddr: 10.42.0.4
+  hostname: dme-master
+  pid: 9441
+  uid: 1000
+  user: dmeadmin
+  gid: 1000
+  group: dmeadmin
+  umask: 0o0022
+  mainjob:
+    start: 2026-11-22T15:05:35.853+00:00
+    duration: 5.008
+    pid: 9442
+    usage:
+      utime: 1.721
+      stime: 0.287
+      maxrss: 27956
+      minflt: 25687
+      majflt: 0
+      nswap: 0
+      inblock: 0
+      outblock: 819248
+      msgsnd: 0
+      msgrcv: 0
+      nsignals: 0
+      nvcsw: 287
+      nivcsw: 54
+    status:
+      raw: 0
+      regular_exitcode: 0
+    executable:
+      file_name: /usr/bin/pegasus-transfer
+      mode: 0o100755
+      size: 2901
+      inode: 91827
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2026-02-03T22:39:35+00:00
+      atime: 2026-11-22T14:53:50+00:00
+      ctime: 2026-10-26T03:07:39+00:00
+      uid: 0
+      user: root
+      gid: 0
+      group: root
+    argument_vector:
+      - "--threads"
+      - "2"
+    procs:
+  jobids:
+    condor: 3582.0
+  cwd: /var/spool/condor/local_univ_execute/dir_9436/scratch
+  usage:
+    utime: 0.003
+    stime: 0.003
+    maxrss: 2976
+    minflt: 156
+    majflt: 0
+    nswap: 0
+    inblock: 0
+    outblock: 0
+    msgsnd: 0
+    msgrcv: 0
+    nsignals: 0
+    nvcsw: 1
+    nivcsw: 3
+  machine:
+    page-size: 4096
+    uname_system: linux
+    uname_nodename: dme-master
+    uname_release: 7.0.0-1020-azure
+    uname_machine: x86_64
+    ram_total: 7095724
+    ram_free: 3615388
+    ram_shared: 4212
+    ram_buffer: 36936
+    swap_total: 0
+    swap_free: 0
+    cpu_count: 2
+    cpu_speed: 2793
+    cpu_vendor: GenuineIntel
+    cpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz
+    load_min1: 0.12
+    load_min5: 0.22
+    load_min15: 0.18
+    procs_total: 148
+    procs_running: 1
+    procs_sleeping: 76
+    procs_other: 71
+    procs_vmsize: 2894456
+    procs_rss: 548700
+    task_total: 174
+    task_running: 1
+    task_sleeping: 102
+    task_other: 71
+  files:
+    stdin:
+      descriptor_number: 0
+      mode: 0o10600
+      size: 0
+      inode: 50086
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-11-22T15:05:35+00:00
+      atime: 2026-11-22T15:05:35+00:00
+      ctime: 2026-11-22T15:05:35+00:00
+      uid: 1000
+      user: dmeadmin
+      gid: 1000
+      group: dmeadmin
+    stdout:
+      temporary_name: /var/spool/condor/local_univ_execute/dir_9436/scratch/ks.out.98IhKp
+      descriptor: 3
+      mode: 0o100600
+      size: 0
+      inode: 547265
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-11-22T15:05:35+00:00
+      atime: 2026-11-22T15:05:35+00:00
+      ctime: 2026-11-22T15:05:35+00:00
+      uid: 1000
+      user: dmeadmin
+      gid: 1000
+      group: dmeadmin
+    stderr:
+      temporary_name: /var/spool/condor/local_univ_execute/dir_9436/scratch/ks.err.jMvFpp
+      descriptor: 4
+      mode: 0o100600
+      size: 2309
+      inode: 547266
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2026-11-22T15:05:40+00:00
+      atime: 2026-11-22T15:05:35+00:00
+      ctime: 2026-11-22T15:05:40+00:00
+      uid: 1000
+      user: dmeadmin
+      gid: 1000
+      group: dmeadmin
+      data_truncated: false
+      data: |
+        2026-11-22 15:05:35,966    INFO:  Reading URL pairs from stdin
+        2026-11-22 15:05:35,966    INFO:  2 transfers loaded
+        2026-11-22 15:05:35,966    INFO:  PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/snap/bin:/bin:/usr/bin:/usr/local/bin:/opt/local/bin
+        2026-11-22 15:05:35,966    INFO:  LD_LIBRARY_PATH=
+        2026-11-22 15:05:35,974    INFO:  --------------------------------------------------------------------------------
+        2026-11-22 15:05:35,974    INFO:  Starting transfers - attempt 1
+        2026-11-22 15:05:37,975    INFO:  /bin/cp -f -R -L '/mnt/intensivo_20261122/patrones/cases/REDISTRIBUTION-W2-B01/plans/REDISTRIBUTION-W2-B01/scratch/dmeadmin/pegasus/dme-six-20261110-redistribution-w2-r01/run0001/./B1' '/mnt/intensivo_20261122/patrones/cases/REDISTRIBUTION-W2-B01/plans/REDISTRIBUTION-W2-B01/outputs/B1'
+        2026-11-22 15:05:38,540    INFO:  Tool found: pegasus-integrity   Version: N/A   Path: /usr/bin/pegasus-integrity
+        2026-11-22 15:05:38,540    INFO:  /usr/bin/pegasus-integrity --verify="B1=/mnt/intensivo_20261122/patrones/cases/REDISTRIBUTION-W2-B01/plans/REDISTRIBUTION-W2-B01/outputs/B1"
+        2026-11-22 15:05:39,392    INFO:  /bin/cp -f -R -L '/mnt/intensivo_20261122/patrones/cases/REDISTRIBUTION-W2-B01/plans/REDISTRIBUTION-W2-B01/scratch/dmeadmin/pegasus/dme-six-20261110-redistribution-w2-r01/run0001/./B2' '/mnt/intensivo_20261122/patrones/cases/REDISTRIBUTION-W2-B01/plans/REDISTRIBUTION-W2-B01/outputs/B2'
+        2026-11-22 15:05:39,995    INFO:  /usr/bin/pegasus-integrity --verify="B2=/mnt/intensivo_20261122/patrones/cases/REDISTRIBUTION-W2-B01/plans/REDISTRIBUTION-W2-B01/outputs/B2"
+        2026-11-22 15:05:40,846    INFO:  --------------------------------------------------------------------------------
+        2026-11-22 15:05:40,846    INFO:  @@@MONITORING_PAYLOAD - START@@@{"ts": 1795359940, "monitoring_event": "int.metric", "payload": [{"event": "check", "file_type": "output", "succeeded": 2, "failed": 0, "duration": "1.702"}]}@@@MONITORING_PAYLOAD - END@@@
+        2026-11-22 15:05:40,846    INFO:  Stats: Total 2 transfers, 400.0 MB transferred in 5 seconds. Rate: 82.0 MB/s (655.7 Mb/s)
+        2026-11-22 15:05:40,846    INFO:         Between sites local->local : 2 transfers, 400.0 MB transferred in 5 seconds. Rate: 82.0 MB/s (655.7 Mb/s)
+        2026-11-22 15:05:40,846    INFO:  All transfers completed successfully.
+        
+    metadata:
+      temporary_name: /var/spool/condor/local_univ_execute/dir_9436/scratch/ks.meta.X0P8xO
+      descriptor: 5
+      mode: 0o100600
+      size: 0
+      inode: 547267
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-11-22T15:05:35+00:00
+      atime: 2026-11-22T15:05:35+00:00
+      ctime: 2026-11-22T15:05:35+00:00
+      uid: 1000
+      user: dmeadmin
+      gid: 1000
+      group: dmeadmin

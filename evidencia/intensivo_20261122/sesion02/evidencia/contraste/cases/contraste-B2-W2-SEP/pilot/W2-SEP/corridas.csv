@@ -1,0 +1,2 @@
+corrida,condicion,duracion_dagman_s,duracion_jobstate_s,diferencia_resolucion_s,tramo_ejecucion_s,tramo_transferencia_s,tramo_auxiliares_s,tramo_cola_s,tramo_cierre_post_s,tramo_dagman_s,tareas,auxiliares,suma_ejecucion_tareas_s,suma_transferencia_entrada_s,suma_transferencia_salida_s,suma_espera_maquina_s,suma_cierre_s,bytes_transferidos,preparacion_hasta_primera_tarea_s,ventana_ejecucion_s
+contraste-B2-W2-SEP,W2-SEP,325.351,326,-0.6490000000000009,38,183,50,17,17,21,5,4,38,95,88,295,39,2192724773,41,202

@@ -1,0 +1,48 @@
+######################################################################
+# PEGASUS WMS GENERATED SUBMIT FILE
+# DAG : dme-six-20261110-process-w4-r01, Index = 0, Count = null
+# SUBMIT FILE NAME : campaign_task_T6.sub
+######################################################################
+stream_error  = false
+stream_output = false
+environment = "LANG=en_US.UTF-8 CONDOR_JOBID=$(cluster).$(process) PEGASUS_WF_UUID=061310d7-4332-405d-967b-e9db7c4882aa PEGASUS_WF_LABEL=dme-six-20261110-process-w4-r01 PEGASUS_DAG_JOB_ID=campaign_task_T6 PEGASUS_SITE=condorpool"
++WantIOProxy = True
+error = /mnt/intensivo_20261122/patrones/cases/PROCESS-W4-B01/plans/PROCESS-W4-B01/submit/dmeadmin/pegasus/dme-six-20261110-process-w4-r01/run0001//00/00/campaign_task_T6.err
+executable = /mnt/intensivo_20261122/patrones/cases/PROCESS-W4-B01/plans/PROCESS-W4-B01/submit/dmeadmin/pegasus/dme-six-20261110-process-w4-r01/run0001/00/00/campaign_task_T6.sh
+initialdir = /mnt/intensivo_20261122/patrones/cases/PROCESS-W4-B01/plans/PROCESS-W4-B01/scratch/dmeadmin/pegasus/dme-six-20261110-process-w4-r01/run0001
+log = /mnt/intensivo_20261122/patrones/cases/PROCESS-W4-B01/plans/PROCESS-W4-B01/submit/dmeadmin/pegasus/dme-six-20261110-process-w4-r01/run0001/dme-six-20261110-process-w4-r01-0.log
+notification = NEVER
+output = /mnt/intensivo_20261122/patrones/cases/PROCESS-W4-B01/plans/PROCESS-W4-B01/submit/dmeadmin/pegasus/dme-six-20261110-process-w4-r01/run0001//00/00/campaign_task_T6.out
+periodic_release = False
+periodic_remove = (JobStatus == 5) && ((CurrentTime - EnteredCurrentStatus) > 1800)
+priority = 20
+request_cpus = 1
+request_memory = 256
+requirements = TARGET.DMEStudyEligible == true
+should_transfer_files = YES
+submit_event_user_notes = pool:condorpool
+transfer_executable = true
+transfer_input_files = campaign_task,A6,$(wf_submit_dir)/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz,$(wf_submit_dir)/00/00/stage_in_remote_local_0_0.meta,$(wf_submit_dir)/00/00/stage_in_local_local_0_0.meta,$(wf_submit_dir)/pegasus-lite-common.sh,/mnt/intensivo_20261122/patrones/cases/PROCESS-W4-B01/plans/PROCESS-W4-B01/bin/fma_kernel
+transfer_output_files = B6
+universe = vanilla
+wf_submit_dir = /mnt/intensivo_20261122/patrones/cases/PROCESS-W4-B01/plans/PROCESS-W4-B01/submit/dmeadmin/pegasus/dme-six-20261110-process-w4-r01/run0001
+when_to_transfer_output = ON_EXIT
++pegasus_generator = "Pegasus"
++pegasus_root_wf_uuid = "061310d7-4332-405d-967b-e9db7c4882aa"
++pegasus_wf_uuid = "061310d7-4332-405d-967b-e9db7c4882aa"
++pegasus_version = "5.1.2"
++pegasus_wf_name = "dme-six-20261110-process-w4-r01-0"
++pegasus_wf_time = "20261122T155056+0000"
++pegasus_wf_xformation = "campaign_task"
++pegasus_wf_dax_job_id = "T6"
++pegasus_wf_dag_job_id = "campaign_task_T6"
++pegasus_job_class = 1
++pegasus_site = "condorpool"
++pegasus_job_runtime = 0
++pegasus_cores = 1
++pegasus_gpus = 1
++pegasus_cluster_size = 1
+queue
+######################################################################
+# END OF SUBMIT FILE
+######################################################################

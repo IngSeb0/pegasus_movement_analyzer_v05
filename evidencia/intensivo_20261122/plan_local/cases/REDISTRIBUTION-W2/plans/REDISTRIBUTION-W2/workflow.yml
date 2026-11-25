@@ -1,0 +1,312 @@
+x-pegasus:
+  apiLang: python
+  createdBy: root
+  createdOn: 11-22-26T14:36:08Z
+pegasus: 5.0.4
+name: dme-six-20261110-redistribution-w2-r01
+metadata:
+  condition_id: REDISTRIBUTION-W2
+  pattern: Redistribution
+  replica: '1'
+  data_configuration: condorio
+  program_version: six_patterns_fma_v1
+  oracle_sha256: bf8bb9dbf116e1ea9bc54f8d784ff25ec7e472a8ef5d1e5bb6ebd34c0bf18ed6
+  scientific_file_sizes_bytes: '{"A1": 209715200, "A2": 209715200, "B1": 209715200,
+    "B2": 209715200, "f1": 209715200, "f2": 209715200, "g": 209715200, "p1": 209715200,
+    "p2": 209715200}'
+siteCatalog:
+  sites:
+  - name: local
+    arch: x86_64
+    os.type: linux
+    directories:
+    - type: sharedScratch
+      path: /study/cases/REDISTRIBUTION-W2/plans/REDISTRIBUTION-W2/scratch
+      sharedFileSystem: false
+      fileServers:
+      - url: file:///study/cases/REDISTRIBUTION-W2/plans/REDISTRIBUTION-W2/scratch
+        operation: all
+    - type: localStorage
+      path: /study/cases/REDISTRIBUTION-W2/plans/REDISTRIBUTION-W2/outputs
+      sharedFileSystem: false
+      fileServers:
+      - url: file:///study/cases/REDISTRIBUTION-W2/plans/REDISTRIBUTION-W2/outputs
+        operation: all
+  - name: condorpool
+    arch: x86_64
+    os.type: linux
+    directories: []
+    profiles:
+      condor:
+        universe: vanilla
+        request_cpus: '1'
+        request_memory: 256
+      pegasus:
+        style: condor
+        auxillary.local: 'True'
+replicaCatalog:
+  replicas:
+  - lfn: A1
+    pfns:
+    - site: local
+      pfn: /study/cases/REDISTRIBUTION-W2/plans/REDISTRIBUTION-W2/inputs/A1
+  - lfn: A2
+    pfns:
+    - site: local
+      pfn: /study/cases/REDISTRIBUTION-W2/plans/REDISTRIBUTION-W2/inputs/A2
+  - lfn: fma_kernel
+    pfns:
+    - site: local
+      pfn: /study/cases/REDISTRIBUTION-W2/plans/REDISTRIBUTION-W2/bin/fma_kernel
+transformationCatalog:
+  transformations:
+  - name: campaign_task
+    sites:
+    - name: local
+      pfn: /study/cases/REDISTRIBUTION-W2/plans/REDISTRIBUTION-W2/bin/campaign_task.py
+      type: stageable
+      arch: x86_64
+      os.type: linux
+jobs:
+- type: job
+  name: campaign_task
+  id: T1
+  arguments:
+  - --task-id
+  - T1
+  - --flops
+  - '1766799020'
+  - --input
+  - A1
+  - '209715200'
+  - --output
+  - f1
+  - '209715200'
+  uses:
+  - lfn: A1
+    type: input
+  - lfn: f1
+    type: output
+    stageOut: false
+    registerReplica: false
+  profiles:
+    condor:
+      requirements: TARGET.Machine == "dme-worker1"
+      request_cpus: '1'
+      request_memory: 256
+  metadata:
+    task_id: T1
+    condition_id: REDISTRIBUTION-W2
+    replica: '1'
+    pattern: Redistribution
+    controlled_worker: W1
+    target_machine: dme-worker1
+    flops: '1766799020'
+    scientific_inputs: '["A1"]'
+    scientific_outputs: '["f1"]'
+- type: job
+  name: campaign_task
+  id: T2
+  arguments:
+  - --task-id
+  - T2
+  - --flops
+  - '1766799020'
+  - --input
+  - A2
+  - '209715200'
+  - --output
+  - f2
+  - '209715200'
+  uses:
+  - lfn: A2
+    type: input
+  - lfn: f2
+    type: output
+    stageOut: false
+    registerReplica: false
+  profiles:
+    condor:
+      requirements: TARGET.Machine == "dme-worker1"
+      request_cpus: '1'
+      request_memory: 256
+  metadata:
+    task_id: T2
+    condition_id: REDISTRIBUTION-W2
+    replica: '1'
+    pattern: Redistribution
+    controlled_worker: W1
+    target_machine: dme-worker1
+    flops: '1766799020'
+    scientific_inputs: '["A2"]'
+    scientific_outputs: '["f2"]'
+- type: job
+  name: campaign_task
+  id: T3
+  arguments:
+  - --task-id
+  - T3
+  - --flops
+  - '1766799020'
+  - --input
+  - f1
+  - '209715200'
+  - --input
+  - f2
+  - '209715200'
+  - --output
+  - g
+  - '209715200'
+  uses:
+  - lfn: f2
+    type: input
+  - lfn: f1
+    type: input
+  - lfn: g
+    type: output
+    stageOut: false
+    registerReplica: false
+  profiles:
+    condor:
+      requirements: TARGET.Machine == "dme-worker1"
+      request_cpus: '1'
+      request_memory: 256
+  metadata:
+    task_id: T3
+    condition_id: REDISTRIBUTION-W2
+    replica: '1'
+    pattern: Redistribution
+    controlled_worker: W1
+    target_machine: dme-worker1
+    flops: '1766799020'
+    scientific_inputs: '["f1", "f2"]'
+    scientific_outputs: '["g"]'
+- type: job
+  name: campaign_task
+  id: T4
+  arguments:
+  - --task-id
+  - T4
+  - --flops
+  - '1766799020'
+  - --input
+  - g
+  - '209715200'
+  - --output
+  - p1
+  - '209715200'
+  - --output
+  - p2
+  - '209715200'
+  uses:
+  - lfn: p1
+    type: output
+    stageOut: false
+    registerReplica: false
+  - lfn: p2
+    type: output
+    stageOut: false
+    registerReplica: false
+  - lfn: g
+    type: input
+  profiles:
+    condor:
+      requirements: TARGET.Machine == "dme-worker1"
+      request_cpus: '1'
+      request_memory: 256
+  metadata:
+    task_id: T4
+    condition_id: REDISTRIBUTION-W2
+    replica: '1'
+    pattern: Redistribution
+    controlled_worker: W1
+    target_machine: dme-worker1
+    flops: '1766799020'
+    scientific_inputs: '["g"]'
+    scientific_outputs: '["p1", "p2"]'
+- type: job
+  name: campaign_task
+  id: T5
+  arguments:
+  - --task-id
+  - T5
+  - --flops
+  - '1766799020'
+  - --input
+  - p1
+  - '209715200'
+  - --output
+  - B1
+  - '209715200'
+  uses:
+  - lfn: B1
+    type: output
+    stageOut: true
+    registerReplica: false
+  - lfn: p1
+    type: input
+  profiles:
+    condor:
+      requirements: TARGET.Machine == "dme-worker1"
+      request_cpus: '1'
+      request_memory: 256
+  metadata:
+    task_id: T5
+    condition_id: REDISTRIBUTION-W2
+    replica: '1'
+    pattern: Redistribution
+    controlled_worker: W1
+    target_machine: dme-worker1
+    flops: '1766799020'
+    scientific_inputs: '["p1"]'
+    scientific_outputs: '["B1"]'
+- type: job
+  name: campaign_task
+  id: T6
+  arguments:
+  - --task-id
+  - T6
+  - --flops
+  - '1766799020'
+  - --input
+  - p2
+  - '209715200'
+  - --output
+  - B2
+  - '209715200'
+  uses:
+  - lfn: B2
+    type: output
+    stageOut: true
+    registerReplica: false
+  - lfn: p2
+    type: input
+  profiles:
+    condor:
+      requirements: TARGET.Machine == "dme-worker1"
+      request_cpus: '1'
+      request_memory: 256
+  metadata:
+    task_id: T6
+    condition_id: REDISTRIBUTION-W2
+    replica: '1'
+    pattern: Redistribution
+    controlled_worker: W1
+    target_machine: dme-worker1
+    flops: '1766799020'
+    scientific_inputs: '["p2"]'
+    scientific_outputs: '["B2"]'
+jobDependencies:
+- id: T1
+  children:
+  - T3
+- id: T2
+  children:
+  - T3
+- id: T3
+  children:
+  - T4
+- id: T4
+  children:
+  - T5
+  - T6

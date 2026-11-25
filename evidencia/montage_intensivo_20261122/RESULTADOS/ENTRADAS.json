@@ -1,0 +1,884 @@
+[
+  {
+    "nombre": "1261778_ji0650244.fits",
+    "bytes": 2111040,
+    "sha256": "947905b1834c53653622179f8486323b8b6249ebb629bb737faaccee91cbe73b",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti06&dh=000301n&scan=065&name=ji0650244.fits"
+  },
+  {
+    "nombre": "1261779_ji0650256.fits",
+    "bytes": 2111040,
+    "sha256": "f04b12817a728461ba7dd33efcf457c9ef38b503d7eef6a799680ebbc3db5c94",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti06&dh=000301n&scan=065&name=ji0650256.fits"
+  },
+  {
+    "nombre": "1261780_ji0650266.fits",
+    "bytes": 1707840,
+    "sha256": "0af3178e21b71cb654da61cf8519bbf3e0ad75cb45768204352b984cfdf0a8c7",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti06&dh=000301n&scan=065&name=ji0650266.fits"
+  },
+  {
+    "nombre": "1276639_ji0970009.fits",
+    "bytes": 2111040,
+    "sha256": "d3930ceb7f297af33293f299095ac3528184b8befd71062d51ae9aff5695fbd9",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti07&dh=000319n&scan=097&name=ji0970009.fits"
+  },
+  {
+    "nombre": "1276640_ji0970021.fits",
+    "bytes": 2111040,
+    "sha256": "d391c5f448163ed249752e0d51af360ef38526745d7d6dd82c1882013a45e18f",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti07&dh=000319n&scan=097&name=ji0970021.fits"
+  },
+  {
+    "nombre": "1276682_ji0980244.fits",
+    "bytes": 2111040,
+    "sha256": "7ef7b4f3ad456ebb960dd1a353b8f2f8183cc01d067c9c7bb7104f83d5ab68ae",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti07&dh=000319n&scan=098&name=ji0980244.fits"
+  },
+  {
+    "nombre": "1276683_ji0980256.fits",
+    "bytes": 2111040,
+    "sha256": "ad7369e0bd06959a547418813f6b9daa65193d5d57a5b8ab87b0a876a9fc8eb4",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti07&dh=000319n&scan=098&name=ji0980256.fits"
+  },
+  {
+    "nombre": "1276684_ji0980266.fits",
+    "bytes": 1704960,
+    "sha256": "bfc91e43ecdf3e2768458bcf1de8b5e0e3cf21f8c77c494a98e2c5734fc2e684",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti07&dh=000319n&scan=098&name=ji0980266.fits"
+  },
+  {
+    "nombre": "441739_ji0210009.fits",
+    "bytes": 2111040,
+    "sha256": "e6bab9c7fc206efba8863ecc9e02b482f0114cb2c1d93aa45aaa942e28215c90",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti03&dh=980621n&scan=021&name=ji0210009.fits"
+  },
+  {
+    "nombre": "441740_ji0210021.fits",
+    "bytes": 2111040,
+    "sha256": "6ab3266644bbd981afb53bea3d61f48185cd5ff6192ef2d0887d76570b38430d",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti03&dh=980621n&scan=021&name=ji0210021.fits"
+  },
+  {
+    "nombre": "441785_ji0230009.fits",
+    "bytes": 2111040,
+    "sha256": "c4ecfcd4d17ce747872f5c6d1c5628a5779038323ea7db163b7b92de69178995",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti03&dh=980621n&scan=023&name=ji0230009.fits"
+  },
+  {
+    "nombre": "441786_ji0230021.fits",
+    "bytes": 2111040,
+    "sha256": "c0d846a659f4a7a5a9a8af61bfda9e97ac7178dc450227ab53329e15108f44ff",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti03&dh=980621n&scan=023&name=ji0230021.fits"
+  },
+  {
+    "nombre": "1603486_ji1040209.fits",
+    "bytes": 2111040,
+    "sha256": "4f40c9aa8f0e699fad0b6cfaafef98887c63a0e26ea4df4ffb98e6bac75134a3",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=104&name=ji1040209.fits"
+  },
+  {
+    "nombre": "1603487_ji1040220.fits",
+    "bytes": 2111040,
+    "sha256": "0b4ee5cc821791c794fc8b940abe8f47be23771b488014f8cec2c2acd390c11c",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=104&name=ji1040220.fits"
+  },
+  {
+    "nombre": "1603488_ji1040232.fits",
+    "bytes": 2111040,
+    "sha256": "b53c433ccfda8d63e24303b04c991a1e3968276fdc1928ead1b04e3163e567bb",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=104&name=ji1040232.fits"
+  },
+  {
+    "nombre": "1603489_ji1040244.fits",
+    "bytes": 2111040,
+    "sha256": "d09135e5877ce51d0e4a35e4837ced80d2c508e2d86b57c196774cb9748df4a4",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=104&name=ji1040244.fits"
+  },
+  {
+    "nombre": "1603490_ji1040256.fits",
+    "bytes": 2111040,
+    "sha256": "e62e8ef7b6f1f9261e4336f5cff7beb9f06c1af6d5616efca0ecc16033815310",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=104&name=ji1040256.fits"
+  },
+  {
+    "nombre": "1603491_ji1040266.fits",
+    "bytes": 1707840,
+    "sha256": "8ebb5bd33e785031f5712aa53c84fb7dd4154cfd407a5c43d4508682f713e269",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=104&name=ji1040266.fits"
+  },
+  {
+    "nombre": "1603492_ji1050009.fits",
+    "bytes": 2111040,
+    "sha256": "04b294426da8e04c0cdf798beffeaf99f4ab3340104231e9d6135c6b994ba28f",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=105&name=ji1050009.fits"
+  },
+  {
+    "nombre": "1603493_ji1050021.fits",
+    "bytes": 2111040,
+    "sha256": "1095030b30c7580a9bd57147b99b8bd26bcc391545ff4aa328c4ff9ea6b6526b",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=105&name=ji1050021.fits"
+  },
+  {
+    "nombre": "1603494_ji1050032.fits",
+    "bytes": 2111040,
+    "sha256": "3e2dee5583a6cde50d475ec19563c66b8ed2a479f9e70b3a90a7aab05887b29b",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=105&name=ji1050032.fits"
+  },
+  {
+    "nombre": "1603495_ji1050044.fits",
+    "bytes": 2111040,
+    "sha256": "0c028a5ec16f07379aea4652433cdd15a70688c9ce1d626cfa1ad8884a8665f7",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=105&name=ji1050044.fits"
+  },
+  {
+    "nombre": "1603496_ji1050056.fits",
+    "bytes": 2111040,
+    "sha256": "477d9d16d9c2aef000cf3634f08c8372a4cdef2a0b7e8bd7431856ac6c055bfc",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=105&name=ji1050056.fits"
+  },
+  {
+    "nombre": "1603497_ji1050068.fits",
+    "bytes": 2111040,
+    "sha256": "9974171e70a95fbf12697a2dc750f94ff9b01826842275f96e9d9cd4279fc8c7",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=105&name=ji1050068.fits"
+  },
+  {
+    "nombre": "1603532_ji1060209.fits",
+    "bytes": 2111040,
+    "sha256": "138967967fda780365808ad9cab8f7e78c2b1052d817ff22700e47c40ea53df8",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=106&name=ji1060209.fits"
+  },
+  {
+    "nombre": "1603533_ji1060220.fits",
+    "bytes": 2111040,
+    "sha256": "35208c23cd998bb8a96e9e9e23a37eda4f508c29d9d49a470fdd7ba100c9ac6a",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=106&name=ji1060220.fits"
+  },
+  {
+    "nombre": "1603534_ji1060232.fits",
+    "bytes": 2111040,
+    "sha256": "c89172625e419e2f3c537f061a69bc431a247037b9e97cb7bdbbd1906a09790b",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=106&name=ji1060232.fits"
+  },
+  {
+    "nombre": "1603535_ji1060244.fits",
+    "bytes": 2111040,
+    "sha256": "050d650684191f25ff2c4c8d6cd2b695c1f3aaf4e2ea39b1119f615fccedfb06",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=106&name=ji1060244.fits"
+  },
+  {
+    "nombre": "1603536_ji1060256.fits",
+    "bytes": 2111040,
+    "sha256": "a9525cdfe0d91282463b9342227be7669223e537c902b8abce32498a0d91d211",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=106&name=ji1060256.fits"
+  },
+  {
+    "nombre": "1603537_ji1060266.fits",
+    "bytes": 1710720,
+    "sha256": "714109c5da46929c8a5cc379a999ca9f5a08309bcfcf07781c3d9b03c6dba507",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=106&name=ji1060266.fits"
+  },
+  {
+    "nombre": "1603538_ji1070009.fits",
+    "bytes": 2111040,
+    "sha256": "c7d0232b462939781de16404e12b40981b2bbf91e1dcf00ad82ccd1068c68a1a",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=107&name=ji1070009.fits"
+  },
+  {
+    "nombre": "1603539_ji1070021.fits",
+    "bytes": 2111040,
+    "sha256": "32737b4f7c8bb3113ee76318489a8e9058c385b2e27d033a17d85f48a2148851",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=107&name=ji1070021.fits"
+  },
+  {
+    "nombre": "1603540_ji1070032.fits",
+    "bytes": 2111040,
+    "sha256": "c54c015c634ee27b7531b5a2c4b18f688a541df512c3ea16b39ad8d1dcb7277e",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=107&name=ji1070032.fits"
+  },
+  {
+    "nombre": "1603541_ji1070044.fits",
+    "bytes": 2111040,
+    "sha256": "cda1e41093f32b254e41121f908f4439896c53bb6d21c518e20a7147af299608",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=107&name=ji1070044.fits"
+  },
+  {
+    "nombre": "1603542_ji1070056.fits",
+    "bytes": 2111040,
+    "sha256": "357a7d69d6accc2ae82b6edffbd7f44ab8dc887540061c6ebbf01c621cb23686",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=107&name=ji1070056.fits"
+  },
+  {
+    "nombre": "1603543_ji1070068.fits",
+    "bytes": 2111040,
+    "sha256": "aeb43790cc7c15403349cdd905abe956cac9710348c42bddde1a4dda5a7e8d2b",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=107&name=ji1070068.fits"
+  },
+  {
+    "nombre": "1603578_ji1080209.fits",
+    "bytes": 2111040,
+    "sha256": "9f0b6f8cc5e6399904f11074f193daa25f9d0a1c70cbcd0cd70116538aacc339",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=108&name=ji1080209.fits"
+  },
+  {
+    "nombre": "1603579_ji1080220.fits",
+    "bytes": 2111040,
+    "sha256": "4742520c5f98f62458ba3bc07d15be20edc39aa73258b27096bc467789265d38",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=108&name=ji1080220.fits"
+  },
+  {
+    "nombre": "1603580_ji1080232.fits",
+    "bytes": 2111040,
+    "sha256": "0829c168b3adefcc599fa2741114f8e673e26053f58e358f44a27d5ded05e516",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=108&name=ji1080232.fits"
+  },
+  {
+    "nombre": "1603581_ji1080244.fits",
+    "bytes": 2111040,
+    "sha256": "e50fca9a02a214383adac52dc2090fdf13c0c5081ea8b079bf396f73510cadd5",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=108&name=ji1080244.fits"
+  },
+  {
+    "nombre": "1603582_ji1080256.fits",
+    "bytes": 2111040,
+    "sha256": "40db12e2e32a57ff795065a6bfdd11f00e9bff9888497e7f88b1deb12a741d0b",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=108&name=ji1080256.fits"
+  },
+  {
+    "nombre": "1603583_ji1080266.fits",
+    "bytes": 1707840,
+    "sha256": "70c64c9e54247aadaaa32c9869dc5f5c191cac10ff75b47ed86c55e9c0ad8a4b",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=108&name=ji1080266.fits"
+  },
+  {
+    "nombre": "1603584_ji1090009.fits",
+    "bytes": 2111040,
+    "sha256": "35695b1a921febca92c45d5a1f7f90b3ff28992b1525a4169073c13e038b11eb",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=109&name=ji1090009.fits"
+  },
+  {
+    "nombre": "1603585_ji1090021.fits",
+    "bytes": 2111040,
+    "sha256": "9a9681042c50399e20cb2a5800d46eda8dcfd2b50ad4fd00d00a24c3b2294291",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=109&name=ji1090021.fits"
+  },
+  {
+    "nombre": "1603586_ji1090032.fits",
+    "bytes": 2111040,
+    "sha256": "d52d7456e4ed2c3bbdbc8f0440f1fe882f9eea89e3992ab39ed25951403e3c19",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=109&name=ji1090032.fits"
+  },
+  {
+    "nombre": "1603587_ji1090044.fits",
+    "bytes": 2111040,
+    "sha256": "f168f779b4478c6809917f261b1aecd34ec5dc28f98c504a385ab2298aac9c5a",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=109&name=ji1090044.fits"
+  },
+  {
+    "nombre": "1603588_ji1090056.fits",
+    "bytes": 2111040,
+    "sha256": "9529bf4b5d9a7606b64d12aa301a9e247727376c6efa892ddc548cfcf65f6cbd",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=109&name=ji1090056.fits"
+  },
+  {
+    "nombre": "1603589_ji1090068.fits",
+    "bytes": 2111040,
+    "sha256": "c1fd27e477f7f4dbfb770397096516c96e36e5b60b3e6da0c37fefc27a07ca7f",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=109&name=ji1090068.fits"
+  },
+  {
+    "nombre": "1603624_ji1100209.fits",
+    "bytes": 2111040,
+    "sha256": "49bda21e7ee1b10a71a4d52aaf72a5020fab2ae7f61e4b1058312d399963a6ed",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=110&name=ji1100209.fits"
+  },
+  {
+    "nombre": "1603625_ji1100220.fits",
+    "bytes": 2111040,
+    "sha256": "f1c91d39f51008698c7950ede94ae590075ba55a6cb3e1356210fd4a92aa027d",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=110&name=ji1100220.fits"
+  },
+  {
+    "nombre": "1603626_ji1100232.fits",
+    "bytes": 2111040,
+    "sha256": "54096ac004a03cc4e6a56838624797cd41682cc49bf60d34d8e53ef6c63b39a6",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=110&name=ji1100232.fits"
+  },
+  {
+    "nombre": "1603627_ji1100244.fits",
+    "bytes": 2111040,
+    "sha256": "64ac9cfb1dab439e00a3f0a8c2cecf8c32b81255378ab77dc066e3a331dc002b",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=110&name=ji1100244.fits"
+  },
+  {
+    "nombre": "1603628_ji1100256.fits",
+    "bytes": 2111040,
+    "sha256": "5ccfadabd24aca8edf349e3b5a6c95e0b83cc7683e814974ef7e1878acaf5858",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=110&name=ji1100256.fits"
+  },
+  {
+    "nombre": "1603629_ji1100266.fits",
+    "bytes": 1713600,
+    "sha256": "a693a93a9eb2440aac5a07f51ab912485c86b35a37ff6c7dcc850fb9fd78d812",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=110&name=ji1100266.fits"
+  },
+  {
+    "nombre": "1603630_ji1110009.fits",
+    "bytes": 2111040,
+    "sha256": "943fe54de84d8761e66804f60b6a7bfff2457cc195abd99446e869f799217159",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=111&name=ji1110009.fits"
+  },
+  {
+    "nombre": "1603631_ji1110021.fits",
+    "bytes": 2111040,
+    "sha256": "37c9f523aac9bcd06b79b642698cb88dff55d6b2d1fb5168efaa95d05847b425",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=111&name=ji1110021.fits"
+  },
+  {
+    "nombre": "1603632_ji1110032.fits",
+    "bytes": 2111040,
+    "sha256": "5374059636d8265eabaf78a55bd93df02b2ec1c7a1a13e0393da9503f3af284c",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=111&name=ji1110032.fits"
+  },
+  {
+    "nombre": "1603633_ji1110044.fits",
+    "bytes": 2111040,
+    "sha256": "312939bdce20b38d8321d571e1a2d3b7669f5c9184e9c7634f5bebc0111646a0",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=111&name=ji1110044.fits"
+  },
+  {
+    "nombre": "1603634_ji1110056.fits",
+    "bytes": 2111040,
+    "sha256": "82f8601d6ac40fc6672601873c94869b2915817e33fbcff0c52e276bae275063",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=111&name=ji1110056.fits"
+  },
+  {
+    "nombre": "1603635_ji1110068.fits",
+    "bytes": 2111040,
+    "sha256": "d9bd2ec922872d14454cee846dbc1273521337b248e6ff6773dd960878c0908c",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=111&name=ji1110068.fits"
+  },
+  {
+    "nombre": "1603670_ji1180209.fits",
+    "bytes": 2111040,
+    "sha256": "a1c103fb38b907b9e74e8c0c60bb489e813560175a3ef125b3103ee796eb5f0c",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=118&name=ji1180209.fits"
+  },
+  {
+    "nombre": "1603671_ji1180220.fits",
+    "bytes": 2111040,
+    "sha256": "f42594125c44cb27980a31b33ad8b3309d8f891b120c80f020b24f97b7895023",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=118&name=ji1180220.fits"
+  },
+  {
+    "nombre": "1603672_ji1180232.fits",
+    "bytes": 2111040,
+    "sha256": "7bf8497ef8c4f16d44cbcae1a520c1a8887d21b32d970fef56acf4e6f1f52c91",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=118&name=ji1180232.fits"
+  },
+  {
+    "nombre": "1603673_ji1180244.fits",
+    "bytes": 2111040,
+    "sha256": "b73d6a1c9c4deea559dbdeb92ad5c3843671161c9c9014e638a70cde20c16b61",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=118&name=ji1180244.fits"
+  },
+  {
+    "nombre": "1603674_ji1180256.fits",
+    "bytes": 2111040,
+    "sha256": "57baff51c6537da157b51ba3df730dd0140b417ceecafb5219fcc4a1daab3b4c",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=118&name=ji1180256.fits"
+  },
+  {
+    "nombre": "1603675_ji1180266.fits",
+    "bytes": 1707840,
+    "sha256": "0ed22c38ff779cd9c845739cc196e0ddb05bce7e466a33abb1d21c60cb72d58b",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=118&name=ji1180266.fits"
+  },
+  {
+    "nombre": "1603676_ji1190009.fits",
+    "bytes": 2111040,
+    "sha256": "fd279cb458629573545d22f26e27753e9901de002f20833f23e497c16755785b",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=119&name=ji1190009.fits"
+  },
+  {
+    "nombre": "1603677_ji1190021.fits",
+    "bytes": 2111040,
+    "sha256": "02e530ccb818671aab8548250c55ec2a4268b8c38d6c18d914776760e5497672",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=119&name=ji1190021.fits"
+  },
+  {
+    "nombre": "1603678_ji1190032.fits",
+    "bytes": 2111040,
+    "sha256": "81d05e47c7561100c973cba287f78c9db677f2d7de5fdf0f78a0a75ebb6bdc45",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=119&name=ji1190032.fits"
+  },
+  {
+    "nombre": "1603679_ji1190044.fits",
+    "bytes": 2111040,
+    "sha256": "9f658502a131dcf06a8dbf81702672f9b8d5addebed94897dad42bfdc5112c01",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=119&name=ji1190044.fits"
+  },
+  {
+    "nombre": "1603680_ji1190056.fits",
+    "bytes": 2111040,
+    "sha256": "de2578f6262e4edfd6c8cf2354f6cbe9063864236264dfa783a3b412afa17ae6",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=119&name=ji1190056.fits"
+  },
+  {
+    "nombre": "1603681_ji1190068.fits",
+    "bytes": 2111040,
+    "sha256": "acccef769cbfe5337c45ad9e35f9c8df8759748732bc5be93e3150d14094bee0",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=119&name=ji1190068.fits"
+  },
+  {
+    "nombre": "1603716_ji1200209.fits",
+    "bytes": 2111040,
+    "sha256": "785b7e391ca4c7ac1120f141568b319441ff369583449633174149d52b1369a3",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=120&name=ji1200209.fits"
+  },
+  {
+    "nombre": "1603717_ji1200220.fits",
+    "bytes": 2111040,
+    "sha256": "918557d3ce2fed6101422fa4895820858ecbd41223b51dcdcdf77a35c037eacf",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=120&name=ji1200220.fits"
+  },
+  {
+    "nombre": "1603718_ji1200232.fits",
+    "bytes": 2111040,
+    "sha256": "e5d9df5c7a90bb9e44d6927fd8c0eddcaec901cda1e0626865fdd38c7487d444",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=120&name=ji1200232.fits"
+  },
+  {
+    "nombre": "1603719_ji1200244.fits",
+    "bytes": 2111040,
+    "sha256": "4b8724a9baa79d1a8033d8c8aff4572b95a11d030fac57aa3a1b04352764a718",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=120&name=ji1200244.fits"
+  },
+  {
+    "nombre": "1603720_ji1200256.fits",
+    "bytes": 2111040,
+    "sha256": "88df5586d3a0a986895e5bbdb2dfc1620cdce2d99f9d8ff67f98f3be7990e579",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=120&name=ji1200256.fits"
+  },
+  {
+    "nombre": "1603721_ji1200266.fits",
+    "bytes": 1704960,
+    "sha256": "03f57687f4d1e8d63f6bbeb7a1723eb720512e1164faa107809adc1ca0c48b69",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=120&name=ji1200266.fits"
+  },
+  {
+    "nombre": "1603722_ji1210009.fits",
+    "bytes": 2111040,
+    "sha256": "600045899beedd832093bea417377d6d20ee3ed5f3317a4e94c52a1b58c89f9e",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=121&name=ji1210009.fits"
+  },
+  {
+    "nombre": "1603723_ji1210021.fits",
+    "bytes": 2111040,
+    "sha256": "f7bfe0149ad708de3570092420460ee8297306d3a145b28d720c509f18e65ef0",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=121&name=ji1210021.fits"
+  },
+  {
+    "nombre": "1603724_ji1210032.fits",
+    "bytes": 2111040,
+    "sha256": "5b6457411fa8729dbfc0fda162e81649df83de2b681d60b7ea58196fcff2fb4d",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=121&name=ji1210032.fits"
+  },
+  {
+    "nombre": "1603725_ji1210044.fits",
+    "bytes": 2111040,
+    "sha256": "e98462aa1ecfdae957abb62820ad9cba9ad739d641d88c1ad01409cd11ea26b9",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=121&name=ji1210044.fits"
+  },
+  {
+    "nombre": "1603726_ji1210056.fits",
+    "bytes": 2111040,
+    "sha256": "43d1c80c6181e9da8293dc9633f33f25410657beedc467f5d4eebebdae7b85d8",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=121&name=ji1210056.fits"
+  },
+  {
+    "nombre": "1603727_ji1210068.fits",
+    "bytes": 2111040,
+    "sha256": "56490dfe4030ca7ab8fe711a87a015f66fd5a43324d7ec8e86768bc08aa36afc",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=121&name=ji1210068.fits"
+  },
+  {
+    "nombre": "1603762_ji1220209.fits",
+    "bytes": 2111040,
+    "sha256": "54a443be04d867a65af205280cf20b22424ff092c00d1fc9dfd94e7754069663",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=122&name=ji1220209.fits"
+  },
+  {
+    "nombre": "1603763_ji1220220.fits",
+    "bytes": 2111040,
+    "sha256": "102495d679aa641c48e466d0377e557cb13f191a37d2d7164e392bc5a6934744",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=122&name=ji1220220.fits"
+  },
+  {
+    "nombre": "1603764_ji1220232.fits",
+    "bytes": 2111040,
+    "sha256": "4e22eae94fa72d6c5a351626a3e89ca9478c17472cbd94bb38fea82c3a8b9505",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=122&name=ji1220232.fits"
+  },
+  {
+    "nombre": "1603765_ji1220244.fits",
+    "bytes": 2111040,
+    "sha256": "95b29aca471472b68b403dd8bf4ac14afcec2a5810d4fa1cf4a299a1cdc02694",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=122&name=ji1220244.fits"
+  },
+  {
+    "nombre": "1603766_ji1220256.fits",
+    "bytes": 2111040,
+    "sha256": "c3745e86d6a4f522a549f58ee455eb11b94e567c0d93fd8510db48cb30f90c8c",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=122&name=ji1220256.fits"
+  },
+  {
+    "nombre": "1603767_ji1220266.fits",
+    "bytes": 1707840,
+    "sha256": "1a1fe4372c97aa7266a5a90090e7870bad3b07ef3d359a575fcd3d27b4a345f8",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=122&name=ji1220266.fits"
+  },
+  {
+    "nombre": "1603768_ji1230009.fits",
+    "bytes": 2111040,
+    "sha256": "7461428ed7a787ee165ede2f60bb0ae6e21ae6705a53e199f34c1deb9f7aac89",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=123&name=ji1230009.fits"
+  },
+  {
+    "nombre": "1603769_ji1230021.fits",
+    "bytes": 2111040,
+    "sha256": "48b635ea62e3be49cf0f6844d487cc67794aa096068858fed9a0aeb3ffe8cda0",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=123&name=ji1230021.fits"
+  },
+  {
+    "nombre": "1603770_ji1230032.fits",
+    "bytes": 2111040,
+    "sha256": "451724dda923d753aa9a11978a8638e02ab66443989c59663a47293a17388a51",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=123&name=ji1230032.fits"
+  },
+  {
+    "nombre": "1603771_ji1230044.fits",
+    "bytes": 2111040,
+    "sha256": "95c712fd8715c4e9f7928e753a56f427480f85063a7306a213481f69811b4fae",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=123&name=ji1230044.fits"
+  },
+  {
+    "nombre": "1603772_ji1230056.fits",
+    "bytes": 2111040,
+    "sha256": "0eaf717d3caa75413f4ba73b6b7bef5c4d38573f01d8a771772a463b2bc4283a",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=123&name=ji1230056.fits"
+  },
+  {
+    "nombre": "1603773_ji1230068.fits",
+    "bytes": 2111040,
+    "sha256": "94183f7ada618021b0385900dd8cef6be1965d534542b06ee58931cc80997f8f",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=123&name=ji1230068.fits"
+  },
+  {
+    "nombre": "1603808_ji1240209.fits",
+    "bytes": 2111040,
+    "sha256": "73d1438a5cb1620b777033213b50b1c2cc1cc60c3ab17a392d4c954338636c09",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=124&name=ji1240209.fits"
+  },
+  {
+    "nombre": "1603809_ji1240220.fits",
+    "bytes": 2111040,
+    "sha256": "3c954d9d8cd11502630453bb8668b63636bc7793273865bd6a3b4f6ffa068874",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=124&name=ji1240220.fits"
+  },
+  {
+    "nombre": "1603810_ji1240232.fits",
+    "bytes": 2111040,
+    "sha256": "67f84dfba9dc8d025633249e40dc4c9ee27a33abb44c254f6d7344c0a3a51145",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=124&name=ji1240232.fits"
+  },
+  {
+    "nombre": "1603811_ji1240244.fits",
+    "bytes": 2111040,
+    "sha256": "3a992b23cd1cc4768fbee6755f324df4386a32b40bb7b0170dffbb03f09a813e",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=124&name=ji1240244.fits"
+  },
+  {
+    "nombre": "1603812_ji1240256.fits",
+    "bytes": 2111040,
+    "sha256": "930bf84e0b32107d52f73352efb95744c587b50044cbe776998885a582f0e4d4",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=124&name=ji1240256.fits"
+  },
+  {
+    "nombre": "1603813_ji1240266.fits",
+    "bytes": 1713600,
+    "sha256": "cdc1c6dfc29a6d9802f2b733b2fb5ef8660f2814689668f3e6cdd1d1efd6ef41",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=124&name=ji1240266.fits"
+  },
+  {
+    "nombre": "1603814_ji1250009.fits",
+    "bytes": 2111040,
+    "sha256": "a4367db7dbed066189a1d05b24c876d8aec645388cd588c1a840c90a76df14bc",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=125&name=ji1250009.fits"
+  },
+  {
+    "nombre": "1603815_ji1250021.fits",
+    "bytes": 2111040,
+    "sha256": "4005a3d0d04d10ed56e0627f73824aec8d8634245f7383360971489f3e14ed6b",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=125&name=ji1250021.fits"
+  },
+  {
+    "nombre": "1603816_ji1250032.fits",
+    "bytes": 2111040,
+    "sha256": "ed9f3e79e2cd52e662bbe2cb512284e812989fc2a856fc42beec83ed13d1d34b",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=125&name=ji1250032.fits"
+  },
+  {
+    "nombre": "1603817_ji1250044.fits",
+    "bytes": 2111040,
+    "sha256": "e99aafd4c8fbfde48cde77e0c2729d7341b7f462d4de3c45350c7fd8116d4605",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=125&name=ji1250044.fits"
+  },
+  {
+    "nombre": "1603818_ji1250056.fits",
+    "bytes": 2111040,
+    "sha256": "95d1564e99cbc798ad856a9e9389fdd626334f3ca3fe29bafed787c4edaeae55",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=125&name=ji1250056.fits"
+  },
+  {
+    "nombre": "1603819_ji1250068.fits",
+    "bytes": 2111040,
+    "sha256": "59a912735410cb3281ad226f3a25553cf10cc54d474cf01fe485f92d986bbc3c",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=125&name=ji1250068.fits"
+  },
+  {
+    "nombre": "1603854_ji1320209.fits",
+    "bytes": 2111040,
+    "sha256": "4248f0ae22cdd869357428101f4b25a61084cf193b6fca54663b335e4ca1efb3",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=132&name=ji1320209.fits"
+  },
+  {
+    "nombre": "1603855_ji1320220.fits",
+    "bytes": 2111040,
+    "sha256": "abc6a813e0a7c834f8e6849a220500dc72f78784b9e0dab99c0df38254139edf",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=132&name=ji1320220.fits"
+  },
+  {
+    "nombre": "1603856_ji1320232.fits",
+    "bytes": 2111040,
+    "sha256": "d06b42a4bc47c2eb4aeecf1a61e6779875cecc83a9aa025c1875eb805db5d54e",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=132&name=ji1320232.fits"
+  },
+  {
+    "nombre": "1603857_ji1320244.fits",
+    "bytes": 2111040,
+    "sha256": "e4fa5a569c80387c50bcb893f4054ed8481a8de6a9cdf3c6ed0219c6400210a4",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=132&name=ji1320244.fits"
+  },
+  {
+    "nombre": "1603858_ji1320256.fits",
+    "bytes": 2111040,
+    "sha256": "fa761945662171b9bbbf889473ccb62964dfe713480e3a127892421534540e53",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=132&name=ji1320256.fits"
+  },
+  {
+    "nombre": "1603859_ji1320266.fits",
+    "bytes": 1713600,
+    "sha256": "de7cfafea6783a7cd429b2921681a0255dd9dacb049aa3b3e744d215bf633157",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti08&dh=990214n&scan=132&name=ji1320266.fits"
+  },
+  {
+    "nombre": "744991_ji0590244.fits",
+    "bytes": 2111040,
+    "sha256": "d3f30405564f897851d73ebcd3260ec8bef2d3aeb18f6f9298b5d0eeeb862439",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti03&dh=990311n&scan=059&name=ji0590244.fits"
+  },
+  {
+    "nombre": "744992_ji0590256.fits",
+    "bytes": 2111040,
+    "sha256": "7ceffb3e336e3b907ebce767fd737049db2dbb43e124bed90e1e4a538c91a0e9",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti03&dh=990311n&scan=059&name=ji0590256.fits"
+  },
+  {
+    "nombre": "744993_ji0590266.fits",
+    "bytes": 1710720,
+    "sha256": "c83542287fb4aeb83fd0b2499f189c0234e3abfeb1e3351efc0264cefd609262",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti03&dh=990311n&scan=059&name=ji0590266.fits"
+  },
+  {
+    "nombre": "744994_ji0600009.fits",
+    "bytes": 2111040,
+    "sha256": "834dda0f0d526203810a1e64dd8a91505ce9582f53d584f569c1cc814c5d1066",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti03&dh=990311n&scan=060&name=ji0600009.fits"
+  },
+  {
+    "nombre": "744995_ji0600021.fits",
+    "bytes": 2111040,
+    "sha256": "c292ba945689366c644f7032a601b2502facc91613fe856855238af9095941f3",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti03&dh=990311n&scan=060&name=ji0600021.fits"
+  },
+  {
+    "nombre": "745037_ji0610244.fits",
+    "bytes": 2111040,
+    "sha256": "d1d1066db80d8e4ffbd768abdcfd7a99b18354c8bd17053e9023b3499b858415",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti03&dh=990311n&scan=061&name=ji0610244.fits"
+  },
+  {
+    "nombre": "745038_ji0610256.fits",
+    "bytes": 2111040,
+    "sha256": "c00292f33b616178de0c892ac88743061cead7b958012deeba97d8922cb0de9f",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti03&dh=990311n&scan=061&name=ji0610256.fits"
+  },
+  {
+    "nombre": "745039_ji0610266.fits",
+    "bytes": 1713600,
+    "sha256": "343200d4215a488384eef070ac79d647d5aeddeb1761ee5d370a335f1c903143",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti03&dh=990311n&scan=061&name=ji0610266.fits"
+  },
+  {
+    "nombre": "745040_ji0620009.fits",
+    "bytes": 2111040,
+    "sha256": "f701e44b0c65cdf6715b18940daaed310d885c50fb6269671b4dbafabd6d385e",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti03&dh=990311n&scan=062&name=ji0620009.fits"
+  },
+  {
+    "nombre": "745041_ji0620021.fits",
+    "bytes": 2111040,
+    "sha256": "d994f26c08cad46511b9b5acc1296418ad109485c65819e67f48e4aea0ae8620",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti03&dh=990311n&scan=062&name=ji0620021.fits"
+  },
+  {
+    "nombre": "827768_ji0490244.fits",
+    "bytes": 2111040,
+    "sha256": "8fbfed0bbae9c543049f9344e64667f2f4a04ef9513a1897d983cebb2542d38c",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti06&dh=990518n&scan=049&name=ji0490244.fits"
+  },
+  {
+    "nombre": "827769_ji0490256.fits",
+    "bytes": 2111040,
+    "sha256": "601936b2843f54a1c17a093e35ce50310187ff8984e34ae389ba7201933fcf5d",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti06&dh=990518n&scan=049&name=ji0490256.fits"
+  },
+  {
+    "nombre": "827770_ji0490266.fits",
+    "bytes": 1699200,
+    "sha256": "ba676a13502e5bdfc02f7d00335a6cfb33823b595814d870a0f151bc2f604376",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti06&dh=990518n&scan=049&name=ji0490266.fits"
+  },
+  {
+    "nombre": "869056_ji0280009.fits",
+    "bytes": 2111040,
+    "sha256": "a62b8b2c33cab0b5479e8e340c184a48baff978c6f745449874eb497ae0527bc",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti06&dh=990524n&scan=028&name=ji0280009.fits"
+  },
+  {
+    "nombre": "869057_ji0280021.fits",
+    "bytes": 2111040,
+    "sha256": "cab1e2558407eb533653c6b8b7b335294d392ba094d5f713fa8404c66e657938",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti06&dh=990524n&scan=028&name=ji0280021.fits"
+  },
+  {
+    "nombre": "869099_ji0290244.fits",
+    "bytes": 2111040,
+    "sha256": "72d83786d1b03abf968f382a6d04f6975b83583fd11360edecea6c720050832c",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti06&dh=990524n&scan=029&name=ji0290244.fits"
+  },
+  {
+    "nombre": "869100_ji0290256.fits",
+    "bytes": 2111040,
+    "sha256": "c1c7be04c116ef1df370a48d79c0ed56bb5cb647fa5520cc818314ebb20ac161",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti06&dh=990524n&scan=029&name=ji0290256.fits"
+  },
+  {
+    "nombre": "869101_ji0290266.fits",
+    "bytes": 1704960,
+    "sha256": "e43cbbdcbee860bd2a8d646c7e1d29c8020bdf41ce2ebc3fb75a32f08c8a1a4c",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti06&dh=990524n&scan=029&name=ji0290266.fits"
+  },
+  {
+    "nombre": "869102_ji0300009.fits",
+    "bytes": 2111040,
+    "sha256": "9aa8d9e79f82c66e2e5d3eb04cdbfc8ec0d6851bf4ecdd1b5bfe12412f3a74ce",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti06&dh=990524n&scan=030&name=ji0300009.fits"
+  },
+  {
+    "nombre": "869103_ji0300021.fits",
+    "bytes": 2111040,
+    "sha256": "f9506a2c1a0e3a3d19e5e01e42735c04481d9f52bdd4900cd324ce20f55131c6",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti06&dh=990524n&scan=030&name=ji0300021.fits"
+  },
+  {
+    "nombre": "869145_ji0310244.fits",
+    "bytes": 2111040,
+    "sha256": "b0d949727ede262c1d50db2c75e822a33088591829ac6f8074c1ab67ea192bd7",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti06&dh=990524n&scan=031&name=ji0310244.fits"
+  },
+  {
+    "nombre": "869146_ji0310256.fits",
+    "bytes": 2111040,
+    "sha256": "995b9d31bf0c04c2becd8549f50b2550ee1fac9b535570f164520bad6096a5bc",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti06&dh=990524n&scan=031&name=ji0310256.fits"
+  },
+  {
+    "nombre": "869147_ji0310266.fits",
+    "bytes": 1702080,
+    "sha256": "89201c71b459164b8646940faa5cf039f922549641aa5973b3aa6653e1bf5814",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti06&dh=990524n&scan=031&name=ji0310266.fits"
+  },
+  {
+    "nombre": "869148_ji0320009.fits",
+    "bytes": 2111040,
+    "sha256": "f0a49d9ee469f372bde4c5a6793e6d235d7d247f2fb6de411a722a3d9b8b560a",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti06&dh=990524n&scan=032&name=ji0320009.fits"
+  },
+  {
+    "nombre": "869149_ji0320021.fits",
+    "bytes": 2111040,
+    "sha256": "abbf68341a1821238dca000b20021c2a90e8ec1344ee960490d64fa2a20f4842",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti06&dh=990524n&scan=032&name=ji0320021.fits"
+  },
+  {
+    "nombre": "869191_ji0330244.fits",
+    "bytes": 2111040,
+    "sha256": "49b8e91bcb3588057e628e163667b178f37ade722c5dcec49010ec865ebaf50c",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti06&dh=990524n&scan=033&name=ji0330244.fits"
+  },
+  {
+    "nombre": "869192_ji0330256.fits",
+    "bytes": 2111040,
+    "sha256": "9a94eafa702a5df73a3a9f30fbff0dbc81084974ec9d64caa5a04858a5cba8c5",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti06&dh=990524n&scan=033&name=ji0330256.fits"
+  },
+  {
+    "nombre": "869193_ji0330266.fits",
+    "bytes": 1704960,
+    "sha256": "c75d5c25563c3c11f1abc1ef8b0876eb003387a5cf924b9f15d2222b8cab2b54",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti06&dh=990524n&scan=033&name=ji0330266.fits"
+  },
+  {
+    "nombre": "869194_ji0340009.fits",
+    "bytes": 2111040,
+    "sha256": "4c57cd409966a5f9548ee2bd894e46c96601c3a3846b9879d42b46647a7c7ce2",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti06&dh=990524n&scan=034&name=ji0340009.fits"
+  },
+  {
+    "nombre": "869195_ji0340021.fits",
+    "bytes": 2111040,
+    "sha256": "0fb6ac11ee8299fee3778c586f62ab53c57b5b8ea1601c7f5ee21175c63e0294",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti06&dh=990524n&scan=034&name=ji0340021.fits"
+  },
+  {
+    "nombre": "869237_ji0350244.fits",
+    "bytes": 2111040,
+    "sha256": "42f163d29b898dde84410397e657b06dcf868caa9391eece91b43185162b30d3",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti06&dh=990524n&scan=035&name=ji0350244.fits"
+  },
+  {
+    "nombre": "869238_ji0350256.fits",
+    "bytes": 2111040,
+    "sha256": "639cb33a9ff63e5b4d6c41d8dbf78d04e71b4d0ff74aa6094bf807fd6e8a2b62",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti06&dh=990524n&scan=035&name=ji0350256.fits"
+  },
+  {
+    "nombre": "869239_ji0350266.fits",
+    "bytes": 1699200,
+    "sha256": "c1fb012818f387186487ee20ac664911b3a8ed3ae9e0b45eb9f9599cffcd72dd",
+    "url": "https://irsa.ipac.caltech.edu:443/cgi-bin/2MASS/IM/nph-im?ds=asky&atdir=/ti06&dh=990524n&scan=035&name=ji0350266.fits"
+  }
+]

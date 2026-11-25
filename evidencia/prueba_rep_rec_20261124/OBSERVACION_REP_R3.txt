@@ -1,0 +1,13 @@
+2026-11-24T16:46:36.9851433+00:00
+5259 undefined 2 undefined 1 undefined undefined undefined undefined
+5266 campaign_task_C3 2 slot1_1@dme-worker3 0 1795538516 1795538560 undefined undefined
+5259 undefined 2 undefined 1
+5266 campaign_task_C3 2 slot1_1@dme-worker3 0
+11/24/26 16:43:23 Of 9 nodes total:
+11/24/26 16:43:23  Done     Pre   Queued    Post   Ready   Un-Ready   Failed   Futile
+11/24/26 16:43:23   ===     ===      ===     ===     ===        ===      ===      ===
+11/24/26 16:43:23     7       0        1       0       0          1        0        0
+11/24/26 16:43:23 0 job proc(s) currently held
+11/24/26 16:43:23 DAGMan Runtime Statistics: [EventCycleTimeAvg=0.002; EventCycleTimeMax=0.031; EventCycleTimeMin=0.000; EventCycleTimeStd=0.006; EventCycleTimeSum=0.086; SleepCycleTimeAvg=4.993; SleepCycleTimeMax=5.119; SleepCycleTimeMin=4.120; SleepCycleTimeStd=0.140; SleepCycleTimeSum=214.710; SubmitCycleTimeAvg=0.001; SubmitCycleTimeMax=0.031; SubmitCycleTimeMin=0.000; SubmitCycleTimeStd=0.005; SubmitCycleTimeSum=0.065; EventCycleTimeCount=43.000; SleepCycleTimeCount=43.000; SubmitCycleTimeCount=44.000; LogProcessCycleTimeAvg=0.001; LogProcessCycleTimeMax=0.003; LogProcessCycleTimeMin=0.000; LogProcessCycleTimeStd=0.001; LogProcessCycleTimeSum=0.013; LogProcessCycleTimeCount=16.000; ]
+5259 dmeadmin /mnt/prueba_rep_rec_20261124/rep_r3/submit/dmeadmin/pegasus/flujo-rep/run0001 undefined
+5266 dmeadmin /mnt/prueba_rep_rec_20261124/rep_r3/scratch/dmeadmin/pegasus/flujo-rep/run0001 campaign_task_C3

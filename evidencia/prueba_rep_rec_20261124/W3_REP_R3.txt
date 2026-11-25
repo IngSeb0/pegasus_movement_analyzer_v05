@@ -1,0 +1,9 @@
+11/24/26 16:46:00 The STARTD (pid 3347) exited with status 0
+11/24/26 16:46:00 The SHARED_PORT (pid 3337) exited with status 0
+11/24/26 16:46:00 procd (pid = 3335) exited with status 0
+11/24/26 16:46:01 Master restart (GRACEFUL) is watching /usr/sbin/condor_master (mtime:1787697332)
+11/24/26 16:46:13 The STARTD (pid 17190) exited with status 0
+11/24/26 16:46:13 The SHARED_PORT (pid 17189) exited with status 0
+11/24/26 16:46:13 procd (pid = 17188) exited with status 0
+11/24/26 16:46:14 Master restart (GRACEFUL) is watching /usr/sbin/condor_master (mtime:1787697332)
+-- No entries --

@@ -1,0 +1,98 @@
+{
+  "ubicacion": {
+    "P": "dme-worker1",
+    "C3": "dme-worker2",
+    "C4": "dme-worker2",
+    "C1": "dme-worker2",
+    "C2": "dme-worker2"
+  },
+  "referencias_medidas": [
+    {
+      "id": "contraste-piloto-W2-AGR",
+      "placement": {
+        "P": "dme-worker1",
+        "C3": "dme-worker2",
+        "C4": "dme-worker2",
+        "C1": "dme-worker2",
+        "C2": "dme-worker2"
+      },
+      "required_bytes": 73400320,
+      "observed_bytes": 73400320,
+      "dme": "1",
+      "requerido_escalado_B": 1468006400
+    },
+    {
+      "id": "contraste-B1-W2-AGR",
+      "placement": {
+        "P": "dme-worker1",
+        "C3": "dme-worker2",
+        "C4": "dme-worker2",
+        "C1": "dme-worker2",
+        "C2": "dme-worker2"
+      },
+      "required_bytes": 73400320,
+      "observed_bytes": 73400320,
+      "dme": "1",
+      "requerido_escalado_B": 1468006400
+    },
+    {
+      "id": "contraste-B2-W2-AGR",
+      "placement": {
+        "P": "dme-worker1",
+        "C3": "dme-worker2",
+        "C4": "dme-worker2",
+        "C1": "dme-worker2",
+        "C2": "dme-worker2"
+      },
+      "required_bytes": 73400320,
+      "observed_bytes": 73400320,
+      "dme": "1",
+      "requerido_escalado_B": 1468006400
+    },
+    {
+      "id": "contraste-B3-W2-AGR",
+      "placement": {
+        "P": "dme-worker1",
+        "C3": "dme-worker2",
+        "C4": "dme-worker2",
+        "C1": "dme-worker2",
+        "C2": "dme-worker2"
+      },
+      "required_bytes": 73400320,
+      "observed_bytes": 73400320,
+      "dme": "1",
+      "requerido_escalado_B": 1468006400
+    },
+    {
+      "id": "contraste-B4-W2-AGR",
+      "placement": {
+        "P": "dme-worker1",
+        "C3": "dme-worker2",
+        "C4": "dme-worker2",
+        "C1": "dme-worker2",
+        "C2": "dme-worker2"
+      },
+      "required_bytes": 73400320,
+      "observed_bytes": 73400320,
+      "dme": "1",
+      "requerido_escalado_B": 1468006400
+    },
+    {
+      "id": "contraste-B5-W2-AGR",
+      "placement": {
+        "P": "dme-worker1",
+        "C3": "dme-worker2",
+        "C4": "dme-worker2",
+        "C1": "dme-worker2",
+        "C2": "dme-worker2"
+      },
+      "required_bytes": 73400320,
+      "observed_bytes": 73400320,
+      "dme": "1",
+      "requerido_escalado_B": 1468006400
+    }
+  ],
+  "requerido_10MiB": 73400320,
+  "observado_10MiB": 73400320,
+  "dme": "1"
+}

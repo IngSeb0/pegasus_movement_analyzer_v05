@@ -1,0 +1,14 @@
+[
+  {
+    "_id": "a",
+    "_type": "file",
+    "_attributes": {
+      "user": "dmeadmin",
+      "size": "209715200",
+      "ctime": "2026-11-24T16:33:56.076429",
+      "checksum.type": "sha256",
+      "checksum.value": "283a35905471252ea78dd42e01f5e96f62a851cc4486d4ff03341e092fec36ba",
+      "checksum.timing": "0.769"
+    }
+  }
+]

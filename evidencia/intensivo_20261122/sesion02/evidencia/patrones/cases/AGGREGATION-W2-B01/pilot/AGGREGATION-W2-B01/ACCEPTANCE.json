@@ -1,0 +1,35 @@
+{
+  "id": "AGGREGATION-W2-B01",
+  "condition": "AGGREGATION-W2",
+  "workers": 2,
+  "pattern": "AGGREGATION",
+  "block": 1,
+  "phase": "principal",
+  "uuid": "19997c64-3510-4e2a-abf5-f43b3114ba1c",
+  "required_bytes": 2097152000,
+  "observed_bytes": 3355443200,
+  "dme": "5/8",
+  "duration_s": 366.6010000705719,
+  "placement": {
+    "T1": "dme-worker2",
+    "T2": "dme-worker1",
+    "T3": "dme-worker2",
+    "T4": "dme-worker1",
+    "T5": "dme-worker1",
+    "T6": "dme-worker1"
+  },
+  "obligations": 10,
+  "deliveries": 16,
+  "directions": 12,
+  "all_exact": true,
+  "final_files": [
+    {
+      "file": "B",
+      "bytes": 209715200,
+      "sha256": "45fe95270f1f9a9a6eba2df456db3376ecb4610fc4da2dc2e821f137b27acffa",
+      "matches_native_metadata": true
+    }
+  ],
+  "manualAgreement": true,
+  "analyzerStatus": "VALID"
+}

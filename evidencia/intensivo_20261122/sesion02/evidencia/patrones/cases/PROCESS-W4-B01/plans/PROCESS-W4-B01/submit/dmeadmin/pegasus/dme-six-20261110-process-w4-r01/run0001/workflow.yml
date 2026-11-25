@@ -1,0 +1,305 @@
+x-pegasus:
+  apiLang: python
+  createdBy: dmeadmin
+  createdOn: 11-22-26T15:50:55Z
+pegasus: 5.0.4
+name: dme-six-20261110-process-w4-r01
+metadata:
+  condition_id: PROCESS-W4
+  pattern: Processing
+  replica: '1'
+  data_configuration: condorio
+  program_version: six_patterns_fma_v1
+  oracle_sha256: 5fb7899efed14edcee6e1a68ec638765d476beded6b850c24710c5d9bd4249a5
+  scientific_file_sizes_bytes: '{"A1": 209715200, "A2": 209715200, "A3": 209715200,
+    "A4": 209715200, "A5": 209715200, "A6": 209715200, "B1": 209715200, "B2": 209715200,
+    "B3": 209715200, "B4": 209715200, "B5": 209715200, "B6": 209715200}'
+  study: five_patterns_20261110
+  study_case: PROCESS-W4-B01
+siteCatalog:
+  sites:
+  - name: local
+    arch: x86_64
+    os.type: linux
+    directories:
+    - type: sharedScratch
+      path: /mnt/intensivo_20261122/patrones/cases/PROCESS-W4-B01/plans/PROCESS-W4-B01/scratch
+      sharedFileSystem: false
+      fileServers:
+      - url: file:///mnt/intensivo_20261122/patrones/cases/PROCESS-W4-B01/plans/PROCESS-W4-B01/scratch
+        operation: all
+    - type: localStorage
+      path: /mnt/intensivo_20261122/patrones/cases/PROCESS-W4-B01/plans/PROCESS-W4-B01/outputs
+      sharedFileSystem: false
+      fileServers:
+      - url: file:///mnt/intensivo_20261122/patrones/cases/PROCESS-W4-B01/plans/PROCESS-W4-B01/outputs
+        operation: all
+  - name: condorpool
+    arch: x86_64
+    os.type: linux
+    directories: []
+    profiles:
+      condor:
+        universe: vanilla
+        request_cpus: '1'
+        request_memory: 256
+      pegasus:
+        style: condor
+        auxillary.local: 'True'
+replicaCatalog:
+  replicas:
+  - lfn: A1
+    pfns:
+    - site: local
+      pfn: /mnt/intensivo_20261122/patrones/cases/PROCESS-W4-B01/plans/PROCESS-W4-B01/inputs/A1
+  - lfn: A2
+    pfns:
+    - site: local
+      pfn: /mnt/intensivo_20261122/patrones/cases/PROCESS-W4-B01/plans/PROCESS-W4-B01/inputs/A2
+  - lfn: A3
+    pfns:
+    - site: local
+      pfn: /mnt/intensivo_20261122/patrones/cases/PROCESS-W4-B01/plans/PROCESS-W4-B01/inputs/A3
+  - lfn: A4
+    pfns:
+    - site: local
+      pfn: /mnt/intensivo_20261122/patrones/cases/PROCESS-W4-B01/plans/PROCESS-W4-B01/inputs/A4
+  - lfn: A5
+    pfns:
+    - site: local
+      pfn: /mnt/intensivo_20261122/patrones/cases/PROCESS-W4-B01/plans/PROCESS-W4-B01/inputs/A5
+  - lfn: A6
+    pfns:
+    - site: local
+      pfn: /mnt/intensivo_20261122/patrones/cases/PROCESS-W4-B01/plans/PROCESS-W4-B01/inputs/A6
+  - lfn: fma_kernel
+    pfns:
+    - site: local
+      pfn: /mnt/intensivo_20261122/patrones/cases/PROCESS-W4-B01/plans/PROCESS-W4-B01/bin/fma_kernel
+transformationCatalog:
+  transformations:
+  - name: campaign_task
+    sites:
+    - name: local
+      pfn: /mnt/intensivo_20261122/patrones/cases/PROCESS-W4-B01/plans/PROCESS-W4-B01/bin/campaign_task.py
+      type: stageable
+      arch: x86_64
+      os.type: linux
+jobs:
+- type: job
+  name: campaign_task
+  id: T1
+  arguments:
+  - --task-id
+  - T1
+  - --flops
+  - '1766799020'
+  - --input
+  - A1
+  - '209715200'
+  - --output
+  - B1
+  - '209715200'
+  uses:
+  - lfn: A1
+    type: input
+  - lfn: B1
+    type: output
+    stageOut: true
+    registerReplica: false
+  profiles:
+    condor:
+      requirements: TARGET.DMEStudyEligible == true
+      request_cpus: '1'
+      request_memory: 256
+  metadata:
+    task_id: T1
+    condition_id: PROCESS-W4
+    replica: '1'
+    pattern: Processing
+    controlled_worker: W1
+    target_machine: dme-worker1
+    flops: '1766799020'
+    scientific_inputs: '["A1"]'
+    scientific_outputs: '["B1"]'
+- type: job
+  name: campaign_task
+  id: T2
+  arguments:
+  - --task-id
+  - T2
+  - --flops
+  - '1766799020'
+  - --input
+  - A2
+  - '209715200'
+  - --output
+  - B2
+  - '209715200'
+  uses:
+  - lfn: B2
+    type: output
+    stageOut: true
+    registerReplica: false
+  - lfn: A2
+    type: input
+  profiles:
+    condor:
+      requirements: TARGET.DMEStudyEligible == true
+      request_cpus: '1'
+      request_memory: 256
+  metadata:
+    task_id: T2
+    condition_id: PROCESS-W4
+    replica: '1'
+    pattern: Processing
+    controlled_worker: W1
+    target_machine: dme-worker1
+    flops: '1766799020'
+    scientific_inputs: '["A2"]'
+    scientific_outputs: '["B2"]'
+- type: job
+  name: campaign_task
+  id: T3
+  arguments:
+  - --task-id
+  - T3
+  - --flops
+  - '1766799020'
+  - --input
+  - A3
+  - '209715200'
+  - --output
+  - B3
+  - '209715200'
+  uses:
+  - lfn: B3
+    type: output
+    stageOut: true
+    registerReplica: false
+  - lfn: A3
+    type: input
+  profiles:
+    condor:
+      requirements: TARGET.DMEStudyEligible == true
+      request_cpus: '1'
+      request_memory: 256
+  metadata:
+    task_id: T3
+    condition_id: PROCESS-W4
+    replica: '1'
+    pattern: Processing
+    controlled_worker: W1
+    target_machine: dme-worker1
+    flops: '1766799020'
+    scientific_inputs: '["A3"]'
+    scientific_outputs: '["B3"]'
+- type: job
+  name: campaign_task
+  id: T4
+  arguments:
+  - --task-id
+  - T4
+  - --flops
+  - '1766799020'
+  - --input
+  - A4
+  - '209715200'
+  - --output
+  - B4
+  - '209715200'
+  uses:
+  - lfn: A4
+    type: input
+  - lfn: B4
+    type: output
+    stageOut: true
+    registerReplica: false
+  profiles:
+    condor:
+      requirements: TARGET.DMEStudyEligible == true
+      request_cpus: '1'
+      request_memory: 256
+  metadata:
+    task_id: T4
+    condition_id: PROCESS-W4
+    replica: '1'
+    pattern: Processing
+    controlled_worker: W1
+    target_machine: dme-worker1
+    flops: '1766799020'
+    scientific_inputs: '["A4"]'
+    scientific_outputs: '["B4"]'
+- type: job
+  name: campaign_task
+  id: T5
+  arguments:
+  - --task-id
+  - T5
+  - --flops
+  - '1766799020'
+  - --input
+  - A5
+  - '209715200'
+  - --output
+  - B5
+  - '209715200'
+  uses:
+  - lfn: B5
+    type: output
+    stageOut: true
+    registerReplica: false
+  - lfn: A5
+    type: input
+  profiles:
+    condor:
+      requirements: TARGET.DMEStudyEligible == true
+      request_cpus: '1'
+      request_memory: 256
+  metadata:
+    task_id: T5
+    condition_id: PROCESS-W4
+    replica: '1'
+    pattern: Processing
+    controlled_worker: W1
+    target_machine: dme-worker1
+    flops: '1766799020'
+    scientific_inputs: '["A5"]'
+    scientific_outputs: '["B5"]'
+- type: job
+  name: campaign_task
+  id: T6
+  arguments:
+  - --task-id
+  - T6
+  - --flops
+  - '1766799020'
+  - --input
+  - A6
+  - '209715200'
+  - --output
+  - B6
+  - '209715200'
+  uses:
+  - lfn: A6
+    type: input
+  - lfn: B6
+    type: output
+    stageOut: true
+    registerReplica: false
+  profiles:
+    condor:
+      requirements: TARGET.DMEStudyEligible == true
+      request_cpus: '1'
+      request_memory: 256
+  metadata:
+    task_id: T6
+    condition_id: PROCESS-W4
+    replica: '1'
+    pattern: Processing
+    controlled_worker: W1
+    target_machine: dme-worker1
+    flops: '1766799020'
+    scientific_inputs: '["A6"]'
+    scientific_outputs: '["B6"]'
+jobDependencies: []

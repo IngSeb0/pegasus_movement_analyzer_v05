@@ -1,0 +1,11 @@
+condicion,n,duracion_dagman_s_prom,duracion_dagman_s_desv,tramo_ejecucion_s_prom,tramo_ejecucion_s_desv,tramo_transferencia_s_prom,tramo_transferencia_s_desv,tramo_auxiliares_s_prom,tramo_auxiliares_s_desv,tramo_cola_s_prom,tramo_cola_s_desv,tramo_cierre_post_s_prom,tramo_cierre_post_s_desv,tramo_dagman_s_prom,tramo_dagman_s_desv,suma_ejecucion_tareas_s_prom,suma_ejecucion_tareas_s_desv,suma_transferencia_entrada_s_prom,suma_transferencia_entrada_s_desv,suma_transferencia_salida_s_prom,suma_transferencia_salida_s_desv,ventana_ejecucion_s_prom,ventana_ejecucion_s_desv,preparacion_hasta_primera_tarea_s_prom,preparacion_hasta_primera_tarea_s_desv,bytes_transferidos_prom,bytes_transferidos_desv
+AGGREGATION-W2,2,374.09,10.6,52.5,0.71,214.5,0.71,45.5,6.36,28.0,2.83,13.0,1.41,21.0,0.0,52.5,0.71,226.0,1.41,105.0,1.41,255.5,2.12,44.0,2.83,3470139934.5,23.33
+AGGREGATION-W4,2,369.0,10.71,44.0,0.0,201.0,0.0,47.5,3.54,39.5,6.36,15.5,0.71,21.0,0.0,52.0,1.41,407.5,13.44,105.5,0.71,236.0,2.83,43.5,3.54,3470139889.0,28.28
+DISTRIBUTION-W2,2,286.99,7.8,43.5,0.71,145.0,2.83,45.0,7.07,18.5,0.71,13.5,0.71,21.0,0.0,43.5,0.71,153.0,7.07,107.0,0.0,166.5,3.54,38.5,3.54,2631269897.5,30.41
+DISTRIBUTION-W4,2,276.35,0.09,65.5,27.58,110.0,15.56,50.0,0.0,14.5,10.61,15.0,1.41,21.0,0.0,71.5,30.41,245.0,36.77,106.5,0.71,153.0,7.07,41.0,0.0,2631269835.5,0.71
+PIPELINE-W2,2,414.07,3.61,46.5,0.71,221.5,0.71,42.5,3.54,17.0,7.07,45.5,0.71,41.0,0.0,46.5,0.71,115.5,0.71,106.0,1.41,306.5,3.54,41.0,0.0,2631269917.0,31.11
+PIPELINE-W4,2,430.59,7.0,47.0,1.41,222.0,0.0,42.5,3.54,30.0,15.56,48.5,6.36,41.0,0.0,47.0,1.41,116.0,0.0,106.0,0.0,315.5,2.12,38.5,3.54,2631269941.0,56.57
+PROCESS-W2,2,258.55,4.28,43.0,4.24,126.5,16.26,57.5,3.54,9.5,4.95,6.0,0.0,16.0,0.0,46.5,0.71,169.0,25.46,106.5,0.71,120.0,2.83,46.0,0.0,2631279746.0,1.41
+PROCESS-W4,2,236.08,13.47,46.0,0.0,96.0,0.0,58.0,2.83,12.0,8.49,8.5,2.12,16.0,0.0,49.5,2.12,328.5,0.71,105.5,0.71,96.0,1.41,46.5,0.71,2631279767.0,31.11
+REDISTRIBUTION-W2,2,391.64,7.04,48.5,0.71,207.5,0.71,45.0,0.0,28.0,11.31,31.5,3.54,31.0,0.0,48.5,0.71,175.5,9.19,124.0,0.0,261.0,5.66,41.0,0.0,3050703026.0,1.41
+REDISTRIBUTION-W4,2,384.5,18.33,52.0,1.41,205.0,2.83,47.5,3.54,18.0,11.31,30.5,0.71,31.5,0.71,52.0,1.41,169.5,2.12,123.0,1.41,259.5,10.61,41.0,0.0,3050703046.0,31.11

@@ -1,0 +1,23 @@
+{
+  "corrida": "MG-FINAL-B03",
+  "condicion": "MG-FINAL",
+  "duracion_dagman_s": 1266.263,
+  "duracion_jobstate_s": 1267,
+  "diferencia_resolucion_s": -0.73700000000008,
+  "tramo_ejecucion_s": 491,
+  "tramo_transferencia_s": 660,
+  "tramo_auxiliares_s": 75,
+  "tramo_cola_s": 9,
+  "tramo_cierre_post_s": 15,
+  "tramo_dagman_s": 17,
+  "tareas": 148,
+  "auxiliares": 18,
+  "suma_ejecucion_tareas_s": 581,
+  "suma_transferencia_entrada_s": 1586,
+  "suma_transferencia_salida_s": 375,
+  "suma_espera_maquina_s": 55271,
+  "suma_cierre_s": 1142,
+  "bytes_transferidos": 7721806940,
+  "preparacion_hasta_primera_tarea_s": 47,
+  "ventana_ejecucion_s": 995
+}

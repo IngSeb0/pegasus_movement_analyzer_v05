@@ -1,0 +1,6 @@
+task_id	job_id	worker	status	attempts
+C1	3817.0	dme-worker2	4	1
+C2	3817.0	dme-worker2	4	1
+C3	3817.0	dme-worker2	4	1
+C4	3817.0	dme-worker2	4	1
+P	3816.0	dme-worker1	4	1

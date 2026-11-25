@@ -1,0 +1,23 @@
+{
+  "corrida": "MG-BASE-PILOTO",
+  "condicion": "MG-BASE",
+  "duracion_dagman_s": 1408.221,
+  "duracion_jobstate_s": 1408,
+  "diferencia_resolucion_s": 0.22100000000000364,
+  "tramo_ejecucion_s": 465,
+  "tramo_transferencia_s": 815,
+  "tramo_auxiliares_s": 66,
+  "tramo_cola_s": 17,
+  "tramo_cierre_post_s": 23,
+  "tramo_dagman_s": 22,
+  "tareas": 149,
+  "auxiliares": 18,
+  "suma_ejecucion_tareas_s": 557,
+  "suma_transferencia_entrada_s": 1726,
+  "suma_transferencia_salida_s": 383,
+  "suma_espera_maquina_s": 53628,
+  "suma_cierre_s": 1155,
+  "bytes_transferidos": 8364945526,
+  "preparacion_hasta_primera_tarea_s": 41,
+  "ventana_ejecucion_s": 1150
+}

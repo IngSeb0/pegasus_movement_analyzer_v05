@@ -1,0 +1,7 @@
+$ pwsh -NoProfile -File C:\Defensa\Sustentacion_DME\10_Preparacion_Final\prueba_rep_rec_20261124\Control-Cluster.ps1 -Action Deallocate
+Exception: C:\Defensa\Sustentacion_DME\10_Preparacion_Final\prueba_rep_rec_20261124\Control-Cluster.ps1:90
+Line |
+  90 |  … LED\s*$') { throw 'No se confirmo cola vacia; desasignacion cancelada …
+     |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | No se confirmo cola vacia; desasignacion cancelada.
+

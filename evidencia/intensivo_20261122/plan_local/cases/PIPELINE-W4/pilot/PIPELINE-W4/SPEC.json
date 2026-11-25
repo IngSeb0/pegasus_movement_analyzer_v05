@@ -1,0 +1,197 @@
+{
+  "pattern": "Pipeline",
+  "mode": "CondorIO",
+  "groups": [
+    [
+      "T1"
+    ],
+    [
+      "T2"
+    ],
+    [
+      "T3"
+    ],
+    [
+      "T4"
+    ],
+    [
+      "T5"
+    ],
+    [
+      "T6"
+    ]
+  ],
+  "dag": {
+    "tasks": [
+      {
+        "task_id": "T1",
+        "assigned_worker": "W1",
+        "input_files": [
+          "A"
+        ],
+        "output_files": [
+          "f12"
+        ],
+        "flops": 1766799020
+      },
+      {
+        "task_id": "T2",
+        "assigned_worker": "W1",
+        "input_files": [
+          "f12"
+        ],
+        "output_files": [
+          "f23"
+        ],
+        "flops": 1766799020
+      },
+      {
+        "task_id": "T3",
+        "assigned_worker": "W1",
+        "input_files": [
+          "f23"
+        ],
+        "output_files": [
+          "f34"
+        ],
+        "flops": 1766799020
+      },
+      {
+        "task_id": "T4",
+        "assigned_worker": "W1",
+        "input_files": [
+          "f34"
+        ],
+        "output_files": [
+          "f45"
+        ],
+        "flops": 1766799020
+      },
+      {
+        "task_id": "T5",
+        "assigned_worker": "W1",
+        "input_files": [
+          "f45"
+        ],
+        "output_files": [
+          "f56"
+        ],
+        "flops": 1766799020
+      },
+      {
+        "task_id": "T6",
+        "assigned_worker": "W1",
+        "input_files": [
+          "f56"
+        ],
+        "output_files": [
+          "B"
+        ],
+        "flops": 1766799020
+      }
+    ],
+    "edges": [
+      {
+        "producer_task": "T1",
+        "consumer_task": "T2",
+        "file_id": "f12"
+      },
+      {
+        "producer_task": "T2",
+        "consumer_task": "T3",
+        "file_id": "f23"
+      },
+      {
+        "producer_task": "T3",
+        "consumer_task": "T4",
+        "file_id": "f34"
+      },
+      {
+        "producer_task": "T4",
+        "consumer_task": "T5",
+        "file_id": "f45"
+      },
+      {
+        "producer_task": "T5",
+        "consumer_task": "T6",
+        "file_id": "f56"
+      }
+    ],
+    "external_inputs": [
+      "A"
+    ],
+    "final_outputs": [
+      "B"
+    ]
+  },
+  "files": [
+    {
+      "file_id": "A",
+      "size_bytes": 209715200,
+      "producer_task": null,
+      "consumer_tasks": [
+        "T1"
+      ],
+      "role": "input"
+    },
+    {
+      "file_id": "B",
+      "size_bytes": 209715200,
+      "producer_task": "T6",
+      "consumer_tasks": [],
+      "role": "final"
+    },
+    {
+      "file_id": "f12",
+      "size_bytes": 209715200,
+      "producer_task": "T1",
+      "consumer_tasks": [
+        "T2"
+      ],
+      "role": "intermediate"
+    },
+    {
+      "file_id": "f23",
+      "size_bytes": 209715200,
+      "producer_task": "T2",
+      "consumer_tasks": [
+        "T3"
+      ],
+      "role": "intermediate"
+    },
+    {
+      "file_id": "f34",
+      "size_bytes": 209715200,
+      "producer_task": "T3",
+      "consumer_tasks": [
+        "T4"
+      ],
+      "role": "intermediate"
+    },
+    {
+      "file_id": "f45",
+      "size_bytes": 209715200,
+      "producer_task": "T4",
+      "consumer_tasks": [
+        "T5"
+      ],
+      "role": "intermediate"
+    },
+    {
+      "file_id": "f56",
+      "size_bytes": 209715200,
+      "producer_task": "T5",
+      "consumer_tasks": [
+        "T6"
+      ],
+      "role": "intermediate"
+    }
+  ],
+  "condition_id": "PIPELINE-W4",
+  "active_pool": [
+    "W1",
+    "W2",
+    "W3",
+    "W4"
+  ]
+}

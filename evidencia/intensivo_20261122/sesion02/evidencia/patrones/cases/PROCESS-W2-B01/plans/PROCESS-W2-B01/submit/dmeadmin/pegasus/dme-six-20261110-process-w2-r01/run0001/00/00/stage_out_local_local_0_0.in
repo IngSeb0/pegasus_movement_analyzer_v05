@@ -1,0 +1,73 @@
+[
+ { "type": "transfer",
+   "linkage": "output",
+   "lfn": "B5",
+   "id": 1,
+   "verify_checksum_remote": true,
+   "src_urls": [
+     { "site_label": "local", "url": "file:///mnt/intensivo_20261122/patrones/cases/PROCESS-W2-B01/plans/PROCESS-W2-B01/scratch/dmeadmin/pegasus/dme-six-20261110-process-w2-r01/run0001/./B5" }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///mnt/intensivo_20261122/patrones/cases/PROCESS-W2-B01/plans/PROCESS-W2-B01/outputs/B5" }
+   ] }
+ ,
+ { "type": "transfer",
+   "linkage": "output",
+   "lfn": "B6",
+   "id": 2,
+   "verify_checksum_remote": true,
+   "src_urls": [
+     { "site_label": "local", "url": "file:///mnt/intensivo_20261122/patrones/cases/PROCESS-W2-B01/plans/PROCESS-W2-B01/scratch/dmeadmin/pegasus/dme-six-20261110-process-w2-r01/run0001/./B6" }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///mnt/intensivo_20261122/patrones/cases/PROCESS-W2-B01/plans/PROCESS-W2-B01/outputs/B6" }
+   ] }
+ ,
+ { "type": "transfer",
+   "linkage": "output",
+   "lfn": "B3",
+   "id": 3,
+   "verify_checksum_remote": true,
+   "src_urls": [
+     { "site_label": "local", "url": "file:///mnt/intensivo_20261122/patrones/cases/PROCESS-W2-B01/plans/PROCESS-W2-B01/scratch/dmeadmin/pegasus/dme-six-20261110-process-w2-r01/run0001/./B3" }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///mnt/intensivo_20261122/patrones/cases/PROCESS-W2-B01/plans/PROCESS-W2-B01/outputs/B3" }
+   ] }
+ ,
+ { "type": "transfer",
+   "linkage": "output",
+   "lfn": "B4",
+   "id": 4,
+   "verify_checksum_remote": true,
+   "src_urls": [
+     { "site_label": "local", "url": "file:///mnt/intensivo_20261122/patrones/cases/PROCESS-W2-B01/plans/PROCESS-W2-B01/scratch/dmeadmin/pegasus/dme-six-20261110-process-w2-r01/run0001/./B4" }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///mnt/intensivo_20261122/patrones/cases/PROCESS-W2-B01/plans/PROCESS-W2-B01/outputs/B4" }
+   ] }
+ ,
+ { "type": "transfer",
+   "linkage": "output",
+   "lfn": "B1",
+   "id": 5,
+   "verify_checksum_remote": true,
+   "src_urls": [
+     { "site_label": "local", "url": "file:///mnt/intensivo_20261122/patrones/cases/PROCESS-W2-B01/plans/PROCESS-W2-B01/scratch/dmeadmin/pegasus/dme-six-20261110-process-w2-r01/run0001/./B1" }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///mnt/intensivo_20261122/patrones/cases/PROCESS-W2-B01/plans/PROCESS-W2-B01/outputs/B1" }
+   ] }
+ ,
+ { "type": "transfer",
+   "linkage": "output",
+   "lfn": "B2",
+   "id": 6,
+   "verify_checksum_remote": true,
+   "src_urls": [
+     { "site_label": "local", "url": "file:///mnt/intensivo_20261122/patrones/cases/PROCESS-W2-B01/plans/PROCESS-W2-B01/scratch/dmeadmin/pegasus/dme-six-20261110-process-w2-r01/run0001/./B2" }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///mnt/intensivo_20261122/patrones/cases/PROCESS-W2-B01/plans/PROCESS-W2-B01/outputs/B2" }
+   ] }
+]

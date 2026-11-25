@@ -1,0 +1,2613 @@
+{
+  "analyzer_version": "1.0.0-dev",
+  "declared_movements": [
+    {
+      "attempt_context": "attempt:1",
+      "confirmed": true,
+      "direction": "input",
+      "file_id": "lfn:a",
+      "from_location_id": "dme-master",
+      "job_id": "3850.0",
+      "movement_id": "3850.0:input:1",
+      "size_bytes": 209715200,
+      "to_location_id": "dme-worker1",
+      "verification_level": "JOB_LEVEL_RECONCILED",
+      "verification_reason": null
+    },
+    {
+      "attempt_context": "attempt:1",
+      "confirmed": true,
+      "direction": "output",
+      "file_id": "lfn:g",
+      "from_location_id": "dme-worker1",
+      "job_id": "3850.0",
+      "movement_id": "3850.0:output:2",
+      "size_bytes": 209715200,
+      "to_location_id": "dme-master",
+      "verification_level": "JOB_LEVEL_RECONCILED",
+      "verification_reason": null
+    },
+    {
+      "attempt_context": "attempt:1",
+      "confirmed": true,
+      "direction": "input",
+      "file_id": "lfn:g",
+      "from_location_id": "dme-master",
+      "job_id": "3851.0",
+      "movement_id": "3851.0:input:3",
+      "size_bytes": 209715200,
+      "to_location_id": "dme-worker2",
+      "verification_level": "JOB_LEVEL_RECONCILED",
+      "verification_reason": null
+    },
+    {
+      "attempt_context": "attempt:1",
+      "confirmed": true,
+      "direction": "output",
+      "file_id": "lfn:f1",
+      "from_location_id": "dme-worker2",
+      "job_id": "3851.0",
+      "movement_id": "3851.0:output:4",
+      "size_bytes": 209715200,
+      "to_location_id": "dme-master",
+      "verification_level": "JOB_LEVEL_RECONCILED",
+      "verification_reason": null
+    },
+    {
+      "attempt_context": "attempt:1",
+      "confirmed": true,
+      "direction": "output",
+      "file_id": "lfn:f2",
+      "from_location_id": "dme-worker2",
+      "job_id": "3851.0",
+      "movement_id": "3851.0:output:5",
+      "size_bytes": 209715200,
+      "to_location_id": "dme-master",
+      "verification_level": "JOB_LEVEL_RECONCILED",
+      "verification_reason": null
+    },
+    {
+      "attempt_context": "attempt:1",
+      "confirmed": true,
+      "direction": "output",
+      "file_id": "lfn:f3",
+      "from_location_id": "dme-worker2",
+      "job_id": "3851.0",
+      "movement_id": "3851.0:output:6",
+      "size_bytes": 209715200,
+      "to_location_id": "dme-master",
+      "verification_level": "JOB_LEVEL_RECONCILED",
+      "verification_reason": null
+    },
+    {
+      "attempt_context": "attempt:1",
+      "confirmed": true,
+      "direction": "output",
+      "file_id": "lfn:f4",
+      "from_location_id": "dme-worker2",
+      "job_id": "3851.0",
+      "movement_id": "3851.0:output:7",
+      "size_bytes": 209715200,
+      "to_location_id": "dme-master",
+      "verification_level": "JOB_LEVEL_RECONCILED",
+      "verification_reason": null
+    }
+  ],
+  "diagnostics": [],
+  "execution_model": {
+    "adapter_name": "CondorIOStandardAdapter",
+    "bypass_enabled": false,
+    "clustered_jobs": true,
+    "data_configuration": "condorio",
+    "grouped_mapping_verified": true,
+    "htcondor_version": "26.0.1",
+    "pegasus_version": "5.1.2",
+    "plugin_methods": [],
+    "provenance": [
+      {
+        "attribute": "data_config",
+        "notes": null,
+        "source_hash": null,
+        "source_kind": "config",
+        "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/dme-six-20261110-w2-agr-r03-0.metrics"
+      },
+      {
+        "attribute": "submit_hostname",
+        "notes": "line=3",
+        "source_hash": null,
+        "source_kind": "config",
+        "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/braindump.yml"
+      },
+      {
+        "attribute": "sharedFileSystem",
+        "notes": "line=26",
+        "source_hash": null,
+        "source_kind": "config",
+        "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/workflow.yml"
+      },
+      {
+        "attribute": "sharedFileSystem",
+        "notes": "line=32",
+        "source_hash": null,
+        "source_kind": "config",
+        "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/workflow.yml"
+      },
+      {
+        "attribute": "CondorVersion",
+        "notes": "line=13",
+        "source_hash": null,
+        "source_kind": "history",
+        "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+      },
+      {
+        "attribute": "CondorVersion",
+        "notes": "line=111",
+        "source_hash": null,
+        "source_kind": "history",
+        "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+      },
+      {
+        "attribute": "CondorVersion",
+        "notes": "line=139",
+        "source_hash": null,
+        "source_kind": "history",
+        "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+      },
+      {
+        "attribute": "CondorVersion",
+        "notes": "line=266",
+        "source_hash": null,
+        "source_kind": "history",
+        "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+      },
+      {
+        "attribute": "CondorVersion",
+        "notes": "line=305",
+        "source_hash": null,
+        "source_kind": "history",
+        "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+      },
+      {
+        "attribute": "CondorVersion",
+        "notes": "line=432",
+        "source_hash": null,
+        "source_kind": "history",
+        "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+      },
+      {
+        "attribute": "CondorVersion",
+        "notes": "line=465",
+        "source_hash": null,
+        "source_kind": "history",
+        "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+      },
+      {
+        "attribute": "CondorVersion",
+        "notes": "line=564",
+        "source_hash": null,
+        "source_kind": "history",
+        "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+      },
+      {
+        "attribute": "CondorVersion",
+        "notes": "line=586",
+        "source_hash": null,
+        "source_kind": "history",
+        "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+      },
+      {
+        "attribute": "CondorVersion",
+        "notes": "line=685",
+        "source_hash": null,
+        "source_kind": "history",
+        "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+      },
+      {
+        "attribute": "CondorVersion",
+        "notes": "line=707",
+        "source_hash": null,
+        "source_kind": "history",
+        "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+      },
+      {
+        "attribute": "CondorVersion",
+        "notes": "line=806",
+        "source_hash": null,
+        "source_kind": "history",
+        "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+      },
+      {
+        "attribute": "pegasus.transfer.bypass.input.staging",
+        "notes": "Pegasus 5.x documented default=false; no enabling runtime property or per-file bypass declaration found in preserved workflow/config artifacts",
+        "source_hash": null,
+        "source_kind": "derived",
+        "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001"
+      },
+      {
+        "attribute": "+pegasus_wf_dag_job_id",
+        "notes": "line 38",
+        "source_hash": null,
+        "source_kind": "submit",
+        "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/campaign_task_P.sub"
+      },
+      {
+        "attribute": null,
+        "notes": "Miembros y orden del plan; no prueba ejecución individual",
+        "source_hash": "11ffa7b990541b6649ab43bbe29630e348046a2a2de1a53b891cb645b4141fcf",
+        "source_kind": "submit",
+        "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/merge_group_2.in"
+      },
+      {
+        "attribute": "+pegasus_wf_dag_job_id",
+        "notes": "line 38",
+        "source_hash": null,
+        "source_kind": "submit",
+        "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/merge_group_2.sub"
+      },
+      {
+        "attribute": "+pegasus_version",
+        "notes": "line 33",
+        "source_hash": null,
+        "source_kind": "submit",
+        "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/campaign_task_P.sub"
+      },
+      {
+        "attribute": "+pegasus_version",
+        "notes": "line 33",
+        "source_hash": null,
+        "source_kind": "submit",
+        "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/merge_group_2.sub"
+      },
+      {
+        "attribute": "universe",
+        "notes": "line 27",
+        "source_hash": null,
+        "source_kind": "submit",
+        "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/campaign_task_P.sub"
+      },
+      {
+        "attribute": "universe",
+        "notes": "line 27",
+        "source_hash": null,
+        "source_kind": "submit",
+        "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/merge_group_2.sub"
+      },
+      {
+        "attribute": "should_transfer_files",
+        "notes": "line 22",
+        "source_hash": null,
+        "source_kind": "submit",
+        "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/campaign_task_P.sub"
+      },
+      {
+        "attribute": "should_transfer_files",
+        "notes": "line 22",
+        "source_hash": null,
+        "source_kind": "submit",
+        "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/merge_group_2.sub"
+      },
+      {
+        "attribute": "when_to_transfer_output",
+        "notes": "line 29",
+        "source_hash": null,
+        "source_kind": "submit",
+        "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/campaign_task_P.sub"
+      },
+      {
+        "attribute": "when_to_transfer_output",
+        "notes": "line 29",
+        "source_hash": null,
+        "source_kind": "submit",
+        "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/merge_group_2.sub"
+      },
+      {
+        "attribute": "+pegasus_cluster_size",
+        "notes": "line 44",
+        "source_hash": null,
+        "source_kind": "submit",
+        "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/campaign_task_P.sub"
+      },
+      {
+        "attribute": "+pegasus_cluster_size",
+        "notes": "line 44",
+        "source_hash": null,
+        "source_kind": "submit",
+        "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/merge_group_2.sub"
+      },
+      {
+        "attribute": "transfer_input_files",
+        "notes": "line 25",
+        "source_hash": null,
+        "source_kind": "submit",
+        "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/campaign_task_P.sub"
+      },
+      {
+        "attribute": "transfer_output_files",
+        "notes": "line 26",
+        "source_hash": null,
+        "source_kind": "submit",
+        "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/campaign_task_P.sub"
+      },
+      {
+        "attribute": "transfer_input_files",
+        "notes": "line 25",
+        "source_hash": null,
+        "source_kind": "submit",
+        "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/merge_group_2.sub"
+      },
+      {
+        "attribute": "transfer_output_files",
+        "notes": "line 26",
+        "source_hash": null,
+        "source_kind": "submit",
+        "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/merge_group_2.sub"
+      }
+    ],
+    "shared_filesystem": false,
+    "should_transfer_files": "YES",
+    "submit_host": "dme-master",
+    "supported": true,
+    "universe": "vanilla",
+    "unsupported_reasons": [],
+    "when_to_transfer_output": "ON_EXIT"
+  },
+  "locations": [
+    {
+      "location_id": "dme-worker2",
+      "location_type": "worker",
+      "provenance": [
+        {
+          "attribute": "lastremotehost",
+          "notes": "line 197",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        }
+      ],
+      "raw_values": [
+        "\"slot1_1@dme-worker2\""
+      ]
+    },
+    {
+      "location_id": "dme-worker1",
+      "location_type": "worker",
+      "provenance": [
+        {
+          "attribute": "lastremotehost",
+          "notes": "line 363",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        }
+      ],
+      "raw_values": [
+        "\"slot1_1@dme-worker1\""
+      ]
+    },
+    {
+      "location_id": "dme-master",
+      "location_type": "submit_host",
+      "provenance": [
+        {
+          "attribute": "data_config",
+          "notes": null,
+          "source_hash": null,
+          "source_kind": "config",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/dme-six-20261110-w2-agr-r03-0.metrics"
+        },
+        {
+          "attribute": "submit_hostname",
+          "notes": "line=3",
+          "source_hash": null,
+          "source_kind": "config",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/braindump.yml"
+        },
+        {
+          "attribute": "sharedFileSystem",
+          "notes": "line=26",
+          "source_hash": null,
+          "source_kind": "config",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/workflow.yml"
+        },
+        {
+          "attribute": "sharedFileSystem",
+          "notes": "line=32",
+          "source_hash": null,
+          "source_kind": "config",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/workflow.yml"
+        },
+        {
+          "attribute": "CondorVersion",
+          "notes": "line=13",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "CondorVersion",
+          "notes": "line=111",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "CondorVersion",
+          "notes": "line=139",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "CondorVersion",
+          "notes": "line=266",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "CondorVersion",
+          "notes": "line=305",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "CondorVersion",
+          "notes": "line=432",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "CondorVersion",
+          "notes": "line=465",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "CondorVersion",
+          "notes": "line=564",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "CondorVersion",
+          "notes": "line=586",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "CondorVersion",
+          "notes": "line=685",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "CondorVersion",
+          "notes": "line=707",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "CondorVersion",
+          "notes": "line=806",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "pegasus.transfer.bypass.input.staging",
+          "notes": "Pegasus 5.x documented default=false; no enabling runtime property or per-file bypass declaration found in preserved workflow/config artifacts",
+          "source_hash": null,
+          "source_kind": "derived",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001"
+        },
+        {
+          "attribute": "+pegasus_wf_dag_job_id",
+          "notes": "line 38",
+          "source_hash": null,
+          "source_kind": "submit",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/campaign_task_P.sub"
+        },
+        {
+          "attribute": null,
+          "notes": "Miembros y orden del plan; no prueba ejecución individual",
+          "source_hash": "11ffa7b990541b6649ab43bbe29630e348046a2a2de1a53b891cb645b4141fcf",
+          "source_kind": "submit",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/merge_group_2.in"
+        },
+        {
+          "attribute": "+pegasus_wf_dag_job_id",
+          "notes": "line 38",
+          "source_hash": null,
+          "source_kind": "submit",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/merge_group_2.sub"
+        },
+        {
+          "attribute": "+pegasus_version",
+          "notes": "line 33",
+          "source_hash": null,
+          "source_kind": "submit",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/campaign_task_P.sub"
+        },
+        {
+          "attribute": "+pegasus_version",
+          "notes": "line 33",
+          "source_hash": null,
+          "source_kind": "submit",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/merge_group_2.sub"
+        },
+        {
+          "attribute": "universe",
+          "notes": "line 27",
+          "source_hash": null,
+          "source_kind": "submit",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/campaign_task_P.sub"
+        },
+        {
+          "attribute": "universe",
+          "notes": "line 27",
+          "source_hash": null,
+          "source_kind": "submit",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/merge_group_2.sub"
+        },
+        {
+          "attribute": "should_transfer_files",
+          "notes": "line 22",
+          "source_hash": null,
+          "source_kind": "submit",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/campaign_task_P.sub"
+        },
+        {
+          "attribute": "should_transfer_files",
+          "notes": "line 22",
+          "source_hash": null,
+          "source_kind": "submit",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/merge_group_2.sub"
+        },
+        {
+          "attribute": "when_to_transfer_output",
+          "notes": "line 29",
+          "source_hash": null,
+          "source_kind": "submit",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/campaign_task_P.sub"
+        },
+        {
+          "attribute": "when_to_transfer_output",
+          "notes": "line 29",
+          "source_hash": null,
+          "source_kind": "submit",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/merge_group_2.sub"
+        },
+        {
+          "attribute": "+pegasus_cluster_size",
+          "notes": "line 44",
+          "source_hash": null,
+          "source_kind": "submit",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/campaign_task_P.sub"
+        },
+        {
+          "attribute": "+pegasus_cluster_size",
+          "notes": "line 44",
+          "source_hash": null,
+          "source_kind": "submit",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/merge_group_2.sub"
+        },
+        {
+          "attribute": "transfer_input_files",
+          "notes": "line 25",
+          "source_hash": null,
+          "source_kind": "submit",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/campaign_task_P.sub"
+        },
+        {
+          "attribute": "transfer_output_files",
+          "notes": "line 26",
+          "source_hash": null,
+          "source_kind": "submit",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/campaign_task_P.sub"
+        },
+        {
+          "attribute": "transfer_input_files",
+          "notes": "line 25",
+          "source_hash": null,
+          "source_kind": "submit",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/merge_group_2.sub"
+        },
+        {
+          "attribute": "transfer_output_files",
+          "notes": "line 26",
+          "source_hash": null,
+          "source_kind": "submit",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/merge_group_2.sub"
+        }
+      ],
+      "raw_values": [
+        "dme-master"
+      ]
+    }
+  ],
+  "manifests": [
+    {
+      "attempt_context": "attempt:1",
+      "complete": true,
+      "direction": "input",
+      "expected_file_count": 8,
+      "expected_total_bytes": null,
+      "files": [
+        {
+          "basename": "campaign_task_P.sh",
+          "classification": "auxiliary",
+          "direction": "input",
+          "job_id": "3850.0",
+          "logical_file_id": null,
+          "physical_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/campaign_task_P.sh",
+          "protocol": "cedar",
+          "remap_from": null,
+          "remap_to": null,
+          "size_bytes": 1800,
+          "size_provenance": []
+        },
+        {
+          "basename": "campaign_task",
+          "classification": "auxiliary",
+          "direction": "input",
+          "job_id": "3850.0",
+          "logical_file_id": null,
+          "physical_path": "campaign_task",
+          "protocol": "cedar",
+          "remap_from": null,
+          "remap_to": null,
+          "size_bytes": null,
+          "size_provenance": []
+        },
+        {
+          "basename": "a",
+          "classification": "scientific",
+          "direction": "input",
+          "job_id": "3850.0",
+          "logical_file_id": "lfn:a",
+          "physical_path": "a",
+          "protocol": "cedar",
+          "remap_from": null,
+          "remap_to": null,
+          "size_bytes": 209715200,
+          "size_provenance": [
+            {
+              "attribute": "a:size",
+              "notes": "Pegasus metadata linked by explicit logical file identity",
+              "source_hash": null,
+              "source_kind": "meta",
+              "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/stage_in_local_local_0_0.meta"
+            }
+          ]
+        },
+        {
+          "basename": "pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+          "classification": "auxiliary",
+          "direction": "input",
+          "job_id": "3850.0",
+          "logical_file_id": null,
+          "physical_path": "$(wf_submit_dir)/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+          "protocol": "cedar",
+          "remap_from": null,
+          "remap_to": null,
+          "size_bytes": null,
+          "size_provenance": []
+        },
+        {
+          "basename": "stage_in_remote_local_0_0.meta",
+          "classification": "auxiliary",
+          "direction": "input",
+          "job_id": "3850.0",
+          "logical_file_id": null,
+          "physical_path": "$(wf_submit_dir)/00/00/stage_in_remote_local_0_0.meta",
+          "protocol": "cedar",
+          "remap_from": null,
+          "remap_to": null,
+          "size_bytes": null,
+          "size_provenance": []
+        },
+        {
+          "basename": "stage_in_local_local_0_0.meta",
+          "classification": "auxiliary",
+          "direction": "input",
+          "job_id": "3850.0",
+          "logical_file_id": null,
+          "physical_path": "$(wf_submit_dir)/00/00/stage_in_local_local_0_0.meta",
+          "protocol": "cedar",
+          "remap_from": null,
+          "remap_to": null,
+          "size_bytes": null,
+          "size_provenance": []
+        },
+        {
+          "basename": "pegasus-lite-common.sh",
+          "classification": "auxiliary",
+          "direction": "input",
+          "job_id": "3850.0",
+          "logical_file_id": null,
+          "physical_path": "$(wf_submit_dir)/pegasus-lite-common.sh",
+          "protocol": "cedar",
+          "remap_from": null,
+          "remap_to": null,
+          "size_bytes": null,
+          "size_provenance": []
+        },
+        {
+          "basename": "fma_kernel",
+          "classification": "auxiliary",
+          "direction": "input",
+          "job_id": "3850.0",
+          "logical_file_id": null,
+          "physical_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/bin/fma_kernel",
+          "protocol": "cedar",
+          "remap_from": null,
+          "remap_to": null,
+          "size_bytes": 820576,
+          "size_provenance": []
+        }
+      ],
+      "job_id": "3850.0",
+      "scientific_file_count": 1,
+      "scientific_total_bytes": 209715200
+    },
+    {
+      "attempt_context": "attempt:1",
+      "complete": true,
+      "direction": "output",
+      "expected_file_count": 3,
+      "expected_total_bytes": null,
+      "files": [
+        {
+          "basename": "g",
+          "classification": "scientific",
+          "direction": "output",
+          "job_id": "3850.0",
+          "logical_file_id": "lfn:g",
+          "physical_path": "g",
+          "protocol": "cedar",
+          "remap_from": null,
+          "remap_to": null,
+          "size_bytes": 209715200,
+          "size_provenance": [
+            {
+              "attribute": "g:size",
+              "notes": "Pegasus metadata linked by explicit logical file identity",
+              "source_hash": null,
+              "source_kind": "meta",
+              "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/campaign_task_P.meta"
+            }
+          ]
+        },
+        {
+          "basename": "campaign_task_P.out",
+          "classification": "auxiliary",
+          "direction": "output",
+          "job_id": "3850.0",
+          "logical_file_id": null,
+          "physical_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001//00/00/campaign_task_P.out",
+          "protocol": "cedar",
+          "remap_from": null,
+          "remap_to": null,
+          "size_bytes": null,
+          "size_provenance": []
+        },
+        {
+          "basename": "campaign_task_P.err",
+          "classification": "auxiliary",
+          "direction": "output",
+          "job_id": "3850.0",
+          "logical_file_id": null,
+          "physical_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001//00/00/campaign_task_P.err",
+          "protocol": "cedar",
+          "remap_from": null,
+          "remap_to": null,
+          "size_bytes": null,
+          "size_provenance": []
+        }
+      ],
+      "job_id": "3850.0",
+      "scientific_file_count": 1,
+      "scientific_total_bytes": 209715200
+    },
+    {
+      "attempt_context": "attempt:1",
+      "complete": true,
+      "direction": "input",
+      "expected_file_count": 8,
+      "expected_total_bytes": null,
+      "files": [
+        {
+          "basename": "merge_group_2.sh",
+          "classification": "auxiliary",
+          "direction": "input",
+          "job_id": "3851.0",
+          "logical_file_id": null,
+          "physical_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/merge_group_2.sh",
+          "protocol": "cedar",
+          "remap_from": null,
+          "remap_to": null,
+          "size_bytes": 2728,
+          "size_provenance": []
+        },
+        {
+          "basename": "campaign_task",
+          "classification": "auxiliary",
+          "direction": "input",
+          "job_id": "3851.0",
+          "logical_file_id": null,
+          "physical_path": "campaign_task",
+          "protocol": "cedar",
+          "remap_from": null,
+          "remap_to": null,
+          "size_bytes": null,
+          "size_provenance": []
+        },
+        {
+          "basename": "g",
+          "classification": "scientific",
+          "direction": "input",
+          "job_id": "3851.0",
+          "logical_file_id": "lfn:g",
+          "physical_path": "g",
+          "protocol": "cedar",
+          "remap_from": null,
+          "remap_to": null,
+          "size_bytes": 209715200,
+          "size_provenance": [
+            {
+              "attribute": "g:size",
+              "notes": "Pegasus metadata linked by explicit logical file identity",
+              "source_hash": null,
+              "source_kind": "meta",
+              "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/campaign_task_P.meta"
+            }
+          ]
+        },
+        {
+          "basename": "pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+          "classification": "auxiliary",
+          "direction": "input",
+          "job_id": "3851.0",
+          "logical_file_id": null,
+          "physical_path": "$(wf_submit_dir)/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+          "protocol": "cedar",
+          "remap_from": null,
+          "remap_to": null,
+          "size_bytes": null,
+          "size_provenance": []
+        },
+        {
+          "basename": "campaign_task_P.meta",
+          "classification": "auxiliary",
+          "direction": "input",
+          "job_id": "3851.0",
+          "logical_file_id": null,
+          "physical_path": "$(wf_submit_dir)/00/00/campaign_task_P.meta",
+          "protocol": "cedar",
+          "remap_from": null,
+          "remap_to": null,
+          "size_bytes": null,
+          "size_provenance": []
+        },
+        {
+          "basename": "stage_in_remote_local_0_0.meta",
+          "classification": "auxiliary",
+          "direction": "input",
+          "job_id": "3851.0",
+          "logical_file_id": null,
+          "physical_path": "$(wf_submit_dir)/00/00/stage_in_remote_local_0_0.meta",
+          "protocol": "cedar",
+          "remap_from": null,
+          "remap_to": null,
+          "size_bytes": null,
+          "size_provenance": []
+        },
+        {
+          "basename": "pegasus-lite-common.sh",
+          "classification": "auxiliary",
+          "direction": "input",
+          "job_id": "3851.0",
+          "logical_file_id": null,
+          "physical_path": "$(wf_submit_dir)/pegasus-lite-common.sh",
+          "protocol": "cedar",
+          "remap_from": null,
+          "remap_to": null,
+          "size_bytes": null,
+          "size_provenance": []
+        },
+        {
+          "basename": "fma_kernel",
+          "classification": "auxiliary",
+          "direction": "input",
+          "job_id": "3851.0",
+          "logical_file_id": null,
+          "physical_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/bin/fma_kernel",
+          "protocol": "cedar",
+          "remap_from": null,
+          "remap_to": null,
+          "size_bytes": 820576,
+          "size_provenance": []
+        }
+      ],
+      "job_id": "3851.0",
+      "scientific_file_count": 1,
+      "scientific_total_bytes": 209715200
+    },
+    {
+      "attempt_context": "attempt:1",
+      "complete": true,
+      "direction": "output",
+      "expected_file_count": 6,
+      "expected_total_bytes": null,
+      "files": [
+        {
+          "basename": "f1",
+          "classification": "scientific",
+          "direction": "output",
+          "job_id": "3851.0",
+          "logical_file_id": "lfn:f1",
+          "physical_path": "f1",
+          "protocol": "cedar",
+          "remap_from": null,
+          "remap_to": null,
+          "size_bytes": 209715200,
+          "size_provenance": [
+            {
+              "attribute": "f1:size",
+              "notes": "Pegasus metadata linked by explicit logical file identity",
+              "source_hash": null,
+              "source_kind": "meta",
+              "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/merge_group_2.meta"
+            }
+          ]
+        },
+        {
+          "basename": "f2",
+          "classification": "scientific",
+          "direction": "output",
+          "job_id": "3851.0",
+          "logical_file_id": "lfn:f2",
+          "physical_path": "f2",
+          "protocol": "cedar",
+          "remap_from": null,
+          "remap_to": null,
+          "size_bytes": 209715200,
+          "size_provenance": [
+            {
+              "attribute": "f2:size",
+              "notes": "Pegasus metadata linked by explicit logical file identity",
+              "source_hash": null,
+              "source_kind": "meta",
+              "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/merge_group_2.meta"
+            }
+          ]
+        },
+        {
+          "basename": "f3",
+          "classification": "scientific",
+          "direction": "output",
+          "job_id": "3851.0",
+          "logical_file_id": "lfn:f3",
+          "physical_path": "f3",
+          "protocol": "cedar",
+          "remap_from": null,
+          "remap_to": null,
+          "size_bytes": 209715200,
+          "size_provenance": [
+            {
+              "attribute": "f3:size",
+              "notes": "Pegasus metadata linked by explicit logical file identity",
+              "source_hash": null,
+              "source_kind": "meta",
+              "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/merge_group_2.meta"
+            }
+          ]
+        },
+        {
+          "basename": "f4",
+          "classification": "scientific",
+          "direction": "output",
+          "job_id": "3851.0",
+          "logical_file_id": "lfn:f4",
+          "physical_path": "f4",
+          "protocol": "cedar",
+          "remap_from": null,
+          "remap_to": null,
+          "size_bytes": 209715200,
+          "size_provenance": [
+            {
+              "attribute": "f4:size",
+              "notes": "Pegasus metadata linked by explicit logical file identity",
+              "source_hash": null,
+              "source_kind": "meta",
+              "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/merge_group_2.meta"
+            }
+          ]
+        },
+        {
+          "basename": "merge_group_2.out",
+          "classification": "auxiliary",
+          "direction": "output",
+          "job_id": "3851.0",
+          "logical_file_id": null,
+          "physical_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001//00/00/merge_group_2.out",
+          "protocol": "cedar",
+          "remap_from": null,
+          "remap_to": null,
+          "size_bytes": null,
+          "size_provenance": []
+        },
+        {
+          "basename": "merge_group_2.err",
+          "classification": "auxiliary",
+          "direction": "output",
+          "job_id": "3851.0",
+          "logical_file_id": null,
+          "physical_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001//00/00/merge_group_2.err",
+          "protocol": "cedar",
+          "remap_from": null,
+          "remap_to": null,
+          "size_bytes": null,
+          "size_provenance": []
+        }
+      ],
+      "job_id": "3851.0",
+      "scientific_file_count": 4,
+      "scientific_total_bytes": 838860800
+    }
+  ],
+  "metrics": {
+    "analysis_status": "VALID",
+    "byte_coverage": 1.0,
+    "coverage": 1.0,
+    "declared_movement_bytes": 1468006400,
+    "dme": 1.0,
+    "evidence_levels": [
+      "JOB_LEVEL_RECONCILED"
+    ],
+    "metric_status": "CALCULATED",
+    "observed_minus_required_bytes": 0,
+    "observed_movement_bytes": 1468006400,
+    "required_movement_bytes": 1468006400,
+    "validation_reasons": []
+  },
+  "required_movement_definition": "condorio_coordinator_relay_v1",
+  "required_movements": [
+    {
+      "file_id": "lfn:a",
+      "from_location_id": "dme-master",
+      "reason": "input",
+      "required_bytes": 209715200,
+      "size_bytes": 209715200,
+      "to_location_id": "dme-worker1"
+    },
+    {
+      "file_id": "lfn:f1",
+      "from_location_id": "dme-worker2",
+      "reason": "final_destination",
+      "required_bytes": 209715200,
+      "size_bytes": 209715200,
+      "to_location_id": "dme-master"
+    },
+    {
+      "file_id": "lfn:f2",
+      "from_location_id": "dme-worker2",
+      "reason": "final_destination",
+      "required_bytes": 209715200,
+      "size_bytes": 209715200,
+      "to_location_id": "dme-master"
+    },
+    {
+      "file_id": "lfn:f3",
+      "from_location_id": "dme-worker2",
+      "reason": "final_destination",
+      "required_bytes": 209715200,
+      "size_bytes": 209715200,
+      "to_location_id": "dme-master"
+    },
+    {
+      "file_id": "lfn:f4",
+      "from_location_id": "dme-worker2",
+      "reason": "final_destination",
+      "required_bytes": 209715200,
+      "size_bytes": 209715200,
+      "to_location_id": "dme-master"
+    },
+    {
+      "file_id": "lfn:g",
+      "from_location_id": "dme-worker1",
+      "reason": "coordinator_relay",
+      "required_bytes": 209715200,
+      "size_bytes": 209715200,
+      "to_location_id": "dme-master"
+    },
+    {
+      "file_id": "lfn:g",
+      "from_location_id": "dme-worker1",
+      "reason": "consumer",
+      "required_bytes": 209715200,
+      "size_bytes": 209715200,
+      "to_location_id": "dme-worker2"
+    }
+  ],
+  "run": {
+    "experiment_parameters": {
+      "condition_id": "W2-AGR",
+      "data_configuration": "condorio",
+      "oracle_sha256": "8c43358680e2f39dcec0ca255f30088e278096256f03beb1c554422c03d721a2",
+      "pattern": "distribution",
+      "program_version": "six_patterns_fma_v1",
+      "prospective_study": "montage-m101-20261111",
+      "replica": "3",
+      "scientific_file_sizes_bytes": "{\"a\": 209715200, \"f1\": 209715200, \"f2\": 209715200, \"f3\": 209715200, \"f4\": 209715200, \"g\": 209715200}",
+      "study_case": "contraste-B3-W2-AGR"
+    },
+    "pattern_context": "distribution",
+    "run_id": "a9c5cb1c-26fd-4cab-9022-318e6d0412ad",
+    "run_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001",
+    "workflow_name": "dme-six-20261110-w2-agr-r03"
+  },
+  "schema_version": 1,
+  "scientific_files": [
+    {
+      "consumer_task_ids": [
+        "P"
+      ],
+      "file_id": "lfn:a",
+      "final_destination_ids": [],
+      "identity_provenance": [
+        {
+          "attribute": "lfn:a",
+          "notes": "Explicit Pegasus logical file identity",
+          "source_hash": null,
+          "source_kind": "config",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/workflow.yml"
+        }
+      ],
+      "logical_name": "a",
+      "origin_location_id": "dme-master",
+      "physical_refs": [
+        "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/inputs/a"
+      ],
+      "producer_task_id": null,
+      "roles": [
+        "external_input"
+      ],
+      "size_bytes": 209715200,
+      "size_provenance": [
+        {
+          "attribute": "a:size",
+          "notes": "Pegasus metadata linked by explicit logical file identity",
+          "source_hash": null,
+          "source_kind": "meta",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/stage_in_local_local_0_0.meta"
+        }
+      ]
+    },
+    {
+      "consumer_task_ids": [],
+      "file_id": "lfn:f1",
+      "final_destination_ids": [
+        "dme-master"
+      ],
+      "identity_provenance": [
+        {
+          "attribute": "lfn:f1",
+          "notes": "Explicit Pegasus logical file identity",
+          "source_hash": null,
+          "source_kind": "config",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/workflow.yml"
+        }
+      ],
+      "logical_name": "f1",
+      "origin_location_id": null,
+      "physical_refs": [],
+      "producer_task_id": "C1",
+      "roles": [
+        "final_output"
+      ],
+      "size_bytes": 209715200,
+      "size_provenance": [
+        {
+          "attribute": "f1:size",
+          "notes": "Pegasus metadata linked by explicit logical file identity",
+          "source_hash": null,
+          "source_kind": "meta",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/merge_group_2.meta"
+        }
+      ]
+    },
+    {
+      "consumer_task_ids": [],
+      "file_id": "lfn:f2",
+      "final_destination_ids": [
+        "dme-master"
+      ],
+      "identity_provenance": [
+        {
+          "attribute": "lfn:f2",
+          "notes": "Explicit Pegasus logical file identity",
+          "source_hash": null,
+          "source_kind": "config",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/workflow.yml"
+        }
+      ],
+      "logical_name": "f2",
+      "origin_location_id": null,
+      "physical_refs": [],
+      "producer_task_id": "C2",
+      "roles": [
+        "final_output"
+      ],
+      "size_bytes": 209715200,
+      "size_provenance": [
+        {
+          "attribute": "f2:size",
+          "notes": "Pegasus metadata linked by explicit logical file identity",
+          "source_hash": null,
+          "source_kind": "meta",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/merge_group_2.meta"
+        }
+      ]
+    },
+    {
+      "consumer_task_ids": [],
+      "file_id": "lfn:f3",
+      "final_destination_ids": [
+        "dme-master"
+      ],
+      "identity_provenance": [
+        {
+          "attribute": "lfn:f3",
+          "notes": "Explicit Pegasus logical file identity",
+          "source_hash": null,
+          "source_kind": "config",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/workflow.yml"
+        }
+      ],
+      "logical_name": "f3",
+      "origin_location_id": null,
+      "physical_refs": [],
+      "producer_task_id": "C3",
+      "roles": [
+        "final_output"
+      ],
+      "size_bytes": 209715200,
+      "size_provenance": [
+        {
+          "attribute": "f3:size",
+          "notes": "Pegasus metadata linked by explicit logical file identity",
+          "source_hash": null,
+          "source_kind": "meta",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/merge_group_2.meta"
+        }
+      ]
+    },
+    {
+      "consumer_task_ids": [],
+      "file_id": "lfn:f4",
+      "final_destination_ids": [
+        "dme-master"
+      ],
+      "identity_provenance": [
+        {
+          "attribute": "lfn:f4",
+          "notes": "Explicit Pegasus logical file identity",
+          "source_hash": null,
+          "source_kind": "config",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/workflow.yml"
+        }
+      ],
+      "logical_name": "f4",
+      "origin_location_id": null,
+      "physical_refs": [],
+      "producer_task_id": "C4",
+      "roles": [
+        "final_output"
+      ],
+      "size_bytes": 209715200,
+      "size_provenance": [
+        {
+          "attribute": "f4:size",
+          "notes": "Pegasus metadata linked by explicit logical file identity",
+          "source_hash": null,
+          "source_kind": "meta",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/merge_group_2.meta"
+        }
+      ]
+    },
+    {
+      "consumer_task_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4"
+      ],
+      "file_id": "lfn:g",
+      "final_destination_ids": [],
+      "identity_provenance": [
+        {
+          "attribute": "lfn:g",
+          "notes": "Explicit Pegasus logical file identity",
+          "source_hash": null,
+          "source_kind": "config",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/workflow.yml"
+        }
+      ],
+      "logical_name": "g",
+      "origin_location_id": null,
+      "physical_refs": [],
+      "producer_task_id": "P",
+      "roles": [
+        "intermediate"
+      ],
+      "size_bytes": 209715200,
+      "size_provenance": [
+        {
+          "attribute": "g:size",
+          "notes": "Pegasus metadata linked by explicit logical file identity",
+          "source_hash": null,
+          "source_kind": "meta",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/campaign_task_P.meta"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "attribute": "data_config",
+      "notes": null,
+      "source_hash": null,
+      "source_kind": "config",
+      "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/dme-six-20261110-w2-agr-r03-0.metrics"
+    },
+    {
+      "attribute": "submit_hostname",
+      "notes": "line=3",
+      "source_hash": null,
+      "source_kind": "config",
+      "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/braindump.yml"
+    },
+    {
+      "attribute": "sharedFileSystem",
+      "notes": "line=26",
+      "source_hash": null,
+      "source_kind": "config",
+      "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/workflow.yml"
+    },
+    {
+      "attribute": "sharedFileSystem",
+      "notes": "line=32",
+      "source_hash": null,
+      "source_kind": "config",
+      "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/workflow.yml"
+    },
+    {
+      "attribute": "CondorVersion",
+      "notes": "line=13",
+      "source_hash": null,
+      "source_kind": "history",
+      "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+    },
+    {
+      "attribute": "CondorVersion",
+      "notes": "line=111",
+      "source_hash": null,
+      "source_kind": "history",
+      "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+    },
+    {
+      "attribute": "CondorVersion",
+      "notes": "line=139",
+      "source_hash": null,
+      "source_kind": "history",
+      "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+    },
+    {
+      "attribute": "CondorVersion",
+      "notes": "line=266",
+      "source_hash": null,
+      "source_kind": "history",
+      "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+    },
+    {
+      "attribute": "CondorVersion",
+      "notes": "line=305",
+      "source_hash": null,
+      "source_kind": "history",
+      "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+    },
+    {
+      "attribute": "CondorVersion",
+      "notes": "line=432",
+      "source_hash": null,
+      "source_kind": "history",
+      "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+    },
+    {
+      "attribute": "CondorVersion",
+      "notes": "line=465",
+      "source_hash": null,
+      "source_kind": "history",
+      "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+    },
+    {
+      "attribute": "CondorVersion",
+      "notes": "line=564",
+      "source_hash": null,
+      "source_kind": "history",
+      "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+    },
+    {
+      "attribute": "CondorVersion",
+      "notes": "line=586",
+      "source_hash": null,
+      "source_kind": "history",
+      "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+    },
+    {
+      "attribute": "CondorVersion",
+      "notes": "line=685",
+      "source_hash": null,
+      "source_kind": "history",
+      "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+    },
+    {
+      "attribute": "CondorVersion",
+      "notes": "line=707",
+      "source_hash": null,
+      "source_kind": "history",
+      "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+    },
+    {
+      "attribute": "CondorVersion",
+      "notes": "line=806",
+      "source_hash": null,
+      "source_kind": "history",
+      "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+    },
+    {
+      "attribute": "pegasus.transfer.bypass.input.staging",
+      "notes": "Pegasus 5.x documented default=false; no enabling runtime property or per-file bypass declaration found in preserved workflow/config artifacts",
+      "source_hash": null,
+      "source_kind": "derived",
+      "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001"
+    },
+    {
+      "attribute": "+pegasus_wf_dag_job_id",
+      "notes": "line 38",
+      "source_hash": null,
+      "source_kind": "submit",
+      "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/campaign_task_P.sub"
+    },
+    {
+      "attribute": null,
+      "notes": "Miembros y orden del plan; no prueba ejecución individual",
+      "source_hash": "11ffa7b990541b6649ab43bbe29630e348046a2a2de1a53b891cb645b4141fcf",
+      "source_kind": "submit",
+      "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/merge_group_2.in"
+    },
+    {
+      "attribute": "+pegasus_wf_dag_job_id",
+      "notes": "line 38",
+      "source_hash": null,
+      "source_kind": "submit",
+      "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/merge_group_2.sub"
+    },
+    {
+      "attribute": "+pegasus_version",
+      "notes": "line 33",
+      "source_hash": null,
+      "source_kind": "submit",
+      "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/campaign_task_P.sub"
+    },
+    {
+      "attribute": "+pegasus_version",
+      "notes": "line 33",
+      "source_hash": null,
+      "source_kind": "submit",
+      "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/merge_group_2.sub"
+    },
+    {
+      "attribute": "universe",
+      "notes": "line 27",
+      "source_hash": null,
+      "source_kind": "submit",
+      "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/campaign_task_P.sub"
+    },
+    {
+      "attribute": "universe",
+      "notes": "line 27",
+      "source_hash": null,
+      "source_kind": "submit",
+      "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/merge_group_2.sub"
+    },
+    {
+      "attribute": "should_transfer_files",
+      "notes": "line 22",
+      "source_hash": null,
+      "source_kind": "submit",
+      "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/campaign_task_P.sub"
+    },
+    {
+      "attribute": "should_transfer_files",
+      "notes": "line 22",
+      "source_hash": null,
+      "source_kind": "submit",
+      "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/merge_group_2.sub"
+    },
+    {
+      "attribute": "when_to_transfer_output",
+      "notes": "line 29",
+      "source_hash": null,
+      "source_kind": "submit",
+      "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/campaign_task_P.sub"
+    },
+    {
+      "attribute": "when_to_transfer_output",
+      "notes": "line 29",
+      "source_hash": null,
+      "source_kind": "submit",
+      "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/merge_group_2.sub"
+    },
+    {
+      "attribute": "+pegasus_cluster_size",
+      "notes": "line 44",
+      "source_hash": null,
+      "source_kind": "submit",
+      "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/campaign_task_P.sub"
+    },
+    {
+      "attribute": "+pegasus_cluster_size",
+      "notes": "line 44",
+      "source_hash": null,
+      "source_kind": "submit",
+      "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/merge_group_2.sub"
+    },
+    {
+      "attribute": "transfer_input_files",
+      "notes": "line 25",
+      "source_hash": null,
+      "source_kind": "submit",
+      "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/campaign_task_P.sub"
+    },
+    {
+      "attribute": "transfer_output_files",
+      "notes": "line 26",
+      "source_hash": null,
+      "source_kind": "submit",
+      "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/campaign_task_P.sub"
+    },
+    {
+      "attribute": "transfer_input_files",
+      "notes": "line 25",
+      "source_hash": null,
+      "source_kind": "submit",
+      "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/merge_group_2.sub"
+    },
+    {
+      "attribute": "transfer_output_files",
+      "notes": "line 26",
+      "source_hash": null,
+      "source_kind": "submit",
+      "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/merge_group_2.sub"
+    }
+  ],
+  "tasks": [
+    {
+      "exit_code": 0,
+      "job_id": "3851.0",
+      "job_run_count": 1,
+      "job_status": 4,
+      "num_job_starts": 1,
+      "pegasus_node_id": "merge_group_2",
+      "provenance": [
+        {
+          "attribute": "clusterid",
+          "notes": "line 132",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "procid",
+          "notes": "line 238",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "dagnodename",
+          "notes": "line 150",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "lastremotehost",
+          "notes": "line 197",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "jobstatus",
+          "notes": "line 188",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "exitcode",
+          "notes": "line 163",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "jobruncount",
+          "notes": "line 186",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "numjobstarts",
+          "notes": "line 213",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "lastremotehost",
+          "notes": "line 197",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "+pegasus_wf_dag_job_id",
+          "notes": "line 38",
+          "source_hash": null,
+          "source_kind": "submit",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/campaign_task_P.sub"
+        },
+        {
+          "attribute": null,
+          "notes": "Miembros y orden del plan; no prueba ejecución individual",
+          "source_hash": "11ffa7b990541b6649ab43bbe29630e348046a2a2de1a53b891cb645b4141fcf",
+          "source_kind": "submit",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/merge_group_2.in"
+        },
+        {
+          "attribute": "+pegasus_wf_dag_job_id",
+          "notes": "line 38",
+          "source_hash": null,
+          "source_kind": "submit",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/merge_group_2.sub"
+        }
+      ],
+      "successful": true,
+      "task_id": "C1",
+      "worker_location_id": "dme-worker2"
+    },
+    {
+      "exit_code": 0,
+      "job_id": "3851.0",
+      "job_run_count": 1,
+      "job_status": 4,
+      "num_job_starts": 1,
+      "pegasus_node_id": "merge_group_2",
+      "provenance": [
+        {
+          "attribute": "clusterid",
+          "notes": "line 132",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "procid",
+          "notes": "line 238",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "dagnodename",
+          "notes": "line 150",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "lastremotehost",
+          "notes": "line 197",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "jobstatus",
+          "notes": "line 188",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "exitcode",
+          "notes": "line 163",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "jobruncount",
+          "notes": "line 186",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "numjobstarts",
+          "notes": "line 213",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "lastremotehost",
+          "notes": "line 197",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "+pegasus_wf_dag_job_id",
+          "notes": "line 38",
+          "source_hash": null,
+          "source_kind": "submit",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/campaign_task_P.sub"
+        },
+        {
+          "attribute": null,
+          "notes": "Miembros y orden del plan; no prueba ejecución individual",
+          "source_hash": "11ffa7b990541b6649ab43bbe29630e348046a2a2de1a53b891cb645b4141fcf",
+          "source_kind": "submit",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/merge_group_2.in"
+        },
+        {
+          "attribute": "+pegasus_wf_dag_job_id",
+          "notes": "line 38",
+          "source_hash": null,
+          "source_kind": "submit",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/merge_group_2.sub"
+        }
+      ],
+      "successful": true,
+      "task_id": "C2",
+      "worker_location_id": "dme-worker2"
+    },
+    {
+      "exit_code": 0,
+      "job_id": "3851.0",
+      "job_run_count": 1,
+      "job_status": 4,
+      "num_job_starts": 1,
+      "pegasus_node_id": "merge_group_2",
+      "provenance": [
+        {
+          "attribute": "clusterid",
+          "notes": "line 132",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "procid",
+          "notes": "line 238",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "dagnodename",
+          "notes": "line 150",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "lastremotehost",
+          "notes": "line 197",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "jobstatus",
+          "notes": "line 188",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "exitcode",
+          "notes": "line 163",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "jobruncount",
+          "notes": "line 186",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "numjobstarts",
+          "notes": "line 213",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "lastremotehost",
+          "notes": "line 197",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "+pegasus_wf_dag_job_id",
+          "notes": "line 38",
+          "source_hash": null,
+          "source_kind": "submit",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/campaign_task_P.sub"
+        },
+        {
+          "attribute": null,
+          "notes": "Miembros y orden del plan; no prueba ejecución individual",
+          "source_hash": "11ffa7b990541b6649ab43bbe29630e348046a2a2de1a53b891cb645b4141fcf",
+          "source_kind": "submit",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/merge_group_2.in"
+        },
+        {
+          "attribute": "+pegasus_wf_dag_job_id",
+          "notes": "line 38",
+          "source_hash": null,
+          "source_kind": "submit",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/merge_group_2.sub"
+        }
+      ],
+      "successful": true,
+      "task_id": "C3",
+      "worker_location_id": "dme-worker2"
+    },
+    {
+      "exit_code": 0,
+      "job_id": "3851.0",
+      "job_run_count": 1,
+      "job_status": 4,
+      "num_job_starts": 1,
+      "pegasus_node_id": "merge_group_2",
+      "provenance": [
+        {
+          "attribute": "clusterid",
+          "notes": "line 132",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "procid",
+          "notes": "line 238",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "dagnodename",
+          "notes": "line 150",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "lastremotehost",
+          "notes": "line 197",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "jobstatus",
+          "notes": "line 188",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "exitcode",
+          "notes": "line 163",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "jobruncount",
+          "notes": "line 186",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "numjobstarts",
+          "notes": "line 213",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "lastremotehost",
+          "notes": "line 197",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "+pegasus_wf_dag_job_id",
+          "notes": "line 38",
+          "source_hash": null,
+          "source_kind": "submit",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/campaign_task_P.sub"
+        },
+        {
+          "attribute": null,
+          "notes": "Miembros y orden del plan; no prueba ejecución individual",
+          "source_hash": "11ffa7b990541b6649ab43bbe29630e348046a2a2de1a53b891cb645b4141fcf",
+          "source_kind": "submit",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/merge_group_2.in"
+        },
+        {
+          "attribute": "+pegasus_wf_dag_job_id",
+          "notes": "line 38",
+          "source_hash": null,
+          "source_kind": "submit",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/merge_group_2.sub"
+        }
+      ],
+      "successful": true,
+      "task_id": "C4",
+      "worker_location_id": "dme-worker2"
+    },
+    {
+      "exit_code": 0,
+      "job_id": "3850.0",
+      "job_run_count": 1,
+      "job_status": 4,
+      "num_job_starts": 1,
+      "pegasus_node_id": "campaign_task_P",
+      "provenance": [
+        {
+          "attribute": "clusterid",
+          "notes": "line 298",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "procid",
+          "notes": "line 404",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "dagnodename",
+          "notes": "line 316",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "lastremotehost",
+          "notes": "line 363",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "jobstatus",
+          "notes": "line 354",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "exitcode",
+          "notes": "line 329",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "jobruncount",
+          "notes": "line 352",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "numjobstarts",
+          "notes": "line 379",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "lastremotehost",
+          "notes": "line 363",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "+pegasus_wf_dag_job_id",
+          "notes": "line 38",
+          "source_hash": null,
+          "source_kind": "submit",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/campaign_task_P.sub"
+        },
+        {
+          "attribute": null,
+          "notes": "Miembros y orden del plan; no prueba ejecución individual",
+          "source_hash": "11ffa7b990541b6649ab43bbe29630e348046a2a2de1a53b891cb645b4141fcf",
+          "source_kind": "submit",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/merge_group_2.in"
+        },
+        {
+          "attribute": "+pegasus_wf_dag_job_id",
+          "notes": "line 38",
+          "source_hash": null,
+          "source_kind": "submit",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/plans/W2-AGR/submit/dmeadmin/pegasus/dme-six-20261110-w2-agr-r03/run0001/00/00/merge_group_2.sub"
+        }
+      ],
+      "successful": true,
+      "task_id": "P",
+      "worker_location_id": "dme-worker1"
+    }
+  ],
+  "transfer_evidence": [
+    {
+      "attempt_context": "attempt:1",
+      "bytes_recvd": 228824399,
+      "bytes_sent": 838880980,
+      "direction": "input",
+      "job_id": "3851.0",
+      "methods": [
+        "Cedar"
+      ],
+      "observed_bytes_last": 228824399,
+      "observed_bytes_total": 228824399,
+      "observed_file_count_last": 8,
+      "observed_file_count_total": 8,
+      "provenance": [
+        {
+          "attribute": "transferinputstats",
+          "notes": "line 276",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "clusterid",
+          "notes": "line 132",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "procid",
+          "notes": "line 238",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "lastremotehost",
+          "notes": "line 197",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "jobruncount",
+          "notes": "line 186",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "numjobstarts",
+          "notes": "line 213",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "numshadowstarts",
+          "notes": "line 216",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "numinputtransferstarts",
+          "notes": "line 210",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "numoutputtransferstarts",
+          "notes": "line 214",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "jobstatus",
+          "notes": "line 188",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "exitcode",
+          "notes": "line 163",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "bytesrecvd",
+          "notes": "line 130",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "bytessent",
+          "notes": "line 131",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        }
+      ],
+      "raw_stats": {
+        "exit_by_signal": "false",
+        "exit_code": 0,
+        "hold_reason": null,
+        "job_run_count": 1,
+        "job_status": 4,
+        "num_input_transfer_starts": 1,
+        "num_job_starts": 1,
+        "num_output_transfer_starts": 1,
+        "num_shadow_starts": 1,
+        "transfer_stats_parsed": {
+          "Cedar": {
+            "FilesCountLastRun": 8,
+            "FilesCountTotal": 8,
+            "SizeBytesLastRun": 228824399,
+            "SizeBytesTotal": 228824399
+          }
+        },
+        "transfer_stats_raw": "[ CedarSizeBytesTotal = 228824399; CedarFilesCountTotal = 8; CedarSizeBytesLastRun = 228824399; CedarFilesCountLastRun = 8 ]"
+      },
+      "transfer_finished": "1795369155",
+      "transfer_started": "1795369136",
+      "worker_location_id": "dme-worker2"
+    },
+    {
+      "attempt_context": "attempt:1",
+      "bytes_recvd": 228824399,
+      "bytes_sent": 838880980,
+      "direction": "output",
+      "job_id": "3851.0",
+      "methods": [
+        "Cedar"
+      ],
+      "observed_bytes_last": 838880980,
+      "observed_bytes_total": 838880980,
+      "observed_file_count_last": 6,
+      "observed_file_count_total": 6,
+      "provenance": [
+        {
+          "attribute": "transferoutputstats",
+          "notes": "line 280",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "clusterid",
+          "notes": "line 132",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "procid",
+          "notes": "line 238",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "lastremotehost",
+          "notes": "line 197",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "jobruncount",
+          "notes": "line 186",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "numjobstarts",
+          "notes": "line 213",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "numshadowstarts",
+          "notes": "line 216",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "numinputtransferstarts",
+          "notes": "line 210",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "numoutputtransferstarts",
+          "notes": "line 214",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "jobstatus",
+          "notes": "line 188",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "exitcode",
+          "notes": "line 163",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "bytesrecvd",
+          "notes": "line 130",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "bytessent",
+          "notes": "line 131",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        }
+      ],
+      "raw_stats": {
+        "exit_by_signal": "false",
+        "exit_code": 0,
+        "hold_reason": null,
+        "job_run_count": 1,
+        "job_status": 4,
+        "num_input_transfer_starts": 1,
+        "num_job_starts": 1,
+        "num_output_transfer_starts": 1,
+        "num_shadow_starts": 1,
+        "transfer_stats_parsed": {
+          "Cedar": {
+            "FilesCountLastRun": 6,
+            "FilesCountTotal": 6,
+            "SizeBytesLastRun": 838880980,
+            "SizeBytesTotal": 838880980
+          }
+        },
+        "transfer_stats_raw": "[ CedarSizeBytesTotal = 838880980; CedarFilesCountTotal = 6; CedarSizeBytesLastRun = 838880980; CedarFilesCountLastRun = 6 ]"
+      },
+      "transfer_finished": "1795369247",
+      "transfer_started": "1795369177",
+      "worker_location_id": "dme-worker2"
+    },
+    {
+      "attempt_context": "attempt:1",
+      "bytes_recvd": 228823475,
+      "bytes_sent": 209721519,
+      "direction": "input",
+      "job_id": "3850.0",
+      "methods": [
+        "Cedar"
+      ],
+      "observed_bytes_last": 228823475,
+      "observed_bytes_total": 228823475,
+      "observed_file_count_last": 8,
+      "observed_file_count_total": 8,
+      "provenance": [
+        {
+          "attribute": "transferinputstats",
+          "notes": "line 442",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "clusterid",
+          "notes": "line 298",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "procid",
+          "notes": "line 404",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "lastremotehost",
+          "notes": "line 363",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "jobruncount",
+          "notes": "line 352",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "numjobstarts",
+          "notes": "line 379",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "numshadowstarts",
+          "notes": "line 382",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "numinputtransferstarts",
+          "notes": "line 376",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "numoutputtransferstarts",
+          "notes": "line 380",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "jobstatus",
+          "notes": "line 354",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "exitcode",
+          "notes": "line 329",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "bytesrecvd",
+          "notes": "line 296",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "bytessent",
+          "notes": "line 297",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        }
+      ],
+      "raw_stats": {
+        "exit_by_signal": "false",
+        "exit_code": 0,
+        "hold_reason": null,
+        "job_run_count": 1,
+        "job_status": 4,
+        "num_input_transfer_starts": 1,
+        "num_job_starts": 1,
+        "num_output_transfer_starts": 1,
+        "num_shadow_starts": 1,
+        "transfer_stats_parsed": {
+          "Cedar": {
+            "FilesCountLastRun": 8,
+            "FilesCountTotal": 8,
+            "SizeBytesLastRun": 228823475,
+            "SizeBytesTotal": 228823475
+          }
+        },
+        "transfer_stats_raw": "[ CedarSizeBytesTotal = 228823475; CedarFilesCountTotal = 8; CedarSizeBytesLastRun = 228823475; CedarFilesCountLastRun = 8 ]"
+      },
+      "transfer_finished": "1795369095",
+      "transfer_started": "1795369076",
+      "worker_location_id": "dme-worker1"
+    },
+    {
+      "attempt_context": "attempt:1",
+      "bytes_recvd": 228823475,
+      "bytes_sent": 209721519,
+      "direction": "output",
+      "job_id": "3850.0",
+      "methods": [
+        "Cedar"
+      ],
+      "observed_bytes_last": 209721519,
+      "observed_bytes_total": 209721519,
+      "observed_file_count_last": 3,
+      "observed_file_count_total": 3,
+      "provenance": [
+        {
+          "attribute": "transferoutputstats",
+          "notes": "line 446",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "clusterid",
+          "notes": "line 298",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "procid",
+          "notes": "line 404",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "lastremotehost",
+          "notes": "line 363",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "jobruncount",
+          "notes": "line 352",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "numjobstarts",
+          "notes": "line 379",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "numshadowstarts",
+          "notes": "line 382",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "numinputtransferstarts",
+          "notes": "line 376",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "numoutputtransferstarts",
+          "notes": "line 380",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "jobstatus",
+          "notes": "line 354",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "exitcode",
+          "notes": "line 329",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "bytesrecvd",
+          "notes": "line 296",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        },
+        {
+          "attribute": "bytessent",
+          "notes": "line 297",
+          "source_hash": null,
+          "source_kind": "history",
+          "source_path": "/mnt/intensivo_20261122/contraste/cases/contraste-B3-W2-AGR/pilot/W2-AGR/history.long"
+        }
+      ],
+      "raw_stats": {
+        "exit_by_signal": "false",
+        "exit_code": 0,
+        "hold_reason": null,
+        "job_run_count": 1,
+        "job_status": 4,
+        "num_input_transfer_starts": 1,
+        "num_job_starts": 1,
+        "num_output_transfer_starts": 1,
+        "num_shadow_starts": 1,
+        "transfer_stats_parsed": {
+          "Cedar": {
+            "FilesCountLastRun": 3,
+            "FilesCountTotal": 3,
+            "SizeBytesLastRun": 209721519,
+            "SizeBytesTotal": 209721519
+          }
+        },
+        "transfer_stats_raw": "[ CedarSizeBytesTotal = 209721519; CedarFilesCountTotal = 3; CedarSizeBytesLastRun = 209721519; CedarFilesCountLastRun = 3 ]"
+      },
+      "transfer_finished": "1795369121",
+      "transfer_started": "1795369103",
+      "worker_location_id": "dme-worker1"
+    }
+  ],
+  "verifications": []
+}

@@ -1,0 +1,7 @@
+task_id	job_id	worker	status	attempts
+campaign_task_T1	3576.0	dme-worker1	4	1
+campaign_task_T2	3577.0	dme-worker2	4	1
+campaign_task_T3	3578.0	dme-worker2	4	1
+campaign_task_T4	3579.0	dme-worker2	4	1
+campaign_task_T5	3580.0	dme-worker2	4	1
+campaign_task_T6	3581.0	dme-worker1	4	1

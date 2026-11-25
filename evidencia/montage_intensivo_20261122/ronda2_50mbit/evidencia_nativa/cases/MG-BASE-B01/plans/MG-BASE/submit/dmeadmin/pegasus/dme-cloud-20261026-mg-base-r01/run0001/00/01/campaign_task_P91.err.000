@@ -1,0 +1,15 @@
+2026-11-22 22:52:53: PegasusLite: version 5.1.2
+2026-11-22 22:52:53: Executing on host dme-worker2 IP=10.42.1.5
+
+########################[Pegasus Lite] Setting up workdir ########################
+2026-11-22 22:52:54: Not creating a new work directory as it is already set to /var/lib/condor/execute/dir_13979/scratch
+
+##############[Pegasus Lite] Figuring out the worker package to use ##############
+2026-11-22 22:52:54: The job contained a Pegasus worker package
+
+##################### Setting the xbit for executables staged #####################
+
+##################### Checking file integrity for input files #####################
+
+######################[Pegasus Lite] Executing the user task ######################
+PegasusLite: exitcode 0

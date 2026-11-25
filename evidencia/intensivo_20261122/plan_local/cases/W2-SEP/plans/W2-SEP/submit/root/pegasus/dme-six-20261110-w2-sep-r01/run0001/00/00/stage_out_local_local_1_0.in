@@ -1,0 +1,49 @@
+[
+ { "type": "transfer",
+   "linkage": "output",
+   "lfn": "f4",
+   "id": 1,
+   "verify_checksum_remote": true,
+   "src_urls": [
+     { "site_label": "local", "url": "file:///study/cases/W2-SEP/plans/W2-SEP/scratch/root/pegasus/dme-six-20261110-w2-sep-r01/run0001/./f4" }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///study/cases/W2-SEP/plans/W2-SEP/outputs/f4" }
+   ] }
+ ,
+ { "type": "transfer",
+   "linkage": "output",
+   "lfn": "f2",
+   "id": 2,
+   "verify_checksum_remote": true,
+   "src_urls": [
+     { "site_label": "local", "url": "file:///study/cases/W2-SEP/plans/W2-SEP/scratch/root/pegasus/dme-six-20261110-w2-sep-r01/run0001/./f2" }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///study/cases/W2-SEP/plans/W2-SEP/outputs/f2" }
+   ] }
+ ,
+ { "type": "transfer",
+   "linkage": "output",
+   "lfn": "f3",
+   "id": 3,
+   "verify_checksum_remote": true,
+   "src_urls": [
+     { "site_label": "local", "url": "file:///study/cases/W2-SEP/plans/W2-SEP/scratch/root/pegasus/dme-six-20261110-w2-sep-r01/run0001/./f3" }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///study/cases/W2-SEP/plans/W2-SEP/outputs/f3" }
+   ] }
+ ,
+ { "type": "transfer",
+   "linkage": "output",
+   "lfn": "f1",
+   "id": 4,
+   "verify_checksum_remote": true,
+   "src_urls": [
+     { "site_label": "local", "url": "file:///study/cases/W2-SEP/plans/W2-SEP/scratch/root/pegasus/dme-six-20261110-w2-sep-r01/run0001/./f1" }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///study/cases/W2-SEP/plans/W2-SEP/outputs/f1" }
+   ] }
+]

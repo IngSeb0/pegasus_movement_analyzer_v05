@@ -1,0 +1,13 @@
+[
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "A",
+   "id": 1,
+   "generate_checksum": true,
+   "src_urls": [
+     { "site_label": "local", "url": "/study/cases/PIPELINE-W2/plans/PIPELINE-W2/inputs/A", "priority": 10 }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///study/cases/PIPELINE-W2/plans/PIPELINE-W2/scratch/root/pegasus/dme-six-20261110-pipeline-w2-r01/run0001/./A" }
+   ] }
+]

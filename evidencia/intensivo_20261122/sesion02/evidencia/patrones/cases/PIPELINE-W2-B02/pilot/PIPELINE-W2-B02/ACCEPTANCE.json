@@ -1,0 +1,35 @@
+{
+  "id": "PIPELINE-W2-B02",
+  "condition": "PIPELINE-W2",
+  "workers": 2,
+  "pattern": "PIPELINE",
+  "block": 2,
+  "phase": "principal",
+  "uuid": "441398c4-e121-4bee-b9e2-c6e0df063dee",
+  "required_bytes": 419430400,
+  "observed_bytes": 2516582400,
+  "dme": "1/6",
+  "duration_s": 411.51700019836426,
+  "placement": {
+    "T1": "dme-worker1",
+    "T2": "dme-worker1",
+    "T3": "dme-worker1",
+    "T4": "dme-worker1",
+    "T5": "dme-worker1",
+    "T6": "dme-worker1"
+  },
+  "obligations": 2,
+  "deliveries": 12,
+  "directions": 12,
+  "all_exact": true,
+  "final_files": [
+    {
+      "file": "B",
+      "bytes": 209715200,
+      "sha256": "706c92fddcfb302539c59c75703cefefaf6a6d7e007068f23e950a24e11a5d80",
+      "matches_native_metadata": true
+    }
+  ],
+  "manualAgreement": true,
+  "analyzerStatus": "VALID"
+}

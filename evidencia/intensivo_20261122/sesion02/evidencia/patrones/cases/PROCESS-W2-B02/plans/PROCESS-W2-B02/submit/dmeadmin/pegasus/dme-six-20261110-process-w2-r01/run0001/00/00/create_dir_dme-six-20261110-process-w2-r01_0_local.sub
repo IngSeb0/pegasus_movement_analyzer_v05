@@ -1,0 +1,41 @@
+######################################################################
+# PEGASUS WMS GENERATED SUBMIT FILE
+# DAG : dme-six-20261110-process-w2-r01, Index = 0, Count = null
+# SUBMIT FILE NAME : create_dir_dme-six-20261110-process-w2-r01_0_local.sub
+######################################################################
+stream_error  = false
+stream_output = false
+environment = "LANG=en_US.UTF-8 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/snap/bin CONDOR_JOBID=$(cluster).$(process) PEGASUS_WF_UUID=147be6e2-cd79-4c3c-b190-7bbabec1c003 PEGASUS_WF_LABEL=dme-six-20261110-process-w2-r01 PEGASUS_DAG_JOB_ID=create_dir_dme-six-20261110-process-w2-r01_0_local PEGASUS_SITE=local _PEGASUS_WF_SUBMIT_DIR=/mnt/intensivo_20261122/patrones/cases/PROCESS-W2-B02/plans/PROCESS-W2-B02/submit/dmeadmin/pegasus/dme-six-20261110-process-w2-r01/run0001 PEGASUS_BIN_DIR=/usr/bin _PEGASUS_CONNECT_STDIN=true"
+arguments = "pegasus-kickstart  -n pegasus::dirmanager -N null -i - -R local  -L dme-six-20261110-process-w2-r01 -T 2026-11-22T16:33:31+00:00 pegasus-transfer "
+error = /mnt/intensivo_20261122/patrones/cases/PROCESS-W2-B02/plans/PROCESS-W2-B02/submit/dmeadmin/pegasus/dme-six-20261110-process-w2-r01/run0001//00/00/create_dir_dme-six-20261110-process-w2-r01_0_local.err
+executable = /usr/share/pegasus/sh/pegasus-lite-local.sh
+input = /mnt/intensivo_20261122/patrones/cases/PROCESS-W2-B02/plans/PROCESS-W2-B02/submit/dmeadmin/pegasus/dme-six-20261110-process-w2-r01/run0001//00/00/create_dir_dme-six-20261110-process-w2-r01_0_local.in
+log = /mnt/intensivo_20261122/patrones/cases/PROCESS-W2-B02/plans/PROCESS-W2-B02/submit/dmeadmin/pegasus/dme-six-20261110-process-w2-r01/run0001/dme-six-20261110-process-w2-r01-0.log
+notification = NEVER
+output = /mnt/intensivo_20261122/patrones/cases/PROCESS-W2-B02/plans/PROCESS-W2-B02/submit/dmeadmin/pegasus/dme-six-20261110-process-w2-r01/run0001//00/00/create_dir_dme-six-20261110-process-w2-r01_0_local.out
+periodic_release = False
+periodic_remove = (JobStatus == 5) && ((CurrentTime - EnteredCurrentStatus) > 1800)
+priority = 800
+submit_event_user_notes = pool:local
+transfer_executable = false
+universe = local
+wf_submit_dir = /mnt/intensivo_20261122/patrones/cases/PROCESS-W2-B02/plans/PROCESS-W2-B02/submit/dmeadmin/pegasus/dme-six-20261110-process-w2-r01/run0001
++pegasus_generator = "Pegasus"
++pegasus_root_wf_uuid = "147be6e2-cd79-4c3c-b190-7bbabec1c003"
++pegasus_wf_uuid = "147be6e2-cd79-4c3c-b190-7bbabec1c003"
++pegasus_version = "5.1.2"
++pegasus_wf_name = "dme-six-20261110-process-w2-r01-0"
++pegasus_wf_time = "20261122T163331+0000"
++pegasus_wf_xformation = "pegasus::dirmanager"
++pegasus_wf_dax_job_id = "null"
++pegasus_wf_dag_job_id = "create_dir_dme-six-20261110-process-w2-r01_0_local"
++pegasus_job_class = 6
++pegasus_site = "local"
++pegasus_job_runtime = 0
++pegasus_cores = 1
++pegasus_gpus = 1
++pegasus_cluster_size = 1
+queue
+######################################################################
+# END OF SUBMIT FILE
+######################################################################

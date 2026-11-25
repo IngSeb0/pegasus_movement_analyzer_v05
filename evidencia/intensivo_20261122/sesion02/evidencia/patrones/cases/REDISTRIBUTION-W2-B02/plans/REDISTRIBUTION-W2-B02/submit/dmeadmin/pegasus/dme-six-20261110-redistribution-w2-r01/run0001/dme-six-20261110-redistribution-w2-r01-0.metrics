@@ -1,0 +1,42 @@
+{
+  "client": "pegasus-plan",
+  "version": "5.1.2",
+  "wf_api": "python",
+  "type": "metrics",
+  "start_time": 1.795365837247E9,
+  "end_time": 1.795365842468E9,
+  "duration": 5.221,
+  "exitcode": 0,
+  "root_wf_uuid": "af194887-e4ff-47c1-9782-a9b98a2166a9",
+  "wf_uuid": "af194887-e4ff-47c1-9782-a9b98a2166a9",
+  "data_config": "condorio",
+  "planner_args": "--conf /mnt/intensivo_20261122/patrones/cases/REDISTRIBUTION-W2-B02/plans/REDISTRIBUTION-W2-B02/pegasus.properties --dir /mnt/intensivo_20261122/patrones/cases/REDISTRIBUTION-W2-B02/plans/REDISTRIBUTION-W2-B02/submit --sites condorpool --output-sites local --cleanup none --json /mnt/intensivo_20261122/patrones/cases/REDISTRIBUTION-W2-B02/plans/REDISTRIBUTION-W2-B02/workflow_for_plan.yml ",
+  "uses_pmc": false,
+  "wf_metrics": {
+    "compute_tasks": 6,
+    "dax_tasks": 0,
+    "dag_tasks": 0,
+    "total_tasks": 6,
+    "deleted_tasks": 0,
+    "dax_input_files": 2,
+    "dax_inter_files": 5,
+    "dax_output_files": 2,
+    "dax_total_files": 9,
+    "compute_jobs": 6,
+    "clustered_jobs": 0,
+    "si_tx_jobs": 2,
+    "so_tx_jobs": 1,
+    "inter_tx_jobs": 0,
+    "reg_jobs": 0,
+    "cleanup_jobs": 0,
+    "create_dir_jobs": 1,
+    "dax_jobs": 0,
+    "dag_jobs": 0,
+    "chmod_jobs": 0,
+    "total_jobs": 10
+  },
+  "app_metrics": {
+    "name": "dme-six-20261110-redistribution-w2-r01"
+  }
+}
+

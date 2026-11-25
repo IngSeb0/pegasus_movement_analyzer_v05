@@ -1,0 +1,42 @@
+{
+  "client": "pegasus-plan",
+  "version": "5.1.2",
+  "wf_api": "python",
+  "type": "metrics",
+  "start_time": 1.795360288025E9,
+  "end_time": 1.795360293232E9,
+  "duration": 5.207,
+  "exitcode": 0,
+  "root_wf_uuid": "c1b0bf1d-b7f4-4fd9-a125-6d55af5a1635",
+  "wf_uuid": "c1b0bf1d-b7f4-4fd9-a125-6d55af5a1635",
+  "data_config": "condorio",
+  "planner_args": "--conf /mnt/intensivo_20261122/patrones/cases/PIPELINE-W2-B01/plans/PIPELINE-W2-B01/pegasus.properties --dir /mnt/intensivo_20261122/patrones/cases/PIPELINE-W2-B01/plans/PIPELINE-W2-B01/submit --sites condorpool --output-sites local --cleanup none --json /mnt/intensivo_20261122/patrones/cases/PIPELINE-W2-B01/plans/PIPELINE-W2-B01/workflow_for_plan.yml ",
+  "uses_pmc": false,
+  "wf_metrics": {
+    "compute_tasks": 6,
+    "dax_tasks": 0,
+    "dag_tasks": 0,
+    "total_tasks": 6,
+    "deleted_tasks": 0,
+    "dax_input_files": 1,
+    "dax_inter_files": 5,
+    "dax_output_files": 1,
+    "dax_total_files": 7,
+    "compute_jobs": 6,
+    "clustered_jobs": 0,
+    "si_tx_jobs": 2,
+    "so_tx_jobs": 1,
+    "inter_tx_jobs": 0,
+    "reg_jobs": 0,
+    "cleanup_jobs": 0,
+    "create_dir_jobs": 1,
+    "dax_jobs": 0,
+    "dag_jobs": 0,
+    "chmod_jobs": 0,
+    "total_jobs": 10
+  },
+  "app_metrics": {
+    "name": "dme-six-20261110-pipeline-w2-r01"
+  }
+}
+

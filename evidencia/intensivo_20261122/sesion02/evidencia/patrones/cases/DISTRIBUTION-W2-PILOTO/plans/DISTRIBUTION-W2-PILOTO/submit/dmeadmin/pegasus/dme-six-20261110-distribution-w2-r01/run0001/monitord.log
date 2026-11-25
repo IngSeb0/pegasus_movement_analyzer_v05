@@ -1,0 +1,28 @@
+2026-11-22 14:53:46,631:INFO:pegasus-monitord(65): pegasus-monitord starting - pid 5203 
+2026-11-22 14:53:46,635:INFO:pegasus-monitord(463): Final Command line options are: ['-N', 'dme-six-20261110-distribution-w2-r01-0.dag.dagman.out']
+2026-11-22 14:53:46,636:INFO:Pegasus.monitoring.event_output(628): Connecting workflow event sink to sqlite:////mnt/intensivo_20261122/patrones/cases/DISTRIBUTION-W2-PILOTO/plans/DISTRIBUTION-W2-PILOTO/submit/dmeadmin/pegasus/dme-six-20261110-distribution-w2-r01/run0001/dme-six-20261110-distribution-w2-r01-0.stampede.db
+Pegasus database was successfully created.
+Database version: '5.1.2' (sqlite:////mnt/intensivo_20261122/patrones/cases/DISTRIBUTION-W2-PILOTO/plans/DISTRIBUTION-W2-PILOTO/submit/dmeadmin/pegasus/dme-six-20261110-distribution-w2-r01/run0001/dme-six-20261110-distribution-w2-r01-0.stampede.db)
+2026-11-22 14:53:46,857:INFO:Pegasus.monitoring.event_output(702): output type=DB namespace=stampede. name=sqlite:////mnt/intensivo_20261122/patrones/cases/DISTRIBUTION-W2-PILOTO/plans/DISTRIBUTION-W2-PILOTO/submit/dmeadmin/pegasus/dme-six-20261110-distribution-w2-r01/run0001/dme-six-20261110-distribution-w2-r01-0.stampede.db
+2026-11-22 14:53:46,857:INFO:Pegasus.monitoring.event_output(628): Connecting workflow event sink to sqlite:////home/dmeadmin/.pegasus/workflow.db
+Database version: '5.1.2' (sqlite:////home/dmeadmin/.pegasus/workflow.db)
+2026-11-22 14:53:47,037:INFO:Pegasus.monitoring.event_output(702): output type=DB namespace=dashboard. name=sqlite:////home/dmeadmin/.pegasus/workflow.db
+2026-11-22 14:53:47,037:INFO:pegasus-monitord(1258): monitord started in fast start mode
+2026-11-22 14:53:47,046:INFO:Pegasus.monitoring.workflow(458): cannot open state file /mnt/intensivo_20261122/patrones/cases/DISTRIBUTION-W2-PILOTO/plans/DISTRIBUTION-W2-PILOTO/submit/dmeadmin/pegasus/dme-six-20261110-distribution-w2-r01/run0001/monitord.info, continuing without state...
+2026-11-22 14:53:47,046:INFO:Pegasus.monitoring.workflow(1146): creating new file /mnt/intensivo_20261122/patrones/cases/DISTRIBUTION-W2-PILOTO/plans/DISTRIBUTION-W2-PILOTO/submit/dmeadmin/pegasus/dme-six-20261110-distribution-w2-r01/run0001/jobstate.log
+2026-11-22 14:53:47,046:INFO:Pegasus.monitoring.workflow(1154): Appending to existing jobstate.log replay_mode 0 previous_processed_line 0
+2026-11-22 14:53:47,046:INFO:Pegasus.monitoring.notifications(472): loading notifications from /mnt/intensivo_20261122/patrones/cases/DISTRIBUTION-W2-PILOTO/plans/DISTRIBUTION-W2-PILOTO/submit/dmeadmin/pegasus/dme-six-20261110-distribution-w2-r01/run0001/dme-six-20261110-distribution-w2-r01-0.notify
+2026-11-22 14:53:47,146:INFO:Pegasus.monitoring.workflow(203): Parsing DAG file /mnt/intensivo_20261122/patrones/cases/DISTRIBUTION-W2-PILOTO/plans/DISTRIBUTION-W2-PILOTO/submit/dmeadmin/pegasus/dme-six-20261110-distribution-w2-r01/run0001/dme-six-20261110-distribution-w2-r01-0.dag
+2026-11-22 14:53:47,146:INFO:pegasus-monitord(985): Using DAGMan version 26.0.1 260001
+2026-11-22 14:53:47,148:INFO:pegasus-monitord(968): using dag dme-six-20261110-distribution-w2-r01-0.dag
+2026-11-22 14:53:47,148:INFO:Pegasus.monitoring.workflow(809): DAGMan starting with condor id 3561.0
+2026-11-22 14:58:47,616:INFO:pegasus-monitord(938): DAGMan dme-six-20261110-distribution-w2-r01-0.dag finished with exit code 0
+2026-11-22 14:58:48,629:INFO:pegasus-monitord(1438): workflow /mnt/intensivo_20261122/patrones/cases/DISTRIBUTION-W2-PILOTO/plans/DISTRIBUTION-W2-PILOTO/submit/dmeadmin/pegasus/dme-six-20261110-distribution-w2-r01/run0001/dme-six-20261110-distribution-w2-r01-0.dag.dagman.out ended
+2026-11-22 14:58:48,630:INFO:Pegasus.monitoring.workflow(1376): recovery file deleted: /mnt/intensivo_20261122/patrones/cases/DISTRIBUTION-W2-PILOTO/plans/DISTRIBUTION-W2-PILOTO/submit/dmeadmin/pegasus/dme-six-20261110-distribution-w2-r01/run0001/monitord.recover
+2026-11-22 14:58:48,630:INFO:pegasus-monitord(1676): finishing workflow: /mnt/intensivo_20261122/patrones/cases/DISTRIBUTION-W2-PILOTO/plans/DISTRIBUTION-W2-PILOTO/submit/dmeadmin/pegasus/dme-six-20261110-distribution-w2-r01/run0001/dme-six-20261110-distribution-w2-r01-0.dag.dagman.out
+2026-11-22 14:58:48,630:INFO:pegasus-monitord(1730): finishing notifications...
+2026-11-22 14:58:48,630:INFO:pegasus-monitord(1738): monitord process 5203 exiting with 0
+2026-11-22 14:58:48,630:INFO:pegasus-monitord(205): DB flushing beginning
+2026-11-22 14:58:48,630:INFO:Pegasus.db.workflow_loader.WorkflowLoader(1244): Executing final flush
+2026-11-22 14:58:48,639:INFO:Pegasus.db.dashboard_loader.DashboardLoader(397): Executing final flush
+2026-11-22 14:58:48,640:INFO:pegasus-monitord(221): DB flushing ended

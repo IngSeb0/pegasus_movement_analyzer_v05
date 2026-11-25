@@ -1,0 +1,6 @@
+[
+  {
+    "id": 1,
+    "type": "mkdir",
+    "target": { "site_label": "local", "url": "file:///mnt/intensivo_20261122/patrones/cases/AGGREGATION-W4-B01/plans/AGGREGATION-W4-B01/scratch/dmeadmin/pegasus/dme-six-20261110-aggregation-w4-r01/run0001" } }
+]

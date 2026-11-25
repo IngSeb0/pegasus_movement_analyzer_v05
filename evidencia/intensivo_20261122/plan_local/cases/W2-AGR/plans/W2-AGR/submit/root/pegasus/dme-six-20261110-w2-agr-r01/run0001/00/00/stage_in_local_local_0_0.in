@@ -1,0 +1,13 @@
+[
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "a",
+   "id": 1,
+   "generate_checksum": true,
+   "src_urls": [
+     { "site_label": "local", "url": "/study/cases/W2-AGR/plans/W2-AGR/inputs/a", "priority": 10 }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///study/cases/W2-AGR/plans/W2-AGR/scratch/root/pegasus/dme-six-20261110-w2-agr-r01/run0001/./a" }
+   ] }
+]

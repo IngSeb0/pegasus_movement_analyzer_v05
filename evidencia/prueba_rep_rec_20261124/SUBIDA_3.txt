@@ -1,0 +1,2 @@
+$ C:\Users\Acer\AppData\Local\Programs\Python\Python312\python.exe -B coordinador/llevar.py subir flujos analyzer
+

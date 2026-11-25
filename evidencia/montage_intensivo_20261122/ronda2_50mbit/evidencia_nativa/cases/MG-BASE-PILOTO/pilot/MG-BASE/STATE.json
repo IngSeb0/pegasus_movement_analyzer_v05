@@ -1,0 +1,9 @@
+{
+  "status": "ACCEPTED",
+  "uuid": "268f98fa-0bcc-4d06-bda4-5dfa2b9c5b17",
+  "run": "/mnt/montage_intensivo_20261122/ronda2/cases/MG-BASE-PILOTO/plans/MG-BASE/submit/dmeadmin/pegasus/dme-cloud-20261026-mg-base-r00/run0001",
+  "submitted": true,
+  "program_sha256": "8d69de086d6005ad0f63f96568bfd4092398413953f1adbd2a9ed69d4c522f58",
+  "report_file": "/mnt/montage_intensivo_20261122/ronda2/cases/MG-BASE-PILOTO/pilot/MG-BASE/reports/analysis.json",
+  "accepted": true
+}

@@ -1,0 +1,189 @@
+- invocation: True
+  version: 3.0
+  start: 2026-11-22T22:42:29.651+00:00
+  duration: 8.308
+  transformation: "pegasus::transfer"
+  derivation: "null"
+  resource: "local"
+  wf-label: "dme-cloud-20261026-mg-base-r00"
+  wf-stamp: "2026-11-22T22:19:08+00:00"
+  interface: eth0
+  hostaddr: 10.42.0.4
+  hostname: dme-master
+  pid: 15121
+  uid: 1000
+  user: dmeadmin
+  gid: 1000
+  group: dmeadmin
+  umask: 0o0022
+  mainjob:
+    start: 2026-11-22T22:42:29.657+00:00
+    duration: 8.303
+    pid: 15122
+    usage:
+      utime: 3.580
+      stime: 0.612
+      maxrss: 28032
+      minflt: 25678
+      majflt: 0
+      nswap: 0
+      inblock: 0
+      outblock: 1908568
+      msgsnd: 0
+      msgrcv: 0
+      nsignals: 0
+      nvcsw: 536
+      nivcsw: 129
+    status:
+      raw: 0
+      regular_exitcode: 0
+    executable:
+      file_name: /usr/bin/pegasus-transfer
+      mode: 0o100755
+      size: 2901
+      inode: 91827
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2026-02-03T22:39:35+00:00
+      atime: 2026-11-22T14:53:50+00:00
+      ctime: 2026-10-26T03:07:39+00:00
+      uid: 0
+      user: root
+      gid: 0
+      group: root
+    argument_vector:
+      - "--threads"
+      - "2"
+    procs:
+  jobids:
+    condor: 4212.0
+  cwd: /var/spool/condor/local_univ_execute/dir_15117/scratch
+  usage:
+    utime: 0.000
+    stime: 0.006
+    maxrss: 2996
+    minflt: 157
+    majflt: 0
+    nswap: 0
+    inblock: 0
+    outblock: 0
+    msgsnd: 0
+    msgrcv: 0
+    nsignals: 0
+    nvcsw: 1
+    nivcsw: 1
+  machine:
+    page-size: 4096
+    uname_system: linux
+    uname_nodename: dme-master
+    uname_release: 7.0.0-1020-azure
+    uname_machine: x86_64
+    ram_total: 7095720
+    ram_free: 2479180
+    ram_shared: 4212
+    ram_buffer: 75716
+    swap_total: 0
+    swap_free: 0
+    cpu_count: 2
+    cpu_speed: 2793
+    cpu_vendor: GenuineIntel
+    cpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz
+    load_min1: 0.10
+    load_min5: 0.15
+    load_min15: 0.17
+    procs_total: 146
+    procs_running: 1
+    procs_sleeping: 76
+    procs_waiting: 1
+    procs_other: 68
+    procs_vmsize: 2914616
+    procs_rss: 571468
+    task_total: 172
+    task_running: 1
+    task_sleeping: 102
+    task_waiting: 1
+    task_other: 68
+  files:
+    stdin:
+      descriptor_number: 0
+      mode: 0o10600
+      size: 0
+      inode: 73141
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-11-22T22:42:29+00:00
+      atime: 2026-11-22T22:42:29+00:00
+      ctime: 2026-11-22T22:42:29+00:00
+      uid: 1000
+      user: dmeadmin
+      gid: 1000
+      group: dmeadmin
+    stdout:
+      temporary_name: /var/spool/condor/local_univ_execute/dir_15117/scratch/ks.out.VU1vbp
+      descriptor: 3
+      mode: 0o100600
+      size: 0
+      inode: 547388
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-11-22T22:42:29+00:00
+      atime: 2026-11-22T22:42:29+00:00
+      ctime: 2026-11-22T22:42:29+00:00
+      uid: 1000
+      user: dmeadmin
+      gid: 1000
+      group: dmeadmin
+    stderr:
+      temporary_name: /var/spool/condor/local_univ_execute/dir_15117/scratch/ks.err.jTALqd
+      descriptor: 4
+      mode: 0o100600
+      size: 2281
+      inode: 547389
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2026-11-22T22:42:37+00:00
+      atime: 2026-11-22T22:42:29+00:00
+      ctime: 2026-11-22T22:42:37+00:00
+      uid: 1000
+      user: dmeadmin
+      gid: 1000
+      group: dmeadmin
+      data_truncated: false
+      data: |
+        2026-11-22 22:42:29,769    INFO:  Reading URL pairs from stdin
+        2026-11-22 22:42:29,770    INFO:  2 transfers loaded
+        2026-11-22 22:42:29,770    INFO:  PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/snap/bin:/bin:/usr/bin:/usr/local/bin:/opt/local/bin
+        2026-11-22 22:42:29,770    INFO:  LD_LIBRARY_PATH=
+        2026-11-22 22:42:29,777    INFO:  --------------------------------------------------------------------------------
+        2026-11-22 22:42:29,777    INFO:  Starting transfers - attempt 1
+        2026-11-22 22:42:31,778    INFO:  /bin/cp -f -R -L '/mnt/montage_intensivo_20261122/ronda2/cases/MG-BASE-PILOTO/plans/MG-BASE/scratch/dmeadmin/pegasus/dme-cloud-20261026-mg-base-r00/run0001/./m101.fits' '/mnt/montage_intensivo_20261122/ronda2/cases/MG-BASE-PILOTO/plans/MG-BASE/outputs/m101.fits'
+        2026-11-22 22:42:33,718    INFO:  Tool found: pegasus-integrity   Version: N/A   Path: /usr/bin/pegasus-integrity
+        2026-11-22 22:42:33,718    INFO:  /usr/bin/pegasus-integrity --verify="m101.fits=/mnt/montage_intensivo_20261122/ronda2/cases/MG-BASE-PILOTO/plans/MG-BASE/outputs/m101.fits"
+        2026-11-22 22:42:33,778    INFO:  /bin/cp -f -R -L '/mnt/montage_intensivo_20261122/ronda2/cases/MG-BASE-PILOTO/plans/MG-BASE/scratch/dmeadmin/pegasus/dme-cloud-20261026-mg-base-r00/run0001/./m101_area.fits' '/mnt/montage_intensivo_20261122/ronda2/cases/MG-BASE-PILOTO/plans/MG-BASE/outputs/m101_area.fits'
+        2026-11-22 22:42:36,110    INFO:  /usr/bin/pegasus-integrity --verify="m101_area.fits=/mnt/montage_intensivo_20261122/ronda2/cases/MG-BASE-PILOTO/plans/MG-BASE/outputs/m101_area.fits"
+        2026-11-22 22:42:37,945    INFO:  --------------------------------------------------------------------------------
+        2026-11-22 22:42:37,945    INFO:  @@@MONITORING_PAYLOAD - START@@@{"ts": 1795387357, "monitoring_event": "int.metric", "payload": [{"event": "check", "file_type": "output", "succeeded": 2, "failed": 0, "duration": "3.676"}]}@@@MONITORING_PAYLOAD - END@@@
+        2026-11-22 22:42:37,945    INFO:  Stats: Total 2 transfers, 931.9 MB transferred in 8 seconds. Rate: 114.0 MB/s (911.8 Mb/s)
+        2026-11-22 22:42:37,946    INFO:         Between sites local->local : 2 transfers, 931.9 MB transferred in 8 seconds. Rate: 114.0 MB/s (911.8 Mb/s)
+        2026-11-22 22:42:37,946    INFO:  All transfers completed successfully.
+        
+    metadata:
+      temporary_name: /var/spool/condor/local_univ_execute/dir_15117/scratch/ks.meta.1pnWly
+      descriptor: 5
+      mode: 0o100600
+      size: 0
+      inode: 547390
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-11-22T22:42:29+00:00
+      atime: 2026-11-22T22:42:29+00:00
+      ctime: 2026-11-22T22:42:29+00:00
+      uid: 1000
+      user: dmeadmin
+      gid: 1000
+      group: dmeadmin

@@ -1,0 +1,179 @@
+- invocation: True
+  version: 3.0
+  start: 2026-11-22T17:32:27.396+00:00
+  duration: 2.147
+  transformation: "pegasus::dirmanager"
+  derivation: "null"
+  resource: "local"
+  wf-label: "dme-six-20261110-rep-r02"
+  wf-stamp: "2026-11-22T17:32:13+00:00"
+  interface: eth0
+  hostaddr: 10.42.0.4
+  hostname: dme-master
+  pid: 67561
+  uid: 1000
+  user: dmeadmin
+  gid: 1000
+  group: dmeadmin
+  umask: 0o0022
+  mainjob:
+    start: 2026-11-22T17:32:27.402+00:00
+    duration: 2.142
+    pid: 67562
+    usage:
+      utime: 0.107
+      stime: 0.036
+      maxrss: 27840
+      minflt: 8787
+      majflt: 0
+      nswap: 0
+      inblock: 0
+      outblock: 16
+      msgsnd: 0
+      msgrcv: 0
+      nsignals: 0
+      nvcsw: 58
+      nivcsw: 11
+    status:
+      raw: 0
+      regular_exitcode: 0
+    executable:
+      file_name: /usr/bin/pegasus-transfer
+      mode: 0o100755
+      size: 2901
+      inode: 91827
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2026-02-03T22:39:35+00:00
+      atime: 2026-11-22T14:53:50+00:00
+      ctime: 2026-10-26T03:07:39+00:00
+      uid: 0
+      user: root
+      gid: 0
+      group: root
+    argument_vector:
+    procs:
+  jobids:
+    condor: 3837.0
+  cwd: /var/spool/condor/local_univ_execute/dir_67558/scratch
+  usage:
+    utime: 0.005
+    stime: 0.001
+    maxrss: 3000
+    minflt: 158
+    majflt: 0
+    nswap: 0
+    inblock: 0
+    outblock: 0
+    msgsnd: 0
+    msgrcv: 0
+    nsignals: 0
+    nvcsw: 1
+    nivcsw: 1
+  machine:
+    page-size: 4096
+    uname_system: linux
+    uname_nodename: dme-master
+    uname_release: 7.0.0-1020-azure
+    uname_machine: x86_64
+    ram_total: 7095724
+    ram_free: 5438040
+    ram_shared: 4188
+    ram_buffer: 130320
+    swap_total: 0
+    swap_free: 0
+    cpu_count: 2
+    cpu_speed: 2793
+    cpu_vendor: GenuineIntel
+    cpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz
+    load_min1: 0.40
+    load_min5: 0.30
+    load_min15: 0.28
+    procs_total: 143
+    procs_running: 1
+    procs_sleeping: 74
+    procs_other: 68
+    procs_vmsize: 2852796
+    procs_rss: 541192
+    task_total: 169
+    task_running: 1
+    task_sleeping: 100
+    task_other: 68
+  files:
+    stdin:
+      descriptor_number: 0
+      mode: 0o10600
+      size: 0
+      inode: 370360
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-11-22T17:32:27+00:00
+      atime: 2026-11-22T17:32:27+00:00
+      ctime: 2026-11-22T17:32:27+00:00
+      uid: 1000
+      user: dmeadmin
+      gid: 1000
+      group: dmeadmin
+    stdout:
+      temporary_name: /var/spool/condor/local_univ_execute/dir_67558/scratch/ks.out.Ud9SdA
+      descriptor: 3
+      mode: 0o100600
+      size: 0
+      inode: 547363
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-11-22T17:32:27+00:00
+      atime: 2026-11-22T17:32:27+00:00
+      ctime: 2026-11-22T17:32:27+00:00
+      uid: 1000
+      user: dmeadmin
+      gid: 1000
+      group: dmeadmin
+    stderr:
+      temporary_name: /var/spool/condor/local_univ_execute/dir_67558/scratch/ks.err.A7LMRi
+      descriptor: 4
+      mode: 0o100600
+      size: 929
+      inode: 547364
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2026-11-22T17:32:29+00:00
+      atime: 2026-11-22T17:32:27+00:00
+      ctime: 2026-11-22T17:32:29+00:00
+      uid: 1000
+      user: dmeadmin
+      gid: 1000
+      group: dmeadmin
+      data_truncated: false
+      data: |
+        2026-11-22 17:32:27,516    INFO:  Reading URL pairs from stdin
+        2026-11-22 17:32:27,517    INFO:  1 transfers loaded
+        2026-11-22 17:32:27,517    INFO:  PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/snap/bin:/bin:/usr/bin:/usr/local/bin:/opt/local/bin
+        2026-11-22 17:32:27,517    INFO:  LD_LIBRARY_PATH=
+        2026-11-22 17:32:27,524    INFO:  --------------------------------------------------------------------------------
+        2026-11-22 17:32:27,524    INFO:  Starting transfers - attempt 1
+        2026-11-22 17:32:29,525    INFO:  /bin/mkdir -p '/mnt/intensivo_20261122/contraste/cases/contraste-B2-REP/plans/REP/scratch/dmeadmin/pegasus/dme-six-20261110-rep-r02/run0001' 
+        2026-11-22 17:32:29,530    INFO:  --------------------------------------------------------------------------------
+        2026-11-22 17:32:29,530    INFO:  Stats: no local files in the transfer set
+        2026-11-22 17:32:29,530    INFO:  All transfers completed successfully.
+        
+    metadata:
+      temporary_name: /var/spool/condor/local_univ_execute/dir_67558/scratch/ks.meta.AfhZMD
+      descriptor: 5
+      mode: 0o100600
+      size: 0
+      inode: 547365
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-11-22T17:32:27+00:00
+      atime: 2026-11-22T17:32:27+00:00
+      ctime: 2026-11-22T17:32:27+00:00
+      uid: 1000
+      user: dmeadmin
+      gid: 1000
+      group: dmeadmin

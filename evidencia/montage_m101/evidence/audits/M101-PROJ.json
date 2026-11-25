@@ -1,0 +1,3346 @@
+{
+  "condition": "M101-PROJ",
+  "status": "CORROBORATED_BY_JOB_DIRECTION_CONTRACT",
+  "errors": [],
+  "required_bytes": 269021436,
+  "observed_bytes": 311142148,
+  "dme_exact": "67255359/77785537",
+  "files": {
+    "p01_area.fits": {
+      "producer": "P01",
+      "consumers": [
+        "ADD"
+      ],
+      "final": false,
+      "bytes": 4230720,
+      "checksum": "a14c11c4cf3ca88a03c27091509a1357e4ecad021ec74d37984f377ca1543e86",
+      "metadata": [
+        {
+          "bytes": 4230720,
+          "checksum": "a14c11c4cf3ca88a03c27091509a1357e4ecad021ec74d37984f377ca1543e86",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/merge_group_1.meta",
+          "sha256": "9a7becfe2cfb7fd63705f469326d25e917b1c6bd8f3a82bc28a8b62661c7b7ed"
+        }
+      ],
+      "origin": "dme-worker2",
+      "destinations": [
+        "dme-master",
+        "dme-worker1"
+      ],
+      "n_f": 2,
+      "required_bytes": 8461440
+    },
+    "p01.fits": {
+      "producer": "P01",
+      "consumers": [
+        "TABLE",
+        "ADD"
+      ],
+      "final": false,
+      "bytes": 4230720,
+      "checksum": "42150f0dbf956b406d31d4437ef555407a4b67d11a8bc268b8b1c17ae3b68abe",
+      "metadata": [
+        {
+          "bytes": 4230720,
+          "checksum": "42150f0dbf956b406d31d4437ef555407a4b67d11a8bc268b8b1c17ae3b68abe",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/merge_group_1.meta",
+          "sha256": "9a7becfe2cfb7fd63705f469326d25e917b1c6bd8f3a82bc28a8b62661c7b7ed"
+        }
+      ],
+      "origin": "dme-worker2",
+      "destinations": [
+        "dme-master",
+        "dme-worker1"
+      ],
+      "n_f": 2,
+      "required_bytes": 8461440
+    },
+    "template.hdr": {
+      "producer": null,
+      "consumers": [
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P05",
+        "P06",
+        "P07",
+        "P08",
+        "P09",
+        "P10",
+        "ADD"
+      ],
+      "final": false,
+      "bytes": 318,
+      "checksum": "1d74e357a013c0d17d85fbda912dec2ca519c6363ae4f79f1cd1234c1a45f06b",
+      "metadata": [
+        {
+          "bytes": 318,
+          "checksum": "1d74e357a013c0d17d85fbda912dec2ca519c6363ae4f79f1cd1234c1a45f06b",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_local_local_0_0.meta",
+          "sha256": "21bbb98e3fddd1f6413369bb48920673c9bf8b5167d439ea516b9ae85cd73cb7"
+        }
+      ],
+      "origin": "dme-master",
+      "destinations": [
+        "dme-worker1",
+        "dme-worker2"
+      ],
+      "n_f": 2,
+      "required_bytes": 636
+    },
+    "2mass-atlas-990214n-j1100244.fits": {
+      "producer": null,
+      "consumers": [
+        "P01"
+      ],
+      "final": false,
+      "bytes": 2111040,
+      "checksum": "d826db235bf08ec18720d65fb9be51053301c783c284ce4f16e54b3744b46af2",
+      "metadata": [
+        {
+          "bytes": 2111040,
+          "checksum": "d826db235bf08ec18720d65fb9be51053301c783c284ce4f16e54b3744b46af2",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_local_local_0_0.meta",
+          "sha256": "21bbb98e3fddd1f6413369bb48920673c9bf8b5167d439ea516b9ae85cd73cb7"
+        }
+      ],
+      "origin": "dme-master",
+      "destinations": [
+        "dme-worker2"
+      ],
+      "n_f": 1,
+      "required_bytes": 2111040
+    },
+    "p02.fits": {
+      "producer": "P02",
+      "consumers": [
+        "TABLE",
+        "ADD"
+      ],
+      "final": false,
+      "bytes": 4222080,
+      "checksum": "d320bf88f249797032755cbf7937e9a8546a82daa86b2710fa7e2661a0feae18",
+      "metadata": [
+        {
+          "bytes": 4222080,
+          "checksum": "d320bf88f249797032755cbf7937e9a8546a82daa86b2710fa7e2661a0feae18",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/merge_group_1.meta",
+          "sha256": "9a7becfe2cfb7fd63705f469326d25e917b1c6bd8f3a82bc28a8b62661c7b7ed"
+        }
+      ],
+      "origin": "dme-worker2",
+      "destinations": [
+        "dme-master",
+        "dme-worker1"
+      ],
+      "n_f": 2,
+      "required_bytes": 8444160
+    },
+    "p02_area.fits": {
+      "producer": "P02",
+      "consumers": [
+        "ADD"
+      ],
+      "final": false,
+      "bytes": 4222080,
+      "checksum": "04caa73b5d9c6764ed95016a5769401446175cd5550be4fb5f82a047caac001a",
+      "metadata": [
+        {
+          "bytes": 4222080,
+          "checksum": "04caa73b5d9c6764ed95016a5769401446175cd5550be4fb5f82a047caac001a",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/merge_group_1.meta",
+          "sha256": "9a7becfe2cfb7fd63705f469326d25e917b1c6bd8f3a82bc28a8b62661c7b7ed"
+        }
+      ],
+      "origin": "dme-worker2",
+      "destinations": [
+        "dme-master",
+        "dme-worker1"
+      ],
+      "n_f": 2,
+      "required_bytes": 8444160
+    },
+    "2mass-atlas-990214n-j1100256.fits": {
+      "producer": null,
+      "consumers": [
+        "P02"
+      ],
+      "final": false,
+      "bytes": 2111040,
+      "checksum": "fcc9c3489b2ff5d43dc956977216ce310a6684f06343dfee3ba6eead4570eb29",
+      "metadata": [
+        {
+          "bytes": 2111040,
+          "checksum": "fcc9c3489b2ff5d43dc956977216ce310a6684f06343dfee3ba6eead4570eb29",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_local_local_0_0.meta",
+          "sha256": "21bbb98e3fddd1f6413369bb48920673c9bf8b5167d439ea516b9ae85cd73cb7"
+        }
+      ],
+      "origin": "dme-master",
+      "destinations": [
+        "dme-worker2"
+      ],
+      "n_f": 1,
+      "required_bytes": 2111040
+    },
+    "2mass-atlas-990214n-j1110021.fits": {
+      "producer": null,
+      "consumers": [
+        "P03"
+      ],
+      "final": false,
+      "bytes": 2111040,
+      "checksum": "400998b4a1a36499ef43ed8552a5c51ecd35e8a5926aa3e96a1f2aa72f7eebbe",
+      "metadata": [
+        {
+          "bytes": 2111040,
+          "checksum": "400998b4a1a36499ef43ed8552a5c51ecd35e8a5926aa3e96a1f2aa72f7eebbe",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_local_local_0_0.meta",
+          "sha256": "21bbb98e3fddd1f6413369bb48920673c9bf8b5167d439ea516b9ae85cd73cb7"
+        }
+      ],
+      "origin": "dme-master",
+      "destinations": [
+        "dme-worker2"
+      ],
+      "n_f": 1,
+      "required_bytes": 2111040
+    },
+    "p03.fits": {
+      "producer": "P03",
+      "consumers": [
+        "TABLE",
+        "ADD"
+      ],
+      "final": false,
+      "bytes": 4199040,
+      "checksum": "8b78d0bc2d7efdc200b49aeceaf293c9bd8f0b613305c53c30bcce1a0ac81b00",
+      "metadata": [
+        {
+          "bytes": 4199040,
+          "checksum": "8b78d0bc2d7efdc200b49aeceaf293c9bd8f0b613305c53c30bcce1a0ac81b00",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P03.meta",
+          "sha256": "5755b9b3af18f0f19bd9ce2f2a39ca68a20e62ccfbe6a22364d8af9c2d4122b6"
+        }
+      ],
+      "origin": "dme-worker2",
+      "destinations": [
+        "dme-master",
+        "dme-worker1"
+      ],
+      "n_f": 2,
+      "required_bytes": 8398080
+    },
+    "p03_area.fits": {
+      "producer": "P03",
+      "consumers": [
+        "ADD"
+      ],
+      "final": false,
+      "bytes": 4199040,
+      "checksum": "2db6e627b9a2323433ebf00f912795cbc9e6f245ce3953f76bae03b8225eeabc",
+      "metadata": [
+        {
+          "bytes": 4199040,
+          "checksum": "2db6e627b9a2323433ebf00f912795cbc9e6f245ce3953f76bae03b8225eeabc",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P03.meta",
+          "sha256": "5755b9b3af18f0f19bd9ce2f2a39ca68a20e62ccfbe6a22364d8af9c2d4122b6"
+        }
+      ],
+      "origin": "dme-worker2",
+      "destinations": [
+        "dme-master",
+        "dme-worker1"
+      ],
+      "n_f": 2,
+      "required_bytes": 8398080
+    },
+    "p04_area.fits": {
+      "producer": "P04",
+      "consumers": [
+        "ADD"
+      ],
+      "final": false,
+      "bytes": 4199040,
+      "checksum": "a3dff3bffdc0f77b85dce0328f8cf6b920c649219239fbae2c3f1ac26bbf1155",
+      "metadata": [
+        {
+          "bytes": 4199040,
+          "checksum": "a3dff3bffdc0f77b85dce0328f8cf6b920c649219239fbae2c3f1ac26bbf1155",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P04.meta",
+          "sha256": "9ed7725aa42bd8e19febeecb91d6286c1d2971f133506d05d7af23bfb6362067"
+        }
+      ],
+      "origin": "dme-worker2",
+      "destinations": [
+        "dme-master",
+        "dme-worker1"
+      ],
+      "n_f": 2,
+      "required_bytes": 8398080
+    },
+    "2mass-atlas-990214n-j1110032.fits": {
+      "producer": null,
+      "consumers": [
+        "P04"
+      ],
+      "final": false,
+      "bytes": 2111040,
+      "checksum": "af8920e541cc5e1b773dde48d69e4973fa796aea45d5db62052d6127cd20786c",
+      "metadata": [
+        {
+          "bytes": 2111040,
+          "checksum": "af8920e541cc5e1b773dde48d69e4973fa796aea45d5db62052d6127cd20786c",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_local_local_0_0.meta",
+          "sha256": "21bbb98e3fddd1f6413369bb48920673c9bf8b5167d439ea516b9ae85cd73cb7"
+        }
+      ],
+      "origin": "dme-master",
+      "destinations": [
+        "dme-worker2"
+      ],
+      "n_f": 1,
+      "required_bytes": 2111040
+    },
+    "p04.fits": {
+      "producer": "P04",
+      "consumers": [
+        "TABLE",
+        "ADD"
+      ],
+      "final": false,
+      "bytes": 4199040,
+      "checksum": "b525791fbf0f7de45894417a4afe95ce587fb06b266261da40920503e2ef0f26",
+      "metadata": [
+        {
+          "bytes": 4199040,
+          "checksum": "b525791fbf0f7de45894417a4afe95ce587fb06b266261da40920503e2ef0f26",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P04.meta",
+          "sha256": "9ed7725aa42bd8e19febeecb91d6286c1d2971f133506d05d7af23bfb6362067"
+        }
+      ],
+      "origin": "dme-worker2",
+      "destinations": [
+        "dme-master",
+        "dme-worker1"
+      ],
+      "n_f": 2,
+      "required_bytes": 8398080
+    },
+    "p05_area.fits": {
+      "producer": "P05",
+      "consumers": [
+        "ADD"
+      ],
+      "final": false,
+      "bytes": 4190400,
+      "checksum": "d9cdee4842bb1140ed00fa99c23080857c4ef5593918fb410a88d047b3ae39ad",
+      "metadata": [
+        {
+          "bytes": 4190400,
+          "checksum": "d9cdee4842bb1140ed00fa99c23080857c4ef5593918fb410a88d047b3ae39ad",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P05.meta",
+          "sha256": "6af831f0a5b099657c49edf5ec818667c45a34880dc6486da714b99706b3e713"
+        }
+      ],
+      "origin": "dme-worker2",
+      "destinations": [
+        "dme-master",
+        "dme-worker1"
+      ],
+      "n_f": 2,
+      "required_bytes": 8380800
+    },
+    "p05.fits": {
+      "producer": "P05",
+      "consumers": [
+        "TABLE",
+        "ADD"
+      ],
+      "final": false,
+      "bytes": 4190400,
+      "checksum": "8e9dd5bddaaee4e49dd701575ae521e41b5111add67d1617028024b83bbdf1cd",
+      "metadata": [
+        {
+          "bytes": 4190400,
+          "checksum": "8e9dd5bddaaee4e49dd701575ae521e41b5111add67d1617028024b83bbdf1cd",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P05.meta",
+          "sha256": "6af831f0a5b099657c49edf5ec818667c45a34880dc6486da714b99706b3e713"
+        }
+      ],
+      "origin": "dme-worker2",
+      "destinations": [
+        "dme-master",
+        "dme-worker1"
+      ],
+      "n_f": 2,
+      "required_bytes": 8380800
+    },
+    "2mass-atlas-990214n-j1180244.fits": {
+      "producer": null,
+      "consumers": [
+        "P05"
+      ],
+      "final": false,
+      "bytes": 2111040,
+      "checksum": "cb5f208018d4472085fd15f1a410b293370ea79e0b0177dc527bc342db9ef69c",
+      "metadata": [
+        {
+          "bytes": 2111040,
+          "checksum": "cb5f208018d4472085fd15f1a410b293370ea79e0b0177dc527bc342db9ef69c",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_local_local_0_0.meta",
+          "sha256": "21bbb98e3fddd1f6413369bb48920673c9bf8b5167d439ea516b9ae85cd73cb7"
+        }
+      ],
+      "origin": "dme-master",
+      "destinations": [
+        "dme-worker2"
+      ],
+      "n_f": 1,
+      "required_bytes": 2111040
+    },
+    "2mass-atlas-990214n-j1180256.fits": {
+      "producer": null,
+      "consumers": [
+        "P06"
+      ],
+      "final": false,
+      "bytes": 2111040,
+      "checksum": "70e6580c714f0d7cf50be0da414dc57ab7602d0fecedb690237c013878f338f9",
+      "metadata": [
+        {
+          "bytes": 2111040,
+          "checksum": "70e6580c714f0d7cf50be0da414dc57ab7602d0fecedb690237c013878f338f9",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_local_local_0_0.meta",
+          "sha256": "21bbb98e3fddd1f6413369bb48920673c9bf8b5167d439ea516b9ae85cd73cb7"
+        }
+      ],
+      "origin": "dme-master",
+      "destinations": [
+        "dme-worker2"
+      ],
+      "n_f": 1,
+      "required_bytes": 2111040
+    },
+    "p06_area.fits": {
+      "producer": "P06",
+      "consumers": [
+        "ADD"
+      ],
+      "final": false,
+      "bytes": 4181760,
+      "checksum": "ab44e114ad9353c4f594d3d5e4627630c08d88b3f38790b6124c5556ec047fc2",
+      "metadata": [
+        {
+          "bytes": 4181760,
+          "checksum": "ab44e114ad9353c4f594d3d5e4627630c08d88b3f38790b6124c5556ec047fc2",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P06.meta",
+          "sha256": "e2dad6f528f4542719814c301e2b123bf64e72d0973ed3bbf06bdfc119d531dd"
+        }
+      ],
+      "origin": "dme-worker2",
+      "destinations": [
+        "dme-master",
+        "dme-worker1"
+      ],
+      "n_f": 2,
+      "required_bytes": 8363520
+    },
+    "p06.fits": {
+      "producer": "P06",
+      "consumers": [
+        "TABLE",
+        "ADD"
+      ],
+      "final": false,
+      "bytes": 4181760,
+      "checksum": "a68874e051ec7e5666b032cbe5555046de2226e6a0ba41ec747d391325f8eae4",
+      "metadata": [
+        {
+          "bytes": 4181760,
+          "checksum": "a68874e051ec7e5666b032cbe5555046de2226e6a0ba41ec747d391325f8eae4",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P06.meta",
+          "sha256": "e2dad6f528f4542719814c301e2b123bf64e72d0973ed3bbf06bdfc119d531dd"
+        }
+      ],
+      "origin": "dme-worker2",
+      "destinations": [
+        "dme-master",
+        "dme-worker1"
+      ],
+      "n_f": 2,
+      "required_bytes": 8363520
+    },
+    "p07_area.fits": {
+      "producer": "P07",
+      "consumers": [
+        "ADD"
+      ],
+      "final": false,
+      "bytes": 4210560,
+      "checksum": "d327f8c3fc0244bf8e821e50911e286fe604cc786801ea2a7ac12929114a17dc",
+      "metadata": [
+        {
+          "bytes": 4210560,
+          "checksum": "d327f8c3fc0244bf8e821e50911e286fe604cc786801ea2a7ac12929114a17dc",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P07.meta",
+          "sha256": "25d6aba8b2781d7ae92598a95be8390c8e453fa9fca810209b94635c0ba9aab8"
+        }
+      ],
+      "origin": "dme-worker2",
+      "destinations": [
+        "dme-master",
+        "dme-worker1"
+      ],
+      "n_f": 2,
+      "required_bytes": 8421120
+    },
+    "p07.fits": {
+      "producer": "P07",
+      "consumers": [
+        "TABLE",
+        "ADD"
+      ],
+      "final": false,
+      "bytes": 4210560,
+      "checksum": "6a993c427d381ee178a85d79c4979badc5d0d7e02b7efe34cfbdb0b1d14c28c2",
+      "metadata": [
+        {
+          "bytes": 4210560,
+          "checksum": "6a993c427d381ee178a85d79c4979badc5d0d7e02b7efe34cfbdb0b1d14c28c2",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P07.meta",
+          "sha256": "25d6aba8b2781d7ae92598a95be8390c8e453fa9fca810209b94635c0ba9aab8"
+        }
+      ],
+      "origin": "dme-worker2",
+      "destinations": [
+        "dme-master",
+        "dme-worker1"
+      ],
+      "n_f": 2,
+      "required_bytes": 8421120
+    },
+    "2mass-atlas-990214n-j1190021.fits": {
+      "producer": null,
+      "consumers": [
+        "P07"
+      ],
+      "final": false,
+      "bytes": 2111040,
+      "checksum": "4cc6a868f23e428e9181d368a28940e0759cb01ced27d28016f50be695d71e9d",
+      "metadata": [
+        {
+          "bytes": 2111040,
+          "checksum": "4cc6a868f23e428e9181d368a28940e0759cb01ced27d28016f50be695d71e9d",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_local_local_0_0.meta",
+          "sha256": "21bbb98e3fddd1f6413369bb48920673c9bf8b5167d439ea516b9ae85cd73cb7"
+        }
+      ],
+      "origin": "dme-master",
+      "destinations": [
+        "dme-worker2"
+      ],
+      "n_f": 1,
+      "required_bytes": 2111040
+    },
+    "p08_area.fits": {
+      "producer": "P08",
+      "consumers": [
+        "ADD"
+      ],
+      "final": false,
+      "bytes": 4210560,
+      "checksum": "9f44a090593efc3a0542c1548e7b9fcb01dd9d4d1cedbf72f8b031e0f48e1978",
+      "metadata": [
+        {
+          "bytes": 4210560,
+          "checksum": "9f44a090593efc3a0542c1548e7b9fcb01dd9d4d1cedbf72f8b031e0f48e1978",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P08.meta",
+          "sha256": "40d97b2fcec5f5bb628c505eca181d02593ca14f9ec5756340b705fb3b768df5"
+        }
+      ],
+      "origin": "dme-worker2",
+      "destinations": [
+        "dme-master",
+        "dme-worker1"
+      ],
+      "n_f": 2,
+      "required_bytes": 8421120
+    },
+    "p08.fits": {
+      "producer": "P08",
+      "consumers": [
+        "TABLE",
+        "ADD"
+      ],
+      "final": false,
+      "bytes": 4210560,
+      "checksum": "8a14148416aa5eaea48f8387a9ec7987df231a75679cf354a72d5fd0e7bb60bd",
+      "metadata": [
+        {
+          "bytes": 4210560,
+          "checksum": "8a14148416aa5eaea48f8387a9ec7987df231a75679cf354a72d5fd0e7bb60bd",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P08.meta",
+          "sha256": "40d97b2fcec5f5bb628c505eca181d02593ca14f9ec5756340b705fb3b768df5"
+        }
+      ],
+      "origin": "dme-worker2",
+      "destinations": [
+        "dme-master",
+        "dme-worker1"
+      ],
+      "n_f": 2,
+      "required_bytes": 8421120
+    },
+    "2mass-atlas-990214n-j1190032.fits": {
+      "producer": null,
+      "consumers": [
+        "P08"
+      ],
+      "final": false,
+      "bytes": 2111040,
+      "checksum": "d1ab766ef539ffdb18ba8e27ba5681f4ad0fac6095e9f1301acf48f13a87c430",
+      "metadata": [
+        {
+          "bytes": 2111040,
+          "checksum": "d1ab766ef539ffdb18ba8e27ba5681f4ad0fac6095e9f1301acf48f13a87c430",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_local_local_0_0.meta",
+          "sha256": "21bbb98e3fddd1f6413369bb48920673c9bf8b5167d439ea516b9ae85cd73cb7"
+        }
+      ],
+      "origin": "dme-master",
+      "destinations": [
+        "dme-worker2"
+      ],
+      "n_f": 1,
+      "required_bytes": 2111040
+    },
+    "p09.fits": {
+      "producer": "P09",
+      "consumers": [
+        "TABLE",
+        "ADD"
+      ],
+      "final": false,
+      "bytes": 4239360,
+      "checksum": "84faab941f26c1bc41c4db861a8ac0337e7b67728ebddb0f34593cd28c31a73e",
+      "metadata": [
+        {
+          "bytes": 4239360,
+          "checksum": "84faab941f26c1bc41c4db861a8ac0337e7b67728ebddb0f34593cd28c31a73e",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P09.meta",
+          "sha256": "5f104becf620cc519b6f47d985c31b1fd0d6c103eb5bbe7c2c45aa4590a2bf64"
+        }
+      ],
+      "origin": "dme-worker2",
+      "destinations": [
+        "dme-master",
+        "dme-worker1"
+      ],
+      "n_f": 2,
+      "required_bytes": 8478720
+    },
+    "p09_area.fits": {
+      "producer": "P09",
+      "consumers": [
+        "ADD"
+      ],
+      "final": false,
+      "bytes": 4239360,
+      "checksum": "8f682bcf7103d4b93d828de60f027e22cab21035d347d8f2ed24ee7fc17468a5",
+      "metadata": [
+        {
+          "bytes": 4239360,
+          "checksum": "8f682bcf7103d4b93d828de60f027e22cab21035d347d8f2ed24ee7fc17468a5",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P09.meta",
+          "sha256": "5f104becf620cc519b6f47d985c31b1fd0d6c103eb5bbe7c2c45aa4590a2bf64"
+        }
+      ],
+      "origin": "dme-worker2",
+      "destinations": [
+        "dme-master",
+        "dme-worker1"
+      ],
+      "n_f": 2,
+      "required_bytes": 8478720
+    },
+    "2mass-atlas-990214n-j1200244.fits": {
+      "producer": null,
+      "consumers": [
+        "P09"
+      ],
+      "final": false,
+      "bytes": 2111040,
+      "checksum": "90ffa97e362db065daf7bce45a3c78260b723c43e3c10fd48c6b3b20f6387bc4",
+      "metadata": [
+        {
+          "bytes": 2111040,
+          "checksum": "90ffa97e362db065daf7bce45a3c78260b723c43e3c10fd48c6b3b20f6387bc4",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_local_local_0_0.meta",
+          "sha256": "21bbb98e3fddd1f6413369bb48920673c9bf8b5167d439ea516b9ae85cd73cb7"
+        }
+      ],
+      "origin": "dme-master",
+      "destinations": [
+        "dme-worker2"
+      ],
+      "n_f": 1,
+      "required_bytes": 2111040
+    },
+    "p10.fits": {
+      "producer": "P10",
+      "consumers": [
+        "TABLE",
+        "ADD"
+      ],
+      "final": false,
+      "bytes": 4222080,
+      "checksum": "8eab008bd3caaeda0915263803c45a2cc0a23b05529444582a5e4c4d14cf86a6",
+      "metadata": [
+        {
+          "bytes": 4222080,
+          "checksum": "8eab008bd3caaeda0915263803c45a2cc0a23b05529444582a5e4c4d14cf86a6",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P10.meta",
+          "sha256": "c3f675192715013650f0feda9894b453640ae7ab7d4dd95c2558fd2daad73d63"
+        }
+      ],
+      "origin": "dme-worker2",
+      "destinations": [
+        "dme-master",
+        "dme-worker1"
+      ],
+      "n_f": 2,
+      "required_bytes": 8444160
+    },
+    "2mass-atlas-990214n-j1200256.fits": {
+      "producer": null,
+      "consumers": [
+        "P10"
+      ],
+      "final": false,
+      "bytes": 2111040,
+      "checksum": "6dbb9c96a163851d83f0632e2fc2c4e7718d6f14ced2c1baafc8e6fd2e245ae4",
+      "metadata": [
+        {
+          "bytes": 2111040,
+          "checksum": "6dbb9c96a163851d83f0632e2fc2c4e7718d6f14ced2c1baafc8e6fd2e245ae4",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_local_local_0_0.meta",
+          "sha256": "21bbb98e3fddd1f6413369bb48920673c9bf8b5167d439ea516b9ae85cd73cb7"
+        }
+      ],
+      "origin": "dme-master",
+      "destinations": [
+        "dme-worker2"
+      ],
+      "n_f": 1,
+      "required_bytes": 2111040
+    },
+    "p10_area.fits": {
+      "producer": "P10",
+      "consumers": [
+        "ADD"
+      ],
+      "final": false,
+      "bytes": 4222080,
+      "checksum": "495a04d7d7e20295e441f043d7c427f7ecfee63364846a140cb4977faba2f3f5",
+      "metadata": [
+        {
+          "bytes": 4222080,
+          "checksum": "495a04d7d7e20295e441f043d7c427f7ecfee63364846a140cb4977faba2f3f5",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P10.meta",
+          "sha256": "c3f675192715013650f0feda9894b453640ae7ab7d4dd95c2558fd2daad73d63"
+        }
+      ],
+      "origin": "dme-worker2",
+      "destinations": [
+        "dme-master",
+        "dme-worker1"
+      ],
+      "n_f": 2,
+      "required_bytes": 8444160
+    },
+    "images.tbl": {
+      "producer": "TABLE",
+      "consumers": [
+        "ADD"
+      ],
+      "final": false,
+      "bytes": 6284,
+      "checksum": "42b02263df68429248f160ff75f84d92f361b2967980d594c0e25396f890c697",
+      "metadata": [
+        {
+          "bytes": 6284,
+          "checksum": "42b02263df68429248f160ff75f84d92f361b2967980d594c0e25396f890c697",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_TABLE.meta",
+          "sha256": "706b7bf678deb7ddf70f31b16f55230b959daf3c0aa8732fa9a5bd9b2494c3b7"
+        }
+      ],
+      "origin": "dme-worker1",
+      "destinations": [],
+      "n_f": 0,
+      "required_bytes": 0
+    },
+    "m101.fits": {
+      "producer": "ADD",
+      "consumers": [],
+      "final": true,
+      "bytes": 39744000,
+      "checksum": "8129a53e6f4e922a958df215c9103d7431a534c60154746452683f19f82e1eca",
+      "metadata": [
+        {
+          "bytes": 39744000,
+          "checksum": "8129a53e6f4e922a958df215c9103d7431a534c60154746452683f19f82e1eca",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_ADD.meta",
+          "sha256": "b961f4fc260aa88a4afe34216a48aeaffac3516d6d2333341e8b61b6f80c6789"
+        }
+      ],
+      "origin": "dme-worker1",
+      "destinations": [
+        "dme-master"
+      ],
+      "n_f": 1,
+      "required_bytes": 39744000
+    },
+    "m101_area.fits": {
+      "producer": "ADD",
+      "consumers": [],
+      "final": true,
+      "bytes": 39744000,
+      "checksum": "5e7e93bc193e7b245171eb8df1985d7c8f4bd3dc778a88ccf5d362f2dcba5db2",
+      "metadata": [
+        {
+          "bytes": 39744000,
+          "checksum": "5e7e93bc193e7b245171eb8df1985d7c8f4bd3dc778a88ccf5d362f2dcba5db2",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_ADD.meta",
+          "sha256": "b961f4fc260aa88a4afe34216a48aeaffac3516d6d2333341e8b61b6f80c6789"
+        }
+      ],
+      "origin": "dme-worker1",
+      "destinations": [
+        "dme-master"
+      ],
+      "n_f": 1,
+      "required_bytes": 39744000
+    }
+  },
+  "task_to_node": {
+    "ADD": "campaign_task_ADD",
+    "P03": "campaign_task_P03",
+    "P04": "campaign_task_P04",
+    "P05": "campaign_task_P05",
+    "P06": "campaign_task_P06",
+    "P07": "campaign_task_P07",
+    "P08": "campaign_task_P08",
+    "P09": "campaign_task_P09",
+    "P10": "campaign_task_P10",
+    "TABLE": "campaign_task_TABLE",
+    "P01": "merge_group_1",
+    "P02": "merge_group_1"
+  },
+  "jobs": [
+    {
+      "node": "campaign_task_ADD",
+      "members": [
+        "ADD"
+      ],
+      "worker": "dme-worker1",
+      "global_job_id": "dme-master#1887.0#1794437616",
+      "counts": {
+        "JobRunCount": 1,
+        "NumJobStarts": 1,
+        "NumShadowStarts": 1,
+        "NumInputTransferStarts": 1,
+        "NumOutputTransferStarts": 1
+      },
+      "event_counts": {
+        "000": 1,
+        "001": 1,
+        "005": 1,
+        "016": 1
+      }
+    },
+    {
+      "node": "campaign_task_P03",
+      "members": [
+        "P03"
+      ],
+      "worker": "dme-worker2",
+      "global_job_id": "dme-master#1884.0#1794437441",
+      "counts": {
+        "JobRunCount": 1,
+        "NumJobStarts": 1,
+        "NumShadowStarts": 1,
+        "NumInputTransferStarts": 1,
+        "NumOutputTransferStarts": 1
+      },
+      "event_counts": {
+        "000": 1,
+        "001": 1,
+        "005": 1,
+        "016": 1
+      }
+    },
+    {
+      "node": "campaign_task_P04",
+      "members": [
+        "P04"
+      ],
+      "worker": "dme-worker2",
+      "global_job_id": "dme-master#1885.0#1794437441",
+      "counts": {
+        "JobRunCount": 1,
+        "NumJobStarts": 1,
+        "NumShadowStarts": 1,
+        "NumInputTransferStarts": 1,
+        "NumOutputTransferStarts": 1
+      },
+      "event_counts": {
+        "000": 1,
+        "001": 1,
+        "005": 1,
+        "016": 1
+      }
+    },
+    {
+      "node": "campaign_task_P05",
+      "members": [
+        "P05"
+      ],
+      "worker": "dme-worker2",
+      "global_job_id": "dme-master#1882.0#1794437441",
+      "counts": {
+        "JobRunCount": 1,
+        "NumJobStarts": 1,
+        "NumShadowStarts": 1,
+        "NumInputTransferStarts": 1,
+        "NumOutputTransferStarts": 1
+      },
+      "event_counts": {
+        "000": 1,
+        "001": 1,
+        "005": 1,
+        "016": 1
+      }
+    },
+    {
+      "node": "campaign_task_P06",
+      "members": [
+        "P06"
+      ],
+      "worker": "dme-worker2",
+      "global_job_id": "dme-master#1883.0#1794437441",
+      "counts": {
+        "JobRunCount": 1,
+        "NumJobStarts": 1,
+        "NumShadowStarts": 1,
+        "NumInputTransferStarts": 1,
+        "NumOutputTransferStarts": 1
+      },
+      "event_counts": {
+        "000": 1,
+        "001": 1,
+        "005": 1,
+        "016": 1
+      }
+    },
+    {
+      "node": "campaign_task_P07",
+      "members": [
+        "P07"
+      ],
+      "worker": "dme-worker2",
+      "global_job_id": "dme-master#1879.0#1794437441",
+      "counts": {
+        "JobRunCount": 1,
+        "NumJobStarts": 1,
+        "NumShadowStarts": 1,
+        "NumInputTransferStarts": 1,
+        "NumOutputTransferStarts": 1
+      },
+      "event_counts": {
+        "000": 1,
+        "001": 1,
+        "005": 1,
+        "016": 1
+      }
+    },
+    {
+      "node": "campaign_task_P08",
+      "members": [
+        "P08"
+      ],
+      "worker": "dme-worker2",
+      "global_job_id": "dme-master#1881.0#1794437441",
+      "counts": {
+        "JobRunCount": 1,
+        "NumJobStarts": 1,
+        "NumShadowStarts": 1,
+        "NumInputTransferStarts": 1,
+        "NumOutputTransferStarts": 1
+      },
+      "event_counts": {
+        "000": 1,
+        "001": 1,
+        "005": 1,
+        "016": 1
+      }
+    },
+    {
+      "node": "campaign_task_P09",
+      "members": [
+        "P09"
+      ],
+      "worker": "dme-worker2",
+      "global_job_id": "dme-master#1878.0#1794437441",
+      "counts": {
+        "JobRunCount": 1,
+        "NumJobStarts": 1,
+        "NumShadowStarts": 1,
+        "NumInputTransferStarts": 1,
+        "NumOutputTransferStarts": 1
+      },
+      "event_counts": {
+        "000": 1,
+        "001": 1,
+        "005": 1,
+        "016": 1
+      }
+    },
+    {
+      "node": "campaign_task_P10",
+      "members": [
+        "P10"
+      ],
+      "worker": "dme-worker2",
+      "global_job_id": "dme-master#1877.0#1794437441",
+      "counts": {
+        "JobRunCount": 1,
+        "NumJobStarts": 1,
+        "NumShadowStarts": 1,
+        "NumInputTransferStarts": 1,
+        "NumOutputTransferStarts": 1
+      },
+      "event_counts": {
+        "000": 1,
+        "001": 1,
+        "005": 1,
+        "016": 1
+      }
+    },
+    {
+      "node": "campaign_task_TABLE",
+      "members": [
+        "TABLE"
+      ],
+      "worker": "dme-worker1",
+      "global_job_id": "dme-master#1886.0#1794437581",
+      "counts": {
+        "JobRunCount": 1,
+        "NumJobStarts": 1,
+        "NumShadowStarts": 1,
+        "NumInputTransferStarts": 1,
+        "NumOutputTransferStarts": 1
+      },
+      "event_counts": {
+        "000": 1,
+        "001": 1,
+        "005": 1,
+        "016": 1
+      }
+    },
+    {
+      "node": "merge_group_1",
+      "members": [
+        "P01",
+        "P02"
+      ],
+      "worker": "dme-worker2",
+      "global_job_id": "dme-master#1880.0#1794437441",
+      "counts": {
+        "JobRunCount": 1,
+        "NumJobStarts": 1,
+        "NumShadowStarts": 1,
+        "NumInputTransferStarts": 1,
+        "NumOutputTransferStarts": 1
+      },
+      "event_counts": {
+        "000": 1,
+        "001": 1,
+        "005": 1,
+        "016": 1
+      }
+    }
+  ],
+  "directions": [
+    {
+      "node": "campaign_task_ADD",
+      "direction": "input",
+      "raw_contract": [
+        "template.hdr",
+        "campaign_task",
+        "p02_area.fits",
+        "p01_area.fits",
+        "p04_area.fits",
+        "p02.fits",
+        "p09_area.fits",
+        "p05.fits",
+        "p03_area.fits",
+        "p08_area.fits",
+        "p08.fits",
+        "p10_area.fits",
+        "p06_area.fits",
+        "p03.fits",
+        "images.tbl",
+        "p10.fits",
+        "p06.fits",
+        "p07_area.fits",
+        "p07.fits",
+        "p05_area.fits",
+        "p01.fits",
+        "p09.fits",
+        "p04.fits",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P10.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_TABLE.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P09.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/merge_group_1.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P07.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P08.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P05.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_local_local_0_0.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P06.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P03.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P04.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-lite-common.sh"
+      ],
+      "unique_contract": [
+        "template.hdr",
+        "campaign_task",
+        "p02_area.fits",
+        "p01_area.fits",
+        "p04_area.fits",
+        "p02.fits",
+        "p09_area.fits",
+        "p05.fits",
+        "p03_area.fits",
+        "p08_area.fits",
+        "p08.fits",
+        "p10_area.fits",
+        "p06_area.fits",
+        "p03.fits",
+        "images.tbl",
+        "p10.fits",
+        "p06.fits",
+        "p07_area.fits",
+        "p07.fits",
+        "p05_area.fits",
+        "p01.fits",
+        "p09.fits",
+        "p04.fits",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P10.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_TABLE.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P09.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/merge_group_1.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P07.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P08.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P05.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_local_local_0_0.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P06.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P03.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P04.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-lite-common.sh"
+      ],
+      "identical_duplicate_tokens": 0,
+      "scientific_files": [
+        "template.hdr",
+        "p02_area.fits",
+        "p01_area.fits",
+        "p04_area.fits",
+        "p02.fits",
+        "p09_area.fits",
+        "p05.fits",
+        "p03_area.fits",
+        "p08_area.fits",
+        "p08.fits",
+        "p10_area.fits",
+        "p06_area.fits",
+        "p03.fits",
+        "images.tbl",
+        "p10.fits",
+        "p06.fits",
+        "p07_area.fits",
+        "p07.fits",
+        "p05_area.fits",
+        "p01.fits",
+        "p09.fits",
+        "p04.fits"
+      ],
+      "scientific_bytes": 84217802,
+      "auxiliary_bytes": 26869427,
+      "native_bytes": 111087229,
+      "native_last_bytes": 111087229,
+      "native_count": 38,
+      "expected_count": 38,
+      "exact": true,
+      "residual": 0,
+      "auxiliaries": [
+        {
+          "contract_path": "campaign_task",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/scratch/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/campaign_task",
+          "bytes": 8575333,
+          "sha256": "c1023c1a4124dc5f557a1754da2db096f09f21638960b3d4e35c9c9b9b72b127"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+          "bytes": 18251217,
+          "sha256": "b1d82cc0c6b2c26bfa308c51e7eeb661a48691af2355ad4755f0c5262d5e4cc1"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P10.meta",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P10.meta",
+          "bytes": 667,
+          "sha256": "c3f675192715013650f0feda9894b453640ae7ab7d4dd95c2558fd2daad73d63"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+          "bytes": 341,
+          "sha256": "a7fc1b1bfba8f0c59c92ea99b9b5be92ab13303d3873d1cad684176dcb46299f"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_TABLE.meta",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_TABLE.meta",
+          "bytes": 330,
+          "sha256": "706b7bf678deb7ddf70f31b16f55230b959daf3c0aa8732fa9a5bd9b2494c3b7"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P09.meta",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P09.meta",
+          "bytes": 667,
+          "sha256": "5f104becf620cc519b6f47d985c31b1fd0d6c103eb5bbe7c2c45aa4590a2bf64"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/merge_group_1.meta",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/merge_group_1.meta",
+          "bytes": 1332,
+          "sha256": "9a7becfe2cfb7fd63705f469326d25e917b1c6bd8f3a82bc28a8b62661c7b7ed"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P07.meta",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P07.meta",
+          "bytes": 667,
+          "sha256": "25d6aba8b2781d7ae92598a95be8390c8e453fa9fca810209b94635c0ba9aab8"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P08.meta",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P08.meta",
+          "bytes": 667,
+          "sha256": "40d97b2fcec5f5bb628c505eca181d02593ca14f9ec5756340b705fb3b768df5"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P05.meta",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P05.meta",
+          "bytes": 667,
+          "sha256": "6af831f0a5b099657c49edf5ec818667c45a34880dc6486da714b99706b3e713"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_local_local_0_0.meta",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_local_local_0_0.meta",
+          "bytes": 3924,
+          "sha256": "21bbb98e3fddd1f6413369bb48920673c9bf8b5167d439ea516b9ae85cd73cb7"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P06.meta",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P06.meta",
+          "bytes": 667,
+          "sha256": "e2dad6f528f4542719814c301e2b123bf64e72d0973ed3bbf06bdfc119d531dd"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P03.meta",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P03.meta",
+          "bytes": 667,
+          "sha256": "5755b9b3af18f0f19bd9ce2f2a39ca68a20e62ccfbe6a22364d8af9c2d4122b6"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P04.meta",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P04.meta",
+          "bytes": 667,
+          "sha256": "9ed7725aa42bd8e19febeecb91d6286c1d2971f133506d05d7af23bfb6362067"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-lite-common.sh",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-lite-common.sh",
+          "bytes": 28862,
+          "sha256": "48cde664b6af1939ecbe9622456b1ddd32d91c2db7373a1e98e833fb2aa0d9a2"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_ADD.sh",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_ADD.sh",
+          "bytes": 2752,
+          "sha256": "03e880f12f6bae2645fe9cde58ab765b7d1f4c1de1f88b073e80a19995b8b080"
+        }
+      ]
+    },
+    {
+      "node": "campaign_task_ADD",
+      "direction": "output",
+      "raw_contract": [
+        "m101.fits",
+        "m101_area.fits"
+      ],
+      "unique_contract": [
+        "m101.fits",
+        "m101_area.fits"
+      ],
+      "identical_duplicate_tokens": 0,
+      "scientific_files": [
+        "m101.fits",
+        "m101_area.fits"
+      ],
+      "scientific_bytes": 79488000,
+      "auxiliary_bytes": 10804,
+      "native_bytes": 79498804,
+      "native_last_bytes": 79498804,
+      "native_count": 4,
+      "expected_count": 4,
+      "exact": true,
+      "residual": 0,
+      "auxiliaries": [
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001//00/00/campaign_task_ADD.out",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_ADD.out.000",
+          "bytes": 10061,
+          "sha256": "a49ad65874ed044f5893c3fdbb99780119fdad734217cf3bacc8637f174ff029"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001//00/00/campaign_task_ADD.err",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_ADD.err.000",
+          "bytes": 743,
+          "sha256": "1ec788d1370494e3fe5edf6cd44f0dd1def5a72664ba7fd20cb0216fcab49b2c"
+        }
+      ]
+    },
+    {
+      "node": "campaign_task_P03",
+      "direction": "input",
+      "raw_contract": [
+        "template.hdr",
+        "2mass-atlas-990214n-j1110021.fits",
+        "campaign_task",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_local_local_0_0.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-lite-common.sh"
+      ],
+      "unique_contract": [
+        "template.hdr",
+        "2mass-atlas-990214n-j1110021.fits",
+        "campaign_task",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_local_local_0_0.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-lite-common.sh"
+      ],
+      "identical_duplicate_tokens": 0,
+      "scientific_files": [
+        "template.hdr",
+        "2mass-atlas-990214n-j1110021.fits"
+      ],
+      "scientific_bytes": 2111358,
+      "auxiliary_bytes": 26861650,
+      "native_bytes": 28973008,
+      "native_last_bytes": 28973008,
+      "native_count": 8,
+      "expected_count": 8,
+      "exact": true,
+      "residual": 0,
+      "auxiliaries": [
+        {
+          "contract_path": "campaign_task",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/scratch/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/campaign_task",
+          "bytes": 8575333,
+          "sha256": "c1023c1a4124dc5f557a1754da2db096f09f21638960b3d4e35c9c9b9b72b127"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+          "bytes": 18251217,
+          "sha256": "b1d82cc0c6b2c26bfa308c51e7eeb661a48691af2355ad4755f0c5262d5e4cc1"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+          "bytes": 341,
+          "sha256": "a7fc1b1bfba8f0c59c92ea99b9b5be92ab13303d3873d1cad684176dcb46299f"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_local_local_0_0.meta",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_local_local_0_0.meta",
+          "bytes": 3924,
+          "sha256": "21bbb98e3fddd1f6413369bb48920673c9bf8b5167d439ea516b9ae85cd73cb7"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-lite-common.sh",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-lite-common.sh",
+          "bytes": 28862,
+          "sha256": "48cde664b6af1939ecbe9622456b1ddd32d91c2db7373a1e98e833fb2aa0d9a2"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P03.sh",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P03.sh",
+          "bytes": 1973,
+          "sha256": "a202fc07b7d0c0689dea0affe7917e40cd9ee1c2913619265e674dc1ed33e2ca"
+        }
+      ]
+    },
+    {
+      "node": "campaign_task_P03",
+      "direction": "output",
+      "raw_contract": [
+        "p03.fits",
+        "p03_area.fits"
+      ],
+      "unique_contract": [
+        "p03.fits",
+        "p03_area.fits"
+      ],
+      "identical_duplicate_tokens": 0,
+      "scientific_files": [
+        "p03.fits",
+        "p03_area.fits"
+      ],
+      "scientific_bytes": 8398080,
+      "auxiliary_bytes": 6903,
+      "native_bytes": 8404983,
+      "native_last_bytes": 8404983,
+      "native_count": 4,
+      "expected_count": 4,
+      "exact": true,
+      "residual": 0,
+      "auxiliaries": [
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001//00/00/campaign_task_P03.out",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P03.out.000",
+          "bytes": 6160,
+          "sha256": "4b2520b130f1372cc801c183eebd86645f09facdef34006fc9101fe2cff869cc"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001//00/00/campaign_task_P03.err",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P03.err.000",
+          "bytes": 743,
+          "sha256": "cf46fc1475ba36a1efdaaf30fc7a9bdc29d787a9af5476ab9ebbea7031ef2b92"
+        }
+      ]
+    },
+    {
+      "node": "campaign_task_P04",
+      "direction": "input",
+      "raw_contract": [
+        "template.hdr",
+        "campaign_task",
+        "2mass-atlas-990214n-j1110032.fits",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_local_local_0_0.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-lite-common.sh"
+      ],
+      "unique_contract": [
+        "template.hdr",
+        "campaign_task",
+        "2mass-atlas-990214n-j1110032.fits",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_local_local_0_0.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-lite-common.sh"
+      ],
+      "identical_duplicate_tokens": 0,
+      "scientific_files": [
+        "template.hdr",
+        "2mass-atlas-990214n-j1110032.fits"
+      ],
+      "scientific_bytes": 2111358,
+      "auxiliary_bytes": 26861650,
+      "native_bytes": 28973008,
+      "native_last_bytes": 28973008,
+      "native_count": 8,
+      "expected_count": 8,
+      "exact": true,
+      "residual": 0,
+      "auxiliaries": [
+        {
+          "contract_path": "campaign_task",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/scratch/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/campaign_task",
+          "bytes": 8575333,
+          "sha256": "c1023c1a4124dc5f557a1754da2db096f09f21638960b3d4e35c9c9b9b72b127"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+          "bytes": 18251217,
+          "sha256": "b1d82cc0c6b2c26bfa308c51e7eeb661a48691af2355ad4755f0c5262d5e4cc1"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+          "bytes": 341,
+          "sha256": "a7fc1b1bfba8f0c59c92ea99b9b5be92ab13303d3873d1cad684176dcb46299f"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_local_local_0_0.meta",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_local_local_0_0.meta",
+          "bytes": 3924,
+          "sha256": "21bbb98e3fddd1f6413369bb48920673c9bf8b5167d439ea516b9ae85cd73cb7"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-lite-common.sh",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-lite-common.sh",
+          "bytes": 28862,
+          "sha256": "48cde664b6af1939ecbe9622456b1ddd32d91c2db7373a1e98e833fb2aa0d9a2"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P04.sh",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P04.sh",
+          "bytes": 1973,
+          "sha256": "2a527418cf8457a742365ec4b842718a820d17123fbf634557aa67adad9543a3"
+        }
+      ]
+    },
+    {
+      "node": "campaign_task_P04",
+      "direction": "output",
+      "raw_contract": [
+        "p04_area.fits",
+        "p04.fits"
+      ],
+      "unique_contract": [
+        "p04_area.fits",
+        "p04.fits"
+      ],
+      "identical_duplicate_tokens": 0,
+      "scientific_files": [
+        "p04_area.fits",
+        "p04.fits"
+      ],
+      "scientific_bytes": 8398080,
+      "auxiliary_bytes": 6903,
+      "native_bytes": 8404983,
+      "native_last_bytes": 8404983,
+      "native_count": 4,
+      "expected_count": 4,
+      "exact": true,
+      "residual": 0,
+      "auxiliaries": [
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001//00/00/campaign_task_P04.out",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P04.out.000",
+          "bytes": 6160,
+          "sha256": "f6cc94a544e110ba6e4fe2c1beeb8efe5962fee5afee8c9a76df6524a0ea69e2"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001//00/00/campaign_task_P04.err",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P04.err.000",
+          "bytes": 743,
+          "sha256": "de0784e52d9ade39d86210ec73a0839e9774334c1bf27cc8394a9bfcd6c8ebfa"
+        }
+      ]
+    },
+    {
+      "node": "campaign_task_P05",
+      "direction": "input",
+      "raw_contract": [
+        "template.hdr",
+        "2mass-atlas-990214n-j1180244.fits",
+        "campaign_task",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_local_local_0_0.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-lite-common.sh"
+      ],
+      "unique_contract": [
+        "template.hdr",
+        "2mass-atlas-990214n-j1180244.fits",
+        "campaign_task",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_local_local_0_0.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-lite-common.sh"
+      ],
+      "identical_duplicate_tokens": 0,
+      "scientific_files": [
+        "template.hdr",
+        "2mass-atlas-990214n-j1180244.fits"
+      ],
+      "scientific_bytes": 2111358,
+      "auxiliary_bytes": 26861650,
+      "native_bytes": 28973008,
+      "native_last_bytes": 28973008,
+      "native_count": 8,
+      "expected_count": 8,
+      "exact": true,
+      "residual": 0,
+      "auxiliaries": [
+        {
+          "contract_path": "campaign_task",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/scratch/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/campaign_task",
+          "bytes": 8575333,
+          "sha256": "c1023c1a4124dc5f557a1754da2db096f09f21638960b3d4e35c9c9b9b72b127"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+          "bytes": 18251217,
+          "sha256": "b1d82cc0c6b2c26bfa308c51e7eeb661a48691af2355ad4755f0c5262d5e4cc1"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+          "bytes": 341,
+          "sha256": "a7fc1b1bfba8f0c59c92ea99b9b5be92ab13303d3873d1cad684176dcb46299f"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_local_local_0_0.meta",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_local_local_0_0.meta",
+          "bytes": 3924,
+          "sha256": "21bbb98e3fddd1f6413369bb48920673c9bf8b5167d439ea516b9ae85cd73cb7"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-lite-common.sh",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-lite-common.sh",
+          "bytes": 28862,
+          "sha256": "48cde664b6af1939ecbe9622456b1ddd32d91c2db7373a1e98e833fb2aa0d9a2"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P05.sh",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P05.sh",
+          "bytes": 1973,
+          "sha256": "43ef13f772efdfc462536a21ceb11660298db84abbd2abd493faf5cc223f4f85"
+        }
+      ]
+    },
+    {
+      "node": "campaign_task_P05",
+      "direction": "output",
+      "raw_contract": [
+        "p05_area.fits",
+        "p05.fits"
+      ],
+      "unique_contract": [
+        "p05_area.fits",
+        "p05.fits"
+      ],
+      "identical_duplicate_tokens": 0,
+      "scientific_files": [
+        "p05_area.fits",
+        "p05.fits"
+      ],
+      "scientific_bytes": 8380800,
+      "auxiliary_bytes": 6903,
+      "native_bytes": 8387703,
+      "native_last_bytes": 8387703,
+      "native_count": 4,
+      "expected_count": 4,
+      "exact": true,
+      "residual": 0,
+      "auxiliaries": [
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001//00/00/campaign_task_P05.out",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P05.out.000",
+          "bytes": 6160,
+          "sha256": "3cb74f2b499d322adac19f6629229f9ccdf2b3b0cc265b7460b131fc3b5d7711"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001//00/00/campaign_task_P05.err",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P05.err.000",
+          "bytes": 743,
+          "sha256": "0de8566d98458c2c1fa8189175113cf2b558b916cfb091ca5bab61fde83b7eca"
+        }
+      ]
+    },
+    {
+      "node": "campaign_task_P06",
+      "direction": "input",
+      "raw_contract": [
+        "template.hdr",
+        "campaign_task",
+        "2mass-atlas-990214n-j1180256.fits",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_local_local_0_0.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-lite-common.sh"
+      ],
+      "unique_contract": [
+        "template.hdr",
+        "campaign_task",
+        "2mass-atlas-990214n-j1180256.fits",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_local_local_0_0.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-lite-common.sh"
+      ],
+      "identical_duplicate_tokens": 0,
+      "scientific_files": [
+        "template.hdr",
+        "2mass-atlas-990214n-j1180256.fits"
+      ],
+      "scientific_bytes": 2111358,
+      "auxiliary_bytes": 26861650,
+      "native_bytes": 28973008,
+      "native_last_bytes": 28973008,
+      "native_count": 8,
+      "expected_count": 8,
+      "exact": true,
+      "residual": 0,
+      "auxiliaries": [
+        {
+          "contract_path": "campaign_task",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/scratch/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/campaign_task",
+          "bytes": 8575333,
+          "sha256": "c1023c1a4124dc5f557a1754da2db096f09f21638960b3d4e35c9c9b9b72b127"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+          "bytes": 18251217,
+          "sha256": "b1d82cc0c6b2c26bfa308c51e7eeb661a48691af2355ad4755f0c5262d5e4cc1"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+          "bytes": 341,
+          "sha256": "a7fc1b1bfba8f0c59c92ea99b9b5be92ab13303d3873d1cad684176dcb46299f"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_local_local_0_0.meta",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_local_local_0_0.meta",
+          "bytes": 3924,
+          "sha256": "21bbb98e3fddd1f6413369bb48920673c9bf8b5167d439ea516b9ae85cd73cb7"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-lite-common.sh",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-lite-common.sh",
+          "bytes": 28862,
+          "sha256": "48cde664b6af1939ecbe9622456b1ddd32d91c2db7373a1e98e833fb2aa0d9a2"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P06.sh",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P06.sh",
+          "bytes": 1973,
+          "sha256": "706a1bded5d8094e1a5d594249543eeea517e3cc08d65b9dffc52aee8ebb7047"
+        }
+      ]
+    },
+    {
+      "node": "campaign_task_P06",
+      "direction": "output",
+      "raw_contract": [
+        "p06_area.fits",
+        "p06.fits"
+      ],
+      "unique_contract": [
+        "p06_area.fits",
+        "p06.fits"
+      ],
+      "identical_duplicate_tokens": 0,
+      "scientific_files": [
+        "p06_area.fits",
+        "p06.fits"
+      ],
+      "scientific_bytes": 8363520,
+      "auxiliary_bytes": 6903,
+      "native_bytes": 8370423,
+      "native_last_bytes": 8370423,
+      "native_count": 4,
+      "expected_count": 4,
+      "exact": true,
+      "residual": 0,
+      "auxiliaries": [
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001//00/00/campaign_task_P06.out",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P06.out.000",
+          "bytes": 6160,
+          "sha256": "ef9bbbc242770183565ee428ab0663e2c3638f890fa1a35c38d140068a605178"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001//00/00/campaign_task_P06.err",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P06.err.000",
+          "bytes": 743,
+          "sha256": "93355f7296a25a8c527fe9ee953f04888f7a73218d3eebdf469c91088efd0395"
+        }
+      ]
+    },
+    {
+      "node": "campaign_task_P07",
+      "direction": "input",
+      "raw_contract": [
+        "template.hdr",
+        "2mass-atlas-990214n-j1190021.fits",
+        "campaign_task",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_local_local_0_0.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-lite-common.sh"
+      ],
+      "unique_contract": [
+        "template.hdr",
+        "2mass-atlas-990214n-j1190021.fits",
+        "campaign_task",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_local_local_0_0.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-lite-common.sh"
+      ],
+      "identical_duplicate_tokens": 0,
+      "scientific_files": [
+        "template.hdr",
+        "2mass-atlas-990214n-j1190021.fits"
+      ],
+      "scientific_bytes": 2111358,
+      "auxiliary_bytes": 26861650,
+      "native_bytes": 28973008,
+      "native_last_bytes": 28973008,
+      "native_count": 8,
+      "expected_count": 8,
+      "exact": true,
+      "residual": 0,
+      "auxiliaries": [
+        {
+          "contract_path": "campaign_task",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/scratch/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/campaign_task",
+          "bytes": 8575333,
+          "sha256": "c1023c1a4124dc5f557a1754da2db096f09f21638960b3d4e35c9c9b9b72b127"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+          "bytes": 18251217,
+          "sha256": "b1d82cc0c6b2c26bfa308c51e7eeb661a48691af2355ad4755f0c5262d5e4cc1"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+          "bytes": 341,
+          "sha256": "a7fc1b1bfba8f0c59c92ea99b9b5be92ab13303d3873d1cad684176dcb46299f"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_local_local_0_0.meta",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_local_local_0_0.meta",
+          "bytes": 3924,
+          "sha256": "21bbb98e3fddd1f6413369bb48920673c9bf8b5167d439ea516b9ae85cd73cb7"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-lite-common.sh",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-lite-common.sh",
+          "bytes": 28862,
+          "sha256": "48cde664b6af1939ecbe9622456b1ddd32d91c2db7373a1e98e833fb2aa0d9a2"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P07.sh",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P07.sh",
+          "bytes": 1973,
+          "sha256": "10cd6919c866eadc39738739a77188fc3497d0dbe04836060d00ac3e55316e3b"
+        }
+      ]
+    },
+    {
+      "node": "campaign_task_P07",
+      "direction": "output",
+      "raw_contract": [
+        "p07_area.fits",
+        "p07.fits"
+      ],
+      "unique_contract": [
+        "p07_area.fits",
+        "p07.fits"
+      ],
+      "identical_duplicate_tokens": 0,
+      "scientific_files": [
+        "p07_area.fits",
+        "p07.fits"
+      ],
+      "scientific_bytes": 8421120,
+      "auxiliary_bytes": 6903,
+      "native_bytes": 8428023,
+      "native_last_bytes": 8428023,
+      "native_count": 4,
+      "expected_count": 4,
+      "exact": true,
+      "residual": 0,
+      "auxiliaries": [
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001//00/00/campaign_task_P07.out",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P07.out.000",
+          "bytes": 6160,
+          "sha256": "fe070279d866f8ec24acfe74e3d1803363620b000e4abc582f781ba849af8be4"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001//00/00/campaign_task_P07.err",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P07.err.000",
+          "bytes": 743,
+          "sha256": "02342f645be11b3cd35357b50cc8884f4219f4cc1a3590b3f1ca616146a2f9f7"
+        }
+      ]
+    },
+    {
+      "node": "campaign_task_P08",
+      "direction": "input",
+      "raw_contract": [
+        "template.hdr",
+        "campaign_task",
+        "2mass-atlas-990214n-j1190032.fits",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_local_local_0_0.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-lite-common.sh"
+      ],
+      "unique_contract": [
+        "template.hdr",
+        "campaign_task",
+        "2mass-atlas-990214n-j1190032.fits",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_local_local_0_0.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-lite-common.sh"
+      ],
+      "identical_duplicate_tokens": 0,
+      "scientific_files": [
+        "template.hdr",
+        "2mass-atlas-990214n-j1190032.fits"
+      ],
+      "scientific_bytes": 2111358,
+      "auxiliary_bytes": 26861650,
+      "native_bytes": 28973008,
+      "native_last_bytes": 28973008,
+      "native_count": 8,
+      "expected_count": 8,
+      "exact": true,
+      "residual": 0,
+      "auxiliaries": [
+        {
+          "contract_path": "campaign_task",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/scratch/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/campaign_task",
+          "bytes": 8575333,
+          "sha256": "c1023c1a4124dc5f557a1754da2db096f09f21638960b3d4e35c9c9b9b72b127"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+          "bytes": 18251217,
+          "sha256": "b1d82cc0c6b2c26bfa308c51e7eeb661a48691af2355ad4755f0c5262d5e4cc1"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+          "bytes": 341,
+          "sha256": "a7fc1b1bfba8f0c59c92ea99b9b5be92ab13303d3873d1cad684176dcb46299f"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_local_local_0_0.meta",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_local_local_0_0.meta",
+          "bytes": 3924,
+          "sha256": "21bbb98e3fddd1f6413369bb48920673c9bf8b5167d439ea516b9ae85cd73cb7"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-lite-common.sh",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-lite-common.sh",
+          "bytes": 28862,
+          "sha256": "48cde664b6af1939ecbe9622456b1ddd32d91c2db7373a1e98e833fb2aa0d9a2"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P08.sh",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P08.sh",
+          "bytes": 1973,
+          "sha256": "5fd2d7209bea3b3464bf246efc590014d31039cdf914f09a17246ee1434d4185"
+        }
+      ]
+    },
+    {
+      "node": "campaign_task_P08",
+      "direction": "output",
+      "raw_contract": [
+        "p08_area.fits",
+        "p08.fits"
+      ],
+      "unique_contract": [
+        "p08_area.fits",
+        "p08.fits"
+      ],
+      "identical_duplicate_tokens": 0,
+      "scientific_files": [
+        "p08_area.fits",
+        "p08.fits"
+      ],
+      "scientific_bytes": 8421120,
+      "auxiliary_bytes": 6903,
+      "native_bytes": 8428023,
+      "native_last_bytes": 8428023,
+      "native_count": 4,
+      "expected_count": 4,
+      "exact": true,
+      "residual": 0,
+      "auxiliaries": [
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001//00/00/campaign_task_P08.out",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P08.out.000",
+          "bytes": 6160,
+          "sha256": "bbde8fd9611173d60be06223a62cd9604a994145ad700df474cb37224d71a387"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001//00/00/campaign_task_P08.err",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P08.err.000",
+          "bytes": 743,
+          "sha256": "f9fac3a5e6fa1acd3562212e9f4dfb36df74822335d77d95ab8aeb344ccff731"
+        }
+      ]
+    },
+    {
+      "node": "campaign_task_P09",
+      "direction": "input",
+      "raw_contract": [
+        "template.hdr",
+        "campaign_task",
+        "2mass-atlas-990214n-j1200244.fits",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_local_local_0_0.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-lite-common.sh"
+      ],
+      "unique_contract": [
+        "template.hdr",
+        "campaign_task",
+        "2mass-atlas-990214n-j1200244.fits",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_local_local_0_0.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-lite-common.sh"
+      ],
+      "identical_duplicate_tokens": 0,
+      "scientific_files": [
+        "template.hdr",
+        "2mass-atlas-990214n-j1200244.fits"
+      ],
+      "scientific_bytes": 2111358,
+      "auxiliary_bytes": 26861650,
+      "native_bytes": 28973008,
+      "native_last_bytes": 28973008,
+      "native_count": 8,
+      "expected_count": 8,
+      "exact": true,
+      "residual": 0,
+      "auxiliaries": [
+        {
+          "contract_path": "campaign_task",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/scratch/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/campaign_task",
+          "bytes": 8575333,
+          "sha256": "c1023c1a4124dc5f557a1754da2db096f09f21638960b3d4e35c9c9b9b72b127"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+          "bytes": 18251217,
+          "sha256": "b1d82cc0c6b2c26bfa308c51e7eeb661a48691af2355ad4755f0c5262d5e4cc1"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+          "bytes": 341,
+          "sha256": "a7fc1b1bfba8f0c59c92ea99b9b5be92ab13303d3873d1cad684176dcb46299f"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_local_local_0_0.meta",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_local_local_0_0.meta",
+          "bytes": 3924,
+          "sha256": "21bbb98e3fddd1f6413369bb48920673c9bf8b5167d439ea516b9ae85cd73cb7"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-lite-common.sh",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-lite-common.sh",
+          "bytes": 28862,
+          "sha256": "48cde664b6af1939ecbe9622456b1ddd32d91c2db7373a1e98e833fb2aa0d9a2"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P09.sh",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P09.sh",
+          "bytes": 1973,
+          "sha256": "f67e645a7f2378e8928a0e84e774f3481c92eb830fe79a57b76d3156e1bc98a0"
+        }
+      ]
+    },
+    {
+      "node": "campaign_task_P09",
+      "direction": "output",
+      "raw_contract": [
+        "p09_area.fits",
+        "p09.fits"
+      ],
+      "unique_contract": [
+        "p09_area.fits",
+        "p09.fits"
+      ],
+      "identical_duplicate_tokens": 0,
+      "scientific_files": [
+        "p09_area.fits",
+        "p09.fits"
+      ],
+      "scientific_bytes": 8478720,
+      "auxiliary_bytes": 6903,
+      "native_bytes": 8485623,
+      "native_last_bytes": 8485623,
+      "native_count": 4,
+      "expected_count": 4,
+      "exact": true,
+      "residual": 0,
+      "auxiliaries": [
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001//00/00/campaign_task_P09.out",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P09.out.000",
+          "bytes": 6160,
+          "sha256": "dfec30d1bfe800dff91b05d3e54fbd763a02873c8d1f20dd61fb9f229edf0d02"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001//00/00/campaign_task_P09.err",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P09.err.000",
+          "bytes": 743,
+          "sha256": "5b0dce7eee13e5d0dc9c7d24e138c98f2661e28545b6ba1bb58d671fa858d325"
+        }
+      ]
+    },
+    {
+      "node": "campaign_task_P10",
+      "direction": "input",
+      "raw_contract": [
+        "template.hdr",
+        "2mass-atlas-990214n-j1200256.fits",
+        "campaign_task",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_local_local_0_0.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-lite-common.sh"
+      ],
+      "unique_contract": [
+        "template.hdr",
+        "2mass-atlas-990214n-j1200256.fits",
+        "campaign_task",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_local_local_0_0.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-lite-common.sh"
+      ],
+      "identical_duplicate_tokens": 0,
+      "scientific_files": [
+        "template.hdr",
+        "2mass-atlas-990214n-j1200256.fits"
+      ],
+      "scientific_bytes": 2111358,
+      "auxiliary_bytes": 26861650,
+      "native_bytes": 28973008,
+      "native_last_bytes": 28973008,
+      "native_count": 8,
+      "expected_count": 8,
+      "exact": true,
+      "residual": 0,
+      "auxiliaries": [
+        {
+          "contract_path": "campaign_task",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/scratch/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/campaign_task",
+          "bytes": 8575333,
+          "sha256": "c1023c1a4124dc5f557a1754da2db096f09f21638960b3d4e35c9c9b9b72b127"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+          "bytes": 18251217,
+          "sha256": "b1d82cc0c6b2c26bfa308c51e7eeb661a48691af2355ad4755f0c5262d5e4cc1"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+          "bytes": 341,
+          "sha256": "a7fc1b1bfba8f0c59c92ea99b9b5be92ab13303d3873d1cad684176dcb46299f"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_local_local_0_0.meta",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_local_local_0_0.meta",
+          "bytes": 3924,
+          "sha256": "21bbb98e3fddd1f6413369bb48920673c9bf8b5167d439ea516b9ae85cd73cb7"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-lite-common.sh",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-lite-common.sh",
+          "bytes": 28862,
+          "sha256": "48cde664b6af1939ecbe9622456b1ddd32d91c2db7373a1e98e833fb2aa0d9a2"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P10.sh",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P10.sh",
+          "bytes": 1973,
+          "sha256": "97fe68428949bd2ba1ea60d07940817f61a687e1b72ef6238b3a9744a649ee60"
+        }
+      ]
+    },
+    {
+      "node": "campaign_task_P10",
+      "direction": "output",
+      "raw_contract": [
+        "p10.fits",
+        "p10_area.fits"
+      ],
+      "unique_contract": [
+        "p10.fits",
+        "p10_area.fits"
+      ],
+      "identical_duplicate_tokens": 0,
+      "scientific_files": [
+        "p10.fits",
+        "p10_area.fits"
+      ],
+      "scientific_bytes": 8444160,
+      "auxiliary_bytes": 6903,
+      "native_bytes": 8451063,
+      "native_last_bytes": 8451063,
+      "native_count": 4,
+      "expected_count": 4,
+      "exact": true,
+      "residual": 0,
+      "auxiliaries": [
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001//00/00/campaign_task_P10.out",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P10.out.000",
+          "bytes": 6160,
+          "sha256": "d537a2401cca904a6ae3ed023a31f9e427f51156752f95251ac45a4b02ef696b"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001//00/00/campaign_task_P10.err",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P10.err.000",
+          "bytes": 743,
+          "sha256": "f1b8607cf308629fd656960a1cd75abad4d35a331432c555f60eeb7a05aa44c9"
+        }
+      ]
+    },
+    {
+      "node": "campaign_task_TABLE",
+      "direction": "input",
+      "raw_contract": [
+        "campaign_task",
+        "p03.fits",
+        "p10.fits",
+        "p06.fits",
+        "p02.fits",
+        "p07.fits",
+        "p01.fits",
+        "p09.fits",
+        "p05.fits",
+        "p08.fits",
+        "p04.fits",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P10.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P09.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/merge_group_1.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P07.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P08.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P05.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P06.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P03.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P04.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-lite-common.sh"
+      ],
+      "unique_contract": [
+        "campaign_task",
+        "p03.fits",
+        "p10.fits",
+        "p06.fits",
+        "p02.fits",
+        "p07.fits",
+        "p01.fits",
+        "p09.fits",
+        "p05.fits",
+        "p08.fits",
+        "p04.fits",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P10.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P09.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/merge_group_1.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P07.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P08.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P05.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P06.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P03.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P04.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-lite-common.sh"
+      ],
+      "identical_duplicate_tokens": 0,
+      "scientific_files": [
+        "p03.fits",
+        "p10.fits",
+        "p06.fits",
+        "p02.fits",
+        "p07.fits",
+        "p01.fits",
+        "p09.fits",
+        "p05.fits",
+        "p08.fits",
+        "p04.fits"
+      ],
+      "scientific_bytes": 42105600,
+      "auxiliary_bytes": 26864573,
+      "native_bytes": 68970173,
+      "native_last_bytes": 68970173,
+      "native_count": 24,
+      "expected_count": 24,
+      "exact": true,
+      "residual": 0,
+      "auxiliaries": [
+        {
+          "contract_path": "campaign_task",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/scratch/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/campaign_task",
+          "bytes": 8575333,
+          "sha256": "c1023c1a4124dc5f557a1754da2db096f09f21638960b3d4e35c9c9b9b72b127"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+          "bytes": 18251217,
+          "sha256": "b1d82cc0c6b2c26bfa308c51e7eeb661a48691af2355ad4755f0c5262d5e4cc1"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P10.meta",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P10.meta",
+          "bytes": 667,
+          "sha256": "c3f675192715013650f0feda9894b453640ae7ab7d4dd95c2558fd2daad73d63"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+          "bytes": 341,
+          "sha256": "a7fc1b1bfba8f0c59c92ea99b9b5be92ab13303d3873d1cad684176dcb46299f"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P09.meta",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P09.meta",
+          "bytes": 667,
+          "sha256": "5f104becf620cc519b6f47d985c31b1fd0d6c103eb5bbe7c2c45aa4590a2bf64"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/merge_group_1.meta",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/merge_group_1.meta",
+          "bytes": 1332,
+          "sha256": "9a7becfe2cfb7fd63705f469326d25e917b1c6bd8f3a82bc28a8b62661c7b7ed"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P07.meta",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P07.meta",
+          "bytes": 667,
+          "sha256": "25d6aba8b2781d7ae92598a95be8390c8e453fa9fca810209b94635c0ba9aab8"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P08.meta",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P08.meta",
+          "bytes": 667,
+          "sha256": "40d97b2fcec5f5bb628c505eca181d02593ca14f9ec5756340b705fb3b768df5"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P05.meta",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P05.meta",
+          "bytes": 667,
+          "sha256": "6af831f0a5b099657c49edf5ec818667c45a34880dc6486da714b99706b3e713"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P06.meta",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P06.meta",
+          "bytes": 667,
+          "sha256": "e2dad6f528f4542719814c301e2b123bf64e72d0973ed3bbf06bdfc119d531dd"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P03.meta",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P03.meta",
+          "bytes": 667,
+          "sha256": "5755b9b3af18f0f19bd9ce2f2a39ca68a20e62ccfbe6a22364d8af9c2d4122b6"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P04.meta",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P04.meta",
+          "bytes": 667,
+          "sha256": "9ed7725aa42bd8e19febeecb91d6286c1d2971f133506d05d7af23bfb6362067"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-lite-common.sh",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-lite-common.sh",
+          "bytes": 28862,
+          "sha256": "48cde664b6af1939ecbe9622456b1ddd32d91c2db7373a1e98e833fb2aa0d9a2"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_TABLE.sh",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_TABLE.sh",
+          "bytes": 2152,
+          "sha256": "ec87477d843c5cbd6e1dbf827f29f1164188f685fcb4a2d03e9499b08c1f14ed"
+        }
+      ]
+    },
+    {
+      "node": "campaign_task_TABLE",
+      "direction": "output",
+      "raw_contract": [
+        "images.tbl"
+      ],
+      "unique_contract": [
+        "images.tbl"
+      ],
+      "identical_duplicate_tokens": 0,
+      "scientific_files": [
+        "images.tbl"
+      ],
+      "scientific_bytes": 6284,
+      "auxiliary_bytes": 7638,
+      "native_bytes": 13922,
+      "native_last_bytes": 13922,
+      "native_count": 3,
+      "expected_count": 3,
+      "exact": true,
+      "residual": 0,
+      "auxiliaries": [
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001//00/00/campaign_task_TABLE.out",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_TABLE.out.000",
+          "bytes": 6895,
+          "sha256": "19b856809282d6433a45310f3234d36b29eab7f99e19c671deb038b97a6b1471"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001//00/00/campaign_task_TABLE.err",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_TABLE.err.000",
+          "bytes": 743,
+          "sha256": "21b6a2559af253ae7d38f3e692a9cb5c8b6c7842e9bc444044fb29bd19aaa1ad"
+        }
+      ]
+    },
+    {
+      "node": "merge_group_1",
+      "direction": "input",
+      "raw_contract": [
+        "template.hdr",
+        "campaign_task",
+        "campaign_task",
+        "2mass-atlas-990214n-j1100256.fits",
+        "2mass-atlas-990214n-j1100244.fits",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_local_local_0_0.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-lite-common.sh"
+      ],
+      "unique_contract": [
+        "template.hdr",
+        "campaign_task",
+        "2mass-atlas-990214n-j1100256.fits",
+        "2mass-atlas-990214n-j1100244.fits",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_local_local_0_0.meta",
+        "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-lite-common.sh"
+      ],
+      "identical_duplicate_tokens": 1,
+      "scientific_files": [
+        "template.hdr",
+        "2mass-atlas-990214n-j1100256.fits",
+        "2mass-atlas-990214n-j1100244.fits"
+      ],
+      "scientific_bytes": 4222398,
+      "auxiliary_bytes": 26862160,
+      "native_bytes": 31084558,
+      "native_last_bytes": 31084558,
+      "native_count": 9,
+      "expected_count": 9,
+      "exact": true,
+      "residual": 0,
+      "auxiliaries": [
+        {
+          "contract_path": "campaign_task",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/scratch/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/campaign_task",
+          "bytes": 8575333,
+          "sha256": "c1023c1a4124dc5f557a1754da2db096f09f21638960b3d4e35c9c9b9b72b127"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+          "bytes": 18251217,
+          "sha256": "b1d82cc0c6b2c26bfa308c51e7eeb661a48691af2355ad4755f0c5262d5e4cc1"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_remote_local_0_0.meta",
+          "bytes": 341,
+          "sha256": "a7fc1b1bfba8f0c59c92ea99b9b5be92ab13303d3873d1cad684176dcb46299f"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_local_local_0_0.meta",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/stage_in_local_local_0_0.meta",
+          "bytes": 3924,
+          "sha256": "21bbb98e3fddd1f6413369bb48920673c9bf8b5167d439ea516b9ae85cd73cb7"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-lite-common.sh",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/pegasus-lite-common.sh",
+          "bytes": 28862,
+          "sha256": "48cde664b6af1939ecbe9622456b1ddd32d91c2db7373a1e98e833fb2aa0d9a2"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/merge_group_1.sh",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/merge_group_1.sh",
+          "bytes": 2483,
+          "sha256": "06edf203fc98ae6d53db2872927b90c85f51c3771e927eb29076b17760bd04e7"
+        }
+      ]
+    },
+    {
+      "node": "merge_group_1",
+      "direction": "output",
+      "raw_contract": [
+        "p02_area.fits",
+        "p01_area.fits",
+        "p02.fits",
+        "p01.fits"
+      ],
+      "unique_contract": [
+        "p02_area.fits",
+        "p01_area.fits",
+        "p02.fits",
+        "p01.fits"
+      ],
+      "identical_duplicate_tokens": 0,
+      "scientific_files": [
+        "p02_area.fits",
+        "p01_area.fits",
+        "p02.fits",
+        "p01.fits"
+      ],
+      "scientific_bytes": 16905600,
+      "auxiliary_bytes": 12339,
+      "native_bytes": 16917939,
+      "native_last_bytes": 16917939,
+      "native_count": 6,
+      "expected_count": 6,
+      "exact": true,
+      "residual": 0,
+      "auxiliaries": [
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001//00/00/merge_group_1.out",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/merge_group_1.out.000",
+          "bytes": 11596,
+          "sha256": "71199f2f2d465e757b54485184cb9a303c76b8fb64ebb6ef0d6723e8247dc01c"
+        },
+        {
+          "contract_path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001//00/00/merge_group_1.err",
+          "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/merge_group_1.err.000",
+          "bytes": 743,
+          "sha256": "5c2d68489532352c1677ab6f6e0ee54f058acdad30226fe71365f6404731243f"
+        }
+      ]
+    }
+  ],
+  "deliveries": [
+    {
+      "node": "campaign_task_ADD",
+      "global_job_id": "dme-master#1887.0#1794437616",
+      "direction": "input",
+      "file": "template.hdr",
+      "bytes": 318,
+      "source": "dme-master",
+      "destination": "dme-worker1"
+    },
+    {
+      "node": "campaign_task_ADD",
+      "global_job_id": "dme-master#1887.0#1794437616",
+      "direction": "input",
+      "file": "p02_area.fits",
+      "bytes": 4222080,
+      "source": "dme-master",
+      "destination": "dme-worker1"
+    },
+    {
+      "node": "campaign_task_ADD",
+      "global_job_id": "dme-master#1887.0#1794437616",
+      "direction": "input",
+      "file": "p01_area.fits",
+      "bytes": 4230720,
+      "source": "dme-master",
+      "destination": "dme-worker1"
+    },
+    {
+      "node": "campaign_task_ADD",
+      "global_job_id": "dme-master#1887.0#1794437616",
+      "direction": "input",
+      "file": "p04_area.fits",
+      "bytes": 4199040,
+      "source": "dme-master",
+      "destination": "dme-worker1"
+    },
+    {
+      "node": "campaign_task_ADD",
+      "global_job_id": "dme-master#1887.0#1794437616",
+      "direction": "input",
+      "file": "p02.fits",
+      "bytes": 4222080,
+      "source": "dme-master",
+      "destination": "dme-worker1"
+    },
+    {
+      "node": "campaign_task_ADD",
+      "global_job_id": "dme-master#1887.0#1794437616",
+      "direction": "input",
+      "file": "p09_area.fits",
+      "bytes": 4239360,
+      "source": "dme-master",
+      "destination": "dme-worker1"
+    },
+    {
+      "node": "campaign_task_ADD",
+      "global_job_id": "dme-master#1887.0#1794437616",
+      "direction": "input",
+      "file": "p05.fits",
+      "bytes": 4190400,
+      "source": "dme-master",
+      "destination": "dme-worker1"
+    },
+    {
+      "node": "campaign_task_ADD",
+      "global_job_id": "dme-master#1887.0#1794437616",
+      "direction": "input",
+      "file": "p03_area.fits",
+      "bytes": 4199040,
+      "source": "dme-master",
+      "destination": "dme-worker1"
+    },
+    {
+      "node": "campaign_task_ADD",
+      "global_job_id": "dme-master#1887.0#1794437616",
+      "direction": "input",
+      "file": "p08_area.fits",
+      "bytes": 4210560,
+      "source": "dme-master",
+      "destination": "dme-worker1"
+    },
+    {
+      "node": "campaign_task_ADD",
+      "global_job_id": "dme-master#1887.0#1794437616",
+      "direction": "input",
+      "file": "p08.fits",
+      "bytes": 4210560,
+      "source": "dme-master",
+      "destination": "dme-worker1"
+    },
+    {
+      "node": "campaign_task_ADD",
+      "global_job_id": "dme-master#1887.0#1794437616",
+      "direction": "input",
+      "file": "p10_area.fits",
+      "bytes": 4222080,
+      "source": "dme-master",
+      "destination": "dme-worker1"
+    },
+    {
+      "node": "campaign_task_ADD",
+      "global_job_id": "dme-master#1887.0#1794437616",
+      "direction": "input",
+      "file": "p06_area.fits",
+      "bytes": 4181760,
+      "source": "dme-master",
+      "destination": "dme-worker1"
+    },
+    {
+      "node": "campaign_task_ADD",
+      "global_job_id": "dme-master#1887.0#1794437616",
+      "direction": "input",
+      "file": "p03.fits",
+      "bytes": 4199040,
+      "source": "dme-master",
+      "destination": "dme-worker1"
+    },
+    {
+      "node": "campaign_task_ADD",
+      "global_job_id": "dme-master#1887.0#1794437616",
+      "direction": "input",
+      "file": "images.tbl",
+      "bytes": 6284,
+      "source": "dme-master",
+      "destination": "dme-worker1"
+    },
+    {
+      "node": "campaign_task_ADD",
+      "global_job_id": "dme-master#1887.0#1794437616",
+      "direction": "input",
+      "file": "p10.fits",
+      "bytes": 4222080,
+      "source": "dme-master",
+      "destination": "dme-worker1"
+    },
+    {
+      "node": "campaign_task_ADD",
+      "global_job_id": "dme-master#1887.0#1794437616",
+      "direction": "input",
+      "file": "p06.fits",
+      "bytes": 4181760,
+      "source": "dme-master",
+      "destination": "dme-worker1"
+    },
+    {
+      "node": "campaign_task_ADD",
+      "global_job_id": "dme-master#1887.0#1794437616",
+      "direction": "input",
+      "file": "p07_area.fits",
+      "bytes": 4210560,
+      "source": "dme-master",
+      "destination": "dme-worker1"
+    },
+    {
+      "node": "campaign_task_ADD",
+      "global_job_id": "dme-master#1887.0#1794437616",
+      "direction": "input",
+      "file": "p07.fits",
+      "bytes": 4210560,
+      "source": "dme-master",
+      "destination": "dme-worker1"
+    },
+    {
+      "node": "campaign_task_ADD",
+      "global_job_id": "dme-master#1887.0#1794437616",
+      "direction": "input",
+      "file": "p05_area.fits",
+      "bytes": 4190400,
+      "source": "dme-master",
+      "destination": "dme-worker1"
+    },
+    {
+      "node": "campaign_task_ADD",
+      "global_job_id": "dme-master#1887.0#1794437616",
+      "direction": "input",
+      "file": "p01.fits",
+      "bytes": 4230720,
+      "source": "dme-master",
+      "destination": "dme-worker1"
+    },
+    {
+      "node": "campaign_task_ADD",
+      "global_job_id": "dme-master#1887.0#1794437616",
+      "direction": "input",
+      "file": "p09.fits",
+      "bytes": 4239360,
+      "source": "dme-master",
+      "destination": "dme-worker1"
+    },
+    {
+      "node": "campaign_task_ADD",
+      "global_job_id": "dme-master#1887.0#1794437616",
+      "direction": "input",
+      "file": "p04.fits",
+      "bytes": 4199040,
+      "source": "dme-master",
+      "destination": "dme-worker1"
+    },
+    {
+      "node": "campaign_task_ADD",
+      "global_job_id": "dme-master#1887.0#1794437616",
+      "direction": "output",
+      "file": "m101.fits",
+      "bytes": 39744000,
+      "source": "dme-worker1",
+      "destination": "dme-master"
+    },
+    {
+      "node": "campaign_task_ADD",
+      "global_job_id": "dme-master#1887.0#1794437616",
+      "direction": "output",
+      "file": "m101_area.fits",
+      "bytes": 39744000,
+      "source": "dme-worker1",
+      "destination": "dme-master"
+    },
+    {
+      "node": "campaign_task_P03",
+      "global_job_id": "dme-master#1884.0#1794437441",
+      "direction": "input",
+      "file": "template.hdr",
+      "bytes": 318,
+      "source": "dme-master",
+      "destination": "dme-worker2"
+    },
+    {
+      "node": "campaign_task_P03",
+      "global_job_id": "dme-master#1884.0#1794437441",
+      "direction": "input",
+      "file": "2mass-atlas-990214n-j1110021.fits",
+      "bytes": 2111040,
+      "source": "dme-master",
+      "destination": "dme-worker2"
+    },
+    {
+      "node": "campaign_task_P03",
+      "global_job_id": "dme-master#1884.0#1794437441",
+      "direction": "output",
+      "file": "p03.fits",
+      "bytes": 4199040,
+      "source": "dme-worker2",
+      "destination": "dme-master"
+    },
+    {
+      "node": "campaign_task_P03",
+      "global_job_id": "dme-master#1884.0#1794437441",
+      "direction": "output",
+      "file": "p03_area.fits",
+      "bytes": 4199040,
+      "source": "dme-worker2",
+      "destination": "dme-master"
+    },
+    {
+      "node": "campaign_task_P04",
+      "global_job_id": "dme-master#1885.0#1794437441",
+      "direction": "input",
+      "file": "template.hdr",
+      "bytes": 318,
+      "source": "dme-master",
+      "destination": "dme-worker2"
+    },
+    {
+      "node": "campaign_task_P04",
+      "global_job_id": "dme-master#1885.0#1794437441",
+      "direction": "input",
+      "file": "2mass-atlas-990214n-j1110032.fits",
+      "bytes": 2111040,
+      "source": "dme-master",
+      "destination": "dme-worker2"
+    },
+    {
+      "node": "campaign_task_P04",
+      "global_job_id": "dme-master#1885.0#1794437441",
+      "direction": "output",
+      "file": "p04_area.fits",
+      "bytes": 4199040,
+      "source": "dme-worker2",
+      "destination": "dme-master"
+    },
+    {
+      "node": "campaign_task_P04",
+      "global_job_id": "dme-master#1885.0#1794437441",
+      "direction": "output",
+      "file": "p04.fits",
+      "bytes": 4199040,
+      "source": "dme-worker2",
+      "destination": "dme-master"
+    },
+    {
+      "node": "campaign_task_P05",
+      "global_job_id": "dme-master#1882.0#1794437441",
+      "direction": "input",
+      "file": "template.hdr",
+      "bytes": 318,
+      "source": "dme-master",
+      "destination": "dme-worker2"
+    },
+    {
+      "node": "campaign_task_P05",
+      "global_job_id": "dme-master#1882.0#1794437441",
+      "direction": "input",
+      "file": "2mass-atlas-990214n-j1180244.fits",
+      "bytes": 2111040,
+      "source": "dme-master",
+      "destination": "dme-worker2"
+    },
+    {
+      "node": "campaign_task_P05",
+      "global_job_id": "dme-master#1882.0#1794437441",
+      "direction": "output",
+      "file": "p05_area.fits",
+      "bytes": 4190400,
+      "source": "dme-worker2",
+      "destination": "dme-master"
+    },
+    {
+      "node": "campaign_task_P05",
+      "global_job_id": "dme-master#1882.0#1794437441",
+      "direction": "output",
+      "file": "p05.fits",
+      "bytes": 4190400,
+      "source": "dme-worker2",
+      "destination": "dme-master"
+    },
+    {
+      "node": "campaign_task_P06",
+      "global_job_id": "dme-master#1883.0#1794437441",
+      "direction": "input",
+      "file": "template.hdr",
+      "bytes": 318,
+      "source": "dme-master",
+      "destination": "dme-worker2"
+    },
+    {
+      "node": "campaign_task_P06",
+      "global_job_id": "dme-master#1883.0#1794437441",
+      "direction": "input",
+      "file": "2mass-atlas-990214n-j1180256.fits",
+      "bytes": 2111040,
+      "source": "dme-master",
+      "destination": "dme-worker2"
+    },
+    {
+      "node": "campaign_task_P06",
+      "global_job_id": "dme-master#1883.0#1794437441",
+      "direction": "output",
+      "file": "p06_area.fits",
+      "bytes": 4181760,
+      "source": "dme-worker2",
+      "destination": "dme-master"
+    },
+    {
+      "node": "campaign_task_P06",
+      "global_job_id": "dme-master#1883.0#1794437441",
+      "direction": "output",
+      "file": "p06.fits",
+      "bytes": 4181760,
+      "source": "dme-worker2",
+      "destination": "dme-master"
+    },
+    {
+      "node": "campaign_task_P07",
+      "global_job_id": "dme-master#1879.0#1794437441",
+      "direction": "input",
+      "file": "template.hdr",
+      "bytes": 318,
+      "source": "dme-master",
+      "destination": "dme-worker2"
+    },
+    {
+      "node": "campaign_task_P07",
+      "global_job_id": "dme-master#1879.0#1794437441",
+      "direction": "input",
+      "file": "2mass-atlas-990214n-j1190021.fits",
+      "bytes": 2111040,
+      "source": "dme-master",
+      "destination": "dme-worker2"
+    },
+    {
+      "node": "campaign_task_P07",
+      "global_job_id": "dme-master#1879.0#1794437441",
+      "direction": "output",
+      "file": "p07_area.fits",
+      "bytes": 4210560,
+      "source": "dme-worker2",
+      "destination": "dme-master"
+    },
+    {
+      "node": "campaign_task_P07",
+      "global_job_id": "dme-master#1879.0#1794437441",
+      "direction": "output",
+      "file": "p07.fits",
+      "bytes": 4210560,
+      "source": "dme-worker2",
+      "destination": "dme-master"
+    },
+    {
+      "node": "campaign_task_P08",
+      "global_job_id": "dme-master#1881.0#1794437441",
+      "direction": "input",
+      "file": "template.hdr",
+      "bytes": 318,
+      "source": "dme-master",
+      "destination": "dme-worker2"
+    },
+    {
+      "node": "campaign_task_P08",
+      "global_job_id": "dme-master#1881.0#1794437441",
+      "direction": "input",
+      "file": "2mass-atlas-990214n-j1190032.fits",
+      "bytes": 2111040,
+      "source": "dme-master",
+      "destination": "dme-worker2"
+    },
+    {
+      "node": "campaign_task_P08",
+      "global_job_id": "dme-master#1881.0#1794437441",
+      "direction": "output",
+      "file": "p08_area.fits",
+      "bytes": 4210560,
+      "source": "dme-worker2",
+      "destination": "dme-master"
+    },
+    {
+      "node": "campaign_task_P08",
+      "global_job_id": "dme-master#1881.0#1794437441",
+      "direction": "output",
+      "file": "p08.fits",
+      "bytes": 4210560,
+      "source": "dme-worker2",
+      "destination": "dme-master"
+    },
+    {
+      "node": "campaign_task_P09",
+      "global_job_id": "dme-master#1878.0#1794437441",
+      "direction": "input",
+      "file": "template.hdr",
+      "bytes": 318,
+      "source": "dme-master",
+      "destination": "dme-worker2"
+    },
+    {
+      "node": "campaign_task_P09",
+      "global_job_id": "dme-master#1878.0#1794437441",
+      "direction": "input",
+      "file": "2mass-atlas-990214n-j1200244.fits",
+      "bytes": 2111040,
+      "source": "dme-master",
+      "destination": "dme-worker2"
+    },
+    {
+      "node": "campaign_task_P09",
+      "global_job_id": "dme-master#1878.0#1794437441",
+      "direction": "output",
+      "file": "p09_area.fits",
+      "bytes": 4239360,
+      "source": "dme-worker2",
+      "destination": "dme-master"
+    },
+    {
+      "node": "campaign_task_P09",
+      "global_job_id": "dme-master#1878.0#1794437441",
+      "direction": "output",
+      "file": "p09.fits",
+      "bytes": 4239360,
+      "source": "dme-worker2",
+      "destination": "dme-master"
+    },
+    {
+      "node": "campaign_task_P10",
+      "global_job_id": "dme-master#1877.0#1794437441",
+      "direction": "input",
+      "file": "template.hdr",
+      "bytes": 318,
+      "source": "dme-master",
+      "destination": "dme-worker2"
+    },
+    {
+      "node": "campaign_task_P10",
+      "global_job_id": "dme-master#1877.0#1794437441",
+      "direction": "input",
+      "file": "2mass-atlas-990214n-j1200256.fits",
+      "bytes": 2111040,
+      "source": "dme-master",
+      "destination": "dme-worker2"
+    },
+    {
+      "node": "campaign_task_P10",
+      "global_job_id": "dme-master#1877.0#1794437441",
+      "direction": "output",
+      "file": "p10.fits",
+      "bytes": 4222080,
+      "source": "dme-worker2",
+      "destination": "dme-master"
+    },
+    {
+      "node": "campaign_task_P10",
+      "global_job_id": "dme-master#1877.0#1794437441",
+      "direction": "output",
+      "file": "p10_area.fits",
+      "bytes": 4222080,
+      "source": "dme-worker2",
+      "destination": "dme-master"
+    },
+    {
+      "node": "campaign_task_TABLE",
+      "global_job_id": "dme-master#1886.0#1794437581",
+      "direction": "input",
+      "file": "p03.fits",
+      "bytes": 4199040,
+      "source": "dme-master",
+      "destination": "dme-worker1"
+    },
+    {
+      "node": "campaign_task_TABLE",
+      "global_job_id": "dme-master#1886.0#1794437581",
+      "direction": "input",
+      "file": "p10.fits",
+      "bytes": 4222080,
+      "source": "dme-master",
+      "destination": "dme-worker1"
+    },
+    {
+      "node": "campaign_task_TABLE",
+      "global_job_id": "dme-master#1886.0#1794437581",
+      "direction": "input",
+      "file": "p06.fits",
+      "bytes": 4181760,
+      "source": "dme-master",
+      "destination": "dme-worker1"
+    },
+    {
+      "node": "campaign_task_TABLE",
+      "global_job_id": "dme-master#1886.0#1794437581",
+      "direction": "input",
+      "file": "p02.fits",
+      "bytes": 4222080,
+      "source": "dme-master",
+      "destination": "dme-worker1"
+    },
+    {
+      "node": "campaign_task_TABLE",
+      "global_job_id": "dme-master#1886.0#1794437581",
+      "direction": "input",
+      "file": "p07.fits",
+      "bytes": 4210560,
+      "source": "dme-master",
+      "destination": "dme-worker1"
+    },
+    {
+      "node": "campaign_task_TABLE",
+      "global_job_id": "dme-master#1886.0#1794437581",
+      "direction": "input",
+      "file": "p01.fits",
+      "bytes": 4230720,
+      "source": "dme-master",
+      "destination": "dme-worker1"
+    },
+    {
+      "node": "campaign_task_TABLE",
+      "global_job_id": "dme-master#1886.0#1794437581",
+      "direction": "input",
+      "file": "p09.fits",
+      "bytes": 4239360,
+      "source": "dme-master",
+      "destination": "dme-worker1"
+    },
+    {
+      "node": "campaign_task_TABLE",
+      "global_job_id": "dme-master#1886.0#1794437581",
+      "direction": "input",
+      "file": "p05.fits",
+      "bytes": 4190400,
+      "source": "dme-master",
+      "destination": "dme-worker1"
+    },
+    {
+      "node": "campaign_task_TABLE",
+      "global_job_id": "dme-master#1886.0#1794437581",
+      "direction": "input",
+      "file": "p08.fits",
+      "bytes": 4210560,
+      "source": "dme-master",
+      "destination": "dme-worker1"
+    },
+    {
+      "node": "campaign_task_TABLE",
+      "global_job_id": "dme-master#1886.0#1794437581",
+      "direction": "input",
+      "file": "p04.fits",
+      "bytes": 4199040,
+      "source": "dme-master",
+      "destination": "dme-worker1"
+    },
+    {
+      "node": "campaign_task_TABLE",
+      "global_job_id": "dme-master#1886.0#1794437581",
+      "direction": "output",
+      "file": "images.tbl",
+      "bytes": 6284,
+      "source": "dme-worker1",
+      "destination": "dme-master"
+    },
+    {
+      "node": "merge_group_1",
+      "global_job_id": "dme-master#1880.0#1794437441",
+      "direction": "input",
+      "file": "template.hdr",
+      "bytes": 318,
+      "source": "dme-master",
+      "destination": "dme-worker2"
+    },
+    {
+      "node": "merge_group_1",
+      "global_job_id": "dme-master#1880.0#1794437441",
+      "direction": "input",
+      "file": "2mass-atlas-990214n-j1100256.fits",
+      "bytes": 2111040,
+      "source": "dme-master",
+      "destination": "dme-worker2"
+    },
+    {
+      "node": "merge_group_1",
+      "global_job_id": "dme-master#1880.0#1794437441",
+      "direction": "input",
+      "file": "2mass-atlas-990214n-j1100244.fits",
+      "bytes": 2111040,
+      "source": "dme-master",
+      "destination": "dme-worker2"
+    },
+    {
+      "node": "merge_group_1",
+      "global_job_id": "dme-master#1880.0#1794437441",
+      "direction": "output",
+      "file": "p02_area.fits",
+      "bytes": 4222080,
+      "source": "dme-worker2",
+      "destination": "dme-master"
+    },
+    {
+      "node": "merge_group_1",
+      "global_job_id": "dme-master#1880.0#1794437441",
+      "direction": "output",
+      "file": "p01_area.fits",
+      "bytes": 4230720,
+      "source": "dme-worker2",
+      "destination": "dme-master"
+    },
+    {
+      "node": "merge_group_1",
+      "global_job_id": "dme-master#1880.0#1794437441",
+      "direction": "output",
+      "file": "p02.fits",
+      "bytes": 4222080,
+      "source": "dme-worker2",
+      "destination": "dme-master"
+    },
+    {
+      "node": "merge_group_1",
+      "global_job_id": "dme-master#1880.0#1794437441",
+      "direction": "output",
+      "file": "p01.fits",
+      "bytes": 4230720,
+      "source": "dme-worker2",
+      "destination": "dme-master"
+    }
+  ],
+  "final_files": [
+    {
+      "file": "m101.fits",
+      "bytes": 39744000,
+      "sha256": "8129a53e6f4e922a958df215c9103d7431a534c60154746452683f19f82e1eca",
+      "matches_native_metadata": true
+    },
+    {
+      "file": "m101_area.fits",
+      "bytes": 39744000,
+      "sha256": "5e7e93bc193e7b245171eb8df1985d7c8f4bd3dc778a88ccf5d362f2dcba5db2",
+      "matches_native_metadata": true
+    }
+  ],
+  "comparison_only_after_independent_reconstruction": {
+    "required_match": true,
+    "observed_match": true,
+    "reported_dme": 0.8646255022961402,
+    "reported_evidence_levels": [
+      "JOB_LEVEL_RECONCILED"
+    ]
+  },
+  "sources": [
+    {
+      "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/dme-cloud-20261026-m101-proj-r01-0.dag.nodes.log",
+      "sha256": "ecab44a555fe7877be9ddc9c3609a4955b2627755507fcaa02a544805f031b58"
+    },
+    {
+      "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_ADD.sub",
+      "sha256": "79a6d896b0cc482dddd13023821f726a2371696e1ed6f1e32c71a0a5104ac399"
+    },
+    {
+      "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/dme-cloud-20261026-m101-proj-r01-0.dag.nodes.log",
+      "sha256": "ecab44a555fe7877be9ddc9c3609a4955b2627755507fcaa02a544805f031b58"
+    },
+    {
+      "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P03.sub",
+      "sha256": "703b0198e20cebe09424dc95b224f26c6e7808d3d787e5acfb2ae4167a0e5c2f"
+    },
+    {
+      "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/dme-cloud-20261026-m101-proj-r01-0.dag.nodes.log",
+      "sha256": "ecab44a555fe7877be9ddc9c3609a4955b2627755507fcaa02a544805f031b58"
+    },
+    {
+      "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P04.sub",
+      "sha256": "a438ee15b4b6de3a8c961ccb2b64e91d6baa8905b657d172fb5667b1544930f7"
+    },
+    {
+      "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/dme-cloud-20261026-m101-proj-r01-0.dag.nodes.log",
+      "sha256": "ecab44a555fe7877be9ddc9c3609a4955b2627755507fcaa02a544805f031b58"
+    },
+    {
+      "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P05.sub",
+      "sha256": "720696928bef8a8b29006a099b9c6bbc9338e63c46626e3b651ec29de108142e"
+    },
+    {
+      "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/dme-cloud-20261026-m101-proj-r01-0.dag.nodes.log",
+      "sha256": "ecab44a555fe7877be9ddc9c3609a4955b2627755507fcaa02a544805f031b58"
+    },
+    {
+      "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P06.sub",
+      "sha256": "39f67520bd0d76e96ea3e888a60726db2103af8753f276b716ad7cef01c28692"
+    },
+    {
+      "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/dme-cloud-20261026-m101-proj-r01-0.dag.nodes.log",
+      "sha256": "ecab44a555fe7877be9ddc9c3609a4955b2627755507fcaa02a544805f031b58"
+    },
+    {
+      "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P07.sub",
+      "sha256": "c873aeca18b84088cdbfb2f07e96e9588b56d2ef24caf4957f6113ba9e07a20c"
+    },
+    {
+      "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/dme-cloud-20261026-m101-proj-r01-0.dag.nodes.log",
+      "sha256": "ecab44a555fe7877be9ddc9c3609a4955b2627755507fcaa02a544805f031b58"
+    },
+    {
+      "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P08.sub",
+      "sha256": "e798abcc66869c832b59dc8dbcf88174ad2b3c5fb52972d2a12cbb697e946a1e"
+    },
+    {
+      "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/dme-cloud-20261026-m101-proj-r01-0.dag.nodes.log",
+      "sha256": "ecab44a555fe7877be9ddc9c3609a4955b2627755507fcaa02a544805f031b58"
+    },
+    {
+      "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P09.sub",
+      "sha256": "48de247295667b6605fd4d9618a6381a3b9634a4dac00cd0ba22aa71d52f5b6d"
+    },
+    {
+      "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/dme-cloud-20261026-m101-proj-r01-0.dag.nodes.log",
+      "sha256": "ecab44a555fe7877be9ddc9c3609a4955b2627755507fcaa02a544805f031b58"
+    },
+    {
+      "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_P10.sub",
+      "sha256": "a9d89044d12f630c86d76a57db971f7ffc93df75a5ec15b6d179cfbc6f1e8deb"
+    },
+    {
+      "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/dme-cloud-20261026-m101-proj-r01-0.dag.nodes.log",
+      "sha256": "ecab44a555fe7877be9ddc9c3609a4955b2627755507fcaa02a544805f031b58"
+    },
+    {
+      "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/campaign_task_TABLE.sub",
+      "sha256": "d0720f840f5823a7e1cd9713f24364797a99145886bdccc2cf32b634dc204d45"
+    },
+    {
+      "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/merge_group_1.in",
+      "sha256": "f7a1b1b4a2d37e28d6264e217ef81c270517eae1dee59aeb06ea038f2d3b5734"
+    },
+    {
+      "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/dme-cloud-20261026-m101-proj-r01-0.dag.nodes.log",
+      "sha256": "ecab44a555fe7877be9ddc9c3609a4955b2627755507fcaa02a544805f031b58"
+    },
+    {
+      "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/00/00/merge_group_1.sub",
+      "sha256": "7c2c2640be41b4ca5eacceb20a2f9209f85164d2e0e0700e7ac83d25689eee0e"
+    },
+    {
+      "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/submit/dmeadmin/pegasus/dme-cloud-20261026-m101-proj-r01/run0001/workflow.yml",
+      "sha256": "59f511da586e2583fc87da7dd232c2a8845930a96c89a65ef5c2f6005230edce"
+    },
+    {
+      "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/pilot/M101-PROJ/history.long",
+      "sha256": "49b1076903fd56b258528bfcea720142f3dc3a691a687b96ca10291256153081"
+    },
+    {
+      "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/pilot/M101-PROJ/history.json",
+      "sha256": "8295eabc307ebed08668528b252f2bb085d9ffc573f116eec719110d7d318f41"
+    },
+    {
+      "path": "/mnt/montage_m101_20261111/cases/M101-PROJ/plans/M101-PROJ/bin/campaign_task.py",
+      "sha256": "c1023c1a4124dc5f557a1754da2db096f09f21638960b3d4e35c9c9b9b72b127"
+    }
+  ],
+  "replicas": 1,
+  "limit": "Native counters are aggregate by job and direction. Scientific deliveries corroborated under complete file contracts and exact auxiliary reconciliation, not independent per-file network or packet counters."
+}

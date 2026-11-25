@@ -1,0 +1,251 @@
+- invocation: True
+  version: 3.0
+  start: 2026-11-22T17:04:11.538+00:00
+  duration: 6.119
+  transformation: "campaign_task"
+  derivation: "T6"
+  resource: "condorpool"
+  wf-label: "dme-six-20261110-aggregation-w2-r01"
+  wf-stamp: "2026-11-22T16:58:33+00:00"
+  interface: eth0
+  hostaddr: 10.42.1.4
+  hostname: dme-worker1
+  pid: 10224
+  uid: 65534
+  user: nobody
+  gid: 65534
+  group: nogroup
+  umask: 0o0022
+  mainjob:
+    start: 2026-11-22T17:04:11.543+00:00
+    duration: 6.114
+    pid: 10225
+    usage:
+      utime: 5.646
+      stime: 0.210
+      maxrss: 20000
+      minflt: 5368
+      majflt: 0
+      nswap: 0
+      inblock: 0
+      outblock: 409608
+      msgsnd: 0
+      msgrcv: 0
+      nsignals: 0
+      nvcsw: 30
+      nivcsw: 312
+    status:
+      raw: 0
+      regular_exitcode: 0
+    executable:
+      file_name: /var/lib/condor/execute/dir_10073/scratch/campaign_task
+      mode: 0o100755
+      size: 5151
+      inode: 787475
+      nlink: 1
+      blksize: 4096
+      blocks: 16
+      mtime: 2026-11-22T17:02:36+00:00
+      atime: 2026-11-22T17:04:07+00:00
+      ctime: 2026-11-22T17:04:07+00:00
+      uid: 65534
+      user: nobody
+      gid: 65534
+      group: nogroup
+    argument_vector:
+      - "--task-id"
+      - "T6"
+      - "--flops"
+      - "1766799020"
+      - "--input"
+      - "f1"
+      - "209715200"
+      - "--input"
+      - "f2"
+      - "209715200"
+      - "--input"
+      - "f3"
+      - "209715200"
+      - "--input"
+      - "f4"
+      - "209715200"
+      - "--input"
+      - "f5"
+      - "209715200"
+      - "--output"
+      - "B"
+      - "209715200"
+    procs:
+  jobids:
+    condor: 3790.0
+  cwd: /var/lib/condor/execute/dir_10073/scratch
+  usage:
+    utime: 0.002
+    stime: 0.003
+    maxrss: 3028
+    minflt: 139
+    majflt: 0
+    nswap: 0
+    inblock: 0
+    outblock: 0
+    msgsnd: 0
+    msgrcv: 0
+    nsignals: 0
+    nvcsw: 1
+    nivcsw: 2
+  machine:
+    page-size: 4096
+    uname_system: linux
+    uname_nodename: dme-worker1
+    uname_release: 7.0.0-1020-azure
+    uname_machine: x86_64
+    ram_total: 3489540
+    ram_free: 1236608
+    ram_shared: 4172
+    ram_buffer: 39980
+    swap_total: 0
+    swap_free: 0
+    cpu_count: 1
+    cpu_speed: 2793
+    cpu_vendor: GenuineIntel
+    cpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz
+    load_min1: 0.41
+    load_min5: 0.33
+    load_min15: 0.26
+    procs_total: 127
+    procs_running: 1
+    procs_sleeping: 64
+    procs_other: 62
+    procs_vmsize: 3217204
+    procs_rss: 422372
+    task_total: 156
+    task_running: 1
+    task_sleeping: 93
+    task_other: 62
+  files:
+    B:
+      lfn: "B"
+      file_name: /var/lib/condor/execute/dir_10073/scratch/B
+      mode: 0o100644
+      size: 209715200
+      inode: 791977
+      nlink: 1
+      blksize: 4096
+      blocks: 409600
+      mtime: 2026-11-22T17:04:17+00:00
+      atime: 2026-11-22T17:04:16+00:00
+      ctime: 2026-11-22T17:04:17+00:00
+      uid: 65534
+      user: nobody
+      gid: 65534
+      group: nogroup
+      output: True
+      sha256: 45fe95270f1f9a9a6eba2df456db3376ecb4610fc4da2dc2e821f137b27acffa
+      checksum_timing: 1.07
+    stdin:
+      file_name: /dev/null
+      mode: 0o20666
+      size: 0
+      inode: 5
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-11-22T14:45:06+00:00
+      atime: 2026-11-22T14:45:06+00:00
+      ctime: 2026-11-22T14:45:06+00:00
+      uid: 0
+      user: root
+      gid: 0
+      group: root
+    stdout:
+      temporary_name: /tmp/ks.out.YfPOGM
+      descriptor: 3
+      mode: 0o100600
+      size: 1055
+      inode: 791973
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2026-11-22T17:04:17+00:00
+      atime: 2026-11-22T17:04:11+00:00
+      ctime: 2026-11-22T17:04:17+00:00
+      uid: 65534
+      user: nobody
+      gid: 65534
+      group: nogroup
+      data_truncated: false
+      data: |
+        {"block_bytes": 1048576, "flops": 1766799020, "fma": {"cpu_seconds": 1.4246622, "flops": 1766799020, "fma_operations": 883399510, "result": 110376179.76882823, "wall_seconds": 1.426581352}, "inputs": [{"bytes_read": 209715200, "lfn": "f1", "sha256": "e203fbc66dcfceb86e8fa341c607b1954f6bd35464b584be6c592760b877a00f"}, {"bytes_read": 209715200, "lfn": "f2", "sha256": "6264963de08034ccd9cd6e9aa67d1110b7b218700fde17608a6cf25a6a3099a2"}, {"bytes_read": 209715200, "lfn": "f3", "sha256": "5c2f89bd8ee4895da3e2ff52ca6883295e8a88070ddae43f6d81c710fac5cda7"}, {"bytes_read": 209715200, "lfn": "f4", "sha256": "1005f7dd0fd312f0e455b174b69f64b5cfa07488123df25dcab46e5bdff80956"}, {"bytes_read": 209715200, "lfn": "f5", "sha256": "f7002f8f8793c6b9cc33db853933c3a4d742c28ec362b906223c0140746615b2"}], "outputs": [{"bytes_written": 209715200, "lfn": "B", "sha256": "45fe95270f1f9a9a6eba2df456db3376ecb4610fc4da2dc2e821f137b27acffa"}], "program_version": "six_patterns_fma_v1", "record_type": "application_file_io_provenance_not_transfer_evidence", "task_id": "T6"}
+        
+    stderr:
+      temporary_name: /tmp/ks.err.OaPq6O
+      descriptor: 4
+      mode: 0o100600
+      size: 0
+      inode: 791974
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-11-22T17:04:11+00:00
+      atime: 2026-11-22T17:04:11+00:00
+      ctime: 2026-11-22T17:04:11+00:00
+      uid: 65534
+      user: nobody
+      gid: 65534
+      group: nogroup
+    metadata:
+      temporary_name: /tmp/ks.meta.CyTn23
+      descriptor: 5
+      mode: 0o100600
+      size: 0
+      inode: 791975
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-11-22T17:04:11+00:00
+      atime: 2026-11-22T17:04:11+00:00
+      ctime: 2026-11-22T17:04:11+00:00
+      uid: 65534
+      user: nobody
+      gid: 65534
+      group: nogroup
+
+---------------pegasus-multipart
+- integrity_verification_attempts:
+  - lfn: "campaign_task"
+    pfn: "campaign_task"
+    sha256: f2bd2df2752ae6890df433e1428f713c29dc6ab3a995a3787a8ebca2d432353f
+    success: True
+  - lfn: "f1"
+    pfn: "f1"
+    sha256: e203fbc66dcfceb86e8fa341c607b1954f6bd35464b584be6c592760b877a00f
+    success: True
+  - lfn: "f2"
+    pfn: "f2"
+    sha256: 6264963de08034ccd9cd6e9aa67d1110b7b218700fde17608a6cf25a6a3099a2
+    success: True
+  - lfn: "f3"
+    pfn: "f3"
+    sha256: 5c2f89bd8ee4895da3e2ff52ca6883295e8a88070ddae43f6d81c710fac5cda7
+    success: True
+  - lfn: "f4"
+    pfn: "f4"
+    sha256: 1005f7dd0fd312f0e455b174b69f64b5cfa07488123df25dcab46e5bdff80956
+    success: True
+  - lfn: "f5"
+    pfn: "f5"
+    sha256: f7002f8f8793c6b9cc33db853933c3a4d742c28ec362b906223c0140746615b2
+    success: True
+- integrity_summary:
+    succeeded: 6
+    failed: 0
+    duration: 3.765
+
+---------------pegasus-multipart
+location:
+    geohash: 66jc
+    ip: <omitido>
+    latitude: '-33.4521'
+    longitude: '-70.6536'
+    organization: Microsoft Corporation
+    subdomain: N/A

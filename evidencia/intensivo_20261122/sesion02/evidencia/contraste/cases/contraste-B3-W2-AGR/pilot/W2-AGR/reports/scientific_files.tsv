@@ -1,0 +1,7 @@
+file_id	roles	size_bytes	producer	consumers	origin	final_destinations
+lfn:a	external_input	209715200		P	dme-master	
+lfn:f1	final_output	209715200	C1			dme-master
+lfn:f2	final_output	209715200	C2			dme-master
+lfn:f3	final_output	209715200	C3			dme-master
+lfn:f4	final_output	209715200	C4			dme-master
+lfn:g	intermediate	209715200	P	C1,C2,C3,C4		

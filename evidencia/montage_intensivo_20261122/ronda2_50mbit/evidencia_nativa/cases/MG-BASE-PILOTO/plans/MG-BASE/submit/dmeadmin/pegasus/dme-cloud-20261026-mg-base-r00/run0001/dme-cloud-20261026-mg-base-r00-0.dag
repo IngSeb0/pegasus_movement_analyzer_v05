@@ -1,0 +1,1779 @@
+######################################################################
+# PEGASUS WMS GENERATED DAG FILE
+# DAG dme-cloud-20261026-mg-base-r00
+# Index = 0, Count = null
+######################################################################
+MAXJOBS cleanup 4
+MAXJOBS registration 1
+MAXJOBS stageout 10
+MAXJOBS stagein 10
+
+JOB create_dir_dme-cloud-20261026-mg-base-r00_0_local 00/03/create_dir_dme-cloud-20261026-mg-base-r00_0_local.sub
+SCRIPT POST create_dir_dme-cloud-20261026-mg-base-r00_0_local /usr/bin/pegasus-exitcode  -r $RETURN -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/03/create_dir_dme-cloud-20261026-mg-base-r00_0_local.out
+PRIORITY create_dir_dme-cloud-20261026-mg-base-r00_0_local 800
+RETRY create_dir_dme-cloud-20261026-mg-base-r00_0_local 0
+VARS create_dir_dme-cloud-20261026-mg-base-r00_0_local My.DAGNodeRetry="$(RETRY)"
+
+JOB stage_in_remote_local_0_0 00/03/stage_in_remote_local_0_0.sub
+SCRIPT POST stage_in_remote_local_0_0 /usr/bin/pegasus-exitcode  -r $RETURN -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/03/stage_in_remote_local_0_0.out
+PRIORITY stage_in_remote_local_0_0 700
+RETRY stage_in_remote_local_0_0 0
+CATEGORY stage_in_remote_local_0_0 stagein
+VARS stage_in_remote_local_0_0 My.DAGNodeRetry="$(RETRY)"
+
+JOB stage_in_local_local_0_8 00/03/stage_in_local_local_0_8.sub
+SCRIPT POST stage_in_local_local_0_8 /usr/bin/pegasus-exitcode  -r $RETURN -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/03/stage_in_local_local_0_8.out
+PRIORITY stage_in_local_local_0_8 692
+RETRY stage_in_local_local_0_8 0
+CATEGORY stage_in_local_local_0_8 stagein
+VARS stage_in_local_local_0_8 My.DAGNodeRetry="$(RETRY)"
+
+JOB stage_in_local_local_0_9 00/03/stage_in_local_local_0_9.sub
+SCRIPT POST stage_in_local_local_0_9 /usr/bin/pegasus-exitcode  -r $RETURN -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/03/stage_in_local_local_0_9.out
+PRIORITY stage_in_local_local_0_9 691
+RETRY stage_in_local_local_0_9 0
+CATEGORY stage_in_local_local_0_9 stagein
+VARS stage_in_local_local_0_9 My.DAGNodeRetry="$(RETRY)"
+
+JOB stage_in_local_local_0_4 00/03/stage_in_local_local_0_4.sub
+SCRIPT POST stage_in_local_local_0_4 /usr/bin/pegasus-exitcode  -r $RETURN -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/03/stage_in_local_local_0_4.out
+PRIORITY stage_in_local_local_0_4 696
+RETRY stage_in_local_local_0_4 0
+CATEGORY stage_in_local_local_0_4 stagein
+VARS stage_in_local_local_0_4 My.DAGNodeRetry="$(RETRY)"
+
+JOB stage_in_local_local_0_5 00/03/stage_in_local_local_0_5.sub
+SCRIPT POST stage_in_local_local_0_5 /usr/bin/pegasus-exitcode  -r $RETURN -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/03/stage_in_local_local_0_5.out
+PRIORITY stage_in_local_local_0_5 695
+RETRY stage_in_local_local_0_5 0
+CATEGORY stage_in_local_local_0_5 stagein
+VARS stage_in_local_local_0_5 My.DAGNodeRetry="$(RETRY)"
+
+JOB stage_in_local_local_0_6 00/03/stage_in_local_local_0_6.sub
+SCRIPT POST stage_in_local_local_0_6 /usr/bin/pegasus-exitcode  -r $RETURN -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/03/stage_in_local_local_0_6.out
+PRIORITY stage_in_local_local_0_6 694
+RETRY stage_in_local_local_0_6 0
+CATEGORY stage_in_local_local_0_6 stagein
+VARS stage_in_local_local_0_6 My.DAGNodeRetry="$(RETRY)"
+
+JOB stage_in_local_local_0_7 00/03/stage_in_local_local_0_7.sub
+SCRIPT POST stage_in_local_local_0_7 /usr/bin/pegasus-exitcode  -r $RETURN -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/03/stage_in_local_local_0_7.out
+PRIORITY stage_in_local_local_0_7 693
+RETRY stage_in_local_local_0_7 0
+CATEGORY stage_in_local_local_0_7 stagein
+VARS stage_in_local_local_0_7 My.DAGNodeRetry="$(RETRY)"
+
+JOB stage_in_local_local_0_0 00/03/stage_in_local_local_0_0.sub
+SCRIPT POST stage_in_local_local_0_0 /usr/bin/pegasus-exitcode  -r $RETURN -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/03/stage_in_local_local_0_0.out
+PRIORITY stage_in_local_local_0_0 700
+RETRY stage_in_local_local_0_0 0
+CATEGORY stage_in_local_local_0_0 stagein
+VARS stage_in_local_local_0_0 My.DAGNodeRetry="$(RETRY)"
+
+JOB stage_in_local_local_0_14 00/03/stage_in_local_local_0_14.sub
+SCRIPT POST stage_in_local_local_0_14 /usr/bin/pegasus-exitcode  -r $RETURN -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/03/stage_in_local_local_0_14.out
+PRIORITY stage_in_local_local_0_14 686
+RETRY stage_in_local_local_0_14 0
+CATEGORY stage_in_local_local_0_14 stagein
+VARS stage_in_local_local_0_14 My.DAGNodeRetry="$(RETRY)"
+
+JOB stage_in_local_local_0_1 00/03/stage_in_local_local_0_1.sub
+SCRIPT POST stage_in_local_local_0_1 /usr/bin/pegasus-exitcode  -r $RETURN -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/03/stage_in_local_local_0_1.out
+PRIORITY stage_in_local_local_0_1 699
+RETRY stage_in_local_local_0_1 0
+CATEGORY stage_in_local_local_0_1 stagein
+VARS stage_in_local_local_0_1 My.DAGNodeRetry="$(RETRY)"
+
+JOB stage_in_local_local_0_13 00/03/stage_in_local_local_0_13.sub
+SCRIPT POST stage_in_local_local_0_13 /usr/bin/pegasus-exitcode  -r $RETURN -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/03/stage_in_local_local_0_13.out
+PRIORITY stage_in_local_local_0_13 687
+RETRY stage_in_local_local_0_13 0
+CATEGORY stage_in_local_local_0_13 stagein
+VARS stage_in_local_local_0_13 My.DAGNodeRetry="$(RETRY)"
+
+JOB stage_in_local_local_0_2 00/03/stage_in_local_local_0_2.sub
+SCRIPT POST stage_in_local_local_0_2 /usr/bin/pegasus-exitcode  -r $RETURN -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/03/stage_in_local_local_0_2.out
+PRIORITY stage_in_local_local_0_2 698
+RETRY stage_in_local_local_0_2 0
+CATEGORY stage_in_local_local_0_2 stagein
+VARS stage_in_local_local_0_2 My.DAGNodeRetry="$(RETRY)"
+
+JOB stage_in_local_local_0_12 00/03/stage_in_local_local_0_12.sub
+SCRIPT POST stage_in_local_local_0_12 /usr/bin/pegasus-exitcode  -r $RETURN -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/03/stage_in_local_local_0_12.out
+PRIORITY stage_in_local_local_0_12 688
+RETRY stage_in_local_local_0_12 0
+CATEGORY stage_in_local_local_0_12 stagein
+VARS stage_in_local_local_0_12 My.DAGNodeRetry="$(RETRY)"
+
+JOB stage_in_local_local_0_3 00/03/stage_in_local_local_0_3.sub
+SCRIPT POST stage_in_local_local_0_3 /usr/bin/pegasus-exitcode  -r $RETURN -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/03/stage_in_local_local_0_3.out
+PRIORITY stage_in_local_local_0_3 697
+RETRY stage_in_local_local_0_3 0
+CATEGORY stage_in_local_local_0_3 stagein
+VARS stage_in_local_local_0_3 My.DAGNodeRetry="$(RETRY)"
+
+JOB stage_in_local_local_0_11 00/03/stage_in_local_local_0_11.sub
+SCRIPT POST stage_in_local_local_0_11 /usr/bin/pegasus-exitcode  -r $RETURN -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/03/stage_in_local_local_0_11.out
+PRIORITY stage_in_local_local_0_11 689
+RETRY stage_in_local_local_0_11 0
+CATEGORY stage_in_local_local_0_11 stagein
+VARS stage_in_local_local_0_11 My.DAGNodeRetry="$(RETRY)"
+
+JOB stage_in_local_local_0_10 00/03/stage_in_local_local_0_10.sub
+SCRIPT POST stage_in_local_local_0_10 /usr/bin/pegasus-exitcode  -r $RETURN -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/03/stage_in_local_local_0_10.out
+PRIORITY stage_in_local_local_0_10 690
+RETRY stage_in_local_local_0_10 0
+CATEGORY stage_in_local_local_0_10 stagein
+VARS stage_in_local_local_0_10 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P44 00/00/campaign_task_P44.sub
+SCRIPT POST campaign_task_P44 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/00/campaign_task_P44.out
+PRIORITY campaign_task_P44 20
+RETRY campaign_task_P44 0
+VARS campaign_task_P44 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P41 00/00/campaign_task_P41.sub
+SCRIPT POST campaign_task_P41 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/00/campaign_task_P41.out
+PRIORITY campaign_task_P41 20
+RETRY campaign_task_P41 0
+VARS campaign_task_P41 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P42 00/00/campaign_task_P42.sub
+SCRIPT POST campaign_task_P42 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/00/campaign_task_P42.out
+PRIORITY campaign_task_P42 20
+RETRY campaign_task_P42 0
+VARS campaign_task_P42 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P40 00/00/campaign_task_P40.sub
+SCRIPT POST campaign_task_P40 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/00/campaign_task_P40.out
+PRIORITY campaign_task_P40 20
+RETRY campaign_task_P40 0
+VARS campaign_task_P40 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P49 00/00/campaign_task_P49.sub
+SCRIPT POST campaign_task_P49 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/00/campaign_task_P49.out
+PRIORITY campaign_task_P49 20
+RETRY campaign_task_P49 0
+VARS campaign_task_P49 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P47 00/00/campaign_task_P47.sub
+SCRIPT POST campaign_task_P47 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/00/campaign_task_P47.out
+PRIORITY campaign_task_P47 20
+RETRY campaign_task_P47 0
+VARS campaign_task_P47 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P30 00/00/campaign_task_P30.sub
+SCRIPT POST campaign_task_P30 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/00/campaign_task_P30.out
+PRIORITY campaign_task_P30 20
+RETRY campaign_task_P30 0
+VARS campaign_task_P30 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P36 00/00/campaign_task_P36.sub
+SCRIPT POST campaign_task_P36 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/00/campaign_task_P36.out
+PRIORITY campaign_task_P36 20
+RETRY campaign_task_P36 0
+VARS campaign_task_P36 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P37 00/00/campaign_task_P37.sub
+SCRIPT POST campaign_task_P37 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/00/campaign_task_P37.out
+PRIORITY campaign_task_P37 20
+RETRY campaign_task_P37 0
+VARS campaign_task_P37 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P139 00/00/campaign_task_P139.sub
+SCRIPT POST campaign_task_P139 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/00/campaign_task_P139.out
+PRIORITY campaign_task_P139 20
+RETRY campaign_task_P139 0
+VARS campaign_task_P139 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P138 00/00/campaign_task_P138.sub
+SCRIPT POST campaign_task_P138 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/00/campaign_task_P138.out
+PRIORITY campaign_task_P138 20
+RETRY campaign_task_P138 0
+VARS campaign_task_P138 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P137 00/00/campaign_task_P137.sub
+SCRIPT POST campaign_task_P137 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/00/campaign_task_P137.out
+PRIORITY campaign_task_P137 20
+RETRY campaign_task_P137 0
+VARS campaign_task_P137 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P23 00/00/campaign_task_P23.sub
+SCRIPT POST campaign_task_P23 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/00/campaign_task_P23.out
+PRIORITY campaign_task_P23 20
+RETRY campaign_task_P23 0
+VARS campaign_task_P23 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P22 00/00/campaign_task_P22.sub
+SCRIPT POST campaign_task_P22 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/00/campaign_task_P22.out
+PRIORITY campaign_task_P22 20
+RETRY campaign_task_P22 0
+VARS campaign_task_P22 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P131 00/00/campaign_task_P131.sub
+SCRIPT POST campaign_task_P131 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/00/campaign_task_P131.out
+PRIORITY campaign_task_P131 20
+RETRY campaign_task_P131 0
+VARS campaign_task_P131 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P130 00/00/campaign_task_P130.sub
+SCRIPT POST campaign_task_P130 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/00/campaign_task_P130.out
+PRIORITY campaign_task_P130 20
+RETRY campaign_task_P130 0
+VARS campaign_task_P130 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P29 00/00/campaign_task_P29.sub
+SCRIPT POST campaign_task_P29 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/00/campaign_task_P29.out
+PRIORITY campaign_task_P29 20
+RETRY campaign_task_P29 0
+VARS campaign_task_P29 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P27 00/00/campaign_task_P27.sub
+SCRIPT POST campaign_task_P27 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/00/campaign_task_P27.out
+PRIORITY campaign_task_P27 20
+RETRY campaign_task_P27 0
+VARS campaign_task_P27 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P28 00/00/campaign_task_P28.sub
+SCRIPT POST campaign_task_P28 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/00/campaign_task_P28.out
+PRIORITY campaign_task_P28 20
+RETRY campaign_task_P28 0
+VARS campaign_task_P28 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P25 00/00/campaign_task_P25.sub
+SCRIPT POST campaign_task_P25 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/00/campaign_task_P25.out
+PRIORITY campaign_task_P25 20
+RETRY campaign_task_P25 0
+VARS campaign_task_P25 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P10 00/00/campaign_task_P10.sub
+SCRIPT POST campaign_task_P10 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/00/campaign_task_P10.out
+PRIORITY campaign_task_P10 20
+RETRY campaign_task_P10 0
+VARS campaign_task_P10 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P99 00/01/campaign_task_P99.sub
+SCRIPT POST campaign_task_P99 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/01/campaign_task_P99.out
+PRIORITY campaign_task_P99 20
+RETRY campaign_task_P99 0
+VARS campaign_task_P99 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P144 00/01/campaign_task_P144.sub
+SCRIPT POST campaign_task_P144 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/01/campaign_task_P144.out
+PRIORITY campaign_task_P144 20
+RETRY campaign_task_P144 0
+VARS campaign_task_P144 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P96 00/01/campaign_task_P96.sub
+SCRIPT POST campaign_task_P96 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/01/campaign_task_P96.out
+PRIORITY campaign_task_P96 20
+RETRY campaign_task_P96 0
+VARS campaign_task_P96 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P143 00/01/campaign_task_P143.sub
+SCRIPT POST campaign_task_P143 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/01/campaign_task_P143.out
+PRIORITY campaign_task_P143 20
+RETRY campaign_task_P143 0
+VARS campaign_task_P143 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P97 00/01/campaign_task_P97.sub
+SCRIPT POST campaign_task_P97 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/01/campaign_task_P97.out
+PRIORITY campaign_task_P97 20
+RETRY campaign_task_P97 0
+VARS campaign_task_P97 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P142 00/01/campaign_task_P142.sub
+SCRIPT POST campaign_task_P142 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/01/campaign_task_P142.out
+PRIORITY campaign_task_P142 20
+RETRY campaign_task_P142 0
+VARS campaign_task_P142 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P19 00/01/campaign_task_P19.sub
+SCRIPT POST campaign_task_P19 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/01/campaign_task_P19.out
+PRIORITY campaign_task_P19 20
+RETRY campaign_task_P19 0
+VARS campaign_task_P19 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P15 00/01/campaign_task_P15.sub
+SCRIPT POST campaign_task_P15 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/01/campaign_task_P15.out
+PRIORITY campaign_task_P15 20
+RETRY campaign_task_P15 0
+VARS campaign_task_P15 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P92 00/01/campaign_task_P92.sub
+SCRIPT POST campaign_task_P92 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/01/campaign_task_P92.out
+PRIORITY campaign_task_P92 20
+RETRY campaign_task_P92 0
+VARS campaign_task_P92 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P93 00/01/campaign_task_P93.sub
+SCRIPT POST campaign_task_P93 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/01/campaign_task_P93.out
+PRIORITY campaign_task_P93 20
+RETRY campaign_task_P93 0
+VARS campaign_task_P93 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P90 00/01/campaign_task_P90.sub
+SCRIPT POST campaign_task_P90 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/01/campaign_task_P90.out
+PRIORITY campaign_task_P90 20
+RETRY campaign_task_P90 0
+VARS campaign_task_P90 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P91 00/01/campaign_task_P91.sub
+SCRIPT POST campaign_task_P91 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/01/campaign_task_P91.out
+PRIORITY campaign_task_P91 20
+RETRY campaign_task_P91 0
+VARS campaign_task_P91 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P119 00/01/campaign_task_P119.sub
+SCRIPT POST campaign_task_P119 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/01/campaign_task_P119.out
+PRIORITY campaign_task_P119 20
+RETRY campaign_task_P119 0
+VARS campaign_task_P119 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P89 00/01/campaign_task_P89.sub
+SCRIPT POST campaign_task_P89 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/01/campaign_task_P89.out
+PRIORITY campaign_task_P89 20
+RETRY campaign_task_P89 0
+VARS campaign_task_P89 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P87 00/01/campaign_task_P87.sub
+SCRIPT POST campaign_task_P87 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/01/campaign_task_P87.out
+PRIORITY campaign_task_P87 20
+RETRY campaign_task_P87 0
+VARS campaign_task_P87 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P112 00/01/campaign_task_P112.sub
+SCRIPT POST campaign_task_P112 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/01/campaign_task_P112.out
+PRIORITY campaign_task_P112 20
+RETRY campaign_task_P112 0
+VARS campaign_task_P112 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P88 00/01/campaign_task_P88.sub
+SCRIPT POST campaign_task_P88 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/01/campaign_task_P88.out
+PRIORITY campaign_task_P88 20
+RETRY campaign_task_P88 0
+VARS campaign_task_P88 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P111 00/01/campaign_task_P111.sub
+SCRIPT POST campaign_task_P111 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/01/campaign_task_P111.out
+PRIORITY campaign_task_P111 20
+RETRY campaign_task_P111 0
+VARS campaign_task_P111 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P85 00/01/campaign_task_P85.sub
+SCRIPT POST campaign_task_P85 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/01/campaign_task_P85.out
+PRIORITY campaign_task_P85 20
+RETRY campaign_task_P85 0
+VARS campaign_task_P85 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P110 00/01/campaign_task_P110.sub
+SCRIPT POST campaign_task_P110 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/01/campaign_task_P110.out
+PRIORITY campaign_task_P110 20
+RETRY campaign_task_P110 0
+VARS campaign_task_P110 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P08 00/01/campaign_task_P08.sub
+SCRIPT POST campaign_task_P08 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/01/campaign_task_P08.out
+PRIORITY campaign_task_P08 20
+RETRY campaign_task_P08 0
+VARS campaign_task_P08 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P04 00/01/campaign_task_P04.sub
+SCRIPT POST campaign_task_P04 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/01/campaign_task_P04.out
+PRIORITY campaign_task_P04 20
+RETRY campaign_task_P04 0
+VARS campaign_task_P04 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P81 00/01/campaign_task_P81.sub
+SCRIPT POST campaign_task_P81 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/01/campaign_task_P81.out
+PRIORITY campaign_task_P81 20
+RETRY campaign_task_P81 0
+VARS campaign_task_P81 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P82 00/01/campaign_task_P82.sub
+SCRIPT POST campaign_task_P82 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/01/campaign_task_P82.out
+PRIORITY campaign_task_P82 20
+RETRY campaign_task_P82 0
+VARS campaign_task_P82 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P80 00/02/campaign_task_P80.sub
+SCRIPT POST campaign_task_P80 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/02/campaign_task_P80.out
+PRIORITY campaign_task_P80 20
+RETRY campaign_task_P80 0
+VARS campaign_task_P80 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P129 00/02/campaign_task_P129.sub
+SCRIPT POST campaign_task_P129 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/02/campaign_task_P129.out
+PRIORITY campaign_task_P129 20
+RETRY campaign_task_P129 0
+VARS campaign_task_P129 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P128 00/02/campaign_task_P128.sub
+SCRIPT POST campaign_task_P128 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/02/campaign_task_P128.out
+PRIORITY campaign_task_P128 20
+RETRY campaign_task_P128 0
+VARS campaign_task_P128 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P124 00/02/campaign_task_P124.sub
+SCRIPT POST campaign_task_P124 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/02/campaign_task_P124.out
+PRIORITY campaign_task_P124 20
+RETRY campaign_task_P124 0
+VARS campaign_task_P124 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P122 00/02/campaign_task_P122.sub
+SCRIPT POST campaign_task_P122 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/02/campaign_task_P122.out
+PRIORITY campaign_task_P122 20
+RETRY campaign_task_P122 0
+VARS campaign_task_P122 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P74 00/02/campaign_task_P74.sub
+SCRIPT POST campaign_task_P74 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/02/campaign_task_P74.out
+PRIORITY campaign_task_P74 20
+RETRY campaign_task_P74 0
+VARS campaign_task_P74 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P121 00/02/campaign_task_P121.sub
+SCRIPT POST campaign_task_P121 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/02/campaign_task_P121.out
+PRIORITY campaign_task_P121 20
+RETRY campaign_task_P121 0
+VARS campaign_task_P121 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P75 00/02/campaign_task_P75.sub
+SCRIPT POST campaign_task_P75 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/02/campaign_task_P75.out
+PRIORITY campaign_task_P75 20
+RETRY campaign_task_P75 0
+VARS campaign_task_P75 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P120 00/02/campaign_task_P120.sub
+SCRIPT POST campaign_task_P120 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/02/campaign_task_P120.out
+PRIORITY campaign_task_P120 20
+RETRY campaign_task_P120 0
+VARS campaign_task_P120 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P72 00/02/campaign_task_P72.sub
+SCRIPT POST campaign_task_P72 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/02/campaign_task_P72.out
+PRIORITY campaign_task_P72 20
+RETRY campaign_task_P72 0
+VARS campaign_task_P72 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P65 00/02/campaign_task_P65.sub
+SCRIPT POST campaign_task_P65 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/02/campaign_task_P65.out
+PRIORITY campaign_task_P65 20
+RETRY campaign_task_P65 0
+VARS campaign_task_P65 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P61 00/02/campaign_task_P61.sub
+SCRIPT POST campaign_task_P61 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/02/campaign_task_P61.out
+PRIORITY campaign_task_P61 20
+RETRY campaign_task_P61 0
+VARS campaign_task_P61 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P62 00/02/campaign_task_P62.sub
+SCRIPT POST campaign_task_P62 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/02/campaign_task_P62.out
+PRIORITY campaign_task_P62 20
+RETRY campaign_task_P62 0
+VARS campaign_task_P62 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P69 00/02/campaign_task_P69.sub
+SCRIPT POST campaign_task_P69 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/02/campaign_task_P69.out
+PRIORITY campaign_task_P69 20
+RETRY campaign_task_P69 0
+VARS campaign_task_P69 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P60 00/02/campaign_task_P60.sub
+SCRIPT POST campaign_task_P60 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/02/campaign_task_P60.out
+PRIORITY campaign_task_P60 20
+RETRY campaign_task_P60 0
+VARS campaign_task_P60 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P109 00/02/campaign_task_P109.sub
+SCRIPT POST campaign_task_P109 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/02/campaign_task_P109.out
+PRIORITY campaign_task_P109 20
+RETRY campaign_task_P109 0
+VARS campaign_task_P109 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P108 00/02/campaign_task_P108.sub
+SCRIPT POST campaign_task_P108 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/02/campaign_task_P108.out
+PRIORITY campaign_task_P108 20
+RETRY campaign_task_P108 0
+VARS campaign_task_P108 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P103 00/02/campaign_task_P103.sub
+SCRIPT POST campaign_task_P103 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/02/campaign_task_P103.out
+PRIORITY campaign_task_P103 20
+RETRY campaign_task_P103 0
+VARS campaign_task_P103 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P101 00/02/campaign_task_P101.sub
+SCRIPT POST campaign_task_P101 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/02/campaign_task_P101.out
+PRIORITY campaign_task_P101 20
+RETRY campaign_task_P101 0
+VARS campaign_task_P101 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P55 00/02/campaign_task_P55.sub
+SCRIPT POST campaign_task_P55 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/02/campaign_task_P55.out
+PRIORITY campaign_task_P55 20
+RETRY campaign_task_P55 0
+VARS campaign_task_P55 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P100 00/02/campaign_task_P100.sub
+SCRIPT POST campaign_task_P100 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/02/campaign_task_P100.out
+PRIORITY campaign_task_P100 20
+RETRY campaign_task_P100 0
+VARS campaign_task_P100 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P52 00/02/campaign_task_P52.sub
+SCRIPT POST campaign_task_P52 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/02/campaign_task_P52.out
+PRIORITY campaign_task_P52 20
+RETRY campaign_task_P52 0
+VARS campaign_task_P52 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P53 00/02/campaign_task_P53.sub
+SCRIPT POST campaign_task_P53 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/02/campaign_task_P53.out
+PRIORITY campaign_task_P53 20
+RETRY campaign_task_P53 0
+VARS campaign_task_P53 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P50 00/02/campaign_task_P50.sub
+SCRIPT POST campaign_task_P50 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/02/campaign_task_P50.out
+PRIORITY campaign_task_P50 20
+RETRY campaign_task_P50 0
+VARS campaign_task_P50 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P01 00/01/campaign_task_P01.sub
+SCRIPT POST campaign_task_P01 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/01/campaign_task_P01.out
+PRIORITY campaign_task_P01 20
+RETRY campaign_task_P01 0
+VARS campaign_task_P01 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P56 00/02/campaign_task_P56.sub
+SCRIPT POST campaign_task_P56 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/02/campaign_task_P56.out
+PRIORITY campaign_task_P56 20
+RETRY campaign_task_P56 0
+VARS campaign_task_P56 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P146 00/00/campaign_task_P146.sub
+SCRIPT POST campaign_task_P146 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/00/campaign_task_P146.out
+PRIORITY campaign_task_P146 20
+RETRY campaign_task_P146 0
+VARS campaign_task_P146 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P79 00/02/campaign_task_P79.sub
+SCRIPT POST campaign_task_P79 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/02/campaign_task_P79.out
+PRIORITY campaign_task_P79 20
+RETRY campaign_task_P79 0
+VARS campaign_task_P79 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P68 00/02/campaign_task_P68.sub
+SCRIPT POST campaign_task_P68 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/02/campaign_task_P68.out
+PRIORITY campaign_task_P68 20
+RETRY campaign_task_P68 0
+VARS campaign_task_P68 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P134 00/00/campaign_task_P134.sub
+SCRIPT POST campaign_task_P134 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/00/campaign_task_P134.out
+PRIORITY campaign_task_P134 20
+RETRY campaign_task_P134 0
+VARS campaign_task_P134 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P33 00/00/campaign_task_P33.sub
+SCRIPT POST campaign_task_P33 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/00/campaign_task_P33.out
+PRIORITY campaign_task_P33 20
+RETRY campaign_task_P33 0
+VARS campaign_task_P33 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P18 00/01/campaign_task_P18.sub
+SCRIPT POST campaign_task_P18 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/01/campaign_task_P18.out
+PRIORITY campaign_task_P18 20
+RETRY campaign_task_P18 0
+VARS campaign_task_P18 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P07 00/01/campaign_task_P07.sub
+SCRIPT POST campaign_task_P07 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/01/campaign_task_P07.out
+PRIORITY campaign_task_P07 20
+RETRY campaign_task_P07 0
+VARS campaign_task_P07 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P45 00/00/campaign_task_P45.sub
+SCRIPT POST campaign_task_P45 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/00/campaign_task_P45.out
+PRIORITY campaign_task_P45 20
+RETRY campaign_task_P45 0
+VARS campaign_task_P45 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P114 00/01/campaign_task_P114.sub
+SCRIPT POST campaign_task_P114 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/01/campaign_task_P114.out
+PRIORITY campaign_task_P114 20
+RETRY campaign_task_P114 0
+VARS campaign_task_P114 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P57 00/02/campaign_task_P57.sub
+SCRIPT POST campaign_task_P57 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/02/campaign_task_P57.out
+PRIORITY campaign_task_P57 20
+RETRY campaign_task_P57 0
+VARS campaign_task_P57 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P98 00/01/campaign_task_P98.sub
+SCRIPT POST campaign_task_P98 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/01/campaign_task_P98.out
+PRIORITY campaign_task_P98 20
+RETRY campaign_task_P98 0
+VARS campaign_task_P98 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P76 00/02/campaign_task_P76.sub
+SCRIPT POST campaign_task_P76 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/02/campaign_task_P76.out
+PRIORITY campaign_task_P76 20
+RETRY campaign_task_P76 0
+VARS campaign_task_P76 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P133 00/00/campaign_task_P133.sub
+SCRIPT POST campaign_task_P133 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/00/campaign_task_P133.out
+PRIORITY campaign_task_P133 20
+RETRY campaign_task_P133 0
+VARS campaign_task_P133 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P66 00/02/campaign_task_P66.sub
+SCRIPT POST campaign_task_P66 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/02/campaign_task_P66.out
+PRIORITY campaign_task_P66 20
+RETRY campaign_task_P66 0
+VARS campaign_task_P66 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P31 00/00/campaign_task_P31.sub
+SCRIPT POST campaign_task_P31 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/00/campaign_task_P31.out
+PRIORITY campaign_task_P31 20
+RETRY campaign_task_P31 0
+VARS campaign_task_P31 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P16 00/01/campaign_task_P16.sub
+SCRIPT POST campaign_task_P16 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/01/campaign_task_P16.out
+PRIORITY campaign_task_P16 20
+RETRY campaign_task_P16 0
+VARS campaign_task_P16 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P05 00/01/campaign_task_P05.sub
+SCRIPT POST campaign_task_P05 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/01/campaign_task_P05.out
+PRIORITY campaign_task_P05 20
+RETRY campaign_task_P05 0
+VARS campaign_task_P05 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P125 00/02/campaign_task_P125.sub
+SCRIPT POST campaign_task_P125 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/02/campaign_task_P125.out
+PRIORITY campaign_task_P125 20
+RETRY campaign_task_P125 0
+VARS campaign_task_P125 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P67 00/02/campaign_task_P67.sub
+SCRIPT POST campaign_task_P67 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/02/campaign_task_P67.out
+PRIORITY campaign_task_P67 20
+RETRY campaign_task_P67 0
+VARS campaign_task_P67 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P13 00/00/campaign_task_P13.sub
+SCRIPT POST campaign_task_P13 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/00/campaign_task_P13.out
+PRIORITY campaign_task_P13 20
+RETRY campaign_task_P13 0
+VARS campaign_task_P13 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P32 00/00/campaign_task_P32.sub
+SCRIPT POST campaign_task_P32 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/00/campaign_task_P32.out
+PRIORITY campaign_task_P32 20
+RETRY campaign_task_P32 0
+VARS campaign_task_P32 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P21 00/00/campaign_task_P21.sub
+SCRIPT POST campaign_task_P21 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/00/campaign_task_P21.out
+PRIORITY campaign_task_P21 20
+RETRY campaign_task_P21 0
+VARS campaign_task_P21 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P140 00/01/campaign_task_P140.sub
+SCRIPT POST campaign_task_P140 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/01/campaign_task_P140.out
+PRIORITY campaign_task_P140 20
+RETRY campaign_task_P140 0
+VARS campaign_task_P140 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P09 00/01/campaign_task_P09.sub
+SCRIPT POST campaign_task_P09 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/01/campaign_task_P09.out
+PRIORITY campaign_task_P09 20
+RETRY campaign_task_P09 0
+VARS campaign_task_P09 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P115 00/01/campaign_task_P115.sub
+SCRIPT POST campaign_task_P115 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/01/campaign_task_P115.out
+PRIORITY campaign_task_P115 20
+RETRY campaign_task_P115 0
+VARS campaign_task_P115 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P104 00/02/campaign_task_P104.sub
+SCRIPT POST campaign_task_P104 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/02/campaign_task_P104.out
+PRIORITY campaign_task_P104 20
+RETRY campaign_task_P104 0
+VARS campaign_task_P104 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P46 00/00/campaign_task_P46.sub
+SCRIPT POST campaign_task_P46 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/00/campaign_task_P46.out
+PRIORITY campaign_task_P46 20
+RETRY campaign_task_P46 0
+VARS campaign_task_P46 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P02 00/01/campaign_task_P02.sub
+SCRIPT POST campaign_task_P02 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/01/campaign_task_P02.out
+PRIORITY campaign_task_P02 20
+RETRY campaign_task_P02 0
+VARS campaign_task_P02 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P102 00/02/campaign_task_P102.sub
+SCRIPT POST campaign_task_P102 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/02/campaign_task_P102.out
+PRIORITY campaign_task_P102 20
+RETRY campaign_task_P102 0
+VARS campaign_task_P102 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P145 00/01/campaign_task_P145.sub
+SCRIPT POST campaign_task_P145 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/01/campaign_task_P145.out
+PRIORITY campaign_task_P145 20
+RETRY campaign_task_P145 0
+VARS campaign_task_P145 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P123 00/02/campaign_task_P123.sub
+SCRIPT POST campaign_task_P123 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/02/campaign_task_P123.out
+PRIORITY campaign_task_P123 20
+RETRY campaign_task_P123 0
+VARS campaign_task_P123 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P132 00/00/campaign_task_P132.sub
+SCRIPT POST campaign_task_P132 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/00/campaign_task_P132.out
+PRIORITY campaign_task_P132 20
+RETRY campaign_task_P132 0
+VARS campaign_task_P132 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P63 00/02/campaign_task_P63.sub
+SCRIPT POST campaign_task_P63 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/02/campaign_task_P63.out
+PRIORITY campaign_task_P63 20
+RETRY campaign_task_P63 0
+VARS campaign_task_P63 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P38 00/00/campaign_task_P38.sub
+SCRIPT POST campaign_task_P38 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/00/campaign_task_P38.out
+PRIORITY campaign_task_P38 20
+RETRY campaign_task_P38 0
+VARS campaign_task_P38 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P17 00/01/campaign_task_P17.sub
+SCRIPT POST campaign_task_P17 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/01/campaign_task_P17.out
+PRIORITY campaign_task_P17 20
+RETRY campaign_task_P17 0
+VARS campaign_task_P17 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P06 00/01/campaign_task_P06.sub
+SCRIPT POST campaign_task_P06 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/01/campaign_task_P06.out
+PRIORITY campaign_task_P06 20
+RETRY campaign_task_P06 0
+VARS campaign_task_P06 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P147 00/00/campaign_task_P147.sub
+SCRIPT POST campaign_task_P147 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/00/campaign_task_P147.out
+PRIORITY campaign_task_P147 20
+RETRY campaign_task_P147 0
+VARS campaign_task_P147 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P78 00/02/campaign_task_P78.sub
+SCRIPT POST campaign_task_P78 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/02/campaign_task_P78.out
+PRIORITY campaign_task_P78 20
+RETRY campaign_task_P78 0
+VARS campaign_task_P78 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P35 00/00/campaign_task_P35.sub
+SCRIPT POST campaign_task_P35 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/00/campaign_task_P35.out
+PRIORITY campaign_task_P35 20
+RETRY campaign_task_P35 0
+VARS campaign_task_P35 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P135 00/00/campaign_task_P135.sub
+SCRIPT POST campaign_task_P135 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/00/campaign_task_P135.out
+PRIORITY campaign_task_P135 20
+RETRY campaign_task_P135 0
+VARS campaign_task_P135 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P95 00/01/campaign_task_P95.sub
+SCRIPT POST campaign_task_P95 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/01/campaign_task_P95.out
+PRIORITY campaign_task_P95 20
+RETRY campaign_task_P95 0
+VARS campaign_task_P95 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P84 00/01/campaign_task_P84.sub
+SCRIPT POST campaign_task_P84 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/01/campaign_task_P84.out
+PRIORITY campaign_task_P84 20
+RETRY campaign_task_P84 0
+VARS campaign_task_P84 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P71 00/02/campaign_task_P71.sub
+SCRIPT POST campaign_task_P71 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/02/campaign_task_P71.out
+PRIORITY campaign_task_P71 20
+RETRY campaign_task_P71 0
+VARS campaign_task_P71 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P116 00/01/campaign_task_P116.sub
+SCRIPT POST campaign_task_P116 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/01/campaign_task_P116.out
+PRIORITY campaign_task_P116 20
+RETRY campaign_task_P116 0
+VARS campaign_task_P116 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P105 00/02/campaign_task_P105.sub
+SCRIPT POST campaign_task_P105 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/02/campaign_task_P105.out
+PRIORITY campaign_task_P105 20
+RETRY campaign_task_P105 0
+VARS campaign_task_P105 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P59 00/02/campaign_task_P59.sub
+SCRIPT POST campaign_task_P59 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/02/campaign_task_P59.out
+PRIORITY campaign_task_P59 20
+RETRY campaign_task_P59 0
+VARS campaign_task_P59 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P113 00/01/campaign_task_P113.sub
+SCRIPT POST campaign_task_P113 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/01/campaign_task_P113.out
+PRIORITY campaign_task_P113 20
+RETRY campaign_task_P113 0
+VARS campaign_task_P113 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P43 00/00/campaign_task_P43.sub
+SCRIPT POST campaign_task_P43 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/00/campaign_task_P43.out
+PRIORITY campaign_task_P43 20
+RETRY campaign_task_P43 0
+VARS campaign_task_P43 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P54 00/02/campaign_task_P54.sub
+SCRIPT POST campaign_task_P54 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/02/campaign_task_P54.out
+PRIORITY campaign_task_P54 20
+RETRY campaign_task_P54 0
+VARS campaign_task_P54 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P11 00/01/campaign_task_P11.sub
+SCRIPT POST campaign_task_P11 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/01/campaign_task_P11.out
+PRIORITY campaign_task_P11 20
+RETRY campaign_task_P11 0
+VARS campaign_task_P11 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P77 00/02/campaign_task_P77.sub
+SCRIPT POST campaign_task_P77 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/02/campaign_task_P77.out
+PRIORITY campaign_task_P77 20
+RETRY campaign_task_P77 0
+VARS campaign_task_P77 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P20 00/00/campaign_task_P20.sub
+SCRIPT POST campaign_task_P20 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/00/campaign_task_P20.out
+PRIORITY campaign_task_P20 20
+RETRY campaign_task_P20 0
+VARS campaign_task_P20 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P64 00/02/campaign_task_P64.sub
+SCRIPT POST campaign_task_P64 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/02/campaign_task_P64.out
+PRIORITY campaign_task_P64 20
+RETRY campaign_task_P64 0
+VARS campaign_task_P64 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P39 00/00/campaign_task_P39.sub
+SCRIPT POST campaign_task_P39 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/00/campaign_task_P39.out
+PRIORITY campaign_task_P39 20
+RETRY campaign_task_P39 0
+VARS campaign_task_P39 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P14 00/01/campaign_task_P14.sub
+SCRIPT POST campaign_task_P14 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/01/campaign_task_P14.out
+PRIORITY campaign_task_P14 20
+RETRY campaign_task_P14 0
+VARS campaign_task_P14 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P03 00/01/campaign_task_P03.sub
+SCRIPT POST campaign_task_P03 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/01/campaign_task_P03.out
+PRIORITY campaign_task_P03 20
+RETRY campaign_task_P03 0
+VARS campaign_task_P03 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P34 00/00/campaign_task_P34.sub
+SCRIPT POST campaign_task_P34 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/00/campaign_task_P34.out
+PRIORITY campaign_task_P34 20
+RETRY campaign_task_P34 0
+VARS campaign_task_P34 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P12 00/00/campaign_task_P12.sub
+SCRIPT POST campaign_task_P12 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/00/campaign_task_P12.out
+PRIORITY campaign_task_P12 20
+RETRY campaign_task_P12 0
+VARS campaign_task_P12 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P24 00/00/campaign_task_P24.sub
+SCRIPT POST campaign_task_P24 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/00/campaign_task_P24.out
+PRIORITY campaign_task_P24 20
+RETRY campaign_task_P24 0
+VARS campaign_task_P24 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P141 00/01/campaign_task_P141.sub
+SCRIPT POST campaign_task_P141 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/01/campaign_task_P141.out
+PRIORITY campaign_task_P141 20
+RETRY campaign_task_P141 0
+VARS campaign_task_P141 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P83 00/01/campaign_task_P83.sub
+SCRIPT POST campaign_task_P83 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/01/campaign_task_P83.out
+PRIORITY campaign_task_P83 20
+RETRY campaign_task_P83 0
+VARS campaign_task_P83 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P70 00/02/campaign_task_P70.sub
+SCRIPT POST campaign_task_P70 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/02/campaign_task_P70.out
+PRIORITY campaign_task_P70 20
+RETRY campaign_task_P70 0
+VARS campaign_task_P70 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P117 00/01/campaign_task_P117.sub
+SCRIPT POST campaign_task_P117 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/01/campaign_task_P117.out
+PRIORITY campaign_task_P117 20
+RETRY campaign_task_P117 0
+VARS campaign_task_P117 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P106 00/02/campaign_task_P106.sub
+SCRIPT POST campaign_task_P106 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/02/campaign_task_P106.out
+PRIORITY campaign_task_P106 20
+RETRY campaign_task_P106 0
+VARS campaign_task_P106 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P58 00/02/campaign_task_P58.sub
+SCRIPT POST campaign_task_P58 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/02/campaign_task_P58.out
+PRIORITY campaign_task_P58 20
+RETRY campaign_task_P58 0
+VARS campaign_task_P58 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P126 00/02/campaign_task_P126.sub
+SCRIPT POST campaign_task_P126 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/02/campaign_task_P126.out
+PRIORITY campaign_task_P126 20
+RETRY campaign_task_P126 0
+VARS campaign_task_P126 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P136 00/00/campaign_task_P136.sub
+SCRIPT POST campaign_task_P136 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/00/campaign_task_P136.out
+PRIORITY campaign_task_P136 20
+RETRY campaign_task_P136 0
+VARS campaign_task_P136 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P86 00/01/campaign_task_P86.sub
+SCRIPT POST campaign_task_P86 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/01/campaign_task_P86.out
+PRIORITY campaign_task_P86 20
+RETRY campaign_task_P86 0
+VARS campaign_task_P86 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P94 00/01/campaign_task_P94.sub
+SCRIPT POST campaign_task_P94 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/01/campaign_task_P94.out
+PRIORITY campaign_task_P94 20
+RETRY campaign_task_P94 0
+VARS campaign_task_P94 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P73 00/02/campaign_task_P73.sub
+SCRIPT POST campaign_task_P73 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/02/campaign_task_P73.out
+PRIORITY campaign_task_P73 20
+RETRY campaign_task_P73 0
+VARS campaign_task_P73 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P51 00/02/campaign_task_P51.sub
+SCRIPT POST campaign_task_P51 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/02/campaign_task_P51.out
+PRIORITY campaign_task_P51 20
+RETRY campaign_task_P51 0
+VARS campaign_task_P51 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P118 00/01/campaign_task_P118.sub
+SCRIPT POST campaign_task_P118 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/01/campaign_task_P118.out
+PRIORITY campaign_task_P118 20
+RETRY campaign_task_P118 0
+VARS campaign_task_P118 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P107 00/02/campaign_task_P107.sub
+SCRIPT POST campaign_task_P107 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/02/campaign_task_P107.out
+PRIORITY campaign_task_P107 20
+RETRY campaign_task_P107 0
+VARS campaign_task_P107 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P127 00/02/campaign_task_P127.sub
+SCRIPT POST campaign_task_P127 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/02/campaign_task_P127.out
+PRIORITY campaign_task_P127 20
+RETRY campaign_task_P127 0
+VARS campaign_task_P127 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P48 00/00/campaign_task_P48.sub
+SCRIPT POST campaign_task_P48 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/00/campaign_task_P48.out
+PRIORITY campaign_task_P48 20
+RETRY campaign_task_P48 0
+VARS campaign_task_P48 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_P26 00/00/campaign_task_P26.sub
+SCRIPT POST campaign_task_P26 /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/00/campaign_task_P26.out
+PRIORITY campaign_task_P26 20
+RETRY campaign_task_P26 0
+VARS campaign_task_P26 My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_TABLE 00/03/campaign_task_TABLE.sub
+SCRIPT POST campaign_task_TABLE /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/03/campaign_task_TABLE.out
+PRIORITY campaign_task_TABLE 30
+RETRY campaign_task_TABLE 0
+VARS campaign_task_TABLE My.DAGNodeRetry="$(RETRY)"
+
+JOB campaign_task_ADD 00/03/campaign_task_ADD.sub
+SCRIPT POST campaign_task_ADD /usr/bin/pegasus-exitcode  -r $RETURN -s PegasusLite:+exitcode+0 -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/03/campaign_task_ADD.out
+PRIORITY campaign_task_ADD 40
+RETRY campaign_task_ADD 0
+VARS campaign_task_ADD My.DAGNodeRetry="$(RETRY)"
+
+JOB stage_out_local_local_2_0 00/03/stage_out_local_local_2_0.sub
+SCRIPT POST stage_out_local_local_2_0 /usr/bin/pegasus-exitcode  -r $RETURN -l dme-cloud-20261026-mg-base-r00-0.exitcode.log -M dme-cloud-20261026-mg-base-r00-0.cache.meta   .//00/03/stage_out_local_local_2_0.out
+PRIORITY stage_out_local_local_2_0 900
+RETRY stage_out_local_local_2_0 0
+CATEGORY stage_out_local_local_2_0 stageout
+VARS stage_out_local_local_2_0 My.DAGNodeRetry="$(RETRY)"
+
+PARENT  stage_in_local_local_0_8 CHILD campaign_task_P85
+PARENT  stage_in_local_local_0_8 CHILD campaign_task_P97
+PARENT  stage_in_local_local_0_8 CHILD campaign_task_P120
+PARENT  stage_in_local_local_0_8 CHILD campaign_task_P53
+PARENT  stage_in_local_local_0_8 CHILD campaign_task_P109
+PARENT  stage_in_local_local_0_8 CHILD campaign_task_P91
+PARENT  stage_in_local_local_0_8 CHILD campaign_task_P49
+PARENT  stage_in_local_local_0_8 CHILD campaign_task_P129
+PARENT  stage_in_local_local_0_8 CHILD campaign_task_P28
+PARENT  stage_in_local_local_0_8 CHILD campaign_task_P137
+PARENT  stage_in_local_local_0_9 CHILD campaign_task_P23
+PARENT  stage_in_local_local_0_9 CHILD campaign_task_P110
+PARENT  stage_in_local_local_0_9 CHILD campaign_task_P142
+PARENT  stage_in_local_local_0_9 CHILD campaign_task_P72
+PARENT  stage_in_local_local_0_9 CHILD campaign_task_P50
+PARENT  stage_in_local_local_0_9 CHILD campaign_task_P119
+PARENT  stage_in_local_local_0_9 CHILD campaign_task_P108
+PARENT  stage_in_local_local_0_9 CHILD campaign_task_P128
+PARENT  stage_in_local_local_0_9 CHILD campaign_task_P47
+PARENT  stage_in_local_local_0_9 CHILD campaign_task_P25
+PARENT  stage_in_local_local_0_4 CHILD campaign_task_P87
+PARENT  stage_in_local_local_0_4 CHILD campaign_task_P101
+PARENT  stage_in_local_local_0_4 CHILD campaign_task_P44
+PARENT  stage_in_local_local_0_4 CHILD campaign_task_P99
+PARENT  stage_in_local_local_0_4 CHILD campaign_task_P122
+PARENT  stage_in_local_local_0_4 CHILD campaign_task_P131
+PARENT  stage_in_local_local_0_4 CHILD campaign_task_P61
+PARENT  stage_in_local_local_0_4 CHILD campaign_task_P36
+PARENT  stage_in_local_local_0_4 CHILD campaign_task_P15
+PARENT  stage_in_local_local_0_4 CHILD campaign_task_P04
+PARENT  stage_in_local_local_0_5 CHILD campaign_task_P112
+PARENT  stage_in_local_local_0_5 CHILD campaign_task_P144
+PARENT  stage_in_local_local_0_5 CHILD campaign_task_P55
+PARENT  stage_in_local_local_0_5 CHILD campaign_task_P41
+PARENT  stage_in_local_local_0_5 CHILD campaign_task_P74
+PARENT  stage_in_local_local_0_5 CHILD campaign_task_P130
+PARENT  stage_in_local_local_0_5 CHILD campaign_task_P62
+PARENT  stage_in_local_local_0_5 CHILD campaign_task_P92
+PARENT  stage_in_local_local_0_5 CHILD campaign_task_P81
+PARENT  stage_in_local_local_0_5 CHILD campaign_task_P37
+PARENT  stage_in_local_local_0_6 CHILD campaign_task_P88
+PARENT  stage_in_local_local_0_6 CHILD campaign_task_P100
+PARENT  stage_in_local_local_0_6 CHILD campaign_task_P96
+PARENT  stage_in_local_local_0_6 CHILD campaign_task_P121
+PARENT  stage_in_local_local_0_6 CHILD campaign_task_P42
+PARENT  stage_in_local_local_0_6 CHILD campaign_task_P93
+PARENT  stage_in_local_local_0_6 CHILD campaign_task_P82
+PARENT  stage_in_local_local_0_6 CHILD campaign_task_P29
+PARENT  stage_in_local_local_0_6 CHILD campaign_task_P139
+PARENT  stage_in_local_local_0_6 CHILD campaign_task_P69
+PARENT  stage_in_local_local_0_7 CHILD campaign_task_P111
+PARENT  stage_in_local_local_0_7 CHILD campaign_task_P143
+PARENT  stage_in_local_local_0_7 CHILD campaign_task_P52
+PARENT  stage_in_local_local_0_7 CHILD campaign_task_P75
+PARENT  stage_in_local_local_0_7 CHILD campaign_task_P40
+PARENT  stage_in_local_local_0_7 CHILD campaign_task_P60
+PARENT  stage_in_local_local_0_7 CHILD campaign_task_P90
+PARENT  stage_in_local_local_0_7 CHILD campaign_task_P80
+PARENT  stage_in_local_local_0_7 CHILD campaign_task_P27
+PARENT  stage_in_local_local_0_7 CHILD campaign_task_P138
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P45
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P46
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P43
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P44
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P41
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P42
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P40
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P49
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P47
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P48
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P34
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P35
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P32
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P33
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P30
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P31
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P38
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P39
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P36
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P37
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P139
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P138
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P137
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P23
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P136
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P24
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P135
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P21
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P134
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P22
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P133
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P132
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P20
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P131
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P130
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P29
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P27
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P28
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P25
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P26
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_ADD
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P12
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P147
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P13
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P146
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P10
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P98
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P145
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P11
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P99
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P144
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P96
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P143
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P97
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P142
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P94
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P141
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P95
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P140
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P18
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P19
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P16
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P17
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P14
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P15
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P92
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P93
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P90
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P91
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P119
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P118
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P117
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P116
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P115
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P01
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P89
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P114
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P02
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P113
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P87
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P112
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P88
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P111
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P85
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P110
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P86
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P83
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P84
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P09
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P07
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P08
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P05
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P06
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P03
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P04
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P81
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P82
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P80
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P129
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P128
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P127
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P126
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P78
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P125
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P79
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P124
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P76
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P123
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P77
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P122
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P74
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P121
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P75
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P120
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P72
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P73
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P70
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P71
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P67
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P68
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P65
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P66
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P63
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P64
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P61
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P62
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P69
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P60
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P109
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P108
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P107
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P106
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P105
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P104
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P56
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P103
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P57
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P102
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P54
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P101
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P55
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P100
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P52
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P53
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P50
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P51
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P58
+PARENT  stage_in_local_local_0_0 CHILD campaign_task_P59
+PARENT  stage_in_local_local_0_1 CHILD campaign_task_P45
+PARENT  stage_in_local_local_0_1 CHILD campaign_task_P114
+PARENT  stage_in_local_local_0_1 CHILD campaign_task_P57
+PARENT  stage_in_local_local_0_1 CHILD campaign_task_P98
+PARENT  stage_in_local_local_0_1 CHILD campaign_task_P76
+PARENT  stage_in_local_local_0_1 CHILD campaign_task_P133
+PARENT  stage_in_local_local_0_1 CHILD campaign_task_P66
+PARENT  stage_in_local_local_0_1 CHILD campaign_task_P31
+PARENT  stage_in_local_local_0_1 CHILD campaign_task_P16
+PARENT  stage_in_local_local_0_1 CHILD campaign_task_P05
+PARENT  stage_in_local_local_0_2 CHILD campaign_task_P46
+PARENT  stage_in_local_local_0_2 CHILD campaign_task_P02
+PARENT  stage_in_local_local_0_2 CHILD campaign_task_P102
+PARENT  stage_in_local_local_0_2 CHILD campaign_task_P145
+PARENT  stage_in_local_local_0_2 CHILD campaign_task_P123
+PARENT  stage_in_local_local_0_2 CHILD campaign_task_P132
+PARENT  stage_in_local_local_0_2 CHILD campaign_task_P63
+PARENT  stage_in_local_local_0_2 CHILD campaign_task_P38
+PARENT  stage_in_local_local_0_2 CHILD campaign_task_P17
+PARENT  stage_in_local_local_0_2 CHILD campaign_task_P06
+PARENT  stage_in_local_local_0_3 CHILD campaign_task_P113
+PARENT  stage_in_local_local_0_3 CHILD campaign_task_P43
+PARENT  stage_in_local_local_0_3 CHILD campaign_task_P54
+PARENT  stage_in_local_local_0_3 CHILD campaign_task_P11
+PARENT  stage_in_local_local_0_3 CHILD campaign_task_P77
+PARENT  stage_in_local_local_0_3 CHILD campaign_task_P20
+PARENT  stage_in_local_local_0_3 CHILD campaign_task_P64
+PARENT  stage_in_local_local_0_3 CHILD campaign_task_P39
+PARENT  stage_in_local_local_0_3 CHILD campaign_task_P14
+PARENT  stage_in_local_local_0_3 CHILD campaign_task_P03
+PARENT  campaign_task_P45 CHILD campaign_task_ADD
+PARENT  campaign_task_P45 CHILD campaign_task_TABLE
+PARENT  campaign_task_P46 CHILD campaign_task_ADD
+PARENT  campaign_task_P46 CHILD campaign_task_TABLE
+PARENT  campaign_task_P43 CHILD campaign_task_ADD
+PARENT  campaign_task_P43 CHILD campaign_task_TABLE
+PARENT  campaign_task_P44 CHILD campaign_task_ADD
+PARENT  campaign_task_P44 CHILD campaign_task_TABLE
+PARENT  campaign_task_P41 CHILD campaign_task_ADD
+PARENT  campaign_task_P41 CHILD campaign_task_TABLE
+PARENT  campaign_task_P42 CHILD campaign_task_ADD
+PARENT  campaign_task_P42 CHILD campaign_task_TABLE
+PARENT  campaign_task_P40 CHILD campaign_task_ADD
+PARENT  campaign_task_P40 CHILD campaign_task_TABLE
+PARENT  campaign_task_P49 CHILD campaign_task_ADD
+PARENT  campaign_task_P49 CHILD campaign_task_TABLE
+PARENT  campaign_task_P47 CHILD campaign_task_ADD
+PARENT  campaign_task_P47 CHILD campaign_task_TABLE
+PARENT  campaign_task_P48 CHILD campaign_task_ADD
+PARENT  campaign_task_P48 CHILD campaign_task_TABLE
+PARENT  stage_in_local_local_0_14 CHILD campaign_task_P01
+PARENT  stage_in_local_local_0_14 CHILD campaign_task_P56
+PARENT  stage_in_local_local_0_14 CHILD campaign_task_P146
+PARENT  stage_in_local_local_0_14 CHILD campaign_task_P79
+PARENT  stage_in_local_local_0_14 CHILD campaign_task_P68
+PARENT  stage_in_local_local_0_14 CHILD campaign_task_P134
+PARENT  stage_in_local_local_0_14 CHILD campaign_task_P33
+PARENT  stage_in_local_local_0_14 CHILD campaign_task_P18
+PARENT  stage_in_local_local_0_14 CHILD campaign_task_P07
+PARENT  stage_in_local_local_0_13 CHILD campaign_task_P125
+PARENT  stage_in_local_local_0_13 CHILD campaign_task_P67
+PARENT  stage_in_local_local_0_13 CHILD campaign_task_P13
+PARENT  stage_in_local_local_0_13 CHILD campaign_task_P32
+PARENT  stage_in_local_local_0_13 CHILD campaign_task_P21
+PARENT  stage_in_local_local_0_13 CHILD campaign_task_P140
+PARENT  stage_in_local_local_0_13 CHILD campaign_task_P09
+PARENT  stage_in_local_local_0_13 CHILD campaign_task_P115
+PARENT  stage_in_local_local_0_13 CHILD campaign_task_P104
+PARENT  stage_in_local_local_0_12 CHILD campaign_task_P147
+PARENT  stage_in_local_local_0_12 CHILD campaign_task_P78
+PARENT  stage_in_local_local_0_12 CHILD campaign_task_P35
+PARENT  stage_in_local_local_0_12 CHILD campaign_task_P135
+PARENT  stage_in_local_local_0_12 CHILD campaign_task_P95
+PARENT  stage_in_local_local_0_12 CHILD campaign_task_P84
+PARENT  stage_in_local_local_0_12 CHILD campaign_task_P71
+PARENT  stage_in_local_local_0_12 CHILD campaign_task_P116
+PARENT  stage_in_local_local_0_12 CHILD campaign_task_P105
+PARENT  stage_in_local_local_0_12 CHILD campaign_task_P59
+PARENT  stage_in_local_local_0_11 CHILD campaign_task_P34
+PARENT  stage_in_local_local_0_11 CHILD campaign_task_P12
+PARENT  stage_in_local_local_0_11 CHILD campaign_task_P24
+PARENT  stage_in_local_local_0_11 CHILD campaign_task_P141
+PARENT  stage_in_local_local_0_11 CHILD campaign_task_P83
+PARENT  stage_in_local_local_0_11 CHILD campaign_task_P70
+PARENT  stage_in_local_local_0_11 CHILD campaign_task_P117
+PARENT  stage_in_local_local_0_11 CHILD campaign_task_P106
+PARENT  stage_in_local_local_0_11 CHILD campaign_task_P58
+PARENT  stage_in_local_local_0_11 CHILD campaign_task_P126
+PARENT  campaign_task_P34 CHILD campaign_task_ADD
+PARENT  campaign_task_P34 CHILD campaign_task_TABLE
+PARENT  stage_in_local_local_0_10 CHILD campaign_task_P136
+PARENT  stage_in_local_local_0_10 CHILD campaign_task_P86
+PARENT  stage_in_local_local_0_10 CHILD campaign_task_P94
+PARENT  stage_in_local_local_0_10 CHILD campaign_task_P73
+PARENT  stage_in_local_local_0_10 CHILD campaign_task_P51
+PARENT  stage_in_local_local_0_10 CHILD campaign_task_P118
+PARENT  stage_in_local_local_0_10 CHILD campaign_task_P107
+PARENT  stage_in_local_local_0_10 CHILD campaign_task_P127
+PARENT  stage_in_local_local_0_10 CHILD campaign_task_P48
+PARENT  stage_in_local_local_0_10 CHILD campaign_task_P26
+PARENT  campaign_task_P35 CHILD campaign_task_ADD
+PARENT  campaign_task_P35 CHILD campaign_task_TABLE
+PARENT  campaign_task_P32 CHILD campaign_task_ADD
+PARENT  campaign_task_P32 CHILD campaign_task_TABLE
+PARENT  campaign_task_P33 CHILD campaign_task_ADD
+PARENT  campaign_task_P33 CHILD campaign_task_TABLE
+PARENT  campaign_task_P30 CHILD campaign_task_ADD
+PARENT  campaign_task_P30 CHILD campaign_task_TABLE
+PARENT  campaign_task_P31 CHILD campaign_task_ADD
+PARENT  campaign_task_P31 CHILD campaign_task_TABLE
+PARENT  campaign_task_P38 CHILD campaign_task_ADD
+PARENT  campaign_task_P38 CHILD campaign_task_TABLE
+PARENT  campaign_task_P39 CHILD campaign_task_ADD
+PARENT  campaign_task_P39 CHILD campaign_task_TABLE
+PARENT  campaign_task_P36 CHILD campaign_task_ADD
+PARENT  campaign_task_P36 CHILD campaign_task_TABLE
+PARENT  campaign_task_P37 CHILD campaign_task_ADD
+PARENT  campaign_task_P37 CHILD campaign_task_TABLE
+PARENT  campaign_task_P139 CHILD campaign_task_ADD
+PARENT  campaign_task_P139 CHILD campaign_task_TABLE
+PARENT  campaign_task_P138 CHILD campaign_task_ADD
+PARENT  campaign_task_P138 CHILD campaign_task_TABLE
+PARENT  campaign_task_P137 CHILD campaign_task_ADD
+PARENT  campaign_task_P137 CHILD campaign_task_TABLE
+PARENT  campaign_task_P23 CHILD campaign_task_ADD
+PARENT  campaign_task_P23 CHILD campaign_task_TABLE
+PARENT  campaign_task_P136 CHILD campaign_task_ADD
+PARENT  campaign_task_P136 CHILD campaign_task_TABLE
+PARENT  campaign_task_P24 CHILD campaign_task_ADD
+PARENT  campaign_task_P24 CHILD campaign_task_TABLE
+PARENT  campaign_task_P135 CHILD campaign_task_ADD
+PARENT  campaign_task_P135 CHILD campaign_task_TABLE
+PARENT  campaign_task_P21 CHILD campaign_task_ADD
+PARENT  campaign_task_P21 CHILD campaign_task_TABLE
+PARENT  campaign_task_P134 CHILD campaign_task_ADD
+PARENT  campaign_task_P134 CHILD campaign_task_TABLE
+PARENT  campaign_task_P22 CHILD campaign_task_ADD
+PARENT  campaign_task_P22 CHILD campaign_task_TABLE
+PARENT  campaign_task_P133 CHILD campaign_task_ADD
+PARENT  campaign_task_P133 CHILD campaign_task_TABLE
+PARENT  campaign_task_P132 CHILD campaign_task_ADD
+PARENT  campaign_task_P132 CHILD campaign_task_TABLE
+PARENT  campaign_task_P20 CHILD campaign_task_ADD
+PARENT  campaign_task_P20 CHILD campaign_task_TABLE
+PARENT  campaign_task_P131 CHILD campaign_task_ADD
+PARENT  campaign_task_P131 CHILD campaign_task_TABLE
+PARENT  campaign_task_P130 CHILD campaign_task_ADD
+PARENT  campaign_task_P130 CHILD campaign_task_TABLE
+PARENT  campaign_task_P29 CHILD campaign_task_ADD
+PARENT  campaign_task_P29 CHILD campaign_task_TABLE
+PARENT  create_dir_dme-cloud-20261026-mg-base-r00_0_local CHILD stage_in_remote_local_0_0
+PARENT  create_dir_dme-cloud-20261026-mg-base-r00_0_local CHILD stage_in_local_local_0_8
+PARENT  create_dir_dme-cloud-20261026-mg-base-r00_0_local CHILD stage_in_local_local_0_9
+PARENT  create_dir_dme-cloud-20261026-mg-base-r00_0_local CHILD stage_in_local_local_0_4
+PARENT  create_dir_dme-cloud-20261026-mg-base-r00_0_local CHILD stage_in_local_local_0_5
+PARENT  create_dir_dme-cloud-20261026-mg-base-r00_0_local CHILD stage_in_local_local_0_6
+PARENT  create_dir_dme-cloud-20261026-mg-base-r00_0_local CHILD stage_in_local_local_0_7
+PARENT  create_dir_dme-cloud-20261026-mg-base-r00_0_local CHILD stage_in_local_local_0_0
+PARENT  create_dir_dme-cloud-20261026-mg-base-r00_0_local CHILD stage_in_local_local_0_14
+PARENT  create_dir_dme-cloud-20261026-mg-base-r00_0_local CHILD stage_in_local_local_0_1
+PARENT  create_dir_dme-cloud-20261026-mg-base-r00_0_local CHILD stage_in_local_local_0_13
+PARENT  create_dir_dme-cloud-20261026-mg-base-r00_0_local CHILD stage_in_local_local_0_2
+PARENT  create_dir_dme-cloud-20261026-mg-base-r00_0_local CHILD stage_in_local_local_0_12
+PARENT  create_dir_dme-cloud-20261026-mg-base-r00_0_local CHILD stage_in_local_local_0_3
+PARENT  create_dir_dme-cloud-20261026-mg-base-r00_0_local CHILD stage_in_local_local_0_11
+PARENT  create_dir_dme-cloud-20261026-mg-base-r00_0_local CHILD stage_in_local_local_0_10
+PARENT  campaign_task_P27 CHILD campaign_task_ADD
+PARENT  campaign_task_P27 CHILD campaign_task_TABLE
+PARENT  campaign_task_P28 CHILD campaign_task_ADD
+PARENT  campaign_task_P28 CHILD campaign_task_TABLE
+PARENT  campaign_task_P25 CHILD campaign_task_ADD
+PARENT  campaign_task_P25 CHILD campaign_task_TABLE
+PARENT  campaign_task_P26 CHILD campaign_task_ADD
+PARENT  campaign_task_P26 CHILD campaign_task_TABLE
+PARENT  campaign_task_ADD CHILD stage_out_local_local_2_0
+PARENT  campaign_task_P12 CHILD campaign_task_ADD
+PARENT  campaign_task_P12 CHILD campaign_task_TABLE
+PARENT  campaign_task_P147 CHILD campaign_task_ADD
+PARENT  campaign_task_P147 CHILD campaign_task_TABLE
+PARENT  campaign_task_P13 CHILD campaign_task_ADD
+PARENT  campaign_task_P13 CHILD campaign_task_TABLE
+PARENT  campaign_task_P146 CHILD campaign_task_ADD
+PARENT  campaign_task_P146 CHILD campaign_task_TABLE
+PARENT  campaign_task_P10 CHILD campaign_task_ADD
+PARENT  campaign_task_P10 CHILD campaign_task_TABLE
+PARENT  campaign_task_P98 CHILD campaign_task_ADD
+PARENT  campaign_task_P98 CHILD campaign_task_TABLE
+PARENT  campaign_task_P145 CHILD campaign_task_ADD
+PARENT  campaign_task_P145 CHILD campaign_task_TABLE
+PARENT  campaign_task_P11 CHILD campaign_task_ADD
+PARENT  campaign_task_P11 CHILD campaign_task_TABLE
+PARENT  campaign_task_P99 CHILD campaign_task_ADD
+PARENT  campaign_task_P99 CHILD campaign_task_TABLE
+PARENT  campaign_task_P144 CHILD campaign_task_ADD
+PARENT  campaign_task_P144 CHILD campaign_task_TABLE
+PARENT  campaign_task_P96 CHILD campaign_task_ADD
+PARENT  campaign_task_P96 CHILD campaign_task_TABLE
+PARENT  campaign_task_P143 CHILD campaign_task_ADD
+PARENT  campaign_task_P143 CHILD campaign_task_TABLE
+PARENT  campaign_task_P97 CHILD campaign_task_ADD
+PARENT  campaign_task_P97 CHILD campaign_task_TABLE
+PARENT  campaign_task_P142 CHILD campaign_task_ADD
+PARENT  campaign_task_P142 CHILD campaign_task_TABLE
+PARENT  campaign_task_P94 CHILD campaign_task_ADD
+PARENT  campaign_task_P94 CHILD campaign_task_TABLE
+PARENT  campaign_task_P141 CHILD campaign_task_ADD
+PARENT  campaign_task_P141 CHILD campaign_task_TABLE
+PARENT  campaign_task_P95 CHILD campaign_task_ADD
+PARENT  campaign_task_P95 CHILD campaign_task_TABLE
+PARENT  campaign_task_P140 CHILD campaign_task_ADD
+PARENT  campaign_task_P140 CHILD campaign_task_TABLE
+PARENT  campaign_task_P18 CHILD campaign_task_ADD
+PARENT  campaign_task_P18 CHILD campaign_task_TABLE
+PARENT  campaign_task_P19 CHILD campaign_task_ADD
+PARENT  campaign_task_P19 CHILD campaign_task_TABLE
+PARENT  campaign_task_P16 CHILD campaign_task_ADD
+PARENT  campaign_task_P16 CHILD campaign_task_TABLE
+PARENT  campaign_task_P17 CHILD campaign_task_ADD
+PARENT  campaign_task_P17 CHILD campaign_task_TABLE
+PARENT  campaign_task_P14 CHILD campaign_task_ADD
+PARENT  campaign_task_P14 CHILD campaign_task_TABLE
+PARENT  campaign_task_P15 CHILD campaign_task_ADD
+PARENT  campaign_task_P15 CHILD campaign_task_TABLE
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P45
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P46
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P43
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P44
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P41
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P42
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P40
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P49
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P47
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P48
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P34
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P35
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P32
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P33
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P30
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P31
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P38
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P39
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P36
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P37
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P139
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P138
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P137
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P23
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P136
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P24
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P135
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P21
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P134
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P22
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P133
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P132
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P20
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P131
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P130
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P29
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P27
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P28
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P25
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P26
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_ADD
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P12
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P147
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P13
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P146
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P10
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P98
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P145
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P11
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P99
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P144
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P96
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P143
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P97
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P142
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P94
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P141
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P95
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P140
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P18
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P19
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P16
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P17
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P14
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P15
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P92
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P93
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P90
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P91
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P119
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P118
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P117
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P116
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P115
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P01
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P89
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P114
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P02
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P113
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P87
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P112
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P88
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P111
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P85
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P110
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P86
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P83
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P84
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P09
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P07
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P08
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P05
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P06
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P03
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P04
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P81
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P82
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P80
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P129
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P128
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P127
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P126
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P78
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P125
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P79
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P124
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P76
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P123
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P77
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P122
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P74
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P121
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P75
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P120
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P72
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P73
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_TABLE
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P70
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P71
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P67
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P68
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P65
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P66
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P63
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P64
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P61
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P62
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P69
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P60
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P109
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P108
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P107
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P106
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P105
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P104
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P56
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P103
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P57
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P102
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P54
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P101
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P55
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P100
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P52
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P53
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P50
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P51
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P58
+PARENT  stage_in_remote_local_0_0 CHILD campaign_task_P59
+PARENT  campaign_task_P92 CHILD campaign_task_ADD
+PARENT  campaign_task_P92 CHILD campaign_task_TABLE
+PARENT  campaign_task_P93 CHILD campaign_task_ADD
+PARENT  campaign_task_P93 CHILD campaign_task_TABLE
+PARENT  campaign_task_P90 CHILD campaign_task_ADD
+PARENT  campaign_task_P90 CHILD campaign_task_TABLE
+PARENT  campaign_task_P91 CHILD campaign_task_ADD
+PARENT  campaign_task_P91 CHILD campaign_task_TABLE
+PARENT  campaign_task_P119 CHILD campaign_task_ADD
+PARENT  campaign_task_P119 CHILD campaign_task_TABLE
+PARENT  campaign_task_P118 CHILD campaign_task_ADD
+PARENT  campaign_task_P118 CHILD campaign_task_TABLE
+PARENT  campaign_task_P117 CHILD campaign_task_ADD
+PARENT  campaign_task_P117 CHILD campaign_task_TABLE
+PARENT  campaign_task_P116 CHILD campaign_task_ADD
+PARENT  campaign_task_P116 CHILD campaign_task_TABLE
+PARENT  campaign_task_P115 CHILD campaign_task_ADD
+PARENT  campaign_task_P115 CHILD campaign_task_TABLE
+PARENT  campaign_task_P01 CHILD campaign_task_ADD
+PARENT  campaign_task_P01 CHILD campaign_task_TABLE
+PARENT  campaign_task_P89 CHILD campaign_task_ADD
+PARENT  campaign_task_P89 CHILD campaign_task_TABLE
+PARENT  campaign_task_P114 CHILD campaign_task_ADD
+PARENT  campaign_task_P114 CHILD campaign_task_TABLE
+PARENT  campaign_task_P02 CHILD campaign_task_ADD
+PARENT  campaign_task_P02 CHILD campaign_task_TABLE
+PARENT  campaign_task_P113 CHILD campaign_task_ADD
+PARENT  campaign_task_P113 CHILD campaign_task_TABLE
+PARENT  campaign_task_P87 CHILD campaign_task_ADD
+PARENT  campaign_task_P87 CHILD campaign_task_TABLE
+PARENT  campaign_task_P112 CHILD campaign_task_ADD
+PARENT  campaign_task_P112 CHILD campaign_task_TABLE
+PARENT  campaign_task_P88 CHILD campaign_task_ADD
+PARENT  campaign_task_P88 CHILD campaign_task_TABLE
+PARENT  campaign_task_P111 CHILD campaign_task_ADD
+PARENT  campaign_task_P111 CHILD campaign_task_TABLE
+PARENT  campaign_task_P85 CHILD campaign_task_ADD
+PARENT  campaign_task_P85 CHILD campaign_task_TABLE
+PARENT  campaign_task_P110 CHILD campaign_task_ADD
+PARENT  campaign_task_P110 CHILD campaign_task_TABLE
+PARENT  campaign_task_P86 CHILD campaign_task_ADD
+PARENT  campaign_task_P86 CHILD campaign_task_TABLE
+PARENT  campaign_task_P83 CHILD campaign_task_ADD
+PARENT  campaign_task_P83 CHILD campaign_task_TABLE
+PARENT  campaign_task_P84 CHILD campaign_task_ADD
+PARENT  campaign_task_P84 CHILD campaign_task_TABLE
+PARENT  campaign_task_P09 CHILD campaign_task_ADD
+PARENT  campaign_task_P09 CHILD campaign_task_TABLE
+PARENT  campaign_task_P07 CHILD campaign_task_ADD
+PARENT  campaign_task_P07 CHILD campaign_task_TABLE
+PARENT  campaign_task_P08 CHILD campaign_task_ADD
+PARENT  campaign_task_P08 CHILD campaign_task_TABLE
+PARENT  campaign_task_P05 CHILD campaign_task_ADD
+PARENT  campaign_task_P05 CHILD campaign_task_TABLE
+PARENT  campaign_task_P06 CHILD campaign_task_ADD
+PARENT  campaign_task_P06 CHILD campaign_task_TABLE
+PARENT  campaign_task_P03 CHILD campaign_task_ADD
+PARENT  campaign_task_P03 CHILD campaign_task_TABLE
+PARENT  campaign_task_P04 CHILD campaign_task_ADD
+PARENT  campaign_task_P04 CHILD campaign_task_TABLE
+PARENT  campaign_task_P81 CHILD campaign_task_ADD
+PARENT  campaign_task_P81 CHILD campaign_task_TABLE
+PARENT  campaign_task_P82 CHILD campaign_task_ADD
+PARENT  campaign_task_P82 CHILD campaign_task_TABLE
+PARENT  campaign_task_P80 CHILD campaign_task_ADD
+PARENT  campaign_task_P80 CHILD campaign_task_TABLE
+PARENT  campaign_task_P129 CHILD campaign_task_ADD
+PARENT  campaign_task_P129 CHILD campaign_task_TABLE
+PARENT  campaign_task_P128 CHILD campaign_task_ADD
+PARENT  campaign_task_P128 CHILD campaign_task_TABLE
+PARENT  campaign_task_P127 CHILD campaign_task_ADD
+PARENT  campaign_task_P127 CHILD campaign_task_TABLE
+PARENT  campaign_task_P126 CHILD campaign_task_ADD
+PARENT  campaign_task_P126 CHILD campaign_task_TABLE
+PARENT  campaign_task_P78 CHILD campaign_task_ADD
+PARENT  campaign_task_P78 CHILD campaign_task_TABLE
+PARENT  campaign_task_P125 CHILD campaign_task_ADD
+PARENT  campaign_task_P125 CHILD campaign_task_TABLE
+PARENT  campaign_task_P79 CHILD campaign_task_ADD
+PARENT  campaign_task_P79 CHILD campaign_task_TABLE
+PARENT  campaign_task_P124 CHILD campaign_task_ADD
+PARENT  campaign_task_P124 CHILD campaign_task_TABLE
+PARENT  campaign_task_P76 CHILD campaign_task_ADD
+PARENT  campaign_task_P76 CHILD campaign_task_TABLE
+PARENT  campaign_task_P123 CHILD campaign_task_ADD
+PARENT  campaign_task_P123 CHILD campaign_task_TABLE
+PARENT  campaign_task_P77 CHILD campaign_task_ADD
+PARENT  campaign_task_P77 CHILD campaign_task_TABLE
+PARENT  campaign_task_P122 CHILD campaign_task_ADD
+PARENT  campaign_task_P122 CHILD campaign_task_TABLE
+PARENT  campaign_task_P74 CHILD campaign_task_ADD
+PARENT  campaign_task_P74 CHILD campaign_task_TABLE
+PARENT  campaign_task_P121 CHILD campaign_task_ADD
+PARENT  campaign_task_P121 CHILD campaign_task_TABLE
+PARENT  campaign_task_P75 CHILD campaign_task_ADD
+PARENT  campaign_task_P75 CHILD campaign_task_TABLE
+PARENT  campaign_task_P120 CHILD campaign_task_ADD
+PARENT  campaign_task_P120 CHILD campaign_task_TABLE
+PARENT  campaign_task_P72 CHILD campaign_task_ADD
+PARENT  campaign_task_P72 CHILD campaign_task_TABLE
+PARENT  campaign_task_P73 CHILD campaign_task_ADD
+PARENT  campaign_task_P73 CHILD campaign_task_TABLE
+PARENT  campaign_task_TABLE CHILD campaign_task_ADD
+PARENT  campaign_task_P70 CHILD campaign_task_ADD
+PARENT  campaign_task_P70 CHILD campaign_task_TABLE
+PARENT  campaign_task_P71 CHILD campaign_task_ADD
+PARENT  campaign_task_P71 CHILD campaign_task_TABLE
+PARENT  campaign_task_P67 CHILD campaign_task_ADD
+PARENT  campaign_task_P67 CHILD campaign_task_TABLE
+PARENT  campaign_task_P68 CHILD campaign_task_ADD
+PARENT  campaign_task_P68 CHILD campaign_task_TABLE
+PARENT  campaign_task_P65 CHILD campaign_task_ADD
+PARENT  campaign_task_P65 CHILD campaign_task_TABLE
+PARENT  campaign_task_P66 CHILD campaign_task_ADD
+PARENT  campaign_task_P66 CHILD campaign_task_TABLE
+PARENT  campaign_task_P63 CHILD campaign_task_ADD
+PARENT  campaign_task_P63 CHILD campaign_task_TABLE
+PARENT  campaign_task_P64 CHILD campaign_task_ADD
+PARENT  campaign_task_P64 CHILD campaign_task_TABLE
+PARENT  campaign_task_P61 CHILD campaign_task_ADD
+PARENT  campaign_task_P61 CHILD campaign_task_TABLE
+PARENT  campaign_task_P62 CHILD campaign_task_ADD
+PARENT  campaign_task_P62 CHILD campaign_task_TABLE
+PARENT  campaign_task_P69 CHILD campaign_task_ADD
+PARENT  campaign_task_P69 CHILD campaign_task_TABLE
+PARENT  campaign_task_P60 CHILD campaign_task_ADD
+PARENT  campaign_task_P60 CHILD campaign_task_TABLE
+PARENT  campaign_task_P109 CHILD campaign_task_ADD
+PARENT  campaign_task_P109 CHILD campaign_task_TABLE
+PARENT  campaign_task_P108 CHILD campaign_task_ADD
+PARENT  campaign_task_P108 CHILD campaign_task_TABLE
+PARENT  campaign_task_P107 CHILD campaign_task_ADD
+PARENT  campaign_task_P107 CHILD campaign_task_TABLE
+PARENT  campaign_task_P106 CHILD campaign_task_ADD
+PARENT  campaign_task_P106 CHILD campaign_task_TABLE
+PARENT  campaign_task_P105 CHILD campaign_task_ADD
+PARENT  campaign_task_P105 CHILD campaign_task_TABLE
+PARENT  campaign_task_P104 CHILD campaign_task_ADD
+PARENT  campaign_task_P104 CHILD campaign_task_TABLE
+PARENT  campaign_task_P56 CHILD campaign_task_ADD
+PARENT  campaign_task_P56 CHILD campaign_task_TABLE
+PARENT  campaign_task_P103 CHILD campaign_task_ADD
+PARENT  campaign_task_P103 CHILD campaign_task_TABLE
+PARENT  campaign_task_P57 CHILD campaign_task_ADD
+PARENT  campaign_task_P57 CHILD campaign_task_TABLE
+PARENT  campaign_task_P102 CHILD campaign_task_ADD
+PARENT  campaign_task_P102 CHILD campaign_task_TABLE
+PARENT  campaign_task_P54 CHILD campaign_task_ADD
+PARENT  campaign_task_P54 CHILD campaign_task_TABLE
+PARENT  campaign_task_P101 CHILD campaign_task_ADD
+PARENT  campaign_task_P101 CHILD campaign_task_TABLE
+PARENT  campaign_task_P55 CHILD campaign_task_ADD
+PARENT  campaign_task_P55 CHILD campaign_task_TABLE
+PARENT  campaign_task_P100 CHILD campaign_task_ADD
+PARENT  campaign_task_P100 CHILD campaign_task_TABLE
+PARENT  campaign_task_P52 CHILD campaign_task_ADD
+PARENT  campaign_task_P52 CHILD campaign_task_TABLE
+PARENT  campaign_task_P53 CHILD campaign_task_ADD
+PARENT  campaign_task_P53 CHILD campaign_task_TABLE
+PARENT  campaign_task_P50 CHILD campaign_task_ADD
+PARENT  campaign_task_P50 CHILD campaign_task_TABLE
+PARENT  campaign_task_P51 CHILD campaign_task_ADD
+PARENT  campaign_task_P51 CHILD campaign_task_TABLE
+PARENT  campaign_task_P58 CHILD campaign_task_ADD
+PARENT  campaign_task_P58 CHILD campaign_task_TABLE
+PARENT  campaign_task_P59 CHILD campaign_task_ADD
+PARENT  campaign_task_P59 CHILD campaign_task_TABLE
+######################################################################
+# End of DAG
+######################################################################

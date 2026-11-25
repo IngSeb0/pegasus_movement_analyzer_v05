@@ -1,0 +1,41 @@
+######################################################################
+# PEGASUS WMS GENERATED SUBMIT FILE
+# DAG : flujo-rep-rec, Index = 0, Count = null
+# SUBMIT FILE NAME : stage_out_local_local_1_0.sub
+######################################################################
+stream_error  = false
+stream_output = false
+environment = "LANG=en_US.UTF-8 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin CONDOR_JOBID=$(cluster).$(process) PEGASUS_WF_UUID=5d51e978-0bb2-4f34-b09b-91a8c648e1e9 PEGASUS_WF_LABEL=flujo-rep-rec PEGASUS_DAG_JOB_ID=stage_out_local_local_1_0 PEGASUS_SITE=local _PEGASUS_WF_SUBMIT_DIR=/mnt/prueba_rep_rec_20261124/plan_reprec/submit/dmeadmin/pegasus/flujo-rep-rec/run0001 _PEGASUS_TRANSFER_INPUT_FILES=$(wf_submit_dir)/00/00/campaign_task_C4.meta,$(wf_submit_dir)/00/00/campaign_task_C2.meta,$(wf_submit_dir)/00/00/campaign_task_C3.meta, PEGASUS_BIN_DIR=/usr/bin _PEGASUS_CONNECT_STDIN=true"
+arguments = "/usr/bin/../bin/pegasus-kickstart  -n pegasus::transfer -N null -i - -R local  -L flujo-rep-rec -T 2026-11-24T15:47:17+00:00 /usr/bin/../bin/pegasus-transfer  --threads 2 "
+error = /mnt/prueba_rep_rec_20261124/plan_reprec/submit/dmeadmin/pegasus/flujo-rep-rec/run0001//00/00/stage_out_local_local_1_0.err
+executable = /usr/share/pegasus/sh/pegasus-lite-local.sh
+input = /mnt/prueba_rep_rec_20261124/plan_reprec/submit/dmeadmin/pegasus/flujo-rep-rec/run0001//00/00/stage_out_local_local_1_0.in
+log = /mnt/prueba_rep_rec_20261124/plan_reprec/submit/dmeadmin/pegasus/flujo-rep-rec/run0001/flujo-rep-rec-0.log
+notification = NEVER
+output = /mnt/prueba_rep_rec_20261124/plan_reprec/submit/dmeadmin/pegasus/flujo-rep-rec/run0001//00/00/stage_out_local_local_1_0.out
+periodic_release = False
+periodic_remove = (JobStatus == 5) && ((CurrentTime - EnteredCurrentStatus) > 1800)
+priority = 900
+submit_event_user_notes = pool:local
+transfer_executable = false
+universe = local
+wf_submit_dir = /mnt/prueba_rep_rec_20261124/plan_reprec/submit/dmeadmin/pegasus/flujo-rep-rec/run0001
++pegasus_generator = "Pegasus"
++pegasus_root_wf_uuid = "5d51e978-0bb2-4f34-b09b-91a8c648e1e9"
++pegasus_wf_uuid = "5d51e978-0bb2-4f34-b09b-91a8c648e1e9"
++pegasus_version = "5.1.2"
++pegasus_wf_name = "flujo-rep-rec-0"
++pegasus_wf_time = "20261124T154720+0000"
++pegasus_wf_xformation = "pegasus::transfer"
++pegasus_wf_dax_job_id = "null"
++pegasus_wf_dag_job_id = "stage_out_local_local_1_0"
++pegasus_job_class = 3
++pegasus_site = "local"
++pegasus_job_runtime = 0
++pegasus_cores = 1
++pegasus_gpus = 1
++pegasus_cluster_size = 1
+queue
+######################################################################
+# END OF SUBMIT FILE
+######################################################################

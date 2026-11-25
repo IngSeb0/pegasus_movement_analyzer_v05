@@ -1,0 +1,11 @@
+{
+  "transferencia_s": 289,
+  "otros_tramos_s": {
+    "tramo_ejecucion_s": 394,
+    "tramo_auxiliares_s": 63,
+    "tramo_cola_s": 49,
+    "tramo_cierre_post_s": 21,
+    "tramo_dagman_s": 21
+  },
+  "intensivo_en_datos": false
+}

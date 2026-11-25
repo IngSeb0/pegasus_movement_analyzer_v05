@@ -1,0 +1,9 @@
+[
+  {
+    "path": "/mnt/intensivo_20261122/patrones/cases/AGGREGATION-W4-B01/plans/AGGREGATION-W4-B01/submit/dmeadmin/pegasus/dme-six-20261110-aggregation-w4-r01/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz",
+    "canonical": "/mnt/intensivo_20261122/patrones/static_worker_bundles/b1d82cc0c6b2c26bfa308c51e7eeb661a48691af2355ad4755f0c5262d5e4cc1.tar.gz",
+    "bytes": 18251217,
+    "prior_mtime_ns": 1795362952264982856,
+    "sha256": "b1d82cc0c6b2c26bfa308c51e7eeb661a48691af2355ad4755f0c5262d5e4cc1"
+  }
+]

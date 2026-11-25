@@ -1,0 +1,4 @@
+#@ 1 campaign_task P 
+pegasus-kickstart  -n campaign_task -N P -R condorpool  -s g=g -L flujo-rep-rec -T 2026-11-24T16:33:56+00:00 ./campaign_task --task-id P --flops 1766799020 --input a 209715200 --output g 209715200
+#@ 2 campaign_task C1 
+pegasus-kickstart  -n campaign_task -N C1 -R condorpool  -s f1=f1 -H -L flujo-rep-rec -T 2026-11-24T16:33:56+00:00 ./campaign_task --task-id C1 --flops 1766799020 --input g 209715200 --output f1 209715200

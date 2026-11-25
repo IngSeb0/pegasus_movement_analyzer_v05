@@ -1,0 +1,214 @@
+{
+  "pattern": "Processing",
+  "mode": "CondorIO",
+  "groups": [
+    [
+      "T1"
+    ],
+    [
+      "T2"
+    ],
+    [
+      "T3"
+    ],
+    [
+      "T4"
+    ],
+    [
+      "T5"
+    ],
+    [
+      "T6"
+    ]
+  ],
+  "dag": {
+    "tasks": [
+      {
+        "task_id": "T1",
+        "assigned_worker": "W1",
+        "input_files": [
+          "A1"
+        ],
+        "output_files": [
+          "B1"
+        ],
+        "flops": 1766799020
+      },
+      {
+        "task_id": "T2",
+        "assigned_worker": "W1",
+        "input_files": [
+          "A2"
+        ],
+        "output_files": [
+          "B2"
+        ],
+        "flops": 1766799020
+      },
+      {
+        "task_id": "T3",
+        "assigned_worker": "W1",
+        "input_files": [
+          "A3"
+        ],
+        "output_files": [
+          "B3"
+        ],
+        "flops": 1766799020
+      },
+      {
+        "task_id": "T4",
+        "assigned_worker": "W1",
+        "input_files": [
+          "A4"
+        ],
+        "output_files": [
+          "B4"
+        ],
+        "flops": 1766799020
+      },
+      {
+        "task_id": "T5",
+        "assigned_worker": "W1",
+        "input_files": [
+          "A5"
+        ],
+        "output_files": [
+          "B5"
+        ],
+        "flops": 1766799020
+      },
+      {
+        "task_id": "T6",
+        "assigned_worker": "W1",
+        "input_files": [
+          "A6"
+        ],
+        "output_files": [
+          "B6"
+        ],
+        "flops": 1766799020
+      }
+    ],
+    "edges": [],
+    "external_inputs": [
+      "A1",
+      "A2",
+      "A3",
+      "A4",
+      "A5",
+      "A6"
+    ],
+    "final_outputs": [
+      "B1",
+      "B2",
+      "B3",
+      "B4",
+      "B5",
+      "B6"
+    ]
+  },
+  "files": [
+    {
+      "file_id": "A1",
+      "size_bytes": 209715200,
+      "producer_task": null,
+      "consumer_tasks": [
+        "T1"
+      ],
+      "role": "input"
+    },
+    {
+      "file_id": "A2",
+      "size_bytes": 209715200,
+      "producer_task": null,
+      "consumer_tasks": [
+        "T2"
+      ],
+      "role": "input"
+    },
+    {
+      "file_id": "A3",
+      "size_bytes": 209715200,
+      "producer_task": null,
+      "consumer_tasks": [
+        "T3"
+      ],
+      "role": "input"
+    },
+    {
+      "file_id": "A4",
+      "size_bytes": 209715200,
+      "producer_task": null,
+      "consumer_tasks": [
+        "T4"
+      ],
+      "role": "input"
+    },
+    {
+      "file_id": "A5",
+      "size_bytes": 209715200,
+      "producer_task": null,
+      "consumer_tasks": [
+        "T5"
+      ],
+      "role": "input"
+    },
+    {
+      "file_id": "A6",
+      "size_bytes": 209715200,
+      "producer_task": null,
+      "consumer_tasks": [
+        "T6"
+      ],
+      "role": "input"
+    },
+    {
+      "file_id": "B1",
+      "size_bytes": 209715200,
+      "producer_task": "T1",
+      "consumer_tasks": [],
+      "role": "final"
+    },
+    {
+      "file_id": "B2",
+      "size_bytes": 209715200,
+      "producer_task": "T2",
+      "consumer_tasks": [],
+      "role": "final"
+    },
+    {
+      "file_id": "B3",
+      "size_bytes": 209715200,
+      "producer_task": "T3",
+      "consumer_tasks": [],
+      "role": "final"
+    },
+    {
+      "file_id": "B4",
+      "size_bytes": 209715200,
+      "producer_task": "T4",
+      "consumer_tasks": [],
+      "role": "final"
+    },
+    {
+      "file_id": "B5",
+      "size_bytes": 209715200,
+      "producer_task": "T5",
+      "consumer_tasks": [],
+      "role": "final"
+    },
+    {
+      "file_id": "B6",
+      "size_bytes": 209715200,
+      "producer_task": "T6",
+      "consumer_tasks": [],
+      "role": "final"
+    }
+  ],
+  "condition_id": "PROCESS-W2",
+  "active_pool": [
+    "W1",
+    "W2"
+  ]
+}

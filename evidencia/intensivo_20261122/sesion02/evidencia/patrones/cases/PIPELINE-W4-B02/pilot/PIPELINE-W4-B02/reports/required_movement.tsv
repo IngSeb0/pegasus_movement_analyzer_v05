@@ -1,0 +1,3 @@
+file_id	source_location	destination_location	size_bytes	required_bytes	reason
+lfn:A	dme-master	dme-worker3	209715200	209715200	input
+lfn:B	dme-worker3	dme-master	209715200	209715200	final_destination

@@ -1,0 +1,12 @@
+
+Your workflow has been started and is running in the base directory:
+
+/mnt/montage_intensivo_20261122/ronda2/cases/MG-FINAL-B02/plans/MG-FINAL/submit/dmeadmin/pegasus/dme-cloud-20261026-mg-final-r02/run0001
+
+*** To monitor the workflow you can run ***
+
+pegasus-status -l /mnt/montage_intensivo_20261122/ronda2/cases/MG-FINAL-B02/plans/MG-FINAL/submit/dmeadmin/pegasus/dme-cloud-20261026-mg-final-r02/run0001
+
+*** To remove your workflow run ***
+
+pegasus-remove /mnt/montage_intensivo_20261122/ronda2/cases/MG-FINAL-B02/plans/MG-FINAL/submit/dmeadmin/pegasus/dme-cloud-20261026-mg-final-r02/run0001

@@ -1,0 +1,201 @@
+x-pegasus:
+  apiLang: python
+  createdBy: dmeadmin
+  createdOn: 11-24-26T16:22:22Z
+pegasus: 5.0.4
+name: flujo-rep-rec
+siteCatalog:
+  sites:
+  - name: local
+    arch: x86_64
+    os.type: linux
+    directories:
+    - type: sharedScratch
+      path: /mnt/prueba_rep_rec_20261124/reprec_r1/scratch
+      sharedFileSystem: false
+      fileServers:
+      - url: file:///mnt/prueba_rep_rec_20261124/reprec_r1/scratch
+        operation: all
+    - type: localStorage
+      path: /mnt/prueba_rep_rec_20261124/reprec_r1/outputs
+      sharedFileSystem: false
+      fileServers:
+      - url: file:///mnt/prueba_rep_rec_20261124/reprec_r1/outputs
+        operation: all
+  - name: condorpool
+    arch: x86_64
+    os.type: linux
+    directories: []
+    profiles:
+      condor:
+        universe: vanilla
+        request_cpus: '1'
+        request_memory: 256
+      pegasus:
+        style: condor
+        auxillary.local: 'True'
+replicaCatalog:
+  replicas:
+  - lfn: a
+    pfns:
+    - site: local
+      pfn: /mnt/prueba_rep_rec_20261124/reprec_r1/inputs/a
+transformationCatalog:
+  transformations:
+  - name: campaign_task
+    sites:
+    - name: local
+      pfn: /mnt/prueba_rep_rec_20261124/reprec_r1/bin/tarea.py
+      type: stageable
+      arch: x86_64
+      os.type: linux
+  - namespace: pegasus
+    name: seqexec
+    sites:
+    - name: condorpool
+      pfn: /usr/bin/pegasus-cluster
+      type: installed
+      arch: x86_64
+      os.type: linux
+jobs:
+- type: job
+  name: campaign_task
+  id: P
+  arguments:
+  - --task-id
+  - P
+  - --flops
+  - '1766799020'
+  - --input
+  - a
+  - '209715200'
+  - --output
+  - g
+  - '209715200'
+  uses:
+  - lfn: a
+    type: input
+  - lfn: g
+    type: output
+    stageOut: false
+    registerReplica: false
+  profiles:
+    condor:
+      requirements: TARGET.Machine == "dme-worker1"
+      request_cpus: '1'
+      request_memory: 256
+    pegasus:
+      label: group_1
+- type: job
+  name: campaign_task
+  id: C1
+  arguments:
+  - --task-id
+  - C1
+  - --flops
+  - '1766799020'
+  - --input
+  - g
+  - '209715200'
+  - --output
+  - f1
+  - '209715200'
+  uses:
+  - lfn: f1
+    type: output
+    stageOut: true
+    registerReplica: false
+  - lfn: g
+    type: input
+  profiles:
+    condor:
+      requirements: TARGET.Machine == "dme-worker1"
+      request_cpus: '1'
+      request_memory: 256
+    pegasus:
+      label: group_1
+- type: job
+  name: campaign_task
+  id: C2
+  arguments:
+  - --task-id
+  - C2
+  - --flops
+  - '1766799020'
+  - --input
+  - g
+  - '209715200'
+  - --output
+  - f2
+  - '209715200'
+  uses:
+  - lfn: g
+    type: input
+  - lfn: f2
+    type: output
+    stageOut: true
+    registerReplica: false
+  profiles:
+    condor:
+      requirements: TARGET.Machine == "dme-worker2"
+      request_cpus: '1'
+      request_memory: 256
+- type: job
+  name: campaign_task
+  id: C3
+  arguments:
+  - --task-id
+  - C3
+  - --flops
+  - '1766799020'
+  - --input
+  - g
+  - '209715200'
+  - --output
+  - f3
+  - '209715200'
+  uses:
+  - lfn: g
+    type: input
+  - lfn: f3
+    type: output
+    stageOut: true
+    registerReplica: false
+  profiles:
+    condor:
+      requirements: TARGET.Machine == "dme-worker3"
+      request_cpus: '1'
+      request_memory: 256
+- type: job
+  name: campaign_task
+  id: C4
+  arguments:
+  - --task-id
+  - C4
+  - --flops
+  - '1766799020'
+  - --input
+  - g
+  - '209715200'
+  - --output
+  - f4
+  - '209715200'
+  uses:
+  - lfn: g
+    type: input
+  - lfn: f4
+    type: output
+    stageOut: true
+    registerReplica: false
+  profiles:
+    condor:
+      requirements: TARGET.Machine == "dme-worker4"
+      request_cpus: '1'
+      request_memory: 256
+jobDependencies:
+- id: P
+  children:
+  - C2
+  - C1
+  - C4
+  - C3

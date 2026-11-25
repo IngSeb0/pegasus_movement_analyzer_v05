@@ -1,0 +1,25 @@
+[
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "A1",
+   "id": 1,
+   "generate_checksum": true,
+   "src_urls": [
+     { "site_label": "local", "url": "/mnt/intensivo_20261122/patrones/cases/REDISTRIBUTION-W4-B01/plans/REDISTRIBUTION-W4-B01/inputs/A1", "priority": 10 }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///mnt/intensivo_20261122/patrones/cases/REDISTRIBUTION-W4-B01/plans/REDISTRIBUTION-W4-B01/scratch/dmeadmin/pegasus/dme-six-20261110-redistribution-w4-r01/run0001/./A1" }
+   ] }
+ ,
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "A2",
+   "id": 2,
+   "generate_checksum": true,
+   "src_urls": [
+     { "site_label": "local", "url": "/mnt/intensivo_20261122/patrones/cases/REDISTRIBUTION-W4-B01/plans/REDISTRIBUTION-W4-B01/inputs/A2", "priority": 10 }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///mnt/intensivo_20261122/patrones/cases/REDISTRIBUTION-W4-B01/plans/REDISTRIBUTION-W4-B01/scratch/dmeadmin/pegasus/dme-six-20261110-redistribution-w4-r01/run0001/./A2" }
+   ] }
+]

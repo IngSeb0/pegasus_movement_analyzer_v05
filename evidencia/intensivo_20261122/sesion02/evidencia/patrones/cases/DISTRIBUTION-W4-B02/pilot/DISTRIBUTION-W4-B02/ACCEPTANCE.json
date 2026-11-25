@@ -1,0 +1,59 @@
+{
+  "id": "DISTRIBUTION-W4-B02",
+  "condition": "DISTRIBUTION-W4",
+  "workers": 4,
+  "pattern": "DISTRIBUTION",
+  "block": 2,
+  "phase": "principal",
+  "uuid": "e20758aa-a023-4e8d-8d19-12cd0c97b71d",
+  "required_bytes": 2097152000,
+  "observed_bytes": 2516582400,
+  "dme": "5/6",
+  "duration_s": 276.40899991989136,
+  "placement": {
+    "T1": "dme-worker3",
+    "T2": "dme-worker3",
+    "T3": "dme-worker1",
+    "T4": "dme-worker2",
+    "T5": "dme-worker3",
+    "T6": "dme-worker4"
+  },
+  "obligations": 10,
+  "deliveries": 12,
+  "directions": 12,
+  "all_exact": true,
+  "final_files": [
+    {
+      "file": "B1",
+      "bytes": 209715200,
+      "sha256": "7c9c2bc2dd53410820976608d93be03ef7d5c215f8d48de0c135ba57dfac75c8",
+      "matches_native_metadata": true
+    },
+    {
+      "file": "B2",
+      "bytes": 209715200,
+      "sha256": "f91f806fa479091ce5aab8f939265ee398f9878ef7eff5044324136fb3f5bacb",
+      "matches_native_metadata": true
+    },
+    {
+      "file": "B3",
+      "bytes": 209715200,
+      "sha256": "4b3cfd267570e801c8c7d6e610cd3fd2b1fb7f9722ab4936426de7d8000c4518",
+      "matches_native_metadata": true
+    },
+    {
+      "file": "B4",
+      "bytes": 209715200,
+      "sha256": "7c89301f89e62134ff25cdf439a5bbb8afc85b7bd2b3e062b7eb3a30ce91108d",
+      "matches_native_metadata": true
+    },
+    {
+      "file": "B5",
+      "bytes": 209715200,
+      "sha256": "774b96e902834adbcbd70eb07fadef3b429783322f0be7fda5ba3e6b4619b1a0",
+      "matches_native_metadata": true
+    }
+  ],
+  "manualAgreement": true,
+  "analyzerStatus": "VALID"
+}

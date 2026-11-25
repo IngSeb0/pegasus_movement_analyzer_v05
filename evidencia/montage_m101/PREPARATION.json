@@ -1,0 +1,9 @@
+{
+  "offlineChecksPassed": true,
+  "tutorialSha256": "7f9e1f1406029264431c4184d2c9f83ea9adc25c80920beaa3bffdf5b2946106",
+  "wheelSha256": "d52275805a85f25b89b32ed1d9a1027e6b16795ccfd0aae5bb5db2b421a47297",
+  "payloadSha256": "87e99c193bf27c2fd93c6b526b7928dbed76bc9f10c8d0c89cae4e251bdc47b2",
+  "tasks": 12,
+  "conditions": 3,
+  "coreFiles": 16
+}

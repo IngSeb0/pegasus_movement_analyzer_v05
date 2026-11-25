@@ -1,0 +1,14 @@
+{
+  "REP": {
+    "required": 1887436800,
+    "observed": 2097152000
+  },
+  "W2-SEP": {
+    "required": 1468006400,
+    "observed": 2097152000
+  },
+  "W2-AGR": {
+    "required": 1468006400,
+    "observed": 1468006400
+  }
+}

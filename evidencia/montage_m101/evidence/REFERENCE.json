@@ -1,0 +1,227 @@
+[
+  {
+    "task": "P01",
+    "artifacts": [
+      {
+        "file": "p01.fits",
+        "bytes": 4230720,
+        "sha256": "42150f0dbf956b406d31d4437ef555407a4b67d11a8bc268b8b1c17ae3b68abe"
+      },
+      {
+        "file": "p01_area.fits",
+        "bytes": 4230720,
+        "sha256": "a14c11c4cf3ca88a03c27091509a1357e4ecad021ec74d37984f377ca1543e86"
+      }
+    ],
+    "montage": {
+      "status": "0",
+      "time": 8.0
+    }
+  },
+  {
+    "task": "P02",
+    "artifacts": [
+      {
+        "file": "p02.fits",
+        "bytes": 4222080,
+        "sha256": "d320bf88f249797032755cbf7937e9a8546a82daa86b2710fa7e2661a0feae18"
+      },
+      {
+        "file": "p02_area.fits",
+        "bytes": 4222080,
+        "sha256": "04caa73b5d9c6764ed95016a5769401446175cd5550be4fb5f82a047caac001a"
+      }
+    ],
+    "montage": {
+      "status": "0",
+      "time": 8.0
+    }
+  },
+  {
+    "task": "P03",
+    "artifacts": [
+      {
+        "file": "p03.fits",
+        "bytes": 4199040,
+        "sha256": "8b78d0bc2d7efdc200b49aeceaf293c9bd8f0b613305c53c30bcce1a0ac81b00"
+      },
+      {
+        "file": "p03_area.fits",
+        "bytes": 4199040,
+        "sha256": "2db6e627b9a2323433ebf00f912795cbc9e6f245ce3953f76bae03b8225eeabc"
+      }
+    ],
+    "montage": {
+      "status": "0",
+      "time": 9.0
+    }
+  },
+  {
+    "task": "P04",
+    "artifacts": [
+      {
+        "file": "p04.fits",
+        "bytes": 4199040,
+        "sha256": "b525791fbf0f7de45894417a4afe95ce587fb06b266261da40920503e2ef0f26"
+      },
+      {
+        "file": "p04_area.fits",
+        "bytes": 4199040,
+        "sha256": "a3dff3bffdc0f77b85dce0328f8cf6b920c649219239fbae2c3f1ac26bbf1155"
+      }
+    ],
+    "montage": {
+      "status": "0",
+      "time": 9.0
+    }
+  },
+  {
+    "task": "P05",
+    "artifacts": [
+      {
+        "file": "p05.fits",
+        "bytes": 4190400,
+        "sha256": "8e9dd5bddaaee4e49dd701575ae521e41b5111add67d1617028024b83bbdf1cd"
+      },
+      {
+        "file": "p05_area.fits",
+        "bytes": 4190400,
+        "sha256": "d9cdee4842bb1140ed00fa99c23080857c4ef5593918fb410a88d047b3ae39ad"
+      }
+    ],
+    "montage": {
+      "status": "0",
+      "time": 8.0
+    }
+  },
+  {
+    "task": "P06",
+    "artifacts": [
+      {
+        "file": "p06.fits",
+        "bytes": 4181760,
+        "sha256": "a68874e051ec7e5666b032cbe5555046de2226e6a0ba41ec747d391325f8eae4"
+      },
+      {
+        "file": "p06_area.fits",
+        "bytes": 4181760,
+        "sha256": "ab44e114ad9353c4f594d3d5e4627630c08d88b3f38790b6124c5556ec047fc2"
+      }
+    ],
+    "montage": {
+      "status": "0",
+      "time": 8.0
+    }
+  },
+  {
+    "task": "P07",
+    "artifacts": [
+      {
+        "file": "p07.fits",
+        "bytes": 4210560,
+        "sha256": "6a993c427d381ee178a85d79c4979badc5d0d7e02b7efe34cfbdb0b1d14c28c2"
+      },
+      {
+        "file": "p07_area.fits",
+        "bytes": 4210560,
+        "sha256": "d327f8c3fc0244bf8e821e50911e286fe604cc786801ea2a7ac12929114a17dc"
+      }
+    ],
+    "montage": {
+      "status": "0",
+      "time": 8.0
+    }
+  },
+  {
+    "task": "P08",
+    "artifacts": [
+      {
+        "file": "p08.fits",
+        "bytes": 4210560,
+        "sha256": "8a14148416aa5eaea48f8387a9ec7987df231a75679cf354a72d5fd0e7bb60bd"
+      },
+      {
+        "file": "p08_area.fits",
+        "bytes": 4210560,
+        "sha256": "9f44a090593efc3a0542c1548e7b9fcb01dd9d4d1cedbf72f8b031e0f48e1978"
+      }
+    ],
+    "montage": {
+      "status": "0",
+      "time": 9.0
+    }
+  },
+  {
+    "task": "P09",
+    "artifacts": [
+      {
+        "file": "p09.fits",
+        "bytes": 4239360,
+        "sha256": "84faab941f26c1bc41c4db861a8ac0337e7b67728ebddb0f34593cd28c31a73e"
+      },
+      {
+        "file": "p09_area.fits",
+        "bytes": 4239360,
+        "sha256": "8f682bcf7103d4b93d828de60f027e22cab21035d347d8f2ed24ee7fc17468a5"
+      }
+    ],
+    "montage": {
+      "status": "0",
+      "time": 8.0
+    }
+  },
+  {
+    "task": "P10",
+    "artifacts": [
+      {
+        "file": "p10.fits",
+        "bytes": 4222080,
+        "sha256": "8eab008bd3caaeda0915263803c45a2cc0a23b05529444582a5e4c4d14cf86a6"
+      },
+      {
+        "file": "p10_area.fits",
+        "bytes": 4222080,
+        "sha256": "495a04d7d7e20295e441f043d7c427f7ecfee63364846a140cb4977faba2f3f5"
+      }
+    ],
+    "montage": {
+      "status": "0",
+      "time": 8.0
+    }
+  },
+  {
+    "task": "TABLE",
+    "artifacts": [
+      {
+        "file": "images.tbl",
+        "bytes": 6284,
+        "sha256": "07d2a498f27c36cab767321a123098b933e8f0f6525c8a769b73203b6a2bc4b0"
+      }
+    ],
+    "montage": {
+      "status": "0",
+      "count": 10,
+      "badfits": 0,
+      "badwcs": 0
+    }
+  },
+  {
+    "task": "ADD",
+    "artifacts": [
+      {
+        "file": "m101.fits",
+        "bytes": 39744000,
+        "sha256": "8129a53e6f4e922a958df215c9103d7431a534c60154746452683f19f82e1eca"
+      },
+      {
+        "file": "m101_area.fits",
+        "bytes": 39744000,
+        "sha256": "5e7e93bc193e7b245171eb8df1985d7c8f4bd3dc778a88ccf5d362f2dcba5db2"
+      }
+    ],
+    "montage": {
+      "status": "0",
+      "time": 0.0
+    }
+  }
+]

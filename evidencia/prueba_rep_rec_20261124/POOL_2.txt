@@ -1,0 +1,9 @@
+$ ssh -o BatchMode=yes -o ConnectTimeout=12 -F C:\Users\Acer\Documents\ChatGPT\THESIS\azure_cloud_20261025\.local\ssh_config dme-master "condor_status -af Name State Activity Start && pegasus-version && condor_version"
+slot1@dme-worker1 Unclaimed Idle true
+slot1@dme-worker2 Unclaimed Idle true
+slot1@dme-worker3 Unclaimed Idle true
+slot1@dme-worker4 Unclaimed Idle true
+5.1.2
+$CondorVersion: 26.0.1 2026-08-25 BuildID: 945720 PackageID: 26.0.1-0.945720+ubu24 GitSHA: 54c9c049 DAILY $
+$CondorPlatform: X86_64-Ubuntu_24.04 $
+

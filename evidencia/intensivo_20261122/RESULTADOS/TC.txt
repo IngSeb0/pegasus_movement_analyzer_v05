@@ -1,0 +1,185 @@
+
+dme-master antes eth0
+qdisc mq 0: root 
+ Sent 1233532 bytes 2781 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+qdisc fq_codel 0: parent :2 limit 10240p flows 1024 quantum 1514 target 5ms interval 100ms memory_limit 32Mb ecn drop_batch 64 
+ Sent 408450 bytes 920 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+  maxpacket 0 drop_overlimit 0 new_flow_count 0 ecn_mark 0
+  new_flows_len 0 old_flows_len 0
+qdisc fq_codel 0: parent :1 limit 10240p flows 1024 quantum 1514 target 5ms interval 100ms memory_limit 32Mb ecn drop_batch 64 
+ Sent 825082 bytes 1861 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+  maxpacket 0 drop_overlimit 0 new_flow_count 0 ecn_mark 0
+  new_flows_len 0 old_flows_len 0
+
+dme-master antes eth0
+qdisc mq 0: root 
+ Sent 1587947 bytes 2938 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+qdisc fq_codel 0: parent :2 limit 10240p flows 1024 quantum 1514 target 5ms interval 100ms memory_limit 32Mb ecn drop_batch 64 
+ Sent 1268338 bytes 1655 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+  maxpacket 0 drop_overlimit 0 new_flow_count 0 ecn_mark 0
+  new_flows_len 0 old_flows_len 0
+qdisc fq_codel 0: parent :1 limit 10240p flows 1024 quantum 1514 target 5ms interval 100ms memory_limit 32Mb ecn drop_batch 64 
+ Sent 319609 bytes 1283 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+  maxpacket 0 drop_overlimit 0 new_flow_count 0 ecn_mark 0
+  new_flows_len 0 old_flows_len 0
+
+dme-master durante eth0
+qdisc prio 1: root refcnt 65 bands 2 priomap 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ Sent 20131 bytes 76 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+qdisc tbf 20: parent 1:2 rate 100Mbit burst 32Kb lat 400ms 
+ Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+filter protocol ip pref 1 u32 chain 0 
+filter protocol ip pref 1 u32 chain 0 fh 800: ht divisor 1 
+filter protocol ip pref 1 u32 chain 0 fh 800::800 order 2048 key ht 800 bkt 0 *flowid 1:2 not_in_hw 
+  match 0a2a0100/ffffff00 at 16
+
+dme-worker1 antes eth0
+qdisc mq 0: root 
+ Sent 335589 bytes 831 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+qdisc fq_codel 0: parent :1 limit 10240p flows 1024 quantum 1514 target 5ms interval 100ms memory_limit 32Mb ecn drop_batch 64 
+ Sent 335589 bytes 831 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+  maxpacket 0 drop_overlimit 0 new_flow_count 0 ecn_mark 0
+  new_flows_len 0 old_flows_len 0
+
+dme-worker1 durante eth0
+qdisc prio 1: root refcnt 65 bands 2 priomap 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ Sent 37352 bytes 151 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+qdisc tbf 20: parent 1:2 rate 100Mbit burst 32Kb lat 400ms 
+ Sent 4151 bytes 16 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+filter protocol ip pref 1 u32 chain 0 
+filter protocol ip pref 1 u32 chain 0 fh 800: ht divisor 1 
+filter protocol ip pref 1 u32 chain 0 fh 800::800 order 2048 key ht 800 bkt 0 *flowid 1:2 not_in_hw 
+  match 0a2a0004/ffffffff at 16
+
+dme-worker2 antes eth0
+qdisc mq 0: root 
+ Sent 375794 bytes 988 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+qdisc fq_codel 0: parent :1 limit 10240p flows 1024 quantum 1514 target 5ms interval 100ms memory_limit 32Mb ecn drop_batch 64 
+ Sent 375794 bytes 988 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+  maxpacket 0 drop_overlimit 0 new_flow_count 0 ecn_mark 0
+  new_flows_len 0 old_flows_len 0
+
+dme-worker2 durante eth0
+qdisc prio 1: root refcnt 65 bands 2 priomap 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ Sent 40459 bytes 144 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+qdisc tbf 20: parent 1:2 rate 100Mbit burst 32Kb lat 400ms 
+ Sent 4217 bytes 17 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+filter protocol ip pref 1 u32 chain 0 
+filter protocol ip pref 1 u32 chain 0 fh 800: ht divisor 1 
+filter protocol ip pref 1 u32 chain 0 fh 800::800 order 2048 key ht 800 bkt 0 *flowid 1:2 not_in_hw 
+  match 0a2a0004/ffffffff at 16
+
+dme-worker3 antes eth0
+qdisc mq 0: root 
+ Sent 421860 bytes 1214 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+qdisc fq_codel 0: parent :1 limit 10240p flows 1024 quantum 1514 target 5ms interval 100ms memory_limit 32Mb ecn drop_batch 64 
+ Sent 421860 bytes 1214 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+  maxpacket 0 drop_overlimit 0 new_flow_count 0 ecn_mark 0
+  new_flows_len 0 old_flows_len 0
+
+dme-worker3 durante eth0
+qdisc prio 1: root refcnt 65 bands 2 priomap 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ Sent 53651 bytes 186 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+qdisc tbf 20: parent 1:2 rate 100Mbit burst 32Kb lat 400ms 
+ Sent 4283 bytes 18 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+filter protocol ip pref 1 u32 chain 0 
+filter protocol ip pref 1 u32 chain 0 fh 800: ht divisor 1 
+filter protocol ip pref 1 u32 chain 0 fh 800::800 order 2048 key ht 800 bkt 0 *flowid 1:2 not_in_hw 
+  match 0a2a0004/ffffffff at 16
+
+dme-worker4 antes eth0
+qdisc mq 0: root 
+ Sent 489412 bytes 1418 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+qdisc fq_codel 0: parent :1 limit 10240p flows 1024 quantum 1514 target 5ms interval 100ms memory_limit 32Mb ecn drop_batch 64 
+ Sent 489412 bytes 1418 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+  maxpacket 0 drop_overlimit 0 new_flow_count 0 ecn_mark 0
+  new_flows_len 0 old_flows_len 0
+
+dme-worker4 durante eth0
+qdisc prio 1: root refcnt 65 bands 2 priomap 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ Sent 30790 bytes 131 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+qdisc tbf 20: parent 1:2 rate 100Mbit burst 32Kb lat 400ms 
+ Sent 4217 bytes 17 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+filter protocol ip pref 1 u32 chain 0 
+filter protocol ip pref 1 u32 chain 0 fh 800: ht divisor 1 
+filter protocol ip pref 1 u32 chain 0 fh 800::800 order 2048 key ht 800 bkt 0 *flowid 1:2 not_in_hw 
+  match 0a2a0004/ffffffff at 16
+
+dme-master después eth0
+qdisc mq 0: root 
+ Sent 15284 bytes 56 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+qdisc fq_codel 0: parent :2 limit 10240p flows 1024 quantum 1514 target 5ms interval 100ms memory_limit 32Mb ecn drop_batch 64 
+ Sent 9983 bytes 31 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+  maxpacket 0 drop_overlimit 0 new_flow_count 0 ecn_mark 0
+  new_flows_len 0 old_flows_len 0
+qdisc fq_codel 0: parent :1 limit 10240p flows 1024 quantum 1514 target 5ms interval 100ms memory_limit 32Mb ecn drop_batch 64 
+ Sent 5301 bytes 25 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+  maxpacket 0 drop_overlimit 0 new_flow_count 0 ecn_mark 0
+  new_flows_len 0 old_flows_len 0
+
+dme-worker1 después eth0
+qdisc mq 0: root 
+ Sent 15122 bytes 56 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+qdisc fq_codel 0: parent :1 limit 10240p flows 1024 quantum 1514 target 5ms interval 100ms memory_limit 32Mb ecn drop_batch 64 
+ Sent 15122 bytes 56 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+  maxpacket 0 drop_overlimit 0 new_flow_count 0 ecn_mark 0
+  new_flows_len 0 old_flows_len 0
+
+dme-worker2 después eth0
+qdisc mq 0: root 
+ Sent 16650 bytes 65 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+qdisc fq_codel 0: parent :1 limit 10240p flows 1024 quantum 1514 target 5ms interval 100ms memory_limit 32Mb ecn drop_batch 64 
+ Sent 16650 bytes 65 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+  maxpacket 0 drop_overlimit 0 new_flow_count 0 ecn_mark 0
+  new_flows_len 0 old_flows_len 0
+
+dme-worker3 después eth0
+qdisc mq 0: root 
+ Sent 15990 bytes 61 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+qdisc fq_codel 0: parent :1 limit 10240p flows 1024 quantum 1514 target 5ms interval 100ms memory_limit 32Mb ecn drop_batch 64 
+ Sent 15990 bytes 61 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+  maxpacket 0 drop_overlimit 0 new_flow_count 0 ecn_mark 0
+  new_flows_len 0 old_flows_len 0
+
+dme-worker4 después eth0
+qdisc mq 0: root 
+ Sent 15055 bytes 55 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+qdisc fq_codel 0: parent :1 limit 10240p flows 1024 quantum 1514 target 5ms interval 100ms memory_limit 32Mb ecn drop_batch 64 
+ Sent 15055 bytes 55 pkt (dropped 0, overlimits 0 requeues 0) 
+ backlog 0b 0p requeues 0
+  maxpacket 0 drop_overlimit 0 new_flow_count 0 ecn_mark 0
+  new_flows_len 0 old_flows_len 0

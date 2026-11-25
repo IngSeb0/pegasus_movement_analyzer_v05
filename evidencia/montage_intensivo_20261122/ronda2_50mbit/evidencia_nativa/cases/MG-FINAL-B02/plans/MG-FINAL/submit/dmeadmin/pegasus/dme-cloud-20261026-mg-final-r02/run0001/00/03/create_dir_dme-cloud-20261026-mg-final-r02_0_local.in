@@ -1,0 +1,6 @@
+[
+  {
+    "id": 1,
+    "type": "mkdir",
+    "target": { "site_label": "local", "url": "file:///mnt/montage_intensivo_20261122/ronda2/cases/MG-FINAL-B02/plans/MG-FINAL/scratch/dmeadmin/pegasus/dme-cloud-20261026-mg-final-r02/run0001" } }
+]

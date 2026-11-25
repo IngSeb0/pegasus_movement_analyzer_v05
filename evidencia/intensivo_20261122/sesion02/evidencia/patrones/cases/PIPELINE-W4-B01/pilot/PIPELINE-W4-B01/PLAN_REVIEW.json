@@ -1,0 +1,13 @@
+{
+  "scientificJobs": 6,
+  "scientificBytes": 2516582400,
+  "noFixedWorkerRequirements": true,
+  "jobs": [
+    "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B01/plans/PIPELINE-W4-B01/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/campaign_task_T1.sub",
+    "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B01/plans/PIPELINE-W4-B01/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/campaign_task_T6.sub",
+    "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B01/plans/PIPELINE-W4-B01/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/campaign_task_T5.sub",
+    "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B01/plans/PIPELINE-W4-B01/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/campaign_task_T4.sub",
+    "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B01/plans/PIPELINE-W4-B01/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/campaign_task_T2.sub",
+    "/mnt/intensivo_20261122/patrones/cases/PIPELINE-W4-B01/plans/PIPELINE-W4-B01/submit/dmeadmin/pegasus/dme-six-20261110-pipeline-w4-r01/run0001/00/00/campaign_task_T3.sub"
+  ]
+}

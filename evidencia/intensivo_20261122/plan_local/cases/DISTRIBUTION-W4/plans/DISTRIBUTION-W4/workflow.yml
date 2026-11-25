@@ -1,0 +1,289 @@
+x-pegasus:
+  apiLang: python
+  createdBy: root
+  createdOn: 11-22-26T14:38:10Z
+pegasus: 5.0.4
+name: dme-six-20261110-distribution-w4-r01
+metadata:
+  condition_id: DISTRIBUTION-W4
+  pattern: Distribution
+  replica: '1'
+  data_configuration: condorio
+  program_version: six_patterns_fma_v1
+  oracle_sha256: bf8bb9dbf116e1ea9bc54f8d784ff25ec7e472a8ef5d1e5bb6ebd34c0bf18ed6
+  scientific_file_sizes_bytes: '{"A": 209715200, "B1": 209715200, "B2": 209715200,
+    "B3": 209715200, "B4": 209715200, "B5": 209715200, "g": 209715200}'
+siteCatalog:
+  sites:
+  - name: local
+    arch: x86_64
+    os.type: linux
+    directories:
+    - type: sharedScratch
+      path: /study/cases/DISTRIBUTION-W4/plans/DISTRIBUTION-W4/scratch
+      sharedFileSystem: false
+      fileServers:
+      - url: file:///study/cases/DISTRIBUTION-W4/plans/DISTRIBUTION-W4/scratch
+        operation: all
+    - type: localStorage
+      path: /study/cases/DISTRIBUTION-W4/plans/DISTRIBUTION-W4/outputs
+      sharedFileSystem: false
+      fileServers:
+      - url: file:///study/cases/DISTRIBUTION-W4/plans/DISTRIBUTION-W4/outputs
+        operation: all
+  - name: condorpool
+    arch: x86_64
+    os.type: linux
+    directories: []
+    profiles:
+      condor:
+        universe: vanilla
+        request_cpus: '1'
+        request_memory: 256
+      pegasus:
+        style: condor
+        auxillary.local: 'True'
+replicaCatalog:
+  replicas:
+  - lfn: A
+    pfns:
+    - site: local
+      pfn: /study/cases/DISTRIBUTION-W4/plans/DISTRIBUTION-W4/inputs/A
+  - lfn: fma_kernel
+    pfns:
+    - site: local
+      pfn: /study/cases/DISTRIBUTION-W4/plans/DISTRIBUTION-W4/bin/fma_kernel
+transformationCatalog:
+  transformations:
+  - name: campaign_task
+    sites:
+    - name: local
+      pfn: /study/cases/DISTRIBUTION-W4/plans/DISTRIBUTION-W4/bin/campaign_task.py
+      type: stageable
+      arch: x86_64
+      os.type: linux
+jobs:
+- type: job
+  name: campaign_task
+  id: T1
+  arguments:
+  - --task-id
+  - T1
+  - --flops
+  - '1766799020'
+  - --input
+  - A
+  - '209715200'
+  - --output
+  - g
+  - '209715200'
+  uses:
+  - lfn: A
+    type: input
+  - lfn: g
+    type: output
+    stageOut: false
+    registerReplica: false
+  profiles:
+    condor:
+      requirements: TARGET.Machine == "dme-worker1"
+      request_cpus: '1'
+      request_memory: 256
+  metadata:
+    task_id: T1
+    condition_id: DISTRIBUTION-W4
+    replica: '1'
+    pattern: Distribution
+    controlled_worker: W1
+    target_machine: dme-worker1
+    flops: '1766799020'
+    scientific_inputs: '["A"]'
+    scientific_outputs: '["g"]'
+- type: job
+  name: campaign_task
+  id: T2
+  arguments:
+  - --task-id
+  - T2
+  - --flops
+  - '1766799020'
+  - --input
+  - g
+  - '209715200'
+  - --output
+  - B1
+  - '209715200'
+  uses:
+  - lfn: B1
+    type: output
+    stageOut: true
+    registerReplica: false
+  - lfn: g
+    type: input
+  profiles:
+    condor:
+      requirements: TARGET.Machine == "dme-worker1"
+      request_cpus: '1'
+      request_memory: 256
+  metadata:
+    task_id: T2
+    condition_id: DISTRIBUTION-W4
+    replica: '1'
+    pattern: Distribution
+    controlled_worker: W1
+    target_machine: dme-worker1
+    flops: '1766799020'
+    scientific_inputs: '["g"]'
+    scientific_outputs: '["B1"]'
+- type: job
+  name: campaign_task
+  id: T3
+  arguments:
+  - --task-id
+  - T3
+  - --flops
+  - '1766799020'
+  - --input
+  - g
+  - '209715200'
+  - --output
+  - B2
+  - '209715200'
+  uses:
+  - lfn: B2
+    type: output
+    stageOut: true
+    registerReplica: false
+  - lfn: g
+    type: input
+  profiles:
+    condor:
+      requirements: TARGET.Machine == "dme-worker1"
+      request_cpus: '1'
+      request_memory: 256
+  metadata:
+    task_id: T3
+    condition_id: DISTRIBUTION-W4
+    replica: '1'
+    pattern: Distribution
+    controlled_worker: W1
+    target_machine: dme-worker1
+    flops: '1766799020'
+    scientific_inputs: '["g"]'
+    scientific_outputs: '["B2"]'
+- type: job
+  name: campaign_task
+  id: T4
+  arguments:
+  - --task-id
+  - T4
+  - --flops
+  - '1766799020'
+  - --input
+  - g
+  - '209715200'
+  - --output
+  - B3
+  - '209715200'
+  uses:
+  - lfn: B3
+    type: output
+    stageOut: true
+    registerReplica: false
+  - lfn: g
+    type: input
+  profiles:
+    condor:
+      requirements: TARGET.Machine == "dme-worker1"
+      request_cpus: '1'
+      request_memory: 256
+  metadata:
+    task_id: T4
+    condition_id: DISTRIBUTION-W4
+    replica: '1'
+    pattern: Distribution
+    controlled_worker: W1
+    target_machine: dme-worker1
+    flops: '1766799020'
+    scientific_inputs: '["g"]'
+    scientific_outputs: '["B3"]'
+- type: job
+  name: campaign_task
+  id: T5
+  arguments:
+  - --task-id
+  - T5
+  - --flops
+  - '1766799020'
+  - --input
+  - g
+  - '209715200'
+  - --output
+  - B4
+  - '209715200'
+  uses:
+  - lfn: B4
+    type: output
+    stageOut: true
+    registerReplica: false
+  - lfn: g
+    type: input
+  profiles:
+    condor:
+      requirements: TARGET.Machine == "dme-worker1"
+      request_cpus: '1'
+      request_memory: 256
+  metadata:
+    task_id: T5
+    condition_id: DISTRIBUTION-W4
+    replica: '1'
+    pattern: Distribution
+    controlled_worker: W1
+    target_machine: dme-worker1
+    flops: '1766799020'
+    scientific_inputs: '["g"]'
+    scientific_outputs: '["B4"]'
+- type: job
+  name: campaign_task
+  id: T6
+  arguments:
+  - --task-id
+  - T6
+  - --flops
+  - '1766799020'
+  - --input
+  - g
+  - '209715200'
+  - --output
+  - B5
+  - '209715200'
+  uses:
+  - lfn: B5
+    type: output
+    stageOut: true
+    registerReplica: false
+  - lfn: g
+    type: input
+  profiles:
+    condor:
+      requirements: TARGET.Machine == "dme-worker1"
+      request_cpus: '1'
+      request_memory: 256
+  metadata:
+    task_id: T6
+    condition_id: DISTRIBUTION-W4
+    replica: '1'
+    pattern: Distribution
+    controlled_worker: W1
+    target_machine: dme-worker1
+    flops: '1766799020'
+    scientific_inputs: '["g"]'
+    scientific_outputs: '["B5"]'
+jobDependencies:
+- id: T1
+  children:
+  - T6
+  - T5
+  - T2
+  - T4
+  - T3

@@ -1,0 +1,121 @@
+[
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "template.hdr",
+   "id": 1,
+   "generate_checksum": true,
+   "src_urls": [
+     { "site_label": "local", "url": "/mnt/montage_intensivo_20261122/ronda2/cases/MG-BASE-PILOTO/plans/MG-BASE/inputs/template.hdr", "priority": 10 }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///mnt/montage_intensivo_20261122/ronda2/cases/MG-BASE-PILOTO/plans/MG-BASE/scratch/dmeadmin/pegasus/dme-cloud-20261026-mg-base-r00/run0001/./template.hdr" }
+   ] }
+ ,
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "1603541_ji1070044.fits",
+   "id": 2,
+   "generate_checksum": true,
+   "src_urls": [
+     { "site_label": "local", "url": "/mnt/montage_intensivo_20261122/ronda2/cases/MG-BASE-PILOTO/plans/MG-BASE/inputs/1603541_ji1070044.fits", "priority": 10 }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///mnt/montage_intensivo_20261122/ronda2/cases/MG-BASE-PILOTO/plans/MG-BASE/scratch/dmeadmin/pegasus/dme-cloud-20261026-mg-base-r00/run0001/./1603541_ji1070044.fits" }
+   ] }
+ ,
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "1603533_ji1060220.fits",
+   "id": 3,
+   "generate_checksum": true,
+   "src_urls": [
+     { "site_label": "local", "url": "/mnt/montage_intensivo_20261122/ronda2/cases/MG-BASE-PILOTO/plans/MG-BASE/inputs/1603533_ji1060220.fits", "priority": 10 }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///mnt/montage_intensivo_20261122/ronda2/cases/MG-BASE-PILOTO/plans/MG-BASE/scratch/dmeadmin/pegasus/dme-cloud-20261026-mg-base-r00/run0001/./1603533_ji1060220.fits" }
+   ] }
+ ,
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "1603487_ji1040220.fits",
+   "id": 4,
+   "generate_checksum": true,
+   "src_urls": [
+     { "site_label": "local", "url": "/mnt/montage_intensivo_20261122/ronda2/cases/MG-BASE-PILOTO/plans/MG-BASE/inputs/1603487_ji1040220.fits", "priority": 10 }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///mnt/montage_intensivo_20261122/ronda2/cases/MG-BASE-PILOTO/plans/MG-BASE/scratch/dmeadmin/pegasus/dme-cloud-20261026-mg-base-r00/run0001/./1603487_ji1040220.fits" }
+   ] }
+ ,
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "1603496_ji1050056.fits",
+   "id": 5,
+   "generate_checksum": true,
+   "src_urls": [
+     { "site_label": "local", "url": "/mnt/montage_intensivo_20261122/ronda2/cases/MG-BASE-PILOTO/plans/MG-BASE/inputs/1603496_ji1050056.fits", "priority": 10 }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///mnt/montage_intensivo_20261122/ronda2/cases/MG-BASE-PILOTO/plans/MG-BASE/scratch/dmeadmin/pegasus/dme-cloud-20261026-mg-base-r00/run0001/./1603496_ji1050056.fits" }
+   ] }
+ ,
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "1603770_ji1230032.fits",
+   "id": 6,
+   "generate_checksum": true,
+   "src_urls": [
+     { "site_label": "local", "url": "/mnt/montage_intensivo_20261122/ronda2/cases/MG-BASE-PILOTO/plans/MG-BASE/inputs/1603770_ji1230032.fits", "priority": 10 }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///mnt/montage_intensivo_20261122/ronda2/cases/MG-BASE-PILOTO/plans/MG-BASE/scratch/dmeadmin/pegasus/dme-cloud-20261026-mg-base-r00/run0001/./1603770_ji1230032.fits" }
+   ] }
+ ,
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "1276684_ji0980266.fits",
+   "id": 7,
+   "generate_checksum": true,
+   "src_urls": [
+     { "site_label": "local", "url": "/mnt/montage_intensivo_20261122/ronda2/cases/MG-BASE-PILOTO/plans/MG-BASE/inputs/1276684_ji0980266.fits", "priority": 10 }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///mnt/montage_intensivo_20261122/ronda2/cases/MG-BASE-PILOTO/plans/MG-BASE/scratch/dmeadmin/pegasus/dme-cloud-20261026-mg-base-r00/run0001/./1276684_ji0980266.fits" }
+   ] }
+ ,
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "745041_ji0620021.fits",
+   "id": 8,
+   "generate_checksum": true,
+   "src_urls": [
+     { "site_label": "local", "url": "/mnt/montage_intensivo_20261122/ronda2/cases/MG-BASE-PILOTO/plans/MG-BASE/inputs/745041_ji0620021.fits", "priority": 10 }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///mnt/montage_intensivo_20261122/ronda2/cases/MG-BASE-PILOTO/plans/MG-BASE/scratch/dmeadmin/pegasus/dme-cloud-20261026-mg-base-r00/run0001/./745041_ji0620021.fits" }
+   ] }
+ ,
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "1603678_ji1190032.fits",
+   "id": 9,
+   "generate_checksum": true,
+   "src_urls": [
+     { "site_label": "local", "url": "/mnt/montage_intensivo_20261122/ronda2/cases/MG-BASE-PILOTO/plans/MG-BASE/inputs/1603678_ji1190032.fits", "priority": 10 }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///mnt/montage_intensivo_20261122/ronda2/cases/MG-BASE-PILOTO/plans/MG-BASE/scratch/dmeadmin/pegasus/dme-cloud-20261026-mg-base-r00/run0001/./1603678_ji1190032.fits" }
+   ] }
+ ,
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "1603818_ji1250056.fits",
+   "id": 10,
+   "generate_checksum": true,
+   "src_urls": [
+     { "site_label": "local", "url": "/mnt/montage_intensivo_20261122/ronda2/cases/MG-BASE-PILOTO/plans/MG-BASE/inputs/1603818_ji1250056.fits", "priority": 10 }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///mnt/montage_intensivo_20261122/ronda2/cases/MG-BASE-PILOTO/plans/MG-BASE/scratch/dmeadmin/pegasus/dme-cloud-20261026-mg-base-r00/run0001/./1603818_ji1250056.fits" }
+   ] }
+]

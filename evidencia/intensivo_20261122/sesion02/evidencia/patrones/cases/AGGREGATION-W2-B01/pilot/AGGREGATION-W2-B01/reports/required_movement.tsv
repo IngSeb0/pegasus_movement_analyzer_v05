@@ -1,0 +1,11 @@
+file_id	source_location	destination_location	size_bytes	required_bytes	reason
+lfn:A1	dme-master	dme-worker2	209715200	209715200	input
+lfn:A2	dme-master	dme-worker1	209715200	209715200	input
+lfn:A3	dme-master	dme-worker2	209715200	209715200	input
+lfn:A4	dme-master	dme-worker1	209715200	209715200	input
+lfn:A5	dme-master	dme-worker1	209715200	209715200	input
+lfn:B	dme-worker1	dme-master	209715200	209715200	final_destination
+lfn:f1	dme-worker2	dme-master	209715200	209715200	coordinator_relay
+lfn:f1	dme-worker2	dme-worker1	209715200	209715200	consumer
+lfn:f3	dme-worker2	dme-master	209715200	209715200	coordinator_relay
+lfn:f3	dme-worker2	dme-worker1	209715200	209715200	consumer
