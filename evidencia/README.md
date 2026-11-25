@@ -78,3 +78,14 @@ El límite se interpreta como 50 000 000 bytes. Las exclusiones por ruta privada
 | `prueba_rep_rec_20261124/rep_r2/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz` | 18251217 | `b1d82cc0c6b2c26bfa308c51e7eeb661a48691af2355ad4755f0c5262d5e4cc1` | Contenedor empaquetado sin publicación directa |
 | `prueba_rep_rec_20261124/reprec_r1/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz` | 18251217 | `b1d82cc0c6b2c26bfa308c51e7eeb661a48691af2355ad4755f0c5262d5e4cc1` | Contenedor empaquetado sin publicación directa |
 | `prueba_rep_rec_20261124/reprec_r2/run0001/pegasus-worker-5.1.2-x86_64_ubuntu_24.tar.gz` | 18251217 | `b1d82cc0c6b2c26bfa308c51e7eeb661a48691af2355ad4755f0c5262d5e4cc1` | Contenedor empaquetado sin publicación directa |
+
+## Nota sobre las huellas de las hipótesis
+
+El 25 de noviembre de 2026, después de las pruebas, se cambió en los archivos `HIPOTESIS.md` de `intensivo_20261122` y `montage_intensivo_20261122` (y en sus copias de `RESULTADOS/`) solo el título del documento, una línea inicial con instrucciones de trabajo y el nombre del archivo de resumen de resultados al que remiten, que ahora se llama `RESUMEN_RESULTADOS.md`. No se modificó ninguna hipótesis, valor esperado ni criterio. En los registros también se reemplazó la ruta de la carpeta local del autor por `<carpeta local>`. Por eso sus archivos `.sha256` se recalcularon. Las huellas originales, registradas antes de medir, eran:
+
+| Archivo | Huella original (SHA-256) |
+|---|---|
+| `intensivo_20261122/HIPOTESIS.md` | `f663a80ed64475248c2aff11f6ee819aa0cfe34cee5429b7c2ba062c095bfae1` |
+| `montage_intensivo_20261122/HIPOTESIS.md` | `d48b4aedebc08a5180e804d3c43390b2a18e156152ad17a28475b9c49c1911d3` |
+
+Los archivos `HIPOTESIS_REC.md` (REP-REC) y `HIPOTESIS_ANEXO_SIA_20261122.md` no cambiaron y conservan su huella original.

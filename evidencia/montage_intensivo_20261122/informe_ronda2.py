@@ -114,7 +114,7 @@ if differences:
                       "La agrupación reúne en W1 dos tareas que ya eran consecutivas por dependencia."])
 lines.extend(["", "El reparto temporal asigna cada segundo a un solo tramo. Los segundos de ejecución corresponden a tiempo de pared de los jobs según esa clasificación.", "",
               "Los registros por corrida están en `evidencia_nativa/`. El cierre y la red se documentan en `VMS.md` y `TC.txt`."])
-(out / "RESULTADOS_PARA_CLAUDE.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+(out / "RESUMEN_RESULTADOS.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 verdict = ["# Contraste M1–M5 · 50 Mbit/s", ""]
 if complete:

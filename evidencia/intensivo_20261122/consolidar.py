@@ -215,7 +215,7 @@ def main():
     if counts['contraste']==9:
         report+=['','Con la ubicación de los consumidores fija, agrupar elimina tres entregas de 200 MiB. El ahorro medido del tramo de transferencia queda cerca de ΔO/B. REP distribuye los consumidores entre cuatro workers y conserva el mismo observado que W2-SEP. Los workers pueden devolver datos en paralelo porque cada uno tiene su propio TBF de salida. Este diseño no impone un único límite agregado de entrada en el coordinador. El historial y las tablas de jobs conservan los intervalos superpuestos. En la campaña previa de 10 MiB, W2-AGR tardó 48,091 s más que REP en promedio. En esta campaña la brecha media bajó a 15,392 s. Cambiaron los tamaños, la red y el presupuesto de cómputo de los consumidores, así que la comparación entre campañas es descriptiva.']
     report+=['','El primer arranque terminó antes de aplicar tc y enviar jobs. El preflight leyó las líneas de contadores como si fueran declaraciones de colas. La corrección filtra las líneas qdisc. Las evidencias del ensayo y su cierre quedan en sesion.']
-    (OUT/'RESULTADOS_PARA_CLAUDE.md').write_text('\n'.join(report)+'\n',encoding='utf-8')
+    (OUT/'RESUMEN_RESULTADOS.md').write_text('\n'.join(report)+'\n',encoding='utf-8')
     (OUT/'VERIFICACION.json').write_text(json.dumps(dict(archivos_B=200*2**20,pilotos=pilots,principales=counts,direcciones_exactas=directions,reglas_tc_retiradas=removed,vms_desasignadas=5,ventana_acumulada_s=total.total_seconds()),indent=2))
     target=ROOT/'intensivo_20261122_resultados.zip'
     with ZipFile(target,'w',ZIP_DEFLATED) as archive:

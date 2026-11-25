@@ -25,7 +25,7 @@ El supervisor agotó su espera de 120 s durante red.py limitar. Se verificó la 
 ## Incidencias del intento 3
 
 rep_r3.txt: 1: El flujo terminó con error (ver el .dagman.out en /mnt/prueba_rep_rec_20261124/rep_r3/submit/dmeadmin/pegasus/flujo-rep/run0001)
-Falló: ssh -F C:\Users\Acer\Documents\ChatGPT\THESIS\azure_cloud_20261025\.local\ssh_config dme-master cd ~/trabajo/prueba_rep_rec_20261124 && python3 flujos/ejecutar_flujo.py rep_r3
+Falló: ssh -F <carpeta local>\azure_cloud_20261025\.local\ssh_config dme-master cd ~/trabajo/prueba_rep_rec_20261124 && python3 flujos/ejecutar_flujo.py rep_r3
  
 Cierre pendiente: CIERRE_3.txt: 1: Exception: C:\Defensa\Sustentacion_DME\10_Preparacion_Final\prueba_rep_rec_20261124\Control-Cluster.ps1:90
 Line |

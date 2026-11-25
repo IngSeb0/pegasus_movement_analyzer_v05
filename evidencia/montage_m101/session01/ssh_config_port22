@@ -1,8 +1,0 @@
-Host dme-campaign
-  HostName <omitido>
-  User dmeadmin
-  IdentityFile C:/Users/Acer/Documents/ChatGPT/THESIS/azure_cloud_20261025/.local/id_ed25519_dme
-  StrictHostKeyChecking accept-new
-  BatchMode yes
-  ConnectTimeout 15
-  ServerAliveInterval 15

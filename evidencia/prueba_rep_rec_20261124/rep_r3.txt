@@ -3,5 +3,5 @@ Flujo creado en /mnt/prueba_rep_rec_20261124/rep_r3
 
 $ C:\Users\Acer\AppData\Local\Programs\Python\Python312\python.exe -B coordinador/llevar.py correr "python3 flujos/ejecutar_flujo.py rep_r3"
 El flujo terminó con error (ver el .dagman.out en /mnt/prueba_rep_rec_20261124/rep_r3/submit/dmeadmin/pegasus/flujo-rep/run0001)
-Falló: ssh -F C:\Users\Acer\Documents\ChatGPT\THESIS\azure_cloud_20261025\.local\ssh_config dme-master cd ~/trabajo/prueba_rep_rec_20261124 && python3 flujos/ejecutar_flujo.py rep_r3
+Falló: ssh -F <carpeta local>\azure_cloud_20261025\.local\ssh_config dme-master cd ~/trabajo/prueba_rep_rec_20261124 && python3 flujos/ejecutar_flujo.py rep_r3
 

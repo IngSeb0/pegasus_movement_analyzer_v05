@@ -1,6 +1,4 @@
-# Prompt para Codex: Montage intensivo en datos
-
-Copia todo lo que está debajo de la línea en Codex, abierto en `C:\Users\Acer\Documents\ChatGPT\THESIS`.
+# Diseño e hipótesis: Montage intensivo en datos
 
 ---
 
@@ -65,5 +63,5 @@ Límite: 5 horas de VMs encendidas. Desasigna al terminar y confírmalo en `VMS.
 - `BYTES.csv` (requerido, observado, exceso, DME por corrida) y `FITS_IGUALES.csv`.
 - `jobs.csv`, `corridas.csv`, `resumen.csv`, diferencias por bloque de cada tramo.
 - `CONTRASTE_HIPOTESIS.md` (M1–M5: sí/no, cifras y por qué).
-- `RESULTADOS_PARA_CLAUDE.md`: N, área, tamaños, tramos promedio ± desviación por variante, ΔO, ahorro de transferencia frente a ΔO/B, duración, anomalías.
+- `RESUMEN_RESULTADOS.md`: N, área, tamaños, tramos promedio ± desviación por variante, ΔO, ahorro de transferencia frente a ΔO/B, duración, anomalías.
 - Un zip con todo.

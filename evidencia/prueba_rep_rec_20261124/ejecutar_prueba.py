@@ -3,7 +3,7 @@ from datetime import datetime,timezone
 import difflib, hashlib, json, os, re, shlex, statistics, subprocess, sys, time
 p=Path(__file__).parent
 repo=p/'Repositorio_Simple'
-cfg=r'C:\Users\Acer\Documents\ChatGPT\THESIS\azure_cloud_20261025\.local\ssh_config'
+cfg=r'<carpeta local>\azure_cloud_20261025\.local\ssh_config'
 env=dict(os.environ,SSH_CONFIG=cfg,PYTHONUTF8='1')
 ssh=['ssh','-o','BatchMode=yes','-o','ConnectTimeout=12','-F',cfg,'dme-master']
 py=[sys.executable,'-B']

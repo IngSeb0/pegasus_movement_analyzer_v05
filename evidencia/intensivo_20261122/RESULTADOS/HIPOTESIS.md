@@ -1,6 +1,4 @@
-# Prompt para Codex: flujos intensivos en datos
-
-Copia todo lo que está debajo de la línea en Codex, abierto en `C:\Users\Acer\Documents\ChatGPT\THESIS`.
+# Diseño e hipótesis: flujos intensivos en datos
 
 ---
 
@@ -69,5 +67,5 @@ Límite: 5 horas de VMs encendidas. Desasigna al terminar y confírmalo en `VMS.
 - Por grupo (patrones, contraste): `jobs.csv`, `corridas.csv`, `resumen.csv`.
 - `INTENSIVO.csv`: por condición, cada tramo promedio y cuál es el mayor (D2).
 - `TRANSFERENCIA_VS_OBSERVADO.csv` (D3) y diferencias por bloque del contraste.
-- `RESULTADOS_PARA_CLAUDE.md`: estado por fase, tabla de hipótesis (sí/no y por qué), tramos promedio ± desviación por condición, contraste con diferencias por tramo, ancho de banda y anomalías.
+- `RESUMEN_RESULTADOS.md`: estado por fase, tabla de hipótesis (sí/no y por qué), tramos promedio ± desviación por condición, contraste con diferencias por tramo, ancho de banda y anomalías.
 - Un zip con todo.
